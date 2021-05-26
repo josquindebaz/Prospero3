@@ -1,8 +1,8 @@
 import os
-os.environ['DJANGO_SETTINGS_MODULE'] = 'dashboard.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'prospero.settings'
 import django
 django.setup()
-from dashboard import settings
+from prospero import settings
 from main.models import *
 
 import code
