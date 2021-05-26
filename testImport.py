@@ -17,10 +17,11 @@ questions 25/05/2021 :
     ... correspond à la racine d'un point de vue représentation ?
 """
 """
-questions 26/05/2021 :
-    '"sales "boulots' dans GdS.cat 
-    => faut-il garder les éléments à l'identique en base, car si on exporte vers Prospéro I, on est plus iso ...
-    un exemple de projet dont il manque un dico sémantique => voir si le CR code pour une valeur nulle
+questions 26/05/2021 :     
+    - faut-il garder les éléments à l'identique en base, car si on exporte vers Prospéro I, on est plus iso ...
+        => on verra        
+    - un exemple de projet dont il manque un dico sémantique => voir si le CR code pour une valeur nulle
+        => ligne vide
 """
 """
     NB : les lignes vides
