@@ -27,11 +27,11 @@ def createCategoryDictionnary(name):
         "elements" : []
     }
 
-def createLexicalDictionnary(name, lang):
+def createLexicalDictionnary(name, language):
     return {
         "type" : "LexicalDictionnary",
         "name" : name,
-        "lang" : lang,
+        "lang" : language,
         "elements" : []
     }
 
@@ -54,20 +54,11 @@ def createDictPackage(name):
     }
     return pck
 
-def createDictElement(name):
-    return reader.normalizeDictElementValue(name)
+def createDictElement(value):
+    return reader.normalizeDictElementValue(value)
 
-def createPResource(name):
-    return name
-
-def createEntity(type, name, dico):
-    entity = {
-        "type" : type,
-        "name" : name,
-        "elements" : []
-    }
-    dico["elements"].append(entity)
-    return entity
+def createPResource(uri):
+    return uri
 
 def createFiction(name):
     entity = {
@@ -94,7 +85,7 @@ def createCategory(name, type):
     }
     return entity
 
-def createText(path, metaDatas, associatedData):
+def createPText(path, metaDatas, associatedData):
     return {
         "path" : path,
         "metaDatas" : metaDatas,

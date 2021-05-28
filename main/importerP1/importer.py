@@ -1,26 +1,26 @@
 import ntpath, os
-from main.importerP1 import builder, reader
+from main.importerP1 import reader
 
-def walk(file):
+def walk(file, builder):
     print("walk file", file.name)
     fileName = ntpath.basename(file.name)
     extension = fileName.split(".")[-1].lower()
     if extension == "dic":
-        return walkSyntaxicalDict(file)
+        return walkSyntaxicalDict(file, builder)
     elif extension == "col":
-        return walkSemanticDict(file, builder.createCollectionDictionnary, builder.createCollection)
+        return walkSemanticDict(file, builder.createCollectionDictionnary, builder.createCollection, builder)
     elif extension == "fic":
-        return walkSemanticDict(file, builder.createFictionDictionnary, builder.createFiction)
+        return walkSemanticDict(file, builder.createFictionDictionnary, builder.createFiction, builder)
     elif extension == "cat":
-        return walkCategoryDict(file)
+        return walkCategoryDict(file, builder)
     elif extension == "ctx":
-        return walkMetaData(file)
+        return walkMetaData(file, builder)
     elif extension == "prc":
-        return walkProject(file)
+        return walkProject(file, builder)
     else:
         raise Exception("extension not supported")
 
-def walkSyntaxicalDict(file):
+def walkSyntaxicalDict(file, builder):
     fileName = ntpath.basename(file.name)
     tab = fileName.split("_")
     dico = builder.createLexicalDictionnary(tab[1].split(".")[0], tab[0])
@@ -33,7 +33,7 @@ def walkSyntaxicalDict(file):
         builder.add(pck, "elements", elt)
     return dico
 
-def walkSemanticDict(file, createDictionnaryFunc, createEntityFunc):
+def walkSemanticDict(file, createDictionnaryFunc, createEntityFunc, builder):
     fileName = ntpath.basename(file.name)
     dico = createDictionnaryFunc(fileName.split(".")[0])
     lines = reader.getFileLines(file)
@@ -74,7 +74,7 @@ def walkSemanticDict(file, createDictionnaryFunc, createEntityFunc):
                 builder.add(current, "elements", elt)
     return dico
 
-def walkCategoryDict(file):
+def walkCategoryDict(file, builder):
     fileName = ntpath.basename(file.name)
     dico = builder.createCategoryDictionnary(fileName.split(".")[0])
     lines = reader.getFileLines(file)
@@ -106,7 +106,7 @@ def walkCategoryDict(file):
                 builder.add(current, "elements", elt)
     return dico
 
-def walkMetaData(file):
+def walkMetaData(file, builder):
     lines = reader.getFileLines(file, keepVoidLines=True)
     lines.pop(0)
     data = []
@@ -162,7 +162,7 @@ def walkMetaData(file):
             associatedData.append(builder.createPResource(line[8:]))
     return data, associatedData
 
-def walkProject(file):
+def walkProject(file, builder):
     fileName = ntpath.basename(file.name)
     project = builder.createProject(fileName.split(".")[0])
     lines = reader.getFileLines(file)
@@ -184,8 +184,8 @@ def walkProject(file):
             tab[len(tab)-1] = "CTX"
             fileName = ".".join(tab)
             ctxFile = open(path + fileName)
-            data, associatedData = walkMetaData(ctxFile)
-            text = builder.createText(textPath, data, associatedData)
+            data, associatedData = walkMetaData(ctxFile, builder)
+            text = builder.createPText(textPath, data, associatedData)
             builder.add(project, "texts", text)
         else:
             break

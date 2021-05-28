@@ -44,7 +44,7 @@ class PObject(models.Model) :
 class AugmentedData(PObject):
 
     associatedDatas = models.ManyToManyField('PResource', blank=True, related_name='augmentedData')
-    metadatas = models.ManyToManyField('MetaData', blank=True, related_name='augmentedData')
+    metaDatas = models.ManyToManyField('MetaData', blank=True, related_name='augmentedData')
 
     def __unicode__(self):
         return "[" + str(self.id) + ":AugmentedData]"
@@ -56,6 +56,18 @@ class AugmentedData(PObject):
             return self.ptext.getRealInstance()
         else:
             return self
+
+    def getMetaDatas(self):
+        res = []
+        for elt in self.metaDatas.all():
+            res.append(elt.getRealInstance())
+        return res
+
+    def getAssociatedDatas(self):
+        res = []
+        for elt in self.associatedDatas.all():
+            res.append(elt.getRealInstance())
+        return res
 
 class Project(PObject) :
 
@@ -70,25 +82,18 @@ class Project(PObject) :
     def getRealInstance(self):
         return self
 
-    def getMetadatas(self):
-        res = []
-        for elt in self.metadatas.all():
-            res.append(elt.getRealInstance())
-        return res
-
     def getTexts(self):
         res = []
         for elt in self.texts.all():
             res.append(elt.getRealInstance())
         return res
 
-    def getDicoset(self):
-        return self.dicoset.getRealInstance()
     def getDictionnaries(self):
         return self.dictionnaries.getRealInstance()
 
 class MetaData(PObject) :
 
+    name = models.CharField(blank=True, max_length=255)
     type = models.CharField(blank=True, choices = DataType, max_length=255)
     value = models.TextField(blank=True)
 
@@ -236,17 +241,6 @@ class PText(PObject) :
 
     def getRealInstance(self):
         return self
-
-    def getMetadatas(self):
-        res = []
-        for elt in self.metadatas.all():
-            res.append(elt.getRealInstance())
-        return res
-    def getAssociatedDatas(self):
-        res = []
-        for elt in self.associatedDatas.all():
-            res.append(elt.getRealInstance())
-        return res
 
 class Prospero(PObject) :
 
