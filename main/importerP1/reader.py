@@ -15,3 +15,6 @@ def normalizePath(path):
     if path.startswith(repoFolderEquivalent):
         path = repoFolder + path[len(repoFolderEquivalent):]
     return path
+
+def normalizeDictElementValue(value):
+    return value.replace(" ' ", "'")

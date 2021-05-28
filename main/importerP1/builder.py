@@ -1,7 +1,35 @@
+from main.importerP1 import reader
 
-def createDictionnary(type, name, lang=None):
+def add(parent, propertyName, elt):
+    parent[propertyName].append(elt)
+
+def set(parent, propertyName, elt):
+    parent[propertyName] = elt
+
+def createFictionDictionnary(name):
     return {
-        "type" : type,
+        "type" : "FictionDictionnary",
+        "name" : name,
+        "elements" : []
+    }
+
+def createCollectionDictionnary(name):
+    return {
+        "type" : "CollectionDictionnary",
+        "name" : name,
+        "elements" : []
+    }
+
+def createCategoryDictionnary(name):
+    return {
+        "type" : "CategoryDictionnary",
+        "name" : name,
+        "elements" : []
+    }
+
+def createLexicalDictionnary(name, lang):
+    return {
+        "type" : "LexicalDictionnary",
         "name" : name,
         "lang" : lang,
         "elements" : []
@@ -18,17 +46,19 @@ def createProject(name):
         "texts" : []
     }
 
-def createDictPackage(name, parent):
+def createDictPackage(name):
     pck = {
         "type" : "DictPackage",
         "name" : name,
         "elements" : []
     }
-    parent["elements"].append(pck)
     return pck
 
-def createDictElement(name, pck):
-    pck["elements"].append(name)
+def createDictElement(name):
+    return reader.normalizeDictElementValue(name)
+
+def createPResource(name):
+    return name
 
 def createEntity(type, name, dico):
     entity = {
@@ -39,32 +69,29 @@ def createEntity(type, name, dico):
     dico["elements"].append(entity)
     return entity
 
-def createFicitveEntity(name, dico):
+def createFiction(name):
     entity = {
-        "type" : "FictiveEntity",
+        "type" : "Fiction",
         "name" : name,
         "elements" : []
     }
-    dico["elements"].append(entity)
     return entity
 
-def createConceptEntity(name, dico):
+def createCollection(name):
     entity = {
-        "type" : "ConceptEntity",
+        "type" : "Collection",
         "name" : name,
         "elements" : []
     }
-    dico["elements"].append(entity)
     return entity
 
-def createCategoryEntity(name, type, dico):
+def createCategory(name, type):
     entity = {
-        "type" : "CategoryEntity",
+        "type" : "Category",
         "catType" : type,
         "name" : name,
         "elements" : []
     }
-    dico["elements"].append(entity)
     return entity
 
 def createText(path, metaDatas, associatedData):

@@ -8,9 +8,9 @@ def walk(file):
     if extension == "dic":
         return walkSyntaxicalDict(file)
     elif extension == "col":
-        return walkSemanticDict(file, builder.createConceptEntity)
+        return walkSemanticDict(file, builder.createCollectionDictionnary, builder.createCollection)
     elif extension == "fic":
-        return walkSemanticDict(file, builder.createFicitveEntity)
+        return walkSemanticDict(file, builder.createFictionDictionnary, builder.createFiction)
     elif extension == "cat":
         return walkCategoryDict(file)
     elif extension == "ctx":
@@ -23,18 +23,19 @@ def walk(file):
 def walkSyntaxicalDict(file):
     fileName = ntpath.basename(file.name)
     tab = fileName.split("_")
-    dico = builder.createDictionnary("SyntaxicDictionnary", tab[1].split(".")[0], None)
-    pck = builder.createDictPackage("", dico)
+    dico = builder.createLexicalDictionnary(tab[1].split(".")[0], tab[0])
+    pck = builder.createDictPackage("")
+    builder.add(dico, "elements", pck)
     for x in reader.getFileLines(file):
         if x == "ENDFILE":
             break
-        x = x.replace(" ' ", "'")
-        builder.createDictElement(x, pck)
+        elt = builder.createDictElement(x)
+        builder.add(pck, "elements", elt)
     return dico
 
-def walkSemanticDict(file, createEntityFunc):
+def walkSemanticDict(file, createDictionnaryFunc, createEntityFunc):
     fileName = ntpath.basename(file.name)
-    dico = builder.createDictionnary("FictionEntityDictionnary", fileName.split(".")[0])
+    dico = createDictionnaryFunc(fileName.split(".")[0])
     lines = reader.getFileLines(file)
     lines.pop(0)
     state = "IDLE"
@@ -48,7 +49,9 @@ def walkSemanticDict(file, createEntityFunc):
             else:
                 elt = lines.pop(0)  # avoid FICTION keyword
                 currentStack.append(current)
-                current = createEntityFunc(elt, current)
+                entity = createEntityFunc(elt)
+                builder.add(current, "elements", entity)
+                current = entity
                 state = "FICTION"
         elif state == "FICTION":
             elt = lines.pop(0)
@@ -57,7 +60,9 @@ def walkSemanticDict(file, createEntityFunc):
                 current = currentStack.pop()
             else:
                 currentStack.append(current)
-                current = builder.createDictPackage(elt, current)
+                pck = builder.createDictPackage(elt)
+                builder.add(current, "elements", pck)
+                current = pck
                 state = "PCK"
         elif state == "PCK":
             elt = lines.pop(0)
@@ -65,12 +70,13 @@ def walkSemanticDict(file, createEntityFunc):
                 state = "FICTION"
                 current = currentStack.pop()
             else:
-                builder.createDictElement(elt, current)
+                elt = builder.createDictElement(elt)
+                builder.add(current, "elements", elt)
     return dico
 
 def walkCategoryDict(file):
     fileName = ntpath.basename(file.name)
-    dico = builder.createDictionnary("CategoryDictionnary", fileName.split(".")[0])
+    dico = builder.createCategoryDictionnary(fileName.split(".")[0])
     lines = reader.getFileLines(file)
     lines.pop(0)
     state = "IDLE"
@@ -85,7 +91,9 @@ def walkCategoryDict(file):
                 currentStack.append(current)
                 catType = elt.replace("*", "")
                 elt = lines.pop(0)
-                current = builder.createCategoryEntity(elt, catType, current)
+                category = builder.createCategory(elt, catType)
+                builder.add(current, "elements", category)
+                current = category
                 state = "CATEGORY"
         elif state == "CATEGORY":
             elt = lines.pop(0)
@@ -94,7 +102,8 @@ def walkCategoryDict(file):
                 lines.pop(0) # avoid ENDCAT
                 current = currentStack.pop()
             else:
-                builder.createDictElement(elt, current)
+                elt = builder.createDictElement(elt)
+                builder.add(current, "elements", elt)
     return dico
 
 def walkMetaData(file):
@@ -146,18 +155,23 @@ def walkMetaData(file):
     value = lines.pop(0).strip()
     if value:
         data.append(builder.createMetaData("heureMin", "Hour", value))
-    return data, lines
+    associatedData = []
+    while len(lines) > 0:
+        line = lines.pop(0)
+        if line.startswith("REF_EXT:"):
+            associatedData.append(builder.createPResource(line[8:]))
+    return data, associatedData
 
 def walkProject(file):
     fileName = ntpath.basename(file.name)
     project = builder.createProject(fileName.split(".")[0])
     lines = reader.getFileLines(file)
     lines.pop(0)
-    project["dicPath"] = lines.pop(0)
-    project["ficPath"] = lines.pop(0)
-    project["catPath"] = lines.pop(0)
-    project["colPath"] = lines.pop(0)
-    project["language"] = lines.pop(0)
+    builder.set(project, "dicPath", lines.pop(0))
+    builder.set(project, "ficPath", lines.pop(0))
+    builder.set(project, "catPath", lines.pop(0))
+    builder.set(project, "colPath", lines.pop(0))
+    builder.set(project, "language", lines.pop(0))
     while True:
         if len(lines) > 0:
             textPath = lines.pop(0)
@@ -170,16 +184,9 @@ def walkProject(file):
             tab[len(tab)-1] = "CTX"
             fileName = ".".join(tab)
             ctxFile = open(path + fileName)
-            data, lines = walkMetaData(ctxFile)
-
-
-            associatedData = []
-            while len(lines) > 0:
-                line = lines.pop(0)
-                if line.startswith("REF_EXT:"):
-                    associatedData.append(line[8:])
+            data, associatedData = walkMetaData(ctxFile)
             text = builder.createText(textPath, data, associatedData)
-            project["texts"].append(text)
+            builder.add(project, "texts", text)
         else:
             break
     return project
