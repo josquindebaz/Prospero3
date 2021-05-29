@@ -41,6 +41,10 @@ class PObject(models.Model) :
         else:
             return self
 
+    def accept(self, visitor):
+        obj = self.getRealInstance()
+        return getattr(visitor, "visit"+type(obj).__name__)(obj)
+
 class AugmentedData(PObject):
 
     associatedDatas = models.ManyToManyField('PResource', blank=True, related_name='augmentedData')
@@ -69,8 +73,9 @@ class AugmentedData(PObject):
             res.append(elt.getRealInstance())
         return res
 
-class Project(PObject) :
+class Project(AugmentedData) :
 
+    name = models.CharField(blank=True, max_length=255)
     language = models.CharField(blank=True, max_length=255)
 
     texts = models.ManyToManyField('PText', blank=True, related_name='project')
@@ -123,7 +128,7 @@ class DictPackage(DictObject) :
     elements = models.ManyToManyField('DictObject', blank=True, related_name='package')
 
     def __str__(self):
-        return "[" + str(self.id) + ":DictPackage]"
+        return "[" + str(self.id) + ":DictPackage] " + self.name
 
     def getRealInstance(self):
         if hasattr(self, "dictionnary"):
@@ -147,7 +152,7 @@ class Dictionnary(DictPackage) :
     type = models.CharField(blank=True, choices = DictType, max_length=255)
 
     def __str__(self):
-        return "[" + str(self.id) + ":Dictionnary]"
+        return "[" + str(self.id) + ":Dictionnary] " + self.name
 
     def getRealInstance(self):
         if hasattr(self, "lexicaldictionnary"):
@@ -160,7 +165,7 @@ class Dictionnary(DictPackage) :
 class SemanticDictionnary(Dictionnary) :
 
     def __str__(self):
-        return "[" + str(self.id) + ":SemanticDictionnary]"
+        return "[" + str(self.id) + ":SemanticDictionnary] " + self.name
 
     def getRealInstance(self):
         if hasattr(self, "collectiondictionnary"):
@@ -175,7 +180,7 @@ class SemanticDictionnary(Dictionnary) :
 class CollectionDictionnary(SemanticDictionnary) :
 
     def __str__(self):
-        return "[" + str(self.id) + ":CollectionDictionnary]"
+        return "[" + str(self.id) + ":CollectionDictionnary] " + self.name
 
     def getRealInstance(self):
         return self
@@ -183,7 +188,7 @@ class CollectionDictionnary(SemanticDictionnary) :
 class CategoryDictionnary(SemanticDictionnary) :
 
     def __str__(self):
-        return "[" + str(self.id) + ":CategoryDictionnary]"
+        return "[" + str(self.id) + ":CategoryDictionnary] " + self.name
 
     def getRealInstance(self):
         return self
@@ -191,7 +196,7 @@ class CategoryDictionnary(SemanticDictionnary) :
 class FictionDictionnary(SemanticDictionnary) :
 
     def __str__(self):
-        return "[" + str(self.id) + ":FictionDictionnary]"
+        return "[" + str(self.id) + ":FictionDictionnary] " + self.name
 
     def getRealInstance(self):
         return self
@@ -201,7 +206,7 @@ class DictElement(DictObject) :
     value = models.CharField(blank=True, max_length=255)
 
     def __str__(self):
-        return "[" + str(self.id) + ":DictElement]"
+        return "[" + str(self.id) + ":DictElement] " + self.value
 
     def getRealInstance(self):
         return self
@@ -224,7 +229,7 @@ class PFile(PResource) :
     file = models.FileField(blank=True, upload_to="upload")
 
     def __str__(self):
-        return "[" + str(self.id) + ":PFile]"
+        return "[" + str(self.id) + ":PFile] " + self.file.name
 
     def getRealInstance(self):
         if hasattr(self, "ptext"):
@@ -232,7 +237,7 @@ class PFile(PResource) :
         else:
             return self
 
-class PText(PObject) :
+class PText(AugmentedData) :
 
     text = models.TextField(blank=True)
 
@@ -277,7 +282,7 @@ class LexicalDictionnary(Dictionnary) :
     language = models.CharField(blank=True, max_length=255)
 
     def __str__(self):
-        return "[" + str(self.id) + ":LexicalDictionnary]"
+        return "[" + str(self.id) + ":LexicalDictionnary] " + self.name
 
     def getRealInstance(self):
         return self
@@ -287,7 +292,7 @@ class Category(DictPackage) :
     type = models.CharField(blank=True, choices = CategoryType, max_length=255)
 
     def __str__(self):
-        return "[" + str(self.id) + ":Category]"
+        return "[" + str(self.id) + ":Category] " + self.name
 
     def getRealInstance(self):
         return self
@@ -295,7 +300,7 @@ class Category(DictPackage) :
 class Collection(DictPackage) :
 
     def __str__(self):
-        return "[" + str(self.id) + ":Collection]"
+        return "[" + str(self.id) + ":Collection] " + self.name
 
     def getRealInstance(self):
         return self
@@ -303,7 +308,7 @@ class Collection(DictPackage) :
 class Fiction(DictPackage) :
 
     def __str__(self):
-        return "[" + str(self.id) + ":Fiction]"
+        return "[" + str(self.id) + ":Fiction] " + self.name
 
     def getRealInstance(self):
         return self
@@ -313,7 +318,7 @@ class PUri(PResource) :
     uri = models.URLField(blank=True)
 
     def __str__(self):
-        return "[" + str(self.id) + ":PUri]"
+        return "[" + str(self.id) + ":PUri] " + self.uri
 
     def getRealInstance(self):
         return self

@@ -2,10 +2,11 @@ from main.importerP1 import reader
 from main.models import *
 
 def add(parent, propertyName, elt):
-    parent[propertyName].append(elt)
+    getattr(parent, propertyName).add(elt)
 
 def set(parent, propertyName, elt):
-    parent[propertyName] = elt
+    setattr(parent, propertyName, elt)
+    parent.save()
 
 def createFictionDictionnary(name):
     obj = FictionDictionnary(name=name)
@@ -58,13 +59,13 @@ def createCollection(name):
     obj.save()
     return obj
 
-def createCategory(name, type):
+def createCategory(name):
     obj = Category(name=name)
     obj.save()
     return obj
 
 def createPText(path, metaDatas, associatedDatas):
-    obj = PText(text=path, metaDatas=metaDatas, associatedData=associatedData)
+    obj = PText(text=path)
     obj.save()
     for metaData in metaDatas:
         obj.metaDatas.add(metaData)

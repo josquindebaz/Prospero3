@@ -8,28 +8,28 @@ def set(parent, propertyName, elt):
 
 def createFictionDictionnary(name):
     return {
-        "type" : "FictionDictionnary",
+        "model" : "FictionDictionnary",
         "name" : name,
         "elements" : []
     }
 
 def createCollectionDictionnary(name):
     return {
-        "type" : "CollectionDictionnary",
+        "model" : "CollectionDictionnary",
         "name" : name,
         "elements" : []
     }
 
 def createCategoryDictionnary(name):
     return {
-        "type" : "CategoryDictionnary",
+        "model" : "CategoryDictionnary",
         "name" : name,
         "elements" : []
     }
 
 def createLexicalDictionnary(name, language):
     return {
-        "type" : "LexicalDictionnary",
+        "model" : "LexicalDictionnary",
         "name" : name,
         "lang" : language,
         "elements" : []
@@ -37,6 +37,7 @@ def createLexicalDictionnary(name, language):
 
 def createProject(name):
     return {
+        "model" : "Project",
         "name" : name,
         "dicPath": None,
         "ficPath": None,
@@ -48,7 +49,7 @@ def createProject(name):
 
 def createDictPackage(name):
     pck = {
-        "type" : "DictPackage",
+        "model" : "DictPackage",
         "name" : name,
         "elements" : []
     }
@@ -62,7 +63,7 @@ def createPResource(uri):
 
 def createFiction(name):
     entity = {
-        "type" : "Fiction",
+        "model" : "Fiction",
         "name" : name,
         "elements" : []
     }
@@ -70,30 +71,32 @@ def createFiction(name):
 
 def createCollection(name):
     entity = {
-        "type" : "Collection",
+        "model" : "Collection",
         "name" : name,
         "elements" : []
     }
     return entity
 
-def createCategory(name, type):
+def createCategory(name):
     entity = {
-        "type" : "Category",
-        "catType" : type,
+        "model" : "Category",
         "name" : name,
+        "type" : None,
         "elements" : []
     }
     return entity
 
-def createPText(path, metaDatas, associatedData):
+def createPText(text, metaDatas, associatedData):
     return {
-        "path" : path,
+        "model": "PText",
+        "text" : text,
         "metaDatas" : metaDatas,
         "associatedData" : associatedData
     }
 
 def createMetaData(name, type, value):
     return {
+        "model" : "MetaData",
         "name" : name,
         "type" : type,
         "value" : value

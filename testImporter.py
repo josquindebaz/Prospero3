@@ -5,26 +5,30 @@ django.setup()
 from prospero import settings
 from main.models import *
 
-
-from main.importerP1 import builder2Json as builder
 from main.importerP1 import importer, reader
-from main.exporterP1 import exporter
+from main.importerP1 import builder2Json as builder
+from main.exporterP1 import exporterFromJson as exporter
+#from main.importerP1 import builder2BD as builder
+#from main.exporterP1 import jsonSerializer as exporter
 
 testResultFolder = reader.repoFolder + "test/result/"
 
-#data = importMetaData(open(repoFolder+"TC/taxe_carbone_web.CTX"))
-
+"""
 data = importer.walk(open(reader.repoFolder+"TC/1-dico/fr_epreu.dic"), builder)
-exporter.dumpStructuredData(data, testResultFolder+"dic.txt")
+#data = LexicalDictionnary.objects.all()[0]
+exporter.export(data, testResultFolder+"dic.txt")
 
 data = importer.walk(open(reader.repoFolder+"TC/1-dico/GdS.fic"), builder)
-exporter.dumpStructuredData(data, testResultFolder+"fic.txt")
+exporter.export(data, testResultFolder+"fic.txt")
 
 data = importer.walk(open(reader.repoFolder+"TC/1-dico/GdS.col"), builder)
-exporter.dumpStructuredData(data, testResultFolder+"col.txt")
+exporter.export(data, testResultFolder+"col.txt")
+"""
 
+"""
 data = importer.walk(open(reader.repoFolder+"TC/1-dico/GdS.cat"), builder)
-exporter.dumpStructuredData(data, testResultFolder+"cat.txt")
+exporter.export(data, testResultFolder+"cat.txt")
+"""
 
 data = importer.walk(open(reader.repoFolder+"TC/tc-presse.prc"), builder)
-exporter.dumpStructuredData(data, testResultFolder+"prc.txt")
+exporter.export(data, testResultFolder+"prc.txt")

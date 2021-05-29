@@ -1,6 +1,13 @@
 import ntpath, os
 from main.importerP1 import reader
 
+p1CatTypeTranslation = {
+    "ENTITE" : "ENTITY",
+    "MARQUEUR" : "MARKER",
+    "EPREUVE" : "VERB",
+    "QUALITE" : "QUALITY",
+}
+
 def walk(file, builder):
     print("walk file", file.name)
     fileName = ntpath.basename(file.name)
@@ -24,13 +31,11 @@ def walkSyntaxicalDict(file, builder):
     fileName = ntpath.basename(file.name)
     tab = fileName.split("_")
     dico = builder.createLexicalDictionnary(tab[1].split(".")[0], tab[0])
-    pck = builder.createDictPackage("")
-    builder.add(dico, "elements", pck)
     for x in reader.getFileLines(file):
         if x == "ENDFILE":
             break
         elt = builder.createDictElement(x)
-        builder.add(pck, "elements", elt)
+        builder.add(dico, "elements", elt)
     return dico
 
 def walkSemanticDict(file, createDictionnaryFunc, createEntityFunc, builder):
@@ -90,8 +95,11 @@ def walkCategoryDict(file, builder):
             else:
                 currentStack.append(current)
                 catType = elt.replace("*", "")
+                if catType in p1CatTypeTranslation:
+                    catType = p1CatTypeTranslation[catType]
                 elt = lines.pop(0)
-                category = builder.createCategory(elt, catType)
+                category = builder.createCategory(elt)
+                builder.set(category, "type", catType)
                 builder.add(current, "elements", category)
                 current = category
                 state = "CATEGORY"
