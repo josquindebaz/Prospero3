@@ -1,11 +1,15 @@
-questions 25/05/2021 :
+25/05/2021 :
     la langue sur le projet ou sur un dico car le .dic définit la langue
     pour les .dic : jamais de packages, seulement une liste d'éléments ?
     on peut striper l'ensemble des éléments ?
     ... correspond à la racine d'un point de vue représentation ?
 
-questions 26/05/2021 :
+26/05/2021 :
     - faut-il garder les éléments à l'identique en base, car si on exporte vers Prospéro I, on est plus iso ...
         => on verra
     - un exemple de projet dont il manque un dico sémantique => voir si le CR code pour une valeur nulle
         => ligne vide
+03/06/2021 :
+    id texte = nom du fichier (ou le path relatif si import en zip)
+    jamais de fichier avec des noms égaux (normalement)
+    il faudra timestamper les zip d'export

@@ -5,3 +5,4 @@ venv/
 static/
 .idea/
 backups/
+todo.txt
