@@ -103,12 +103,12 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres', #'prospero',
-        'USER': 'postgres', #'prospero',
-        'PASSWORD' : 'admin', #'prospero@database',
+        'NAME': 'prospero',
+        'USER': 'prospero',
+        'PASSWORD' : 'adminProspero2021',
         'HOST' : 'localhost',
-        'PORT' : '5432',
-        'CONN_MAX_AGE' : None # keep BD connection alive
+        'PORT': '', #'PORT' : '5432',
+        #'CONN_MAX_AGE' : None # keep BD connection alive
     }
 }
 

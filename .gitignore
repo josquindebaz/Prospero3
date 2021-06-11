@@ -6,3 +6,4 @@ static/
 .idea/
 backups/
 todo.txt
+main/migrations/
