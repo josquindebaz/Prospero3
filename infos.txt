@@ -6,5 +6,5 @@ postgreysql database :
 	port: ''
 
 administrateur
-	login : prospero
-	password : prospero@admin2021
+	login : admin
+	password : prosperoAdmin2021
