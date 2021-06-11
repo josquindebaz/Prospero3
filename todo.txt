@@ -1,0 +1,26 @@
+REUNION JOSQUIN 10/06/2021
+
+	ajouter corpus
+	historisation des corpus et création uri avec mot de passe ou pas
+	fenêtre des archives d'un projet
+	vue pour dictionnaires
+
+REUNION Manu 9/06/2021
+
+	avoir un beau overlay de type drag and drop
+	avoir un beau spin à mettre dans la structure et tous les boutons
+
+LIST 07/06/2021
+
+	mise en place git serveur
+	creation d'un utilisateur git
+	creation sous domaine amo-it-proto.com
+	mise en place site de dev
+	mise en place de la maquette	
+	ajout d'un file uploader pour test dans un projet
+		import des dictionnaires
+		import des textes
+		import d'un zip
+		
+	
+	

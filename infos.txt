@@ -1,3 +1,10 @@
+postgreysql database :
+	name: prospero
+	user: prospero
+	password : adminProspero2021
+	host : localhost
+	port: ''
+
 administrateur
 	login : prospero
 	password : prospero@admin2021
