@@ -8,3 +8,6 @@ postgreysql database :
 administrateur
 	login : admin
 	password : prosperoAdmin2021
+
+http://demo.e-lechat.com/prospero/
+https://github.com/manu-lechat/prospero/

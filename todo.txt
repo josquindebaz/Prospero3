@@ -1,3 +1,8 @@
+BESOIN Manu
+
+	icon favicon
+
+
 REUNION JOSQUIN 10/06/2021
 
 	ajouter corpus
