@@ -1,7 +1,7 @@
 from django.db import models
 
 from django.db import models
-from prospero.settings import *
+import json
 
 CategoryType = (
     ('ENTITY', 'ENTITY'),
@@ -38,8 +38,16 @@ class PObject(models.Model) :
             return self.presource.getRealInstance()
         elif hasattr(self, "augmenteddata"):
             return self.augmenteddata.getRealInstance()
+        elif hasattr(self, "pcorpus"):
+            return self.pcorpus.getRealInstance()
         else:
             return self
+
+    def serializeIdentity(self):
+        return {
+            "model" : self.getRealInstance().__class__.__name__,
+            "id" : self.id
+        }
 
     def accept(self, visitor):
         obj = self.getRealInstance()
@@ -78,8 +86,9 @@ class Project(AugmentedData) :
     name = models.CharField(blank=True, max_length=255)
     language = models.CharField(blank=True, max_length=255)
 
-    texts = models.ManyToManyField('PText', blank=True, related_name='project')
+    #texts = models.ManyToManyField('PText', blank=True, related_name='project')
     dictionnaries = models.ManyToManyField('Dictionnary', blank=True, related_name='project')
+    corpuses = models.ManyToManyField('PCorpus', null=True, blank=True, related_name='project')
 
     def __str__(self):
         return "[" + str(self.id) + ":Project]"
@@ -95,6 +104,36 @@ class Project(AugmentedData) :
 
     def getDictionnaries(self):
         return self.dictionnaries.getRealInstance()
+
+class PCorpus(PObject) :
+
+    #ATTRIBUTES
+    name = models.CharField(blank=True, max_length=255)
+
+    #RELATIONS
+    texts = models.ManyToManyField('PText', blank=True, related_name='corpus')
+
+    def __str__(self):
+        return "[" + str(self.id) + ":PCorpus]"
+
+    def getRealInstance(self):
+        return self
+
+    def getTexts(self):
+        res = []
+        for elt in self.texts.all():
+            res.append(elt.getRealInstance())
+        return res
+
+    def serializeAsTable(self):
+        return {
+            "identity" : self.serializeIdentity(),
+            "values" : {
+                "name" : self.name,
+                "author" : "John Doe",
+                "tags" : "covid-19, vaccin"
+            }
+        }
 
 class MetaData(PObject) :
 
@@ -161,6 +200,16 @@ class Dictionnary(DictPackage) :
             return self.semanticdictionnary.getRealInstance()
         else:
             return self
+
+    def serializeAsTable(self):
+        return {
+            "identity" : self.serializeIdentity(),
+            "values" : {
+                "name" : self.name,
+                "author" : "John Doe",
+                "type" : "Lexical"
+            }
+        }
 
 class SemanticDictionnary(Dictionnary) :
 
@@ -246,6 +295,31 @@ class PText(AugmentedData) :
 
     def getRealInstance(self):
         return self
+
+    def serializeAsTable(self):
+        return {
+            "identity" : self.serializeIdentity(),
+            "values" : {
+                "title" : "Le vaccin contre le Covid-19 sera-t-il obligatoire",
+                "date" : "14/05/2020",
+                "source" : "Slate",
+                "author" : "Jean-Yves Nau",
+                "noc" : "200 000"
+            }
+        }
+
+    def serialize(self):
+        return {
+            "identity" : self.serializeIdentity(),
+            "metadata" : {
+                "title" : "Le vaccin contre le Covid-19 sera-t-il obligatoire",
+                "date" : "14/05/2020",
+                "source" : "Slate",
+                "author" : "Jean-Yves Nau",
+                "noc" : "200 000"
+            },
+            "text" : self.text
+        }
 
 class Prospero(PObject) :
 

@@ -1,3 +1,5 @@
+from prospero import settings
+from main.models import *
 from django.http import HttpResponse
 from django.template import loader
 from main import ajax
@@ -28,7 +30,9 @@ def ajaxCall(request):
 
 def index(request):
     template = loader.get_template('main/prospero/index.html')
-    context = {}
+    context = createContext(request)
+    project = Project.objects.all()[0]
+    context["project"] = json.dumps(project.serializeIdentity())
     return HttpResponse(template.render(context, request))
 
 def widgets(request):

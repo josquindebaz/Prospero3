@@ -1,6 +1,6 @@
 {% extends 'main/prospero/structure/base.html' %}
 {% block content %}
-	<section class="row project-view">
+	<section class="row project-view" data-object='{{ project|safe }}'>
 		<div class="col screenHeight">
 			<div class="card height_50 corpora-table">
 				<div class="card-header">
@@ -39,7 +39,7 @@
 					{% include "main/prospero/project/corporaTable.html" %}
 				</div>
 			</div>
-			<div class="card height_25">
+			<div class="card height_25 dico-table">
 				<div class="card-header">
 					<div class="left">
 						<h3 class="title txt_25">Dictionaries</h3>
@@ -124,7 +124,7 @@
 			</div>
 		</div>
 		<div class="col screenHeight">
-			<div class="card height_100">
+			<div class="card height_100 text-table">
 				<div class="card-header">
 					<div class="left">
 						<h3 class="title txt_25">Texts</h3>
@@ -164,7 +164,7 @@
 			</div>
 		</div>
 		<div class="col screenHeight">
-			<div class="card height_100">
+			<div class="card height_100 text-panel">
 				<div class="card-header">
 					<div class="left">
 						<h3 class="title txt_25">titre</h3>
@@ -209,7 +209,7 @@
 						<div class="cartouche_item"><label>Support: </label>Internet</div>
 						<div class="cartouche_item"><label>Number of characters: </label>200 000</div>
 					</div>
-					<article class="main_article">
+					<article class="main_article text-container">
 						<p>
 							Formidable paradoxe: alors qu’on ne cesse d’évoquer les bénéfices d’un vaccin protecteur contre le
 							Covid-19, les ventes de vaccins ne cessent, en France de diminuer; atteignant, durant le
@@ -252,7 +252,8 @@
 		</div>
 	</section>
 	<script>
-		var projectView = new PProjectView($(".project-view"));
+		var $projectView = $(".project-view");
+		var projectView = new PProjectView($projectView, $projectView.data("object"));
 		projectView.load();
 		var $importModal = $(".import-modal").children().eq(0);
 		var importModal = new PModal($importModal);

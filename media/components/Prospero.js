@@ -2,7 +2,16 @@ class PObject {
 
 	constructor($node) {
 	    this.node = $node
+	    this.observers = []
 	    $node.data("PObject", this);
+	}
+    addObserver(callback) {
+        this.observers.push(callback);
+	}
+	notifyObservers(event) {
+	    $.each(this.observers, function(index, observer) {
+	        observer(event);
+	    })
 	}
 }
 class Prospero {
