@@ -67,6 +67,8 @@ class AugmentedData(PObject):
             return self.project.getRealInstance()
         elif hasattr(self, "ptext"):
             return self.ptext.getRealInstance()
+        elif hasattr(self, "pcorpus"):
+            return self.pcorpus.getRealInstance()
         else:
             return self
 
@@ -119,10 +121,11 @@ class Project(AugmentedData) :
     def getDictionnaries(self):
         return self.dictionnaries.getRealInstance()
 
-class PCorpus(PObject) :
+class PCorpus(AugmentedData) :
 
     #ATTRIBUTES
     name = models.CharField(blank=True, max_length=255)
+    author = models.CharField(blank=True, max_length=255)
 
     #RELATIONS
     texts = models.ManyToManyField('PText', blank=True, related_name='corpus')
@@ -144,8 +147,8 @@ class PCorpus(PObject) :
             "identity" : self.serializeIdentity(),
             "values" : {
                 "name" : self.name,
-                "author" : "John Doe",
-                "tags" : "covid-19, vaccin"
+                "author" : self.author,
+                "tags" : ""
             }
         }
 
