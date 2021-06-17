@@ -7,6 +7,9 @@ class PProjectView extends PObject {
 	    this.dicoTable = new DicoTable($(".dico-table"), this);
 	    this.textTable = new TextTable($(".text-table"), this);
 	    this.textPanel = new TextPanel($(".text-panel"), this);
+	    $(".new-item-button").bind("click", function() {
+	        importModal.show();
+	    });
 	}
 	load() {
 	    this.corporaTable.load(this.data);

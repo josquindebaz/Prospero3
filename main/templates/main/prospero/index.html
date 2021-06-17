@@ -255,7 +255,7 @@
 		var $projectView = $(".project-view");
 		var projectView = new PProjectView($projectView, $projectView.data("object"));
 		projectView.load();
-		var $importModal = $(".import-modal").children().eq(0);
-		var importModal = new PModal($importModal);
+		var $importModal = $(".import-modal");
+		var importModal = new ImportModal($importModal);
 	</script>
 {% endblock %}

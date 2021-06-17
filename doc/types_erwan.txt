@@ -1,0 +1,125 @@
+Structures/formats
+
+###
+.prc 
+###
+projet0005
+C:\corpus\EnergiCorpus\DIC #chemin répertoire dictionnaires syntaxique
+C:\CORPUS\ENERGICORPUS\DIC\transition.fic #chemin êtres fictifs (entités nommées)
+C:\CORPUS\ENERGICORPUS\DIC\transition.cat #chemin catégorie (régime du discours)
+C:\CORPUS\ENERGICORPUS\DIC\transition.col #chemin collections (ontologies)
+français (langue pour règles par défaut de typage syntaxique)
+C:\corpus\EnergiCorpus\FR\TEE\TEE20190424A.txt (chemin du txt, accompagné de son ctx et bdt)
+C:\corpus\EnergiCorpus\FR\TEE\TEE20190424B.txt
+.../...
+ENDFILE
+
+
+
+###
+.dic  #dictionnaires syntaxiques -> éléments de grammaire, générique
+###
+ langue_type.dic ex fr_epreu.dic
+attention les ' sont espacées
+vérif si ENDFILE pas obligatoire
+
+
+Dictionnaires de concept, sémantiques -> grille de lecture spécifique du lecture
+3 sortes : 
+* regroupemeent d'entités nommées = être-fictif
+* collections = ontologies "fixes" du monde, liste de pays etc
+* catégories = régime de discours, type de langage particulier à un style ou une profession, juridique par exemple ou statistiques etc. 
+	=> 4 types syntaxiques
+
+
+###
+.fic être-fictifs	convention nommés MAJUSCULE@
+###
+fic0001
+FICTION 	#déclaration d'un être fictif
+#NUITDEBOUT@ 	#nommage de l'être fictif
+... 		#déclaration et nommage du niveau 2 (type), [...] par défaut
+Sentier lumineux	#element 1 "représentant"
+déchets électroniques	#element 2
+Nuits Debout
+.../...
+END		#fin de niveau 2
+type2		#nommage
+type2element1
+type2element2
+END
+ENDFICTION      #fin d'être fictif
+FICTION		#nouvele EF
+11-SEPTEMBRE@
+...
+11 septembre
+attentats de New York
+World Trade Center
+onze septembre
+11 Septembre
+.../...
+ENDFILE
+
+
+
+
+###
+.col collections, même structure, convention MAJUSCULE*
+###
+col0001
+FICTION
+BESTIAIRE*
+mammifères
+babouin
+.../...
+END
+ENDFICTION
+ENDFILE
+
+
+###
+.cat catégories, 4 formes possibles : ENTITE, QUALITE, EPREUVE, MARQUEUR
+###
+cat0001
+*ENTITE*	 	#déclaration d'une catégorie d'entité
+Accord/Coopération 	#nommage
+Consensus		#représentant1
+TNP
+Traité
+END	#la fermeture prend 2 lignes
+ENDCAT
+*QUALITE*		#déclaration d'une catégorie de qualité
+Technique		#nommage
+automatique		#représentant 1
+automatiques
+calorifique
+END
+ENDCAT
+ENDFILE
+
+
+
+###
+.ctx	métadonnées, on demande au minimum titre, auteur, date
+###
+fileCtx0005
+Question écrite n°16998		#titre 
+Balarello			#auteur
+Union des Républicains 		#narrateur
+Ministère de la Santé		#destinataire
+29/08/1991			#date
+Journal Officiel		#nom de publication
+Question parlementaire		#type de publication
+Avec réponse			#observation, potentiellement plus long
+Parlementaires			#statut de l'auteur
+Alpes-Maritimes			#lieu d'émission
+Question parlementaire		#champ libre 1
+Période 1			#champ libre 2
+n				#calcul 1 n ou y
+n				#calcul 2 n ou y
+REF_HEURE:00:00			#heure min
+REF_EXT:C:\Corpus\Téléphonie\QP\QPno9_016998REP.txt #lien externe1
+REF_EXT:C:\Corpus\Téléphonie\QP\QPno9_016998REP.pdf #lien externe2
+.../...
+
+

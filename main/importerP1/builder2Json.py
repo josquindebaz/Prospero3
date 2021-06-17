@@ -36,7 +36,7 @@ def createLexicalDictionnary(name, language):
     }
 
 def createProject(name):
-    return {
+    obj = {
         "model" : "Project",
         "name" : name,
         "dicPath": None,
@@ -44,8 +44,11 @@ def createProject(name):
         "catPath": None,
         "colPath": None,
         "language" : None,
-        "texts" : []
+        "corpuses" : []
     }
+    corpus = createPCorpus("main")
+    obj["corpuses"].append(corpus)
+    return obj
 
 def createDictPackage(name):
     pck = {
@@ -86,12 +89,19 @@ def createCategory(name):
     }
     return entity
 
-def createPText(text, metaDatas, associatedData):
+def createPText(text):
     return {
         "model": "PText",
         "text" : text,
-        "metaDatas" : metaDatas,
-        "associatedData" : associatedData
+        "metaDatas" : [],
+        "associatedDatas" : []
+    }
+
+def createPCorpus(name):
+    return {
+        "model": "PCorpus",
+        "name" : name,
+        "texts" : []
     }
 
 def createMetaData(name, type, value):

@@ -1,5 +1,52 @@
 import ntpath, os
+from main.helpers import files
 from main.importerP1 import reader
+
+# import all P1 files in folder (unzip on the fly root zips)
+def importData(project, folder, builder):
+    defaultCorpus = project.getDefaultCorpus()
+    importedObjects = []
+    # unzip if necessary
+    for file in files.getAllFiles(folder):
+        if files.getFileExtension(file) == "zip":
+            extractionFolderName = files.getFileName(file, withExtension=False)+"/"
+            extractionFolder = files.gotFolder(files.gotFolder(file)+extractionFolderName)
+            files.extratZIP(file, extractionFolder)
+    # treat files
+    for filePath in files.getAllFiles(folder, True):
+        fileName = ntpath.basename(filePath)
+        extension = fileName.split(".")[-1].lower()
+        if extension in ["dic", "col", "fic", "cat"]:
+            print("walk " + extension, filePath)
+            file = open(filePath, 'r')
+            dico = walk(file, builder)
+            importedObjects.append(dico)
+            builder.add(project, "dictionnaries", dico)
+        elif extension == "txt":
+            print("walk txt", filePath)
+            file = open(filePath, 'r')
+            text = walk(file, builder)
+            importedObjects.append(text)
+            ctxPath = findCtxFile(filePath)
+            if ctxPath:
+                print("walk ctx", ctxPath)
+                ctxFile = open(ctxPath, "r")
+                metaDatas, associatedDatas = walk(ctxFile, builder)
+                importedObjects.extend(metaDatas)
+                importedObjects.extend(associatedDatas)
+                for data in metaDatas:
+                    builder.add(text, "metaDatas", data)
+                for data in associatedDatas:
+                    builder.add(text, "associatedDatas", data)
+            defaultCorpus.texts.add(text)
+    return importedObjects
+
+def findCtxFile(txtFile):
+    fileName = files.getFileName(txtFile, False)
+    folder = files.gotFolder(txtFile)
+    for file in files.findFilesWithExtension(folder, "ctx"):
+        if files.getFileName(file, False) == fileName:
+            return folder+file
 
 p1CatTypeTranslation = {
     "ENTITE" : "ENTITY",
@@ -24,6 +71,8 @@ def walk(file, builder):
         return walkMetaData(file, builder)
     elif extension == "prc":
         return walkProject(file, builder)
+    elif extension == "txt":
+        return walkText(file, builder)
     else:
         raise Exception("extension not supported")
 
@@ -170,6 +219,9 @@ def walkMetaData(file, builder):
             associatedData.append(builder.createPResource(line[8:]))
     return data, associatedData
 
+def walkText(file, builder):
+    return builder.createPText(file.read())
+
 def walkProject(file, builder):
     fileName = ntpath.basename(file.name)
     project = builder.createProject(fileName.split(".")[0])
@@ -180,21 +232,25 @@ def walkProject(file, builder):
     builder.set(project, "catPath", lines.pop(0))
     builder.set(project, "colPath", lines.pop(0))
     builder.set(project, "language", lines.pop(0))
+    defaultCorpus = builder.get(project, "corpuses")[0]
     while True:
         if len(lines) > 0:
             textPath = lines.pop(0)
             if textPath == "ENDFILE":
                 break
-            textPath = reader.normalizePath(textPath)
-            path = os.path.dirname(textPath)+"/"
-            fileName = ntpath.basename(textPath)
-            tab = fileName.split(".")
-            tab[len(tab)-1] = "CTX"
-            fileName = ".".join(tab)
-            ctxFile = open(path + fileName)
-            data, associatedData = walkMetaData(ctxFile, builder)
-            text = builder.createPText(textPath, data, associatedData)
-            builder.add(project, "texts", text)
+            # create PText
+            textFile = open(textPath, "r")
+            text = walk(textFile, builder)
+            # get ctx file and set augmentedDatas
+            ctxPath = findCtxFile(textPath)
+            if ctxPath:
+                ctxFile = open(ctxPath, "r")
+                metaDatas, associatedDatas = walk(ctxFile, builder)
+                for data in metaDatas:
+                    builder.add(text, "metaDatas", data)
+                for data in associatedDatas:
+                    builder.add(text, "associatedDatas", data)
+            builder.add(defaultCorpus, "corpuses", text)
         else:
             break
     return project

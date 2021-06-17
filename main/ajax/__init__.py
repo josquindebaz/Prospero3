@@ -1,4 +1,5 @@
-from main.ajax.project import *
+from main.ajax.frontend import *
+from main.ajax.interop import *
 
 def callService(name, data, request):
     print("> call service", name)

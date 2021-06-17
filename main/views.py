@@ -4,7 +4,8 @@ from django.http import HttpResponse
 from django.template import loader
 from main import ajax
 from django.views.decorators.csrf import csrf_exempt
-import json
+from main.helpers import normalisation, files
+import json, ntpath, time
 
 def createContext(request):
     context = {
@@ -27,6 +28,32 @@ def ajaxCall(request):
         )
     else:
         raise Http404("no document found")
+
+@csrf_exempt
+def fileUpload(request):
+    if request.is_ajax() and request.method == 'POST':
+        results = {}
+        timestamp = str(time.time())
+        relativeFileFolder = 'upload/'+timestamp+'/'
+        fileFolder = settings.MEDIA_ROOT + relativeFileFolder
+        files.gotFolder(fileFolder)
+        data = request.FILES['file']
+        fileName = data.name
+        filePath = fileFolder + fileName
+        filePath = normalisation.findAvailableAbsolutePath(filePath)
+        with open(filePath, 'wb+') as destination:
+            for chunk in data.chunks():
+                destination.write(chunk)
+        fileName = ntpath.basename(filePath)
+        results['fileName'] = fileName
+        results['filePath'] = relativeFileFolder + fileName
+        results['status'] = "OK"
+        return HttpResponse(
+            json.dumps(results),
+            content_type = 'application/javascript'
+        )
+    else:
+        raise Http404("")
 
 def index(request):
     template = loader.get_template('main/prospero/index.html')

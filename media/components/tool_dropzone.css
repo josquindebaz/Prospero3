@@ -1,0 +1,42 @@
+/*****************************
+ * file uploader for magicCms
+ * @author BROTTIER Erwan - erwan@addictive-web.com - http://www.addictive-web.com 
+ * @version 1.1
+ * @date October 10, 2016
+ * @category framework
+ * @copyright (c) 2011-2015 contact@addictive-web.com (www.addictive-web.com)
+ * @license CC Attribution-Share Alike 3.0 - http://creativecommons.org/licenses/by-sa/3.0/
+ */
+.mc-dropzone {
+    display:flex; 
+    position: absolute; 
+    left: 0;
+    top: 0;    
+    width:100%; 
+    height:100%;
+    /*background-color:grey;*/
+    overflow:hidden;
+}
+.mc-dropzone input {
+    position: absolute;
+    cursor: pointer;
+    left: 0px;
+    top: 0px;
+    z-index:10;
+    opacity:0 !important;
+}
+.mc-dropzone-feedback {
+    position: absolute; 
+    left: 0;
+    top: 0;
+    border: 2px dashed rgba(0,0,0,.3); 
+    border-radius: 5px; 
+    height: 100%; 
+    width: 100%;
+    transition: opacity 0.3s ease;
+    background-color: rgba(255,255,255,0.3);
+    opacity:0;
+}
+.mc-dropzone-feedback.hover {
+    opacity:1;
+}

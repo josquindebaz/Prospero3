@@ -2,6 +2,7 @@ from django.db import models
 
 from django.db import models
 import json
+from datetime import datetime
 
 CategoryType = (
     ('ENTITY', 'ENTITY'),
@@ -81,6 +82,19 @@ class AugmentedData(PObject):
             res.append(elt.getRealInstance())
         return res
 
+    def getDataValue(self, dataName, rawValue=True):
+        if self.metaDatas.count() > 0:
+            print(self.metaDatas.all())
+        try:
+            metadata = self.metaDatas.get(name=dataName)
+            value = metadata.value
+            if not rawValue:
+                if metadata.type == "Datetime":
+                    value = datetime.strptime(value, '%d/%m/%Y')
+            return value
+        except:
+            return None
+
 class Project(AugmentedData) :
 
     name = models.CharField(blank=True, max_length=255)
@@ -88,7 +102,7 @@ class Project(AugmentedData) :
 
     #texts = models.ManyToManyField('PText', blank=True, related_name='project')
     dictionnaries = models.ManyToManyField('Dictionnary', blank=True, related_name='project')
-    corpuses = models.ManyToManyField('PCorpus', null=True, blank=True, related_name='project')
+    corpuses = models.ManyToManyField('PCorpus', blank=True, related_name='project')
 
     def __str__(self):
         return "[" + str(self.id) + ":Project]"
@@ -96,11 +110,11 @@ class Project(AugmentedData) :
     def getRealInstance(self):
         return self
 
-    def getTexts(self):
-        res = []
-        for elt in self.texts.all():
-            res.append(elt.getRealInstance())
-        return res
+    def getDefaultCorpus(self):
+        try:
+            return self.corpuses.get(name="main")
+        except:
+            return self.corpuses.all()[0]
 
     def getDictionnaries(self):
         return self.dictionnaries.getRealInstance()
@@ -125,7 +139,7 @@ class PCorpus(PObject) :
             res.append(elt.getRealInstance())
         return res
 
-    def serializeAsTable(self):
+    def serializeAsTableItem(self):
         return {
             "identity" : self.serializeIdentity(),
             "values" : {
@@ -142,7 +156,7 @@ class MetaData(PObject) :
     value = models.TextField(blank=True)
 
     def __str__(self):
-        return "[" + str(self.id) + ":MetaData]"
+        return "[" + str(self.id) + ":MetaData] "+self.name
 
     def getRealInstance(self):
         return self
@@ -201,7 +215,7 @@ class Dictionnary(DictPackage) :
         else:
             return self
 
-    def serializeAsTable(self):
+    def serializeAsTableItem(self):
         return {
             "identity" : self.serializeIdentity(),
             "values" : {
@@ -296,11 +310,11 @@ class PText(AugmentedData) :
     def getRealInstance(self):
         return self
 
-    def serializeAsTable(self):
+    def serializeAsTableItem(self):
         return {
             "identity" : self.serializeIdentity(),
             "values" : {
-                "title" : "Le vaccin contre le Covid-19 sera-t-il obligatoire",
+                "title" : self.getTitle(),
                 "date" : "14/05/2020",
                 "source" : "Slate",
                 "author" : "Jean-Yves Nau",
@@ -308,11 +322,14 @@ class PText(AugmentedData) :
             }
         }
 
+    def getTitle(self):
+        return self.getDataValue("titre")
+
     def serialize(self):
         return {
             "identity" : self.serializeIdentity(),
             "metadata" : {
-                "title" : "Le vaccin contre le Covid-19 sera-t-il obligatoire",
+                "title" : self.getTitle(),
                 "date" : "14/05/2020",
                 "source" : "Slate",
                 "author" : "Jean-Yves Nau",

@@ -31,6 +31,8 @@ def createLexicalDictionnary(name, language):
 def createProject(name):
     obj = Project(name=name)
     obj.save()
+    defaultCorpus = createPCorpus("main")
+    obj.corpuses.add(defaultCorpus)
     return obj
 
 def createDictPackage(name):
@@ -64,13 +66,14 @@ def createCategory(name):
     obj.save()
     return obj
 
-def createPText(path, metaDatas, associatedDatas):
-    obj = PText(text=path)
+def createPText(text):
+    obj = PText(text=text)
     obj.save()
-    for metaData in metaDatas:
-        obj.metaDatas.add(metaData)
-    for associatedData in associatedDatas:
-        obj.associatedDatas.add(associatedData)
+    return obj
+
+def createPCorpus(name):
+    obj = PCorpus(name=name)
+    obj.save()
     return obj
 
 def createMetaData(name, type, value):

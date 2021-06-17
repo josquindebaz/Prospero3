@@ -40,4 +40,19 @@ class Prospero {
 	get($node) {
 	    return $node.data("PObject");
 	}
+    uploadFile(formData, callback) {
+    	$.ajax("/fileUpload", {
+    		method: "POST",
+    		data: formData,
+    		processData: false,
+    		contentType: false,
+    		dataType: 'json',
+    		success: function (result) {
+    			callback(result.status == "OK", result);
+    		},
+    		error: function (data) {
+    			callback(false);
+    		}
+    	});
+    }
 }

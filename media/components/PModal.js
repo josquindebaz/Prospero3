@@ -7,4 +7,7 @@ class PModal extends PObject {
 	show() {
 	    this.node.modal("show");
 	}
+	hide() {
+	    this.node.modal("hide");
+	}
 }
