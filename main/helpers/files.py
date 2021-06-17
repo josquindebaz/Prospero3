@@ -1,4 +1,4 @@
-import os, ntpath, shutil, pathlib
+import os, ntpath, shutil
 from fnmatch import filter
 
 import zipfile
@@ -83,7 +83,10 @@ def renameFile(filePath, newName, overwrite=False):
     return newFilePath
 
 def deleteFile(file):
-    os.remove(file)
+    if os.path.isdir(file):
+        shutil.rmtree(file)
+    else:
+        os.remove(file)
 
 def cleanFolder(folder):
     if isFolderEmpty(folder):

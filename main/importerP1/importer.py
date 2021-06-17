@@ -18,20 +18,20 @@ def importData(project, folder, builder):
         extension = fileName.split(".")[-1].lower()
         if extension in ["dic", "col", "fic", "cat"]:
             print("walk " + extension, filePath)
-            file = open(filePath, 'r')
-            dico = walk(file, builder)
+            with open(filePath, 'r') as file:
+                dico = walk(file, builder)
             importedObjects.append(dico)
             builder.add(project, "dictionnaries", dico)
         elif extension == "txt":
             print("walk txt", filePath)
-            file = open(filePath, 'r')
-            text = walk(file, builder)
+            with open(filePath, 'r') as file:
+                text = walk(file, builder)
             importedObjects.append(text)
             ctxPath = findCtxFile(filePath)
             if ctxPath:
                 print("walk ctx", ctxPath)
-                ctxFile = open(ctxPath, "r")
-                metaDatas, associatedDatas = walk(ctxFile, builder)
+                with open(ctxPath, "r") as ctxFile:
+                    metaDatas, associatedDatas = walk(ctxFile, builder)
                 importedObjects.extend(metaDatas)
                 importedObjects.extend(associatedDatas)
                 for data in metaDatas:
@@ -168,50 +168,50 @@ def walkMetaData(file, builder):
     lines.pop(0)
     data = []
     value = lines.pop(0).strip()
-    if value:
-        data.append(builder.createMetaData("titre", "String", value))
+    if value: # required
+        data.append(builder.createMetaData("title", "String", value))
+    value = lines.pop(0).strip()
+    if value: # required
+        data.append(builder.createMetaData("author", "String", value))
     value = lines.pop(0).strip()
     if value:
-        data.append(builder.createMetaData("auteur", "String", value))
+        data.append(builder.createMetaData("narrator", "String", value))
     value = lines.pop(0).strip()
     if value:
-        data.append(builder.createMetaData("narrateur", "String", value))
+        data.append(builder.createMetaData("recipient", "String", value))
     value = lines.pop(0).strip()
-    if value:
-        data.append(builder.createMetaData("destinataire", "String", value))
-    value = lines.pop(0).strip()
-    if value:
+    if value: # required
         data.append(builder.createMetaData("date", "Date", value))
     value = lines.pop(0).strip()
     if value:
-        data.append(builder.createMetaData("nomPublication", "String", value))
+        data.append(builder.createMetaData("publicationName", "String", value))
     value = lines.pop(0).strip()
     if value:
-        data.append(builder.createMetaData("typePublication", "String", value))
+        data.append(builder.createMetaData("publicationType", "String", value))
     value = lines.pop(0).strip()
     if value:
         data.append(builder.createMetaData("observation", "Text", value))
     value = lines.pop(0).strip()
     if value:
-        data.append(builder.createMetaData("statutAuteur", "String", value))
+        data.append(builder.createMetaData("authorStatus", "String", value))
     value = lines.pop(0).strip()
     if value:
-        data.append(builder.createMetaData("lieuEmission", "String", value))
+        data.append(builder.createMetaData("issuePlace", "String", value))
     value = lines.pop(0).strip()
     if value:
-        data.append(builder.createMetaData("champLibre1", "String", value))
+        data.append(builder.createMetaData("freeField1", "String", value))
     value = lines.pop(0).strip()
     if value:
-        data.append(builder.createMetaData("champLibre2", "String", value))
+        data.append(builder.createMetaData("freeField2", "String", value))
     value = lines.pop(0).strip()
     if value:
-        data.append(builder.createMetaData("calcul1", "Boolean", value))
+        data.append(builder.createMetaData("calculation1", "Boolean", value))
     value = lines.pop(0).strip()
     if value:
-        data.append(builder.createMetaData("calcul2", "Boolean", value))
+        data.append(builder.createMetaData("calculation2", "Boolean", value))
     value = lines.pop(0).strip()
     if value:
-        data.append(builder.createMetaData("heureMin", "Hour", value))
+        data.append(builder.createMetaData("hour", "Hour", value))
     associatedData = []
     while len(lines) > 0:
         line = lines.pop(0)
@@ -239,13 +239,13 @@ def walkProject(file, builder):
             if textPath == "ENDFILE":
                 break
             # create PText
-            textFile = open(textPath, "r")
-            text = walk(textFile, builder)
+            with open(textPath, "r") as textFile:
+                text = walk(textFile, builder)
             # get ctx file and set augmentedDatas
             ctxPath = findCtxFile(textPath)
             if ctxPath:
-                ctxFile = open(ctxPath, "r")
-                metaDatas, associatedDatas = walk(ctxFile, builder)
+                with open(ctxPath, "r") as ctxFile:
+                    metaDatas, associatedDatas = walk(ctxFile, builder)
                 for data in metaDatas:
                     builder.add(text, "metaDatas", data)
                 for data in associatedDatas:

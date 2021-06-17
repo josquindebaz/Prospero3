@@ -85,8 +85,6 @@ class AugmentedData(PObject):
         return res
 
     def getDataValue(self, dataName, rawValue=True):
-        if self.metaDatas.count() > 0:
-            print(self.metaDatas.all())
         try:
             metadata = self.metaDatas.get(name=dataName)
             value = metadata.value
@@ -142,6 +140,18 @@ class PCorpus(AugmentedData) :
             res.append(elt.getRealInstance())
         return res
 
+    def serialize(self):
+        data = {
+            "identity" : self.serializeIdentity(),
+            "name" : self.name,
+            "author": self.author
+        }
+        metaDatas = []
+        for metaData in self.metaDatas.all():
+            metaDatas.append(metaData.serialize())
+        data["metaDatas"] = metaDatas
+        return data
+
     def serializeAsTableItem(self):
         return {
             "identity" : self.serializeIdentity(),
@@ -163,6 +173,14 @@ class MetaData(PObject) :
 
     def getRealInstance(self):
         return self
+
+    def serialize(self):
+        return {
+            "identity" : self.serializeIdentity(),
+            "name" : self.name,
+            "type": self.type,
+            "value": self.value
+        }
 
 class DictObject(PObject) :
 
@@ -313,32 +331,42 @@ class PText(AugmentedData) :
     def getRealInstance(self):
         return self
 
+    def getTitle(self):
+        return self.getDataValue("title")
+
+    def getDate(self):
+        return self.getDataValue("date")
+
+    def getAuthor(self):
+        return self.getDataValue("author")
+
+    def getSource(self):
+        return self.getDataValue("publicationName")
+
+    def getNbChar(self):
+        return len(self.text)
+
+    def serialize(self):
+        data = {
+            "identity" : self.serializeIdentity(),
+            "text" : self.text
+        }
+        metaDatas = []
+        for metaData in self.metaDatas.all():
+            metaDatas.append(metaData.serialize())
+        data["metaDatas"] = metaDatas
+        return data
+
     def serializeAsTableItem(self):
         return {
             "identity" : self.serializeIdentity(),
             "values" : {
                 "title" : self.getTitle(),
-                "date" : "14/05/2020",
-                "source" : "Slate",
-                "author" : "Jean-Yves Nau",
-                "noc" : "200 000"
+                "date" : self.getDate(),
+                "source" : self.getSource(),
+                "author" : self.getAuthor(),
+                "noc" : self.getNbChar()
             }
-        }
-
-    def getTitle(self):
-        return self.getDataValue("titre")
-
-    def serialize(self):
-        return {
-            "identity" : self.serializeIdentity(),
-            "metadata" : {
-                "title" : self.getTitle(),
-                "date" : "14/05/2020",
-                "source" : "Slate",
-                "author" : "Jean-Yves Nau",
-                "noc" : "200 000"
-            },
-            "text" : self.text
         }
 
 class Prospero(PObject) :
