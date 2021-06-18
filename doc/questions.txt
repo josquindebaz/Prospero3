@@ -1,3 +1,14 @@
+19/06/2021 :
+	voir avec josquin, txt et ctx différente casse, cf TC/asso/
+	pour exporter, intéressant de garder le nom des fichiers textes ...
+	les metaData calculation, on ne les montre pas ?
+	source correspond à quel metaData ?
+	si on supprime un corpus, les textes doivent être reversés vers un autre (le main, ou choix ?)
+	comment déterminer le corpus par défaut si on considère que l'on peut supprimer main ?
+	on sauvegarde la sélection des dico pour le user ou pour le projet
+	les tags, qu'est-ce qui est taggable ? Peut-on créé des tags à la volée ? Certains tags ont-ils un sens particulier (existe-t-il des types) ?
+	notion de current selection vs selected ? ou plutôt panel focus ...
+
 25/05/2021 :
     la langue sur le projet ou sur un dico car le .dic définit la langue
     pour les .dic : jamais de packages, seulement une liste d'éléments ?

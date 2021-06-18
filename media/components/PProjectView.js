@@ -14,8 +14,13 @@ class PProjectView extends PObject {
 	        self.manageEvent(self.textTable, event)
 	    });
 	    this.editorPanel = new EditorPanel($(".editor-panel"), this);
-	    $(".new-item-button").bind("click", function() {
-	        importModal.show();
+	    var importExportButton = new StateButton($("[action-name=multi-actions]"));
+	    importExportButton.addObserver(function(event) {
+	        if (event.action == "Import") {
+	            importModal.show();
+	        } else {
+	            console.log("TODO export");
+	        }
 	    });
 	}
 	manageEvent(origin, event) {
@@ -41,6 +46,8 @@ class PProjectView extends PObject {
                     // open multitexts pane
                     console.log("open multitexts pane");
                     self.editorPanel.switchTo("textSelectionsEditor");
+                } else {
+                    self.editorPanel.switchTo();
                 }
 	        }
 	    }
@@ -63,9 +70,26 @@ class PTable extends PObject {
 	constructor($node, view) {
 	    super($node);
 	    this.view = view;
+	    this.actionTriggers = {};
 	    this.columns = $node.find("thead th").map(function(value){
 	        return $(this).attr("property-name")
 	    }).get()
+	}
+	addActionTrigger(actionName, $trigger, callback) {
+	    var self = this;
+	    this.actionTriggers[actionName] = {
+	        trigger: $trigger,
+	        callback: callback
+	    };
+	    $trigger.bind("click", function() {
+	        callback(self);
+	    });
+	}
+	showActionTrigger(actionName) {
+	    this.actionTriggers[actionName].trigger.removeClass("hidden");
+	}
+	hideActionTrigger(actionName) {
+	    this.actionTriggers[actionName].trigger.addClass("hidden");
 	}
 	load(data) {
         var self = this;
@@ -77,19 +101,16 @@ class PTable extends PObject {
             $.each(data.table, function(index, line) {
                 var $tr = $("<tr></tr>");
                 $tbody.append($tr);
-                new PTableItem($tr, line.identity).addObserver(function(event) {
+                var item = self.createTableItem($tr, line.identity, self.columns);
+                item.load(line.values);
+                item.addObserver(function(event) {
                     self.receiveEvent(event);
-                });
-                var values = line.values;
-                $.each(self.columns, function(index, column) {
-                    var value = values[column];
-                    if (value == null)
-                        value = "";
-                    var $td = $("<td>"+value+"</td>");
-                    $tr.append($td);
                 });
             });
         });
+	}
+	createTableItem($node, data, columns) {
+        return new PTableItem($node, data, columns);
 	}
 	getItems() {
 	    return $("tbody", self.node).children();
@@ -100,8 +121,6 @@ class PTable extends PObject {
 	}
 	getSelection() {
 	    var $selected = $("tbody", this.node).children(".active");
-	    if (!$selected.length)
-	        $selected = null;
 	    return $selected;
 	}
 	deselectAll() {
@@ -114,7 +133,25 @@ class CorporaTable extends PTable {
 
 	constructor($node, view) {
 	    super($node, view);
+	    var self = this;
 	    this.propertyName = "corpuses";
+	    this.addActionTrigger("create", $(".icon_link.plus", self.node), function() {
+	        console.log("create corpus");
+	    });
+	    this.addActionTrigger("delete", $(".icon_link.moins", self.node), function() {
+	        var item = prospero.get(self.getSelection());
+	        approvalModal.show({
+	            title: "Confirmation",
+	            text: "Do you really want to delete this corpora ?",
+	            callback : function() {
+	                console.log("delete corpus", item.data);
+	            }
+	        });
+	    });
+	}
+	load(data) {
+	    super.load(data);
+	    this.showActionTrigger("create");
 	}
 	receiveEvent(event) {
         var self = this;
@@ -125,6 +162,7 @@ class CorporaTable extends PTable {
                 selectionChanged = true;
                 self.deselectAll();
                 item.setSelected();
+                self.showActionTrigger("delete");
             //}
             //if (selectionChanged)
                 self.notifyObservers({name: "selectionChanged"});
@@ -135,7 +173,20 @@ class TextTable extends PTable {
 
 	constructor($node, view) {
 	    super($node, view);
+	    var self = this;
 	    this.propertyName = "texts";
+	    this.addActionTrigger("create", $(".icon_link.plus", self.node), function() {
+	        console.log("create text");
+	    });
+	    this.addActionTrigger("delete", $(".icon_link.moins", self.node), function() {
+	        var item = prospero.get(self.getSelection());
+	        console.log("delete text", item.data);
+	    });
+	}
+	load(data) {
+	    super.load(data);
+	    this.showActionTrigger("create");
+	    this.hideActionTrigger("delete");
 	}
 	receiveEvent(event) {
         var self = this;
@@ -153,8 +204,13 @@ class TextTable extends PTable {
                     item.setSelected();
                 }
             }
-            if (selectionChanged)
+            if (selectionChanged) {
                 self.notifyObservers({name: "selectionChanged"});
+                if (self.getSelection().length > 0)
+                    self.showActionTrigger("delete");
+                else
+                    self.hideActionTrigger("delete");
+            }
         }
 	}
 }
@@ -164,13 +220,17 @@ class DicoTable extends PTable {
 	    super($node, view);
 	    this.propertyName = "dictionnaries";
 	}
+	createTableItem($node, data, columns) {
+        return new DicoTableItem($node, data, columns);
+	}
 }
 class PTableItem extends PObject {
 
-	constructor($node, data) {
+	constructor($node, data, columns) {
 	    super($node);
 	    this.data = data;
 	    var self = this;
+	    self.columns = columns;
 	    $node.bind("click", function(event) {
             self.notifyObservers({
                 name: "click",
@@ -178,6 +238,16 @@ class PTableItem extends PObject {
                 original: event
             });
 	    });
+	}
+	load(data) {
+        var self = this;
+        $.each(self.columns, function(index, column) {
+            var value = data[column];
+            if (value == null)
+                value = "";
+            var $td = $("<td>"+value+"</td>");
+            self.node.append($td);
+        });
 	}
 	isSelected() {
 	    return this.node.hasClass("active");
@@ -190,6 +260,29 @@ class PTableItem extends PObject {
 	}
 	toggleSelected() {
 	    this.node.toggleClass("active");
+	}
+}
+
+class DicoTableItem extends PTableItem {
+
+	constructor($node, data, columns) {
+	    super($node, data, columns);
+	}
+	load(data) {
+        var self = this;
+        $.each(self.columns, function(index, column) {
+            var value = data[column];
+            if (value == null)
+                value = "";
+            var $td = $("<td></td>");
+            if (column == "name") {
+                $td.html('<div class="form-check"><input class="form-check-input" type="checkbox" value=""><label class="form-check-label" for="">'+value+'</label></div>');
+                var id = $td.find(".form-check-input").uniqueId().attr("id");
+                $td.find(".form-check-label").attr("for", id);
+            } else
+                $td.text(value);
+            self.node.append($td);
+        });
 	}
 }
 
@@ -212,7 +305,8 @@ class SwitchPanel extends PObject {
 	    if (this.currentPanel)
 	        this.currentPanel.node.addClass("hidden");
 	    this.currentPanel = panel;
-	    this.currentPanel.node.removeClass("hidden");
+	    if (this.currentPanel)
+	        this.currentPanel.node.removeClass("hidden");
 	}
 }
 
@@ -295,5 +389,22 @@ class TextSelectionsEditor extends PObject {
             $text.empty();
             $text.text(data.object.text);
         });
+	}
+}
+class StateButton extends PObject {
+
+	constructor($node) {
+	    super($node);
+	    var self = this;
+	    $(".state-button-state", self.node).bind("click", function() {
+	        var action = $(this).text().trim();
+	        self.notifyObservers({name: "click", action: action});
+	    });
+
+	    $(".dropdown-item", self.node).bind("click", function() {
+	        var action = $(this).text().trim();
+	        $(".state-button-state", self.node).text(action);
+	        self.notifyObservers({name: "click", action: action});
+	    });
 	}
 }
