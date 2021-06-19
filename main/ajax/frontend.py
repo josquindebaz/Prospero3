@@ -13,3 +13,13 @@ def renderTable(request, data, results):
 def renderObject(request, data, results):
     object = frontend.getBDObject(data)
     results["object"] = object.serialize()
+
+def deleteObject(request, data, results):
+    object = frontend.getBDObject(data)
+    print("delete", object)
+    """
+    if type(object) == PCorpus:
+        for text in object.texts.all():
+            text.delete()
+    object.delete()
+    """

@@ -1,7 +1,15 @@
+CP-1252 (latin I)
+ISO-8859-1
+
+BESOIN JOSQUIN
+
+	tri table par colonne
+
 BESOIN Manu
 
 	icon favicon
-
+	css scrollbar horizontal
+	dropzone
 
 REUNION JOSQUIN 10/06/2021
 

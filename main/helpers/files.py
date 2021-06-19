@@ -1,5 +1,6 @@
 import os, ntpath, shutil
 from fnmatch import filter
+import chardet, codecs
 
 import zipfile
 
@@ -142,3 +143,18 @@ def findFilesWithExtension(folder, extension):
     for c in extension:
         regExp = regExp + '[' + c.upper() + c.lower() + ']'
     return filter(os.listdir(folder), regExp)
+
+def detectEncoding(filePath):
+    rawdata = open(filePath, 'rb').read()
+    result = chardet.detect(rawdata)
+    return result['encoding']
+
+def detectEncodingAndRead(filePath):
+    encoding = detectEncoding(filePath)
+    file = codecs.open(filePath, "r", encoding)
+    text = file.read()
+    #print(type(text))
+    # text = text.encode('utf-8')
+    # print("done")
+    return text
+

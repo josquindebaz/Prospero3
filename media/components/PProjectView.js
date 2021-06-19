@@ -29,10 +29,15 @@ class PProjectView extends PObject {
 	    if (origin == self.corporaTable) {
 	        if (event.name == "selectionChanged") {
                 var item = prospero.get(self.corporaTable.getSelection());
-                self.textTable.load(item.data);
-                console.log("open corpus infos pane");
-                self.editorPanel.switchTo("corpusEditor");
-                self.editorPanel.getPanel("corpusEditor").load(item.data);
+                if (item) {
+                    self.textTable.load(item.data);
+                    console.log("open corpus infos pane");
+                    self.editorPanel.switchTo("corpusEditor");
+                    self.editorPanel.getPanel("corpusEditor").load(item.data);
+                } else {
+                    self.textTable.load();
+                    self.editorPanel.switchTo();
+                }
 	        }
 	    } else if (origin == self.textTable) {
 	        if (event.name == "selectionChanged") {
@@ -93,21 +98,25 @@ class PTable extends PObject {
 	}
 	load(data) {
         var self = this;
-        this.data = data;
-        this.data.property = this.propertyName;
-        prospero.ajax("renderTable", this.data, function(data) {
-            var $tbody = $("tbody", self.node);
-            $tbody.empty();
-            $.each(data.table, function(index, line) {
-                var $tr = $("<tr></tr>");
-                $tbody.append($tr);
-                var item = self.createTableItem($tr, line.identity, self.columns);
-                item.load(line.values);
-                item.addObserver(function(event) {
-                    self.receiveEvent(event);
+        var $tbody = $("tbody", self.node);
+        if (data) {
+            this.data = data;
+            this.data.property = this.propertyName;
+            prospero.ajax("renderTable", this.data, function(data) {
+                $tbody.empty();
+                $.each(data.table, function(index, line) {
+                    var $tr = $("<tr></tr>");
+                    $tbody.append($tr);
+                    var item = self.createTableItem($tr, line.identity, self.columns);
+                    item.load(line.values);
+                    item.addObserver(function(event) {
+                        self.receiveEvent(event);
+                    });
                 });
             });
-        });
+        } else {
+            $tbody.empty();
+        }
 	}
 	createTableItem($node, data, columns) {
         return new PTableItem($node, data, columns);
@@ -142,9 +151,14 @@ class CorporaTable extends PTable {
 	        var item = prospero.get(self.getSelection());
 	        approvalModal.show({
 	            title: "Confirmation",
-	            text: "Do you really want to delete this corpora ?",
+	            text: "Do you really want to delete this corpus ?",
 	            callback : function() {
-	                console.log("delete corpus", item.data);
+                    prospero.ajax("deleteObject", item.data, function(data) {
+                        console.log("delete corpus", item.data);
+                        approvalModal.hide();
+                        prospero.getPDBObject(item.data).remove();
+                        self.notifyObservers({name: "selectionChanged"});
+                    });
 	            }
 	        });
 	    });
@@ -180,7 +194,18 @@ class TextTable extends PTable {
 	    });
 	    this.addActionTrigger("delete", $(".icon_link.moins", self.node), function() {
 	        var item = prospero.get(self.getSelection());
-	        console.log("delete text", item.data);
+	        approvalModal.show({
+	            title: "Confirmation",
+	            text: "Do you really want to delete this text ?",
+	            callback : function() {
+                    prospero.ajax("deleteObject", item.data, function(data) {
+                        console.log("delete text", item.data);
+                        approvalModal.hide();
+                        prospero.getPDBObject(item.data).remove();
+                        self.notifyObservers({name: "selectionChanged"});
+                    });
+	            }
+	        });
 	    });
 	}
 	load(data) {
@@ -224,10 +249,10 @@ class DicoTable extends PTable {
         return new DicoTableItem($node, data, columns);
 	}
 }
-class PTableItem extends PObject {
+class PTableItem extends PDBObject {
 
 	constructor($node, data, columns) {
-	    super($node);
+	    super($node, data);
 	    this.data = data;
 	    var self = this;
 	    self.columns = columns;

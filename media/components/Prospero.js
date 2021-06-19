@@ -14,6 +14,14 @@ class PObject {
 	    })
 	}
 }
+class PDBObject extends PObject {
+
+	constructor($node, data) {
+	    super($node);
+	    $node.attr("object-model", data.model);
+	    $node.attr("object-id", data.id);
+	}
+}
 class Prospero {
 
 	constructor() {
@@ -39,6 +47,9 @@ class Prospero {
 	}
 	get($node) {
 	    return $node.data("PObject");
+	}
+	getPDBObject(data) {
+	    return $('[object-model='+data.model+'][object-id='+data.id+']');
 	}
     uploadFile(formData, callback) {
     	$.ajax("/fileUpload", {

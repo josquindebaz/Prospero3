@@ -1,13 +1,44 @@
 19/06/2021 :
 	voir avec josquin, txt et ctx différente casse, cf TC/asso/
-	pour exporter, intéressant de garder le nom des fichiers textes ...
+		=> insensibilité à la casse sur le radical et l'extension
+	pour exporter, intéressant de garder le nom des fichiers textes ... 
+		=> oui et si pas de nom, générer à la volée (5 première lettre nom d'auteur + date YYYYMMDD + hash
 	les metaData calculation, on ne les montre pas ?
+		=> oui
 	source correspond à quel metaData ?
+		=> publicationName
 	si on supprime un corpus, les textes doivent être reversés vers un autre (le main, ou choix ?)
+		=> non, supprimer tous les textes qui ne sont contenus que par ce dernier
 	comment déterminer le corpus par défaut si on considère que l'on peut supprimer main ?
-	on sauvegarde la sélection des dico pour le user ou pour le projet
+		=> plus de main, juste interdiction de supprimer tous les corpus
+	on sauvegarde la sélection des dico pour le user ou pour  le projet
+		=> conf utilisateur
 	les tags, qu'est-ce qui est taggable ? Peut-on créé des tags à la volée ? Certains tags ont-ils un sens particulier (existe-t-il des types) ?
+		=> selectize
 	notion de current selection vs selected ? ou plutôt panel focus ...
+		=> a voir
+	import => choix du corpus si plusieurs corpus
+		=> oui
+	export => on exporte quoi ? Ce qui est sélectionné ? Mais on ne peut pas sélectionné les dico ...
+		=> projet intégral (avec dico sélectionné), juste dico sélectionné, juste textes sélectionnés, juste textes d'un corpus
+
+
+def is_utf8(self):
+"""Return True if utf-8"""
+try:
+self.content.decode('utf-8')
+except UnicodeDecodeError:
+return False
+else:
+return True
+
+De
+Debaz Josquin
+14:41
+with open(txt, 'rb') as f:
+buf = f.read()
+
+https://github.com/josquindebaz/Tiresias/blob/master/mod/cleaning.py
 
 25/05/2021 :
     la langue sur le projet ou sur un dico car le .dic définit la langue
