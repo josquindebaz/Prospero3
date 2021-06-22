@@ -1,9 +1,8 @@
 repoFolder = "data2Import/"
 repoFolderEquivalent = "C:/corpus/"
 
-def getFileLines(file, keepVoidLines=False):
+def splitLines(text, keepVoidLines=False):
     lines = []
-    text = file.read()
     for x in text.split("\n"):
         x = x.strip()
         if x or keepVoidLines:

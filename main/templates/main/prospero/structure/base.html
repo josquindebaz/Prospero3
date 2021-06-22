@@ -38,10 +38,8 @@
             </section>
             <section class="main_container">
                 {% include "main/prospero/structure/header.html" %}
-                <div class="main_content ">
-                    {% block content %}
-                    {% endblock %}
-                </div>
+                {% block content %}
+                {% endblock %}
             </section>
         </main>
         <script src="{{ MEDIA_URL }}assets/js/prefixfree.min.js"></script>

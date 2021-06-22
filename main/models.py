@@ -324,24 +324,18 @@ class PFile(PResource) :
 class PText(AugmentedData) :
 
     text = models.TextField(blank=True)
+    fileName = models.CharField(blank=True, max_length=255)
+
+    title = models.CharField(blank=True, max_length=255)
+    date = models.CharField(blank=True, max_length=255)
+    source = models.CharField(blank=True, max_length=255)
+    author = models.CharField(blank=True, max_length=255)
 
     def __str__(self):
         return "[" + str(self.id) + ":PText]"
 
     def getRealInstance(self):
         return self
-
-    def getTitle(self):
-        return self.getDataValue("title")
-
-    def getDate(self):
-        return self.getDataValue("date")
-
-    def getAuthor(self):
-        return self.getDataValue("author")
-
-    def getSource(self):
-        return self.getDataValue("publicationName")
 
     def getNbChar(self):
         return len(self.text)
@@ -351,9 +345,37 @@ class PText(AugmentedData) :
             "identity" : self.serializeIdentity(),
             "text" : self.text
         }
+        requiredDatas = []
+        requiredDatas.append({
+            "identity" : self.serializeIdentity(),
+            "name" : "title",
+            "type": "String",
+            "value": self.title
+        })
+        requiredDatas.append({
+            "identity" : self.serializeIdentity(),
+            "name" : "date",
+            "type": "Date",
+            "value": self.date
+        })
+        requiredDatas.append({
+            "identity" : self.serializeIdentity(),
+            "name" : "source",
+            "type": "String",
+            "value": self.source
+        })
+        requiredDatas.append({
+            "identity" : self.serializeIdentity(),
+            "name" : "author",
+            "type": "String",
+            "value": self.author
+        })
+        data["requiredDatas"] = requiredDatas
         metaDatas = []
+        ignoredNames = ["calculation1", "calculation2"]
         for metaData in self.metaDatas.all():
-            metaDatas.append(metaData.serialize())
+            if not metaData.name in ignoredNames:
+                metaDatas.append(metaData.serialize())
         data["metaDatas"] = metaDatas
         return data
 
@@ -361,10 +383,10 @@ class PText(AugmentedData) :
         return {
             "identity" : self.serializeIdentity(),
             "values" : {
-                "title" : self.getTitle(),
-                "date" : self.getDate(),
-                "source" : self.getSource(),
-                "author" : self.getAuthor(),
+                "title" : self.title,
+                "date" : self.date,
+                "source" : self.source,
+                "author" : self.author,
                 "noc" : self.getNbChar()
             }
         }

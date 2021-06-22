@@ -365,6 +365,12 @@ class TextEditor extends PObject {
             // load meta datas
             var $cartouche = $(".cartouche", self.node);
             $cartouche.empty();
+            $.each(data.object.requiredDatas, function(index, metaData) {
+                var name = metaData.name.charAt(0).toUpperCase() + metaData.name.slice(1)
+                var value = prospero.escapeHtml(metaData.value);
+                var $item = $('<div class="cartouche_item"><label>'+name+'</label>'+value+'</div>');
+                $cartouche.append($item);
+            });
             $.each(data.object.metaDatas, function(index, metaData) {
                 var name = metaData.name.charAt(0).toUpperCase() + metaData.name.slice(1)
                 var value = prospero.escapeHtml(metaData.value);

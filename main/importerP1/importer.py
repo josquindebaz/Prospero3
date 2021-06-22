@@ -18,26 +18,25 @@ def importData(project, folder, builder):
         extension = fileName.split(".")[-1].lower()
         if extension in ["dic", "col", "fic", "cat"]:
             print("walk " + extension, filePath)
-            with open(filePath, 'r') as file:
-                dico = walk(file, builder)
+            dico = walk(filePath, builder)
             importedObjects.append(dico)
             builder.add(project, "dictionnaries", dico)
         elif extension == "txt":
             print("walk txt", filePath)
-            with open(filePath, 'r') as file:
-                text = walk(file, builder)
+            text = walk(filePath, builder)
             importedObjects.append(text)
             ctxPath = findCtxFile(filePath)
             if ctxPath:
                 print("walk ctx", ctxPath)
-                with open(ctxPath, "r") as ctxFile:
-                    metaDatas, associatedDatas = walk(ctxFile, builder)
+                metaDatas, associatedDatas, requiredDatas = walk(ctxPath, builder)
                 importedObjects.extend(metaDatas)
                 importedObjects.extend(associatedDatas)
                 for data in metaDatas:
                     builder.add(text, "metaDatas", data)
                 for data in associatedDatas:
                     builder.add(text, "associatedDatas", data)
+                for fieldName in requiredDatas:
+                    builder.set(text, fieldName, requiredDatas[fieldName])
             defaultCorpus.texts.add(text)
     return importedObjects
 
@@ -55,42 +54,44 @@ p1CatTypeTranslation = {
     "QUALITE" : "QUALITY",
 }
 
-def walk(file, builder):
-    print("walk file", file.name)
-    fileName = ntpath.basename(file.name)
+def walk(filePath, builder):
+    print("walk file", filePath)
+    fileName = ntpath.basename(filePath)
     extension = fileName.split(".")[-1].lower()
     if extension == "dic":
-        return walkSyntaxicalDict(file, builder)
+        return walkSyntaxicalDict(filePath, builder)
     elif extension == "col":
-        return walkSemanticDict(file, builder.createCollectionDictionnary, builder.createCollection, builder)
+        return walkSemanticDict(filePath, builder.createCollectionDictionnary, builder.createCollection, builder)
     elif extension == "fic":
-        return walkSemanticDict(file, builder.createFictionDictionnary, builder.createFiction, builder)
+        return walkSemanticDict(filePath, builder.createFictionDictionnary, builder.createFiction, builder)
     elif extension == "cat":
-        return walkCategoryDict(file, builder)
+        return walkCategoryDict(filePath, builder)
     elif extension == "ctx":
-        return walkMetaData(file, builder)
+        return walkMetaData(filePath, builder)
     elif extension == "prc":
-        return walkProject(file, builder)
+        return walkProject(filePath, builder)
     elif extension == "txt":
-        return walkText(file, builder)
+        return walkText(filePath, builder)
     else:
         raise Exception("extension not supported")
 
-def walkSyntaxicalDict(file, builder):
-    fileName = ntpath.basename(file.name)
+def walkSyntaxicalDict(filePath, builder):
+    fileName = ntpath.basename(filePath)
     tab = fileName.split("_")
     dico = builder.createLexicalDictionnary(tab[1].split(".")[0], tab[0])
-    for x in reader.getFileLines(file):
+    text = files.readFile(filePath, detectEncoding=True)
+    for x in reader.splitLines(text):
         if x == "ENDFILE":
             break
         elt = builder.createDictElement(x)
         builder.add(dico, "elements", elt)
     return dico
 
-def walkSemanticDict(file, createDictionnaryFunc, createEntityFunc, builder):
-    fileName = ntpath.basename(file.name)
+def walkSemanticDict(filePath, createDictionnaryFunc, createEntityFunc, builder):
+    fileName = ntpath.basename(filePath)
     dico = createDictionnaryFunc(fileName.split(".")[0])
-    lines = reader.getFileLines(file)
+    text = files.readFile(filePath, detectEncoding=True)
+    lines = reader.splitLines(text)
     lines.pop(0)
     state = "IDLE"
     currentStack = []
@@ -128,10 +129,11 @@ def walkSemanticDict(file, createDictionnaryFunc, createEntityFunc, builder):
                 builder.add(current, "elements", elt)
     return dico
 
-def walkCategoryDict(file, builder):
-    fileName = ntpath.basename(file.name)
+def walkCategoryDict(filePath, builder):
+    fileName = ntpath.basename(filePath)
     dico = builder.createCategoryDictionnary(fileName.split(".")[0])
-    lines = reader.getFileLines(file)
+    text = files.readFile(filePath, detectEncoding=True)
+    lines = reader.splitLines(text)
     lines.pop(0)
     state = "IDLE"
     currentStack = []
@@ -163,16 +165,18 @@ def walkCategoryDict(file, builder):
                 builder.add(current, "elements", elt)
     return dico
 
-def walkMetaData(file, builder):
-    lines = reader.getFileLines(file, keepVoidLines=True)
+def walkMetaData(filePath, builder):
+    text = files.readFile(filePath, detectEncoding=True)
+    lines = reader.splitLines(text, keepVoidLines=True)
     lines.pop(0)
     data = []
     value = lines.pop(0).strip()
+    requiredDatas = {}
     if value: # required
-        data.append(builder.createMetaData("title", "String", value))
+        requiredDatas["title"] = value
     value = lines.pop(0).strip()
     if value: # required
-        data.append(builder.createMetaData("author", "String", value))
+        requiredDatas["author"] = value
     value = lines.pop(0).strip()
     if value:
         data.append(builder.createMetaData("narrator", "String", value))
@@ -181,10 +185,11 @@ def walkMetaData(file, builder):
         data.append(builder.createMetaData("recipient", "String", value))
     value = lines.pop(0).strip()
     if value: # required
-        data.append(builder.createMetaData("date", "Date", value))
+        requiredDatas["date"] = value
     value = lines.pop(0).strip()
-    if value:
-        data.append(builder.createMetaData("publicationName", "String", value))
+    if value: # required
+        requiredDatas["source"] = value
+        #data.append(builder.createMetaData("publicationName", "String", value))
     value = lines.pop(0).strip()
     if value:
         data.append(builder.createMetaData("publicationType", "String", value))
@@ -217,15 +222,20 @@ def walkMetaData(file, builder):
         line = lines.pop(0)
         if line.startswith("REF_EXT:"):
             associatedData.append(builder.createPResource(line[8:]))
-    return data, associatedData
+    return data, associatedData, requiredDatas
 
-def walkText(file, builder):
-    return builder.createPText(file.read())
+def walkText(filePath, builder):
+    fileName = ntpath.basename(filePath)
+    text = files.readFile(filePath, detectEncoding=True)
+    text = builder.createPText(text)
+    builder.set(text, "fileName", fileName)
+    return text
 
-def walkProject(file, builder):
-    fileName = ntpath.basename(file.name)
+def walkProject(filePath, builder):
+    fileName = ntpath.basename(filePath)
     project = builder.createProject(fileName.split(".")[0])
-    lines = reader.getFileLines(file)
+    text = files.readFile(filePath, detectEncoding=True)
+    lines = reader.splitLines(text)
     lines.pop(0)
     builder.set(project, "dicPath", lines.pop(0))
     builder.set(project, "ficPath", lines.pop(0))
@@ -239,17 +249,17 @@ def walkProject(file, builder):
             if textPath == "ENDFILE":
                 break
             # create PText
-            with open(textPath, "r") as textFile:
-                text = walk(textFile, builder)
+            text = walk(textPath, builder)
             # get ctx file and set augmentedDatas
             ctxPath = findCtxFile(textPath)
             if ctxPath:
-                with open(ctxPath, "r") as ctxFile:
-                    metaDatas, associatedDatas = walk(ctxFile, builder)
+                metaDatas, associatedDatas, requiredDatas = walk(ctxPath, builder)
                 for data in metaDatas:
                     builder.add(text, "metaDatas", data)
                 for data in associatedDatas:
                     builder.add(text, "associatedDatas", data)
+                for fieldName in requiredDatas:
+                    builder.set(text, fieldName, requiredDatas[fieldName])
             builder.add(defaultCorpus, "corpuses", text)
         else:
             break

@@ -1,0 +1,25 @@
+{% extends 'main/prospero/structure/base.html' %}
+{% block content %}
+	<div class="main_content ">
+		<section class="row project-view" data-object='{{ project|safe }}'>
+			<div class="col screenHeight">
+				{% include "main/prospero/project/corpusTablePanel.html" %}
+				{% include "main/prospero/project/dicoTablePanel.html" %}
+				{% include "main/prospero/project/infosTablePanel.html" %}
+			</div>
+			<div class="col screenHeight">
+				{% include "main/prospero/project/textTablePanel.html" %}
+			</div>
+			<div class="col screenHeight">
+				{% include "main/prospero/project/editorPanel.html" %}
+			</div>
+		</section>
+	</div>
+	<script>
+		var $projectView = $(".project-view");
+		var projectView = new PProjectView($projectView, $projectView.data("object"));
+		projectView.load();
+		var importModal = new ImportModal($(".import-modal"));
+		var approvalModal = new ApprovalModal($(".approval-modal"));
+	</script>
+{% endblock %}

@@ -1,5 +1,54 @@
-CP-1252 (latin I)
+	page projet
+		tri table par colonne
+		lazy loading
+OK		ne pas montrer les metadata calculation
+		système de tags
+		resizer panels
+		overflow texte
+	metadata
+OK		PText : mettre en dur title, date, source et author 
+		modification à la volée des metadata
+		ajout/suppression des metadata	
+	utilisateur GIT Josquin
+	css dropzone (Manu)
+	css scrollbar horizontal (Manu)
+	import
+OK		encodage (*1)
+		casse des ctx/txt
+		choix du corpus si plusieurs corpus
+		gestion erreurs (+transaction)
+		rechargement interface
+	export
+		modale d'export (choix du type d'export)
+		algo d'export
+OK		garder le nom des fichiers en base
+	page projets
+		dynamisation projets liste
+		dynamisation projets mosaïque
+		modale création projet
+		
+
+*1 :
 ISO-8859-1
+lecture fichier CP-1252 (latin I) ou ISO-8859-1
+	def is_utf8(self):
+	"""Return True if utf-8"""
+	try:
+	self.content.decode('utf-8')
+	except UnicodeDecodeError:
+	return False
+	else:
+	return True
+
+	De
+	Debaz Josquin
+	14:41
+	with open(txt, 'rb') as f:
+	buf = f.read()
+
+	https://github.com/josquindebaz/Tiresias/blob/master/mod/cleaning.py
+
+
 
 BESOIN JOSQUIN
 
@@ -8,8 +57,8 @@ BESOIN JOSQUIN
 BESOIN Manu
 
 	icon favicon
-	css scrollbar horizontal
-	dropzone
+	
+	
 
 REUNION JOSQUIN 10/06/2021
 

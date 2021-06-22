@@ -144,15 +144,20 @@ def findFilesWithExtension(folder, extension):
         regExp = regExp + '[' + c.upper() + c.lower() + ']'
     return filter(os.listdir(folder), regExp)
 
-def detectEncoding(filePath):
-    rawdata = open(filePath, 'rb').read()
+def findEncoding(filePath):
+    with open(filePath, 'rb') as file:
+        rawdata = file.read()
     result = chardet.detect(rawdata)
     return result['encoding']
 
-def detectEncodingAndRead(filePath):
-    encoding = detectEncoding(filePath)
-    file = codecs.open(filePath, "r", encoding)
-    text = file.read()
+def readFile(filePath, detectEncoding=False):
+    if detectEncoding:
+        encoding = findEncoding(filePath)
+        with codecs.open(filePath, "r", encoding) as file:
+            text = file.read()
+    else:
+        with codecs.open(filePath, "r") as file:
+            text = file.read()
     #print(type(text))
     # text = text.encode('utf-8')
     # print("done")
