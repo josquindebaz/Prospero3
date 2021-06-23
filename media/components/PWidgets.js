@@ -56,7 +56,7 @@ class PTextarea extends PInputField {
 	    this.fieldNode = this.node.find("textarea");
 	}
 }
-class PInput extends PInputField {
+class PTextInput extends PInputField {
 
 	constructor($node) {
 	    super($node);
@@ -65,6 +65,35 @@ class PInput extends PInputField {
 	initFieldNode() {
 	    this.fieldNode = this.node.find("input");
 	}
+}
+class PCheckInput extends PInputField {
+
+	constructor($node) {
+	    super($node);
+	    var self = this;
+	}
+	initFieldNode() {
+	    this.fieldNode = this.node.find("input").addBack('input');
+	}
+    getValue() {
+        return this.fieldNode.val();
+    }
+    setValue(value) {
+        this.fieldNode.val(value);
+    }
+    bindChange() {
+        var self = this;
+	    self.fieldNode.bind("click", function(event) {
+	        //event.preventDefault();
+	        event.stopPropagation();
+	        self.setAsValid();
+            self.notifyObservers({
+                name: "valueChanged",
+                target: self,
+                original: event
+            });
+	    });
+    }
 }
 class StateButton extends PObject {
 

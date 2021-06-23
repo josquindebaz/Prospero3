@@ -157,7 +157,7 @@ class CorporaTable extends PTable {
 	    var self = this;
 	    this.propertyName = "corpuses";
 	    this.addActionTrigger("create", $(".icon_link.plus", self.node), function() {
-	        console.log("create corpus");
+			newCorpusModal.show();
 	    });
 	    this.addActionTrigger("delete", $(".icon_link.moins", self.node), function() {
 	        var item = prospero.get(self.getSelection());
@@ -251,9 +251,25 @@ class TextTable extends PTable {
             var item = event.target;
             var selectionChanged = false;
             if (event.original && event.original.ctrlKey) {
-                console.log("multi");
+                //event.original.preventDefault();
+                //document.getSelection().removeAllRanges();
                 selectionChanged = true;
                 item.toggleSelected()
+            } else if (self.lastSelectedItem && event.original && event.original.shiftKey) {
+                //event.original.preventDefault();
+                //document.getSelection().removeAllRanges();
+                var indexes = [];
+                var $children = $("tbody", this.node).children();
+                indexes.push($children.index(item.node));
+                indexes.push($children.index(self.lastSelectedItem.node));
+                indexes = _.sortBy(indexes);
+                console.log("multi", indexes);
+                var $selected = $children.slice(indexes[0], indexes[1]+1);
+                selectionChanged = true;
+                self.deselectAll();
+                $selected.each(function(index, value) {
+                    prospero.get($(value)).setSelected();
+                });
             } else {
                 if (!item.isSelected() || self.getSelection().length > 1) {
                     selectionChanged = true;
@@ -268,6 +284,7 @@ class TextTable extends PTable {
                 else
                     self.hideActionTrigger("delete");
             }
+            self.lastSelectedItem = item;
         }
 	}
 }
@@ -275,10 +292,71 @@ class DicoTable extends PTable {
 
 	constructor($node, view) {
 	    super($node, view);
+	    var self = this;
 	    this.propertyName = "dictionnaries";
+	    this.addActionTrigger("delete", $(".icon_link.moins", self.node), function() {
+	        var items = prospero.getAll(self.getSelection());
+	        var itemDatas = [];
+	        $.each(items, function(index, item) {
+	            itemDatas.push(item.identity);
+	        });
+	        var approvalText = items.length > 1 ? "Do you really want to delete these dictionaries ?" : "Do you really want to delete this dictionary ?";
+	        approvalModal.show({
+	            title: "Confirmation",
+	            text: approvalText,
+	            callback : function() {
+                    prospero.ajax("deleteObject", itemDatas, function(data) {
+                        console.log("delete text", items);
+                        approvalModal.hide();
+                        $.each(items, function(index, item) {
+                            item.node.remove();
+                        });
+                        self.notifyObservers({name: "selectionChanged"});
+                    });
+	            }
+	        });
+	    });
 	}
 	createTableItem($node, data, columns) {
         return new DicoTableItem($node, data, columns);
+	}
+	receiveEvent(event) {
+        var self = this;
+        if (event.name == "click") {
+            var item = event.target;
+            var selectionChanged = false;
+            if (event.original && event.original.ctrlKey) {
+                selectionChanged = true;
+                item.toggleSelected()
+            } else if (self.lastSelectedItem && event.original && event.original.shiftKey) {
+                var indexes = [];
+                var $children = $("tbody", this.node).children();
+                indexes.push($children.index(item.node));
+                indexes.push($children.index(self.lastSelectedItem.node));
+                indexes = _.sortBy(indexes);
+                console.log("multi", indexes);
+                var $selected = $children.slice(indexes[0], indexes[1]+1);
+                selectionChanged = true;
+                self.deselectAll();
+                $selected.each(function(index, value) {
+                    prospero.get($(value)).setSelected();
+                });
+            } else {
+                if (!item.isSelected() || self.getSelection().length > 1) {
+                    selectionChanged = true;
+                    self.deselectAll();
+                    item.setSelected();
+                }
+            }
+            if (selectionChanged) {
+                self.notifyObservers({name: "selectionChanged"});
+                if (self.getSelection().length > 0)
+                    self.showActionTrigger("delete");
+                else
+                    self.hideActionTrigger("delete");
+            }
+            self.lastSelectedItem = item;
+        }
 	}
 }
 class PTableItem extends PDBObject {
@@ -336,6 +414,10 @@ class DicoTableItem extends PTableItem {
                 $td.html('<div class="form-check"><input class="form-check-input" type="checkbox" value=""><label class="form-check-label" for="">'+value+'</label></div>');
                 var id = $td.find(".form-check-input").uniqueId().attr("id");
                 $td.find(".form-check-label").attr("for", id);
+                var check = new PCheckInput($td.find("input"));
+                check.addObserver(function(event) {
+                    console.log("XXX C");
+                });
             } else
                 $td.text(value);
             self.node.append($td);

@@ -110,11 +110,12 @@ class Project(AugmentedData) :
     def getRealInstance(self):
         return self
 
-    def getDefaultCorpus(self):
+    def gotDefaultCorpus(self):
         try:
             return self.corpuses.get(name="main")
         except:
-            return self.corpuses.all()[0]
+            from main.importerP1 import builder2BD as builder
+            return builder.createPCorpus("main")
 
     def getDictionnaries(self):
         return self.dictionnaries.getRealInstance()
@@ -242,7 +243,7 @@ class Dictionnary(DictPackage) :
             "values" : {
                 "name" : self.name,
                 "author" : "John Doe",
-                "type" : "Lexical"
+                "type" : self.type
             }
         }
 

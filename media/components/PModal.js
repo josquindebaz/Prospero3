@@ -52,9 +52,11 @@ class ImportModal extends PModal {
                                     if (!data.serverError) {
                                         var lock = projectView.corporaTable.load(projectView.data);
                                         prospero.wait(lock, function() {
-                                            self.corpus = prospero.getPDBObject(self.corpus.identity, projectView.corporaTable.node); // reload
-                                            var $corpus = self.corpus ? self.corpus.node : projectView.corporaTable.getItems().eq(0);
-                                            projectView.corporaTable.setSelection($corpus);
+                                            if (self.corpus) {
+                                                self.corpus = prospero.getPDBObject(self.corpus.identity, projectView.corporaTable.node); // reload
+                                                var $corpus = self.corpus ? self.corpus.node : projectView.corporaTable.getItems().eq(0);
+                                                projectView.corporaTable.setSelection($corpus);
+                                            }
                                             self.hide();
                                         });
 									} else {
@@ -222,7 +224,7 @@ class NewCorpusModal extends PModal {
 	constructor($node) {
 	    super($node);
 	    var self = this;
-		self.corpusNameInput = new PInput(self.node.find(".corpus-name-input"));
+		self.corpusNameInput = new PTextInput(self.node.find(".corpus-name-input"));
 		self.validateButton = new PButton(self.node.find("[action-name=create]"));
 		self.validateButton.addObserver(function(event) {
 		    console.log(self.corpusNameInput.getValue());
@@ -257,6 +259,7 @@ class NewCorpusModal extends PModal {
 		});
 	}
 	show() {
+	    this.corpusNameInput.setValue("");
 	    super.show();
 	}
 }

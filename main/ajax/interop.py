@@ -6,12 +6,10 @@ from main.importerP1 import importer
 from main.helpers import frontend, files
 
 def importData(request, data, results):
-    print(data)
     folder = files.gotFolder(settings.MEDIA_ROOT + data["filePath"])
-
     try:
         project = frontend.getBDObject(data["project"])
-        corpus = frontend.getBDObject(data["corpus"])
+        corpus = frontend.getBDObject(data["corpus"]) if data["corpus"] != None else None
         createdObjects = importer.importData(project, folder, corpus, builder)
         createdDatas = {
             "LexicalDictionaries" : 0,

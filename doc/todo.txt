@@ -1,21 +1,18 @@
 	mettre un trello
 	page projet
 		tri table par colonne
-		multi-sélection maj
+OK		multi-sélection maj
 		lazy loading
 OK		ne pas montrer les metadata calculation
 		système de tags
-		resizer panels
-		overflow texte (Manu)
+		resizer panels		
 OK		multi-delete
-WIP		delete dico
+OK		delete dico
 	metadata
 OK		PText : mettre en dur title, date, source et author 
 		modification à la volée des metadata
 		ajout/suppression des metadata	
 	utilisateur GIT Josquin
-	css dropzone (Manu)
-	css scrollbar horizontal (Manu)
 OK	import
 OK		encodage (*1)
 OK		casse des ctx/txt
@@ -36,8 +33,16 @@ OK		par pdf
 OK		par txt
 OK	modale création corpus
 	bouton avec spinner
-		
 
+MANU :
+	overflow texte (Manu)
+	css dropzone (Manu)
+	css scrollbar horizontal (Manu)
+	question multi-select shift : 
+		css user-select: none
+		document.getSelection().removeAllRanges();
+		event.original.preventDefault();
+		=> https://stackoverflow.com/questions/1527751/disable-text-selection-while-pressing-shift
 *1 :
 ISO-8859-1
 lecture fichier CP-1252 (latin I) ou ISO-8859-1

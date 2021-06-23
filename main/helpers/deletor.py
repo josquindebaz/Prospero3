@@ -36,32 +36,48 @@ class PDeletionVisitor:
     def visitAssociatedData(self, obj):
         obj.delete()
 
+    def visitDictElement(self, obj):
+        obj.delete()
+
     def visitDictPackage(self, obj):
-        pass
+        for element in obj.elements.all():
+            self.delete(element)
+        obj.delete()
 
     def visitCollectionDictionnary(self, obj):
-        pass
+        for element in obj.elements.all():
+            self.delete(element)
+        obj.delete()
 
     def visitCategoryDictionnary(self, obj):
-        pass
+        for element in obj.elements.all():
+            self.delete(element)
+        obj.delete()
 
     def visitFictionDictionnary(self, obj):
-        pass
+        for element in obj.elements.all():
+            self.delete(element)
+        obj.delete()
 
     def visitLexicalDictionnary(self, obj):
-        pass
-
-    def visitDictElement(self, obj):
-        pass
+        for element in obj.elements.all():
+            self.delete(element)
+        obj.delete()
 
     def visitCategory(self, obj):
-        pass
+        for element in obj.elements.all():
+            self.delete(element)
+        obj.delete()
 
     def visitCollection(self, obj):
-        pass
+        for element in obj.elements.all():
+            self.delete(element)
+        obj.delete()
 
     def visitFiction(self, obj):
-        pass
+        for element in obj.elements.all():
+            self.delete(element)
+        obj.delete()
 
     def visitPUri(self, obj):
         pass

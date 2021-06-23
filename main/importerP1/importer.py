@@ -37,7 +37,7 @@ def importData(project, folder, corpus, builder):
                 for fieldName in requiredDatas:
                     builder.set(text, fieldName, requiredDatas[fieldName])
             if corpus == None:
-                corpus = project.getDefaultCorpus()
+                corpus = project.gotDefaultCorpus()
                 importedObjects.append(corpus)
             corpus.texts.add(text)
     return importedObjects

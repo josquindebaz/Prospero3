@@ -9,22 +9,22 @@ def set(parent, propertyName, elt):
     parent.save()
 
 def createFictionDictionnary(name):
-    obj = FictionDictionnary(name=name)
+    obj = FictionDictionnary(name=name, type="FictionDict")
     obj.save()
     return obj
 
 def createCollectionDictionnary(name):
-    obj = CollectionDictionnary(name=name)
+    obj = CollectionDictionnary(name=name, type="CollectionDict")
     obj.save()
     return obj
 
 def createCategoryDictionnary(name):
-    obj = CategoryDictionnary(name=name)
+    obj = CategoryDictionnary(name=name, type="CategoryDict")
     obj.save()
     return obj
 
 def createLexicalDictionnary(name, language):
-    obj = LexicalDictionnary(name=name, language=language)
+    obj = LexicalDictionnary(name=name, language=language, type="SyntaxicDict")
     obj.save()
     return obj
 

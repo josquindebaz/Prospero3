@@ -1,3 +1,11 @@
 .hidden {
     display : none !important;
 }
+.text-table tr,
+.corpora-table tr,
+.dico-table tr {
+            user-select: none; /* CSS3 (little to no support) */
+        -ms-user-select: none; /* IE 10+ */
+       -moz-user-select: none; /* Gecko (Firefox) */
+    -webkit-user-select: none; /* Webkit (Safari, Chrome) */
+}
