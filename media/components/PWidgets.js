@@ -21,13 +21,23 @@ class PInputField extends PObject {
     bindChange() {
         var self = this;
 	    self.fieldNode.bind("keyup blur change input", function(event) {
-	        console.log("change");
+	        self.setAsValid();
             self.notifyObservers({
                 name: "valueChanged",
                 target: self,
                 original: event
             });
 	    });
+    }
+    setAsValid() {
+    }
+    setAsInvalid(message) {
+        if (message)
+            this.node.find(".invalid-feedback").text(message);
+        this.fieldNode.addClass("is-invalid");
+    }
+    setAsValid() {
+        this.fieldNode.removeClass("is-invalid");
     }
     getValue() {
         return this.fieldNode.val();
@@ -44,6 +54,16 @@ class PTextarea extends PInputField {
 	}
 	initFieldNode() {
 	    this.fieldNode = this.node.find("textarea");
+	}
+}
+class PInput extends PInputField {
+
+	constructor($node) {
+	    super($node);
+	    var self = this;
+	}
+	initFieldNode() {
+	    this.fieldNode = this.node.find("input");
 	}
 }
 class StateButton extends PObject {

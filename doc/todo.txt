@@ -8,7 +8,7 @@ OK		ne pas montrer les metadata calculation
 		resizer panels
 		overflow texte (Manu)
 OK		multi-delete
-		delete dico
+WIP		delete dico
 	metadata
 OK		PText : mettre en dur title, date, source et author 
 		modification à la volée des metadata
@@ -34,7 +34,7 @@ OK	modale création text
 OK		par textarea
 OK		par pdf
 OK		par txt
-	modale création corpus
+OK	modale création corpus
 	bouton avec spinner
 		
 

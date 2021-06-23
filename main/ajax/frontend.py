@@ -61,3 +61,21 @@ def createText(request, data, results):
     if text:
         corpus.texts.add(text)
         results["text"] = text.serializeAsTableItem()
+
+def createCorpus(request, data, results):
+    project = frontend.getBDObject(data["project"])
+    fields = data["fields"]
+    nameField = fields["name"]
+    name = nameField["value"]
+    errors = {}
+    if project.corpuses.filter(name=name).count() > 0:
+        nameField["error"] = "Corpus exists with this name"
+        errors["name"] = nameField
+    if errors:
+        results["serverError"] = {
+            "fields" : errors
+        }
+    else:
+        corpus = builder.createPCorpus(name)
+        project.corpuses.add(corpus)
+        results["corpus"] = corpus.serializeAsTableItem()

@@ -2,7 +2,7 @@ class PModal extends PObject {
 
 	constructor($node) {
 	    super($node)
-	    this.uniqueId = this.node.uniqueId().attr("id");
+	    this.uniqueId = this.uniqueId();
 	}
 	show() {
 	    this.node.modal("show");
@@ -209,18 +209,54 @@ class NewTextModal extends PModal {
 	}
 	show() {
 	    this.setStateReady();
-        var txtCorpus = 'Un corpus "main" sera créé si des textes sont importés';
         var corpus = prospero.get(projectView.corporaTable.getSelection());
-        if (corpus != null)
-            txtCorpus = 'Les textes importés seront ajoutés au corpus courant "'+corpus.data.name+'"';
-        else {
-            corpus = prospero.get(projectView.corporaTable.getItems().eq(0));
-            if (corpus != null)
-                txtCorpus = 'Les textes importés seront ajoutés au corpus suivant : "'+corpus.data.name+'"';
-        }
+        var txtCorpus = 'Le texte sera ajouté au corpus courant "'+corpus.data.name+'"';
         var $txtCorpus = $(".txt-corpus", this.node);
         $txtCorpus.text(txtCorpus);
         this.corpus = corpus;
+	    super.show();
+	}
+}
+class NewCorpusModal extends PModal {
+
+	constructor($node) {
+	    super($node);
+	    var self = this;
+		self.corpusNameInput = new PInput(self.node.find(".corpus-name-input"));
+		self.validateButton = new PButton(self.node.find("[action-name=create]"));
+		self.validateButton.addObserver(function(event) {
+		    console.log(self.corpusNameInput.getValue());
+            prospero.ajax(
+                "createCorpus",
+                {
+                    project : projectView.data,
+                    fields : {
+                        name : {
+                            value: self.corpusNameInput.getValue(),
+                            id: self.corpusNameInput.uniqueId()
+                        }
+                    }
+                },
+                function(data) {
+                    if (!data.serverError) {
+                        var lock = projectView.corporaTable.load(projectView.data);
+                        prospero.wait(lock, function() {
+                            var $corpusItem = projectView.corporaTable.getItem(data.corpus.identity)
+                            projectView.corporaTable.setSelection($corpusItem);
+                        });
+                        self.hide();
+                    } else {
+                        var fields = data.serverError.fields;
+                        $.each(fields, function(key, value) {
+                            var field = prospero.get(self.node.find("#"+value.id));
+                            field.setAsInvalid(value.error);
+                        });
+                    }
+                }
+            );
+		});
+	}
+	show() {
 	    super.show();
 	}
 }

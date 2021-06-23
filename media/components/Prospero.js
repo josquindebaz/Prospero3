@@ -13,6 +13,9 @@ class PObject {
 	        observer(event);
 	    })
 	}
+	uniqueId() {
+        return this.node.uniqueId().attr("id");
+	}
 }
 class PDBObject extends PObject {
 
