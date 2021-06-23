@@ -16,10 +16,11 @@ class PObject {
 }
 class PDBObject extends PObject {
 
-	constructor($node, data) {
+	constructor($node, identity) {
 	    super($node);
-	    $node.attr("object-model", data.model);
-	    $node.attr("object-id", data.id);
+	    this.identity = identity;
+	    $node.attr("object-model", identity.model);
+	    $node.attr("object-id", identity.id);
 	}
 }
 class Prospero {
@@ -48,8 +49,28 @@ class Prospero {
 	get($node) {
 	    return $node.data("PObject");
 	}
-	getPDBObject(data) {
-	    return $('[object-model='+data.model+'][object-id='+data.id+']');
+	getAll($nodes) {
+	    var result = [];
+	    $nodes.each(function(index, value) {
+	        result.push($(value).data("PObject"));
+	    });
+	    return result;
+	}
+	getPDBObject(data, $container) {
+	    return this.get(this.getPDBWidget(data, $container));
+	}
+	getPDBWidget(data, $container) {
+	    if ($container == null)
+	        return $('[object-model='+data.model+'][object-id='+data.id+']');
+	     else
+	        return $('[object-model='+data.model+'][object-id='+data.id+']', $container);
+	}
+	wait(locks, callback) {
+        if (!Array.isArray(locks))
+            locks = [locks];
+        $.when.apply($,locks).then(function() {
+            callback();
+        });
 	}
     uploadFile(formData, callback) {
     	$.ajax("/fileUpload", {
@@ -73,5 +94,8 @@ class Prospero {
              .replace(/>/g, "&gt;")
              .replace(/"/g, "&quot;")
              .replace(/'/g, "&#039;");
+    }
+    onload(callback) {
+		$(window).on("load", callback);
     }
 }

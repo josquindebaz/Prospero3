@@ -1,10 +1,14 @@
+	mettre un trello
 	page projet
 		tri table par colonne
+		multi-sélection maj
 		lazy loading
 OK		ne pas montrer les metadata calculation
 		système de tags
 		resizer panels
-		overflow texte
+		overflow texte (Manu)
+OK		multi-delete
+		delete dico
 	metadata
 OK		PText : mettre en dur title, date, source et author 
 		modification à la volée des metadata
@@ -14,18 +18,24 @@ OK		PText : mettre en dur title, date, source et author
 	css scrollbar horizontal (Manu)
 	import
 OK		encodage (*1)
-		casse des ctx/txt
-		choix du corpus si plusieurs corpus
-		gestion erreurs (+transaction)
-		rechargement interface
+OK		casse des ctx/txt
+OK		préciser le corpus utilisé
+OK		gestion erreurs (+transaction)
+OK		rechargement interface
 	export
 		modale d'export (choix du type d'export)
-		algo d'export
+		export json
+		algo d'export zip
 OK		garder le nom des fichiers en base
 	page projets
 		dynamisation projets liste
 		dynamisation projets mosaïque
-		modale création projet
+	modale création projet
+OK		par textarea
+		par pdf
+		par txt
+	modale création corpus
+	bouton avec spinner
 		
 
 *1 :

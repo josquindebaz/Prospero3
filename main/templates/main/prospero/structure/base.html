@@ -23,8 +23,8 @@
         <script src="{{ MEDIA_URL }}components/tool_dropzone.js"></script>
         <script src="{{ MEDIA_URL }}components/Prospero.js"></script>
         <script src="{{ MEDIA_URL }}components/PModal.js"></script>
-        <script src="{{ MEDIA_URL }}components/ImportModal.js"></script>
         <script src="{{ MEDIA_URL }}components/PProjectView.js"></script>
+        <script src="{{ MEDIA_URL }}components/PWidgets.js"></script>
         <script>
             var prospero = new Prospero();
         </script>
@@ -32,6 +32,7 @@
     <body>
         {% include "main/prospero/structure/modals/import-modal.html" %}
         {% include "main/prospero/structure/modals/approval-modal.html" %}
+        {% include "main/prospero/structure/modals/new-text-modal.html" %}
         <main>
             <section class="side_container">
                 {% include "main/prospero/structure/sidebar.html" %}

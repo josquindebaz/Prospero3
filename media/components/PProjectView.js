@@ -30,10 +30,10 @@ class PProjectView extends PObject {
 	        if (event.name == "selectionChanged") {
                 var item = prospero.get(self.corporaTable.getSelection());
                 if (item) {
-                    self.textTable.load(item.data);
+                    self.textTable.load(item.identity);
                     console.log("open corpus infos pane");
                     self.editorPanel.switchTo("corpusEditor");
-                    self.editorPanel.getPanel("corpusEditor").load(item.data);
+                    self.editorPanel.getPanel("corpusEditor").load(item.identity);
                 } else {
                     self.textTable.load();
                     self.editorPanel.switchTo();
@@ -44,7 +44,7 @@ class PProjectView extends PObject {
                 var $items = this.textTable.getSelection();
                 if ($items.length == 1) {
                     var item = prospero.get($items.eq(0));
-                    self.editorPanel.getPanel("textEditor").load(item.data);
+                    self.editorPanel.getPanel("textEditor").load(item.identity);
                     console.log("open text edition pane");
                     self.editorPanel.switchTo("textEditor");
                 } else if ($items.length > 1) {
@@ -98,6 +98,7 @@ class PTable extends PObject {
 	}
 	load(data) {
         var self = this;
+        var lock = $.Deferred();
         var $tbody = $("tbody", self.node);
         if (data) {
             this.data = data;
@@ -113,20 +114,31 @@ class PTable extends PObject {
                         self.receiveEvent(event);
                     });
                 });
+                lock.resolve();
             });
         } else {
             $tbody.empty();
+            lock.resolve();
         }
+        return lock;
 	}
-	createTableItem($node, data, columns) {
-        return new PTableItem($node, data, columns);
+	createTableItem($node, identity, columns) {
+        return new PTableItem($node, identity, columns);
 	}
 	getItems() {
 	    return $("tbody", self.node).children();
 	}
+	getItem(data) {
+        return prospero.getPDBWidget(data, this.node);
+	}
 	setSelection($item) {
 	    var item = prospero.get($item);
-	    item.setSelected();
+	    //item.setSelected();
+        item.notifyObservers({
+            name: "click",
+            target: item,
+            original: null
+        });
 	}
 	getSelection() {
 	    var $selected = $("tbody", this.node).children(".active");
@@ -153,10 +165,10 @@ class CorporaTable extends PTable {
 	            title: "Confirmation",
 	            text: "Do you really want to delete this corpus ?",
 	            callback : function() {
-                    prospero.ajax("deleteObject", item.data, function(data) {
-                        console.log("delete corpus", item.data);
+                    prospero.ajax("deleteObject", item.identity, function(data) {
+                        console.log("delete corpus", item.identity);
                         approvalModal.hide();
-                        prospero.getPDBObject(item.data).remove();
+                        prospero.getPDBWidget(item.identity).remove();
                         self.notifyObservers({name: "selectionChanged"});
                     });
 	            }
@@ -164,8 +176,9 @@ class CorporaTable extends PTable {
 	    });
 	}
 	load(data) {
-	    super.load(data);
+	    var lock = super.load(data);
 	    this.showActionTrigger("create");
+	    return lock;
 	}
 	receiveEvent(event) {
         var self = this;
@@ -190,18 +203,36 @@ class TextTable extends PTable {
 	    var self = this;
 	    this.propertyName = "texts";
 	    this.addActionTrigger("create", $(".icon_link.plus", self.node), function() {
-	        console.log("create text");
+	        newTextModal.show({
+	            title: "Create text",
+	            text: "",
+	            callback : function() {
+                    prospero.ajax("createText", item.data, function(data) {
+                        console.log("create text", item.data);
+                        newTextModal.hide();
+                        //prospero.getPDBWidget(item.data).remove();
+                        //self.notifyObservers({name: "selectionChanged"});
+                    });
+	            }
+	        });
 	    });
 	    this.addActionTrigger("delete", $(".icon_link.moins", self.node), function() {
-	        var item = prospero.get(self.getSelection());
+	        var items = prospero.getAll(self.getSelection());
+	        var itemDatas = [];
+	        $.each(items, function(index, item) {
+	            itemDatas.push(item.identity);
+	        });
+	        var approvalText = items.length > 1 ? "Do you really want to delete these texts ?" : "Do you really want to delete this text ?";
 	        approvalModal.show({
 	            title: "Confirmation",
-	            text: "Do you really want to delete this text ?",
+	            text: approvalText,
 	            callback : function() {
-                    prospero.ajax("deleteObject", item.data, function(data) {
-                        console.log("delete text", item.data);
+                    prospero.ajax("deleteObject", itemDatas, function(data) {
+                        console.log("delete text", items);
                         approvalModal.hide();
-                        prospero.getPDBObject(item.data).remove();
+                        $.each(items, function(index, item) {
+                            item.node.remove();
+                        });
                         self.notifyObservers({name: "selectionChanged"});
                     });
 	            }
@@ -209,16 +240,17 @@ class TextTable extends PTable {
 	    });
 	}
 	load(data) {
-	    super.load(data);
+	    var lock = super.load(data);
 	    this.showActionTrigger("create");
 	    this.hideActionTrigger("delete");
+	    return lock;
 	}
 	receiveEvent(event) {
         var self = this;
         if (event.name == "click") {
             var item = event.target;
             var selectionChanged = false;
-            if (event.original.ctrlKey) {
+            if (event.original && event.original.ctrlKey) {
                 console.log("multi");
                 selectionChanged = true;
                 item.toggleSelected()
@@ -251,9 +283,8 @@ class DicoTable extends PTable {
 }
 class PTableItem extends PDBObject {
 
-	constructor($node, data, columns) {
-	    super($node, data);
-	    this.data = data;
+	constructor($node, identity, columns) {
+	    super($node, identity);
 	    var self = this;
 	    self.columns = columns;
 	    $node.bind("click", function(event) {
@@ -266,6 +297,7 @@ class PTableItem extends PDBObject {
 	}
 	load(data) {
         var self = this;
+        this.data = data;
         $.each(self.columns, function(index, column) {
             var value = data[column];
             if (value == null)
@@ -420,22 +452,5 @@ class TextSelectionsEditor extends PObject {
             $text.empty();
             $text.text(data.object.text);
         });
-	}
-}
-class StateButton extends PObject {
-
-	constructor($node) {
-	    super($node);
-	    var self = this;
-	    $(".state-button-state", self.node).bind("click", function() {
-	        var action = $(this).text().trim();
-	        self.notifyObservers({name: "click", action: action});
-	    });
-
-	    $(".dropdown-item", self.node).bind("click", function() {
-	        var action = $(this).text().trim();
-	        $(".state-button-state", self.node).text(action);
-	        self.notifyObservers({name: "click", action: action});
-	    });
 	}
 }

@@ -21,5 +21,17 @@
 		projectView.load();
 		var importModal = new ImportModal($(".import-modal"));
 		var approvalModal = new ApprovalModal($(".approval-modal"));
+		var newTextModal = new NewTextModal($(".new-text-modal"));
+		/*
+		prospero.onload(function() {
+			newTextModal.show({
+				title: "Create text",
+				text: "",
+				callback : function() {
+					console.log("create text");
+				}
+			});
+		});
+		*/
 	</script>
 {% endblock %}

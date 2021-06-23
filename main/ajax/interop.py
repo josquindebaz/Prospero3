@@ -8,9 +8,11 @@ from main.helpers import frontend, files
 def importData(request, data, results):
     print(data)
     folder = files.gotFolder(settings.MEDIA_ROOT + data["filePath"])
+
     try:
         project = frontend.getBDObject(data["project"])
-        createdObjects = importer.importData(project, folder, builder)
+        corpus = frontend.getBDObject(data["corpus"])
+        createdObjects = importer.importData(project, folder, corpus, builder)
         createdDatas = {
             "LexicalDictionaries" : 0,
             "CategoryDictionaries": 0,

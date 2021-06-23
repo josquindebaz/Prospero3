@@ -3,8 +3,7 @@ from main.helpers import files
 from main.importerP1 import reader
 
 # import all P1 files in folder (unzip on the fly root zips)
-def importData(project, folder, builder):
-    defaultCorpus = project.getDefaultCorpus()
+def importData(project, folder, corpus, builder):
     importedObjects = []
     # unzip if necessary
     for file in files.getAllFiles(folder):
@@ -37,14 +36,17 @@ def importData(project, folder, builder):
                     builder.add(text, "associatedDatas", data)
                 for fieldName in requiredDatas:
                     builder.set(text, fieldName, requiredDatas[fieldName])
-            defaultCorpus.texts.add(text)
+            if corpus == None:
+                corpus = project.getDefaultCorpus()
+                importedObjects.append(corpus)
+            corpus.texts.add(text)
     return importedObjects
 
 def findCtxFile(txtFile):
     fileName = files.getFileName(txtFile, False)
     folder = files.gotFolder(txtFile)
     for file in files.findFilesWithExtension(folder, "ctx"):
-        if files.getFileName(file, False) == fileName:
+        if files.getFileName(file, False).lower() == fileName.lower():
             return folder+file
 
 p1CatTypeTranslation = {
