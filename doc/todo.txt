@@ -16,7 +16,7 @@ OK		PText : mettre en dur title, date, source et author
 	utilisateur GIT Josquin
 	css dropzone (Manu)
 	css scrollbar horizontal (Manu)
-	import
+OK	import
 OK		encodage (*1)
 OK		casse des ctx/txt
 OK		préciser le corpus utilisé
@@ -30,10 +30,10 @@ OK		garder le nom des fichiers en base
 	page projets
 		dynamisation projets liste
 		dynamisation projets mosaïque
-	modale création projet
+OK	modale création text
 OK		par textarea
-		par pdf
-		par txt
+OK		par pdf
+OK		par txt
 	modale création corpus
 	bouton avec spinner
 		

@@ -25,29 +25,39 @@ def deleteObject(request, data, results):
     print("delete", objects)
     for obj in objects:
         deletor.delete(obj)
-        """
-        if type(obj) == PCorpus:
-            for text in obj.texts.all():
-                text.delete()
-        obj.delete()
-        """
 
 def createText(request, data, results):
     print("createText", data)
+    corpus = frontend.getBDObject(data["corpus"])
     text = None
     if "text" in data:
         text = data["text"]
         text = builder.createPText(text)
     else:
-        filePath = data["filePath"]
-        folder = files.gotFolder(settings.MEDIA_ROOT + filePath)
+        filePath = settings.MEDIA_ROOT + data["filePath"]
+        folder = files.gotFolder(filePath)
         try:
-            print("TODO pdf extraction")
-            text = builder.createPText("TODO pdf extraction")
+            ext = files.getFileExtension(filePath).lower()
+            if ext == "txt":
+                text = builder.createPText(files.readFile(filePath, detectEncoding=True))
+            elif ext == "pdf":
+                print("TODO pdf extraction")
+                pdftotextAvailable = False
+                try:
+                    import pdftotext
+                    pdftotextAvailable = True
+                except:
+                    pass
+                if pdftotextAvailable:
+                    with open(filePath, "rb") as f:
+                        pdf = pdftotext.PDF(f)
+                        txt = "\n\n".join(pdf)
+                        text = builder.createPText(txt)
+                else:
+                    text = builder.createPText("pdf extraction impossible, pdftotext not available")
         except Exception as e:
             results["serverError"] = str(e)
         files.deleteFile(folder)
     if text:
-        corpus = frontend.getBDObject(data["corpus"])
         corpus.texts.add(text)
         results["text"] = text.serializeAsTableItem()

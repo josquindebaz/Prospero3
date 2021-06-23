@@ -137,13 +137,13 @@ class NewTextModal extends PModal {
                 "createText",
                 {
                     text : self.textarea.getValue(),
-                    corpus : prospero.get(projectView.corporaTable.getSelection()).data
+                    corpus : self.corpus.identity
                 },
                 function(data) {
                     if (!data.serverError) {
                         var item = prospero.get(projectView.corporaTable.getSelection());
                         if (item) {
-                            var lock = projectView.textTable.load(item.data);
+                            var lock = projectView.textTable.load(item.identity);
                             prospero.wait(lock, function() {
                                 var $textItem = projectView.textTable.getItem(data.text.identity)
                                 projectView.textTable.setSelection($textItem);
@@ -170,12 +170,18 @@ class NewTextModal extends PModal {
                                 "createText",
                                 {
 									filePath : data.filePath,
-									corpus : prospero.get(projectView.corporaTable.getSelection()).data
+									corpus : self.corpus.identity
 								},
                                 function(data) {
-                                    if (!data.serverError) {
-									    self.hide();
-									}
+                                    var item = prospero.get(projectView.corporaTable.getSelection());
+                                    if (item) {
+                                        var lock = projectView.textTable.load(item.identity);
+                                        prospero.wait(lock, function() {
+                                            var $textItem = projectView.textTable.getItem(data.text.identity)
+                                            projectView.textTable.setSelection($textItem);
+                                        });
+                                    }
+                                    self.hide();
                                 }
                             );
 						} else {
@@ -195,8 +201,26 @@ class NewTextModal extends PModal {
 			}
 		);
 	}
+	setStateReady() {
+        this.textarea.setValue("");
+        this.node.find(".close-button").removeClass("hidden");
+        this.node.find(".spinner-panel").addClass("hidden");
+        //this.node.find(".error-feedback-pane").addClass("hidden");
+	}
 	show() {
-	    this.textarea.setValue("");
+	    this.setStateReady();
+        var txtCorpus = 'Un corpus "main" sera créé si des textes sont importés';
+        var corpus = prospero.get(projectView.corporaTable.getSelection());
+        if (corpus != null)
+            txtCorpus = 'Les textes importés seront ajoutés au corpus courant "'+corpus.data.name+'"';
+        else {
+            corpus = prospero.get(projectView.corporaTable.getItems().eq(0));
+            if (corpus != null)
+                txtCorpus = 'Les textes importés seront ajoutés au corpus suivant : "'+corpus.data.name+'"';
+        }
+        var $txtCorpus = $(".txt-corpus", this.node);
+        $txtCorpus.text(txtCorpus);
+        this.corpus = corpus;
 	    super.show();
 	}
 }
