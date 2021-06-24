@@ -84,6 +84,12 @@ class AugmentedData(PObject):
             res.append(elt.getRealInstance())
         return res
 
+    def getDateObject(self):
+        try:
+            return datetime.strptime(self.date, '%d/%m/%Y')
+        except:
+            return None
+
     def getDataValue(self, dataName, rawValue=True):
         try:
             metadata = self.metaDatas.get(name=dataName)
@@ -317,6 +323,7 @@ class PResource(PObject) :
 class PFile(PResource) :
 
     file = models.FileField(blank=True, upload_to="upload")
+    pathP1 = models.CharField(blank=True, max_length=255)
 
     def __str__(self):
         return "[" + str(self.id) + ":PFile] " + self.file.name

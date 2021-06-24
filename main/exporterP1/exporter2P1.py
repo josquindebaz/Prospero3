@@ -1,6 +1,6 @@
 from datetime import datetime
 from django.contrib.sessions.backends import file
-from main.helpers import files, normalisation
+from main.helpers import files, cloud
 
 bdCatTypeTranslation = {
     "ENTITY" : "ENTITE",
@@ -12,11 +12,11 @@ bdCatTypeTranslation = {
 #fileEncoding = "ISO-8859-1"
 fileEncoding = "utf-8"
 
-def export(rootFolder, objects):
+def export(rootFolder, objects, project):
     fileNameNoExt = "P1Export-"+datetime.now().strftime('%d-%m-%Y')
     folder = rootFolder + fileNameNoExt + '/'
     files.gotFolder(folder)
-    visitor = PVisitor(folder)
+    visitor = PVisitor(folder, project)
     for obj in objects:
         visitor.serialize(obj)
     fileName = fileNameNoExt + ".zip"
@@ -29,24 +29,33 @@ def export(rootFolder, objects):
 
 class PVisitor:
 
-    def __init__(self, rootFolder, *args, **kwargs):
+    def __init__(self, rootFolder, project, *args, **kwargs):
         self.rootFolder = rootFolder
+        self.project = project
+        self.projectDataFolder = cloud.gotProjectDataFolder(project)
 
     def getFilePath(self, obj, fileName):
         relPath = ""
         if obj.filePath:
             relPath = obj.filePath
         filePath = self.rootFolder + relPath + fileName
-        filePath = normalisation.findAvailableAbsolutePath(filePath)
+        filePath = cloud.findAvailableAbsolutePath(filePath)
         return filePath
 
     def gotPTextFilename(self, pText):
         if pText.fileName:
             return pText.fileName
         else:
-            fileName = "XXX.txt"
-            pText.fileName = fileName
-            pText.save()
+            fileName = pText.author[:5]
+            date = pText.getDateObject()
+            if date:
+                fileName = fileName + date.strftime('%Y%m%d')
+            if fileName:
+                fileName = fileName + '-'
+            fileName = fileName + str(pText.id) + ".txt"
+
+            #pText.fileName = fileName
+            #pText.save()
             return fileName
 
     def none2VoidString(self, value):
@@ -96,6 +105,8 @@ class PVisitor:
         ctxData = '\n'.join(ctxData)
         files.writeFile(ctxFilePath, ctxData, fileEncoding)
         # TODO associatedDatas
+        for data in obj.associatedDatas.all():
+            self.serialize(data)
 
     def visitCategoryDictionnary(self, obj):
         filePath = self.getFilePath(obj, obj.name + ".cat")
@@ -173,7 +184,12 @@ class PVisitor:
         self.lines.append(obj.value)
 
     def visitPUri(self, obj):
-        return None
+        pass
 
     def visitPFile(self, obj):
-        return None
+        if obj.file:
+            source = obj.file.path.replace('\\', '/')
+            relPath = source[len(self.projectDataFolder):]
+            target = self.rootFolder + relPath
+            if not files.exists(target):
+                files.copyFile(source, target)

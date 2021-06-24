@@ -3,7 +3,7 @@ from main.models import *
 from django.template import loader
 from main.importerP1 import builder2BD as builder
 from main.importerP1 import importer
-from main.helpers import frontend, files, normalisation
+from main.helpers import frontend, files, cloud
 from datetime import datetime
 
 def importData(request, data, results):
@@ -50,11 +50,11 @@ def exportData(request, data, results):
             objects.append(frontend.getBDObject(identity))
     print("EXPORT")
     print(objects)
-    fileFolder = normalisation.getStampedCloudFolder("export")
-    relativeUrlFolder = normalisation.getMediaRelativeUrl(fileFolder)
+    fileFolder = cloud.getStampedCloudFolder("export")
+    relativeUrlFolder = cloud.getMediaRelativeUrl(fileFolder)
     if exportType == "P1":
         from main.exporterP1 import exporter2P1 as exporter
-        zipFileName = exporter.export(fileFolder, objects)
+        zipFileName = exporter.export(fileFolder, objects, project)
         results["filePath"] = relativeUrlFolder + zipFileName
     else:
         from main.exporterP1 import jsonSerializer as exporter

@@ -61,7 +61,7 @@ def createDictPackage(name):
 def createDictElement(value):
     return reader.normalizeDictElementValue(value)
 
-def createPResource(uri):
+def createPResource(uri, importer):
     return uri
 
 def createFiction(name):

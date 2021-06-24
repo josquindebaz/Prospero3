@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from django.template import loader
 from main import ajax
 from django.views.decorators.csrf import csrf_exempt
-from main.helpers import normalisation, files
+from main.helpers import cloud, files
 import json, ntpath, time
 
 def createContext(request):
@@ -34,8 +34,8 @@ def fileUpload(request):
     if request.is_ajax() and request.method == 'POST':
         results = {}
 
-        fileFolder = normalisation.getStampedCloudFolder("upload")
-        relativeFileFolder = normalisation.getMediaRelativePath(fileFolder)
+        fileFolder = cloud.getStampedCloudFolder("upload")
+        relativeFileFolder = cloud.getMediaRelativePath(fileFolder)
         #timestamp = str(time.time())
         #relativeFileFolder = 'upload/'+timestamp+'/'
         #fileFolder = settings.MEDIA_ROOT + relativeFileFolder
@@ -43,7 +43,7 @@ def fileUpload(request):
         data = request.FILES['file']
         fileName = data.name
         filePath = fileFolder + fileName
-        filePath = normalisation.findAvailableAbsolutePath(filePath)
+        filePath = cloud.findAvailableAbsolutePath(filePath)
         with open(filePath, 'wb+') as destination:
             for chunk in data.chunks():
                 destination.write(chunk)

@@ -200,7 +200,13 @@ class PVisitor:
         }
 
     def visitPUri(self, obj):
-        return None
+        return {
+            "model": "PUri",
+            "uri": obj.uri
+        }
 
     def visitPFile(self, obj):
-        return None
+        return {
+            "model": "PFile",
+            "pathP1": obj.pathP1
+        }

@@ -2,7 +2,7 @@ import os, ntpath, time
 from main.helpers import files
 from prospero import settings
 
-# return the preferredAbsolutePath if file does not exist, 
+# return the preferredAbsolutePath if file does not exist,
 #     else return new path that does not exist
 def findAvailableAbsolutePath(preferredAbsolutePath):
     preferredAbsolutePath = preferredAbsolutePath.replace('\\', '/')
@@ -22,7 +22,7 @@ def findAvailableAbsolutePath(preferredAbsolutePath):
                 index = int(tab[len(tab)-1])+1
                 fileName = "_".join(tab[:len(tab)-1])
             except:
-                pass            
+                pass
         while os.path.isfile(fileFolder+fileName + "_" + str(index) + extension):
             index = index + 1
         fileName = fileName + "_" + str(index) + extension
@@ -40,3 +40,7 @@ def getMediaRelativePath(path):
 
 def getMediaRelativeUrl(path):
     return "/media_site/"+getMediaRelativePath(path)
+
+def gotProjectDataFolder(project):
+    folder = settings.MEDIA_ROOT + "projectData/" + project.name + "/"
+    return files.createFolder(folder)

@@ -1,5 +1,6 @@
 from main.importerP1 import reader
 from main.models import *
+from main.helpers import files
 
 def add(parent, propertyName, elt):
     getattr(parent, propertyName).add(elt)
@@ -46,9 +47,50 @@ def createDictElement(value):
     obj.save()
     return obj
 
-def createPResource(uri):
-    obj = PUri(uri=uri)
-    obj.save()
+def findFile(pathP1, rootFolder):
+    dirSeq = pathP1.replace("\\", "/").split("/")
+    if ":" in dirSeq[0]:
+        dirSeq = dirSeq[1:]
+    fileName = dirSeq[-1]
+    del dirSeq[-1]
+    while len(dirSeq) > 0:
+        pathCorrect = True
+        currentFolder = rootFolder
+        for folder in dirSeq:
+            currentFolder = currentFolder + folder + "/"
+            if not files.exists(currentFolder):
+                pathCorrect = False
+                break
+        if pathCorrect:
+            filePath = currentFolder + fileName
+            if files.exists(filePath):
+                return {
+                    "filePath" : filePath,
+                    "relPath" : "/".join(dirSeq) + "/" + fileName
+                }
+        del dirSeq[0]
+    return None
+
+def createPResource(uri, importer):
+    if uri[1:3] == ":\\":
+        obj = PFile(pathP1=uri)
+        obj.save()
+        if uri in importer.processedFile:
+            fileInfos = importer.processedFile[uri]
+        else:
+            fileInfos = findFile(uri, importer.rootFolder)
+            if fileInfos:
+                source = fileInfos["filePath"]
+                target = importer.projectDataFolder + fileInfos["relPath"]
+                fileInfos["target"] = target
+                files.moveFile(source, target)
+                importer.processedFile[uri] = fileInfos
+        if fileInfos:
+            obj.file = fileInfos["target"]
+            obj.save()
+    else:
+        obj = PUri(uri=uri)
+        obj.save()
     return obj
 
 def createFiction(name):

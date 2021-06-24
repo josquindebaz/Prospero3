@@ -107,6 +107,10 @@ def exists(file):
 
 def gotFolder(file):
     folder = os.path.dirname(file) + "/"
+    createFolder(folder)
+    return folder
+
+def createFolder(folder):
     if not os.path.exists(folder):
         os.makedirs(folder)
     return folder

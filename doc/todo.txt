@@ -24,7 +24,8 @@ OK		modale d'export (choix du type d'export)
 OK		export json
 OK		algo d'export zip
 OK		garder le nom des fichiers en base
-		associatedData
+OK		générer nom de fichier txt si ne venant pas de P1 (créé dans P3)
+OK		associatedData (pas pour json)
 		suppression des fichiers dans media une fois télécharger
 	page projets
 		dynamisation projets liste
