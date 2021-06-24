@@ -1,5 +1,6 @@
-import os
-import ntpath
+import os, ntpath, time
+from main.helpers import files
+from prospero import settings
 
 # return the preferredAbsolutePath if file does not exist, 
 #     else return new path that does not exist
@@ -26,3 +27,16 @@ def findAvailableAbsolutePath(preferredAbsolutePath):
             index = index + 1
         fileName = fileName + "_" + str(index) + extension
     return fileFolder+fileName
+
+def getStampedCloudFolder(mediaFolder):
+    timestamp = str(time.time())
+    relativeFileFolder = mediaFolder + '/' + timestamp + '/'
+    fileFolder = settings.MEDIA_ROOT + relativeFileFolder
+    files.gotFolder(fileFolder)
+    return fileFolder
+
+def getMediaRelativePath(path):
+    return files.getRelativePath(path, settings.MEDIA_ROOT)
+
+def getMediaRelativeUrl(path):
+    return "/media_site/"+getMediaRelativePath(path)

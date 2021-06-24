@@ -25,8 +25,10 @@
         <script src="{{ MEDIA_URL }}components/PModal.js"></script>
         <script src="{{ MEDIA_URL }}components/PProjectView.js"></script>
         <script src="{{ MEDIA_URL }}components/PWidgets.js"></script>
+        <script src="{{ MEDIA_URL }}components/UrlUtils.js"></script>
         <script>
             var prospero = new Prospero();
+            var urls = new UrlUtils();
         </script>
     </head>
     <body>
@@ -34,6 +36,7 @@
         {% include "main/prospero/structure/modals/approval-modal.html" %}
         {% include "main/prospero/structure/modals/new-text-modal.html" %}
         {% include "main/prospero/structure/modals/new-corpus-modal.html" %}
+        {% include "main/prospero/structure/modals/export-modal.html" %}
         <main>
             <section class="side_container">
                 {% include "main/prospero/structure/sidebar.html" %}

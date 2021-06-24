@@ -16,4 +16,5 @@ def normalizePath(path):
     return path
 
 def normalizeDictElementValue(value):
-    return value.replace(" ' ", "'")
+    #return value.replace(" ' ", "'")
+    return value

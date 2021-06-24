@@ -115,7 +115,9 @@ class Project(AugmentedData) :
             return self.corpuses.get(name="main")
         except:
             from main.importerP1 import builder2BD as builder
-            return builder.createPCorpus("main")
+            corpus = builder.createPCorpus("main")
+            self.corpuses.add(corpus)
+            return corpus
 
     def getDictionnaries(self):
         return self.dictionnaries.getRealInstance()
@@ -225,6 +227,7 @@ class DictPackage(DictObject) :
 class Dictionnary(DictPackage) :
 
     type = models.CharField(blank=True, choices = DictType, max_length=255)
+    filePath = models.CharField(blank=True, max_length=255)
 
     def __str__(self):
         return "[" + str(self.id) + ":Dictionnary] " + self.name
@@ -248,6 +251,8 @@ class Dictionnary(DictPackage) :
         }
 
 class SemanticDictionnary(Dictionnary) :
+
+    identP1 = models.CharField(blank=True, max_length=255)
 
     def __str__(self):
         return "[" + str(self.id) + ":SemanticDictionnary] " + self.name
@@ -326,6 +331,8 @@ class PText(AugmentedData) :
 
     text = models.TextField(blank=True)
     fileName = models.CharField(blank=True, max_length=255)
+    filePath = models.CharField(blank=True, max_length=255)
+    identCtxP1 = models.CharField(blank=True, max_length=255)
 
     title = models.CharField(blank=True, max_length=255)
     date = models.CharField(blank=True, max_length=255)

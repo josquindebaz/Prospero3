@@ -19,7 +19,7 @@ class PProjectView extends PObject {
 	        if (event.action == "Import") {
 	            importModal.show();
 	        } else {
-	            console.log("TODO export");
+	            exportModal.show();
 	        }
 	    });
 	}
@@ -126,7 +126,7 @@ class PTable extends PObject {
         return new PTableItem($node, identity, columns);
 	}
 	getItems() {
-	    return $("tbody", self.node).children();
+	    return $("tbody", this.node).children();
 	}
 	getItem(data) {
         return prospero.getPDBWidget(data, this.node);
@@ -217,7 +217,7 @@ class TextTable extends PTable {
 	        });
 	    });
 	    this.addActionTrigger("delete", $(".icon_link.moins", self.node), function() {
-	        var items = prospero.getAll(self.getSelection());
+	        var items = prospero.get(self.getSelection(), true);
 	        var itemDatas = [];
 	        $.each(items, function(index, item) {
 	            itemDatas.push(item.identity);
@@ -295,7 +295,7 @@ class DicoTable extends PTable {
 	    var self = this;
 	    this.propertyName = "dictionnaries";
 	    this.addActionTrigger("delete", $(".icon_link.moins", self.node), function() {
-	        var items = prospero.getAll(self.getSelection());
+	        var items = prospero.get(self.getSelection(), true);
 	        var itemDatas = [];
 	        $.each(items, function(index, item) {
 	            itemDatas.push(item.identity);

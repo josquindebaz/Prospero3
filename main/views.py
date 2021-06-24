@@ -33,10 +33,13 @@ def ajaxCall(request):
 def fileUpload(request):
     if request.is_ajax() and request.method == 'POST':
         results = {}
-        timestamp = str(time.time())
-        relativeFileFolder = 'upload/'+timestamp+'/'
-        fileFolder = settings.MEDIA_ROOT + relativeFileFolder
-        files.gotFolder(fileFolder)
+
+        fileFolder = normalisation.getStampedCloudFolder("upload")
+        relativeFileFolder = normalisation.getMediaRelativePath(fileFolder)
+        #timestamp = str(time.time())
+        #relativeFileFolder = 'upload/'+timestamp+'/'
+        #fileFolder = settings.MEDIA_ROOT + relativeFileFolder
+        #files.gotFolder(fileFolder)
         data = request.FILES['file']
         fileName = data.name
         filePath = fileFolder + fileName

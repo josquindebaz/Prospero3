@@ -49,15 +49,21 @@ class Prospero {
             }
         });
 	}
-	get($node) {
-	    return $node.data("PObject");
-	}
-	getAll($nodes) {
+	get($nodes, asList) {
 	    var result = [];
 	    $nodes.each(function(index, value) {
-	        result.push($(value).data("PObject"));
+	        value = $(value).data("PObject");
+	        if (value)
+	            result.push(value);
 	    });
-	    return result;
+        if (asList)
+            return result;
+        else if (result.length == 1)
+            return result[0];
+        else if (result.length == 0)
+            return null;
+        else
+            return result;
 	}
 	getPDBObject(data, $container) {
 	    return this.get(this.getPDBWidget(data, $container));

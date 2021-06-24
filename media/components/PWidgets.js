@@ -29,15 +29,15 @@ class PInputField extends PObject {
             });
 	    });
     }
-    setAsValid() {
-    }
     setAsInvalid(message) {
         if (message)
             this.node.find(".invalid-feedback").text(message);
-        this.fieldNode.addClass("is-invalid");
+        if (this.fieldNode)
+            this.fieldNode.addClass("is-invalid");
     }
     setAsValid() {
-        this.fieldNode.removeClass("is-invalid");
+        if (this.fieldNode)
+            this.fieldNode.removeClass("is-invalid");
     }
     getValue() {
         return this.fieldNode.val();
@@ -93,6 +93,58 @@ class PCheckInput extends PInputField {
                 original: event
             });
 	    });
+    }
+}
+class PRadioInput extends PInputField {
+
+	constructor($node) {
+	    super($node);
+	    var self = this;
+	}
+	initFieldNode() {
+	}
+    getValue() {
+        return this.node.find("input:checked").attr("value");
+    }
+    setValue(value) {
+        this.node.find("input").prop('checked', false);
+        this.node.find("input[value="+value+"]").prop('checked', true);
+    }
+    setOptionEnabled(optionValue, enabled) {
+        this.node.find("input[value="+optionValue+"]").prop('disabled', !enabled);
+    }
+    getEnabledOptions() {
+        return this.node.find("input:not(:disabled)");
+    }
+    bindChange() {
+        var self = this;
+	    self.node.find("input").bind("click", function(event) {
+	        //event.preventDefault();
+	        event.stopPropagation();
+	        self.setAsValid();
+            self.notifyObservers({
+                name: "valueChanged",
+                target: self,
+                original: event
+            });
+	    });
+    }
+}
+class PSelect extends PInputField {
+
+	constructor($node) {
+	    super($node);
+	    var self = this;
+	}
+	initFieldNode() {
+	    this.fieldNode = this.node.find("select").addBack('select');
+	}
+    getValue() {
+        return this.node.find("option:selected").attr("value");
+    }
+    setValue(value) {
+        this.node.find("option").prop('selected', false);
+        this.node.find("option[value="+value+"]").prop('selected', true);
     }
 }
 class StateButton extends PObject {

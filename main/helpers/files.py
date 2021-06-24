@@ -99,6 +99,8 @@ def getFileName(file, withExtension=True):
         result = os.path.splitext(result)[0]
     return result
 
+def getRelativePath(path, rootPath):
+    return path[len(rootPath):]
 
 def exists(file):
     return os.path.exists(file)
@@ -137,6 +139,13 @@ def extratZIP(file, targetFolder):
     with zipfile.ZipFile(file, 'r') as zip_ref:
         zip_ref.extractall(targetFolder)
 
+def compressZIP(folderToCompress, archiveFile):
+    ziph = zipfile.ZipFile(archiveFile, 'w')
+    for root, dirs, files in os.walk(folderToCompress):
+        for file in files:
+            ziph.write(os.path.join(root, file), arcname=os.path.join(root.replace(folderToCompress, ""), file))
+    ziph.close()
+
 # find all files in folder which are the following extension (case-insensitive)
 def findFilesWithExtension(folder, extension):
     regExp = '*.'
@@ -163,3 +172,7 @@ def readFile(filePath, detectEncoding=False):
     # print("done")
     return text
 
+def writeFile(filePath, data, encoding="utf-8"):
+    gotFolder(filePath)
+    with codecs.open(filePath, "w", encoding) as file:
+        file.write(data)

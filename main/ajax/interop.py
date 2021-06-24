@@ -3,7 +3,8 @@ from main.models import *
 from django.template import loader
 from main.importerP1 import builder2BD as builder
 from main.importerP1 import importer
-from main.helpers import frontend, files
+from main.helpers import frontend, files, normalisation
+from datetime import datetime
 
 def importData(request, data, results):
     folder = files.gotFolder(settings.MEDIA_ROOT + data["filePath"])
@@ -37,3 +38,33 @@ def importData(request, data, results):
 
 def exportData(request, data, results):
     print(data)
+    project = frontend.getBDObject(data["project"])
+    exportContext = data["context"]
+    exportType = data["type"]
+    exportChoice = data["choice"] # entireProject | onlySelectedDictionaries | onlyCorpusTexts | onlySelectedTexts
+    objects = []
+    if exportChoice == "entireProject":
+        objects.append(project)
+    else:
+        for identity in exportContext[exportChoice]:
+            objects.append(frontend.getBDObject(identity))
+    print("EXPORT")
+    print(objects)
+    fileFolder = normalisation.getStampedCloudFolder("export")
+    relativeUrlFolder = normalisation.getMediaRelativeUrl(fileFolder)
+    if exportType == "P1":
+        from main.exporterP1 import exporter2P1 as exporter
+        zipFileName = exporter.export(fileFolder, objects)
+        results["filePath"] = relativeUrlFolder + zipFileName
+    else:
+        from main.exporterP1 import jsonSerializer as exporter
+        result = []
+        for obj in objects:
+            result.append(exporter.serialize(obj))
+        if len(result) == 1:
+            result = result[0]
+        result = json.dumps(result, indent=4)
+        fileName = "JsonExport-"+datetime.now().strftime('%d-%m-%Y')+".json"
+        filePath = fileFolder + fileName
+        files.writeFile(filePath, result)
+        results["filePath"] = relativeUrlFolder + fileName

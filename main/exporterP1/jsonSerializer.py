@@ -31,18 +31,41 @@ class PVisitor:
         return None
 
     def visitProject(self, obj):
+        corpora = []
+        for x in obj.corpuses.all():
+            data = self.serialize(x)
+            corpora.append(data)
+        dictionaries = []
+        for x in obj.dictionnaries.all():
+            data = self.serialize(x)
+            dictionaries.append(data)
+        return {
+            "model": "Project",
+            "name": obj.name,
+            "language": None,
+            "dictionaries": dictionaries,
+            "corpora": corpora
+        }
+
+    def visitPCorpus(self, obj):
         texts = []
         for x in obj.texts.all():
             data = self.serialize(x)
             texts.append(data)
+        metaDatas = []
+        for x in obj.metaDatas.all():
+            data = self.serialize(x)
+            metaDatas.append(data)
+        associatedDatas = []
+        for x in obj.associatedDatas.all():
+            data = self.serialize(x)
+            associatedDatas.append(data)
         return {
-            "model": "Project",
+            "model": "PCorpus",
             "name": obj.name,
-            "dicPath": None,
-            "ficPath": None,
-            "catPath": None,
-            "colPath": None,
-            "language": None,
+            "author": obj.author,
+            "metaDatas": metaDatas,
+            "associatedData": associatedDatas,
             "texts": texts
         }
 
@@ -57,6 +80,12 @@ class PVisitor:
             associatedDatas.append(data)
         return {
             "model": "PText",
+            "fileName": obj.fileName,
+            "filePath": obj.filePath,
+            "title": obj.title,
+            "date": obj.date,
+            "source": obj.source,
+            "author": obj.author,
             "text": obj.text,
             "metaDatas": metaDatas,
             "associatedData": associatedDatas
@@ -89,6 +118,8 @@ class PVisitor:
         return {
             "model": "CollectionDictionnary",
             "name": obj.name,
+            "identP1": obj.identP1,
+            "filePath": obj.filePath,
             "elements": elements
         }
 
@@ -100,6 +131,8 @@ class PVisitor:
         return {
             "model": "CategoryDictionnary",
             "name": obj.name,
+            "identP1": obj.identP1,
+            "filePath": obj.filePath,
             "elements": elements
         }
 
@@ -111,6 +144,8 @@ class PVisitor:
         return {
             "model": "FictionDictionnary",
             "name": obj.name,
+            "identP1": obj.identP1,
+            "filePath": obj.filePath,
             "elements": elements
         }
 
@@ -122,7 +157,8 @@ class PVisitor:
         return {
             "model": "LexicalDictionnary",
             "name": obj.name,
-            "lang": obj.language,
+            "language": obj.language,
+            "filePath": obj.filePath,
             "elements": elements
         }
 

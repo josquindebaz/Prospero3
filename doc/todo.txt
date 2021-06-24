@@ -1,5 +1,5 @@
 	mettre un trello
-	page projet
+	page projet		
 		tri table par colonne
 OK		multi-sélection maj
 		lazy loading
@@ -18,12 +18,14 @@ OK		encodage (*1)
 OK		casse des ctx/txt
 OK		préciser le corpus utilisé
 OK		gestion erreurs (+transaction)
-OK		rechargement interface
+		rechargement interface
 	export
-		modale d'export (choix du type d'export)
-		export json
-		algo d'export zip
+OK		modale d'export (choix du type d'export)
+OK		export json
+OK		algo d'export zip
 OK		garder le nom des fichiers en base
+		associatedData
+		suppression des fichiers dans media une fois télécharger
 	page projets
 		dynamisation projets liste
 		dynamisation projets mosaïque
@@ -33,6 +35,8 @@ OK		par pdf
 OK		par txt
 OK	modale création corpus
 	bouton avec spinner
+
+
 
 MANU :
 	overflow texte (Manu)
