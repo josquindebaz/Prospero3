@@ -16,57 +16,42 @@
 	</div>
 	<script>
 		prospero.onload(function() {
-			//var pstyle = 'border: 1px solid #dfdfdf; padding: 5px;';
-			var pstyle = '';
-			var lock1 = $.Deferred();
-			$('#layout').w2layout({
-				name: 'layout',
-				padding: 4,
-				panels: [
-					{ type: 'left', size: '33%', resizable: true, style: pstyle, content: 'left' },
-					{ type: 'main', style: pstyle, content: 'main' },
-					{ type: 'right', size: '33%', resizable: true, style: pstyle, content: 'right' }
-				],
-				onRender: function(event) {
-					event.done(function () {
-						lock1.resolve();
-					});
-				}
-			});
-			var lock2 = $.Deferred();
-			$().w2layout({
-				name: 'layout2',
-				panels: [
-					{ type: 'main', style: pstyle },
-					{ type: 'preview', size: '50%', resizable: true, style: pstyle, content: 'preview' },
-				],
-				onRender: function(event) {
-					event.done(function () {
-						lock2.resolve();
-					});
-				}
-			});
-			w2ui['layout'].html('left', w2ui['layout2']);
-			prospero.wait([lock1, lock2], function() {
-				$(w2ui['layout2'].el('main')).append($(".corpora-table"));
-				$(w2ui['layout2'].el('preview')).append($(".dico-table"));
-				$(w2ui['layout'].el('main')).append($(".text-table"));
-				$(w2ui['layout'].el('right')).append($(".editor-panel"));
+			var mainLayout = new PLayout($('#layout'));
+			var lock1 = mainLayout.init([
+				{ type: 'left', size: '33%', resizable: true, content: 'left' },
+				{ type: 'main', content: 'main' },
+				{ type: 'right', size: '33%', resizable: true, content: 'right' }
+			]);
+			prospero.wait(lock1, function() {
+				//w2ui['layout'].html('left', '<div id="layout2" style="width:100%; height:100%;"></div>');
+				var $leftPanel = mainLayout.getPanel('left');
+				var $container = $('<div id="layout2" style="width:100%; height:100%;"></div>')
+				$leftPanel.append($container);
+				var leftLayout = new PLayout($container);
+				var lock2 = leftLayout.init([
+					{ type: 'main' },
+					{ type: 'preview', size: '50%', resizable: true, content: 'preview' }
+				]);
+				prospero.wait(lock2, function() {
+					leftLayout.getPanel('main').append($(".corpora-table"));
+					leftLayout.getPanel('preview').append($(".dico-table"));
+					mainLayout.getPanel('main').append($(".text-table"));
+					mainLayout.getPanel('right').append($(".editor-panel"));
 
-				var $projectView = $(".project-view");
-				var projectView = new PProjectView($projectView, $projectView.data("object"));
-				projectView.load();
-				var importModal = new ImportModal($(".import-modal"));
-				var approvalModal = new ApprovalModal($(".approval-modal"));
-				var newTextModal = new NewTextModal($(".new-text-modal"));
-				var newCorpusModal = new NewCorpusModal($(".new-corpus-modal"));
-				var exportModal = new ExportModal($(".export-modal"));
-				/*
-				prospero.onload(function() {
-					exportModal.show();
+					var $projectView = $(".project-view");
+					var projectView = new PProjectView($projectView, $projectView.data("object"));
+					projectView.load();
+					var importModal = new ImportModal($(".import-modal"));
+					var approvalModal = new ApprovalModal($(".approval-modal"));
+					var newTextModal = new NewTextModal($(".new-text-modal"));
+					var newCorpusModal = new NewCorpusModal($(".new-corpus-modal"));
+					var exportModal = new ExportModal($(".export-modal"));
+					/*
+					prospero.onload(function() {
+						exportModal.show();
+					});
+					*/
 				});
-				*/
-
 			});
 		});
 	</script>
