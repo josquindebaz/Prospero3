@@ -11,7 +11,8 @@ def createContext(request):
     context = {
         'MEDIA_URL': settings.MEDIA_URL,
         'ROOT_URL': settings.ROOT_URL,
-        'DEBUG' : settings.DEBUG
+        'DEBUG' : settings.DEBUG,
+        'MEDIA_TIMESTAMP' : settings.MEDIA_TIMESTAMP
     }
     return context
 

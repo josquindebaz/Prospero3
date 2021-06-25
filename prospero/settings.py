@@ -33,6 +33,8 @@ try: # if on server, turn debug off
     DOMAIN = DOMAIN_SERVER
 except:
     DOMAIN = DOMAIN_LOCAL
+
+MEDIA_TIMESTAMP = 1
 """ GENERATED END   """
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
