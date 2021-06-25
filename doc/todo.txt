@@ -5,7 +5,7 @@ OK		multi-sélection maj
 		lazy loading
 OK		ne pas montrer les metadata calculation
 		système de tags
-		resizer panels		
+WIP		resizer panels
 OK		multi-delete
 OK		delete dico
 	metadata
@@ -18,7 +18,7 @@ OK		encodage (*1)
 OK		casse des ctx/txt
 OK		préciser le corpus utilisé
 OK		gestion erreurs (+transaction)
-		rechargement interface
+OK		rechargement interface
 	export
 OK		modale d'export (choix du type d'export)
 OK		export json

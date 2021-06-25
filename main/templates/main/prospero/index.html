@@ -1,0 +1,73 @@
+{% extends 'main/prospero/structure/base.html' %}
+{% block content %}
+	<div class="main_content ">
+		<section class="row project-view" data-object='{{ project|safe }}'>
+			<div class="col screenHeight">
+                <div id="layout" style="width: 100%; height: 100%;"></div>
+			</div>
+		</section>
+		<section class="hidden">
+			{% include "main/prospero/project/corpusTablePanel.html" %}
+			{% include "main/prospero/project/dicoTablePanel.html" %}
+			{% include "main/prospero/project/infosTablePanel.html" %}
+			{% include "main/prospero/project/textTablePanel.html" %}
+			{% include "main/prospero/project/editorPanel.html" %}
+		</section>
+	</div>
+	<script>
+		prospero.onload(function() {
+			//var pstyle = 'border: 1px solid #dfdfdf; padding: 5px;';
+			var pstyle = '';
+			var lock1 = $.Deferred();
+			$('#layout').w2layout({
+				name: 'layout',
+				padding: 4,
+				panels: [
+					{ type: 'left', size: '33%', resizable: true, style: pstyle, content: 'left' },
+					{ type: 'main', style: pstyle, content: 'main' },
+					{ type: 'right', size: '33%', resizable: true, style: pstyle, content: 'right' }
+				],
+				onRender: function(event) {
+					event.done(function () {
+						lock1.resolve();
+					});
+				}
+			});
+			var lock2 = $.Deferred();
+			$().w2layout({
+				name: 'layout2',
+				panels: [
+					{ type: 'main', style: pstyle },
+					{ type: 'preview', size: '50%', resizable: true, style: pstyle, content: 'preview' },
+				],
+				onRender: function(event) {
+					event.done(function () {
+						lock2.resolve();
+					});
+				}
+			});
+			w2ui['layout'].html('left', w2ui['layout2']);
+			prospero.wait([lock1, lock2], function() {
+				$(w2ui['layout2'].el('main')).append($(".corpora-table"));
+				$(w2ui['layout2'].el('preview')).append($(".dico-table"));
+				$(w2ui['layout'].el('main')).append($(".text-table"));
+				$(w2ui['layout'].el('right')).append($(".editor-panel"));
+
+				var $projectView = $(".project-view");
+				var projectView = new PProjectView($projectView, $projectView.data("object"));
+				projectView.load();
+				var importModal = new ImportModal($(".import-modal"));
+				var approvalModal = new ApprovalModal($(".approval-modal"));
+				var newTextModal = new NewTextModal($(".new-text-modal"));
+				var newCorpusModal = new NewCorpusModal($(".new-corpus-modal"));
+				var exportModal = new ExportModal($(".export-modal"));
+				/*
+				prospero.onload(function() {
+					exportModal.show();
+				});
+				*/
+
+			});
+		});
+	</script>
+{% endblock %}

@@ -58,8 +58,13 @@ class PProjectView extends PObject {
 	    }
     }
 	load() {
-	    this.corporaTable.load(this.data);
-	    this.dicoTable.load(this.data);
+	    var lock = $.Deferred();
+	    var lock1 = this.corporaTable.load(this.data);
+	    var lock2 = this.dicoTable.load(this.data);
+        prospero.wait([lock1, lock2], function() {
+            lock.resolve();
+        });
+        return lock;
 	    /* this.textTable.load(); */
 	    /*
         if (this.corporaTable.getSelection() == null) {

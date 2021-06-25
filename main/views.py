@@ -58,6 +58,13 @@ def fileUpload(request):
     else:
         raise Http404("")
 
+def index(request):
+    template = loader.get_template('main/prospero/index.html')
+    context = createContext(request)
+    project = Project.objects.all()[0]
+    context["project"] = json.dumps(project.serializeIdentity())
+    return HttpResponse(template.render(context, request))
+
 def project(request):
     template = loader.get_template('main/prospero/project.html')
     context = createContext(request)
