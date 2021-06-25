@@ -7,11 +7,10 @@
 			</div>
 		</section>
 		<section class="hidden">
-			{% include "main/prospero/project/corpusTablePanel.html" %}
-			{% include "main/prospero/project/dicoTablePanel.html" %}
-			{% include "main/prospero/project/infosTablePanel.html" %}
-			{% include "main/prospero/project/textTablePanel.html" %}
-			{% include "main/prospero/project/editorPanel.html" %}
+			{% include "main/prospero/project/fakeForManu/corpusTablePanel.html" %}
+			{% include "main/prospero/project/fakeForManu/dicoTablePanel.html" %}
+			{% include "main/prospero/project/fakeForManu/textTablePanel.html" %}
+			{% include "main/prospero/project/fakeForManu/editorPanel.html" %}
 		</section>
 	</div>
 	<script>
@@ -38,6 +37,7 @@
 					mainLayout.getPanel('main').append($(".text-table"));
 					mainLayout.getPanel('right').append($(".editor-panel"));
 
+					/*
 					var $projectView = $(".project-view");
 					var projectView = new PProjectView($projectView, $projectView.data("object"));
 					projectView.load();
@@ -46,6 +46,7 @@
 					var newTextModal = new NewTextModal($(".new-text-modal"));
 					var newCorpusModal = new NewCorpusModal($(".new-corpus-modal"));
 					var exportModal = new ExportModal($(".export-modal"));
+					*/
 					/*
 					prospero.onload(function() {
 						exportModal.show();
