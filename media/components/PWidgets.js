@@ -55,7 +55,36 @@ class PTextarea extends PInputField {
 	initFieldNode() {
 	    this.fieldNode = this.node.find("textarea");
 	}
+	autosize() {
+        this.fieldNode.each(function () {
+            this.setAttribute("style", "height:" + (this.scrollHeight) + "px;overflow-y:hidden;");
+        }).on("input", function () {
+            this.style.height = "auto";
+            this.style.height = (this.scrollHeight) + "px";
+        });
+	}
 }
+class PASTextarea extends PTextarea {
+
+	constructor($node, data) {
+	    super($node);
+	    var self = this;
+	    self.data = data;
+	    self.timer = new CallbackTimer(this, 500, function() {
+            self.save();
+	    });
+	    self.addObserver(function() {
+	        self.timer.trigger();
+	    });
+	}
+	save() {
+        this.data.value = this.getValue();
+        prospero.ajax("changeData", this.data, function(data) {
+            console.log("done");
+        });
+	}
+}
+
 class PTextInput extends PInputField {
 
 	constructor($node) {
@@ -66,6 +95,27 @@ class PTextInput extends PInputField {
 	    this.fieldNode = this.node.find("input");
 	}
 }
+class PASTextInput extends PTextInput {
+
+	constructor($node, data) {
+	    super($node);
+	    var self = this;
+	    self.data = data;
+	    self.timer = new CallbackTimer(this, 500, function() {
+            self.save();
+	    });
+	    self.addObserver(function() {
+	        self.timer.trigger();
+	    });
+	}
+	save() {
+        this.data.value = this.getValue();
+        prospero.ajax("changeData", this.data, function(data) {
+            console.log("done");
+        });
+	}
+}
+
 class PCheckInput extends PInputField {
 
 	constructor($node) {

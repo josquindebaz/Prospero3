@@ -1,0 +1,32 @@
+<div class="modal fade new-metadata-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create Data</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body txt_l">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mb-3 data-name-input">
+                            <label for="new-data-name" class="form-label">Data name</label>
+                            <input type="text" class="form-control" id="new-data-name" placeholder="..." aria-describedby="new-data-name-feedback">
+                            <div id="new-data-name-feedback" class="invalid-feedback"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 data-type-select">
+                        <label for="new-data-name" class="form-label">Data type</label>
+                        <select class="form-select" aria-label="">
+                            <option value="String" selected>String</option>
+                            <option value="Text">Text</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button action-name="create" type="button" class="btn btn-primary">Create</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

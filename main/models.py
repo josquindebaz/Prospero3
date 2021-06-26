@@ -1,5 +1,5 @@
 from django.db import models
-
+from sortedm2m.fields import SortedManyToManyField
 from django.db import models
 import json
 from datetime import datetime
@@ -55,9 +55,8 @@ class PObject(models.Model) :
         return getattr(visitor, "visit"+type(obj).__name__)(obj)
 
 class AugmentedData(PObject):
-
-    associatedDatas = models.ManyToManyField('PResource', blank=True, related_name='augmentedData')
-    metaDatas = models.ManyToManyField('MetaData', blank=True, related_name='augmentedData')
+    associatedDatas = SortedManyToManyField('PResource', blank=True, related_name='augmentedData')
+    metaDatas = SortedManyToManyField('MetaData', blank=True, related_name='augmentedData')
 
     def __unicode__(self):
         return "[" + str(self.id) + ":AugmentedData]"
@@ -77,6 +76,12 @@ class AugmentedData(PObject):
         for elt in self.metaDatas.all():
             res.append(elt.getRealInstance())
         return res
+
+    def getMetaData(self, name):
+        try:
+            return self.metaDatas.get(name=name)
+        except:
+            return None
 
     def getAssociatedDatas(self):
         res = []
@@ -101,6 +106,12 @@ class AugmentedData(PObject):
         except:
             return None
 
+    def hasData(self, name):
+        if name in self.getRealInstance().getFixedDataNames():
+            return True
+        else:
+            return self.getMetaData(name)
+
 class Project(AugmentedData) :
 
     name = models.CharField(blank=True, max_length=255)
@@ -124,6 +135,9 @@ class Project(AugmentedData) :
             corpus = builder.createPCorpus("main")
             self.corpuses.add(corpus)
             return corpus
+
+    def getFixedDataNames(self):
+        return ["name", "language"]
 
     def getDictionnaries(self):
         return self.dictionnaries.getRealInstance()
@@ -150,11 +164,29 @@ class PCorpus(AugmentedData) :
         return res
 
     def serialize(self):
+        identity = self.serializeIdentity()
         data = {
-            "identity" : self.serializeIdentity(),
+            "identity" : identity,
             "name" : self.name,
-            "author": self.author
+            "author": self.author,
         }
+        datas = [
+            {
+                "identity": identity,
+                "name": "name",
+                "type": "String",
+                "value": self.name,
+                "kind": "data"
+            },
+            {
+                "identity": identity,
+                "name": "author",
+                "type": "String",
+                "value": self.author,
+                "kind": "data"
+            }
+        ]
+        data["datas"] = datas
         metaDatas = []
         for metaData in self.metaDatas.all():
             metaDatas.append(metaData.serialize())
@@ -170,6 +202,9 @@ class PCorpus(AugmentedData) :
                 "tags" : ""
             }
         }
+
+    def getFixedDataNames(self):
+        return ["name", "author"]
 
 class MetaData(PObject) :
 
@@ -188,8 +223,12 @@ class MetaData(PObject) :
             "identity" : self.serializeIdentity(),
             "name" : self.name,
             "type": self.type,
-            "value": self.value
+            "value": self.value,
+            "kind" : "metadata"
         }
+
+    def parent(self):
+        return self.augmentedData.first().getRealInstance()
 
 class DictObject(PObject) :
 
@@ -345,6 +384,9 @@ class PText(AugmentedData) :
     date = models.CharField(blank=True, max_length=255)
     source = models.CharField(blank=True, max_length=255)
     author = models.CharField(blank=True, max_length=255)
+
+    def getFixedDataNames(self):
+        return ["title", "date", "source", "author"]
 
     def __str__(self):
         return "[" + str(self.id) + ":PText]"

@@ -71,23 +71,24 @@ def findFile(pathP1, rootFolder):
         del dirSeq[0]
     return None
 
-def createPResource(uri, importer):
+def createPResource(uri, importer=None):
     if uri[1:3] == ":\\":
         obj = PFile(pathP1=uri)
         obj.save()
-        if uri in importer.processedFile:
-            fileInfos = importer.processedFile[uri]
-        else:
-            fileInfos = findFile(uri, importer.rootFolder)
+        if importer:
+            if uri in importer.processedFile:
+                fileInfos = importer.processedFile[uri]
+            else:
+                fileInfos = findFile(uri, importer.rootFolder)
+                if fileInfos:
+                    source = fileInfos["filePath"]
+                    target = importer.projectDataFolder + fileInfos["relPath"]
+                    fileInfos["target"] = target
+                    files.moveFile(source, target)
+                    importer.processedFile[uri] = fileInfos
             if fileInfos:
-                source = fileInfos["filePath"]
-                target = importer.projectDataFolder + fileInfos["relPath"]
-                fileInfos["target"] = target
-                files.moveFile(source, target)
-                importer.processedFile[uri] = fileInfos
-        if fileInfos:
-            obj.file = fileInfos["target"]
-            obj.save()
+                obj.file = fileInfos["target"]
+                obj.save()
     else:
         obj = PUri(uri=uri)
         obj.save()

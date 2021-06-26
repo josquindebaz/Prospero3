@@ -14,6 +14,7 @@
         <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}components/w2ui/w2ui.css" />
         <link rel="stylesheet" href="{{ MEDIA_URL }}assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="{{ MEDIA_URL }}components/jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="{{ MEDIA_URL }}assets/fontello/css/fontello.css">
 
         <link rel="stylesheet" href="{{ MEDIA_URL }}components/tool_dropzone.css?{{ MEDIA_TIMESTAMP }}">
         <link rel="stylesheet" href="{{ MEDIA_URL }}assets/css/prospero.css?{{ MEDIA_TIMESTAMP }}">
@@ -27,6 +28,8 @@
         <script src="{{ MEDIA_URL }}components/jqueryui/jquery-ui.js"></script>
         <script src="{{ MEDIA_URL }}assets/js/bootstrap.bundle.min.js"></script>
         <script src="{{ MEDIA_URL }}components/underscore.js"></script>
+        <script src="{{ MEDIA_URL }}components/autoresize/autosize.min.js"></script>
+
         <script src="{{ MEDIA_URL }}components/tool_dropzone.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}components/Prospero.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}components/PModal.js?{{ MEDIA_TIMESTAMP }}"></script>
@@ -34,6 +37,7 @@
         <script src="{{ MEDIA_URL }}components/PWidgets.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}components/PLayout.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}components/UrlUtils.js?{{ MEDIA_TIMESTAMP }}"></script>
+
         <script>
             var prospero = new Prospero();
             var urls = new UrlUtils();
@@ -44,6 +48,7 @@
         {% include "main/prospero/structure/modals/approval-modal.html" %}
         {% include "main/prospero/structure/modals/new-text-modal.html" %}
         {% include "main/prospero/structure/modals/new-corpus-modal.html" %}
+        {% include "main/prospero/structure/modals/new-metadata-modal.html" %}
         {% include "main/prospero/structure/modals/export-modal.html" %}
         <main>
             <section class="side_container">

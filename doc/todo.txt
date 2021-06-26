@@ -1,17 +1,33 @@
+REUNION JOSQUIN 25/06/2021
+
+	utilisateur
+		owner : droit de vie ou de mort sur le projet
+		groupe avec droit 
+			r groupe consultation uniquement
+			w groupe modification uniquement
+			x groupe téléchargement (protection juridique)
+
+TODO 10/06/2021
+
+	utilisateur
 	mettre un trello
 	page projet		
 		tri table par colonne
-OK		multi-sélection maj
 		lazy loading
+OK		multi-sélection maj		
 OK		ne pas montrer les metadata calculation
 		système de tags
 OK		resizer panels
 OK		multi-delete
 OK		delete dico
-	metadata
+OK	metadata
 OK		PText : mettre en dur title, date, source et author 
-		modification à la volée des metadata
-		ajout/suppression des metadata	
+OK		modification à la volée des metadata
+OK		sort des metadata
+OK		ajout/suppression des metadata	
+	associatedData
+		ajout /suppression
+		sort
 	utilisateur GIT Josquin
 OK	import
 OK		encodage (*1)
@@ -26,6 +42,7 @@ OK		algo d'export zip
 OK		garder le nom des fichiers en base
 OK		générer nom de fichier txt si ne venant pas de P1 (créé dans P3)
 OK		associatedData (pas pour json)
+		ajouter première ligne ctx
 		suppression des fichiers dans media une fois télécharger
 	page projets
 		dynamisation projets liste

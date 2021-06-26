@@ -12,6 +12,15 @@ def renderTable(request, data, results):
     for item in getattr(object, data["property"]).all():
         table.append(item.serializeAsTableItem())
 
+def changeData(request, data, results):
+    object = frontend.getBDObject(data["identity"])
+    if data["kind"] == "metadata":
+        setattr(object, "value", data["value"])
+    else:
+        setattr(object, data["name"], data["value"])
+    object.save()
+    print("changeData", object)
+
 def renderObject(request, data, results):
     object = frontend.getBDObject(data)
     results["object"] = object.serialize()
@@ -79,3 +88,40 @@ def createCorpus(request, data, results):
         corpus = builder.createPCorpus(name)
         project.corpuses.add(corpus)
         results["corpus"] = corpus.serializeAsTableItem()
+
+def createMetadata(request, data, results):
+    corpus = frontend.getBDObject(data["corpus"])
+    fields = data["fields"]
+    nameField = fields["name"]
+    name = nameField["value"]
+    dataType = fields["type"]["value"]
+    errors = {}
+    if corpus.hasData(name):
+        nameField["error"] = "Data already exists with this name"
+        errors["name"] = nameField
+    if errors:
+        results["serverError"] = {
+            "fields" : errors
+        }
+    else:
+        data = builder.createMetaData(name, dataType, "")
+        corpus.metaDatas.add(data)
+        results["metadata"] = data.serialize()
+
+def changeMetadataPosition(request, data, results):
+    item = frontend.getBDObject(data["item"]["identity"])
+    parent = item.parent()
+    if data["next"]:
+        next = frontend.getBDObject(data["next"]["identity"])
+        l = list(parent.metaDatas.all())
+        l.remove(item)
+        index = l.index(next)
+        l.insert(index, item)
+        parent.metaDatas.clear()
+        parent.metaDatas.add(*l)
+    else:
+        parent.metaDatas.remove(item)
+        parent.metaDatas.add(item)
+
+
+

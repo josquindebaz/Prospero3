@@ -26,6 +26,30 @@ class PDBObject extends PObject {
 	    $node.attr("object-id", identity.id);
 	}
 }
+class CallbackTimer {
+
+    constructor(widget, delay, callback) {
+        this.widget = widget;
+        this.callback = callback;
+        this.delay = delay;
+    }
+    trigger() {
+    	var self = this;
+	    if (!_.contains(CallbackTimer.delayArray, self.widget))
+	        CallbackTimer.delayArray.push(self.widget);
+	    clearTimeout(CallbackTimer.delayTimer);
+	    CallbackTimer.delayTimer = setTimeout(function() {
+    	    var tab = CallbackTimer.delayArray;
+    	    CallbackTimer.delayArray = [];
+    	    $.each(tab, function (index, value) {
+    	        self.callback();
+    	    });
+	    }, self.delay);
+    }
+}
+CallbackTimer.delayArray = [];
+CallbackTimer.delayTimer = null;
+
 class Prospero {
 
 	constructor() {
@@ -106,5 +130,12 @@ class Prospero {
     }
     onload(callback) {
 		$(window).on("load", callback);
+    }
+    find(array, key, value) {
+        return array.find(function(obj) {return obj[key] === value;})
+    }
+    sortable($listContainer, options) {
+        $listContainer.sortable(options);
+        $listContainer.disableSelection();
     }
 }

@@ -1,6 +1,11 @@
+/* general */
+
 .hidden {
     display : none !important;
 }
+
+/* disable text selection on tables for multi-select */
+
 .text-table tr,
 .corpora-table tr,
 .dico-table tr {
@@ -8,4 +13,74 @@
         -ms-user-select: none; /* IE 10+ */
        -moz-user-select: none; /* Gecko (Firefox) */
     -webkit-user-select: none; /* Webkit (Safari, Chrome) */
+}
+
+/* edition-widget */
+
+.edition-widget {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+    color: var(--color_1);
+}
+.edition-widget:hover {
+    background-color: #F5F5F8;
+}
+textarea.edition-widget {
+    resize: none;
+}
+
+/* metadata widgets */
+
+.cartouche-metaDatas {
+    position: relative;
+}
+.cartouche-metaDatas .icon-add-metadata {
+    position: absolute;
+    left: -22px;
+    bottom: -5px;
+    width: 100%;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+}
+.cartouche-metaDatas .icon-add-metadata .icon-plus-circled {
+    color: var(--color_1);
+}
+.cartouche-metaDatas:hover .icon-add-metadata {
+    opacity: 0.4;
+}
+.cartouche-metaDatas .icon-add-metadata:hover {
+    opacity: 0.8;
+}
+
+
+
+.metadata-widget {
+    display: flex;
+    position: relative;
+}
+.metadata-widget .icon-delete-metadata {
+    position: absolute;
+    left: -22px;
+    width: 30px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+}
+.metadata-widget .icon-delete-metadata .icon-cancel-circled {
+    color: var(--color_1);
+}
+.metadata-widget:not(.dnd-working):hover .icon-delete-metadata {
+    opacity: 0.4;
+}
+.metadata-widget:not(.dnd-working) .icon-delete-metadata:hover {
+    opacity: 0.8;
+}
+
+.metadata-sort-placeholder {
+    height: 1.5em;
+    line-height: 1.2em;
+    background-color: #F5F5F8;
 }
