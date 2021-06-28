@@ -1,0 +1,36 @@
+<header class="main_header ">
+    <div class="main_header_left">
+        <div class="search_container">
+            <form class="search_form">
+                <input class="search_input txt_15" type="search" placeholder="Search..." aria-label="Search">
+                {% include "main/prospero/svg-icons/magnifying-glass.html" %}
+            </form>
+        </div>
+        <div class="navbar_container">
+            <div class="navbar_line">
+                <span class="label ">View :</span>
+                {% include "main/prospero/svg-icons/mosaic.html" %}
+                {% include "main/prospero/svg-icons/list.html" %}
+                {% include "main/prospero/svg-icons/bubble-cross.html" %}
+                <div class="separator"></div>
+                <span class="label ">Sort by :</span>
+                <a class="sort_item active" href="#">
+                    <span class="pin"></span>
+                    Title
+                </a>
+                <a class="sort_item" href="#">
+                    <span class="pin"></span>
+                    Date
+                </a>
+                <a class="sort_item" href="#">
+                    <span class="pin"></span>
+                    Owner
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="main_header_right">
+        {% include "main/prospero/svg-icons/library.html" %}
+        {% include "main/prospero/structure/header/connection-panel.html" %}
+    </div>
+</header>

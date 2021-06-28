@@ -12,7 +12,8 @@ def createContext(request):
         'MEDIA_URL': settings.MEDIA_URL,
         'ROOT_URL': settings.ROOT_URL,
         'DEBUG' : settings.DEBUG,
-        'MEDIA_TIMESTAMP' : settings.MEDIA_TIMESTAMP
+        'MEDIA_TIMESTAMP' : settings.MEDIA_TIMESTAMP,
+        'user' : ProsperoUser.objects.first()
     }
     return context
 
@@ -66,29 +67,25 @@ def index(request):
     context["project"] = json.dumps(project.serializeIdentity())
     return HttpResponse(template.render(context, request))
 
-def project(request):
+def project(request, id):
     template = loader.get_template('main/prospero/project.html')
     context = createContext(request)
-    project = Project.objects.all()[0]
+    project = Project.objects.get(id=id)
     context["project"] = json.dumps(project.serializeIdentity())
     return HttpResponse(template.render(context, request))
 
 def projects_list(request):
-    template = loader.get_template('main/prospero/projects_list.html')
+    template = loader.get_template('main/prospero/projects-list.html')
     context = createContext(request)
-    projects = []
-    for p in Project.objects.all():
-        projects.append(json.dumps(p.serializeIdentity()))
-    context["projects"] = projects
+    context["projects"] = Project.objects.all()
+    context["project"] = Project.objects.first()
     return HttpResponse(template.render(context, request))
 
 def projects_mosaic(request):
-    template = loader.get_template('main/prospero/projects_mosaic.html')
+    template = loader.get_template('main/prospero/projects-mosaic.html')
     context = createContext(request)
-    projects = []
-    for p in Project.objects.all():
-        projects.append(json.dumps(p.serializeIdentity()))
-    context["projects"] = projects
+    context["projects"] = Project.objects.all()
+    context["project"] = Project.objects.first()
     return HttpResponse(template.render(context, request))
 
 def widgets(request):

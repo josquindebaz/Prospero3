@@ -12,7 +12,11 @@ class PDeletionVisitor:
         pass
 
     def visitProject(self, obj):
-        pass
+        for corpus in obj.corpuses.all():
+            self.delete(corpus)
+        for dico in obj.dictionnaries.all():
+            self.delete(dico)
+        obj.delete()
 
     def visitPCorpus(self, obj):
         for metaData in obj.metaDatas.all():

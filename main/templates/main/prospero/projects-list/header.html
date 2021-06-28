@@ -1,0 +1,45 @@
+<header class="main_header ">
+    <div class="main_header_left">
+        <div class="search_container">
+            <form class="search_form">
+                <input class="search_input txt_15" type="search" placeholder="Search..." aria-label="Search">
+                {% include "main/prospero/svg-icons/magnifying-glass.html" %}
+            </form>
+        </div>
+        <div class="navbar_container">
+            <div class="navbar_line">
+                <span class="label ">View :</span>
+                {% include "main/prospero/svg-icons/mosaic.html" %}
+                {% include "main/prospero/svg-icons/list.html" %}
+                {% include "main/prospero/svg-icons/bubble-cross.html" %}
+                <div class="separator"></div>
+                <span class="label ">Sort by :</span>
+                <a class="sort_item active" href="#">
+                <span class="pin"></span>
+                Title
+                </a>
+                <a class="sort_item" href="#">
+                <span class="pin"></span>
+                Date
+                </a>
+                <div class="separator"></div>
+                <div action-name="multi-actions" class="btn-group state-button">
+                  <button type="button" class="btn btn-primary new-item-button state-button-state">
+                      Import
+                  </button>
+                  <button type="button" class="btn btn-primary new-item-button dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Import</a></li>
+                    <li><a class="dropdown-item" href="#">Export</a></li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main_header_right">
+        {% include "main/prospero/svg-icons/library.html" %}
+        {% include "main/prospero/structure/header/connection-panel.html" %}
+    </div>
+</header>

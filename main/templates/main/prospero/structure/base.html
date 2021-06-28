@@ -34,6 +34,7 @@
         <script src="{{ MEDIA_URL }}components/Prospero.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}components/PModal.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}components/PProjectView.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}components/PProjects.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}components/PWidgets.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}components/PLayout.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}components/UrlUtils.js?{{ MEDIA_TIMESTAMP }}"></script>
@@ -48,14 +49,25 @@
         {% include "main/prospero/structure/modals/approval-modal.html" %}
         {% include "main/prospero/structure/modals/new-text-modal.html" %}
         {% include "main/prospero/structure/modals/new-corpus-modal.html" %}
+        {% include "main/prospero/structure/modals/new-project-modal.html" %}
         {% include "main/prospero/structure/modals/new-metadata-modal.html" %}
         {% include "main/prospero/structure/modals/export-modal.html" %}
+        <script>
+            var importModal = new ImportModal($(".import-modal"));
+            var approvalModal = new ApprovalModal($(".approval-modal"));
+            var newTextModal = new NewTextModal($(".new-text-modal"));
+            var newCorpusModal = new NewCorpusModal($(".new-corpus-modal"));
+            var newProjectModal = new NewProjectModal($(".new-project-modal"));
+            var newMetadataModal = new NewMetadataModal($(".new-metadata-modal"));
+            var exportModal = new ExportModal($(".export-modal"));
+        </script>
         <main>
             <section class="side_container">
                 {% include "main/prospero/structure/sidebar.html" %}
             </section>
             <section class="main_container">
-                {% include "main/prospero/structure/header.html" %}
+                {% block header %}
+                {% endblock %}
                 {% block content %}
                 {% endblock %}
             </section>

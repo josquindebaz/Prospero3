@@ -3,6 +3,9 @@ from sortedm2m.fields import SortedManyToManyField
 from django.db import models
 import json
 from datetime import datetime
+from django.utils import timezone
+import pytz
+from django.contrib.auth.models import *
 
 CategoryType = (
     ('ENTITY', 'ENTITY'),
@@ -23,7 +26,19 @@ DictType = (
     ('SyntaxicDict', 'SyntaxicDict'),
 )
 
+class PTag(models.Model) :
+
+    name = models.CharField(blank=True, max_length=255)
+
+    def __str__(self):
+        return "[" + str(self.id) + ":PTag]"
+
+    def getRealInstance(self):
+        return self
+
 class PObject(models.Model) :
+
+    tags = models.ManyToManyField('PTag', blank=True, related_name='taggedElements')
 
     def __str__(self):
         return "[" + str(self.id) + ":PObject]"
@@ -54,7 +69,11 @@ class PObject(models.Model) :
         obj = self.getRealInstance()
         return getattr(visitor, "visit"+type(obj).__name__)(obj)
 
+    def tagList(self):
+        return ", ".join(self.tags.values_list('name', flat=True))
+
 class AugmentedData(PObject):
+
     associatedDatas = SortedManyToManyField('PResource', blank=True, related_name='augmentedData')
     metaDatas = SortedManyToManyField('MetaData', blank=True, related_name='augmentedData')
 
@@ -112,14 +131,42 @@ class AugmentedData(PObject):
         else:
             return self.getMetaData(name)
 
+class ProsperoUser(User) :
+
+    def __str__(self):
+        return "["+str(self.id)+":ProsperoUser] "+self.username
+
+    def interfaceName(self):
+        return self.last_name + " " + self.first_name
+
+    def getRealInstance(self):
+            return self
+
 class Project(AugmentedData) :
 
     name = models.CharField(blank=True, max_length=255)
     language = models.CharField(blank=True, max_length=255)
-
-    #texts = models.ManyToManyField('PText', blank=True, related_name='project')
+    description = models.TextField(blank=True)
+    creationDate = models.DateTimeField(null=True, blank=True)
+    lastOpeningDate = models.DateTimeField(null=True, blank=True)
+    lastModificationDate = models.DateTimeField(null=True, blank=True)
     dictionnaries = models.ManyToManyField('Dictionnary', blank=True, related_name='project')
     corpuses = models.ManyToManyField('PCorpus', blank=True, related_name='project')
+
+    owner = models.ForeignKey('ProsperoUser', null=True, on_delete=models.SET_NULL, related_name='ownedProjects')
+
+    def save(self, *args, **kwargs):
+        if not self.pk:
+            self.creationDate = timezone.now()
+        super(Project, self).save(*args, **kwargs)
+
+    def declareAsModified(self):
+        self.lastModificationDate = timezone.now()
+        self.save()
+
+    def declareAsOpened(self):
+        self.lastOpeningDate = timezone.now()
+        self.save()
 
     def __str__(self):
         return "[" + str(self.id) + ":Project]"
@@ -139,8 +186,17 @@ class Project(AugmentedData) :
     def getFixedDataNames(self):
         return ["name", "language"]
 
-    def getDictionnaries(self):
-        return self.dictionnaries.getRealInstance()
+    def nbTexts(self):
+        nb = 0
+        for corpus in self.corpuses.all():
+            nb = nb + corpus.nbTexts()
+        return nb
+
+    def nbTextChar(self):
+        nb = 0
+        for corpus in self.corpuses.all():
+            nb = nb + corpus.nbTextChar()
+        return nb
 
 class PCorpus(AugmentedData) :
 
@@ -205,6 +261,15 @@ class PCorpus(AugmentedData) :
 
     def getFixedDataNames(self):
         return ["name", "author"]
+
+    def nbTexts(self):
+        return self.texts.count()
+
+    def nbTextChar(self):
+        nb = 0
+        for text in self.texts.all():
+            nb = nb + text.getNbChar()
+        return nb
 
 class MetaData(PObject) :
 

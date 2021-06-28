@@ -29,8 +29,8 @@ def createLexicalDictionnary(name, language):
     obj.save()
     return obj
 
-def createProject(name):
-    obj = Project(name=name)
+def createProject(name, owner=None):
+    obj = Project(name=name, owner=owner)
     obj.save()
     defaultCorpus = createPCorpus("main")
     obj.corpuses.add(defaultCorpus)

@@ -4,6 +4,8 @@ from django.template import loader
 from main.helpers import frontend, files
 from main.helpers.deletor import deletor
 from main.importerP1 import builder2BD as builder
+from django.http import HttpResponse
+from main import views
 
 def renderTable(request, data, results):
     table = []
@@ -89,6 +91,24 @@ def createCorpus(request, data, results):
         project.corpuses.add(corpus)
         results["corpus"] = corpus.serializeAsTableItem()
 
+def createProject(request, data, results):
+    context = views.createContext(request)
+    fields = data["fields"]
+    nameField = fields["name"]
+    name = nameField["value"]
+    errors = {}
+    if Project.objects.filter(name=name).count() > 0:
+        nameField["error"] = "Project exists with this name"
+        errors["name"] = nameField
+    if errors:
+        results["serverError"] = {
+            "fields" : errors
+        }
+    else:
+        owner = context["user"]
+        project = builder.createProject(name, owner)
+        results["url"] = "/project/"+str(project.id)
+
 def createMetadata(request, data, results):
     corpus = frontend.getBDObject(data["corpus"])
     fields = data["fields"]
@@ -123,5 +143,11 @@ def changeMetadataPosition(request, data, results):
         parent.metaDatas.remove(item)
         parent.metaDatas.add(item)
 
+def renderProjectInfos(request, data, results):
+    project = frontend.getBDObject(data)
+    context = views.createContext(request)
+    context["project"] = project
+    template = loader.get_template('main/prospero/project/project-infos.html')
+    results["html"] = template.render(context, request)
 
 

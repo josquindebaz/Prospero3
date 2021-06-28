@@ -1,0 +1,75 @@
+{% extends 'main/prospero/structure/base.html' %}
+{% block header %}
+	{% include "main/prospero/projects-list/header.html" %}
+{% endblock %}
+{% block content %}
+	<div class="main_content template_listing list-projects-view">
+		<section class="row ">
+			<table class="table table-hover list-projects">
+				<thead>
+					<tr>
+						<th>Project title</th>
+						<th>Modified</th>
+						<th>Tags</th>
+						<th>Owner</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for project in projects %}
+						<tr object-model="Project" object-id="{{ project.id }}" href="{% url 'project' project.id %}">
+							<td>
+								{{ project.name }}
+							</td>
+							<td>{{ project.lastModificationDate }}</td>
+							<td>{{ project.tagList }}</td>
+							<td>{{ project.owner.interfaceName }}</td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+			<div class="listing_modale_wrapper project-infos-container">
+				<article class="cartouche">
+					<h4>Algues vertes et nitrates</h4>
+					<span class="bold">300 texts / 200 000 characters</span>
+					<p class="intro">Algues vertes et nitrates concerne la crise du Coronavirus sur son aspect
+						attentatoire aux libertés individuelles à partir de tribunes publiées du 20 avril au 5
+						mai.
+					</p>
+					<div class="cartouche_item">
+						<span class="label">Created:</span>
+					</div>
+					<div class="cartouche_item">
+						Wednesday, April 29th, 2020 at 2:24pm
+					</div>
+					<div class="cartouche_item">
+						<span class="label">Created:</span>
+					</div>
+					<div class="cartouche_item">
+						Wednesday, April 29th, 2020 at 2:24pm
+					</div>
+					<div class="cartouche_item">
+						<span class="label">Created:</span>
+					</div>
+					<div class="cartouche_item">
+						Wednesday, April 29th, 2020 at 2:24pm
+					</div>
+					<div class="cartouche_item">
+						<span class="label">Created:</span>
+					</div>
+					<div class="cartouche_item">
+						Wednesday, April 29th, 2020 at 2:24pm
+					</div>
+					<div class="separation"></div>
+					<div class="row">
+						<div class="col">col</div>
+						<div class="col">col</div>
+					</div>
+				</article>
+			</div>
+		</section>
+	</div>
+	<script>
+		var $projectsView = $(".list-projects-view");
+		var projectView = new PProjectListView($projectsView);
+	</script>
+{% endblock %}

@@ -84,3 +84,15 @@ textarea.edition-widget {
     line-height: 1.2em;
     background-color: #F5F5F8;
 }
+
+/* modale projects-list-view */
+
+.listing_modale_wrapper.project-infos-container {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s linear;
+}
+.listing_modale_wrapper.project-infos-container.visible {
+    visibility: visible;
+    opacity: 1;
+}

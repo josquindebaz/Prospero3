@@ -1,4 +1,7 @@
 {% extends 'main/prospero/structure/base.html' %}
+{% block header %}
+	{% include "main/prospero/project/header.html" %}
+{% endblock %}
 {% block content %}
 	<div class="main_content ">
 		<section class="row project-view" data-object='{{ project|safe }}'>
@@ -19,13 +22,6 @@
 		var $projectView = $(".project-view");
 		var projectView = new PProjectView($projectView, $projectView.data("object"));
 		projectView.load();
-		var importModal = new ImportModal($(".import-modal"));
-		var approvalModal = new ApprovalModal($(".approval-modal"));
-		var newTextModal = new NewTextModal($(".new-text-modal"));
-		var newCorpusModal = new NewCorpusModal($(".new-corpus-modal"));
-		var newMetadataModal = new NewMetadataModal($(".new-metadata-modal"));
-		var exportModal = new ExportModal($(".export-modal"));
-
 		/*
 		prospero.onload(function() {
 			newMetadataModal.show();

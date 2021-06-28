@@ -85,7 +85,7 @@ class PVisitor:
         files.writeFile(filePath, obj.text, fileEncoding)
         ctxFilePath = files.gotFolder(filePath) + files.getFileName(filePath, False) + ".ctx"
 
-        ctxData = [obj.identCtxP1]
+        ctxData = [obj.identCtxP1 if obj.identCtxP1 else "fileCtx0005"]
         ctxData.append(self.none2VoidString(obj.title))
         ctxData.append(self.none2VoidString(obj.author))
         ctxData.append(self.none2VoidString(obj.getDataValue("narrator")))

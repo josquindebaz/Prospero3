@@ -21,9 +21,16 @@ class PDBObject extends PObject {
 
 	constructor($node, identity) {
 	    super($node);
-	    this.identity = identity;
-	    $node.attr("object-model", identity.model);
-	    $node.attr("object-id", identity.id);
+	    if (identity) {
+            this.identity = identity;
+            $node.attr("object-model", identity.model);
+            $node.attr("object-id", identity.id);
+	    } else {
+	        this.identity = {
+	            model: $node.attr("object-model"),
+	            id: $node.attr("object-id")
+	        }
+	    }
 	}
 }
 class CallbackTimer {

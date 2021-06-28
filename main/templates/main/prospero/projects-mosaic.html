@@ -1,0 +1,38 @@
+{% extends 'main/prospero/structure/base.html' %}
+{% block header %}
+	{% include "main/prospero/projects-mosaic/header.html" %}
+{% endblock %}
+{% block content %}
+	<div class="main_content template_mosaique">
+		<section class="row ">
+			<div class="col col-sm-9 mosaique_wrapper">
+				<div class="card project-card add-project-card">
+					<div class="card-header  card-header-icon">
+						{% include "main/prospero/svg-icons/plus-blue.html" %}
+						<h3 class="txt_20 title"> New project</h3>
+					</div>
+				</div>
+				{% for project in projects %}
+					<a href="{% url 'project' project.id %}" class="card project-card" object-model="Project" object-id="{{ project.id }}">
+						<div class="card-header">
+							<h3 class="txt_20 title">{{ project.name }}</h3>
+						</div>
+						<div class="card-body">
+							{% if project.lastModificationDate %}
+								Modified {{ project.lastModificationDate }}<br>
+							{% endif %}
+							<span>Tags : {{ project.tagList }}</span><br>
+							{{ project.owner.interfaceName }}
+						</div>
+					</a>
+				{% endfor %}
+			</div>
+			<div class="col col-sm-3 grid_side_wrapper project-infos-container">
+			</div>
+		</section>
+	</div>
+	<script>
+		var $projectsView = $(".mosaique_wrapper");
+		var projectView = new PProjects($projectsView);
+	</script>
+{% endblock %}

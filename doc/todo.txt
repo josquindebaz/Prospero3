@@ -10,6 +10,10 @@ REUNION JOSQUIN 25/06/2021
 TODO 10/06/2021
 
 	utilisateur
+		connection / deconnection
+		gestion des droits
+		creation / suppression utilisateur
+		édition des droits d'un projet
 	mettre un trello
 	page projet		
 		tri table par colonne
@@ -42,7 +46,7 @@ OK		algo d'export zip
 OK		garder le nom des fichiers en base
 OK		générer nom de fichier txt si ne venant pas de P1 (créé dans P3)
 OK		associatedData (pas pour json)
-		ajouter première ligne ctx
+OK		ajouter première ligne ctx
 		suppression des fichiers dans media une fois télécharger
 	page projets
 		dynamisation projets liste
@@ -57,9 +61,16 @@ OK	modale création corpus
 
 
 MANU :
+	scrollbar vertical project infos
+	spinner global / pour le lazy loading
+	icons sort table
 	overflow texte (Manu)
 	css dropzone (Manu)
 	css scrollbar horizontal (Manu)
+	encart droits utilisateurs
+	icone svg bleu/noir
+	radio du design pas bootstrap
+	bouton delete encartinfos projets
 	question multi-select shift : 
 		css user-select: none
 		document.getSelection().removeAllRanges();

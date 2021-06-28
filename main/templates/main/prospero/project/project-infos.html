@@ -1,0 +1,49 @@
+<article class="cartouche" object-model="Project" object-id="{{ project.id }}">
+    <button action-name="delete-project">Delete</button>
+    <h4>{{ project.name }}</h4>
+    <span class="bold">{{ project.nbTexts }} texts / {{ project.nbTextChar }} characters</span>
+    <p class="intro">{{ project.description }}</p>
+    <div class="cartouche_item">
+        <span class="label">Created:</span>
+    </div>
+    <div class="cartouche_item">
+        {{ project.creationDate }}
+    </div>
+    <div class="cartouche_item">
+        <span class="label">Modified:</span>
+    </div>
+    <div class="cartouche_item">
+        {% if project.lastModificationDate %}
+            {{ project.lastModificationDate }}
+        {% else %}
+            Never
+        {% endif %}
+    </div>
+    <div class="cartouche_item">
+        <span class="label">Last opened:</span>
+    </div>
+    <div class="cartouche_item">
+        {% if project.lastOpeningDate %}
+            {{ project.lastOpeningDate }}
+        {% else %}
+            Never
+        {% endif %}
+    </div>
+    <div class="cartouche_item">
+        <span class="label">Tags:</span>
+    </div>
+    <div class="cartouche_item">
+        {{ project.tagList }}
+    </div>
+    <div class="cartouche_item">
+        <span class="label">Created by:</span>
+    </div>
+    <div class="cartouche_item">
+        {{ project.owner.interfaceName }}
+    </div>
+    <div class="separation"></div>
+    <div class="row">
+        <div class="col">col</div>
+        <div class="col">col</div>
+    </div>
+</article>
