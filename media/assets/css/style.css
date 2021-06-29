@@ -57,6 +57,7 @@ textarea.edition-widget {
 
 
 
+.data-widget,
 .metadata-widget {
     display: flex;
     position: relative;
@@ -99,6 +100,14 @@ textarea.edition-widget {
 
 /* tags-input */
 .tags-input {
+}
+.tags-input .dropdown {
+    background-color: transparent;
+    border: none;
+    padding: 0px 4px;
+}
+.tags-input .dropdown input {
+    background-color: transparent;
 }
 .tags-input .badge {
     color: var(--bs-table-hover-color);

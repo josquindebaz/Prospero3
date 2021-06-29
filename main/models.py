@@ -255,6 +255,13 @@ class PCorpus(AugmentedData) :
                 "type": "String",
                 "value": self.author,
                 "kind": "data"
+            },
+            {
+                "identity": identity,
+                "name": "tags",
+                "type": "Tags",
+                "value": self.tagIds(),
+                "kind": "data"
             }
         ]
         data["datas"] = datas
@@ -270,7 +277,7 @@ class PCorpus(AugmentedData) :
             "values" : {
                 "name" : self.name,
                 "author" : self.author,
-                "tags" : ""
+                "tags" : self.tagList()
             }
         }
 

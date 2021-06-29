@@ -53,12 +53,8 @@ class CorpusEditor extends PObject {
         var self = this;
         this.data = data;
         prospero.ajax("renderObject", this.data, function(data) {
-            $("[property-name=name]", self.node).text(data.object.name);
-            var $cartoucheFixed = $(".cartouche-fixed", self.node);
-            var $authorWidget = $("[property-name=author]", $cartoucheFixed);
-            //$authorWidget.val(data.object.author);
-            var authorData = prospero.find(data.object.datas, "name", "author")
-            new PASTextInput($authorWidget, authorData).setValue(authorData.value);
+            prospero.initEditionWidgets($("h3.title", self.node), data.object.datas);
+            prospero.initEditionWidgets($(".cartouche-fixed", self.node), data.object.datas);
             var $cartouche = $(".cartouche-metaDatas", self.node);
             var $cartoucheContainer = $cartouche.find(".cartouche-content")
             $cartoucheContainer.empty();
@@ -98,12 +94,14 @@ class CorpusEditor extends PObject {
 	addMetadata(metaData, $cartouche) {
 	    if (!$cartouche)
 	        $cartouche = $(".cartouche-metaDatas .cartouche-content", self.node);
-        var name = metaData.name.charAt(0).toUpperCase() + metaData.name.slice(1)
-        var value = prospero.escapeHtml(metaData.value);
-        var type = metaData.type;
-        var $item = null;
-        var widget = null;
-        var iconDelete = '<div class="icon-delete-metadata"><div class="icon-cancel-circled"></div></div>';
+        var labelName = metaData.name.charAt(0).toUpperCase() + metaData.name.slice(1)
+        var $item = $('<div class="cartouche_item metadata-widget"><div class="icon-delete-metadata"><div class="icon-cancel-circled"></div></div><label>'+labelName+'</label></div>');
+        var $editionWidget = prospero.createEditionWidgetHtml(metaData);
+        $item.append($editionWidget);
+        $cartouche.append($item);
+        var widget = prospero.initEditionWidget($item, metaData);
+
+        /*
         if (type == "String") {
             var editionWidgetCode = '<input class="edition-widget" value="'+value+'" />';
             $item = $('<div class="cartouche_item metadata-widget">'+iconDelete+'<label>'+name+'</label>'+editionWidgetCode+'</div>');
@@ -121,6 +119,7 @@ class CorpusEditor extends PObject {
             var widget = new PASTextarea($item, metaData);
             widget = widget.autosize();
         }
+        */
         $item.find(".icon-delete-metadata .icon-cancel-circled").bind("click", function() {
             prospero.ajax("deleteObject", widget.data.identity, function(data) {
                 widget.node.remove();

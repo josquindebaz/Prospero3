@@ -18,7 +18,7 @@
 
         <link rel="stylesheet" href="{{ MEDIA_URL }}components/jqueryui/jquery-ui.css">
         <link rel="stylesheet" href="{{ MEDIA_URL }}components/fontello/css/fontello.css">
-        <!--<link rel="stylesheet" href="{{ MEDIA_URL }}components/dropzone.css?{{ MEDIA_TIMESTAMP }}">-->
+        <link rel="stylesheet" href="{{ MEDIA_URL }}components/dropzone/tool_dropzone.css?{{ MEDIA_TIMESTAMP }}">
         <link rel="stylesheet" href="{{ MEDIA_URL }}assets/css/prospero.css?{{ MEDIA_TIMESTAMP }}">
         <link rel="stylesheet" href="{{ MEDIA_URL }}assets/css/style.css?{{ MEDIA_TIMESTAMP }}">
 
@@ -91,58 +91,10 @@
             <section class="main_container">
                 {% block header %}
                 {% endblock %}
-
-
-                <div class="col tags-input" data-tags="{{ project.tagIds|dump }}" data-identity="{{ project.serializeIdentity|dump }}">
-                    <div class="tags-input-container">
-                        <label for="validationTagsNew" class="form-label">Tags new</label>
-                        <select class="form-select" id="validationTagsNew" name="tags_new[]" multiple data-allow-new="true">
-                            <option selected disabled hidden value="">Choose a tag...</option>
-                            <!--<option value="1" selected="selected">Apple</option>-->
-                            <!--<option value="2">Banana</option>-->
-                            <!--<option value="3">Orange</option>-->
-                        </select>
-                    </div>
-                </div>
                 {% block content %}
                 {% endblock %}
             </section>
         </main>
         <script src="{{ MEDIA_URL }}components/prefixfree/prefixfree.min.js"></script>
-        <script>
-            console.log("ICI !!");
-            prospero.getTagsManager(function(tagsManager) {
-                var $widget = $(".tags-input");
-                var existingData = $widget.data("tags");
-                var identity = $widget.data("identity");
-                var tagsInput = new TagsInput(
-                    $widget.find(".tags-input-container"),
-                    existingData,
-                    tagsManager,
-                    identity,
-                    true
-                );
-                //tagsInput.addItemProg("Orange");
-                //tagsInput.adjustWidth();
-            });
-            /*var tagManager = new TagManager([
-                {
-                    id: 1,
-                    value: "Apple"
-                },
-                {
-                    id: 2,
-                    value: "Banana"
-                },
-                {
-                    id: 3,
-                    value: "Orange"
-                },
-                {
-                    id: 4,
-                    value: "Ananas"
-                }
-            ]);*/
-        </script>
     </body>
 </html>

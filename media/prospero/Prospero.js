@@ -157,4 +157,37 @@ class Prospero {
             });
         }
     }
+    initEditionWidgets($container, widgetDatas) {
+        var self  = this;
+        $.each(widgetDatas, function(index, widgetData) {
+            var $widget = $('[property-name='+widgetData.name+']', $container);
+            if ($widget.length > 0)
+                self.initEditionWidget($widget, widgetData);
+        });
+    }
+    initEditionWidget($widget, widgetData) {
+        var widgetType = widgetData.type;
+        var widget = null;
+        if (widgetType == "String") {
+            widget = new PASTextInput($widget, widgetData);
+            widget.setValue(widgetData.value);
+        } else if (widgetType == "Datetime") {
+            widget = new PASTextInput($widget, widgetData);
+            widget.setValue(widgetData.value);
+        } else if (widgetType == "Text") {
+            widget = new PASTextarea($widget, widgetData);
+            widget.setValue(widgetData.value);
+            widget.autosize();
+        } else if (widgetType == "Tags") {
+            widget = new PASInputTags($widget, widgetData);
+        }
+    }
+    createEditionWidgetHtml(widgetData) {
+        var widgetType = widgetData.type;
+        if (widgetType == "String" || widgetType == "Datetime") {
+            return $('<input class="edition-widget"/>');
+        } else if (widgetType == "Text") {
+            return $('<textarea class="edition-widget"></textarea>');
+        }
+    }
 }

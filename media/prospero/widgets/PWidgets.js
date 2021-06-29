@@ -20,14 +20,16 @@ class PInputField extends PObject {
     }
     bindChange() {
         var self = this;
-	    self.fieldNode.bind("keyup blur change input", function(event) {
-	        self.setAsValid();
-            self.notifyObservers({
-                name: "valueChanged",
-                target: self,
-                original: event
+	    if (self.fieldNode) {
+            self.fieldNode.bind("keyup blur change input", function(event) {
+                self.setAsValid();
+                self.notifyObservers({
+                    name: "valueChanged",
+                    target: self,
+                    original: event
+                });
             });
-	    });
+	    }
     }
     setAsInvalid(message) {
         if (message)
@@ -53,7 +55,7 @@ class PTextarea extends PInputField {
 	    var self = this;
 	}
 	initFieldNode() {
-	    this.fieldNode = this.node.find("textarea");
+	    this.fieldNode = this.node.find("textarea").addBack('textarea');
 	}
 	autosize() {
         this.fieldNode.each(function () {
@@ -92,7 +94,7 @@ class PTextInput extends PInputField {
 	    var self = this;
 	}
 	initFieldNode() {
-	    this.fieldNode = this.node.find("input");
+	    this.fieldNode = this.node.find("input").addBack('input');
 	}
 }
 class PASTextInput extends PTextInput {
@@ -115,6 +117,34 @@ class PASTextInput extends PTextInput {
         });
 	}
 }
+
+class PASInputTags extends PInputField {
+
+	constructor($node, data) {
+	    super($node);
+	    var self = this;
+	    self.data = data;
+
+        prospero.getTagsManager(function(tagsManager) {
+            var $widget = $(".tags-input", self.node);
+            var existingData = self.data.value;
+            var identity = self.data.identity;
+            var tagsInput = new TagsInput(
+                $widget.find(".tags-input-container"),
+                existingData,
+                tagsManager,
+                identity,
+                true
+            );
+            //tagsInput.addItemProg("Orange");
+            //tagsInput.adjustWidth();
+        });
+
+	}
+	initFieldNode() {
+	}
+}
+
 
 class PCheckInput extends PInputField {
 
