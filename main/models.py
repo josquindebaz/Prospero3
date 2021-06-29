@@ -33,6 +33,18 @@ class PTag(models.Model) :
     def __str__(self):
         return "[" + str(self.id) + ":PTag]"
 
+    def serializeIdentity(self):
+        return {
+            "model" : self.getRealInstance().__class__.__name__,
+            "id" : self.id
+        }
+
+    def serialize(self):
+        return {
+            "id" : self.id,
+            "value" : self.name
+        }
+
     def getRealInstance(self):
         return self
 
@@ -71,6 +83,9 @@ class PObject(models.Model) :
 
     def tagList(self):
         return ", ".join(self.tags.values_list('name', flat=True))
+
+    def tagIds(self):
+        return list(self.tags.values_list('id', flat=True))
 
 class AugmentedData(PObject):
 

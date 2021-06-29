@@ -96,3 +96,20 @@ textarea.edition-widget {
     visibility: visible;
     opacity: 1;
 }
+
+/* tags-input */
+.tags-input {
+}
+.tags-input .badge {
+    color: var(--bs-table-hover-color);
+    border: 1px solid;
+    border-color: var(--bs-table-hover-color) !important;
+    background-color: transparent !important;
+}
+.tags-input .badge .remove {
+    cursor: pointer;
+    margin-left: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border: 1px solid grey;
+}

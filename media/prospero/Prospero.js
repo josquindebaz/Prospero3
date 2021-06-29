@@ -60,6 +60,7 @@ CallbackTimer.delayTimer = null;
 class Prospero {
 
 	constructor() {
+	    this.tagManager = null;
 	}
 	ajax(service, data, callback) {
         var data = {
@@ -144,5 +145,16 @@ class Prospero {
     sortable($listContainer, options) {
         $listContainer.sortable(options);
         $listContainer.disableSelection();
+    }
+    getTagsManager(callback) {
+        var self = this;
+        if (self.tagManager)
+            callback(self.tagManager);
+        else {
+            this.ajax("getTagsData", {}, function(data) {
+                self.tagManager = new TagManager(data.tags);
+                callback(self.tagManager);
+            });
+        }
     }
 }

@@ -9,33 +9,66 @@
             {{ title }}
         </title>
 		<!--<link rel="icon" type="image/x-icon" href="{{ MEDIA_URL }}favicon/favicon.ico"/>-->
+
         <!-- css -->
-        <!--<link rel="stylesheet" type="text/css" href="http://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.css" />-->
-        <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}components/w2ui/w2ui.css" />
-        <link rel="stylesheet" href="{{ MEDIA_URL }}assets/css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}components/w2ui/w2ui.css" /><!--<link rel="stylesheet" type="text/css" href="http://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.css" />-->
+        <link rel="stylesheet" href="{{ MEDIA_URL }}components/bootstrap/css/bootstrap.min.css">
+
         <link rel="stylesheet" href="{{ MEDIA_URL }}components/jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="{{ MEDIA_URL }}components/fontello/css/fontello.css">
+        <!--<link rel="stylesheet" href="{{ MEDIA_URL }}components/dropzone.css?{{ MEDIA_TIMESTAMP }}">-->
 
-        <link rel="stylesheet" href="{{ MEDIA_URL }}components/tool_dropzone.css">
-        <!--<link rel="stylesheet" href="{{ MEDIA_URL }}assets/css/prospero.css">-->
-        <link rel="stylesheet" href="http://demo.e-lechat.com/prospero/assets/css/prospero.css">
+        <!--<link rel="stylesheet" href="{{ MEDIA_URL }}assets/css/prospero.css?{{ MEDIA_TIMESTAMP }}">-->
+        <!--<link rel="stylesheet" href="http://demo.e-lechat.com/prospero/assets/css/prospero.css">-->
+        <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/manu-lechat/prospero/2063297a2c228ba99d06469efa581834c47d0590/assets/css/prospero.css">
+        <!--<link rel="stylesheet" type="text/css" href="https://github.com/manu-lechat/prospero/blob/main/assets/css/prospero.css">-->
 
-        <link rel="stylesheet" href="{{ MEDIA_URL }}components/style.css?{{ MEDIA_TIMESTAMP }}">
+
+
+
+        <link rel="stylesheet" href="{{ MEDIA_URL }}assets/css/style.css?{{ MEDIA_TIMESTAMP }}">
+
         <!-- javascript -->
+
         <script src="{{ MEDIA_URL }}components/jquery/jquery-1.9.1.js"></script>
-
-        <!--<script type="text/javascript" src="http://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.js"></script>-->
-        <script type="text/javascript" src="{{ MEDIA_URL }}components/w2ui/w2ui.min.js"></script>
-
+        <script src="{{ MEDIA_URL }}components/w2ui/w2ui.min.js"></script><!--<script type="text/javascript" src="http://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.js"></script>-->
         <script src="{{ MEDIA_URL }}components/jqueryui/jquery-ui.js"></script>
-        <script src="{{ MEDIA_URL }}assets/js/bootstrap.bundle.min.js"></script>
-        <script src="{{ MEDIA_URL }}components/underscore.js"></script>
-        <script src="{{ MEDIA_URL }}components/tool_dropzone.js?{{ MEDIA_TIMESTAMP }}"></script>
-        <script src="{{ MEDIA_URL }}components/Prospero.js?{{ MEDIA_TIMESTAMP }}"></script>
-        <script src="{{ MEDIA_URL }}components/PModal.js?{{ MEDIA_TIMESTAMP }}"></script>
-        <script src="{{ MEDIA_URL }}components/PProjectView.js?{{ MEDIA_TIMESTAMP }}"></script>
-        <script src="{{ MEDIA_URL }}components/PWidgets.js?{{ MEDIA_TIMESTAMP }}"></script>
-        <script src="{{ MEDIA_URL }}components/PLayout.js?{{ MEDIA_TIMESTAMP }}"></script>
-        <script src="{{ MEDIA_URL }}components/UrlUtils.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}components/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="{{ MEDIA_URL }}components/bootstrap-tagsinput/tags.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}components/bootstrap-tagsinput/TagManager.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}components/bootstrap-tagsinput/TagsInput.js?{{ MEDIA_TIMESTAMP }}"></script>
+
+        <script src="{{ MEDIA_URL }}components/underscore/underscore.js"></script>
+        <script src="{{ MEDIA_URL }}components/autoresize/autosize.min.js"></script>
+        <script src="{{ MEDIA_URL }}components/dropzone/tool_dropzone.js?{{ MEDIA_TIMESTAMP }}"></script>
+
+        <script src="{{ MEDIA_URL }}prospero/Prospero.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/UrlUtils.js?{{ MEDIA_TIMESTAMP }}"></script>
+
+        <script src="{{ MEDIA_URL }}prospero/modals/PModal.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/modals/ApprovalModal.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/modals/ExportModal.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/modals/ImportModal.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/modals/NewCorpusModal.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/modals/NewMetadataModal.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/modals/NewProjectModal.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/modals/NewTextModal.js?{{ MEDIA_TIMESTAMP }}"></script>
+
+        <script src="{{ MEDIA_URL }}prospero/widgets/PLayout.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/widgets/PPanels.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/widgets/PTable.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/widgets/PWidgets.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/widgets/SwitchPanel.js?{{ MEDIA_TIMESTAMP }}"></script>
+
+        <script src="{{ MEDIA_URL }}prospero/views/projectView/CorporaTable.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/views/projectView/DicoTable.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/views/projectView/EditorPanel.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/views/projectView/TextTable.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/views/PProjectListView.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/views/PProjectMosaicView.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/views/PProjectView.js?{{ MEDIA_TIMESTAMP }}"></script>
+
         <script>
             var prospero = new Prospero();
             var urls = new UrlUtils();
@@ -57,6 +90,6 @@
                 {% endblock %}
             </section>
         </main>
-        <script src="{{ MEDIA_URL }}assets/js/prefixfree.min.js"></script>
+        <script src="{{ MEDIA_URL }}components/prefixfree/prefixfree.min.js"></script>
     </body>
 </html>

@@ -1,4 +1,5 @@
 {% load static %}
+{% load custom %}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
     <head>
@@ -9,35 +10,57 @@
             {{ title }}
         </title>
 		<!--<link rel="icon" type="image/x-icon" href="{{ MEDIA_URL }}favicon/favicon.ico"/>-->
+
         <!-- css -->
-        <!--<link rel="stylesheet" type="text/css" href="http://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.css" />-->
-        <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}components/w2ui/w2ui.css" />
-        <link rel="stylesheet" href="{{ MEDIA_URL }}assets/css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}components/w2ui/w2ui.css" /><!--<link rel="stylesheet" type="text/css" href="http://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.css" />-->
+        <link rel="stylesheet" href="{{ MEDIA_URL }}components/bootstrap/css/bootstrap.min.css">
+
         <link rel="stylesheet" href="{{ MEDIA_URL }}components/jqueryui/jquery-ui.css">
-        <link rel="stylesheet" href="{{ MEDIA_URL }}assets/fontello/css/fontello.css">
-
-        <link rel="stylesheet" href="{{ MEDIA_URL }}components/tool_dropzone.css?{{ MEDIA_TIMESTAMP }}">
+        <link rel="stylesheet" href="{{ MEDIA_URL }}components/fontello/css/fontello.css">
+        <!--<link rel="stylesheet" href="{{ MEDIA_URL }}components/dropzone.css?{{ MEDIA_TIMESTAMP }}">-->
         <link rel="stylesheet" href="{{ MEDIA_URL }}assets/css/prospero.css?{{ MEDIA_TIMESTAMP }}">
-        <link rel="stylesheet" href="{{ MEDIA_URL }}components/style.css?{{ MEDIA_TIMESTAMP }}">
+        <link rel="stylesheet" href="{{ MEDIA_URL }}assets/css/style.css?{{ MEDIA_TIMESTAMP }}">
+
         <!-- javascript -->
+
         <script src="{{ MEDIA_URL }}components/jquery/jquery-1.9.1.js"></script>
-
-        <!--<script type="text/javascript" src="http://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.js"></script>-->
-        <script type="text/javascript" src="{{ MEDIA_URL }}components/w2ui/w2ui.min.js"></script>
-
+        <script src="{{ MEDIA_URL }}components/w2ui/w2ui.min.js"></script><!--<script type="text/javascript" src="http://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.js"></script>-->
         <script src="{{ MEDIA_URL }}components/jqueryui/jquery-ui.js"></script>
-        <script src="{{ MEDIA_URL }}assets/js/bootstrap.bundle.min.js"></script>
-        <script src="{{ MEDIA_URL }}components/underscore.js"></script>
-        <script src="{{ MEDIA_URL }}components/autoresize/autosize.min.js"></script>
+        <script src="{{ MEDIA_URL }}components/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="{{ MEDIA_URL }}components/bootstrap-tagsinput/tags.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}components/bootstrap-tagsinput/TagManager.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}components/bootstrap-tagsinput/TagsInput.js?{{ MEDIA_TIMESTAMP }}"></script>
 
-        <script src="{{ MEDIA_URL }}components/tool_dropzone.js?{{ MEDIA_TIMESTAMP }}"></script>
-        <script src="{{ MEDIA_URL }}components/Prospero.js?{{ MEDIA_TIMESTAMP }}"></script>
-        <script src="{{ MEDIA_URL }}components/PModal.js?{{ MEDIA_TIMESTAMP }}"></script>
-        <script src="{{ MEDIA_URL }}components/PProjectView.js?{{ MEDIA_TIMESTAMP }}"></script>
-        <script src="{{ MEDIA_URL }}components/PProjects.js?{{ MEDIA_TIMESTAMP }}"></script>
-        <script src="{{ MEDIA_URL }}components/PWidgets.js?{{ MEDIA_TIMESTAMP }}"></script>
-        <script src="{{ MEDIA_URL }}components/PLayout.js?{{ MEDIA_TIMESTAMP }}"></script>
-        <script src="{{ MEDIA_URL }}components/UrlUtils.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}components/underscore/underscore.js"></script>
+        <script src="{{ MEDIA_URL }}components/autoresize/autosize.min.js"></script>
+        <script src="{{ MEDIA_URL }}components/dropzone/tool_dropzone.js?{{ MEDIA_TIMESTAMP }}"></script>
+
+        <script src="{{ MEDIA_URL }}prospero/Prospero.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/UrlUtils.js?{{ MEDIA_TIMESTAMP }}"></script>
+
+        <script src="{{ MEDIA_URL }}prospero/modals/PModal.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/modals/ApprovalModal.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/modals/ExportModal.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/modals/ImportModal.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/modals/NewCorpusModal.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/modals/NewMetadataModal.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/modals/NewProjectModal.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/modals/NewTextModal.js?{{ MEDIA_TIMESTAMP }}"></script>
+
+        <script src="{{ MEDIA_URL }}prospero/widgets/PLayout.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/widgets/PPanels.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/widgets/PTable.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/widgets/PWidgets.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/widgets/SwitchPanel.js?{{ MEDIA_TIMESTAMP }}"></script>
+
+        <script src="{{ MEDIA_URL }}prospero/views/projectView/CorporaTable.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/views/projectView/DicoTable.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/views/projectView/EditorPanel.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/views/projectView/TextTable.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/views/PProjectListView.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/views/PProjectMosaicView.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/views/PProjectView.js?{{ MEDIA_TIMESTAMP }}"></script>
 
         <script>
             var prospero = new Prospero();
@@ -68,10 +91,58 @@
             <section class="main_container">
                 {% block header %}
                 {% endblock %}
+
+
+                <div class="col tags-input" data-tags="{{ project.tagIds|dump }}" data-identity="{{ project.serializeIdentity|dump }}">
+                    <div class="tags-input-container">
+                        <label for="validationTagsNew" class="form-label">Tags new</label>
+                        <select class="form-select" id="validationTagsNew" name="tags_new[]" multiple data-allow-new="true">
+                            <option selected disabled hidden value="">Choose a tag...</option>
+                            <!--<option value="1" selected="selected">Apple</option>-->
+                            <!--<option value="2">Banana</option>-->
+                            <!--<option value="3">Orange</option>-->
+                        </select>
+                    </div>
+                </div>
                 {% block content %}
                 {% endblock %}
             </section>
         </main>
-        <script src="{{ MEDIA_URL }}assets/js/prefixfree.min.js"></script>
+        <script src="{{ MEDIA_URL }}components/prefixfree/prefixfree.min.js"></script>
+        <script>
+            console.log("ICI !!");
+            prospero.getTagsManager(function(tagsManager) {
+                var $widget = $(".tags-input");
+                var existingData = $widget.data("tags");
+                var identity = $widget.data("identity");
+                var tagsInput = new TagsInput(
+                    $widget.find(".tags-input-container"),
+                    existingData,
+                    tagsManager,
+                    identity,
+                    true
+                );
+                //tagsInput.addItemProg("Orange");
+                //tagsInput.adjustWidth();
+            });
+            /*var tagManager = new TagManager([
+                {
+                    id: 1,
+                    value: "Apple"
+                },
+                {
+                    id: 2,
+                    value: "Banana"
+                },
+                {
+                    id: 3,
+                    value: "Orange"
+                },
+                {
+                    id: 4,
+                    value: "Ananas"
+                }
+            ]);*/
+        </script>
     </body>
 </html>

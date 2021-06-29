@@ -51,13 +51,14 @@ OK		ajouter première ligne ctx
 	page projets
 		dynamisation projets liste
 		dynamisation projets mosaïque
+		édition à la volée des données projet
 OK	modale création text
 OK		par textarea
 OK		par pdf
 OK		par txt
 OK	modale création corpus
 	bouton avec spinner
-
+	interdire la fermeture des modals par click externe
 
 
 MANU :
