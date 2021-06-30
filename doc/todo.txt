@@ -1,9 +1,37 @@
-delete
-page projects-list : scrollé au milieu
-icone trois petits points
-h1 et h2 header page project
-navigation
-renommé dans popup par actions ...
+TODO 30/06/2021
+	multi-upload
+	dans modale body : txt_l => text => m
+	session utilisateur avec projet en cours, recherche
+	recherche page projets
+	page dictionnaire
+	page utilisateur préférence creation/suppression groupe/utilisateur
+		nom, prénom, mail
+	une seul sélection
+	nb textes dans table corpus + nb textes chargés dans table textes
+	recherche globale dans page project et projects
+	utilisateur
+		connection / deconnection
+		gestion des droits
+		édition des droits d'un projet	
+	associatedData
+		ajout /suppression
+		sort
+	modif design
+		icone trois petits points
+OK		h1 et h2 header page project	
+		page projects-list : scrollé au milieu	
+		renommé dans popup par actions trois points ...
+	navigation
+	utilisateur GIT Josquin
+	export : suppression des fichiers dans media une fois télécharger
+	import : 
+		correction tests Josquin
+		donner le fichier fautif
+		faire une transaction
+	bouton avec spinner
+	interdire la fermeture des modals par click externe
+	édition à la volée des données projet
+	
 
 REUNION JOSQUIN 25/06/2021
 
@@ -16,18 +44,13 @@ REUNION JOSQUIN 25/06/2021
 
 TODO 10/06/2021
 
-	utilisateur
-		connection / deconnection
-		gestion des droits
-		creation / suppression utilisateur
-		édition des droits d'un projet
-	mettre un trello
-	page projet		
-		tri table par colonne
-		lazy loading
+
+OK	page projet		
+OK		tri table par colonne
+OK		lazy loading
 OK		multi-sélection maj		
 OK		ne pas montrer les metadata calculation
-		système de tags
+OK		système de tags
 OK		resizer panels
 OK		multi-delete
 OK		delete dico
@@ -35,38 +58,29 @@ OK	metadata
 OK		PText : mettre en dur title, date, source et author 
 OK		modification à la volée des metadata
 OK		sort des metadata
-OK		ajout/suppression des metadata	
-	associatedData
-		ajout /suppression
-		sort
-	utilisateur GIT Josquin
+OK		ajout/suppression des metadata		
 OK	import
 OK		encodage (*1)
 OK		casse des ctx/txt
 OK		préciser le corpus utilisé
 OK		gestion erreurs (+transaction)
 OK		rechargement interface
-	export
+OK	export
 OK		modale d'export (choix du type d'export)
 OK		export json
 OK		algo d'export zip
 OK		garder le nom des fichiers en base
 OK		générer nom de fichier txt si ne venant pas de P1 (créé dans P3)
 OK		associatedData (pas pour json)
-OK		ajouter première ligne ctx
-		suppression des fichiers dans media une fois télécharger
-	page projets
-		dynamisation projets liste
-		dynamisation projets mosaïque
-		édition à la volée des données projet
+OK		ajouter première ligne ctx		
+OK	page projets
+OK		dynamisation projets liste
+OK		dynamisation projets mosaïque
 OK	modale création text
 OK		par textarea
 OK		par pdf
 OK		par txt
 OK	modale création corpus
-	bouton avec spinner
-	interdire la fermeture des modals par click externe
-
 
 MANU :
 	scrollbar vertical project infos

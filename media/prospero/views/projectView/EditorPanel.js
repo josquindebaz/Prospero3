@@ -13,9 +13,18 @@ class TextEditor extends PObject {
 	    super($node);
 	    this.view = view;
 	}
-	load(data) {
+	clear() {
+	}
+	setData(data) {
+	    this.data = data;
+	    return this;
+	}
+	reload() {
+	    this.clear();
+	    this.load();
+	}
+	load() {
         var self = this;
-        this.data = data;
         prospero.ajax("renderObject", this.data, function(data) {
             // load text
             var $text = $(".text-container", self.node);
@@ -48,10 +57,24 @@ class CorpusEditor extends PObject {
 	    super($node);
 	    this.view = view;
 	}
-
-	load(data) {
+	clear() {
+	    this.node.find(".cartouche-fixed .tags-input .dropdown").remove();
+        this.node.find(".cartouche-fixed .tags-input select option:not(.option-placeholer)").remove();
+        if (this.node.find(".cartouche-fixed .tags-input select option.option-placeholer").length == 0) {
+            var $option = $('<option class="option-placeholer" selected disabled hidden value="">Choose a tag...</option>');
+            this.node.find(".cartouche-fixed .tags-input select").append($option);
+        }
+	}
+	setData(data) {
+	    this.data = data;
+	    return this;
+	}
+	reload() {
+	    this.clear();
+	    this.load();
+	}
+	load() {
         var self = this;
-        this.data = data;
         prospero.ajax("renderObject", this.data, function(data) {
             prospero.initEditionWidgets($("h3.title", self.node), data.object.datas);
             prospero.initEditionWidgets($(".cartouche-fixed", self.node), data.object.datas);
@@ -100,26 +123,6 @@ class CorpusEditor extends PObject {
         $item.append($editionWidget);
         $cartouche.append($item);
         var widget = prospero.initEditionWidget($item, metaData);
-
-        /*
-        if (type == "String") {
-            var editionWidgetCode = '<input class="edition-widget" value="'+value+'" />';
-            $item = $('<div class="cartouche_item metadata-widget">'+iconDelete+'<label>'+name+'</label>'+editionWidgetCode+'</div>');
-            $cartouche.append($item);
-            widget = new PASTextInput($item, metaData);
-        } else if (type == "Datetime") {
-            var editionWidgetCode = '<input class="edition-widget" value="'+value+'" />';
-            $item = $('<div class="cartouche_item metadata-widget">'+iconDelete+'<label>'+name+'</label>'+editionWidgetCode+'</div>');
-            $cartouche.append($item);
-            widget = new PASTextInput($item, metaData);
-        } else if (type == "Text") {
-            var editionWidgetCode = '<textarea class="edition-widget">'+value+'</textarea>';
-            $item = $('<div class="cartouche_item metadata-widget">'+iconDelete+'<label>'+name+'</label>'+editionWidgetCode+'</div>');
-            $cartouche.append($item);
-            var widget = new PASTextarea($item, metaData);
-            widget = widget.autosize();
-        }
-        */
         $item.find(".icon-delete-metadata .icon-cancel-circled").bind("click", function() {
             prospero.ajax("deleteObject", widget.data.identity, function(data) {
                 widget.node.remove();
@@ -133,7 +136,16 @@ class TextSelectionsEditor extends PObject {
 	    super($node);
 	    this.view = view;
 	}
-
+	clear() {
+	}
+	setData(data) {
+	    this.data = data;
+	    return this;
+	}
+	reload() {
+	    this.clear();
+	    this.load();
+	}
 	load(data) {
         var self = this;
         this.data = data;

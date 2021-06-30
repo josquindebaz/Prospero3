@@ -1,9 +1,8 @@
 class PProjectView extends PObject {
 
-	constructor($node, data) {
+	constructor($node) {
 	    super($node);
 	    var self = this;
-	    this.data = data;
 	    this.corporaTable = new CorporaTable($(".corpora-table"), this);
 	    this.corporaTable.addObserver(function(event) {
 	        self.manageEvent(self.corporaTable, event)
@@ -23,6 +22,12 @@ class PProjectView extends PObject {
 	        }
 	    });
 	}
+	setData(data) {
+        this.data = data;
+	    this.corporaTable.setData(this.data);
+	    this.dicoTable.setData(this.data);
+        return this;
+	}
 	manageEvent(origin, event) {
 	    var self = this;
 	    console.log(origin, event);
@@ -30,12 +35,12 @@ class PProjectView extends PObject {
 	        if (event.name == "selectionChanged") {
                 var item = prospero.get(self.corporaTable.getSelection());
                 if (item) {
-                    self.textTable.load(item.identity);
+                    self.textTable.setData(item.identity).reload();
                     console.log("open corpus infos pane");
                     self.editorPanel.switchTo("corpusEditor");
-                    self.editorPanel.getPanel("corpusEditor").load(item.identity);
+                    self.editorPanel.getPanel("corpusEditor").setData(item.identity).reload();
                 } else {
-                    self.textTable.load();
+                    self.textTable.setData(null).reload();
                     self.editorPanel.switchTo();
                 }
 	        }
@@ -44,7 +49,7 @@ class PProjectView extends PObject {
                 var $items = this.textTable.getSelection();
                 if ($items.length == 1) {
                     var item = prospero.get($items.eq(0));
-                    self.editorPanel.getPanel("textEditor").load(item.identity);
+                    self.editorPanel.getPanel("textEditor").setData(item.identity).reload();
                     console.log("open text edition pane");
                     self.editorPanel.switchTo("textEditor");
                 } else if ($items.length > 1) {
@@ -59,19 +64,11 @@ class PProjectView extends PObject {
     }
 	load() {
 	    var lock = $.Deferred();
-	    var lock1 = this.corporaTable.load(this.data);
-	    var lock2 = this.dicoTable.load(this.data);
+	    var lock1 = this.corporaTable.reload();
+	    var lock2 = this.dicoTable.reload();
         prospero.wait([lock1, lock2], function() {
             lock.resolve();
         });
         return lock;
-	    /* this.textTable.load(); */
-	    /*
-        if (this.corporaTable.getSelection() == null) {
-            var $selected = this.corporaTable.getItems().eq(0);
-            if ($selected.length)
-                this.corporaTable.setSelection($selected);
-        }
-	    */
 	}
 }

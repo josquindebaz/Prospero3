@@ -43,7 +43,8 @@
 					mainLayout.getPanel('right').append($(".editor-panel"));
 
 					var $projectView = $(".project-view");
-					projectView = new PProjectView($projectView, $projectView.data("object"));
+					projectView = new PProjectView($projectView);
+					projectView.setData($projectView.data("object"));
 					projectView.load();
 					/*
 					prospero.onload(function() {

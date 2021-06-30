@@ -22,7 +22,7 @@ class ImportModal extends PModal {
 								},
                                 function(data) {
                                     if (!data.serverError) {
-                                        var lock = projectView.load();
+                                        var lock = projectView.reload();
                                         prospero.wait(lock, function() {
                                             if (self.corpus) {
                                                 self.corpus = prospero.getPDBObject(self.corpus.identity, projectView.corporaTable.node); // reload

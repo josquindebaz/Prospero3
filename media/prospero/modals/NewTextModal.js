@@ -27,7 +27,7 @@ class NewTextModal extends PModal {
                     if (!data.serverError) {
                         var item = prospero.get(projectView.corporaTable.getSelection());
                         if (item) {
-                            var lock = projectView.textTable.load(item.identity);
+                            var lock = projectView.textTable.reload(item.identity);
                             prospero.wait(lock, function() {
                                 var $textItem = projectView.textTable.getItem(data.text.identity)
                                 projectView.textTable.setSelection($textItem);
@@ -59,7 +59,7 @@ class NewTextModal extends PModal {
                                 function(data) {
                                     var item = prospero.get(projectView.corporaTable.getSelection());
                                     if (item) {
-                                        var lock = projectView.textTable.load(item.identity);
+                                        var lock = projectView.textTable.reload(item.identity);
                                         prospero.wait(lock, function() {
                                             var $textItem = projectView.textTable.getItem(data.text.identity)
                                             projectView.textTable.setSelection($textItem);

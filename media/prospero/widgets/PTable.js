@@ -12,18 +12,26 @@ class PTable extends PObject {
         this.bindScroll($(".card-body", $node));
         this.bindSorting();
 	}
+	setData(data) {
+	    this.data = data;
+	    return this;
+	}
 	clearFilters() {
 	    this.filters = {
-	        pagination : {
-	            frameSize : 30,
-	            page : 0,
-	            end : false
-	        },
+	        pagination : {},
 	        sort : {
 	            property: null,
 	            ascendant : true
 	        }
 	    };
+	    this.clearPagination();
+	}
+	clearPagination() {
+	    this.filters.pagination = {
+            frameSize : 30,
+            page : 0,
+            end : false
+        };
 	}
 	setSort(columnName, isAscendant) {
 	    this.filters.sort.property = columnName;
@@ -36,9 +44,8 @@ class PTable extends PObject {
 	    $(".table-col-title .sort-filters .sort-filter", self.node).bind("click", function() {
             var $button = $(this);
 	        console.log("sort click", this);
-	        self.clearFilters();
 	        self.setSort($button.closest("th[property-name]").attr("property-name"), $button.hasClass("sort-filter-asc"));
-	        self.load(self.data, false);
+	        self.reload(self.data);
 	    });
 	}
 	bindScroll($scrolled) {
@@ -47,7 +54,7 @@ class PTable extends PObject {
             var element = event.target;
             if (element.scrollHeight - element.scrollTop === element.clientHeight) {
                 if (!self.filters.pagination.end)
-                    self.load(self.data, true);
+                    self.load();
             }
         });
 	}
@@ -67,20 +74,22 @@ class PTable extends PObject {
 	hideActionTrigger(actionName) {
 	    this.actionTriggers[actionName].trigger.addClass("hidden");
 	}
-	load(data, appendMode) {
+	reload() {
+	    $("tbody", this.node).empty();
+	    this.clearPagination();
+	    return this.load();
+	}
+	load() {
         var self = this;
         var lock = $.Deferred();
-        var $tbody = $("tbody", self.node);
-        if (data) {
-            this.data = data;
-            this.data.property = this.propertyName;
+        if (this.data) {
             var renderData = {
-                identity : data,
+                identity : this.data,
+                property : self.propertyName,
                 filters : self.filters
             }
             prospero.ajax("renderTable", renderData, function(data) {
-                if (!appendMode)
-                    $tbody.empty();
+                var $tbody = $("tbody", self.node);
                 $.each(data.table, function(index, line) {
                     var $tr = $("<tr></tr>");
                     $tbody.append($tr);
@@ -94,7 +103,6 @@ class PTable extends PObject {
                 lock.resolve();
             });
         } else {
-            $tbody.empty();
             lock.resolve();
         }
         return lock;

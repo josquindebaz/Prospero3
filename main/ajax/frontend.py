@@ -12,9 +12,10 @@ def renderTable(request, data, results):
     results["table"] = table
     identity = data["identity"]
     filters = data["filters"]
+    property = data["property"]
     object = frontend.getBDObject(identity)
     print("renderTable on", object)
-    querySet = getattr(object, identity["property"])
+    querySet = getattr(object, property)
     items = queries.getObjects(querySet, filters)
     for item in items:
         table.append(item.serializeAsTableItem())

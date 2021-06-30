@@ -20,7 +20,7 @@ class NewCorpusModal extends PModal {
                 },
                 function(data) {
                     if (!data.serverError) {
-                        var lock = projectView.corporaTable.load(projectView.data);
+                        var lock = projectView.corporaTable.reload(projectView.data);
                         prospero.wait(lock, function() {
                             var $corpusItem = projectView.corporaTable.getItem(data.corpus.identity)
                             projectView.corporaTable.setSelection($corpusItem);
