@@ -1,0 +1,10 @@
+<span class="label ">View :</span>
+<a href="{% url 'projects-mosaic' %}" class="view_item {% if page == 'projects-mosaic' %}active{% endif %}">
+    {% include "main/prospero/svg-icons/header/mosaic.html" %}
+</a>
+<a href="{% url 'projects-list' %}" class="view_item {% if page == 'projects-list' %}active{% endif %}">
+    {% include "main/prospero/svg-icons/header/list.html" %}
+</a>
+<a class="view_item" href="#">
+    {% include "main/prospero/svg-icons/header/bubble-cross.html" %}
+</a>

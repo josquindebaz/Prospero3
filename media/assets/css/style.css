@@ -4,6 +4,15 @@
     display : none !important;
 }
 
+/* headers */
+body[page=project] header.main_header h1 {
+    font-size: calc( var(--fontSize_unit) * 3);
+    font-family: var(--font_2);
+}
+body[page=project] header.main_header h2 {
+    font-size: calc( var(--fontSize_unit) *1.4 );
+}
+
 /* disable text selection on tables for multi-select */
 
 .text-table tr,

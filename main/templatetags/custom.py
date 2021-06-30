@@ -9,3 +9,11 @@ def dump(value):
     elif type(value) == str:
         return value
     return json.dumps(value)
+
+@register.filter
+def dateConcise(value):
+    if not value:
+        value = None
+    else:
+        return value.strftime('%d-%m-%Y')
+    return json.dumps(value)

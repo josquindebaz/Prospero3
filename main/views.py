@@ -6,6 +6,7 @@ from main import ajax
 from django.views.decorators.csrf import csrf_exempt
 from main.helpers import cloud, files
 import json, ntpath, time
+from django.shortcuts import redirect
 
 def createContext(request):
     context = {
@@ -35,13 +36,8 @@ def ajaxCall(request):
 def fileUpload(request):
     if request.is_ajax() and request.method == 'POST':
         results = {}
-
         fileFolder = cloud.getStampedCloudFolder("upload")
         relativeFileFolder = cloud.getMediaRelativePath(fileFolder)
-        #timestamp = str(time.time())
-        #relativeFileFolder = 'upload/'+timestamp+'/'
-        #fileFolder = settings.MEDIA_ROOT + relativeFileFolder
-        #files.gotFolder(fileFolder)
         data = request.FILES['file']
         fileName = data.name
         filePath = fileFolder + fileName
@@ -61,31 +57,32 @@ def fileUpload(request):
         raise Http404("")
 
 def index(request):
-    template = loader.get_template('main/prospero/index.html')
-    context = createContext(request)
-    project = Project.objects.all()[0]
-    context["project"] = json.dumps(project.serializeIdentity())
-    return HttpResponse(template.render(context, request))
+    response = redirect('/projects-mosaic')
+    return response
 
 def project(request, id):
-    template = loader.get_template('main/prospero/project.html')
     context = createContext(request)
+    context["page"] = "project"
     project = Project.objects.get(id=id)
-    context["project"] = json.dumps(project.serializeIdentity())
+    context["project"] = project
+    context["projectData"] = json.dumps(project.serializeIdentity())
+    template = loader.get_template('main/prospero/project.html')
     return HttpResponse(template.render(context, request))
 
 def projects_list(request):
-    template = loader.get_template('main/prospero/projects-list.html')
     context = createContext(request)
+    context["page"] = "projects-list"
     context["projects"] = Project.objects.all()
     context["project"] = Project.objects.first()
+    template = loader.get_template('main/prospero/projects-list.html')
     return HttpResponse(template.render(context, request))
 
 def projects_mosaic(request):
-    template = loader.get_template('main/prospero/projects-mosaic.html')
     context = createContext(request)
+    context["page"] = "projects-mosaic"
     context["projects"] = Project.objects.all()
     context["project"] = Project.objects.first()
+    template = loader.get_template('main/prospero/projects-mosaic.html')
     return HttpResponse(template.render(context, request))
 
 def widgets(request):
