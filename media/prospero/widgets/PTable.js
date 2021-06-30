@@ -15,7 +15,7 @@ class PTable extends PObject {
 	clearFilters() {
 	    this.filters = {
 	        pagination : {
-	            frameSize : 10,
+	            frameSize : 30,
 	            page : 0,
 	            end : false
 	        },

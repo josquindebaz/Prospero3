@@ -6,7 +6,18 @@
         <h2>{{ project.description }}</h2>
     </div>
     <div class="main_header_right">
-        {% include "main/prospero/svg-icons/library.html" %}
+        <div action-name="multi-actions" class="btn-group state-button">
+            <button type="button" class="btn btn-primary new-item-button state-button-state">
+            Import
+            </button>
+            <button type="button" class="btn btn-primary new-item-button dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Import</a></li>
+                <li><a class="dropdown-item" href="#">Export</a></li>
+            </ul>
+        </div>
         {% include "main/prospero/structure/header/connection-panel.html" %}
     </div>
 </header>
