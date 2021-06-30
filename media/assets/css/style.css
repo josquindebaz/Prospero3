@@ -122,3 +122,20 @@ textarea.edition-widget {
     padding-right: 3px;
     border: 1px solid grey;
 }
+
+.table-col-title {
+    display: flex;
+}
+.table-col-title .sort-filters {
+    margin-left: auto;
+    margin-right: 0;
+}
+.table-col-title .sort-filters .sort-filter {
+    margin-left:3px;
+    cursor: pointer;
+}
+.table-col-title .sort-filters .sort-filter.selected {
+    color: red;
+}
+
+

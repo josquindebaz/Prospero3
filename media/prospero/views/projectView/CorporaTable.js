@@ -23,8 +23,8 @@ class CorporaTable extends PTable {
 	        });
 	    });
 	}
-	load(data) {
-	    var lock = super.load(data);
+	load(data, appendMode) {
+	    var lock = super.load(data, appendMode);
 	    this.showActionTrigger("create");
 	    return lock;
 	}

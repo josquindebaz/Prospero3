@@ -1,7 +1,7 @@
 from prospero import settings
 from main.models import *
 from django.template import loader
-from main.helpers import frontend, files
+from main.helpers import frontend, files, queries
 from main.helpers.deletor import deletor
 from main.importerP1 import builder2BD as builder
 from django.http import HttpResponse
@@ -10,9 +10,15 @@ from main import views
 def renderTable(request, data, results):
     table = []
     results["table"] = table
-    object = frontend.getBDObject(data)
-    for item in getattr(object, data["property"]).all():
+    identity = data["identity"]
+    filters = data["filters"]
+    object = frontend.getBDObject(identity)
+    print("renderTable on", object)
+    querySet = getattr(object, identity["property"])
+    items = queries.getObjects(querySet, filters)
+    for item in items:
         table.append(item.serializeAsTableItem())
+    results["filters"] = filters
 
 def changeData(request, data, results):
     object = frontend.getBDObject(data["identity"])

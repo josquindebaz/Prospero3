@@ -1,3 +1,10 @@
+delete
+page projects-list : scrollé au milieu
+icone trois petits points
+h1 et h2 header page project
+navigation
+renommé dans popup par actions ...
+
 REUNION JOSQUIN 25/06/2021
 
 	utilisateur
