@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance to serve prospero dev site
+After=network.target
+
+[Service]
+User=amo-it
+Group=www-data
+WorkingDirectory=/var/www/amo-it/app/prospero/
+Environment="PATH=/var/www/amo-it/app/prospero/venv/bin"
+ExecStart=/var/www/amo-it/app/prospero/venv/bin/uwsgi --ini uwsgi.ini
+
+[Install]
+WantedBy=multi-user.target
