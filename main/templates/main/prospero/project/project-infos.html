@@ -1,6 +1,12 @@
-<article class="cartouche" object-model="Project" object-id="{{ project.id }}">
-    <button action-name="delete-project">Delete</button>
-    <h4>{{ project.name }}</h4>
+<article class="cartouche project-infos" object-model="Project" object-id="{{ project.id }}">
+    <div class="card-header" style="padding-left: 0px;">
+        <div class="left">
+            <h4>{{ project.name }}</h4>
+        </div>
+        <div class="right" style="width:2rem;">
+            {% include "main/prospero/widgets/generic-menu.html" %}
+        </div>
+    </div>
     <span class="bold">{{ project.nbTexts }} texts / {{ project.nbTextChar }} characters</span>
     <p class="intro">{{ project.description }}</p>
     <div class="cartouche_item">
@@ -42,8 +48,22 @@
         {{ project.owner.interfaceName }}
     </div>
     <div class="separation"></div>
-    <div class="row">
-        <div class="col">col</div>
-        <div class="col">col</div>
+    <div class="row user-rights-panel">
+        <div class="col left-col">
+            Members
+            <div>
+                <div><span class="icon-person"></span>Me</div>
+                <div><span class="icon-person"></span>Orélie</div>
+                <div><span class="icon-group"></span>Public</div>
+            </div>
+        </div>
+        <div class="col">
+            Privilege
+            <div>
+                <div>Read & write</div>
+                <div>Read & write</div>
+                <div>Read & write</div>
+            </div>
+        </div>
     </div>
 </article>

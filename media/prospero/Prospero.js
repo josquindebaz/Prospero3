@@ -62,6 +62,10 @@ class Prospero {
 	constructor() {
 	    this.tagManager = null;
 	}
+    nodes(htmlText) {
+        var html = htmlText.replace(/[\n\r]+/g, ' ').trim();
+        return $(html); // attention, s'il y a des scripts ...
+    }
 	ajax(service, data, callback) {
         var data = {
             service: service,

@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from django.template import loader
 from main import ajax
 from django.views.decorators.csrf import csrf_exempt
-from main.helpers import cloud, files
+from main.helpers import cloud, files, sessions, queries
 import json, ntpath, time
 from django.shortcuts import redirect
 
@@ -80,9 +80,33 @@ def projects_list(request):
 def projects_mosaic(request):
     context = createContext(request)
     context["page"] = "projects-mosaic"
-    context["projects"] = Project.objects.all()
-    context["project"] = Project.objects.first()
+    pageData = sessions.getProjectsData(request)
+    pagination = {
+        "frameSize": 30,
+        "page": 0,
+        "end": False
+    }
+    projects = queries.getProjects(pagination, pageData)
+    context["session"] = pageData
+    context["pageData"] = json.dumps(pageData)
+    context["pagination"] = json.dumps(pagination)
+
+    context["projects"] = projects
+    currentProjectId = pageData["currentProjectId"]
+    project = None
+    if currentProjectId:
+        try:
+            project = Project.objects.get(id=currentProjectId)
+        except:
+            None
+    context["project"] = project
     template = loader.get_template('main/prospero/projects-mosaic.html')
+    return HttpResponse(template.render(context, request))
+
+def settingsView(request):
+    context = createContext(request)
+    context["page"] = "settings"
+    template = loader.get_template('main/prospero/settings.html')
     return HttpResponse(template.render(context, request))
 
 def widgets(request):

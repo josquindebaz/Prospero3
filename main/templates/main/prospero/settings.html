@@ -1,0 +1,84 @@
+{% extends 'main/prospero/structure/base.html' %}
+{% block header %}
+	{% include "main/prospero/settings/header.html" %}
+{% endblock %}
+{% block content %}
+	<div class="main_content">
+		<section class="row preferences-view">
+			<div class="col screenHeight settings-general-menu">
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item" role="presentation">
+						<button class="nav-link active" id="groups-and-users-tab" data-bs-toggle="tab" data-bs-target="#groups-and-users" type="button" role="tab" aria-controls="groups-and-users" aria-selected="true">
+							Groups & users
+						</button>
+					</li>
+					<!--<li class="nav-item" role="presentation"><button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button></li>-->
+				</ul>
+				<div class="tab-content" id="myTabContent">
+					<div class="tab-pane fade show active" id="groups-and-users" role="tabpanel" aria-labelledby="groups-and-users-tab">
+
+
+
+        <header class="main_header card-header" style="height: auto; min-height: auto;">
+			<div class="">
+				{% include "main/prospero/widgets/searchInput.html" %}
+			</div>
+			<div class="" style="width:2rem;">
+				{% include "main/prospero/widgets/generic-menu.html" %}
+			</div>
+		</header>
+
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th property-name="name">Name</th>
+            <th property-name="author">Author</th>
+            <th property-name="tags">Tags</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!--
+        <tr class="active">
+            <td>Covid-19</td>
+            <td>John Doe</td>
+            <td>covid-19, vaccin</td>
+        </tr>
+        <tr>
+            <td>Covid-19</td>
+            <td>John Doe</td>
+            <td>covid-19, vaccin</td>
+        </tr>
+        <tr>
+            <td>Covid-19</td>
+            <td>John Doe</td>
+            <td>covid-19, vaccin</td>
+        </tr>
+        <tr>
+            <td>Covid-19</td>
+            <td>John Doe</td>
+            <td>covid-19, vaccin</td>
+        </tr>
+        <tr>
+            <td>Covid-19</td>
+            <td>John Doe</td>
+            <td>covid-19, vaccin</td>
+        </tr>
+        -->
+    </tbody>
+</table>
+
+
+					</div>
+					<!--<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>-->
+				</div>
+			</div>
+		</section>
+	</div>
+	<script>
+		var settingsView = null;
+		prospero.onload(function() {
+
+		});
+	</script>
+{% endblock %}

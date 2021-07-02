@@ -5,11 +5,11 @@
 }
 
 /* headers */
-body[page=project] header.main_header h1 {
+header.main_header h1 {
     font-size: calc( var(--fontSize_unit) * 3);
     font-family: var(--font_2);
 }
-body[page=project] header.main_header h2 {
+header.main_header h2 {
     font-size: calc( var(--fontSize_unit) *1.4 );
 }
 
@@ -147,4 +147,34 @@ textarea.edition-widget {
     color: red;
 }
 
+/* page projects-mosaic */
+.template_mosaique .mosaique_wrapper .card.active {
+    background: linear-gradient(#6FD0FC, #6BA4F2);
+    color: white;
+    cursor: pointer;
+    transition: all .3s;
+}
 
+/* hack css manu merge bootstrap radio */
+
+.main_header .navbar_container .sort_item .pin {
+    appearance: auto;
+}
+
+/* panel rights */
+
+.user-rights-panel {
+}
+.user-rights-panel .left-col {
+    border-right: 1px solid var(--color_1);
+    opacity: 0.8;
+}
+
+/* page settings */
+[page=settings] .settings-general-menu .tab-content {
+    height: 100%;
+    background-color: white;
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+}

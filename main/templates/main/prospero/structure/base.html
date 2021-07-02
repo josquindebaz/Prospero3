@@ -54,13 +54,13 @@
         <script src="{{ MEDIA_URL }}prospero/widgets/PTable.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/widgets/PWidgets.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/widgets/SwitchPanel.js?{{ MEDIA_TIMESTAMP }}"></script>
-
         <script src="{{ MEDIA_URL }}prospero/views/projectView/CorporaTable.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/views/projectView/DicoTable.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/views/projectView/EditorPanel.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/views/projectView/TextTable.js?{{ MEDIA_TIMESTAMP }}"></script>
-        <script src="{{ MEDIA_URL }}prospero/views/PProjectListView.js?{{ MEDIA_TIMESTAMP }}"></script>
-        <script src="{{ MEDIA_URL }}prospero/views/PProjectMosaicView.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/views/projectsView/PProjectPanel.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/views/PProjectsListView.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/views/PProjectsMosaicView.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/views/PProjectView.js?{{ MEDIA_TIMESTAMP }}"></script>
 
         <script>
@@ -68,7 +68,7 @@
             var urls = new UrlUtils();
         </script>
     </head>
-    <body page="{{ page }}">
+    <body page="{{ page }}" data-page-data="{{ pageData }}" data-pagination="{{ pagination }}">
         {% include "main/prospero/structure/modals/import-modal.html" %}
         {% include "main/prospero/structure/modals/approval-modal.html" %}
         {% include "main/prospero/structure/modals/new-text-modal.html" %}

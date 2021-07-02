@@ -1,0 +1,14 @@
+{% for project in projects %}
+    <div class="card project-card" object-model="Project" object-id="{{ project.id }}" href="{% url 'project' project.id %}">
+        <div class="card-header">
+            <h3 class="txt_20 title">{{ project.name }}</h3>
+        </div>
+        <div class="card-body">
+            {% if project.lastModificationDate %}
+                Modified {{ project.lastModificationDate }}<br>
+            {% endif %}
+            <span>Tags : {{ project.tagList }}</span><br>
+            {{ project.owner.interfaceName }}
+        </div>
+    </div>
+{% endfor %}

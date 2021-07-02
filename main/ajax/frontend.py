@@ -1,11 +1,22 @@
 from prospero import settings
 from main.models import *
 from django.template import loader
-from main.helpers import frontend, files, queries
+from main.helpers import frontend, files, queries, sessions
 from main.helpers.deletor import deletor
 from main.importerP1 import builder2BD as builder
 from django.http import HttpResponse
 from main import views
+
+def searchInProjects(request, data, results):
+    filters = data["viewData"]
+    pagination = data["pagination"]
+    sessions.setProjectsData(request, filters)
+    projects = queries.getProjects(pagination, filters)
+    context = views.createContext(request)
+    context["projects"] = projects
+    template = loader.get_template('main/prospero/projects-mosaic/projects.html')
+    results["html"] = template.render(context, request)
+    results["pagination"] = pagination
 
 def renderTable(request, data, results):
     table = []
@@ -149,6 +160,12 @@ def changeMetadataPosition(request, data, results):
     else:
         parent.metaDatas.remove(item)
         parent.metaDatas.add(item)
+
+def setCurrentProject(request, data, results):
+    projectsData = sessions.getProjectsData(request)
+    currentProjectId = data["id"]
+    projectsData["currentProjectId"] = currentProjectId
+    sessions.setProjectsData(request, projectsData)
 
 def renderProjectInfos(request, data, results):
     project = frontend.getBDObject(data)

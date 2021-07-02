@@ -1,4 +1,4 @@
-class PProjectListView extends PObject {
+class PProjectsListView extends PObject {
 
 	constructor($node, view) {
 	    super($node);

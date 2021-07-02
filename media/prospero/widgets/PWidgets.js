@@ -244,3 +244,39 @@ class StateButton extends PObject {
 	    });
 	}
 }
+class PGenericMenu extends PObject {
+
+	constructor($node) {
+	    super($node);
+	    var self = this;
+	    $(".state-button-state", self.node).bind("click", function() {
+	        var action = $(this).text().trim();
+	        self.notifyObservers({name: "click", action: action});
+	    });
+
+	    $(".dropdown-item", self.node).bind("click", function() {
+	        var action = $(this).text().trim();
+	        $(".state-button-state", self.node).text(action);
+	        self.notifyObservers({name: "click", action: action});
+	    });
+	}
+	addAction(actionName, actionText, callback) {
+	    var $li = $('<li><a action-name="'+actionName+'" class="dropdown-item" href="#">'+actionText+'</a></li>');
+	    $(".dropdown-menu").append($li);
+	    $li.bind("click", function(event) {
+	        callback(event);
+	    });
+	}
+	setEnabled(actionName, enabled) {
+	    if (enabled)
+	        $(".dropdown-menu").find('action-name='+actionName).removeClass("disabled");
+	    else
+	        $(".dropdown-menu").find('action-name='+actionName).addClass("disabled");
+	}
+	setVisible(actionName, visible) {
+	    if (visible)
+	        $(".dropdown-menu").find('action-name='+actionName).removeClass("hidden");
+	    else
+	        $(".dropdown-menu").find('action-name='+actionName).addClass("hidden");
+	}
+}

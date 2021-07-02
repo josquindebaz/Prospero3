@@ -1,11 +1,6 @@
 <header class="main_header">
     <div class="main_header_left">
-        <div class="search_container">
-            <form class="search_form">
-                <input class="search_input txt_15" type="search" placeholder="Search..." aria-label="Search">
-                {% include "main/prospero/svg-icons/magnifying-glass.html" %}
-            </form>
-        </div>
+        {% include "main/prospero/widgets/searchInput.html" %}
         <div class="navbar_container">
             <div class="navbar_line">
                 {% include "main/prospero/structure/header/view-switcher.html" %}

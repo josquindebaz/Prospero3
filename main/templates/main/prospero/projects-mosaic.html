@@ -12,27 +12,18 @@
 						<h3 class="txt_20 title"> New project</h3>
 					</div>
 				</div>
-				{% for project in projects %}
-					<a href="{% url 'project' project.id %}" class="card project-card" object-model="Project" object-id="{{ project.id }}">
-						<div class="card-header">
-							<h3 class="txt_20 title">{{ project.name }}</h3>
-						</div>
-						<div class="card-body">
-							{% if project.lastModificationDate %}
-								Modified {{ project.lastModificationDate }}<br>
-							{% endif %}
-							<span>Tags : {{ project.tagList }}</span><br>
-							{{ project.owner.interfaceName }}
-						</div>
-					</a>
-				{% endfor %}
+				{% include "main/prospero/projects-mosaic/projects.html" %}
 			</div>
 			<div class="col col-sm-3 grid_side_wrapper project-infos-container">
+				{% if project %}
+					{% include "main/prospero/project/project-infos.html" %}
+				{% endif  %}
 			</div>
 		</section>
 	</div>
 	<script>
-		var $projectsView = $(".mosaique_wrapper");
-		var projectView = new PProjectMosaicView($projectsView);
+		var $body = $("body");
+		var projectsMosaicView = new PProjectsMosaicView($body);
+		projectsMosaicView.setData($body.data("page-data"));
 	</script>
 {% endblock %}

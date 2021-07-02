@@ -8,5 +8,6 @@ urlpatterns = [
     path('project/<int:id>', views.project, name='project'),
     path('projects-list', views.projects_list, name='projects-list'),
     path('projects-mosaic', views.projects_mosaic, name='projects-mosaic'),
+    path('settings', views.settingsView, name='settings'),
     path('widgets', views.widgets, name='widgets')
 ]
