@@ -16,59 +16,7 @@
 				</ul>
 				<div class="tab-content" id="myTabContent">
 					<div class="tab-pane fade show active" id="groups-and-users" role="tabpanel" aria-labelledby="groups-and-users-tab">
-
-
-
-        <header class="main_header card-header" style="height: auto; min-height: auto;">
-			<div class="">
-				{% include "main/prospero/widgets/searchInput.html" %}
-			</div>
-			<div class="" style="width:2rem;">
-				{% include "main/prospero/widgets/generic-menu.html" %}
-			</div>
-		</header>
-
-
-<table class="table table-hover">
-    <thead>
-        <tr>
-            <th property-name="name">Name</th>
-            <th property-name="author">Author</th>
-            <th property-name="tags">Tags</th>
-        </tr>
-    </thead>
-    <tbody>
-        <!--
-        <tr class="active">
-            <td>Covid-19</td>
-            <td>John Doe</td>
-            <td>covid-19, vaccin</td>
-        </tr>
-        <tr>
-            <td>Covid-19</td>
-            <td>John Doe</td>
-            <td>covid-19, vaccin</td>
-        </tr>
-        <tr>
-            <td>Covid-19</td>
-            <td>John Doe</td>
-            <td>covid-19, vaccin</td>
-        </tr>
-        <tr>
-            <td>Covid-19</td>
-            <td>John Doe</td>
-            <td>covid-19, vaccin</td>
-        </tr>
-        <tr>
-            <td>Covid-19</td>
-            <td>John Doe</td>
-            <td>covid-19, vaccin</td>
-        </tr>
-        -->
-    </tbody>
-</table>
-
-
+						{% include "main/prospero/settings/users-panel.html" %}
 					</div>
 					<!--<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>-->
 				</div>
@@ -78,7 +26,17 @@
 	<script>
 		var settingsView = null;
 		prospero.onload(function() {
-
+			var $body = $("body");
+			settingsView = new PUsersView($body);
+			settingsView.load();
+			//newUserModal.show();
+            prospero.ajax(
+                "getFake",
+                {},
+                function(data) {
+                    affectGroupModal.show(data.object);
+                }
+            );
 		});
 	</script>
 {% endblock %}

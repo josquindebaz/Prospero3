@@ -15,6 +15,7 @@ header.main_header h2 {
 
 /* disable text selection on tables for multi-select */
 
+.users-table tr,
 .text-table tr,
 .corpora-table tr,
 .dico-table tr {
@@ -177,4 +178,88 @@ textarea.edition-widget {
     border-left: 1px solid #dee2e6;
     border-right: 1px solid #dee2e6;
     border-bottom: 1px solid #dee2e6;
+}
+
+thead th[property-name=thumbnail] {
+    width: 50px;
+}
+td.col-thumbnail .col-container,
+td.col-username .col-container {
+    display: flex;
+}
+td.col-username .icon-group {
+}
+td.col-username .icon-user {
+}
+td.col-thumbnail .img_container {
+    width: 25px;
+}
+
+/* dropzone thumbnail */
+
+.dropzone-thumbnail {
+    border-radius: 50%;
+    height: 59px;
+    width: 59px;
+    background-size: cover;;
+}
+
+/* user-list and user-item */
+.plist {
+    border: 1px solid rgb(206, 212, 218);
+    padding: 5px;
+    border-radius: .25rem;
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.user-item {
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid var(--color_1);
+    border-radius: 24px;
+}
+.user-item:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.user-item .img_container {
+    display: flex;
+    width: 40px;
+    margin-left: 5px;
+}
+.user-item .img_container img {
+    margin: auto;
+}
+.user-item .txt_container {
+    width: 100%;
+    margin-left: 10px;
+    text-align: left;
+}
+.user-item .txt_container .first-and-last-name {
+    font-size: calc( var(--fontSize_unit) * 1.2);
+}
+.user-item .icon_container {
+    display: flex;
+    margin-right: 5px;
+}
+.user-item .icon_container .icon-cancel-circled {
+    margin: auto;
+    cursor: pointer;
+    color: var(--color_1);
+    transition: color 0.3s
+}
+.user-item .icon_container .icon-cancel-circled:hover {
+    color: black;
+}
+
+/* auto-complete-input */
+
+.auto-complete-input .dropdown-menu {
+    width: 100%;
+}
+.auto-complete-input .dropdown-menu .dropdown-item {
+    cursor: pointer;
 }

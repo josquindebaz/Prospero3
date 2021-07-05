@@ -43,11 +43,31 @@ def createAugmentedDatas(object):
     object.metaDatas.add(builder.createMetaData("text", "Text", "aaa\nbbb\nccc"))
     object.associatedDatas.add(builder.createPResource("c:/file.pdf"))
 
-if ProsperoUser.objects.count() == 0:
-    user = ProsperoUser(first_name="Josquin", last_name="Debaz")
+def createPUser(username, first_name, last_name, thumbnail=None):
+    user = PUser(username=username, first_name=first_name, last_name=last_name)
+    if not thumbnail:
+        thumbnail = settings.MEDIA_ROOT+"users/thumbnails/anonymous_user.jpg"
+    user.thumbnail = thumbnail
     user.save()
+    return user
+
+def createPGroup(username, thumbnail=None):
+    group = PGroup(username=username)
+    if not thumbnail:
+        thumbnail = settings.MEDIA_ROOT+"users/thumbnails/anonymous_user.jpg"
+    group.thumbnail = thumbnail
+    group.save()
+    return group
+
+if PUser.objects.count() == 0:
+    josquin = createPUser("josquin@gmail.com", "Josquin", "Debaz", settings.MEDIA_ROOT+"users/thumbnails/josquin.jpg")
+    group = createPGroup("GSPR")
+    group.users.add(josquin)
+    user = josquin
+    group = createPGroup("Public")
+    anonymous = createPUser("anonymous", "", "", settings.MEDIA_ROOT+"users/thumbnails/anonymous_user.jpg")
 else:
-    user = ProsperoUser.objects.all()[0]
+    user = PUser.objects.all()[0]
 
 project = createProject("Project test", "ipsum, dolor, sit, amet, consectetur, adipiscing, elit, ut, interdum", user)
 createAugmentedDatas(project.corpuses.first())
@@ -114,3 +134,9 @@ projectNames = [
 ]
 for name in projectNames:
     createProject(name, "purus, quis, nunc", user)
+
+for i in range(0, 15):
+    createPUser("test"+str(i)+"@gmail.com", "John", "Doe")
+
+for i in range(0, 10):
+    createPGroup("group"+str(i))

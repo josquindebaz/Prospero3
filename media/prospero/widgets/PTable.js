@@ -9,7 +9,9 @@ class PTable extends PObject {
 	    }).get();
 	    this.clearFilters();
 	    this.setSort(this.columns[0], true);
-        this.bindScroll($(".card-body", $node));
+        var $scrollable = $(".card-body", $node);
+        if ($scrollable.length > 0)
+            this.bindScroll($scrollable);
         this.bindSorting();
 	}
 	setData(data) {

@@ -106,6 +106,16 @@ def projects_mosaic(request):
 def settingsView(request):
     context = createContext(request)
     context["page"] = "settings"
+    pageData = sessions.getProjectsData(request)
+    context["session"] = pageData
+    currentProjectId = pageData["currentProjectId"]
+    project = None
+    if currentProjectId:
+        try:
+            project = Project.objects.get(id=currentProjectId)
+        except:
+            None
+    context["project"] = project
     template = loader.get_template('main/prospero/settings.html')
     return HttpResponse(template.render(context, request))
 

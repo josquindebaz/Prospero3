@@ -161,6 +161,17 @@ class Prospero {
             });
         }
     }
+    getUserData(callback) {
+        var self = this;
+        if (self.userData)
+            callback(self.userData);
+        else {
+            self.ajax("getUserData", {}, function(data) {
+                self.userData = data.users;
+                callback(self.userData);
+            });
+        }
+    }
     initEditionWidgets($container, widgetDatas) {
         var self  = this;
         $.each(widgetDatas, function(index, widgetData) {

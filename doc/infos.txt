@@ -13,3 +13,6 @@ Manu:
 	http://demo.e-lechat.com/prospero/
 	https://github.com/manu-lechat/prospero/
 	https://trello.com/b/CSf87dZl/prospero
+
+Maquette :
+	https://xd.adobe.com/view/e2cc503d-abde-4b31-b41e-bc41491dc53e-b79f/screen/79f78390-8c72-42a9-88a7-7cf9f08ac4f5/specs/

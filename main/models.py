@@ -6,6 +6,7 @@ from datetime import datetime
 from django.utils import timezone
 import pytz
 from django.contrib.auth.models import *
+from main.helpers import cloud
 
 CategoryType = (
     ('ENTITY', 'ENTITY'),
@@ -148,6 +149,8 @@ class AugmentedData(PObject):
 
 class ProsperoUser(User) :
 
+    thumbnail = models.ImageField(blank=True, upload_to="upload")
+
     def __str__(self):
         return "["+str(self.id)+":ProsperoUser] "+self.username
 
@@ -155,7 +158,66 @@ class ProsperoUser(User) :
         return self.last_name + " " + self.first_name
 
     def getRealInstance(self):
+        if hasattr(self, "pgroup"):
+            return self.pgroup.getRealInstance()
+        elif hasattr(self, "puser"):
+            return self.puser.getRealInstance()
+        else:
             return self
+
+    def serializeIdentity(self):
+        return {
+            "model" : self.__class__.__name__,
+            "id" : self.id
+        }
+
+    def serializeAsTableItem(self):
+        from prospero import settings
+        return {
+            "identity" : self.serializeIdentity(),
+            "values" : {
+                "thumbnail" : settings.MEDIA_URL+cloud.getMediaRelativePath(str(self.thumbnail)),
+                "username" : self.username,
+                "first_name" : self.first_name,
+                "last_name" : self.last_name
+            }
+        }
+
+    def serialize(self):
+        from prospero import settings
+        return {
+            "identity" : self.serializeIdentity(),
+            "value" : self.id,
+            "username": self.username,
+            "label" : self.username,
+            "first_name": self.first_name,
+            "last_name": self.last_name,
+            "thumbnail": settings.MEDIA_URL + cloud.getMediaRelativePath(str(self.thumbnail))
+        }
+
+    def accept(self, visitor):
+        obj = self.getRealInstance()
+        return getattr(visitor, "visit"+type(obj).__name__)(obj)
+
+class PGroup(ProsperoUser) :
+
+    #RELATIONS
+    users = models.ManyToManyField('PUser', blank=True, related_name='owningGroups')
+
+    def __str__(self):
+        return "["+str(self.id)+":PGroup] "+self.username
+
+    def getRealInstance(self):
+        return self
+
+class PUser(ProsperoUser) :
+
+
+    def __str__(self):
+        return "["+str(self.id)+":PUser] "+self.username
+
+    def getRealInstance(self):
+        return self
 
 class Project(AugmentedData) :
 

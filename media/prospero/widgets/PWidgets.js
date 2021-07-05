@@ -262,21 +262,98 @@ class PGenericMenu extends PObject {
 	}
 	addAction(actionName, actionText, callback) {
 	    var $li = $('<li><a action-name="'+actionName+'" class="dropdown-item" href="#">'+actionText+'</a></li>');
-	    $(".dropdown-menu").append($li);
+	    $(".dropdown-menu", this.node).append($li);
 	    $li.bind("click", function(event) {
 	        callback(event);
 	    });
 	}
 	setEnabled(actionName, enabled) {
 	    if (enabled)
-	        $(".dropdown-menu").find('action-name='+actionName).removeClass("disabled");
+	        $(".dropdown-menu", this.node).find('[action-name='+actionName+']').removeClass("disabled");
 	    else
-	        $(".dropdown-menu").find('action-name='+actionName).addClass("disabled");
+	        $(".dropdown-menu", this.node).find('[action-name='+actionName+']').addClass("disabled");
 	}
 	setVisible(actionName, visible) {
 	    if (visible)
-	        $(".dropdown-menu").find('action-name='+actionName).removeClass("hidden");
+	        $(".dropdown-menu", this.node).find('[action-name='+actionName+']').removeClass("hidden");
 	    else
-	        $(".dropdown-menu").find('action-name='+actionName).addClass("hidden");
+	        $(".dropdown-menu", this.node).find('[action-name='+actionName+']').addClass("hidden");
 	}
+}
+class PDropzone extends PInputField {
+
+	constructor($node) {
+	    super($node);
+	    var self = this;
+	    self.filePath = null;
+		var $dropzone = this.node.find(".dropzone-panel");
+		this.dropzone = new McDropzone(
+			$dropzone,
+			{
+				fileExtensions : $dropzone.data("extensions"),
+				fileChange : function(dropzone, file, loadEvent) {
+					var formData = new FormData();
+					formData.append('file', file, file.name);
+					prospero.uploadFile(formData, function(uploadDone, data) {
+						if (uploadDone) {
+                            self.filePath = data.filePath;
+                            $dropzone.css("background-image", 'url(media_site/'+data.filePath+')');
+                            self.setAsValid();
+                            self.notifyObservers({
+                                name: "valueChanged",
+                                target: self,
+                                original: event
+                            });
+						} else {
+							console.log("upload fails", data);
+						}
+					});
+				},
+				enterExit : function(dropzone, isHover) {
+					if (isHover)
+						dropzone.node.find(".mc-dropzone-feedback").addClass("hover");
+					else
+						dropzone.node.find(".mc-dropzone-feedback").removeClass("hover");
+				},
+				badFile : function(dropzone, file) {
+					$$.magicCms.showUserFeedback("Import only csv files");
+				}
+			}
+		);
+	}
+    bindChange() {}
+	initFieldNode() {
+	    this.fieldNode = null;
+	}
+	getValue() {
+	    return this.filePath;
+	}
+}
+class PAutoCompleteInput extends PInputField {
+
+	constructor($node) {
+	    super($node);
+	    var self = this;
+        self.autoComplete = new UserAutocomplete(self.fieldNode[0], {
+            data: [{label: "I'm a label", value: 42}],
+            maximumItems: 5,
+            treshold: 1,
+            onSelectItem: function(item) {
+                self.notifyObservers({
+                    name: "valueSelected",
+                    target: self,
+                    item: item
+                });
+            }
+        });
+        //self.autoComplete.setData(data);
+        prospero.getUserData(function(userData) {
+            self.autoComplete.setData(userData);
+        });
+	}
+	initFieldNode() {
+	    this.fieldNode = this.node.find("input");
+	}
+    bindChange() {
+    }
 }

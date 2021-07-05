@@ -89,4 +89,11 @@ class PDeletionVisitor:
     def visitPFile(self, obj):
         pass
 
+    def visitPUser(self, obj):
+        obj.delete()
+
+    def visitPGroup(self, obj):
+        obj.delete()
+
+
 deletor = PDeletionVisitor()

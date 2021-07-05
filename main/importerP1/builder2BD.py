@@ -123,3 +123,13 @@ def createMetaData(name, type, value):
     obj = MetaData(name=name, type=type, value=value)
     obj.save()
     return obj
+
+def createPUser(username, first_name, last_name):
+    obj = PUser(username=username, first_name=first_name, last_name=last_name)
+    obj.save()
+    return obj
+
+def createPGroup(username):
+    obj = PGroup(username=username)
+    obj.save()
+    return obj

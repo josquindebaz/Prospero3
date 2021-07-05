@@ -32,6 +32,8 @@
         <script src="{{ MEDIA_URL }}components/bootstrap-tagsinput/tags.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}components/bootstrap-tagsinput/TagManager.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}components/bootstrap-tagsinput/TagsInput.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}components/autocomplete/Autocomplete.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}components/autocomplete/UserAutocomplete.js?{{ MEDIA_TIMESTAMP }}"></script>
 
         <script src="{{ MEDIA_URL }}components/underscore/underscore.js"></script>
         <script src="{{ MEDIA_URL }}components/autoresize/autosize.min.js"></script>
@@ -48,8 +50,14 @@
         <script src="{{ MEDIA_URL }}prospero/modals/NewMetadataModal.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/modals/NewProjectModal.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/modals/NewTextModal.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/modals/NewUserModal.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/modals/EditUserModal.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/modals/NewGroupModal.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/modals/EditGroupModal.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/modals/AffectGroupModal.js?{{ MEDIA_TIMESTAMP }}"></script>
 
         <script src="{{ MEDIA_URL }}prospero/widgets/PLayout.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/widgets/PForm.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/widgets/PPanels.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/widgets/PTable.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/widgets/PWidgets.js?{{ MEDIA_TIMESTAMP }}"></script>
@@ -62,6 +70,11 @@
         <script src="{{ MEDIA_URL }}prospero/views/PProjectsListView.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/views/PProjectsMosaicView.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/views/PProjectView.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/views/PUsersView.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/views/settings-view/UserTable.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/widgets/PList.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/views/settings-view/PUserList.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/views/settings-view/PListUserItem.js?{{ MEDIA_TIMESTAMP }}"></script>
 
         <script>
             var prospero = new Prospero();
@@ -76,6 +89,11 @@
         {% include "main/prospero/structure/modals/new-project-modal.html" %}
         {% include "main/prospero/structure/modals/new-metadata-modal.html" %}
         {% include "main/prospero/structure/modals/export-modal.html" %}
+        {% include "main/prospero/structure/modals/new-user-modal.html" %}
+        {% include "main/prospero/structure/modals/edit-user-modal.html" %}
+        {% include "main/prospero/structure/modals/new-group-modal.html" %}
+        {% include "main/prospero/structure/modals/edit-group-modal.html" %}
+        {% include "main/prospero/structure/modals/affect-group-modal.html" %}
         <script>
             var importModal = new ImportModal($(".import-modal"));
             var approvalModal = new ApprovalModal($(".approval-modal"));
@@ -84,6 +102,11 @@
             var newProjectModal = new NewProjectModal($(".new-project-modal"));
             var newMetadataModal = new NewMetadataModal($(".new-metadata-modal"));
             var exportModal = new ExportModal($(".export-modal"));
+            var newUserModal = new NewUserModal($(".new-user-modal"));
+            var editUserModal = new EditUserModal($(".edit-user-modal"));
+            //var newGroupModal = new NewUserModal($(".new-group-modal"));
+            //var editGroupModal = new EditUserModal($(".edit-group-modal"));
+            var affectGroupModal = new AffectGroupModal($(".affect-group-modal"));
         </script>
         <main>
             <section class="side_container">

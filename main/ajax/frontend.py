@@ -1,7 +1,7 @@
 from prospero import settings
 from main.models import *
 from django.template import loader
-from main.helpers import frontend, files, queries, sessions
+from main.helpers import frontend, files, queries, sessions, forms, cloud, users
 from main.helpers.deletor import deletor
 from main.importerP1 import builder2BD as builder
 from django.http import HttpResponse
@@ -31,6 +31,17 @@ def renderTable(request, data, results):
     for item in items:
         table.append(item.serializeAsTableItem())
     results["filters"] = filters
+
+def renderUserTable(request, data, results):
+    table = []
+    results["table"] = table
+    filters = data["filters"]
+    pagination = data["filters"]["pagination"]
+    querySet = ProsperoUser.objects.all()
+    items = queries.getUsers(querySet, filters, pagination)
+    for item in items:
+        table.append(item.getRealInstance().serializeAsTableItem())
+    results["pagination"] = pagination
 
 def changeData(request, data, results):
     object = frontend.getBDObject(data["identity"])
@@ -146,6 +157,88 @@ def createMetadata(request, data, results):
         corpus.metaDatas.add(data)
         results["metadata"] = data.serialize()
 
+def createUser(request, data, results):
+    form = forms.Form(data["fields"])
+    username = form.getValue("username")
+    thumbnail = form.getValue("thumbnail")
+    firstName = form.getValue("firstName")
+    lastName = form.getValue("lastName")
+    password = form.getValue("password")
+    password2 = form.getValue("password2")
+    try:
+        PUser.objects.get(username=username)
+        form.setError("username", "User already exists with this name")
+        results["serverError"] = form.getErrors()
+    except:
+        form.checkRequired("username", "Field required")
+        form.checkRequired("thumbnail", "Field required")
+        form.checkRequired("firstName", "Field required")
+        form.checkRequired("lastName", "Field required")
+        form.checkRequired("password", "Field required")
+        form.checkRequired("password2", "Field required")
+        if not form.hasErrors():
+            if len(password) < 8 or len(password) > 20:
+                form.setError("password", "Your password must be 8-20 characters long")
+            elif password != password2:
+                form.setError("password2", "Does not match password field")
+            else:
+                user = builder.createPUser(
+                    username,
+                    firstName,
+                    lastName
+                )
+                source = settings.MEDIA_ROOT+thumbnail
+                target = settings.MEDIA_ROOT+'users/thumbnails/'+files.getFileName(source)
+                target = cloud.findAvailableAbsolutePath(target)
+                files.moveFile(source, target)
+                folder = files.gotFolder(source)
+                files.cleanFolder(folder)
+                filePath = cloud.getMediaRelativePath(target)
+                user.thumbnail = filePath
+                users.setPassword(user, password)
+                results["user"] = user.serializeIdentity()
+
+def modifyUser(request, data, results):
+    form = forms.Form(data["fields"])
+    user = frontend.getBDObject(data["identity"])
+    username = form.getValue("username")
+    if username != user.username:
+        try:
+            PUser.objects.get(username=username)
+            form.setError("username", "User already exists with this name")
+            results["serverError"] = form.getErrors()
+        except:
+            user.username = username
+    user.first_name = form.getValue("firstName")
+    user.last_name = form.getValue("lastName")
+    user.save()
+
+def createGroup(request, data, results):
+    form = forms.Form(data["fields"])
+    username = form.getValue("username")
+    try:
+        PUser.objects.get(username=username)
+        form.setError("username", "User already exists with this name")
+        results["serverError"] = form.getErrors()
+    except:
+        data = builder.createPUser(
+            username
+        )
+        results["group"] = data.serializeIdentity()
+
+def modifyGroup(request, data, results):
+    form = forms.Form(data["fields"])
+    user = frontend.getBDObject(data["identity"])
+    username = form.getValue("username")
+    if username != user.username:
+        try:
+            PUser.objects.get(username=username)
+            form.setError("username", "User already exists with this name")
+            results["serverError"] = form.getErrors()
+        except:
+            user.username = username
+    user.save()
+
 def changeMetadataPosition(request, data, results):
     item = frontend.getBDObject(data["item"]["identity"])
     parent = item.parent()
@@ -174,4 +267,17 @@ def renderProjectInfos(request, data, results):
     template = loader.get_template('main/prospero/project/project-infos.html')
     results["html"] = template.render(context, request)
 
+def getUserData(request, data, results):
+    users = []
+    for user in ProsperoUser.objects.all():
+        users.append(user.getRealInstance().serialize())
+    results["users"] = users
 
+def getFake(request, data, results):
+    group = PGroup.objects.all()[0]
+    object = group.serialize()
+    users = []
+    for user in group.users.all():
+        users.append(user.serialize())
+    object["users"] = users
+    results["object"] = object
