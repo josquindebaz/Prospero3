@@ -32,8 +32,22 @@ class PForm extends PObject {
 	clear() {
 	    $.each(this.fieldsInError, function(index, field) {
 	        field.setAsValid();
+	        field.clear();
+	    });
+	    $.each(this.fields, function(name, field) {
+	        field.clear();
 	    });
 	    this.fieldsInError = [];
+	}
+	load(data) {
+	    var self = this;
+	    /*$.each(data, function(name, value) {
+	        self.fields[name].setValue(value)
+	    });*/
+	    $.each(self.fields, function(name, field) {
+	        field.setValue(data[name]);
+	    });
+
 	}
 }
 

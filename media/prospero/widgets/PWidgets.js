@@ -47,6 +47,9 @@ class PInputField extends PObject {
     setValue(value) {
         this.fieldNode.val(value);
     }
+    clear() {
+        this.setValue("");
+    }
 }
 class PTextarea extends PInputField {
 
@@ -296,8 +299,7 @@ class PDropzone extends PInputField {
 					formData.append('file', file, file.name);
 					prospero.uploadFile(formData, function(uploadDone, data) {
 						if (uploadDone) {
-                            self.filePath = data.filePath;
-                            $dropzone.css("background-image", 'url(media_site/'+data.filePath+')');
+                            self.setValue(data.fileUrl);
                             self.setAsValid();
                             self.notifyObservers({
                                 name: "valueChanged",
@@ -328,6 +330,19 @@ class PDropzone extends PInputField {
 	getValue() {
 	    return this.filePath;
 	}
+	setValue(value) {
+	    this.filePath = value;
+	    if (value == null) {
+            this.node.find(".dropzone-panel").addClass("novalue");
+            this.node.find(".dropzone-panel").css("background-image", 'url(media_site/assets/images/icon_dropzone.png)');
+	    } else {
+	        this.node.find(".dropzone-panel").removeClass("novalue");
+	        this.node.find(".dropzone-panel").css("background-image", 'url("'+value+'")');
+	    }
+	}
+	clear() {
+	    this.setValue(null);
+	}
 }
 class PAutoCompleteInput extends PInputField {
 
@@ -335,7 +350,7 @@ class PAutoCompleteInput extends PInputField {
 	    super($node);
 	    var self = this;
         self.autoComplete = new UserAutocomplete(self.fieldNode[0], {
-            data: [{label: "I'm a label", value: 42}],
+            data: [],
             maximumItems: 5,
             treshold: 1,
             onSelectItem: function(item) {
@@ -346,10 +361,12 @@ class PAutoCompleteInput extends PInputField {
                 });
             }
         });
-        //self.autoComplete.setData(data);
-        prospero.getUserData(function(userData) {
-            self.autoComplete.setData(userData);
-        });
+	}
+	setData(data) {
+	    this.autoComplete.setData(data);
+	}
+	clear() {
+	    this.autoComplete.clear();
 	}
 	initFieldNode() {
 	    this.fieldNode = this.node.find("input");

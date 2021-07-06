@@ -4,10 +4,13 @@ class EditUserModal extends PModal {
 	    super($node);
 	    var self = this;
 		self.form = new PForm(self.node.find(".modal-body"));
-		self.form.addField("username", new PTextInput(self.node.find(".user-username-input")));
-		self.form.addField("firstName", new PTextInput(self.node.find(".user-first_name-input")));
-		self.form.addField("lastName", new PTextInput(self.node.find(".user-last_name-input")));
-		self.validateButton = new PButton(self.node.find("[action-name=create]"));
+		self.form.addField("thumbnail", new PDropzone(self.node.find(".thumbnail-field")));
+		self.form.addField("username", new PTextInput(self.node.find(".username-field")));
+		self.form.addField("first_name", new PTextInput(self.node.find(".first_name-field")));
+		self.form.addField("last_name", new PTextInput(self.node.find(".last_name-field")));
+		self.form.addField("password", new PTextInput(self.node.find(".password-field")));
+		self.form.addField("password2", new PTextInput(self.node.find(".password2-field")));
+		self.validateButton = new PButton(self.node.find("[action-name=save]"));
 		self.validateButton.addObserver(function(event) {
             prospero.ajax(
                 "modifyUser",
@@ -31,9 +34,7 @@ class EditUserModal extends PModal {
 	show(user) {
 	    this.user = user;
 	    this.form.clear();
-	    this.form.getField("username").setValue(user.data.username);
-	    this.form.getField("firstName").setValue(user.data.first_name);
-	    this.form.getField("lastName").setValue(user.data.last_name);
+	    this.form.load(user.data);
 	    super.show();
 	}
 }

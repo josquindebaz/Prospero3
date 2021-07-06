@@ -75,6 +75,7 @@ class PUserItem extends PTableItem {
 	}
 	load(data, identity) {
         var self = this;
+        self.data = data;
         $.each(self.columns, function(index, column) {
             var value = data[column];
             if (value == null)

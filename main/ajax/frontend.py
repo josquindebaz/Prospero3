@@ -161,19 +161,19 @@ def createUser(request, data, results):
     form = forms.Form(data["fields"])
     username = form.getValue("username")
     thumbnail = form.getValue("thumbnail")
-    firstName = form.getValue("firstName")
-    lastName = form.getValue("lastName")
+    firstName = form.getValue("first_name")
+    lastName = form.getValue("last_name")
     password = form.getValue("password")
     password2 = form.getValue("password2")
     try:
-        PUser.objects.get(username=username)
-        form.setError("username", "User already exists with this name")
+        ProsperoUser.objects.get(username=username)
+        form.setError("username", "User or group already exists with this name")
         results["serverError"] = form.getErrors()
     except:
         form.checkRequired("username", "Field required")
         form.checkRequired("thumbnail", "Field required")
-        form.checkRequired("firstName", "Field required")
-        form.checkRequired("lastName", "Field required")
+        form.checkRequired("first_name", "Field required")
+        form.checkRequired("last_name", "Field required")
         form.checkRequired("password", "Field required")
         form.checkRequired("password2", "Field required")
         if not form.hasErrors():
@@ -187,14 +187,7 @@ def createUser(request, data, results):
                     firstName,
                     lastName
                 )
-                source = settings.MEDIA_ROOT+thumbnail
-                target = settings.MEDIA_ROOT+'users/thumbnails/'+files.getFileName(source)
-                target = cloud.findAvailableAbsolutePath(target)
-                files.moveFile(source, target)
-                folder = files.gotFolder(source)
-                files.cleanFolder(folder)
-                filePath = cloud.getMediaRelativePath(target)
-                user.thumbnail = filePath
+                user.setThumbnailUrl(thumbnail)
                 users.setPassword(user, password)
                 results["user"] = user.serializeIdentity()
 
@@ -202,42 +195,91 @@ def modifyUser(request, data, results):
     form = forms.Form(data["fields"])
     user = frontend.getBDObject(data["identity"])
     username = form.getValue("username")
+    thumbnail = form.getValue("thumbnail")
+    firstName = form.getValue("first_name")
+    lastName = form.getValue("last_name")
+    password = form.getValue("password")
+    password2 = form.getValue("password2")
     if username != user.username:
         try:
-            PUser.objects.get(username=username)
-            form.setError("username", "User already exists with this name")
+            ProsperoUser.objects.get(username=username)
+            form.setError("username", "User or group already exists with this name")
             results["serverError"] = form.getErrors()
+            return
         except:
-            user.username = username
-    user.first_name = form.getValue("firstName")
-    user.last_name = form.getValue("lastName")
+            pass
+    form.checkRequired("username", "Field required")
+    form.checkRequired("thumbnail", "Field required")
+    form.checkRequired("first_name", "Field required")
+    form.checkRequired("last_name", "Field required")
+    if form.hasErrors():
+        results["serverError"] = form.getErrors()
+        return
+    if password and password2:
+        if len(password) < 8 or len(password) > 20:
+            form.setError("password", "Your password must be 8-20 characters long")
+            return
+        elif password != password2:
+            form.setError("password2", "Does not match password field")
+            return
+        else:
+            users.setPassword(user, password)
+    if thumbnail != user.getThumbnailUrl():
+        user.setThumbnailUrl(thumbnail)
+    user.username = username
+    user.first_name = firstName
+    user.last_name = lastName
     user.save()
 
 def createGroup(request, data, results):
     form = forms.Form(data["fields"])
     username = form.getValue("username")
+    thumbnail = form.getValue("thumbnail")
+    users = form.getValue("users")
     try:
-        PUser.objects.get(username=username)
-        form.setError("username", "User already exists with this name")
+        ProsperoUser.objects.get(username=username)
+        form.setError("username", "User or group already exists with this name")
         results["serverError"] = form.getErrors()
     except:
-        data = builder.createPUser(
-            username
-        )
-        results["group"] = data.serializeIdentity()
+        form.checkRequired("username", "Field required")
+        form.checkRequired("thumbnail", "Field required")
+        if not form.hasErrors():
+            group = builder.createPGroup(
+                username
+            )
+            group.setThumbnailUrl(thumbnail)
+            for userId in users:
+                user = PUser.objects.get(id=userId)
+                group.users.add(user)
+            results["group"] = group.serializeIdentity()
 
 def modifyGroup(request, data, results):
     form = forms.Form(data["fields"])
-    user = frontend.getBDObject(data["identity"])
+    group = frontend.getBDObject(data["identity"])
     username = form.getValue("username")
-    if username != user.username:
+    thumbnail = form.getValue("thumbnail")
+    users = form.getValue("users")
+    if username != group.username:
         try:
-            PUser.objects.get(username=username)
-            form.setError("username", "User already exists with this name")
+            ProsperoUser.objects.get(username=username)
+            form.setError("username", "User or group already exists with this name")
             results["serverError"] = form.getErrors()
+            return
         except:
-            user.username = username
-    user.save()
+            pass
+    form.checkRequired("username", "Field required")
+    form.checkRequired("thumbnail", "Field required")
+    if form.hasErrors():
+        results["serverError"] = form.getErrors()
+        return
+    if thumbnail != group.getThumbnailUrl():
+        group.setThumbnailUrl(thumbnail)
+    group.username = username
+    group.save()
+    group.users.clear()
+    for userId in users:
+        user = PUser.objects.get(id=userId)
+        group.users.add(user)
 
 def changeMetadataPosition(request, data, results):
     item = frontend.getBDObject(data["item"]["identity"])
@@ -269,15 +311,10 @@ def renderProjectInfos(request, data, results):
 
 def getUserData(request, data, results):
     users = []
-    for user in ProsperoUser.objects.all():
+    for user in PUser.objects.all():
         users.append(user.getRealInstance().serialize())
     results["users"] = users
 
 def getFake(request, data, results):
     group = PGroup.objects.all()[0]
-    object = group.serialize()
-    users = []
-    for user in group.users.all():
-        users.append(user.serialize())
-    object["users"] = users
-    results["object"] = object
+    results["object"] = group.serialize()

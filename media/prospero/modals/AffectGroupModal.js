@@ -9,6 +9,12 @@ class AffectGroupModal extends PModal {
 	    self.acInput.addObserver(function(event) {
 	        self.userList.addItem(event.item);
 	    });
+	    self.userList.addObserver(function(event) {
+	        if (event.name == "addItem")
+	            self.acInput.autoComplete.addHiddenId(event.item.identity.id);
+	        else if (event.name == "removeItem")
+	            self.acInput.autoComplete.removeHiddenId(event.item.identity.id);
+	    });
 		/*self.form.addField("thumbnail", new PDropzone(self.node.find(".thumbnail-field")));
 		self.form.addField("username", new PTextInput(self.node.find(".username-field")));
 		self.form.addField("firstName", new PTextInput(self.node.find(".first_name-field")));
@@ -38,6 +44,7 @@ class AffectGroupModal extends PModal {
 	show(group) {
 	    var self = this;
 	    self.group = group;
+        self.acInput.clear();
 	    self.userList.setData(group).load();
 	    /*
 	    this.form.getField("username").setValue("");

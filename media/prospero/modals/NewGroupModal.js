@@ -4,7 +4,26 @@ class NewGroupModal extends PModal {
 	    super($node);
 	    var self = this;
 		self.form = new PForm(self.node.find(".modal-body"));
-		self.form.addField("username", new PTextInput(self.node.find(".user-username-input")));
+		self.form.addField("thumbnail", new PDropzone(self.node.find(".thumbnail-field")));
+		self.form.addField("username", new PTextInput(self.node.find(".username-field")));
+
+	    self.acInput = new PAutoCompleteInput($node.find(".user-choice-field"));
+        prospero.getUserData(function(userData) {
+            self.acInput.setData(userData);
+        });
+	    self.userList = new PUserList($node.find(".users-in-group"));
+	    self.form.addField("users", self.userList);
+
+	    self.acInput.addObserver(function(event) {
+	        self.userList.addItem(event.item);
+	    });
+	    self.userList.addObserver(function(event) {
+	        if (event.name == "addItem")
+	            self.acInput.autoComplete.addHiddenId(event.item.identity.id);
+	        else if (event.name == "removeItem")
+	            self.acInput.autoComplete.removeHiddenId(event.item.identity.id);
+	    });
+
 		self.validateButton = new PButton(self.node.find("[action-name=create]"));
 		self.validateButton.addObserver(function(event) {
             prospero.ajax(
@@ -26,8 +45,8 @@ class NewGroupModal extends PModal {
 		});
 	}
 	show() {
-	    this.form.getField("username").setValue("");
 	    this.form.clear();
+        this.acInput.clear();
 	    super.show();
 	}
 }

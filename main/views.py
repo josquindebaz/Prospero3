@@ -48,6 +48,7 @@ def fileUpload(request):
         fileName = ntpath.basename(filePath)
         results['fileName'] = fileName
         results['filePath'] = relativeFileFolder + fileName
+        results['fileUrl'] = "/media_site/"+relativeFileFolder + fileName
         results['status'] = "OK"
         return HttpResponse(
             json.dumps(results),

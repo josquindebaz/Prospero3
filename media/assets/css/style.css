@@ -4,6 +4,10 @@
     display : none !important;
 }
 
+.modal-body-form {
+    text-align: left;
+}
+
 /* headers */
 header.main_header h1 {
     font-size: calc( var(--fontSize_unit) * 3);
@@ -193,6 +197,11 @@ td.col-username .icon-user {
 }
 td.col-thumbnail .img_container {
     width: 25px;
+    height: 25px;
+}
+td.col-thumbnail .img_container img {
+    width: 100%;
+    height: 100%;
 }
 
 /* dropzone thumbnail */
@@ -262,4 +271,9 @@ td.col-thumbnail .img_container {
 }
 .auto-complete-input .dropdown-menu .dropdown-item {
     cursor: pointer;
+}
+
+/* modale create user, create group */
+.modal-body .thumbnail-field .dropzone-panel.novalue {
+    background-size: 50%;
 }

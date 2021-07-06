@@ -50,7 +50,9 @@ class Autocomplete {
             }
         });
     }
-
+    clear() {
+        this.field.value = "";
+    }
     setData(data) {
         this.options.data = data;
         this.renderIfNeeded();
@@ -100,11 +102,6 @@ class Autocomplete {
         let count = 0;
         for (let i = 0; i < keys.length; i++) {
             const key = keys[i];
-            /*const entry = this.options.data[key];
-            const item = {
-                label: this.options.label ? entry[this.options.label] : key,
-                value: this.options.value ? entry[this.options.value] : entry
-            };*/
             const item = this.options.data[key];
 
             if (this.doesItemContainsLookup(item, lookup)) {
@@ -118,8 +115,8 @@ class Autocomplete {
         $(this.field.nextSibling).find('.dropdown-item').bind("click", function(e) {
             var $item = $(this);
             if (self.options.onSelectItem) {
-                var itemId = $(this).data("value");
-                var item = self.options.data.find(function(obj) {return obj["value"] === itemId;})
+                var itemId = $(this).data("id");
+                var item = self.options.data.find(function(obj) {return obj.identity.id === itemId;})
                 self.options.onSelectItem(item);
                 self.field.value="";
             }

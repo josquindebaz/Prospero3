@@ -6,7 +6,7 @@ from datetime import datetime
 from django.utils import timezone
 import pytz
 from django.contrib.auth.models import *
-from main.helpers import cloud
+from main.helpers import cloud, files
 
 CategoryType = (
     ('ENTITY', 'ENTITY'),
@@ -172,32 +172,39 @@ class ProsperoUser(User) :
         }
 
     def serializeAsTableItem(self):
-        from prospero import settings
         return {
             "identity" : self.serializeIdentity(),
             "values" : {
-                "thumbnail" : settings.MEDIA_URL+cloud.getMediaRelativePath(str(self.thumbnail)),
+                "thumbnail" : self.getThumbnailUrl(),
                 "username" : self.username,
                 "first_name" : self.first_name,
                 "last_name" : self.last_name
             }
         }
 
-    def serialize(self):
-        from prospero import settings
-        return {
-            "identity" : self.serializeIdentity(),
-            "value" : self.id,
-            "username": self.username,
-            "label" : self.username,
-            "first_name": self.first_name,
-            "last_name": self.last_name,
-            "thumbnail": settings.MEDIA_URL + cloud.getMediaRelativePath(str(self.thumbnail))
-        }
-
     def accept(self, visitor):
         obj = self.getRealInstance()
         return getattr(visitor, "visit"+type(obj).__name__)(obj)
+
+    def getThumbnailUrl(self):
+        from prospero import settings
+        return settings.MEDIA_URL + cloud.getMediaRelativePath(str(self.thumbnail))
+
+    def setThumbnailUrl(self, thumbnail):
+        from prospero import settings
+        if thumbnail.startswith("/media_site/"):
+            thumbnail = thumbnail[12:]
+        #if self.thumbnail:
+        #    files.deleteFile(str(self.thumbnail))
+        source = settings.MEDIA_ROOT+thumbnail
+        target = settings.MEDIA_ROOT+'users/thumbnails/'+files.getFileName(source)
+        target = cloud.findAvailableAbsolutePath(target)
+        files.moveFile(source, target)
+        folder = files.gotFolder(source)
+        files.cleanFolder(folder)
+        #filePath = cloud.getMediaRelativePath(target)
+        self.thumbnail = target
+        self.save()
 
 class PGroup(ProsperoUser) :
 
@@ -210,6 +217,18 @@ class PGroup(ProsperoUser) :
     def getRealInstance(self):
         return self
 
+    def serialize(self):
+        users = []
+        for user in self.users.all():
+            users.append(user.id)
+        result = {
+            "identity" : self.serializeIdentity(),
+            "username": self.username,
+            "thumbnail": self.getThumbnailUrl(),
+            "users" : users
+        }
+        return result
+
 class PUser(ProsperoUser) :
 
 
@@ -218,6 +237,15 @@ class PUser(ProsperoUser) :
 
     def getRealInstance(self):
         return self
+
+    def serialize(self):
+        return {
+            "identity" : self.serializeIdentity(),
+            "username": self.username,
+            "first_name": self.first_name,
+            "last_name": self.last_name,
+            "thumbnail": self.getThumbnailUrl()
+        }
 
 class Project(AugmentedData) :
 

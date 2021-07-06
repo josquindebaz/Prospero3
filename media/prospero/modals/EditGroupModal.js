@@ -4,14 +4,33 @@ class EditGroupModal extends PModal {
 	    super($node);
 	    var self = this;
 		self.form = new PForm(self.node.find(".modal-body"));
-		self.form.addField("username", new PTextInput(self.node.find(".user-username-input")));
-		self.validateButton = new PButton(self.node.find("[action-name=create]"));
+		self.form.addField("thumbnail", new PDropzone(self.node.find(".thumbnail-field")));
+		self.form.addField("username", new PTextInput(self.node.find(".username-field")));
+
+	    self.acInput = new PAutoCompleteInput($node.find(".user-choice-field"));
+        prospero.getUserData(function(userData) {
+            self.acInput.setData(userData);
+            self.userList = new PUserList($node.find(".users-in-group"), userData);
+            self.form.addField("users", self.userList);
+
+            self.acInput.addObserver(function(event) {
+                self.userList.addItem(event.item);
+            });
+            self.userList.addObserver(function(event) {
+                if (event.name == "addItem")
+                    self.acInput.autoComplete.addHiddenId(event.item.identity.id);
+                else if (event.name == "removeItem")
+                    self.acInput.autoComplete.removeHiddenId(event.item.identity.id);
+            });
+        });
+
+		self.validateButton = new PButton(self.node.find("[action-name=save]"));
 		self.validateButton.addObserver(function(event) {
             prospero.ajax(
                 "modifyGroup",
                 {
                     fields : self.form.serialize(),
-                    identity : self.user.identity
+                    identity : self.group.identity
                 },
                 function(data) {
                     if (!data.serverError) {
@@ -26,10 +45,11 @@ class EditGroupModal extends PModal {
             );
 		});
 	}
-	show(user) {
-	    this.user = user;
+	show(group) {
+	    this.group = group;
 	    this.form.clear();
-	    this.form.getField("username").setValue(user.data.username);
+	    this.acInput.clear();
+	    this.form.load(group);
 	    super.show();
 	}
 }

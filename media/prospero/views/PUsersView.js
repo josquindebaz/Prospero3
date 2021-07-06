@@ -18,8 +18,15 @@ class PUsersView extends PObject {
             var item = prospero.get(self.userTable.getSelection());
             if (item.identity.model == "PUser")
                 editUserModal.show(item);
-            else
-                editGroupModal.show(item);
+            else {
+                prospero.ajax(
+                    "renderObject",
+                    item.identity,
+                    function(data) {
+                        editGroupModal.show(data.object);
+                    }
+                );
+            }
 	    });
 	    self.menu.setEnabled("edit", false);
 	    self.menu.addAction("delete", "Delete", function() {
