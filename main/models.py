@@ -26,6 +26,10 @@ DictType = (
     ('CategoryDict', 'CategoryDict'),
     ('SyntaxicDict', 'SyntaxicDict'),
 )
+UserRightType = (
+    ('Read', 'Read'),
+    ('Write', 'Write'),
+)
 
 class PTag(models.Model) :
 
@@ -697,6 +701,18 @@ class PUri(PResource) :
 
     def __str__(self):
         return "[" + str(self.id) + ":PUri] " + self.uri
+
+    def getRealInstance(self):
+        return self
+
+class UserRight(models.Model) :
+
+    right = models.CharField(blank=True, choices = UserRightType, max_length=255)
+    project = models.ForeignKey('Project', null=True, on_delete=models.SET_NULL, related_name='userRights')
+    user = models.ForeignKey('ProsperoUser', null=True, on_delete=models.SET_NULL, related_name='userRights')
+
+    def __str__(self):
+        return "[" + str(self.id) + ":UserRight] " + self.uri
 
     def getRealInstance(self):
         return self

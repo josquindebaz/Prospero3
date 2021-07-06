@@ -133,3 +133,8 @@ def createPGroup(username):
     obj = PGroup(username=username)
     obj.save()
     return obj
+
+def createUserRight(user, right, project):
+    obj = UserRight(user=user, right=right, project=project)
+    obj.save()
+    return obj

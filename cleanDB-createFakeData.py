@@ -35,6 +35,7 @@ def createProject(name, tags, owner):
     corpus = PCorpus(name="main", author="John")
     corpus.save()
     p.corpuses.add(corpus)
+    builder.createUserRight(owner, "Owner", p)
     return p
 
 def createAugmentedDatas(object):
@@ -46,7 +47,7 @@ def createAugmentedDatas(object):
 def createPUser(username, first_name, last_name, thumbnail=None):
     user = PUser(username=username, first_name=first_name, last_name=last_name)
     if not thumbnail:
-        thumbnail = settings.MEDIA_ROOT+"users/thumbnails/anonymous_user.jpg"
+        thumbnail = "/media_site/testData/images/fake_thumbnail.jpg"
     user.thumbnail = thumbnail
     user.save()
     return user
@@ -54,23 +55,21 @@ def createPUser(username, first_name, last_name, thumbnail=None):
 def createPGroup(username, thumbnail=None):
     group = PGroup(username=username)
     if not thumbnail:
-        thumbnail = settings.MEDIA_ROOT+"users/thumbnails/anonymous_user.jpg"
+        thumbnail = "/media_site/testData/images/fake_thumbnail.jpg"
     group.thumbnail = thumbnail
     group.save()
     return group
 
-if PUser.objects.count() == 0:
-    josquin = createPUser("josquin@gmail.com", "Josquin", "Debaz", settings.MEDIA_ROOT+"users/thumbnails/josquin.jpg")
-    group = createPGroup("GSPR")
-    group.users.add(josquin)
-    user = josquin
-    group = createPGroup("Public")
-    anonymous = createPUser("anonymous", "", "", settings.MEDIA_ROOT+"users/thumbnails/anonymous_user.jpg")
-else:
-    user = PUser.objects.all()[0]
 
-project = createProject("Project test", "ipsum, dolor, sit, amet, consectetur, adipiscing, elit, ut, interdum", user)
-createAugmentedDatas(project.corpuses.first())
+josquin = createPUser("josquin@gmail.com", "Josquin", "Debaz", "/media_site/testData/images/josquin.jpg")
+francis = createPUser("francis@gmail.com", "Francis", "Chateauraynaud", "/media_site/testData/images/francis.jpg")
+anonymous = createPUser("anonymous", "", "", settings.MEDIA_ROOT+"/media_site/testData/images/anonymous_user.jpg")
+groupGSPR = createPGroup("GSPR")
+groupGSPR.users.add(josquin)
+groupGSPR.users.add(francis)
+publicGroup = createPGroup("Public")
+
+
 projectNames = [
     "Alertes Varia",
     "Algues vertes et nitrates",
@@ -140,3 +139,9 @@ for i in range(0, 15):
 
 for i in range(0, 10):
     createPGroup("group"+str(i))
+    
+project = createProject("Project test", "ipsum, dolor, sit, amet, consectetur, adipiscing, elit, ut, interdum", user)
+builder.createUserRight(publicGroup, "Read", project)
+builder.createUserRight(francis, "Write", project)
+createAugmentedDatas(project.corpuses.first())
+
