@@ -19,7 +19,7 @@
                     Owner
                 </a>
                 -->
-                {% with sort=session.sort %}
+                {% with sort=pageData.sort %}
                 <div class="project-sorting" style="display: flex;">
                     <div class="form-check sort_item {% if sort == "name" %}active{% endif %}">
                         <input class="form-check-input pin" type="radio" name="flexRadioDefault" id="flexRadioDefault1" data-value="name" {% if sort == "name" %}checked{% endif %}>

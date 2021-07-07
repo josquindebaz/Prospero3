@@ -1,8 +1,9 @@
 class PUsersView extends PObject {
 
-	constructor($node) {
-	    super($node);
+	constructor(pinterface) {
+	    super($("body"));
 	    var self = this;
+	    self.interface = pinterface;
 	    this.userTable = new UserTable($(".users-table"), this);
 	    this.userTable.addObserver(function(event) {
 	        self.manageEvent(self.userTable, event);
@@ -40,20 +41,16 @@ class PUsersView extends PObject {
                     }
                 });
             } else {
-                prospero.ajax(
-                    "renderObject",
-                    item.identity,
-                    function(data) {
-                        var modalLock = modals.openEditGroup(data.object);
-                        prospero.wait(modalLock, function() {
-                            if (modalLock.data.action == "save") {
-                                var lock = self.userTable.reload();
-                                /*prospero.wait(lock, function() {
-                                });*/
-                            }
-                        });
-                    }
-                );
+                prospero.ajax("serializeObject", item.identity, function(data) {
+                    var modalLock = modals.openEditGroup(data.object);
+                    prospero.wait(modalLock, function() {
+                        if (modalLock.data.action == "save") {
+                            var lock = self.userTable.reload();
+                            /*prospero.wait(lock, function() {
+                            });*/
+                        }
+                    });
+                });
             }
 	    });
 	    self.menu.setEnabled("edit", false);

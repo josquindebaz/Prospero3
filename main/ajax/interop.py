@@ -1,6 +1,5 @@
 from prospero import settings
 from main.models import *
-from django.template import loader
 from main.importerP1 import builder2BD as builder
 from main.importerP1 import importer
 from main.helpers import frontend, files, cloud

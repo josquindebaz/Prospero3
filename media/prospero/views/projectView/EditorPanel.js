@@ -25,7 +25,7 @@ class TextEditor extends PObject {
 	}
 	load() {
         var self = this;
-        prospero.ajax("renderObject", this.data, function(data) {
+        prospero.ajax("serializeObject", this.data, function(data) {
             // load text
             var $text = $(".text-container", self.node);
             $text.empty();
@@ -75,7 +75,7 @@ class CorpusEditor extends PObject {
 	}
 	load() {
         var self = this;
-        prospero.ajax("renderObject", this.data, function(data) {
+        prospero.ajax("serializeObject", this.data, function(data) {
             prospero.initEditionWidgets($("h3.title", self.node), data.object.datas);
             prospero.initEditionWidgets($(".cartouche-fixed", self.node), data.object.datas);
             var $cartouche = $(".cartouche-metaDatas", self.node);
@@ -155,7 +155,7 @@ class TextSelectionsEditor extends PObject {
 	load(data) {
         var self = this;
         this.data = data;
-        prospero.ajax("renderObject", this.data, function(data) {
+        prospero.ajax("serializeObject", this.data, function(data) {
             var $text = $(".text-container", self.node);
             $text.empty();
             $text.text(data.object.text);

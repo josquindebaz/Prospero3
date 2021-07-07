@@ -16,7 +16,7 @@ class PProjectPanel extends PDBObject {
             });
 	    });
 	    self.menu.addAction("changePrivileges", "Change privileges", function() {
-            prospero.ajax("getProjectRights", { project: self.view.currentProject.identity }, function(data) {
+            prospero.ajax("serializeProjectRights", { project: self.view.currentProject.identity }, function(data) {
                 var modalLock = modals.openChangeRights(self.view.currentProject.identity, data.rights);
                 prospero.wait(modalLock, function() {
                     if (modalLock.data.action == "save")

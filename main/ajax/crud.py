@@ -1,60 +1,9 @@
 from prospero import settings
 from main.models import *
-from django.template import loader
-from main.helpers import frontend, files, queries, sessions, forms, cloud, users
+from main.helpers import frontend, files, forms, users
 from main.helpers.deletor import deletor
 from main.importerP1 import builder2BD as builder
-from django.http import HttpResponse
 from main import views
-
-def searchInProjects(request, data, results):
-    filters = data["viewData"]
-    pagination = data["pagination"]
-    sessions.setProjectsData(request, filters)
-    projects = queries.getProjects(pagination, filters)
-    context = views.createContext(request)
-    context["projects"] = projects
-    template = loader.get_template('main/prospero/projects-mosaic/projects.html')
-    results["html"] = template.render(context, request)
-    results["pagination"] = pagination
-
-def renderTable(request, data, results):
-    table = []
-    results["table"] = table
-    identity = data["identity"]
-    filters = data["filters"]
-    property = data["property"]
-    object = frontend.getBDObject(identity)
-    print("renderTable on", object)
-    querySet = getattr(object, property)
-    items = queries.getObjects(querySet, filters)
-    for item in items:
-        table.append(item.serializeAsTableItem())
-    results["filters"] = filters
-
-def renderUserTable(request, data, results):
-    table = []
-    results["table"] = table
-    filters = data["filters"]
-    pagination = data["filters"]["pagination"]
-    querySet = ProsperoUser.objects.all()
-    items = queries.getUsers(querySet, filters, pagination)
-    for item in items:
-        table.append(item.getRealInstance().serializeAsTableItem())
-    results["pagination"] = pagination
-
-def changeData(request, data, results):
-    object = frontend.getBDObject(data["identity"])
-    if data["kind"] == "metadata":
-        setattr(object, "value", data["value"])
-    else:
-        setattr(object, data["name"], data["value"])
-    object.save()
-    print("changeData", object)
-
-def renderObject(request, data, results):
-    object = frontend.getBDObject(data)
-    results["object"] = object.serialize()
 
 def deleteObject(request, data, results):
     if not isinstance(data, list):
@@ -65,6 +14,15 @@ def deleteObject(request, data, results):
     print("delete", objects)
     for obj in objects:
         deletor.delete(obj)
+
+def changeData(request, data, results):
+    object = frontend.getBDObject(data["identity"])
+    if data["kind"] == "metadata":
+        setattr(object, "value", data["value"])
+    else:
+        setattr(object, data["name"], data["value"])
+    object.save()
+    print("changeData", object)
 
 def createText(request, data, results):
     print("createText", data)
@@ -295,34 +253,6 @@ def changeMetadataPosition(request, data, results):
     else:
         parent.metaDatas.remove(item)
         parent.metaDatas.add(item)
-
-def renderProjectInfos(request, data, results):
-    project = frontend.getBDObject(data["project"])
-    context = views.createContext(request)
-    projectsData = sessions.getProjectsData(request)
-    if data["setCurrentProject"]:
-        projectsData["currentProjectId"] = data["project"]["id"]
-        sessions.setProjectsData(request, projectsData)
-    sessions.setCurrentProjectInContext(projectsData, context)
-    context["project"] = project
-    template = loader.get_template('main/prospero/project/project-infos.html')
-    results["html"] = template.render(context, request)
-
-def getUserData(request, data, results):
-    users = []
-    for user in PUser.objects.all():
-        users.append(user.getRealInstance().serialize())
-    results["users"] = users
-
-def getAllUserData(request, data, results):
-    users = []
-    for user in ProsperoUser.objects.all():
-        users.append(user.getRealInstance().serialize())
-    results["users"] = users
-
-def getProjectRights(request, data, results):
-    project = frontend.getBDObject(data["project"])
-    results["rights"] = project.serializeRights()
 
 def changeRights(request, data, results):
     project = frontend.getBDObject(data["identity"])

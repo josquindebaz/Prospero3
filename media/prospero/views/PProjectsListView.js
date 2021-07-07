@@ -74,7 +74,7 @@ class PProjectsListView extends PObject {
         if (data) {
             this.data = data;
             this.data.property = this.propertyName;
-            prospero.ajax("renderTable", this.data, function(data) {
+            prospero.ajax("serializeTable", this.data, function(data) {
                 $tbody.empty();
                 $.each(data.table, function(index, line) {
                     var $tr = $("<tr></tr>");

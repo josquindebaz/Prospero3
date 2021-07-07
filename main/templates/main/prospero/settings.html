@@ -24,20 +24,8 @@
 		</section>
 	</div>
 	<script>
-		var settingsView = null;
-		prospero.onload(function() {
-			var $body = $("body");
-			settingsView = new PUsersView($body);
-			settingsView.load();
-            /*
-            prospero.ajax(
-                "getFake",
-                {},
-                function(data) {
-                    editGroupModal.show(data.object);
-                }
-            );
-            */
+		prospero.getInterface(function(pinterface) {
+			new PUsersView(pinterface).load();
 		});
 	</script>
 {% endblock %}

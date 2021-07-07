@@ -86,7 +86,7 @@
             var urls = new UrlUtils();
         </script>
     </head>
-    <body page="{{ page }}" data-page-data="{{ pageData }}" data-pagination="{{ pagination }}">
+    <body page="{{ page }}" data-page-data="{{ pageData|dump }}" data-pagination="{{ pagination|dump }}">
         {% include "main/prospero/structure/modals/info-modal.html" %}
         {% include "main/prospero/structure/modals/import-modal.html" %}
         {% include "main/prospero/structure/modals/approval-modal.html" %}

@@ -90,7 +90,7 @@ class PTable extends PObject {
                 property : self.propertyName,
                 filters : self.filters
             }
-            prospero.ajax("renderTable", renderData, function(data) {
+            prospero.ajax("serializeTable", renderData, function(data) {
                 var $tbody = $("tbody", self.node);
                 $.each(data.table, function(index, line) {
                     var $tr = $("<tr></tr>");

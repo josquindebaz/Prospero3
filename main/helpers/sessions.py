@@ -31,7 +31,8 @@ def setProjectsData(request, data):
     setData("projects", request, data)
 
 
-def setCurrentProjectInContext(pageData, context):
+def setPageDataInContext(pageData, context):
+    context["pageData"] = pageData
     currentProjectId = pageData["currentProjectId"]
     if currentProjectId:
         try:

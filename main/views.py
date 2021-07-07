@@ -88,13 +88,9 @@ def projects_mosaic(request):
         "page": 0,
         "end": False
     }
-    projects = queries.getProjects(pagination, pageData)
-    context["session"] = pageData
-    context["pageData"] = json.dumps(pageData)
-    context["pagination"] = json.dumps(pagination)
-
-    context["projects"] = projects
-    sessions.setCurrentProjectInContext(pageData, context)
+    context["pagination"] = pagination
+    context["projects"] = queries.getProjects(pagination, pageData)
+    sessions.setPageDataInContext(pageData, context)
     template = loader.get_template('main/prospero/projects-mosaic.html')
     return HttpResponse(template.render(context, request))
 
@@ -102,6 +98,7 @@ def settingsView(request):
     context = createContext(request)
     context["page"] = "settings"
     pageData = sessions.getProjectsData(request)
+    sessions.setPageDataInContext(pageData, context)
     context["session"] = pageData
     currentProjectId = pageData["currentProjectId"]
     project = None

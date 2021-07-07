@@ -177,7 +177,7 @@ class Prospero {
         if (self.userDataLock == null)
             self.userDataLock = $.Deferred();
         if (self.userData == null) {
-            self.ajax("getUserData", {}, function(data) {
+            self.ajax("serializeUserData", {}, function(data) {
                 self.userData = data.users;
                 self.userDataLock.resolve();
             });
@@ -191,7 +191,7 @@ class Prospero {
         if (self.allUserDataLock == null)
             self.allUserDataLock = $.Deferred();
         if (self.allUserData == null) {
-            self.ajax("getAllUserData", {}, function(data) {
+            self.ajax("serializeAllUserData", {}, function(data) {
                 self.allUserData = data.users;
                 self.allUserDataLock.resolve();
             });
