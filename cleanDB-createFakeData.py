@@ -16,6 +16,7 @@ for model in models:
         for x in model.objects.all():
             x.delete()
 
+
 loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum purus quis nunc eleifend, in molestie ante pellentesque. Suspendisse sit amet odio dui. Mauris tortor libero, vulputate dapibus tortor ac, commodo consectetur erat. Vestibulum elit lorem, finibus ut velit sed, malesuada porttitor justo."
 
 def gotPTag(name):
@@ -46,102 +47,103 @@ def createAugmentedDatas(object):
 
 def createPUser(username, first_name, last_name, thumbnail=None):
     user = PUser(username=username, first_name=first_name, last_name=last_name)
+    user.save()
     if not thumbnail:
         thumbnail = "/media_site/testData/images/fake_thumbnail.jpg"
-    user.thumbnail = thumbnail
-    user.save()
+    user.setThumbnailUrl(thumbnail)
     return user
 
 def createPGroup(username, thumbnail=None):
     group = PGroup(username=username)
+    group.save()
     if not thumbnail:
         thumbnail = "/media_site/testData/images/fake_thumbnail.jpg"
-    group.thumbnail = thumbnail
-    group.save()
+    group.setThumbnailUrl(thumbnail)
     return group
 
 
 josquin = createPUser("josquin@gmail.com", "Josquin", "Debaz", "/media_site/testData/images/josquin.jpg")
 francis = createPUser("francis@gmail.com", "Francis", "Chateauraynaud", "/media_site/testData/images/francis.jpg")
-anonymous = createPUser("anonymous", "", "", settings.MEDIA_ROOT+"/media_site/testData/images/anonymous_user.jpg")
+anonymous = createPUser("anonymous", "", "", "/media_site/testData/images/anonymous_user.jpg")
 groupGSPR = createPGroup("GSPR")
 groupGSPR.users.add(josquin)
 groupGSPR.users.add(francis)
 publicGroup = createPGroup("Public")
 
+def createFakeObjects():
+    projectNames = [
+        "Alertes Varia",
+        "Algues vertes et nitrates",
+        "Amiante 2010",
+        "Amiante historique (1970 - 2010)",
+        "AMIANTO_IT",
+        "Antibiorésistance",
+        "Aspartame",
+        "Biologie synthétique",
+        "BPA",
+        "Changement climatique",
+        "Dioxine",
+        "Eternit",
+        "Frack Gas",
+        "Participatory Sciences and Biodiversity",
+        "Gaz de schiste",
+        "H0N1",
+        "H4N1",
+        "Lanceurs d'alertes - une histoire politique",
+        "Nucléaire (1944 - 2013) socle",
+        "Test1",
+        "Test2",
+        "Test3",
+        "Test4",
+        "Test5",
+        "Test6",
+        "Test7",
+        "Test8",
+        "Test9",
+        "Test10",
+        "Test11",
+        "Test12",
+        "Test13",
+        "Test14",
+        "Test15",
+        "Test16",
+        "Test17",
+        "Test18",
+        "Test19",
+        "Test20",
+        "Test41",
+        "Test42",
+        "Test43",
+        "Test44",
+        "Test45",
+        "Test46",
+        "Test47",
+        "Test48",
+        "Test49",
+        "Test50",
+        "Test51",
+        "Test52",
+        "Test53",
+        "Test54",
+        "Test55",
+        "Test56",
+        "Test57",
+        "Test58",
+        "Test59",
+        "Test60",
+    ]
+    for name in projectNames:
+        createProject(name, "purus, quis, nunc", josquin)
 
-projectNames = [
-    "Alertes Varia",
-    "Algues vertes et nitrates",
-    "Amiante 2010",
-    "Amiante historique (1970 - 2010)",
-    "AMIANTO_IT",
-    "Antibiorésistance",
-    "Aspartame",
-    "Biologie synthétique",
-    "BPA",
-    "Changement climatique",
-    "Dioxine",
-    "Eternit",
-    "Frack Gas",
-    "Participatory Sciences and Biodiversity",
-    "Gaz de schiste",
-    "H0N1",
-    "H4N1",
-    "Lanceurs d'alertes - une histoire politique",
-    "Nucléaire (1944 - 2013) socle",
-    "Test1",
-    "Test2",
-    "Test3",
-    "Test4",
-    "Test5",
-    "Test6",
-    "Test7",
-    "Test8",
-    "Test9",
-    "Test10",
-    "Test11",
-    "Test12",
-    "Test13",
-    "Test14",
-    "Test15",
-    "Test16",
-    "Test17",
-    "Test18",
-    "Test19",
-    "Test20",
-    "Test41",
-    "Test42",
-    "Test43",
-    "Test44",
-    "Test45",
-    "Test46",
-    "Test47",
-    "Test48",
-    "Test49",
-    "Test50",
-    "Test51",
-    "Test52",
-    "Test53",
-    "Test54",
-    "Test55",
-    "Test56",
-    "Test57",
-    "Test58",
-    "Test59",
-    "Test60",
-]
-for name in projectNames:
-    createProject(name, "purus, quis, nunc", user)
+    for i in range(0, 15):
+        createPUser("test"+str(i)+"@gmail.com", "John", "Doe")
 
-for i in range(0, 15):
-    createPUser("test"+str(i)+"@gmail.com", "John", "Doe")
-
-for i in range(0, 10):
-    createPGroup("group"+str(i))
+    for i in range(0, 10):
+        createPGroup("group"+str(i))
     
-project = createProject("Project test", "ipsum, dolor, sit, amet, consectetur, adipiscing, elit, ut, interdum", user)
+project = createProject("Project test", "ipsum, dolor, sit, amet, consectetur, adipiscing, elit, ut, interdum", josquin)
 builder.createUserRight(publicGroup, "Read", project)
 builder.createUserRight(francis, "Write", project)
 createAugmentedDatas(project.corpuses.first())
 
+createFakeObjects()

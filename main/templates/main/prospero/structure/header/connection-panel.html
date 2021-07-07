@@ -3,9 +3,9 @@
         data-bs-toggle="dropdown" aria-expanded="false">
         <div class="img_container">
             <!--<img src="{{ MEDIA_URL }}assets/images/fake.png" class="rounded-circle" alt="">-->
-            <img src="{{ MEDIA_URL }}users/thumbnails/anonymous_user.jpg" class="rounded-circle" alt="">
+            <img src="{{ user.getThumbnailUrl }}" class="rounded-circle" alt="">
         </div>
-        Manu Lechat
+        {{ user.interfaceName }}
     </div>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
         <form>

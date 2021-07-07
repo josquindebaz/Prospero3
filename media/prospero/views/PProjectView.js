@@ -16,9 +16,31 @@ class PProjectView extends PObject {
 	    var importExportButton = new StateButton($("[action-name=multi-actions]"));
 	    importExportButton.addObserver(function(event) {
 	        if (event.action == "Import") {
-	            importModal.show();
+	            var corpus = prospero.get(self.corporaTable.getSelection());
+	            if (corpus == null)
+	                corpus = prospero.get(self.corporaTable.getItems().eq(0));
+                var modalLock = modals.openImport(corpus);
+                prospero.wait(modalLock, function() {
+                    if (modalLock.data.action == "import") {
+                        var lock = projectView.reload();
+                        prospero.wait(lock, function() {
+                            if (corpus) {
+                                corpus = prospero.getPDBObject(corpus.identity, self.corporaTable.node); // reload
+                                var $corpus = corpus ? corpus.node : self.corporaTable.getItems().eq(0);
+                                self.corporaTable.setSelection($corpus);
+                            }
+                        });
+                    }
+                });
 	        } else {
-	            exportModal.show();
+                var selectedCorpus = prospero.get(self.corporaTable.getSelection(), true);
+                var selectedTexts = prospero.get(self.textTable.getSelection(), true);
+                var selectedDictionaries = prospero.get(self.dicoTable.getSelection(), true);
+                var modalLock = modals.openExport(selectedCorpus, selectedTexts, selectedDictionaries);
+                /*prospero.wait(modalLock, function() {
+                    if (modalLock.data.action == "export") {
+                    }
+                });*/
 	        }
 	    });
 	}

@@ -22,8 +22,9 @@
 		</section>
 	</div>
 	<script>
-		var $body = $("body");
-		var projectsMosaicView = new PProjectsMosaicView($body);
-		projectsMosaicView.setData($body.data("page-data"));
+		var projectsMosaicView = null;
+		prospero.getInterface(function(pinterface) {
+			projectsMosaicView = new PProjectsMosaicView(pinterface);
+		});
 	</script>
 {% endblock %}

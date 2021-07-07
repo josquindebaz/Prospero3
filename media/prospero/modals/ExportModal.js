@@ -19,7 +19,7 @@ class ExportModal extends PModal {
                 function(data) {
                     if (!data.serverError) {
                         urls.download(data.filePath);
-                        self.hide();
+                        self.hide({action: "export"});
                     } else {
                         self.setStateError(data.serverError);
                     }
@@ -50,12 +50,9 @@ class ExportModal extends PModal {
         this.node.find(".close-button").removeClass("hidden");
         this.node.find(".spinner-panel").addClass("hidden");
 	}
-	show() {
-        var selectedCorpus = prospero.get(projectView.corporaTable.getSelection(), true);
+	show(selectedCorpus, selectedTexts, selectedDictionaries) {
         selectedCorpus = $.map(selectedCorpus, function(elt) {return elt.identity});
-        var selectedTexts = prospero.get(projectView.textTable.getSelection(), true);
         selectedTexts = $.map(selectedTexts, function(elt) {return elt.identity});
-        var selectedDictionaries = prospero.get(projectView.dicoTable.getSelection(), true);
         selectedDictionaries = $.map(selectedDictionaries, function(elt) {return elt.identity});
         var data = {
             onlyCorpusTexts : selectedCorpus.length ? selectedCorpus : null,

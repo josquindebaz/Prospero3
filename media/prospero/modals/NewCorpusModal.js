@@ -10,7 +10,7 @@ class NewCorpusModal extends PModal {
             prospero.ajax(
                 "createCorpus",
                 {
-                    project : projectView.data,
+                    project : self.project,
                     fields : {
                         name : {
                             value: self.corpusNameInput.getValue(),
@@ -20,12 +20,7 @@ class NewCorpusModal extends PModal {
                 },
                 function(data) {
                     if (!data.serverError) {
-                        var lock = projectView.corporaTable.reload(projectView.data);
-                        prospero.wait(lock, function() {
-                            var $corpusItem = projectView.corporaTable.getItem(data.corpus.identity)
-                            projectView.corporaTable.setSelection($corpusItem);
-                        });
-                        self.hide();
+                        self.hide({action: "create"});
                     } else {
                         var fields = data.serverError.fields;
                         $.each(fields, function(key, value) {
@@ -37,7 +32,8 @@ class NewCorpusModal extends PModal {
             );
 		});
 	}
-	show() {
+	show(project) {
+	    this.project = project;
 	    this.corpusNameInput.setValue("");
 	    super.show();
 	}

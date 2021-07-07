@@ -5,22 +5,30 @@ class CorporaTable extends PTable {
 	    var self = this;
 	    this.propertyName = "corpuses";
 	    this.addActionTrigger("create", $(".icon_link.plus", self.node), function() {
-			newCorpusModal.show();
+            var project = view.data;
+            var modalLock = modals.openNewCorpus(project);
+            prospero.wait(modalLock, function() {
+                if (modalLock.data.action == "create") {
+                    var lock = self.reload(projectView.data);
+                    prospero.wait(lock, function() {
+                        var $corpusItem = self.getItem(data.corpus.identity)
+                        self.setSelection($corpusItem);
+                    });
+                }
+            });
 	    });
 	    this.addActionTrigger("delete", $(".icon_link.moins", self.node), function() {
 	        var item = prospero.get(self.getSelection());
-	        approvalModal.show({
-	            title: "Confirmation",
-	            text: "Do you really want to delete this corpus ?",
-	            callback : function() {
+	        var modalLock = modals.openApproval("Confirmation", "Do you really want to delete this corpus ?");
+            prospero.wait(modalLock, function() {
+                if (modalLock.data.action == "yes") {
                     prospero.ajax("deleteObject", item.identity, function(data) {
                         console.log("delete corpus", item.identity);
-                        approvalModal.hide();
                         prospero.getPDBWidget(item.identity).remove();
                         self.notifyObservers({name: "selectionChanged"});
                     });
-	            }
-	        });
+                }
+            });
 	    });
 	}
 	load() {

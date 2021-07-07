@@ -22,15 +22,7 @@ class ImportModal extends PModal {
 								},
                                 function(data) {
                                     if (!data.serverError) {
-                                        var lock = projectView.reload();
-                                        prospero.wait(lock, function() {
-                                            if (self.corpus) {
-                                                self.corpus = prospero.getPDBObject(self.corpus.identity, projectView.corporaTable.node); // reload
-                                                var $corpus = self.corpus ? self.corpus.node : projectView.corporaTable.getItems().eq(0);
-                                                projectView.corporaTable.setSelection($corpus);
-                                            }
-                                            self.hide();
-                                        });
+                                        self.hide({action: "import"});
 									} else {
 									    self.setStateError(data.serverError);
 									}
@@ -71,17 +63,11 @@ class ImportModal extends PModal {
         this.node.find(".spinner-panel").addClass("hidden");
         this.node.find(".error-feedback-pane").removeClass("hidden");
 	}
-	show() {
+	show(corpus) {
 	    this.setStateReady();
         var txtCorpus = 'Un corpus "main" sera créé si des textes sont importés';
-        var corpus = prospero.get(projectView.corporaTable.getSelection());
         if (corpus != null)
-            txtCorpus = 'Les textes importés seront ajoutés au corpus courant "'+corpus.data.name+'"';
-        else {
-            corpus = prospero.get(projectView.corporaTable.getItems().eq(0));
-            if (corpus != null)
-                txtCorpus = 'Les textes importés seront ajoutés au corpus suivant : "'+corpus.data.name+'"';
-        }
+            txtCorpus = 'Les textes importés seront ajoutés au corpus suivant : "'+corpus.data.name+'"';
         var $txtCorpus = $(".txt-corpus", this.node);
         $txtCorpus.text(txtCorpus);
         this.corpus = corpus;

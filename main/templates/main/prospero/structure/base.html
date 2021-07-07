@@ -39,10 +39,12 @@
         <script src="{{ MEDIA_URL }}components/autoresize/autosize.min.js"></script>
         <script src="{{ MEDIA_URL }}components/dropzone/tool_dropzone.js?{{ MEDIA_TIMESTAMP }}"></script>
 
+        <script src="{{ MEDIA_URL }}prospero/PInterface.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/Prospero.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/UrlUtils.js?{{ MEDIA_TIMESTAMP }}"></script>
 
         <script src="{{ MEDIA_URL }}prospero/modals/PModal.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/modals/InfoModal.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/modals/ApprovalModal.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/modals/ExportModal.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/modals/ImportModal.js?{{ MEDIA_TIMESTAMP }}"></script>
@@ -54,8 +56,9 @@
         <script src="{{ MEDIA_URL }}prospero/modals/EditUserModal.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/modals/NewGroupModal.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/modals/EditGroupModal.js?{{ MEDIA_TIMESTAMP }}"></script>
-        <script src="{{ MEDIA_URL }}prospero/modals/AffectGroupModal.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/modals/ChangeRightsModal.js?{{ MEDIA_TIMESTAMP }}"></script>
 
+        <script src="{{ MEDIA_URL }}prospero/modals/Modals.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/widgets/PLayout.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/widgets/PForm.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/widgets/PPanels.js?{{ MEDIA_TIMESTAMP }}"></script>
@@ -75,6 +78,8 @@
         <script src="{{ MEDIA_URL }}prospero/widgets/PList.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/views/settings-view/PUserList.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/views/settings-view/PListUserItem.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/views/projectsView/PUserRightList.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/views/projectsView/PListUserRightItem.js?{{ MEDIA_TIMESTAMP }}"></script>
 
         <script>
             var prospero = new Prospero();
@@ -82,6 +87,7 @@
         </script>
     </head>
     <body page="{{ page }}" data-page-data="{{ pageData }}" data-pagination="{{ pagination }}">
+        {% include "main/prospero/structure/modals/info-modal.html" %}
         {% include "main/prospero/structure/modals/import-modal.html" %}
         {% include "main/prospero/structure/modals/approval-modal.html" %}
         {% include "main/prospero/structure/modals/new-text-modal.html" %}
@@ -93,21 +99,7 @@
         {% include "main/prospero/structure/modals/edit-user-modal.html" %}
         {% include "main/prospero/structure/modals/new-group-modal.html" %}
         {% include "main/prospero/structure/modals/edit-group-modal.html" %}
-        {% include "main/prospero/structure/modals/affect-group-modal.html" %}
-        <script>
-            var importModal = new ImportModal($(".import-modal"));
-            var approvalModal = new ApprovalModal($(".approval-modal"));
-            var newTextModal = new NewTextModal($(".new-text-modal"));
-            var newCorpusModal = new NewCorpusModal($(".new-corpus-modal"));
-            var newProjectModal = new NewProjectModal($(".new-project-modal"));
-            var newMetadataModal = new NewMetadataModal($(".new-metadata-modal"));
-            var exportModal = new ExportModal($(".export-modal"));
-            var newUserModal = new NewUserModal($(".new-user-modal"));
-            var editUserModal = new EditUserModal($(".edit-user-modal"));
-            var newGroupModal = new NewGroupModal($(".new-group-modal"));
-            var editGroupModal = new EditGroupModal($(".edit-group-modal"));
-            var affectGroupModal = new AffectGroupModal($(".affect-group-modal"));
-        </script>
+        {% include "main/prospero/structure/modals/change-rights-modal.html" %}
         <main>
             <section class="side_container">
                 {% include "main/prospero/structure/sidebar.html" %}

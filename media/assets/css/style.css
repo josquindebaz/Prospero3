@@ -237,6 +237,7 @@ td.col-thumbnail .img_container img {
 .user-item .img_container {
     display: flex;
     width: 40px;
+    min-width: 40px;
     margin-left: 5px;
 }
 .user-item .img_container img {
@@ -246,6 +247,11 @@ td.col-thumbnail .img_container img {
     width: 100%;
     margin-left: 10px;
     text-align: left;
+    display: flex;
+}
+.user-item .txt_container .v-align {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .user-item .txt_container .first-and-last-name {
     font-size: calc( var(--fontSize_unit) * 1.2);
@@ -263,6 +269,11 @@ td.col-thumbnail .img_container img {
 .user-item .icon_container .icon-cancel-circled:hover {
     color: black;
 }
+.user-item .rights-selector {
+    width: 100px;
+    margin-right: 10px;
+}
+
 
 /* auto-complete-input */
 

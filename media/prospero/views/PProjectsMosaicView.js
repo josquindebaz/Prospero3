@@ -1,11 +1,16 @@
 class PProjectsMosaicView extends PObject {
 
-	constructor($node, view) {
-	    super($node);
+	constructor(pinterface) {
+	    super($("body"));
 	    var self = this;
-	    self.view = view;
+	    self.interface = pinterface;
 	    self.node.find(".project-card.add-project-card").bind("click", function() {
-	        newProjectModal.show();
+            var modalLock = modals.openNewProject();
+            prospero.wait(modalLock, function() {
+                if (modalLock.data.action == "create") {
+                    urls.navigate(modalLock.data.projectUrl);
+                }
+            });
 	    });
 	    self.initProjectItems();
 	    self.bindSearch();
@@ -13,6 +18,7 @@ class PProjectsMosaicView extends PObject {
 	    self.bindScroll($(".main_content", self.node));
 	    self.pagination = self.node.data("pagination")
 	    //self.clearPagination();
+        self.setData(self.interface.getPageData());
 	}
 	setData(data) {
 	    var self = this;
@@ -126,15 +132,19 @@ class PProjectsMosaicView extends PObject {
 	setCurrentProject(project) {
 	    var self = this;
 	    self.currentProject = project;
-	    var $sideBarLink = $(".side_container .sidebar-link-project");
-	    $sideBarLink.attr("href", $sideBarLink.attr("base-href")+self.currentProject.identity.id);
-	    self.data.currentProjectId = project.identity.id;
-	    prospero.ajax("setCurrentProject", self.currentProject.identity, function(data) {
-	    });
-        prospero.ajax("renderProjectInfos", self.currentProject.identity, function(data) {
+	    self.interface.setCurrentProjectId(project.identity.id);
+	    self.loadProjectInfos(true);
+	}
+	loadProjectInfos(setCurrentProject) {
+	    var self = this;
+	    var renderData = {
+	        project: self.currentProject.identity,
+	        setCurrentProject: setCurrentProject == true
+	    }
+        prospero.ajax("renderProjectInfos", renderData, function(data) {
             var $projectInfosContainer = $(".project-infos-container");
-            $projectInfosContainer.empty();
             var $projectInfos = $(data.html);
+            $projectInfosContainer.empty();
             $projectInfosContainer.append($projectInfos);
             self.projectInfos = new PProjectPanel($projectInfos, self);
         });

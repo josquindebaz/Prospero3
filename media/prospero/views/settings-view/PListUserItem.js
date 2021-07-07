@@ -10,7 +10,7 @@ class PListUserItem extends PListItem {
         this.data = item;
         self.node.text(item);
         self.node.addClass("user-item");
-        self.node.html('<div class="img_container"><img src="'+item.thumbnail+'" class="rounded-circle" alt=""></div><div class="txt_container"><div class="username">'+item.username+'</div><div class="first-and-last-name">'+item.first_name+' '+item.last_name+'</div></div><div class="icon_container"><div class="icon-cancel-circled"></div></div>');
+        self.node.html('<div class="img_container"><img src="'+item.thumbnail+'" class="rounded-circle" alt=""></div><div class="txt_container"><div class="v-align"><div class="username">'+item.username+'</div><div class="first-and-last-name">'+item.first_name+' '+item.last_name+'</div></div></div><div class="icon_container"><div class="icon-cancel-circled"></div></div>');
         self.node.find(".icon-cancel-circled").bind("click", function() {
             self.plist.removeItem(self.data);
         });

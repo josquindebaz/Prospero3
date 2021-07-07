@@ -10,7 +10,6 @@ class NewProjectModal extends PModal {
             prospero.ajax(
                 "createProject",
                 {
-                    project : projectView.data,
                     fields : {
                         name : {
                             value: self.projectNameInput.getValue(),
@@ -20,9 +19,8 @@ class NewProjectModal extends PModal {
                 },
                 function(data) {
                     if (!data.serverError) {
-                        urls.navigate(data.url);
+                        self.hide({action: "create", projectUrl: data.url});
                     }
-                    self.hide();
                 }
             );
 		});

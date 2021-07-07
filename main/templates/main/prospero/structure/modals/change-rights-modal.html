@@ -1,0 +1,29 @@
+<div class="modal fade change-rights-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="max-width: 600px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Change project rights</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modal-body-form txt_m">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="mb-3 auto-complete-input user-choice-field">
+                                <!--<label for="form-change-rights-user-choice-input" class="form-label"></label>-->
+                                <input type="text" class="form-control" id="form-change-rights-user-choice-input" placeholder="Add a user or a group" aria-describedby="form-change-rights-user-choice-feedback" autocomplete="nope">
+                                <div id="form-change-rights-user-choice-feedback" class="invalid-feedback"></div>
+                            </div>
+                            <div class="users-in-group plist">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button action-name="save" type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>

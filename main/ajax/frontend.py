@@ -296,15 +296,14 @@ def changeMetadataPosition(request, data, results):
         parent.metaDatas.remove(item)
         parent.metaDatas.add(item)
 
-def setCurrentProject(request, data, results):
-    projectsData = sessions.getProjectsData(request)
-    currentProjectId = data["id"]
-    projectsData["currentProjectId"] = currentProjectId
-    sessions.setProjectsData(request, projectsData)
-
 def renderProjectInfos(request, data, results):
-    project = frontend.getBDObject(data)
+    project = frontend.getBDObject(data["project"])
     context = views.createContext(request)
+    projectsData = sessions.getProjectsData(request)
+    if data["setCurrentProject"]:
+        projectsData["currentProjectId"] = data["project"]["id"]
+        sessions.setProjectsData(request, projectsData)
+    sessions.setCurrentProjectInContext(projectsData, context)
     context["project"] = project
     template = loader.get_template('main/prospero/project/project-infos.html')
     results["html"] = template.render(context, request)
@@ -315,6 +314,38 @@ def getUserData(request, data, results):
         users.append(user.getRealInstance().serialize())
     results["users"] = users
 
-def getFake(request, data, results):
-    group = PGroup.objects.all()[0]
-    results["object"] = group.serialize()
+def getAllUserData(request, data, results):
+    users = []
+    for user in ProsperoUser.objects.all():
+        users.append(user.getRealInstance().serialize())
+    results["users"] = users
+
+def getProjectRights(request, data, results):
+    project = frontend.getBDObject(data["project"])
+    results["rights"] = project.serializeRights()
+
+def changeRights(request, data, results):
+    project = frontend.getBDObject(data["identity"])
+    form = forms.Form(data["fields"])
+    rights = form.getValue("users")
+    print(rights)
+    foundIds = []
+    for right in rights:
+        selectedRight = right["right"]
+        if right["identity"] == None:
+            ur = builder.createUserRight(ProsperoUser.objects.get(id=right["user"]), selectedRight, project)
+            foundIds.append(ur.id)
+        else:
+            id = right["identity"]["id"]
+            foundIds.append(id)
+            ur = UserRight.objects.get(id=id)
+            if ur.right != selectedRight:
+                ur.right = selectedRight
+                ur.save()
+    existingIds = project.userRights.values_list('id', flat=True)
+    deletedIds = list(set(existingIds) - set(foundIds))
+    print("existingIds", existingIds)
+    print("deletedIds", deletedIds)
+    for id in deletedIds:
+        obj = UserRight.objects.get(id=id)
+        deletor.delete(obj)

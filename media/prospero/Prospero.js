@@ -62,6 +62,17 @@ class Prospero {
 	constructor() {
 	    this.tagManager = null;
 	}
+	getInterface(callback) {
+		var self = this;
+		if (self.interface)
+		    callback(self.interface);
+		else {
+            this.onload(function() {
+                self.interface = new PInterface();
+                callback(self.interface);
+            });
+        }
+	}
     nodes(htmlText) {
         var html = htmlText.replace(/[\n\r]+/g, ' ').trim();
         return $(html); // attention, s'il y a des scripts ...
@@ -163,14 +174,31 @@ class Prospero {
     }
     getUserData(callback) {
         var self = this;
-        if (self.userData)
-            callback(self.userData);
-        else {
+        if (self.userDataLock == null)
+            self.userDataLock = $.Deferred();
+        if (self.userData == null) {
             self.ajax("getUserData", {}, function(data) {
                 self.userData = data.users;
-                callback(self.userData);
+                self.userDataLock.resolve();
             });
         }
+        self.wait(self.userDataLock, function() {
+            callback(self.userData);
+        });
+    }
+    getAllUserData(callback) {
+        var self = this;
+        if (self.allUserDataLock == null)
+            self.allUserDataLock = $.Deferred();
+        if (self.allUserData == null) {
+            self.ajax("getAllUserData", {}, function(data) {
+                self.allUserData = data.users;
+                self.allUserDataLock.resolve();
+            });
+        }
+        self.wait(self.allUserDataLock, function() {
+            callback(self.allUserData);
+        });
     }
     initEditionWidgets($container, widgetDatas) {
         var self  = this;

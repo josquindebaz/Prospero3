@@ -53,7 +53,11 @@ class PProjectsListView extends PObject {
 	    var $projectInfosContainer = $(".project-infos-container", self.node);
 	    if (project && self.currentProject != project) {
             self.currentProject = project;
-            prospero.ajax("renderProjectInfos", self.currentProject.identity, function(data) {
+            var renderData = {
+                project: self.currentProject.identity,
+                setCurrentProject: true
+            }
+            prospero.ajax("renderProjectInfos", renderData, function(data) {
                 $projectInfosContainer.empty();
                 var $projectInfos = $(data.html);
                 $projectInfosContainer.append($projectInfos);

@@ -90,10 +90,16 @@ class PDeletionVisitor:
         pass
 
     def visitPUser(self, obj):
+        for userRight in UserRight.objects.filter(user=obj):
+            self.delete(userRight)
         obj.delete()
 
     def visitPGroup(self, obj):
+        for userRight in UserRight.objects.filter(user=obj):
+            self.delete(userRight)
         obj.delete()
 
+    def visitUserRight(self, obj):
+        obj.delete()
 
 deletor = PDeletionVisitor()

@@ -25,9 +25,7 @@ class NewMetadataModal extends PModal {
                 },
                 function(data) {
                     if (!data.serverError) {
-                        var corpusEditor = projectView.editorPanel.getPanel("corpusEditor");
-                         corpusEditor.addMetadata(data.metadata);
-                        self.hide();
+                        self.hide({action: "create"});
                     } else {
                         var fields = data.serverError.fields;
                         $.each(fields, function(key, value) {

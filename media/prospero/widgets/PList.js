@@ -3,9 +3,7 @@ class PList extends PObject {
 	constructor($node) {
 	    super($node);
 	    var self = this;
-	    self.data = {
-	        items : []
-	    };
+	    self.clear();
     }
     setData(data) {
         this.data = data;
@@ -17,6 +15,9 @@ class PList extends PObject {
     }
     clear() {
         this.node.empty();
+	    self.data = {
+	        items : []
+	    };
     }
     getItemsData() {
         return this.data.items;

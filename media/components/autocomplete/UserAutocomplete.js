@@ -24,14 +24,17 @@ class UserAutocomplete extends Autocomplete {
             || this.doesContains(item.last_name, lookup);
     }
     doesContains(text, lookup) {
-        return text.toLowerCase().indexOf(lookup) >= 0;
+        return text != null && text.toLowerCase().indexOf(lookup) >= 0;
     }
     createItem(lookup, item) {
         lookup = lookup.toLowerCase();
         var username = (this.options.highlightTyped && this.doesContains(item.username, lookup)) ? this.buildHighlightText(lookup, item.username) : item.username;
         var first_name = (this.options.highlightTyped && this.doesContains(item.first_name, lookup)) ? this.buildHighlightText(lookup, item.first_name) : item.first_name;
         var last_name = (this.options.highlightTyped && this.doesContains(item.last_name, lookup)) ? this.buildHighlightText(lookup, item.last_name) : item.last_name;
-        var $item = $('<div class="user-item dropdown-item" data-id="'+item.identity.id+'"><div class="img_container"><img src="'+item.thumbnail+'" class="rounded-circle" alt=""></div><div class="txt_container"><div class="username">'+username+'</div><div class="first-and-last-name">'+first_name+' '+last_name+'</div></div></div>');
+        var userNameCode = '';
+        if (item.identity.model == "PUser")
+            userNameCode = '<div class="first-and-last-name">'+item.first_name+' '+item.last_name+'</div>';
+        var $item = $('<div class="user-item dropdown-item" data-id="'+item.identity.id+'"><div class="img_container"><img src="'+item.thumbnail+'" class="rounded-circle" alt=""></div><div class="txt_container"><div class="v-align"><div class="username">'+username+'</div><div class="first-and-last-name">'+userNameCode+'</div></div></div></div>');
         return $item[0];
     }
     buildHighlightText(lookup, text) {

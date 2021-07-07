@@ -25,15 +25,7 @@ class NewTextModal extends PModal {
                 },
                 function(data) {
                     if (!data.serverError) {
-                        var item = prospero.get(projectView.corporaTable.getSelection());
-                        if (item) {
-                            var lock = projectView.textTable.reload(item.identity);
-                            prospero.wait(lock, function() {
-                                var $textItem = projectView.textTable.getItem(data.text.identity)
-                                projectView.textTable.setSelection($textItem);
-                            });
-                        }
-                        self.hide();
+                        self.hide({action: "create"});
                     }
                 }
             );
@@ -57,15 +49,7 @@ class NewTextModal extends PModal {
 									corpus : self.corpus.identity
 								},
                                 function(data) {
-                                    var item = prospero.get(projectView.corporaTable.getSelection());
-                                    if (item) {
-                                        var lock = projectView.textTable.reload(item.identity);
-                                        prospero.wait(lock, function() {
-                                            var $textItem = projectView.textTable.getItem(data.text.identity)
-                                            projectView.textTable.setSelection($textItem);
-                                        });
-                                    }
-                                    self.hide();
+                                    self.hide({action: "create"});
                                 }
                             );
 						} else {
@@ -91,9 +75,8 @@ class NewTextModal extends PModal {
         this.node.find(".spinner-panel").addClass("hidden");
         //this.node.find(".error-feedback-pane").addClass("hidden");
 	}
-	show() {
+	show(corpus) {
 	    this.setStateReady();
-        var corpus = prospero.get(projectView.corporaTable.getSelection());
         var txtCorpus = 'Le texte sera ajouté au corpus courant "'+corpus.data.name+'"';
         var $txtCorpus = $(".txt-corpus", this.node);
         $txtCorpus.text(txtCorpus);

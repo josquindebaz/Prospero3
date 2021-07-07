@@ -33,10 +33,7 @@ class NewGroupModal extends PModal {
                 },
                 function(data) {
                     if (!data.serverError) {
-                        var lock = settingsView.userTable.reload();
-                        prospero.wait(lock, function() {
-                            self.hide();
-                        });
+                        self.hide({action: "create"});
                     } else {
                         self.form.setErrors(data.serverError);
                     }

@@ -34,10 +34,7 @@ class EditGroupModal extends PModal {
                 },
                 function(data) {
                     if (!data.serverError) {
-                        var lock = settingsView.userTable.reload();
-                        prospero.wait(lock, function() {
-                            self.hide();
-                        });
+                        self.hide({action: "save"});
                     } else {
                         self.form.setErrors(data.serverError);
                     }

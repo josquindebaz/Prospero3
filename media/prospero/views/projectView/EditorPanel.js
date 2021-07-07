@@ -110,7 +110,13 @@ class CorpusEditor extends PObject {
                 }
             });
             $cartouche.find(".icon-add-metadata .icon-plus-circled").bind("click", function() {
-                newMetadataModal.show(self.data);
+                var modalLock = modals.openNewMetadata(self.data);
+                prospero.wait(modalLock, function() {
+                    if (modalLock.data.action == "create") {
+                        var corpusEditor = self.view.editorPanel.getPanel("corpusEditor");
+                        corpusEditor.addMetadata(data.metadata);
+                    }
+                });
             });
         });
 	}

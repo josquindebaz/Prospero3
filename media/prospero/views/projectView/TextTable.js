@@ -5,18 +5,20 @@ class TextTable extends PTable {
 	    var self = this;
 	    this.propertyName = "texts";
 	    this.addActionTrigger("create", $(".icon_link.plus", self.node), function() {
-	        newTextModal.show({
-	            title: "Create text",
-	            text: "",
-	            callback : function() {
-                    prospero.ajax("createText", item.data, function(data) {
-                        console.log("create text", item.data);
-                        newTextModal.hide();
-                        //prospero.getPDBWidget(item.data).remove();
-                        //self.notifyObservers({name: "selectionChanged"});
-                    });
-	            }
-	        });
+            var corpus = prospero.get(view.corporaTable.getSelection());
+            var modalLock = modals.openNewText(corpus);
+            prospero.wait(modalLock, function() {
+                if (modalLock.data.action == "create") {
+                    var item = prospero.get(view.corporaTable.getSelection());
+                    if (item) {
+                        var lock = self.reload(item.identity);
+                        prospero.wait(lock, function() {
+                            var $textItem = self.getItem(data.text.identity)
+                            self.setSelection($textItem);
+                        });
+                    }
+                }
+            });
 	    });
 	    this.addActionTrigger("delete", $(".icon_link.moins", self.node), function() {
 	        var items = prospero.get(self.getSelection(), true);
@@ -25,20 +27,17 @@ class TextTable extends PTable {
 	            itemDatas.push(item.identity);
 	        });
 	        var approvalText = items.length > 1 ? "Do you really want to delete these texts ?" : "Do you really want to delete this text ?";
-	        approvalModal.show({
-	            title: "Confirmation",
-	            text: approvalText,
-	            callback : function() {
+            var modalLock = modals.openApproval("Confirmation", approvalText);
+            prospero.wait(modalLock, function() {
+                if (modalLock.data.action == "yes") {
                     prospero.ajax("deleteObject", itemDatas, function(data) {
-                        console.log("delete text", items);
-                        approvalModal.hide();
                         $.each(items, function(index, item) {
                             item.node.remove();
                         });
                         self.notifyObservers({name: "selectionChanged"});
                     });
-	            }
-	        });
+                }
+            });
 	    });
 	}
 	load() {

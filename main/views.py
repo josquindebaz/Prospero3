@@ -1,6 +1,6 @@
 from prospero import settings
 from main.models import *
-from django.http import HttpResponse
+from django.http import HttpResponse, Http404
 from django.template import loader
 from main import ajax
 from django.views.decorators.csrf import csrf_exempt
@@ -9,12 +9,13 @@ import json, ntpath, time
 from django.shortcuts import redirect
 
 def createContext(request):
+    user = sessions.getCurrentUser()
     context = {
         'MEDIA_URL': settings.MEDIA_URL,
         'ROOT_URL': settings.ROOT_URL,
         'DEBUG' : settings.DEBUG,
         'MEDIA_TIMESTAMP' : settings.MEDIA_TIMESTAMP,
-        'user' : ProsperoUser.objects.first()
+        'user' : user
     }
     return context
 
@@ -93,14 +94,7 @@ def projects_mosaic(request):
     context["pagination"] = json.dumps(pagination)
 
     context["projects"] = projects
-    currentProjectId = pageData["currentProjectId"]
-    project = None
-    if currentProjectId:
-        try:
-            project = Project.objects.get(id=currentProjectId)
-        except:
-            None
-    context["project"] = project
+    sessions.setCurrentProjectInContext(pageData, context)
     template = loader.get_template('main/prospero/projects-mosaic.html')
     return HttpResponse(template.render(context, request))
 

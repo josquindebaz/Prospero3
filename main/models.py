@@ -151,106 +151,6 @@ class AugmentedData(PObject):
         else:
             return self.getMetaData(name)
 
-class ProsperoUser(User) :
-
-    thumbnail = models.ImageField(blank=True, upload_to="upload")
-
-    def __str__(self):
-        return "["+str(self.id)+":ProsperoUser] "+self.username
-
-    def interfaceName(self):
-        return self.last_name + " " + self.first_name
-
-    def getRealInstance(self):
-        if hasattr(self, "pgroup"):
-            return self.pgroup.getRealInstance()
-        elif hasattr(self, "puser"):
-            return self.puser.getRealInstance()
-        else:
-            return self
-
-    def serializeIdentity(self):
-        return {
-            "model" : self.__class__.__name__,
-            "id" : self.id
-        }
-
-    def serializeAsTableItem(self):
-        return {
-            "identity" : self.serializeIdentity(),
-            "values" : {
-                "thumbnail" : self.getThumbnailUrl(),
-                "username" : self.username,
-                "first_name" : self.first_name,
-                "last_name" : self.last_name
-            }
-        }
-
-    def accept(self, visitor):
-        obj = self.getRealInstance()
-        return getattr(visitor, "visit"+type(obj).__name__)(obj)
-
-    def getThumbnailUrl(self):
-        from prospero import settings
-        return settings.MEDIA_URL + cloud.getMediaRelativePath(str(self.thumbnail))
-
-    def setThumbnailUrl(self, thumbnail):
-        from prospero import settings
-        if thumbnail.startswith("/media_site/"):
-            thumbnail = thumbnail[12:]
-        #if self.thumbnail:
-        #    files.deleteFile(str(self.thumbnail))
-        source = settings.MEDIA_ROOT+thumbnail
-        target = settings.MEDIA_ROOT+'users/thumbnails/'+files.getFileName(source)
-        target = cloud.findAvailableAbsolutePath(target)
-        files.moveFile(source, target)
-        folder = files.gotFolder(source)
-        files.cleanFolder(folder)
-        #filePath = cloud.getMediaRelativePath(target)
-        self.thumbnail = target
-        self.save()
-
-class PGroup(ProsperoUser) :
-
-    #RELATIONS
-    users = models.ManyToManyField('PUser', blank=True, related_name='owningGroups')
-
-    def __str__(self):
-        return "["+str(self.id)+":PGroup] "+self.username
-
-    def getRealInstance(self):
-        return self
-
-    def serialize(self):
-        users = []
-        for user in self.users.all():
-            users.append(user.id)
-        result = {
-            "identity" : self.serializeIdentity(),
-            "username": self.username,
-            "thumbnail": self.getThumbnailUrl(),
-            "users" : users
-        }
-        return result
-
-class PUser(ProsperoUser) :
-
-
-    def __str__(self):
-        return "["+str(self.id)+":PUser] "+self.username
-
-    def getRealInstance(self):
-        return self
-
-    def serialize(self):
-        return {
-            "identity" : self.serializeIdentity(),
-            "username": self.username,
-            "first_name": self.first_name,
-            "last_name": self.last_name,
-            "thumbnail": self.getThumbnailUrl()
-        }
-
 class Project(AugmentedData) :
 
     name = models.CharField(blank=True, max_length=255)
@@ -306,6 +206,12 @@ class Project(AugmentedData) :
         for corpus in self.corpuses.all():
             nb = nb + corpus.nbTextChar()
         return nb
+
+    def serializeRights(self):
+        result = []
+        for right in UserRight.objects.filter(project=self):
+            result.append(right.serialize())
+        return result
 
 class PCorpus(AugmentedData) :
 
@@ -705,17 +611,139 @@ class PUri(PResource) :
     def getRealInstance(self):
         return self
 
-class UserRight(models.Model) :
+class ProsperoUser(User) :
+
+    thumbnail = models.ImageField(blank=True, upload_to="upload")
+
+    def __str__(self):
+        return "["+str(self.id)+":ProsperoUser] "+self.username
+
+    def delete(self):
+        if self.thumbnail:
+            files.deleteFile(str(self.thumbnail))
+        super(ProsperoUser, self).delete()
+
+    def interfaceName(self):
+        return self.last_name + " " + self.first_name
+
+    def getRealInstance(self):
+        if hasattr(self, "pgroup"):
+            return self.pgroup.getRealInstance()
+        elif hasattr(self, "puser"):
+            return self.puser.getRealInstance()
+        else:
+            return self
+
+    def serializeIdentity(self):
+        return {
+            "model" : self.__class__.__name__,
+            "id" : self.id
+        }
+
+    def serializeAsTableItem(self):
+        return {
+            "identity" : self.serializeIdentity(),
+            "values" : {
+                "thumbnail" : self.getThumbnailUrl(),
+                "username" : self.username,
+                "first_name" : self.first_name,
+                "last_name" : self.last_name
+            }
+        }
+
+    def accept(self, visitor):
+        obj = self.getRealInstance()
+        return getattr(visitor, "visit"+type(obj).__name__)(obj)
+
+    def getThumbnailUrl(self):
+        from prospero import settings
+        return settings.MEDIA_URL + cloud.getMediaRelativePath(str(self.thumbnail))
+
+    def setThumbnailUrl(self, thumbnail):
+        from prospero import settings
+        if thumbnail.startswith("/media_site/"):
+            thumbnail = thumbnail[12:]
+        if self.thumbnail:
+            files.deleteFile(str(self.thumbnail))
+        source = settings.MEDIA_ROOT+thumbnail
+        target = settings.MEDIA_ROOT+'users/thumbnails/'+files.getFileName(source)
+        target = cloud.findAvailableAbsolutePath(target)
+        if thumbnail.startswith("upload"):
+            files.moveFile(source, target)
+            folder = files.gotFolder(source)
+            files.cleanFolder(folder)
+        else:
+            files.copyFile(source, target)
+        #filePath = cloud.getMediaRelativePath(target)
+        self.thumbnail = target
+        self.save()
+
+    def isUser(self):
+        return type(self.getRealInstance()) == PUser
+
+    def isGroup(self):
+        return type(self.getRealInstance()) == PGroup
+
+
+class PGroup(ProsperoUser) :
+
+    #RELATIONS
+    users = models.ManyToManyField('PUser', blank=True, related_name='owningGroups')
+
+    def __str__(self):
+        return "["+str(self.id)+":PGroup] "+self.username
+
+    def getRealInstance(self):
+        return self
+
+    def serialize(self):
+        users = []
+        for user in self.users.all():
+            users.append(user.id)
+        result = {
+            "identity" : self.serializeIdentity(),
+            "username": self.username,
+            "thumbnail": self.getThumbnailUrl(),
+            "users" : users
+        }
+        return result
+
+class PUser(ProsperoUser) :
+
+
+    def __str__(self):
+        return "["+str(self.id)+":PUser] "+self.username
+
+    def getRealInstance(self):
+        return self
+
+    def serialize(self):
+        return {
+            "identity" : self.serializeIdentity(),
+            "username": self.username,
+            "first_name": self.first_name,
+            "last_name": self.last_name,
+            "thumbnail": self.getThumbnailUrl()
+        }
+
+class UserRight(PObject) :
 
     right = models.CharField(blank=True, choices = UserRightType, max_length=255)
     project = models.ForeignKey('Project', null=True, on_delete=models.SET_NULL, related_name='userRights')
     user = models.ForeignKey('ProsperoUser', null=True, on_delete=models.SET_NULL, related_name='userRights')
 
     def __str__(self):
-        return "[" + str(self.id) + ":UserRight] " + self.uri
+        return "[" + str(self.id) + ":UserRight]"
 
     def getRealInstance(self):
         return self
+
+    def serialize(self):
+        return {
+            "identity" : self.serializeIdentity(),
+            "right": self.right,
+            "user": self.user.id
+        }
 
 # Returns true if a field has changed in a model
 # May be used in a model.save() method.

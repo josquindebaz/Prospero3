@@ -9,21 +9,49 @@ class PUsersView extends PObject {
 	    });
 	    self.menu = new PGenericMenu($(".users-panel .generic-menu", self.node));
 	    self.menu.addAction("createUser", "Create user", function() {
-            newUserModal.show();
+            var modalLock = modals.openNewUser();
+            prospero.wait(modalLock, function() {
+                if (modalLock.data.action == "create") {
+                    var lock = self.userTable.reload();
+                    /*prospero.wait(lock, function() {
+                    });*/
+                }
+            });
 	    });
 	    self.menu.addAction("createGroup", "Create group", function() {
-            newGroupModal.show();
+            var modalLock = modals.openNewGroup();
+            prospero.wait(modalLock, function() {
+                if (modalLock.data.action == "create") {
+                    var lock = self.userTable.reload();
+                    /*prospero.wait(lock, function() {
+                    });*/
+                }
+            });
 	    });
 	    self.menu.addAction("edit", "Edit", function() {
             var item = prospero.get(self.userTable.getSelection());
-            if (item.identity.model == "PUser")
-                editUserModal.show(item);
-            else {
+            if (item.identity.model == "PUser") {
+                var modalLock = modals.openEditUser(item);
+                prospero.wait(modalLock, function() {
+                    if (modalLock.data.action == "save") {
+                        var lock = self.userTable.reload();
+                        /*prospero.wait(lock, function() {
+                        });*/
+                    }
+                });
+            } else {
                 prospero.ajax(
                     "renderObject",
                     item.identity,
                     function(data) {
-                        editGroupModal.show(data.object);
+                        var modalLock = modals.openEditGroup(data.object);
+                        prospero.wait(modalLock, function() {
+                            if (modalLock.data.action == "save") {
+                                var lock = self.userTable.reload();
+                                /*prospero.wait(lock, function() {
+                                });*/
+                            }
+                        });
                     }
                 );
             }
@@ -49,18 +77,11 @@ class PUsersView extends PObject {
             items = $.map(items, function(item){
                 return item.identity;
             });
-            approvalModal.show({
-                title: "Confirmation",
-                text: "Do you really want to delete "+txt+" ?",
-                callback : function() {
+            var modalLock = modals.openApproval("Confirmation", "Do you really want to delete "+txt+" ?");
+            prospero.wait(modalLock, function() {
+                if (modalLock.data.action == "yes") {
                     prospero.ajax("deleteObject", items, function(data) {
-                        $.each(items, function(index, item) {
-                            prospero.getPDBWidget(item).remove();
-                        });
-                        var lock = self.userTable.reload();
-                        prospero.wait(lock, function() {
-                            approvalModal.hide();
-                        });
+                        self.userTable.reload();
                     });
                 }
             });

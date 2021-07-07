@@ -6,20 +6,23 @@ class PProjectPanel extends PDBObject {
 	    self.view = view;
 	    self.menu = new PGenericMenu($(".generic-menu"));
 	    self.menu.addAction("delete", "Delete project", function() {
-            approvalModal.show({
-                title: "Confirmation",
-                text: "Do you really want to delete this project ?",
-                callback : function() {
+            var modalLock = modals.openApproval("Confirmation", "Do you really want to delete this project ?");
+            prospero.wait(modalLock, function() {
+                if (modalLock.data.action == "yes") {
                     prospero.ajax("deleteObject", self.identity, function(data) {
-                        console.log("delete project", self.identity);
                         self.view.currentProject.node.remove();
-                        approvalModal.hide();
                     });
                 }
             });
 	    });
 	    self.menu.addAction("changePrivileges", "Change privileges", function() {
-            console.log("changePrivileges");
+            prospero.ajax("getProjectRights", { project: self.view.currentProject.identity }, function(data) {
+                var modalLock = modals.openChangeRights(self.view.currentProject.identity, data.rights);
+                prospero.wait(modalLock, function() {
+                    if (modalLock.data.action == "save")
+                        self.view.loadProjectInfos(false);
+                });
+            });
 	    });
 	}
 }

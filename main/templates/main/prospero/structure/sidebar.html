@@ -5,7 +5,7 @@
     <a href="{% url 'projects-mosaic' %}" class="side_nav_link {% if page == 'projects-list' or page == 'projects-mosaic' %}active{% endif %}">
         {% include "main/prospero/svg-icons/sidebar/mosaic.html" %}
     </a>
-    <a href="{% if project %}{% url 'project' project.id %}{% endif %}" base-href="/project/" class="sidebar-link-project side_nav_link {% if page == "project" %}active{% endif %}">
+    <a {% if project %}href="{% url 'project' project.id %}{% endif %}" base-href="/project/" class="sidebar-link-project side_nav_link {% if page == "project" %}active{% endif %}">
         {% include "main/prospero/svg-icons/sidebar/book.html" %}
     </a>
     <a href="#" class="side_nav_link ">

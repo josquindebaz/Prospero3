@@ -11,20 +11,17 @@ class DicoTable extends PTable {
 	            itemDatas.push(item.identity);
 	        });
 	        var approvalText = items.length > 1 ? "Do you really want to delete these dictionaries ?" : "Do you really want to delete this dictionary ?";
-	        approvalModal.show({
-	            title: "Confirmation",
-	            text: approvalText,
-	            callback : function() {
+            var modalLock = modals.openApproval("Confirmation", approvalText);
+            prospero.wait(modalLock, function() {
+                if (modalLock.data.action == "yes") {
                     prospero.ajax("deleteObject", itemDatas, function(data) {
-                        console.log("delete text", items);
-                        approvalModal.hide();
                         $.each(items, function(index, item) {
                             item.node.remove();
                         });
                         self.notifyObservers({name: "selectionChanged"});
                     });
-	            }
-	        });
+                }
+            });
 	    });
 	}
 	createTableItem($node, data, columns) {
