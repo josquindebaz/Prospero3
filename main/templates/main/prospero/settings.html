@@ -24,8 +24,9 @@
 		</section>
 	</div>
 	<script>
+		var pInterface = null;
 		prospero.getInterface(function(pinterface) {
-			new PUsersView(pinterface).load();
+			new PUsersView().load();
 		});
 	</script>
 {% endblock %}

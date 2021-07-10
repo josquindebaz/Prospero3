@@ -6,14 +6,36 @@
                 {% include "main/prospero/structure/header/view-switcher.html" %}
                 <div class="separator"></div>
                 <span class="label ">Sort by :</span>
-                <a class="sort_item active" href="#">
+                {% with sort=pageData.sort %}
+                    <div class="project-sorting" style="display: flex;">
+                        <div class="form-check sort_item {% if sort == "name" %}active{% endif %}">
+                            <input class="form-check-input pin" type="radio" name="flexRadioDefault" id="flexRadioDefault1" data-value="name" {% if sort == "name" %}checked{% endif %}>
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Titre
+                            </label>
+                        </div>
+                        <div class="form-check sort_item {% if sort == "creationDate" %}active{% endif %}">
+                            <input class="form-check-input pin" type="radio" name="flexRadioDefault" id="flexRadioDefault2" data-value="creationDate"  {% if sort == "creationDate" %}active{% endif %}>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Date
+                            </label>
+                        </div>
+                        <div class="form-check sort_item {% if sort == "owner__last_name" %}active{% endif %}">
+                            <input class="form-check-input pin" type="radio" name="flexRadioDefault" id="flexRadioDefault2" data-value="owner__last_name"  {% if sort == "owner__last_name" %}active{% endif %}>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Owner
+                            </label>
+                        </div>
+                    </div>
+                {% endwith %}
+                <!--<a class="sort_item active" href="#">
                 <span class="pin"></span>
                 Title
                 </a>
                 <a class="sort_item" href="#">
                 <span class="pin"></span>
                 Date
-                </a>
+                </a>-->
             </div>
         </div>
     </div>

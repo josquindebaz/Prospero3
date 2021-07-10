@@ -4,6 +4,7 @@ from main.ajax.serializers import *
 from main.ajax.queries import *
 from main.ajax.interop import *
 from main.ajax.tagsManager import *
+from main.ajax.interface import *
 
 def callService(name, data, request):
     print("> call service", name)

@@ -1,4 +1,5 @@
 from main.models import *
+from main.helpers import rights
 
 def getData(key, request, defaultData=None):
     try:
@@ -16,7 +17,7 @@ def getProjectsData(request):
     data = getData("projects", request, {
         "search" : "",
         "currentProjectId": "",
-        "sort" : "title"
+        "sort" : "name"
     })
     currentProjectId = data["currentProjectId"]
     if currentProjectId:
@@ -34,16 +35,38 @@ def setProjectsData(request, data):
 def setPageDataInContext(pageData, context):
     context["pageData"] = pageData
     currentProjectId = pageData["currentProjectId"]
+    project = None
     if currentProjectId:
         try:
             project = Project.objects.get(id=currentProjectId)
             context["project"] = project
-            context["projectRights"] = UserRight.objects.filter(project=project)
         except:
-            context["project"] = None
+            pass
+    context["project"] = project
+    if project:
+        context["projectRights"] = UserRight.objects.filter(project=project)
+        context["projectData"] = project.serializeDataDef()
 
-def getCurrentUser():
+
+def setUserDataInContext(context):
+    context["userData"] = getUserData(context)
+
+def getUserData(context):
+    user = context["user"]
+    userData = {
+        "id": user.id,
+    }
+    project = context["project"]
+    if project:
+        userData["rights"] = rights.getRights(user, project)
+    else:
+        userData["rights"] = ""
+    return userData
+
+def getCurrentUser(request):
     try:
-        return PUser.objects.filter(username="josquin@gmail.com")[0]
+        user = request.user.prosperouser
+        if user:
+            return user.getRealInstance()
     except:
-        return None
+        return ProsperoUser.objects.get(username="anonymous").getRealInstance()

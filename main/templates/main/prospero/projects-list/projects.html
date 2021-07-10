@@ -1,0 +1,16 @@
+{% for project in projects %}
+    <tr object-model="Project" object-id="{{ project.id }}" href="{% url 'project' project.id %}">
+        <td>
+            {{ project.name }}
+        </td>
+        <td>
+            {% if project.lastModificationDate %}
+                {{ project.lastModificationDate }}
+            {% else %}
+                Never
+            {% endif %}
+        </td>
+        <td>{{ project.tagList }}</td>
+        <td>{{ project.owner.interfaceName }}</td>
+    </tr>
+{% endfor %}

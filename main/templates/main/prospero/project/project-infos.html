@@ -1,14 +1,18 @@
-<article class="cartouche project-infos" object-model="Project" object-id="{{ project.id }}">
+{% load custom %}
+<article class="cartouche project-infos" object-model="Project" object-id="{{ project.id }}" data-widget="{{ projectData|dump }}">
     <div class="card-header" style="padding-left: 0px;">
         <div class="left">
-            <h4>{{ project.name }}</h4>
+            <h4>
+                <input class="edition-widget" property-name="name" type="text" value="{{ project.name }}" disabled>
+            </h4>
         </div>
         <div class="right" style="width:2rem;">
             {% include "main/prospero/widgets/generic-menu.html" %}
         </div>
     </div>
     <span class="bold">{{ project.nbTexts }} texts / {{ project.nbTextChar }} characters</span>
-    <p class="intro">{{ project.description }}</p>
+    <!--<textarea class="intro edition-widget" property-name="description">{{ project.description }}</textarea>-->
+    <p class="intro edition-widget" property-name="description">{{ project.description }}</p>
     <div class="cartouche_item">
         <span class="label">Created:</span>
     </div>
@@ -39,7 +43,9 @@
         <span class="label">Tags:</span>
     </div>
     <div class="cartouche_item">
-        {{ project.tagList }}
+        <div class="tags-input edition-widget" property-name="tags">
+            {{ project.tagList }}
+        </div>
     </div>
     <div class="cartouche_item">
         <span class="label">Created by:</span>

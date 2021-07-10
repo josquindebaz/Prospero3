@@ -22,8 +22,9 @@
 		</section>
 	</div>
 	<script>
+		var pInterface = null;
 		prospero.getInterface(function(pinterface) {
-			new PProjectsMosaicView(pinterface);
+			new PProjectsMosaicView();
 		});
 	</script>
 {% endblock %}

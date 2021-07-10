@@ -9,7 +9,7 @@ import json, ntpath, time
 from django.shortcuts import redirect
 
 def createContext(request):
-    user = sessions.getCurrentUser()
+    user = sessions.getCurrentUser(request)
     context = {
         'MEDIA_URL': settings.MEDIA_URL,
         'ROOT_URL': settings.ROOT_URL,
@@ -74,8 +74,17 @@ def project(request, id):
 def projects_list(request):
     context = createContext(request)
     context["page"] = "projects-list"
-    context["projects"] = Project.objects.all()
-    context["project"] = Project.objects.first()
+    pageData = sessions.getProjectsData(request)
+    pagination = {
+        "frameSize": 30,
+        "page": 0,
+        "end": False
+    }
+    context["pagination"] = pagination
+    user = context["user"]
+    context["projects"] = queries.getProjects(pagination, pageData, user)
+    sessions.setPageDataInContext(pageData, context)
+    sessions.setUserDataInContext(context)
     template = loader.get_template('main/prospero/projects-list.html')
     return HttpResponse(template.render(context, request))
 
@@ -89,8 +98,10 @@ def projects_mosaic(request):
         "end": False
     }
     context["pagination"] = pagination
-    context["projects"] = queries.getProjects(pagination, pageData)
+    user = context["user"]
+    context["projects"] = queries.getProjects(pagination, pageData, user)
     sessions.setPageDataInContext(pageData, context)
+    sessions.setUserDataInContext(context)
     template = loader.get_template('main/prospero/projects-mosaic.html')
     return HttpResponse(template.render(context, request))
 

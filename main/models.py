@@ -6,7 +6,7 @@ from datetime import datetime
 from django.utils import timezone
 import pytz
 from django.contrib.auth.models import *
-from main.helpers import cloud, files
+from main.helpers import cloud, files, rights
 
 CategoryType = (
     ('ENTITY', 'ENTITY'),
@@ -178,7 +178,7 @@ class Project(AugmentedData) :
         self.save()
 
     def __str__(self):
-        return "[" + str(self.id) + ":Project]"
+        return "[" + str(self.id) + ":Project] " + self.name
 
     def getRealInstance(self):
         return self
@@ -212,6 +212,28 @@ class Project(AugmentedData) :
         for right in UserRight.objects.filter(project=self):
             result.append(right.serialize())
         return result
+
+    def serializeDataDef(self):
+        identity = self.serializeIdentity()
+        data = {
+            "identity" : identity,
+            "data" : [
+                {
+                    "name": "name",
+                    "type": "String"
+                },
+                {
+                    "name": "description",
+                    "type": "Text"
+                },
+                {
+                    "name": "tags",
+                    "type": "Tags",
+                    "value": self.tagIds(),
+                }
+            ],
+        }
+        return data
 
 class PCorpus(AugmentedData) :
 
@@ -624,7 +646,10 @@ class ProsperoUser(User) :
         super(ProsperoUser, self).delete()
 
     def interfaceName(self):
-        return self.last_name + " " + self.first_name
+        if self.last_name:
+            return self.last_name + " " + self.first_name
+        else:
+            return self.username
 
     def getRealInstance(self):
         if hasattr(self, "pgroup"):
@@ -710,7 +735,6 @@ class PGroup(ProsperoUser) :
 
 class PUser(ProsperoUser) :
 
-
     def __str__(self):
         return "["+str(self.id)+":PUser] "+self.username
 
@@ -725,6 +749,15 @@ class PUser(ProsperoUser) :
             "last_name": self.last_name,
             "thumbnail": self.getThumbnailUrl()
         }
+
+    """
+    def canReadProject(self, project):
+        if UserRight.objects.filter(project=project, user=rights.getPublicGroup()).count() > 0:
+            return True
+        if UserRight.objects.filter(project=project, user=self).count() > 0:
+            return True
+        return False
+    """
 
 class UserRight(PObject) :
 

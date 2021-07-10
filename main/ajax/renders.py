@@ -1,6 +1,6 @@
 from main.models import *
 from django.template import loader
-from main.helpers import frontend, queries, sessions
+from main.helpers import frontend, queries, sessions, rights
 from main import views
 
 def renderUserTable(request, data, results):
@@ -23,5 +23,7 @@ def renderProjectInfos(request, data, results):
         sessions.setProjectsData(request, projectsData)
     sessions.setPageDataInContext(projectsData, context)
     context["project"] = project
+    user = context["user"]
     template = loader.get_template('main/prospero/project/project-infos.html')
     results["html"] = template.render(context, request)
+    results["userData"] = sessions.getUserData(context)

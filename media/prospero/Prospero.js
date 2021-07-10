@@ -200,26 +200,31 @@ class Prospero {
             callback(self.allUserData);
         });
     }
-    initEditionWidgets($container, widgetDatas) {
+    initEditionWidgets($container, widgetDatas, identity) {
         var self  = this;
         $.each(widgetDatas, function(index, widgetData) {
             var $widget = $('[property-name='+widgetData.name+']', $container);
             if ($widget.length > 0)
-                self.initEditionWidget($widget, widgetData);
+                self.initEditionWidget($widget, widgetData, identity);
         });
     }
-    initEditionWidget($widget, widgetData) {
+    initEditionWidget($widget, widgetData, identity) {
+        if (identity)
+            widgetData.identity = identity;
         var widgetType = widgetData.type;
         var widget = null;
         if (widgetType == "String") {
             widget = new PASTextInput($widget, widgetData);
-            widget.setValue(widgetData.value);
+            if ("value" in widgetData)
+                widget.setValue(widgetData.value);
         } else if (widgetType == "Datetime") {
             widget = new PASTextInput($widget, widgetData);
-            widget.setValue(widgetData.value);
+            if ("value" in widgetData)
+                widget.setValue(widgetData.value);
         } else if (widgetType == "Text") {
             widget = new PASTextarea($widget, widgetData);
-            widget.setValue(widgetData.value);
+            if ("value" in widgetData)
+                widget.setValue(widgetData.value);
             widget.autosize();
         } else if (widgetType == "Tags") {
             widget = new PASInputTags($widget, widgetData);

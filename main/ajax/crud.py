@@ -17,7 +17,7 @@ def deleteObject(request, data, results):
 
 def changeData(request, data, results):
     object = frontend.getBDObject(data["identity"])
-    if data["kind"] == "metadata":
+    if "metadata" in data and data["kind"] == "metadata":
         setattr(object, "value", data["value"])
     else:
         setattr(object, data["name"], data["value"])

@@ -17,6 +17,7 @@ class PInputField extends PObject {
 	    super($node);
 	    this.initFieldNode();
 	    this.bindChange();
+	    this.node[0].disabled = false;
     }
     bindChange() {
         var self = this;
@@ -55,10 +56,17 @@ class PTextarea extends PInputField {
 
 	constructor($node) {
 	    super($node);
-	    var self = this;
+        this.fieldNode[0].setAttribute('autocomplete', 'off');
+        this.fieldNode[0].setAttribute('autocorrect', 'off');
+        this.fieldNode[0].setAttribute('autocapitalize', 'off');
+        this.fieldNode[0].setAttribute('spellcheck', false);
 	}
 	initFieldNode() {
 	    this.fieldNode = this.node.find("textarea").addBack('textarea');
+	    if (this.fieldNode.length == 0) {
+	        this.node = this.node.replaceTag('<textarea>', true);
+	        this.fieldNode = this.node;
+	    }
 	}
 	autosize() {
         this.fieldNode.each(function () {
@@ -127,13 +135,13 @@ class PASInputTags extends PInputField {
 	    super($node);
 	    var self = this;
 	    self.data = data;
-
+	    self.node.addClass("tags-input");
+	    self.node.html('<div class="tags-input-container"><select class="form-select" id="validationTagsNew" name="tags_new[]" multiple data-allow-new="true"><option class="option-placeholer" selected disabled hidden value="">Choose a tag...</option></select></div>');
         prospero.getTagsManager(function(tagsManager) {
-            var $widget = $(".tags-input", self.node);
             var existingData = self.data.value;
             var identity = self.data.identity;
             var tagsInput = new TagsInput(
-                $widget.find(".tags-input-container"),
+                self.node.find(".tags-input-container"),
                 existingData,
                 tagsManager,
                 identity,
@@ -159,7 +167,7 @@ class PCheckInput extends PInputField {
 	    this.fieldNode = this.node.find("input").addBack('input');
 	}
     getValue() {
-        return this.fieldNode.val();
+        return this.fieldNode.is(":checked");
     }
     setValue(value) {
         this.fieldNode.val(value);
@@ -256,12 +264,24 @@ class PGenericMenu extends PObject {
 	        var action = $(this).text().trim();
 	        self.notifyObservers({name: "click", action: action});
 	    });
-
 	    $(".dropdown-item", self.node).bind("click", function() {
 	        var action = $(this).text().trim();
 	        $(".state-button-state", self.node).text(action);
 	        self.notifyObservers({name: "click", action: action});
 	    });
+	    this.actions = {};
+	    this.refresh();
+	}
+	refresh() {
+	    var hide = true;
+	    $.each(this.actions, function(actionName, value) {
+	        if (value.visible) {
+	            hide = false;
+	            return false;
+	        }
+	    });
+	    if (this.node.hasClass("hidden") && !hide)
+	        this.node.toggleClass("hidden");
 	}
 	addAction(actionName, actionText, callback) {
 	    var $li = $('<li><a action-name="'+actionName+'" class="dropdown-item" href="#">'+actionText+'</a></li>');
@@ -269,18 +289,27 @@ class PGenericMenu extends PObject {
 	    $li.bind("click", function(event) {
 	        callback(event);
 	    });
+	    this.actions[actionName] = {
+	        enabled: true,
+	        visible: true
+	    };
+	    this.refresh();
 	}
 	setEnabled(actionName, enabled) {
 	    if (enabled)
 	        $(".dropdown-menu", this.node).find('[action-name='+actionName+']').removeClass("disabled");
 	    else
 	        $(".dropdown-menu", this.node).find('[action-name='+actionName+']').addClass("disabled");
+	    this.actions[actionName].enabled = enabled;
+	    this.refresh();
 	}
 	setVisible(actionName, visible) {
 	    if (visible)
 	        $(".dropdown-menu", this.node).find('[action-name='+actionName+']').removeClass("hidden");
 	    else
 	        $(".dropdown-menu", this.node).find('[action-name='+actionName+']').addClass("hidden");
+        this.actions[actionName].visible = visible;
+        this.refresh();
 	}
 }
 class PDropzone extends PInputField {

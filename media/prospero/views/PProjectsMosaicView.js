@@ -1,9 +1,8 @@
 class PProjectsMosaicView extends PObject {
 
-	constructor(pinterface) {
+	constructor() {
 	    super($("body"));
 	    var self = this;
-	    self.interface = pinterface;
 	    self.node.find(".project-card.add-project-card").bind("click", function() {
             var modalLock = modals.openNewProject();
             prospero.wait(modalLock, function() {
@@ -16,9 +15,9 @@ class PProjectsMosaicView extends PObject {
 	    self.bindSearch();
 	    self.bindSort();
 	    self.bindScroll($(".main_content", self.node));
-	    self.pagination = self.node.data("pagination")
+	    self.pagination = self.node.data("pagination");
 	    //self.clearPagination();
-        self.setData(self.interface.getPageData());
+        self.setData(prospero.interface.getPageData());
 	}
 	setData(data) {
 	    var self = this;
@@ -34,8 +33,11 @@ class PProjectsMosaicView extends PObject {
 	    }
 	    self.currentProject = prospero.get(self.node.find(".project-card.active"));
 	    if (self.currentProject)
-	        self.projectInfos = new PProjectPanel(self.node.find(".project-infos"), self);
+	        self.initProjectInfos(self.node.find(".project-infos"));
 	    return this;
+	}
+	initProjectInfos($projectInfos) {
+        this.projectInfos = new PProjectPanel($projectInfos, this);
 	}
 	clearPagination() {
 	    this.pagination = {
@@ -74,7 +76,8 @@ class PProjectsMosaicView extends PObject {
 	        self.clearPagination();
 	        var renderData = {
 	            pagination : self.pagination,
-                viewData : self.data
+                viewData : self.data,
+                renderType : "mosaic"
 	        }
             prospero.ajax("searchInProjects", renderData, function(data) {
                 var $projects = prospero.nodes(data.html);
@@ -95,7 +98,8 @@ class PProjectsMosaicView extends PObject {
 	        self.clearPagination();
 	        var renderData = {
 	            pagination : self.pagination,
-                viewData : self.data
+                viewData : self.data,
+                renderType : "mosaic"
 	        }
             prospero.ajax("searchInProjects", renderData, function(data) {
                 var $projects = prospero.nodes(data.html);
@@ -117,7 +121,8 @@ class PProjectsMosaicView extends PObject {
                 console.log("LOAD !!");
                 var renderData = {
                     pagination : self.pagination,
-                    viewData : self.data
+                    viewData : self.data,
+                    renderType : "mosaic"
                 }
                 prospero.ajax("searchInProjects", renderData, function(data) {
                     var $projects = prospero.nodes(data.html);
@@ -132,7 +137,7 @@ class PProjectsMosaicView extends PObject {
 	setCurrentProject(project) {
 	    var self = this;
 	    self.currentProject = project;
-	    self.interface.setCurrentProjectId(project.identity.id);
+	    prospero.interface.setCurrentProjectId(project.identity.id);
 	    self.loadProjectInfos(true);
 	}
 	loadProjectInfos(setCurrentProject) {
@@ -142,11 +147,12 @@ class PProjectsMosaicView extends PObject {
 	        setCurrentProject: setCurrentProject == true
 	    }
         prospero.ajax("renderProjectInfos", renderData, function(data) {
+            prospero.interface.setUserData(data.userData);
             var $projectInfosContainer = $(".project-infos-container");
-            var $projectInfos = $(data.html);
+            var $projectInfos = prospero.nodes(data.html);
             $projectInfosContainer.empty();
             $projectInfosContainer.append($projectInfos);
-            self.projectInfos = new PProjectPanel($projectInfos, self);
+            self.initProjectInfos($projectInfos);
         });
 	}
 	load(data) {

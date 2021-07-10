@@ -1,9 +1,8 @@
 class PUsersView extends PObject {
 
-	constructor(pinterface) {
+	constructor() {
 	    super($("body"));
 	    var self = this;
-	    self.interface = pinterface;
 	    this.userTable = new UserTable($(".users-table"), this);
 	    this.userTable.addObserver(function(event) {
 	        self.manageEvent(self.userTable, event);

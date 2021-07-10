@@ -1,5 +1,6 @@
 from main.models import *
 from django.db.models import Q
+from main.helpers import queries
 
 def getObjects(querySet, filters):
     sorting = filters["sort"]
@@ -45,12 +46,15 @@ def getUsers(querySet, filters, pagination):
             pagination["end"] = True
         return querySet.all()[index1:index2]
 
-def getProjects(pagination, filters):
+def getProjects(pagination, filters, user):
     search = filters["search"]
-    if not search:
-        querySet = Project.objects.all()
-    else:
-        querySet = Project.objects.filter(corpuses__texts__text__icontains=search).distinct()
+    #querySet = Project.objects.all()
+    users = [user, rights.getPublicGroup()]
+    users.extend(user.groups.all())
+    #querySet = Project.objects.filter(userRights__user__in=users).distinct()
+    querySet = Project.objects.all() # to delete
+    if search:
+        querySet = querySet.filter(corpuses__texts__text__icontains=search).distinct()
     querySet = querySet.order_by(filters["sort"])
     frameSize = pagination["frameSize"]
     page = pagination["page"]

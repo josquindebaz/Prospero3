@@ -26,6 +26,7 @@
         <!-- javascript -->
 
         <script src="{{ MEDIA_URL }}components/jquery/jquery-1.9.1.js"></script>
+        <script src="{{ MEDIA_URL }}components/jquery-replace-tag/jquery-replace-tag.js"></script>
         <script src="{{ MEDIA_URL }}components/w2ui/w2ui.min.js"></script><!--<script type="text/javascript" src="http://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.js"></script>-->
         <script src="{{ MEDIA_URL }}components/jqueryui/jquery-ui.js"></script>
         <script src="{{ MEDIA_URL }}components/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -42,6 +43,7 @@
         <script src="{{ MEDIA_URL }}prospero/PInterface.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/Prospero.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/UrlUtils.js?{{ MEDIA_TIMESTAMP }}"></script>
+        <script src="{{ MEDIA_URL }}prospero/widgets/PConnectPanel.js?{{ MEDIA_TIMESTAMP }}"></script>
 
         <script src="{{ MEDIA_URL }}prospero/modals/PModal.js?{{ MEDIA_TIMESTAMP }}"></script>
         <script src="{{ MEDIA_URL }}prospero/modals/InfoModal.js?{{ MEDIA_TIMESTAMP }}"></script>
@@ -86,7 +88,7 @@
             var urls = new UrlUtils();
         </script>
     </head>
-    <body page="{{ page }}" data-page-data="{{ pageData|dump }}" data-pagination="{{ pagination|dump }}">
+    <body page="{{ page }}" data-page-data="{{ pageData|dump }}" data-user-data="{{ userData|dump }}" data-pagination="{{ pagination|dump }}">
         {% include "main/prospero/structure/modals/info-modal.html" %}
         {% include "main/prospero/structure/modals/import-modal.html" %}
         {% include "main/prospero/structure/modals/approval-modal.html" %}
