@@ -20,7 +20,7 @@ class NewCorpusModal extends PModal {
                 },
                 function(data) {
                     if (!data.serverError) {
-                        self.hide({action: "create"});
+                        self.hide({action: "create", corpus: data.corpus});
                     } else {
                         var fields = data.serverError.fields;
                         $.each(fields, function(key, value) {

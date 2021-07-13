@@ -38,7 +38,7 @@ header.main_header h2 {
     transition: background-color 0.3s ease-in-out;
     color: var(--color_1);
 }
-.edition-widget:hover {
+.edition-widget.editable:hover {
     background-color: #F5F5F8;
 }
 textarea.edition-widget {
@@ -50,6 +50,7 @@ textarea.edition-widget {
 .cartouche-metaDatas {
     position: relative;
 }
+/*
 .cartouche-metaDatas .icon-add-metadata {
     position: absolute;
     left: -22px;
@@ -68,6 +69,7 @@ textarea.edition-widget {
 .cartouche-metaDatas .icon-add-metadata:hover {
     opacity: 0.8;
 }
+*/
 
 
 
@@ -78,8 +80,10 @@ textarea.edition-widget {
 }
 .metadata-widget .icon-delete-metadata {
     position: absolute;
-    left: -22px;
-    width: 30px;
+    padding-left: 20px;
+    left: auto;
+    right: -22px;
+    /*width: 30px;*/
     transition: opacity 0.3s ease-in-out;
     opacity: 0;
     cursor: pointer;
@@ -148,8 +152,16 @@ textarea.edition-widget {
     margin-left:3px;
     cursor: pointer;
 }
-.table-col-title .sort-filters .sort-filter.selected {
-    color: red;
+
+.table-col-title .sort-filters .sort-filter.active {
+    border-color: white;
+}
+
+.table-col-title .sort-filters .sort-filter.sort-filter-asc.active:after {
+    border-top: 5px solid white;
+}
+.table-col-title .sort-filters .sort-filter.sort-filter-desc.active:after {
+    border-bottom: 5px solid white;
 }
 
 /* page projects-mosaic */

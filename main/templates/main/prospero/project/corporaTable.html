@@ -1,9 +1,23 @@
 <table class="table table-hover">
     <thead>
         <tr>
-            <th property-name="name">Name</th>
-            <th property-name="author">Author</th>
-            <th property-name="tags">Tags</th>
+            <th property-name="name">
+                <div class="table-col-title">
+                    Name
+                    {% include "main/prospero/structure/table/sort-filters.html" %}
+                </div>
+            </th>
+            <th property-name="author">
+                <div class="table-col-title">
+                    Author
+                    {% include "main/prospero/structure/table/sort-filters.html" %}
+                </div>
+            </th>
+            <th property-name="tags">
+                <div class="table-col-title">
+                    Tags
+                </div>
+            </th>
         </tr>
     </thead>
     <tbody>

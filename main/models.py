@@ -19,6 +19,7 @@ DataType = (
     ('Datetime', 'Datetime'),
     ('File', 'File'),
     ('Text', 'Text'),
+    ('Hour', 'Hour'),
 )
 DictType = (
     ('FictionDict', 'FictionDict'),
@@ -312,7 +313,7 @@ class PCorpus(AugmentedData) :
     def nbTextChar(self):
         nb = 0
         for text in self.texts.all():
-            nb = nb + text.getNbChar()
+            nb = nb + text.noc
         return nb
 
 class MetaData(PObject) :
@@ -493,6 +494,11 @@ class PText(AugmentedData) :
     date = models.CharField(blank=True, max_length=255)
     source = models.CharField(blank=True, max_length=255)
     author = models.CharField(blank=True, max_length=255)
+    noc = models.IntegerField(null=True, blank=True)
+
+    def save(self, *args, **kwargs):
+        self.noc = len(self.text)
+        super(PText, self).save(*args, **kwargs)
 
     def getFixedDataNames(self):
         return ["title", "date", "source", "author"]
@@ -503,38 +509,35 @@ class PText(AugmentedData) :
     def getRealInstance(self):
         return self
 
-    def getNbChar(self):
-        return len(self.text)
-
     def serialize(self):
         data = {
-            "identity" : self.serializeIdentity(),
-            "text" : self.text
+            "identity" : self.serializeIdentity()
         }
         requiredDatas = []
         requiredDatas.append({
-            "identity" : self.serializeIdentity(),
             "name" : "title",
             "type": "String",
             "value": self.title
         })
         requiredDatas.append({
-            "identity" : self.serializeIdentity(),
             "name" : "date",
-            "type": "Date",
+            "type": "Datetime",
             "value": self.date
         })
         requiredDatas.append({
-            "identity" : self.serializeIdentity(),
             "name" : "source",
             "type": "String",
             "value": self.source
         })
         requiredDatas.append({
-            "identity" : self.serializeIdentity(),
             "name" : "author",
             "type": "String",
             "value": self.author
+        })
+        requiredDatas.append({
+            "name" : "text",
+            "type": "Text",
+            "value": self.text
         })
         data["requiredDatas"] = requiredDatas
         metaDatas = []
@@ -553,7 +556,7 @@ class PText(AugmentedData) :
                 "date" : self.date,
                 "source" : self.source,
                 "author" : self.author,
-                "noc" : self.getNbChar()
+                "noc" : self.noc
             }
         }
 

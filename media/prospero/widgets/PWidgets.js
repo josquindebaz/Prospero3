@@ -51,6 +51,9 @@ class PInputField extends PObject {
     clear() {
         this.setValue("");
     }
+    setEnabled(enabled) {
+        this.fieldNode[0].disabled = !enabled;
+    }
 }
 class PTextarea extends PInputField {
 
@@ -76,19 +79,24 @@ class PTextarea extends PInputField {
             this.style.height = (this.scrollHeight) + "px";
         });
 	}
+    setEnabled(enabled) {
+        this.fieldNode[0].disabled = !enabled;
+    }
 }
 class PASTextarea extends PTextarea {
 
-	constructor($node, data) {
+	constructor($node, data, editable) {
 	    super($node);
 	    var self = this;
 	    self.data = data;
-	    self.timer = new CallbackTimer(this, 500, function() {
-            self.save();
-	    });
-	    self.addObserver(function() {
-	        self.timer.trigger();
-	    });
+	    if (editable) {
+            self.timer = new CallbackTimer(this, 500, function() {
+                self.save();
+            });
+            self.addObserver(function() {
+                self.timer.trigger();
+            });
+	    }
 	}
 	save() {
         this.data.value = this.getValue();
@@ -110,16 +118,18 @@ class PTextInput extends PInputField {
 }
 class PASTextInput extends PTextInput {
 
-	constructor($node, data) {
+	constructor($node, data, editable) {
 	    super($node);
 	    var self = this;
 	    self.data = data;
-	    self.timer = new CallbackTimer(this, 500, function() {
-            self.save();
-	    });
-	    self.addObserver(function() {
-	        self.timer.trigger();
-	    });
+	    if (editable) {
+            self.timer = new CallbackTimer(this, 500, function() {
+                self.save();
+            });
+            self.addObserver(function() {
+                self.timer.trigger();
+            });
+	    }
 	}
 	save() {
         this.data.value = this.getValue();

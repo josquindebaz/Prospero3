@@ -193,7 +193,7 @@ def createFakeObjects():
     publicGroup = createPGroup("Public", "/media_site/testData/images/groupPublic.png", inPossibleUsersWithRights=False)
 
     project = createProject("Project test", josquin, randomCreationDate=False)
-    createUserRight(publicGroup, "Read", project)
+    createUserRight(publicGroup, "Owner", project)
     createUserRight(francis, "Write", project)
     createAugmentedDatas(project.corpuses.first())
 

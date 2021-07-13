@@ -200,42 +200,68 @@ class Prospero {
             callback(self.allUserData);
         });
     }
-    initEditionWidgets($container, widgetDatas, identity) {
+    initEditionWidgets($container, widgetDatas, identity, editable) {
         var self  = this;
         $.each(widgetDatas, function(index, widgetData) {
             var $widget = $('[property-name='+widgetData.name+']', $container);
             if ($widget.length > 0)
-                self.initEditionWidget($widget, widgetData, identity);
+                self.initEditionWidget($widget, widgetData, identity, editable);
         });
     }
-    initEditionWidget($widget, widgetData, identity) {
+    initEditionWidget($widget, widgetData, identity, editable) {
         if (identity)
             widgetData.identity = identity;
+        editable = editable ? true : false;
+        if (editable)
+            $widget.find(".edition-widget").addBack('.edition-widget').addClass("editable");
         var widgetType = widgetData.type;
         var widget = null;
-        if (widgetType == "String") {
-            widget = new PASTextInput($widget, widgetData);
+        if (widgetType == "String" || widgetType == "Datetime" || widgetType == "Hour") {
+            widget = new PASTextInput($widget, widgetData, editable);
             if ("value" in widgetData)
                 widget.setValue(widgetData.value);
-        } else if (widgetType == "Datetime") {
-            widget = new PASTextInput($widget, widgetData);
-            if ("value" in widgetData)
-                widget.setValue(widgetData.value);
+            widget.setEnabled(editable);
         } else if (widgetType == "Text") {
-            widget = new PASTextarea($widget, widgetData);
+            widget = new PASTextarea($widget, widgetData, editable);
             if ("value" in widgetData)
                 widget.setValue(widgetData.value);
             widget.autosize();
+            widget.setEnabled(editable);
         } else if (widgetType == "Tags") {
-            widget = new PASInputTags($widget, widgetData);
+            widget = new PASInputTags($widget, widgetData, editable);
         }
+        return widget;
     }
-    createEditionWidgetHtml(widgetData) {
+    createEditionWidgetHtml(widgetData, editable) {
         var widgetType = widgetData.type;
-        if (widgetType == "String" || widgetType == "Datetime") {
-            return $('<input class="edition-widget"/>');
+        var classes = "edition-widget";
+        if (editable)
+            classes = classes + ' editable';
+        if (widgetType == "String" || widgetType == "Datetime" || widgetType == "Hour") {
+            return $('<input class="'+classes+'"/>');
         } else if (widgetType == "Text") {
-            return $('<textarea class="edition-widget"></textarea>');
+            return $('<textarea class="'+classes+'"></textarea>');
         }
     }
+	addMetadata(metaData, $container, identity, editable) {
+        var labelName = metaData.name.charAt(0).toUpperCase() + metaData.name.slice(1)
+        var codeIconCancel = '';
+        if (editable)
+            codeIconCancel = '<div class="icon-delete-metadata"><div class="icon-cancel-circled"></div></div>';
+        var $item = $('<div class="cartouche_item metadata-widget">'+codeIconCancel+'<label>'+labelName+'</label></div>');
+        var $editionWidget = prospero.createEditionWidgetHtml(metaData, editable);
+        $item.append($editionWidget);
+        $container.append($item);
+        var widget = prospero.initEditionWidget($item, metaData, identity, editable);
+        $item.find(".icon-delete-metadata .icon-cancel-circled").bind("click", function() {
+	        var modalLock = modals.openApproval("Confirmation", "Do you really want to delete this data ?");
+            prospero.wait(modalLock, function() {
+                if (modalLock.data.action == "yes") {
+                    prospero.ajax("deleteObject", widget.data.identity, function(data) {
+                        widget.node.remove();
+                    });
+                }
+            });
+        });
+	}
 }

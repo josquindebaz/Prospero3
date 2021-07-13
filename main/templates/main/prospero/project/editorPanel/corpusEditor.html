@@ -1,9 +1,14 @@
 <div class="corpus-editor hidden">
     <div class="card-header">
+        <div class="left">
             <h3 class="title txt_25" style="display: flex; width: 100%;">
                 <span style="margin-right:10px;">Corpus</span>
                 <input class="edition-widget" property-name="name" style="width: 100%;" />
             </h3>
+        </div>
+        <div class="right">
+            {% include "main/prospero/widgets/generic-menu.html" %}
+        </div>
     </div>
     <div class="card-body">
         <div class="cartouche txt_15">
@@ -25,7 +30,6 @@
                 </div>
             </div>
             <div class="cartouche-metaDatas">
-                <div class="icon-add-metadata"><div class="icon-plus-circled"></div></div>
                 <div class="cartouche-content">
                 </div>
             </div>

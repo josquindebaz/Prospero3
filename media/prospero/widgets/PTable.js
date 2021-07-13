@@ -36,17 +36,27 @@ class PTable extends PObject {
         };
 	}
 	setSort(columnName, isAscendant) {
-	    this.filters.sort.property = columnName;
-	    this.filters.sort.ascendant = isAscendant;
-	    $("thead .sort-filter", self.node).removeClass("selected");
-	    $('thead th[property-name='+columnName+'] .sort-filter-' + (isAscendant ? 'asc' : 'desc'), self.node).addClass("selected");
+	    var self = this;
+	    self.filters.sort.property = columnName;
+	    self.filters.sort.ascendant = isAscendant;
+	    var $button = $('thead th[property-name='+columnName+'] .sort-filter', self.node);
+	    if (!$button.hasClass("active")) {
+	        $("thead .sort-filter", self.node).removeClass("active");
+	        $button.addClass("active");
+	    }
+	    if (isAscendant)
+	        $button.removeClass("sort-filter-desc").addClass("sort-filter-asc");
+	    else
+	        $button.removeClass("sort-filter-asc").addClass("sort-filter-desc");
 	}
 	bindSorting() {
 	    var self = this;
 	    $(".table-col-title .sort-filters .sort-filter", self.node).bind("click", function() {
             var $button = $(this);
-	        console.log("sort click", this);
-	        self.setSort($button.closest("th[property-name]").attr("property-name"), $button.hasClass("sort-filter-asc"));
+	        if (!$button.hasClass("active"))
+	            self.setSort($button.closest("th[property-name]").attr("property-name"), $button.hasClass("sort-filter-asc"));
+	        else
+	            self.setSort($button.closest("th[property-name]").attr("property-name"), !$button.hasClass("sort-filter-asc"));
 	        self.reload(self.data);
 	    });
 	}

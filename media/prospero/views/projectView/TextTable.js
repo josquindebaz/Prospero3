@@ -3,8 +3,10 @@ class TextTable extends PTable {
 	constructor($node, view) {
 	    super($node, view);
 	    var self = this;
-	    this.propertyName = "texts";
-	    this.addActionTrigger("create", $(".icon_link.plus", self.node), function() {
+	    self.propertyName = "texts";
+	    self.menu = new PGenericMenu($(".generic-menu", self.node));
+
+        self.menu.addAction("create", "Create text", function() {
             var corpus = prospero.get(view.corporaTable.getSelection());
             var modalLock = modals.openNewText(corpus);
             prospero.wait(modalLock, function() {
@@ -19,8 +21,8 @@ class TextTable extends PTable {
                     }
                 }
             });
-	    });
-	    this.addActionTrigger("delete", $(".icon_link.moins", self.node), function() {
+        });
+        self.menu.addAction("delete", "Delete text", function() {
 	        var items = prospero.get(self.getSelection(), true);
 	        var itemDatas = [];
 	        $.each(items, function(index, item) {
@@ -38,12 +40,12 @@ class TextTable extends PTable {
                     });
                 }
             });
-	    });
+        });
+        self.menu.setEnabled("delete", false);
 	}
 	load() {
 	    var lock = super.load();
-	    this.showActionTrigger("create");
-	    this.hideActionTrigger("delete");
+	    this.menu.setEnabled("delete", false);
 	    return lock;
 	}
 	receiveEvent(event) {
@@ -81,9 +83,9 @@ class TextTable extends PTable {
             if (selectionChanged) {
                 self.notifyObservers({name: "selectionChanged"});
                 if (self.getSelection().length > 0)
-                    self.showActionTrigger("delete");
+                    self.menu.setEnabled("delete", true);
                 else
-                    self.hideActionTrigger("delete");
+                    self.menu.setEnabled("delete", false);
             }
             self.lastSelectedItem = item;
         }

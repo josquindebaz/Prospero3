@@ -1,12 +1,13 @@
 class PLayout extends PObject {
 
-	constructor($node) {
+	constructor($node, padding) {
 	    super($node);
 	    this.name = this.uniqueId();
+	    this.padding = padding;
 	}
 	init(panels) {
         var lock = $.Deferred();
-        this.node.w2layout({
+        var initData = {
             name: this.name,
             panels: panels,
             onRender: function(event) {
@@ -14,7 +15,10 @@ class PLayout extends PObject {
                     lock.resolve();
                 });
             }
-        });
+        };
+        if (this.padding)
+            initData.padding = this.padding;
+        this.node.w2layout(initData);
         return lock;
 	}
 	getPanel(name) {

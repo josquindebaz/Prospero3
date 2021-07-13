@@ -18,8 +18,9 @@
 		</section>
 	</div>
 	<script>
-		var projectView = null;
-		prospero.onload(function() {
+		var pInterface = null;
+		prospero.getInterface(function(pinterface) {
+			pInterface = pinterface;
 			var mainLayout = new PLayout($('#layout'));
 			var lock1 = mainLayout.init([
 				{ type: 'left', size: '33%', resizable: true, content: 'left' },
@@ -31,7 +32,7 @@
 				var $leftPanel = mainLayout.getPanel('left');
 				var $container = $('<div id="layout2" style="width:100%; height:100%;"></div>')
 				$leftPanel.append($container);
-				var leftLayout = new PLayout($container);
+				var leftLayout = new PLayout($container, 10);
 				var lock2 = leftLayout.init([
 					{ type: 'main' },
 					{ type: 'preview', size: '50%', resizable: true, content: 'preview' }
@@ -43,11 +44,17 @@
 					mainLayout.getPanel('right').append($(".editor-panel"));
 
 					var $projectView = $(".project-view");
-					projectView = new PProjectView($projectView);
+					var projectView = new PProjectView($projectView);
 					projectView.setData($projectView.data("object"));
 					projectView.load();
 				});
 			});
+		});
+
+
+
+		prospero.onload(function() {
+
 		});
 	</script>
 {% endblock %}

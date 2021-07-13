@@ -3,8 +3,10 @@ class DicoTable extends PTable {
 	constructor($node, view) {
 	    super($node, view);
 	    var self = this;
-	    this.propertyName = "dictionnaries";
-	    this.addActionTrigger("delete", $(".icon_link.moins", self.node), function() {
+	    self.propertyName = "dictionnaries";
+
+	    self.menu = new PGenericMenu($(".generic-menu", self.node));
+        self.menu.addAction("delete", "Delete dictionary", function() {
 	        var items = prospero.get(self.getSelection(), true);
 	        var itemDatas = [];
 	        $.each(items, function(index, item) {
@@ -22,7 +24,13 @@ class DicoTable extends PTable {
                     });
                 }
             });
-	    });
+        });
+        self.menu.setEnabled("delete", false);
+	}
+	load() {
+	    var lock = super.load();
+	    this.menu.setEnabled("delete", false);
+	    return lock;
 	}
 	createTableItem($node, data, columns) {
         return new DicoTableItem($node, data, columns);
@@ -58,9 +66,9 @@ class DicoTable extends PTable {
             if (selectionChanged) {
                 self.notifyObservers({name: "selectionChanged"});
                 if (self.getSelection().length > 0)
-                    self.showActionTrigger("delete");
+                    self.menu.setEnabled("delete", true);
                 else
-                    self.hideActionTrigger("delete");
+                    self.menu.setEnabled("delete", false);
             }
             self.lastSelectedItem = item;
         }

@@ -22,7 +22,7 @@ class PProjectView extends PObject {
                 var modalLock = modals.openImport(corpus);
                 prospero.wait(modalLock, function() {
                     if (modalLock.data.action == "import") {
-                        var lock = projectView.reload();
+                        var lock = self.reload();
                         prospero.wait(lock, function() {
                             if (corpus) {
                                 corpus = prospero.getPDBObject(corpus.identity, self.corporaTable.node); // reload

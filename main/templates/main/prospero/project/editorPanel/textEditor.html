@@ -1,16 +1,34 @@
 <div class="text-editor hidden">
     <div class="card-header">
         <div class="left">
-            <h3 class="title txt_25">titre</h3>
+            <h3 class="title txt_25">Text</h3>
         </div>
         <div class="right">
-            {% include "main/prospero/svg-icons/edit.html" %}
-            {% include "main/prospero/svg-icons/plus.html" %}
-            {% include "main/prospero/svg-icons/moins.html" %}
+            {% include "main/prospero/widgets/generic-menu.html" %}
         </div>
     </div>
     <div class="card-body">
         <div class="cartouche txt_15">
+            <div class="cartouche-fixed">
+                <div class="cartouche_item data-widget" property-name="title">
+                    <label>Title: </label>
+                    <input class="edition-widget" />
+                </div>
+                <div class="cartouche_item data-widget" property-name="date">
+                    <label>Date: </label>
+                    <input class="edition-widget" />
+                </div>
+                <div class="cartouche_item data-widget" property-name="source">
+                    <label>Source: </label>
+                    <input class="edition-widget" />
+                </div>
+                <div class="cartouche_item data-widget" property-name="author">
+                    <label>Author: </label>
+                    <input class="edition-widget" />
+                </div>
+            </div>
+            <div class="cartouche-metaDatas">
+            </div>
             <!--
             <div class="cartouche_item">
                 <label>Title: </label>
@@ -39,6 +57,7 @@
             -->
         </div>
         <article class="main_article text-container">
+            <textarea class="edition-widget" property-name="text"></textarea>
             <!--
             <p>
                 Formidable paradoxe: alors qu’on ne cesse d’évoquer les bénéfices d’un vaccin protecteur contre le

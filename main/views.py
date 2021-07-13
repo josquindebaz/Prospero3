@@ -65,6 +65,9 @@ def index(request):
 def project(request, id):
     context = createContext(request)
     context["page"] = "project"
+    pageData = sessions.getProjectsData(request)
+    sessions.setPageDataInContext(pageData, context)
+    sessions.setUserDataInContext(context)
     project = Project.objects.get(id=id)
     context["project"] = project
     context["projectData"] = json.dumps(project.serializeIdentity())

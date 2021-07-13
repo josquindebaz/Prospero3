@@ -25,7 +25,7 @@ class NewMetadataModal extends PModal {
                 },
                 function(data) {
                     if (!data.serverError) {
-                        self.hide({action: "create"});
+                        self.hide({action: "create", metadata: data.metadata});
                     } else {
                         var fields = data.serverError.fields;
                         $.each(fields, function(key, value) {
