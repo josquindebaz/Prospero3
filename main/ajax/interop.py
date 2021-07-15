@@ -6,7 +6,7 @@ from main.helpers import frontend, files, cloud
 from datetime import datetime
 
 def importData(request, data, results):
-    folder = files.gotFolder(settings.MEDIA_ROOT + data["filePath"])
+    folder = files.gotFolder(settings.MEDIA_ROOT + data["files"][0]["filePath"])
     try:
         project = frontend.getBDObject(data["project"])
         corpus = frontend.getBDObject(data["corpus"]) if data["corpus"] != None else None
@@ -18,6 +18,8 @@ def importData(request, data, results):
             "FictionDictionaries": 0,
             "Texts": 0,
         }
+        if len(createdObjects) > 0:
+            project.declareAsModified()
         for obj in createdObjects:
             objType = type(obj)
             if objType == LexicalDictionnary:

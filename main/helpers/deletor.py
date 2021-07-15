@@ -16,6 +16,11 @@ class PDeletionVisitor:
             self.delete(corpus)
         for dico in obj.dictionnaries.all():
             self.delete(dico)
+        for conf in ProjectConf.objects.filter(project=obj):
+            self.delete(conf)
+        obj.delete()
+
+    def visitProjectConf(self, obj):
         obj.delete()
 
     def visitPCorpus(self, obj):
@@ -84,14 +89,16 @@ class PDeletionVisitor:
         obj.delete()
 
     def visitPUri(self, obj):
-        pass
+        obj.delete()
 
     def visitPFile(self, obj):
-        pass
+        obj.delete()
 
     def visitPUser(self, obj):
         for userRight in UserRight.objects.filter(user=obj):
             self.delete(userRight)
+        for conf in ProjectConf.objects.filter(puser=obj):
+            self.delete(conf)
         obj.delete()
 
     def visitPGroup(self, obj):

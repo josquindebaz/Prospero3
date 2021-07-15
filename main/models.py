@@ -74,6 +74,8 @@ class PObject(models.Model) :
             return self.augmenteddata.getRealInstance()
         elif hasattr(self, "pcorpus"):
             return self.pcorpus.getRealInstance()
+        elif hasattr(self, "projectconf"):
+            return self.projectconf.getRealInstance()
         else:
             return self
 
@@ -172,6 +174,18 @@ class Project(AugmentedData) :
         if not self.pk:
             self.creationDate = timezone.now()
         super(Project, self).save(*args, **kwargs)
+
+    def getProjectOwnerConf(self):
+        return ProjectConf.objects.get(project=self, puser=self.owner.getRealInstance())
+
+    def gotProjectConf(self, user):
+        try:
+            return ProjectConf.objects.get(project=self, puser=user)
+        except:
+            from main.importerP1 import builder2BD as builder
+            conf = builder.createProjectConf(self, user)
+            conf.selectedDicos.add(*self.getProjectOwnerConf().selectedDicos.all())
+            return conf
 
     def declareAsModified(self):
         self.lastModificationDate = timezone.now()
@@ -398,13 +412,14 @@ class Dictionnary(DictPackage) :
         else:
             return self
 
-    def serializeAsTableItem(self):
+    def serializeAsTableItem(self, selected):
         return {
             "identity" : self.serializeIdentity(),
             "values" : {
                 "name" : self.name,
                 "author" : "John Doe",
-                "type" : self.type
+                "type" : self.type,
+                "selected" : self in selected
             }
         }
 
@@ -810,6 +825,24 @@ class UserRight(PObject) :
             "right": self.right,
             "user": self.user.id
         }
+
+class ProjectConf(PObject) :
+
+    project = models.ForeignKey('Project', null=True, blank=True, on_delete=models.SET_NULL, related_name='projectConfs')
+    puser = models.ForeignKey('PUser', null=True, blank=True, on_delete=models.SET_NULL, related_name='projectConfs')
+    selectedDicos = models.ManyToManyField('Dictionnary', blank=True, related_name='projectConfs')
+
+    def __str__(self):
+        return "[" + str(self.id) + ":ProjectConf] "+str(self.puser)+" "+str(self.project)
+
+    def getRealInstance(self):
+        return self
+
+    def getSelectedDicos(self):
+        res = []
+        for elt in self.selectedDicos.all():
+            res.append(elt.getRealInstance())
+        return res
 
 # Returns true if a field has changed in a model
 # May be used in a model.save() method.

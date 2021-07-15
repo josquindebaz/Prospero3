@@ -39,17 +39,22 @@ def fileUpload(request):
         results = {}
         fileFolder = cloud.getStampedCloudFolder("upload")
         relativeFileFolder = cloud.getMediaRelativePath(fileFolder)
-        data = request.FILES['file']
-        fileName = data.name
-        filePath = fileFolder + fileName
-        filePath = cloud.findAvailableAbsolutePath(filePath)
-        with open(filePath, 'wb+') as destination:
-            for chunk in data.chunks():
-                destination.write(chunk)
-        fileName = ntpath.basename(filePath)
-        results['fileName'] = fileName
-        results['filePath'] = relativeFileFolder + fileName
-        results['fileUrl'] = "/media_site/"+relativeFileFolder + fileName
+        files = []
+        for key in request.FILES:
+            data = request.FILES[key]
+            fileName = data.name
+            filePath = fileFolder + fileName
+            filePath = cloud.findAvailableAbsolutePath(filePath)
+            with open(filePath, 'wb+') as destination:
+                for chunk in data.chunks():
+                    destination.write(chunk)
+            fileName = ntpath.basename(filePath)
+            result = {}
+            result['fileName'] = fileName
+            result['filePath'] = relativeFileFolder + fileName
+            result['fileUrl'] = "/media_site/"+relativeFileFolder + fileName
+            files.append(result)
+        results["files"] = files
         results['status'] = "OK"
         return HttpResponse(
             json.dumps(results),
@@ -70,6 +75,7 @@ def project(request, id):
     sessions.setUserDataInContext(context)
     project = Project.objects.get(id=id)
     context["project"] = project
+    project.declareAsOpened()
     context["projectData"] = json.dumps(project.serializeIdentity())
     template = loader.get_template('main/prospero/project.html')
     return HttpResponse(template.render(context, request))

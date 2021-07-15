@@ -1,5 +1,3 @@
-from main.models import *
-
 class PProjectFinder:
 
     def __init__(self, *args, **kwargs):
@@ -30,16 +28,20 @@ class PProjectFinder:
         return None # TODO
 
     def visitCollectionDictionnary(self, obj):
-        return None # TODO
+        from main.models import Project
+        return Project.objects.get(dictionnaries__in=[obj.id])
 
     def visitCategoryDictionnary(self, obj):
-        return None # TODO
+        from main.models import Project
+        return Project.objects.get(dictionnaries__in=[obj.id])
 
     def visitFictionDictionnary(self, obj):
-        return None # TODO
+        from main.models import Project
+        return Project.objects.get(dictionnaries__in=[obj.id])
 
     def visitLexicalDictionnary(self, obj):
-        return None # TODO
+        from main.models import Project
+        return Project.objects.get(dictionnaries__in=[obj.id])
 
     def visitCategory(self, obj):
         return None # TODO

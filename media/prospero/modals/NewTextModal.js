@@ -34,18 +34,20 @@ class NewTextModal extends PModal {
 			this.node.find(".dropzone-panel"),
 			{
 				fileExtensions : "txt, pdf",
-				fileChange : function(dropzone, file, loadEvent) {
+				fileChange : function(dropzone, files, loadEvent) {
 					self.node.find(".dropzone-panel").addClass("hidden");
 					self.node.find(".close-button").addClass("hidden");
 					self.node.find(".spinner-panel").removeClass("hidden");
 					var formData = new FormData();
-					formData.append('file', file, file.name);
+					$.each(files, function(index, file) {
+                        formData.append('file'+index, file, file.name);
+					});
 					prospero.uploadFile(formData, function(uploadDone, data) {
 						if (uploadDone) {
                             prospero.ajax(
                                 "createText",
                                 {
-									filePath : data.filePath,
+									filePath : data.files[0].filePath,
 									corpus : self.corpus.identity
 								},
                                 function(data) {

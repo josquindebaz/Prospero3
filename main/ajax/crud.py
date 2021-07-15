@@ -1,7 +1,7 @@
 from prospero import settings
 from main.models import *
 from main.helpers import frontend, files, forms, users
-from main.helpers.deletor import deletor
+from main.helpers.deletor import deletor, projects
 from main.importerP1 import builder2BD as builder
 from main import views
 import validators
@@ -12,12 +12,16 @@ def deleteObject(request, data, results):
     objects = []
     for d in data:
         objects.append(frontend.getBDObject(d))
-    print("delete", objects)
-    for obj in objects:
-        deletor.delete(obj)
+    if len(objects) > 0:
+        project = projects.finder.find(objects[0])
+        project.declareAsModified()
+        for obj in objects:
+            deletor.delete(obj)
 
 def changeData(request, data, results):
     object = frontend.getBDObject(data["identity"])
+    project = projects.finder.find(object)
+    project.declareAsModified()
     if "metadata" in data and data["kind"] == "metadata":
         setattr(object, "value", data["value"])
     else:
@@ -28,6 +32,8 @@ def changeData(request, data, results):
 def createText(request, data, results):
     print("createText", data)
     corpus = frontend.getBDObject(data["corpus"])
+    project = projects.finder.find(corpus)
+    project.declareAsModified()
     text = None
     if "text" in data:
         text = data["text"]
@@ -63,6 +69,7 @@ def createText(request, data, results):
 
 def createCorpus(request, data, results):
     project = frontend.getBDObject(data["project"])
+    project.declareAsModified()
     fields = data["fields"]
     nameField = fields["name"]
     name = nameField["value"]
@@ -99,6 +106,8 @@ def createProject(request, data, results):
 
 def createMetadata(request, data, results):
     corpus = frontend.getBDObject(data["corpus"])
+    project = projects.finder.find(corpus)
+    project.declareAsModified()
     fields = data["fields"]
     nameField = fields["name"]
     name = nameField["value"]
@@ -118,6 +127,8 @@ def createMetadata(request, data, results):
 
 def createAssociatedData(request, data, results):
     text = frontend.getBDObject(data["text"])
+    project = projects.finder.find(text)
+    project.declareAsModified()
     form = forms.Form(data["fields"])
     exportType = form.getValue("exportType")
     uriInput = form.getValue("uriInput")
@@ -267,6 +278,8 @@ def modifyGroup(request, data, results):
 
 def changeMetadataPosition(request, data, results):
     item = frontend.getBDObject(data["item"]["identity"])
+    project = projects.finder.find(item)
+    project.declareAsModified()
     parent = item.parent()
     if data["next"]:
         next = frontend.getBDObject(data["next"]["identity"])
@@ -305,3 +318,16 @@ def changeRights(request, data, results):
     for id in deletedIds:
         obj = UserRight.objects.get(id=id)
         deletor.delete(obj)
+
+def selectDico(request, data, results):
+    dico = frontend.getBDObject(data["dico"])
+    project = projects.finder.find(dico)
+    project.declareAsModified()
+    context = views.createContext(request)
+    user = context["user"]
+    project = dico.getProject()
+    conf = project.gotProjectConf(user)
+    if data["selected"]:
+        conf.selectedDicos.add(dico)
+    else:
+        conf.selectedDicos.remove(dico)

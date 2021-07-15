@@ -1,5 +1,6 @@
 from main.models import *
 from main.helpers import frontend, queries
+from main import views
 
 def serializeObject(request, data, results):
     object = frontend.getBDObject(data)
@@ -14,8 +15,16 @@ def serializeTable(request, data, results):
     object = frontend.getBDObject(identity)
     querySet = getattr(object, property)
     items = queries.getObjects(querySet, filters)
-    for item in items:
-        table.append(item.serializeAsTableItem())
+    if property == "dictionnaries":
+        context = views.createContext(request)
+        user = context["user"]
+        conf = object.gotProjectConf(user)
+        selected = conf.selectedDicos.all()
+        for item in items:
+            table.append(item.serializeAsTableItem(selected))
+    else:
+        for item in items:
+            table.append(item.serializeAsTableItem())
     results["filters"] = filters
 
 def serializeUserData(request, data, results):

@@ -6,17 +6,20 @@ class ImportModal extends PModal {
 		new McDropzone(
 			this.node.find(".dropzone-panel"),
 			{
+				multiple: true,
 				fileExtensions : "dic, col, fic, cat, txt, zip",
-				fileChange : function(dropzone, file, loadEvent) {
+				fileChange : function(dropzone, files, loadEvent) {
 				    self.setStateWorking();
 					var formData = new FormData();
-					formData.append('file', file, file.name);
+					$.each(files, function(index, file) {
+                        formData.append('file'+index, file, file.name);
+					});
 					prospero.uploadFile(formData, function(uploadDone, data) {
 						if (uploadDone) {
                             prospero.ajax(
                                 "importData",
                                 {
-									filePath : data.filePath,
+									files : data.files,
 									project : prospero.get($(".project-view")).data,
 									corpus : self.corpus ? self.corpus.identity : null
 								},

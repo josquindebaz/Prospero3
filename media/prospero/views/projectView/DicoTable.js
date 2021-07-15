@@ -91,8 +91,17 @@ class DicoTableItem extends PTableItem {
                 var id = $td.find(".form-check-input").uniqueId().attr("id");
                 $td.find(".form-check-label").attr("for", id);
                 var check = new PCheckInput($td.find("input"));
+                if (data.selected)
+                    check.setValue(true);
                 check.addObserver(function(event) {
-                    console.log("XXX C");
+                    var ajaxData = {
+                        dico: self.identity,
+                        selected: check.getValue()
+                    }
+                    console.log(ajaxData);
+                    prospero.ajax("selectDico", ajaxData, function(data) {
+
+                    });
                 });
             } else
                 $td.text(value);

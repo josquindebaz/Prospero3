@@ -34,6 +34,12 @@ def createProject(name, owner=None):
     obj.save()
     defaultCorpus = createPCorpus("main")
     obj.corpuses.add(defaultCorpus)
+    createProjectConf(obj, owner)
+    return obj
+
+def createProjectConf(project, user):
+    obj = ProjectConf(project=project, puser=user)
+    obj.save()
     return obj
 
 def createDictPackage(name):

@@ -47,7 +47,10 @@ class McDropzone {
                 acceptFiles = acceptFiles + "." + value+",";
             })
         }
-        var $overlay = $('<div class="mc-dropzone"><input type="file" accept="'+acceptFiles+'" title=" " /></div>');
+        var multipleCode = "";
+        if (self.multiple)
+            multipleCode = "multiple";
+        var $overlay = $('<div class="mc-dropzone"><input type="file" accept="'+acceptFiles+'" title=" " '+multipleCode+'/></div>');
         self.node.append($overlay);
         var overlay = $overlay[0];
         
@@ -120,6 +123,33 @@ class McDropzone {
 	    	var input = $fileInput[0];
 	    	var files = input.files;
 	    	if (files.length > 0) {// On part du principe qu'il n'y qu'un seul fichier étant donné que l'on a pas renseigné l'attribut "multiple"
+		    	var filesAreCorrect = true;
+		    	$.each(files, function(index, file) {
+		    	    if (!self.checkExtension(file.name)) {
+		    	        self.badFile(self, file);
+                        filesAreCorrect = false;
+		    	    }
+		    	    return filesAreCorrect;
+		    	});
+		    	if (filesAreCorrect) {
+		    	    var locks = [];
+		    	    $.each(files, function(index, file) {
+    		        	var reader = new FileReader();
+    		        	var lock = $.Deferred();
+    		        	locks.push(lock);
+    		        	reader.onload = function (loadEvent) {
+    		        		lock.resolve();
+    		        	}
+    		        	reader.readAsDataURL(file);
+		    	    });
+                    $.when.apply($,locks).then(function() {
+                        if (!self.multiple)
+                            files = files[0];
+                        self.fileChange(self, files /*, loadEvent */);
+                        input.value="";
+                    });
+		    	}
+		    	/*
 		    	var file = files[0];
 		    	if (self.checkExtension(file.name)) {
     		        if (self.fileChange) {
@@ -133,6 +163,7 @@ class McDropzone {
 		    	} else if (self.badFile) {
 		    	    self.badFile(self, file);
 		    	}
+		    	*/
 	    	}
 	    });
     }

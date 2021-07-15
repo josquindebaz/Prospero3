@@ -180,7 +180,7 @@ class PCheckInput extends PInputField {
         return this.fieldNode.is(":checked");
     }
     setValue(value) {
-        this.fieldNode.val(value);
+        this.fieldNode.prop('checked', value);
     }
     bindChange() {
         var self = this;
@@ -346,12 +346,14 @@ class PDropzone extends PInputField {
 			$dropzone,
 			{
 				fileExtensions : $dropzone.data("extensions"),
-				fileChange : function(dropzone, file, loadEvent) {
+				fileChange : function(dropzone, files, loadEvent) {
 					var formData = new FormData();
-					formData.append('file', file, file.name);
+					$.each(files, function(index, file) {
+                        formData.append('file'+index, file, file.name);
+					});
 					prospero.uploadFile(formData, function(uploadDone, data) {
 						if (uploadDone) {
-                            self.setValue(data.fileUrl);
+                            self.setValue(data.files[0].fileUrl);
                             self.setAsValid();
                             self.notifyObservers({
                                 name: "valueChanged",
