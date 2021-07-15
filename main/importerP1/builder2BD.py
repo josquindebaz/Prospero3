@@ -71,6 +71,16 @@ def findFile(pathP1, rootFolder):
         del dirSeq[0]
     return None
 
+def createPUri(uri):
+    obj = PUri(uri=uri)
+    obj.save()
+    return obj
+
+def createPFile(filePath):
+    obj = PFile(file=filePath)
+    obj.save()
+    return obj
+
 def createPResource(uri, importer=None):
     if uri[1:3] == ":\\":
         obj = PFile(pathP1=uri)

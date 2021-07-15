@@ -19,10 +19,12 @@
                 <label for="exampleInputPassword1" class="form-label txt_m">Password</label>
                 <input type="password" class="form-control form-control-sm" id="exampleInputPassword1">
             </div>
-            <div class="form_item form-check connection-panel-logout">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label txt_s" for="exampleCheck1">Check me out</label>
-            </div>
+            {% if not user.interfaceName == "anonymous" %}
+                <div class="form_item form-check connection-panel-logout">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label txt_s" for="exampleCheck1">Check me out</label>
+                </div>
+            {% endif %}
             <button action-name="log" class="btn btn-primary" type="button">Submit</button>
         </form>
     </div>

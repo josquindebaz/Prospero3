@@ -8,6 +8,9 @@ class PProjectView extends PObject {
 	        self.manageEvent(self.corporaTable, event)
 	    });
 	    this.dicoTable = new DicoTable($(".dico-table"), this);
+	    this.dicoTable.addObserver(function(event) {
+	        self.manageEvent(self.dicoTable, event)
+	    });
 	    this.textTable = new TextTable($(".text-table"), this);
 	    this.textTable.addObserver(function(event) {
 	        self.manageEvent(self.textTable, event)
@@ -65,6 +68,8 @@ class PProjectView extends PObject {
                     self.textTable.setData(null).reload();
                     self.editorPanel.switchTo();
                 }
+                self.dicoTable.deselectAll();
+                self.textTable.deselectAll();
 	        }
 	    } else if (origin == self.textTable) {
 	        if (event.name == "selectionChanged") {
@@ -81,7 +86,13 @@ class PProjectView extends PObject {
                 } else {
                     self.editorPanel.switchTo();
                 }
+                self.dicoTable.deselectAll();
+                self.corporaTable.deselectAll();
 	        }
+	    } else if (origin == self.dicoTable) {
+            self.corporaTable.deselectAll();
+            self.textTable.deselectAll();
+            self.editorPanel.switchTo();
 	    }
     }
 	load() {

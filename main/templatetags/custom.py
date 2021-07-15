@@ -17,3 +17,7 @@ def dateConcise(value):
     else:
         return value.strftime('%d-%m-%Y')
     return json.dumps(value)
+
+@register.filter
+def inArray(value, item):
+    return item in value

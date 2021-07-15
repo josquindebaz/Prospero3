@@ -4,6 +4,7 @@ from main.helpers import frontend, files, forms, users
 from main.helpers.deletor import deletor
 from main.importerP1 import builder2BD as builder
 from main import views
+import validators
 
 def deleteObject(request, data, results):
     if not isinstance(data, list):
@@ -114,6 +115,31 @@ def createMetadata(request, data, results):
         data = builder.createMetaData(name, dataType, "")
         corpus.metaDatas.add(data)
         results["metadata"] = data.serialize()
+
+def createAssociatedData(request, data, results):
+    text = frontend.getBDObject(data["text"])
+    form = forms.Form(data["fields"])
+    exportType = form.getValue("exportType")
+    uriInput = form.getValue("uriInput")
+    file = form.getValue("file")
+    if exportType == "file":
+        source = settings.MEDIA_ROOT+file[len("/media_site/"):]
+        projectFolder = cloud.gotProjectDataFolder(text.getProject())
+        projectFile = projectFolder + files.getFileName(source)
+        projectFile = cloud.findAvailableAbsolutePath(projectFile)
+        files.moveFile(source, projectFile)
+        data = builder.createPFile(projectFile)
+        text.associatedDatas.add(data)
+        results["associatedData"] = data.serialize()
+    else:
+        if validators.url(uriInput):
+            data = builder.createPUri(uriInput)
+            text.associatedDatas.add(data)
+            results["associatedData"] = data.serialize()
+        else:
+            form.setError("uriInput", "This is not a valid uri")
+            results["serverError"] = form.getErrors()
+            return
 
 def createUser(request, data, results):
     form = forms.Form(data["fields"])

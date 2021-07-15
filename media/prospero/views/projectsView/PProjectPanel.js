@@ -5,7 +5,7 @@ class PProjectPanel extends PDBObject {
 	    var self = this;
 	    self.data = $node.data("widget");
 	    if (prospero.interface.userCanWrite())
-	        prospero.initEditionWidgets(self.node, self.data.data, self.data.identity);
+	        prospero.initEditionWidgets(self.node, self.data.data, self.data.identity, true);
 	    self.view = view;
 	    self.menu = new PGenericMenu($(".generic-menu"));
 	    if (prospero.interface.userIsOwner()) {

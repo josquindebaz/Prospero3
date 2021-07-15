@@ -6,7 +6,7 @@ from datetime import datetime
 from django.utils import timezone
 import pytz
 from django.contrib.auth.models import *
-from main.helpers import cloud, files, rights
+from main.helpers import cloud, files, projects
 
 CategoryType = (
     ('ENTITY', 'ENTITY'),
@@ -92,6 +92,9 @@ class PObject(models.Model) :
 
     def tagIds(self):
         return list(self.tags.values_list('id', flat=True))
+
+    def getProject(self):
+        return projects.finder.find(self)
 
 class AugmentedData(PObject):
 
@@ -483,6 +486,38 @@ class PFile(PResource) :
         else:
             return self
 
+    def serialize(self):
+        filePath = str(self.file)
+        href = cloud.getMediaRelativeUrl(filePath)
+        projectFolder = cloud.gotProjectDataFolder(self.getProject())
+        value = filePath[len(projectFolder):]
+        data = {
+            "identity": self.serializeIdentity(),
+            "type": "PFile",
+            "value": value,
+            "href": href
+        }
+        return data
+
+class PUri(PResource) :
+
+    uri = models.URLField(blank=True)
+
+    def __str__(self):
+        return "[" + str(self.id) + ":PUri] " + self.uri
+
+    def getRealInstance(self):
+        return self
+
+    def serialize(self):
+        data = {
+            "identity": self.serializeIdentity(),
+            "type": "PUri",
+            "value": self.uri,
+            "href": self.uri
+        }
+        return data
+
 class PText(AugmentedData) :
 
     text = models.TextField(blank=True)
@@ -546,6 +581,11 @@ class PText(AugmentedData) :
             if not metaData.name in ignoredNames:
                 metaDatas.append(metaData.serialize())
         data["metaDatas"] = metaDatas
+        associatedDatas = []
+        for d in self.associatedDatas.all():
+            d = d.getRealInstance()
+            associatedDatas.append(d.serialize())
+        data["associatedDatas"] = associatedDatas
         return data
 
     def serializeAsTableItem(self):
@@ -622,16 +662,6 @@ class Fiction(DictPackage) :
 
     def __str__(self):
         return "[" + str(self.id) + ":Fiction] " + self.name
-
-    def getRealInstance(self):
-        return self
-
-class PUri(PResource) :
-
-    uri = models.URLField(blank=True)
-
-    def __str__(self):
-        return "[" + str(self.id) + ":PUri] " + self.uri
 
     def getRealInstance(self):
         return self

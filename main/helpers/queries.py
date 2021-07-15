@@ -1,6 +1,6 @@
 from main.models import *
 from django.db.models import Q
-from main.helpers import queries
+from main.helpers import rights
 
 def getObjects(querySet, filters):
     sorting = filters["sort"]

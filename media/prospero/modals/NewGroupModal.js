@@ -4,7 +4,7 @@ class NewGroupModal extends PModal {
 	    super($node);
 	    var self = this;
 		self.form = new PForm(self.node.find(".modal-body"));
-		self.form.addField("thumbnail", new PDropzone(self.node.find(".thumbnail-field")));
+		self.form.addField("thumbnail", new PUserDropzone(self.node.find(".thumbnail-field")));
 		self.form.addField("username", new PTextInput(self.node.find(".username-field")));
 
 	    self.acInput = new PAutoCompleteInput($node.find(".user-choice-field"));

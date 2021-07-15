@@ -1,6 +1,6 @@
 TODO 30/06/2021
 	multi-upload
-	dans modale body : txt_l => text => m
+OK	dans modale body : txt_l => text => m
 	session utilisateur avec projet en cours, recherche
 	recherche page projets
 	page dictionnaire

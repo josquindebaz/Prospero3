@@ -40,7 +40,7 @@ class McDropzone {
         var position = self.node.css("position");
         if (position == "static")
             self.node.css("position", "relative");
-        var acceptFiles = "image/*";
+        var acceptFiles = "*"; /*image/*";*/
         if (self.fileExtensions) {
             acceptFiles = "";
             $.each(self.fileExtensions, function(index, value) {

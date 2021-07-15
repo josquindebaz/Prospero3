@@ -1,5 +1,4 @@
 	quand on supprime un user qui a des projets, on fait quoi de ces projets ?
-
 	quand on créé le filename, on le génère à chaque, ou bien (sauvegarde en BD au risque d'avoir un nom pourri mais traçable)
 	on ne peut pas générer l'ident du ctx d'un texte créé dans P3 ...
 

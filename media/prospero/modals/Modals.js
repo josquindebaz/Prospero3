@@ -130,9 +130,14 @@ class Modals {
         self.editGroupModal.show(group);
         return doneLock;
 	}
-
-
-
-
+	openNewAssociatedData(text) {
+        var self = this;
+        if (self.newAssociatedDataModal == null)
+            self.newAssociatedDataModal = new NewAssociatedDataModal($(".new-associated-data-modal"));
+        var doneLock = $.Deferred();
+        self.newAssociatedDataModal.setDoneLock(doneLock);
+        self.newAssociatedDataModal.show(text);
+        return doneLock;
+	}
 }
 var modals = new Modals();

@@ -57,10 +57,12 @@ def getUserData(context):
         "id": user.id,
     }
     project = context["project"]
+    theRights = []
     if project:
-        userData["rights"] = rights.getRights(user, project)
-    else:
-        userData["rights"] = ""
+        theRights = rights.getRights(user, project)
+    userData["rights"] = theRights
+    user.canWrite = "Write" in theRights or "Owner" in theRights
+    user.isOwner = "Owner" in theRights
     return userData
 
 def getCurrentUser(request):

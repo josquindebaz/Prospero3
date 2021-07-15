@@ -29,12 +29,19 @@ class PForm extends PObject {
             self.fieldsInError.push(field);
         });
 	}
-	clear() {
+	setError(fieldName, errorMessage) {
+	    var field = this.getField(fieldName);
+	    field.setAsInvalid(errorMessage);
+        this.fieldsInError.push(field);
+	}
+	clear(exceptFieldNames) {
 	    var self = this;
 	    $.each(this.fields, function(name, field) {
-	        if (_.contains(self.fieldsInError, field))
-	            field.setAsValid();
-	        field.clear();
+	        if (!_.contains(exceptFieldNames, name)) {
+                //if (_.contains(self.fieldsInError, field))
+                    field.setAsValid();
+                field.clear();
+	        }
 	    });
 	    this.fieldsInError = [];
 	}

@@ -240,6 +240,19 @@ class PSelect extends PInputField {
 	initFieldNode() {
 	    this.fieldNode = this.node.find("select").addBack('select');
 	}
+    bindChange() {
+        var self = this;
+	    if (self.fieldNode) {
+            self.fieldNode.bind("change", function(event) {
+                self.setAsValid();
+                self.notifyObservers({
+                    name: "valueChanged",
+                    target: self,
+                    original: event
+                });
+            });
+	    }
+    }
     getValue() {
         return this.node.find("option:selected").attr("value");
     }
@@ -371,6 +384,28 @@ class PDropzone extends PInputField {
 	}
 	setValue(value) {
 	    this.filePath = value;
+	}
+	clear() {
+	    this.setValue(null);
+	}
+    setAsInvalid(message) {
+        if (message) {
+            this.node.find(".feedbacker").text(message);
+            this.node.find(".feedbacker").removeClass("hidden");
+        }
+    }
+    setAsValid() {
+        this.node.find(".feedbacker").text("");
+        this.node.find(".feedbacker").addClass("hidden");
+    }
+}
+class PUserDropzone extends PDropzone {
+
+	constructor($node) {
+	    super($node);
+	}
+	setValue(value) {
+	    super.setValue(value);
 	    if (value == null) {
             this.node.find(".dropzone-panel").addClass("novalue");
             this.node.find(".dropzone-panel").css("background-image", 'url(media_site/assets/images/icon_dropzone.png)');
@@ -378,9 +413,6 @@ class PDropzone extends PInputField {
 	        this.node.find(".dropzone-panel").removeClass("novalue");
 	        this.node.find(".dropzone-panel").css("background-image", 'url("'+value+'")');
 	    }
-	}
-	clear() {
-	    this.setValue(null);
 	}
 }
 class PAutoCompleteInput extends PInputField {
