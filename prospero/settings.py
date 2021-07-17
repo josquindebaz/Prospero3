@@ -34,7 +34,7 @@ try: # if on server, turn debug off
 except:
     DOMAIN = DOMAIN_LOCAL
 
-MEDIA_TIMESTAMP = 3
+MEDIA_TIMESTAMP = 4
 """ GENERATED END   """
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
