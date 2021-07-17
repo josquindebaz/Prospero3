@@ -55,6 +55,8 @@ def getUserData(context):
     user = context["user"]
     userData = {
         "id": user.id,
+        "publicGroupId": rights.getPublicGroup().id,
+        "anonymousUserId" : rights.getAnonymousUser().id
     }
     project = context["project"]
     theRights = []
@@ -71,4 +73,4 @@ def getCurrentUser(request):
         if user:
             return user.getRealInstance()
     except:
-        return ProsperoUser.objects.get(username="anonymous").getRealInstance()
+        return rights.getAnonymousUser()

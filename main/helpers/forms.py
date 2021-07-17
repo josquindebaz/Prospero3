@@ -4,7 +4,10 @@ class Form:
         self.fields = fields
 
     def getValue(self, fieldName):
-        return self.fields[fieldName]["value"]
+        try:
+            return self.fields[fieldName]["value"]
+        except:
+            return None
 
     def setError(self, fieldName, errorMessage):
         self.fields[fieldName]["error"] = errorMessage

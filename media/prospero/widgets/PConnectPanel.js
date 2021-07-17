@@ -8,7 +8,7 @@ class PConnectPanel extends PObject {
 		self.form.addField("password", new PTextInput(self.node.find(".connection-panel-password")));
 		var $logout = self.node.find(".connection-panel-logout");
 		if ($logout.length > 0)
-		    self.form.addField("logout", new PCheckInput());
+		    self.form.addField("logout", new PCheckInput($logout));
 		self.validateButton = new PButton(self.node.find("[action-name=log]"));
 		self.validateButton.addObserver(function(event) {
             event.original.preventDefault();

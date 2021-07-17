@@ -1,5 +1,6 @@
 from django.db.models import Q
 publicGroup = None
+anonymousUser = None
 
 def getPublicGroup():
     global publicGroup
@@ -8,7 +9,12 @@ def getPublicGroup():
         publicGroup = PGroup.objects.get(username="Public")
     return publicGroup
 
-
+def getAnonymousUser():
+    global anonymousUser
+    if not anonymousUser:
+        from main.models import PUser
+        anonymousUser = PUser.objects.get(username="anonymous")
+    return anonymousUser
 
 def canWrite(user, project):
     rights = getRights(user, project)

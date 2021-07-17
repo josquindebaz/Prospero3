@@ -119,6 +119,7 @@ def settingsView(request):
     context["page"] = "settings"
     pageData = sessions.getProjectsData(request)
     sessions.setPageDataInContext(pageData, context)
+    sessions.setUserDataInContext(context)
     context["session"] = pageData
     currentProjectId = pageData["currentProjectId"]
     project = None

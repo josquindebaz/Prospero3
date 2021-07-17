@@ -83,11 +83,7 @@ class PUsersView extends PObject {
             });
 	    });
         self.menu.setEnabled("delete", false);
-	    self.menu.addAction("affectUsers", "Affect users", function() {
-            console.log("Affect users");
-	    });
-        self.menu.setEnabled("affectUsers", false);
-
+        self.userData = prospero.interface.getUserData();
 	}
 	setData(data) {
         this.data = data;
@@ -103,20 +99,25 @@ class PUsersView extends PObject {
                 if (items.length == 0) {
                     self.menu.setEnabled("edit", false);
                     self.menu.setEnabled("delete", false);
-                    self.menu.setEnabled("affectUsers", false);
                 } else if (items.length == 1) {
                     var item = items[0];
-                    self.menu.setEnabled("edit", true);
-                    self.menu.setEnabled("delete", true);
-                    if (item.identity.model == "PGroup") {
-                        self.menu.setEnabled("affectUsers", true);
+                    var isCurrentUser = prospero.interface.userData.id == item.identity.id;
+                    if (item.identity.id != self.userData.anonymousUserId && item.identity.id != self.userData.publicGroupId) {
+                        self.menu.setEnabled("edit", true);
+                        self.menu.setEnabled("delete", !isCurrentUser);
                     } else {
-                        self.menu.setEnabled("affectUsers", false);
+                        self.menu.setEnabled("edit", false);
+                        self.menu.setEnabled("delete", false);
                     }
                 } else {
+                    var canDelete = true;
+                    $.each(items, function(index, item) {
+                        if (item.identity.id == self.userData.anonymousUserId || item.identity.id == self.userData.publicGroupId || prospero.interface.userData.id == item.identity.id)
+                            canDelete = false;
+                        return canDelete;
+                    });
                     self.menu.setEnabled("edit", false);
-                    self.menu.setEnabled("delete", true);
-                    self.menu.setEnabled("affectUsers", false);
+                    self.menu.setEnabled("delete", canDelete);
                 }
 	        }
 	    }

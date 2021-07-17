@@ -109,11 +109,11 @@ def gotPTag(name):
         tag.save()
         return tag
 
-def createProject(name, owner=None, randomCreationDate=True, tags=None):    
+def createProject(name, owner=None, randomCreationDate=True, tags=None, description=loremIpsum):
     if not owner:
         owner = random.sample(possibleCreators, 1)[0]
     print("createProject", name, owner)
-    p = Project(name=name, owner=owner, description=loremIpsum)    
+    p = Project(name=name, owner=owner, description=description)    
     p.save()
     if randomCreationDate:
         p.creationDate = random_date("1/1/2010 1:30 PM", "7/6/2021 4:50 AM", '%m/%d/%Y %I:%M %p')
@@ -137,7 +137,7 @@ def createProject(name, owner=None, randomCreationDate=True, tags=None):
             createUserRight(user, random.sample(possibleRights, 1)[0], p)
     if not publicGroup in usersInRights and random.randint(0, 1) == 1:
         createUserRight(publicGroup, random.sample(possibleRights, 1)[0], p)
-    return p
+    return p, usersInRights
 
 def createUserRight(user, right, project):
     print("createUserRight", user, right, project)
@@ -192,9 +192,12 @@ def createFakeObjects():
     global publicGroup
     publicGroup = createPGroup("Public", "/media_site/testData/images/groupPublic.png", inPossibleUsersWithRights=False)
 
-    project = createProject("Project test", josquin, randomCreationDate=False)
-    createUserRight(publicGroup, "Owner", project)
-    createUserRight(francis, "Write", project)
+    description = loremIpsum+loremIpsum+loremIpsum+loremIpsum+loremIpsum+loremIpsum
+    project, usersInRights = createProject("Project test", josquin, randomCreationDate=False, description=description)
+    if not publicGroup in usersInRights:
+        createUserRight(publicGroup, "Owner", project)
+    if not francis in usersInRights:
+        createUserRight(francis, "Write", project)
     createAugmentedDatas(project.corpuses.first())
 
     for i in range(0, 5):

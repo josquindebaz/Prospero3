@@ -9,6 +9,7 @@ class NewGroupModal extends PModal {
 
 	    self.acInput = new PAutoCompleteInput($node.find(".user-choice-field"));
         prospero.getUserData(function(userData) {
+            userData = _.filter(userData, function(user){ return user.identity.id != prospero.interface.getUserData().anonymousUserId; });
             self.acInput.setData(userData);
         });
 	    self.userList = new PUserList($node.find(".users-in-group"));
