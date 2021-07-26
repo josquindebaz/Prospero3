@@ -43,7 +43,8 @@ def importData(project, rootFolder, corpus, builder):
             if corpus == None:
                 corpus = project.gotDefaultCorpus()
                 importedObjects.append(corpus)
-            corpus.texts.add(text)
+            corpus.addText(text)
+            #corpus.texts.add(text)
     return importedObjects
 
 p1CatTypeTranslation = {

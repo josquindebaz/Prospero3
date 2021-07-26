@@ -39,6 +39,7 @@ class PForm extends PObject {
 	    $.each(this.fields, function(name, field) {
 	        if (!_.contains(exceptFieldNames, name)) {
                 //if (_.contains(self.fieldsInError, field))
+                if (field.setAsValid)
                     field.setAsValid();
                 field.clear();
 	        }

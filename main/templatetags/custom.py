@@ -21,3 +21,11 @@ def dateConcise(value):
 @register.filter
 def inArray(value, item):
     return item in value
+
+@register.filter
+def txtConcise(value, maxChars):
+    if len(value) <= maxChars:
+        return value
+    else:
+        return value[:maxChars-4]+" ..."
+

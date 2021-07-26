@@ -265,9 +265,21 @@ class PCorpus(AugmentedData) :
     #ATTRIBUTES
     name = models.CharField(blank=True, max_length=255)
     author = models.CharField(blank=True, max_length=255)
+    """ NEW !! """
+    nbTexts = models.IntegerField(null=True, blank=True, default=0)
 
     #RELATIONS
     texts = models.ManyToManyField('PText', blank=True, related_name='corpus')
+
+    def addText(self, text):
+        self.texts.add(text)
+        self.nbTexts = self.nbTexts + 1
+        self.save()
+
+    def removeText(self, text):
+        self.texts.remove(text)
+        self.nbTexts = self.nbTexts - 1
+        self.save()
 
     def __str__(self):
         return "[" + str(self.id) + ":PCorpus]"
@@ -324,15 +336,13 @@ class PCorpus(AugmentedData) :
             "values" : {
                 "name" : self.name,
                 "author" : self.author,
+                "nbTexts" : self.nbTexts,
                 "tags" : self.tagList()
             }
         }
 
     def getFixedDataNames(self):
         return ["name", "author"]
-
-    def nbTexts(self):
-        return self.texts.count()
 
     def nbTextChar(self):
         nb = 0
@@ -500,9 +510,7 @@ class PFile(PResource) :
     pathP1 = models.CharField(blank=True, max_length=255)
 
     def delete(self):
-        print("delete pfile")
         if self.file and len(PFile.objects.filter(file=self.file)) == 1:
-            print("delete file")
             files.deleteFile(str(self.file), True)
         super(PFile, self).delete()
 
@@ -563,6 +571,13 @@ class PText(AugmentedData) :
     def save(self, *args, **kwargs):
         self.noc = len(self.text)
         super(PText, self).save(*args, **kwargs)
+
+    def delete(self):
+        try:
+            self.corpus.all()[0].removeText(self)
+        except:
+            pass
+        super(PText, self).delete()
 
     def getFixedDataNames(self):
         return ["title", "date", "source", "author"]

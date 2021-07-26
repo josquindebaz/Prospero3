@@ -3,7 +3,7 @@
     <div class="main_header_left">
         <h1>{{ project.name }}</h1>
         <h2>{{ project.creationDate|dateConcise }} - {{ project.owner.interfaceName }}</h2>
-        <h2>{{ project.description }}</h2>
+        <h2>{{ project.description|txtConcise:300 }}</h2>
     </div>
     <div class="main_header_right">
         {% if user.isOwner %}

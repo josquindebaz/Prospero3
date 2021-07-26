@@ -65,7 +65,8 @@ def createText(request, data, results):
             results["serverError"] = str(e)
         files.deleteFile(folder)
     if text:
-        corpus.texts.add(text)
+        corpus.addText(text)
+        #corpus.texts.add(text)
         results["text"] = text.serializeAsTableItem()
 
 def createCorpus(request, data, results):

@@ -95,6 +95,9 @@ class PProjectView extends PObject {
             self.editorPanel.switchTo();
 	    }
     }
+    reload() {
+        return this.load();
+    }
 	load() {
 	    var lock = $.Deferred();
 	    var lock1 = this.corporaTable.reload();

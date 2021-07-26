@@ -51,8 +51,8 @@ def getProjects(pagination, filters, user):
     #querySet = Project.objects.all()
     users = [user, rights.getPublicGroup()]
     users.extend(user.groups.all())
-    #querySet = Project.objects.filter(userRights__user__in=users).distinct()
-    querySet = Project.objects.all() # to delete
+    querySet = Project.objects.filter(userRights__user__in=users).distinct()
+    #querySet = Project.objects.all() # to delete
     if search:
         querySet = querySet.filter(corpuses__texts__text__icontains=search).distinct()
     querySet = querySet.order_by(filters["sort"])

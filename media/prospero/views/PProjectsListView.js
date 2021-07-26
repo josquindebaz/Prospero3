@@ -142,23 +142,45 @@ class PProjectsListView extends PObject {
 	}
 	openInfos(project) {
 	    var self = this;
-	    var $projectInfosContainer = $(".project-infos-container", self.node);
 	    if (project && self.currentProject != project) {
             self.currentProject = project;
+            self.loadProjectInfos(true, function() {
+                self.showModalInfos();
+            });
+            /*
             var renderData = {
                 project: self.currentProject.identity,
                 setCurrentProject: true
             }
             prospero.ajax("renderProjectInfos", renderData, function(data) {
                 prospero.interface.setUserData(data.userData);
+                var $projectInfosContainer = $(".project-infos-container", self.node);
                 var $projectInfos = prospero.nodes(data.html);
                 $projectInfosContainer.empty();
                 $projectInfosContainer.append($projectInfos);
                 self.initProjectInfos($projectInfos);
                 self.showModalInfos();
             });
+            */
 	    } else
 	        self.showModalInfos();
+	}
+	loadProjectInfos(setCurrentProject, callback) {
+	    var self = this;
+	    var renderData = {
+	        project: self.currentProject.identity,
+	        setCurrentProject: setCurrentProject == true
+	    }
+        prospero.ajax("renderProjectInfos", renderData, function(data) {
+            prospero.interface.setUserData(data.userData);
+            var $projectInfosContainer = $(".project-infos-container", self.node);
+            var $projectInfos = prospero.nodes(data.html);
+            $projectInfosContainer.empty();
+            $projectInfosContainer.append($projectInfos);
+            self.initProjectInfos($projectInfos);
+            if (callback)
+                callback();
+        });
 	}
 	showModalInfos() {
         var self = this;
