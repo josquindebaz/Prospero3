@@ -14,7 +14,8 @@ def deleteObject(request, data, results):
         objects.append(frontend.getBDObject(d))
     if len(objects) > 0:
         project = projects.finder.find(objects[0])
-        project.declareAsModified()
+        if project:
+            project.declareAsModified()
         for obj in objects:
             deletor.delete(obj)
 

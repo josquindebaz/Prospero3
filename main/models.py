@@ -492,6 +492,11 @@ class PFile(PResource) :
     file = models.FileField(blank=True, upload_to="upload")
     pathP1 = models.CharField(blank=True, max_length=255)
 
+    def delete(self):
+        if self.file:
+            files.deleteFile(str(self.file))
+        super(PFile, self).delete()
+
     def __str__(self):
         return "[" + str(self.id) + ":PFile] " + self.file.name
 
