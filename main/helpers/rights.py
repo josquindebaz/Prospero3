@@ -5,15 +5,33 @@ anonymousUser = None
 def getPublicGroup():
     global publicGroup
     if not publicGroup:
-        from main.models import PGroup
+        publicGroup = gotPublicGroup()
+    return publicGroup
+
+def gotPublicGroup():
+    from main.models import PGroup
+    try:
         publicGroup = PGroup.objects.get(username="Public")
+    except:
+        from main.importerP1 import builder2BD as builder
+        publicGroup = builder.createPGroup("Public")
+        publicGroup.setThumbnailUrl("/media_site/testData/images/groupPublic.png")
     return publicGroup
 
 def getAnonymousUser():
     global anonymousUser
     if not anonymousUser:
-        from main.models import PUser
+        anonymousUser = gotAnonymousUser()
+    return anonymousUser
+
+def gotAnonymousUser():
+    from main.models import PUser
+    try:
         anonymousUser = PUser.objects.get(username="anonymous")
+    except:
+        from main.importerP1 import builder2BD as builder
+        anonymousUser = builder.createPUser("anonymous")
+        anonymousUser.setThumbnailUrl("/media_site/testData/images/anonymous_user.jpg")
     return anonymousUser
 
 def canWrite(user, project):

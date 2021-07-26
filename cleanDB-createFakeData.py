@@ -157,7 +157,8 @@ def createAugmentedDatas(object):
 
 def createPUser(username, first_name, last_name, thumbnail=None, inPossibleCreators=True, inPossibleUsersWithRights=True, setPassword=True):
     print("createPUser", username)
-    user = PUser(username=username, first_name=first_name, last_name=last_name)
+    user = builder.createPUser(username, first_name, last_name)
+    #user = PUser(username=username, first_name=first_name, last_name=last_name)
     user.save()
     if not thumbnail:
         thumbnail = "/media_site/testData/images/fake_thumbnail.jpg"
@@ -173,7 +174,8 @@ def createPUser(username, first_name, last_name, thumbnail=None, inPossibleCreat
 
 def createPGroup(username, thumbnail=None, inPossibleUsersWithRights=True):
     print("createPGroup", username)
-    group = PGroup(username=username)
+    group = builder.createPGroup(username)
+    #group = PGroup(username=username)
     group.save()
     if not thumbnail:
         thumbnail = "/media_site/testData/images/fake_thumbnail.jpg"

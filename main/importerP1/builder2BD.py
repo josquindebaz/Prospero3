@@ -140,7 +140,7 @@ def createMetaData(name, type, value):
     obj.save()
     return obj
 
-def createPUser(username, first_name, last_name):
+def createPUser(username, first_name="", last_name=""):
     obj = PUser(username=username, first_name=first_name, last_name=last_name)
     obj.save()
     return obj
