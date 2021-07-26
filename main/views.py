@@ -70,20 +70,27 @@ def index(request):
 def project(request, id):
     context = createContext(request)
     context["page"] = "project"
-    pageData = sessions.getProjectsData(request)
-    sessions.setPageDataInContext(pageData, context)
-    sessions.setUserDataInContext(context)
-    project = Project.objects.get(id=id)
-    context["project"] = project
+    pageData = sessions.getPageData(request, context)
+    if str(pageData["currentProjectId"]) != str(id):
+        pageData["currentProjectId"] = str(id)
+        sessions.setProjectsData(request, pageData)
+    project = sessions.computeCurrentProject(pageData, request, context)
+    #context["projectData"] = project.serializeDataDef()
+    context["projectData"] = project.serializeIdentity()
+    user = context["user"]
+    sessions.computeUserData(user, project, context)
     project.declareAsOpened()
-    context["projectData"] = json.dumps(project.serializeIdentity())
     template = loader.get_template('main/prospero/project.html')
     return HttpResponse(template.render(context, request))
 
 def projects_list(request):
     context = createContext(request)
     context["page"] = "projects-list"
-    pageData = sessions.getProjectsData(request)
+    pageData = sessions.getPageData(request, context)
+    project = sessions.computeCurrentProject(pageData, request, context)
+    if project:
+        context["projectRights"] = UserRight.objects.filter(project=project)
+        context["projectData"] = project.serializeDataDef()
     pagination = {
         "frameSize": 30,
         "page": 0,
@@ -92,15 +99,18 @@ def projects_list(request):
     context["pagination"] = pagination
     user = context["user"]
     context["projects"] = queries.getProjects(pagination, pageData, user)
-    sessions.setPageDataInContext(pageData, context)
-    sessions.setUserDataInContext(context)
+    sessions.computeUserData(user, project, context)
     template = loader.get_template('main/prospero/projects-list.html')
     return HttpResponse(template.render(context, request))
 
 def projects_mosaic(request):
     context = createContext(request)
     context["page"] = "projects-mosaic"
-    pageData = sessions.getProjectsData(request)
+    pageData = sessions.getPageData(request, context)
+    project = sessions.computeCurrentProject(pageData, request, context)
+    if project:
+        context["projectRights"] = UserRight.objects.filter(project=project)
+        context["projectData"] = project.serializeDataDef()
     pagination = {
         "frameSize": 30,
         "page": 0,
@@ -109,26 +119,20 @@ def projects_mosaic(request):
     context["pagination"] = pagination
     user = context["user"]
     context["projects"] = queries.getProjects(pagination, pageData, user)
-    sessions.setPageDataInContext(pageData, context)
-    sessions.setUserDataInContext(context)
+    sessions.computeUserData(user, project, context)
     template = loader.get_template('main/prospero/projects-mosaic.html')
     return HttpResponse(template.render(context, request))
 
 def settingsView(request):
     context = createContext(request)
     context["page"] = "settings"
-    pageData = sessions.getProjectsData(request)
-    sessions.setPageDataInContext(pageData, context)
-    sessions.setUserDataInContext(context)
-    context["session"] = pageData
-    currentProjectId = pageData["currentProjectId"]
-    project = None
-    if currentProjectId:
-        try:
-            project = Project.objects.get(id=currentProjectId)
-        except:
-            None
-    context["project"] = project
+    pageData = sessions.getPageData(request, context)
+    project = sessions.computeCurrentProject(pageData, request, context)
+    #if project:
+    #    context["projectData"] = project.serializeDataDef()
+    user = context["user"]
+    sessions.computeUserData(user, project, context)
+    #context["session"] = pageData
     template = loader.get_template('main/prospero/settings.html')
     return HttpResponse(template.render(context, request))
 

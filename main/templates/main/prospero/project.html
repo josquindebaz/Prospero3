@@ -1,10 +1,11 @@
 {% extends 'main/prospero/structure/base.html' %}
+{% load custom %}
 {% block header %}
 	{% include "main/prospero/project/header.html" %}
 {% endblock %}
 {% block content %}
 	<div class="main_content ">
-		<section class="row project-view" data-object='{{ projectData|safe }}'>
+		<section class="row project-view" data-object='{{ projectData|dump }}'>
 			<div class="col screenHeight">
                 <div id="layout" style="width: 100%; height: 100%;"></div>
 			</div>

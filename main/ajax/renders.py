@@ -17,13 +17,17 @@ def renderUserTable(request, data, results):
 def renderProjectInfos(request, data, results):
     project = frontend.getBDObject(data["project"])
     context = views.createContext(request)
-    projectsData = sessions.getProjectsData(request)
+    pageData = sessions.getPageData(request, context)
     if data["setCurrentProject"]:
-        projectsData["currentProjectId"] = data["project"]["id"]
-        sessions.setProjectsData(request, projectsData)
-    sessions.setPageDataInContext(projectsData, context)
-    context["project"] = project
+        pageData["currentProjectId"] = str(project.id)
+        sessions.setProjectsData(request, pageData)
+    project = sessions.computeCurrentProject(pageData, request, context)
+    if project:
+        context["projectRights"] = UserRight.objects.filter(project=project)
+        context["projectData"] = project.serializeDataDef()
     user = context["user"]
     template = loader.get_template('main/prospero/project/project-infos.html')
     results["html"] = template.render(context, request)
-    results["userData"] = sessions.getUserData(context)
+
+    results["userData"] = sessions.computeUserData(user, project)
+    #results["userData"] = sessions.getUserData(context)
