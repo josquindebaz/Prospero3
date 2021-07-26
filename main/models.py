@@ -170,6 +170,13 @@ class Project(AugmentedData) :
 
     owner = models.ForeignKey('ProsperoUser', null=True, on_delete=models.SET_NULL, related_name='ownedProjects')
 
+    def delete(self):
+        folder = cloud.getProjectDataFolder(self)
+        if files.exists(folder):
+            print("delete projectFolder")
+            files.deleteFile(folder)
+        super(Project, self).delete()
+
     def save(self, *args, **kwargs):
         if not self.pk:
             self.creationDate = timezone.now()
@@ -493,8 +500,10 @@ class PFile(PResource) :
     pathP1 = models.CharField(blank=True, max_length=255)
 
     def delete(self):
-        if self.file:
-            files.deleteFile(str(self.file))
+        print("delete pfile")
+        if self.file and len(PFile.objects.filter(file=self.file)) == 1:
+            print("delete file")
+            files.deleteFile(str(self.file), True)
         super(PFile, self).delete()
 
     def __str__(self):

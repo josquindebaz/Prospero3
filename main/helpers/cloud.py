@@ -42,5 +42,10 @@ def getMediaRelativeUrl(path):
     return "/media_site/"+getMediaRelativePath(path)
 
 def gotProjectDataFolder(project):
-    folder = settings.MEDIA_ROOT + "projectData/" + project.name + "/"
-    return files.createFolder(folder)
+    folder = getProjectDataFolder(project)
+    if not files.exists(folder):
+        files.createFolder(folder)
+    return folder
+
+def getProjectDataFolder(project):
+    return settings.MEDIA_ROOT + "projectData/" + project.name + "/"

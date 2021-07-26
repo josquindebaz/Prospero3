@@ -9,9 +9,16 @@ from django.contrib import admin
 
 # Register your models here.
 from django.apps import apps
-models = apps.get_models("main")
-for model in models:
-    if model.__module__ == "main.models":
-        print(model, model.objects.count())
-        for x in model.objects.all():
-            x.delete()
+
+def deleteAll():
+    models = apps.get_models("main")
+    for model in models:
+        if model.__module__ == "main.models":
+            print(model, model.objects.count())
+            for x in model.objects.all():
+                try:
+                    x.getRealInstance().delete()
+                except:
+                    x.delete()
+
+deleteAll()

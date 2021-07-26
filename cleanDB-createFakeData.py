@@ -20,7 +20,10 @@ def deleteAll():
         if model.__module__ == "main.models":
             print(model, model.objects.count())
             for x in model.objects.all():
-                x.delete()
+                try:
+                    x.getRealInstance().delete()
+                except:
+                    x.delete()
 
 # random_date("1/1/2008 1:30 PM", "1/1/2009 4:50 AM", '%m/%d/%Y %I:%M %p')
 def random_date(start, end, time_format):
@@ -113,7 +116,9 @@ def createProject(name, owner=None, randomCreationDate=True, tags=None, descript
     if not owner:
         owner = random.sample(possibleCreators, 1)[0]
     print("createProject", name, owner)
-    p = Project(name=name, owner=owner, description=description)    
+    p = builder.createProject(name, owner)
+    #p = Project(name=name, owner=owner, description=description)
+    p.description = description    
     p.save()
     if randomCreationDate:
         p.creationDate = random_date("1/1/2010 1:30 PM", "7/6/2021 4:50 AM", '%m/%d/%Y %I:%M %p')
@@ -127,9 +132,9 @@ def createProject(name, owner=None, randomCreationDate=True, tags=None, descript
     for tag in tagList:
         tag = gotPTag(tag.strip())
         p.tags.add(tag)
-    corpus = PCorpus(name="main", author="John")
-    corpus.save()
-    p.corpuses.add(corpus)
+    #corpus = PCorpus(name="main", author="John")
+    #corpus.save()
+    #p.corpuses.add(corpus)
     createUserRight(owner, "Owner", p)
     usersInRights = random.sample(possibleUsersWithRights, random.randint(0, 3))
     for user in usersInRights:

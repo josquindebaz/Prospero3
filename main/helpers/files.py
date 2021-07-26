@@ -83,11 +83,14 @@ def renameFile(filePath, newName, overwrite=False):
     os.rename(filePath, newFilePath)
     return newFilePath
 
-def deleteFile(file):
+def deleteFile(file, deleteEmptyFolder=False):
     if os.path.isdir(file):
         shutil.rmtree(file)
     else:
         os.remove(file)
+    if deleteEmptyFolder:
+        folder = getFolder(file)
+        cleanFolder(folder)
 
 def cleanFolder(folder):
     if isFolderEmpty(folder):
@@ -106,9 +109,12 @@ def exists(file):
     return os.path.exists(file)
 
 def gotFolder(file):
-    folder = os.path.dirname(file) + "/"
+    folder = getFolder(file)
     createFolder(folder)
     return folder
+
+def getFolder(file):
+    return os.path.dirname(file) + "/"
 
 def createFolder(folder):
     if not os.path.exists(folder):
