@@ -13,9 +13,8 @@
 		<section class="hidden">
 			{% include "main/prospero/project/corpusTablePanel.html" %}
 			{% include "main/prospero/project/dicoTablePanel.html" %}
-			{% include "main/prospero/project/textTablePanel.html" %}
-			{% include "main/prospero/project/editorPanel.html" %}
-
+			{% include "main/prospero/project/textPanel/switcherPanel.html" %}
+			{% include "main/prospero/project/editorPanel/switcherPanel.html" %}
 		</section>
 	</div>
 	<script>
@@ -41,7 +40,7 @@
 				prospero.wait(lock2, function() {
 					leftLayout.getPanel('main').append($(".corpora-table"));
 					leftLayout.getPanel('preview').append($(".dico-table"));
-					mainLayout.getPanel('main').append($(".text-table"));
+					mainLayout.getPanel('main').append($(".middle-panel"));
 					mainLayout.getPanel('right').append($(".editor-panel"));
 
 					var $projectView = $(".project-view");

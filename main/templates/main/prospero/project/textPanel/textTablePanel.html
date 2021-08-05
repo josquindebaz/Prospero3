@@ -1,0 +1,61 @@
+<div class="card-switcher-panel text-table">
+
+    <div class="card-header">
+        <div class="left">
+            <h3 class="title txt_25">Texts</h3>
+        </div>
+        <div class="right">
+            {% include "main/prospero/widgets/generic-menu.html" %}
+        </div>
+    </div>
+    <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th property-name="title">
+                        <div class="table-col-title">
+                            Title
+                            {% include "main/prospero/structure/table/sort-filters.html" %}
+                        </div>
+                    </th>
+                    <th property-name="date">
+                        <div class="table-col-title">
+                            Date
+                            {% include "main/prospero/structure/table/sort-filters.html" %}
+                        </div>
+                    </th>
+                    <th property-name="source">
+                        <div class="table-col-title">
+                            Source
+                            {% include "main/prospero/structure/table/sort-filters.html" %}
+                        </div>
+                    </th>
+                    <th property-name="author">
+                        <div class="table-col-title">
+                            Author
+                            {% include "main/prospero/structure/table/sort-filters.html" %}
+                        </div>
+                    </th>
+                    <th property-name="noc">
+                        <div class="table-col-title">
+                            Nb chars
+                            {% include "main/prospero/structure/table/sort-filters.html" %}
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--
+                <tr class="active">
+                    <td>Le vaccin contre le Covid-19 sera-t-il obligatoire</td>
+                    <td>24/05/2020</td>
+                    <td>Slate</td>
+                    <td>Jean-Yves Nau</td>
+                    <td>200 000</td>
+                </tr>
+                -->
+            </tbody>
+        </table>
+    </div>
+
+</div>

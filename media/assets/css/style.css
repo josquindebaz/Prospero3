@@ -303,3 +303,11 @@ td.col-thumbnail .img_container img {
 .modal-body .thumbnail-field .dropzone-panel.novalue {
     background-size: 50%;
 }
+
+/* card switcher */
+
+.card .card-switcher-panel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
