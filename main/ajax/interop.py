@@ -1,43 +1,54 @@
 from prospero import settings
 from main.models import *
 from main.importerP1 import builder2BD as builder
-from main.importerP1 import importer
+from main.importerP1.importer import Importer
 from main.helpers import frontend, files, cloud
 from datetime import datetime
+from django.db import transaction
 
 def importData(request, data, results):
     folder = files.gotFolder(settings.MEDIA_ROOT + data["files"][0]["filePath"])
     try:
-        project = frontend.getBDObject(data["project"])
-        corpus = frontend.getBDObject(data["corpus"]) if data["corpus"] != None else None
-        createdObjects = importer.importData(project, folder, corpus, builder)
-        createdDatas = {
-            "LexicalDictionaries" : 0,
-            "CategoryDictionaries": 0,
-            "CollectionDictionaries": 0,
-            "FictionDictionaries": 0,
-            "Texts": 0,
-        }
-        if len(createdObjects) > 0:
-            project.declareAsModified()
-        for obj in createdObjects:
-            objType = type(obj)
-            if objType == LexicalDictionnary:
-                createdDatas["LexicalDictionaries"] = createdDatas["LexicalDictionaries"] + 1
-            elif objType == CategoryDictionnary:
-                createdDatas["CategoryDictionaries"] = createdDatas["CategoryDictionaries"] + 1
-            elif objType == CollectionDictionnary:
-                createdDatas["CollectionDictionaries"] = createdDatas["CollectionDictionaries"] + 1
-            elif objType == FictionDictionnary:
-                createdDatas["FictionDictionaries"] = createdDatas["FictionDictionaries"] + 1
-            elif objType == PText:
-                createdDatas["Texts"] = createdDatas["Texts"] + 1
-        results["createdDatas"] = createdDatas
+        with transaction.atomic():
+            project = frontend.getBDObject(data["project"])
+            corpus = frontend.getBDObject(data["corpus"]) if data["corpus"] != None else None
+            importer = Importer(project, corpus, folder, builder)
+            #createdObjects = importer.importData(project, folder, corpus, builder)
+            createdObjects = importer.process()
+            createdDatas = {
+                "LexicalDictionaries" : 0,
+                "CategoryDictionaries": 0,
+                "CollectionDictionaries": 0,
+                "FictionDictionaries": 0,
+                "Texts": 0,
+            }
+            if len(createdObjects) > 0:
+                project.declareAsModified()
+            for obj in createdObjects:
+                objType = type(obj)
+                if objType == LexicalDictionnary:
+                    createdDatas["LexicalDictionaries"] = createdDatas["LexicalDictionaries"] + 1
+                elif objType == CategoryDictionnary:
+                    createdDatas["CategoryDictionaries"] = createdDatas["CategoryDictionaries"] + 1
+                elif objType == CollectionDictionnary:
+                    createdDatas["CollectionDictionaries"] = createdDatas["CollectionDictionaries"] + 1
+                elif objType == FictionDictionnary:
+                    createdDatas["FictionDictionaries"] = createdDatas["FictionDictionaries"] + 1
+                elif objType == PText:
+                    createdDatas["Texts"] = createdDatas["Texts"] + 1
+            results["createdDatas"] = createdDatas
     except Exception as e:
         errorTxt = str(e)
-        if e.file:
+        if hasattr(e, "file"):
             errorTxt = "for file "+e.file+" : "+errorTxt
         results["serverError"] = errorTxt
+        # cancel associated files
+        for res in importer.createdPResources:
+            try:
+                files.deleteFile(str(res.file), True)
+            except:
+                pass
+
     files.deleteFile(folder)
 
 def exportData(request, data, results):

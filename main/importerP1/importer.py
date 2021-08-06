@@ -2,59 +2,6 @@ import ntpath, os
 from main.helpers import files, cloud
 from main.importerP1 import reader
 
-# import all P1 files in folder (unzip on the fly root zips)
-def importData(project, rootFolder, corpus, builder):
-    importedObjects = []
-    # unzip if necessary, implemented for one zip only
-    for file in files.getAllFiles(rootFolder):
-        if files.getFileExtension(file) == "zip":
-            #extractionFolderName = files.getFileName(file, withExtension=False)+"/"
-            #extractionFolder = files.gotFolder(files.gotFolder(file)+extractionFolderName)
-            extractionFolder = files.gotFolder(file)
-            files.extratZIP(file, extractionFolder)
-    # treat files
-    projectDataFolder = cloud.gotProjectDataFolder(project)
-    importer = Importer(rootFolder, builder, projectDataFolder)
-    currentFile = None
-    try:
-        for filePath in files.getAllFiles(rootFolder, True):
-            fileName = ntpath.basename(filePath)
-            currentFile = fileName
-            extension = fileName.split(".")[-1].lower()
-            if extension in ["dic", "col", "fic", "cat"]:
-                print("walk " + extension, filePath)
-                dico = importer.walk(filePath)
-                importedObjects.append(dico)
-                builder.add(project, "dictionnaries", dico)
-            elif extension == "txt":
-                print("walk txt", filePath)
-                text = importer.walk(filePath)
-                importedObjects.append(text)
-                ctxPath = importer.findCtxFile(filePath)
-                if ctxPath:
-                    currentFile = ntpath.basename(ctxPath)
-                    print("walk ctx", ctxPath)
-                    metaDatas, associatedDatas, requiredDatas, identCtxP1 = importer.walk(ctxPath)
-                    importedObjects.extend(metaDatas)
-                    importedObjects.extend(associatedDatas)
-                    for data in metaDatas:
-                        builder.add(text, "metaDatas", data)
-                    for data in associatedDatas:
-                        builder.add(text, "associatedDatas", data)
-                    for fieldName in requiredDatas:
-                        builder.set(text, fieldName, requiredDatas[fieldName])
-                    builder.set(text, "identCtxP1", identCtxP1)
-                if corpus == None:
-                    corpus = project.gotDefaultCorpus()
-                    importedObjects.append(corpus)
-                corpus.addText(text)
-                # corpus.texts.add(text)
-    except Exception as e:
-        e.file = currentFile
-        raise e
-
-    return importedObjects
-
 p1CatTypeTranslation = {
     "ENTITE" : "ENTITY",
     "MARQUEUR" : "MARKER",
@@ -64,11 +11,66 @@ p1CatTypeTranslation = {
 
 class Importer:
 
-    def __init__(self, rootFolder, builder, projectDataFolder, *args, **kwargs):
+    def __init__(self, project, corpus, rootFolder, builder, *args, **kwargs):
+        self.project = project
+        self.corpus = corpus
+        self.projectDataFolder = cloud.gotProjectDataFolder(project)
         self.rootFolder = rootFolder
         self.builder = builder
-        self.projectDataFolder = projectDataFolder
         self.processedFile = {}
+        self.createdPResources = []
+
+    # import all P1 files in folder (unzip on the fly root zips)
+    def process(self):
+        importedObjects = []
+        # unzip if necessary, implemented for one zip only
+        for file in files.getAllFiles(self.rootFolder):
+            if files.getFileExtension(file) == "zip":
+                # extractionFolderName = files.getFileName(file, withExtension=False)+"/"
+                # extractionFolder = files.gotFolder(files.gotFolder(file)+extractionFolderName)
+                extractionFolder = files.gotFolder(file)
+                files.extratZIP(file, extractionFolder)
+        # treat files
+        #importer = Importer(rootFolder, self.builder, projectDataFolder)
+        currentFile = None
+        try:
+            for filePath in files.getAllFiles(self.rootFolder, True):
+                fileName = ntpath.basename(filePath)
+                currentFile = fileName
+                extension = fileName.split(".")[-1].lower()
+                if extension in ["dic", "col", "fic", "cat"]:
+                    print("walk " + extension, filePath)
+                    dico = self.walk(filePath)
+                    importedObjects.append(dico)
+                    self.builder.add(self.project, "dictionnaries", dico)
+                elif extension == "txt":
+                    print("walk txt", filePath)
+                    text = self.walk(filePath)
+                    importedObjects.append(text)
+                    ctxPath = self.findCtxFile(filePath)
+                    if ctxPath:
+                        currentFile = ntpath.basename(ctxPath)
+                        print("walk ctx", ctxPath)
+                        metaDatas, associatedDatas, requiredDatas, identCtxP1 = self.walk(ctxPath)
+                        importedObjects.extend(metaDatas)
+                        importedObjects.extend(associatedDatas)
+                        for data in metaDatas:
+                            self.builder.add(text, "metaDatas", data)
+                        for data in associatedDatas:
+                            self.builder.add(text, "associatedDatas", data)
+                        for fieldName in requiredDatas:
+                            self.builder.set(text, fieldName, requiredDatas[fieldName])
+                        self.builder.set(text, "identCtxP1", identCtxP1)
+                    if self.corpus == None:
+                        self.corpus = self.project.gotDefaultCorpus()
+                        importedObjects.append(self.corpus)
+                    self.corpus.addText(text)
+                    # corpus.texts.add(text)
+        except Exception as e:
+            e.file = currentFile
+            raise e
+
+        return importedObjects
 
     def findCtxFile(self, txtFile):
         fileName = files.getFileName(txtFile, False)
@@ -253,7 +255,9 @@ class Importer:
         while len(lines) > 0:
             line = lines.pop(0)
             if line.startswith("REF_EXT:"):
-                associatedData.append(self.builder.createPResource(line[8:], self))
+                ressource = self.builder.createPResource(line[8:], self)
+                self.createdPResources.append(ressource)
+                associatedData.append(ressource)
         return data, associatedData, requiredDatas, identCtxP1
 
     def walkText(self, filePath):
