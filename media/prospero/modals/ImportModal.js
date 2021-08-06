@@ -3,12 +3,14 @@ class ImportModal extends PModal {
 	constructor($node) {
 	    super($node);
 	    var self = this;
+	    var fileExtensions = "dic, col, fic, cat, txt, ctx,  zip";
 		new McDropzone(
 			this.node.find(".dropzone-panel"),
 			{
 				multiple: true,
-				fileExtensions : "dic, col, fic, cat, txt, zip",
+				fileExtensions : fileExtensions,
 				fileChange : function(dropzone, files, loadEvent) {
+				    $(".error-feedback-pane").addClass("hidden");
 				    self.setStateWorking();
 					var formData = new FormData();
 					$.each(files, function(index, file) {
@@ -43,7 +45,8 @@ class ImportModal extends PModal {
 						dropzone.node.find(".mc-dropzone-feedback").removeClass("hover");
 				},
 				badFile : function(dropzone, file) {
-					$$.magicCms.showUserFeedback("Import only csv files");
+					$(".error-feedback-pane .error-txt").text("file "+file.name+" is not supported by the import process. Accepted extensions are : "+fileExtensions);
+					$(".error-feedback-pane").removeClass("hidden");
 				}
 			}
 		);
@@ -68,9 +71,9 @@ class ImportModal extends PModal {
 	}
 	show(corpus) {
 	    this.setStateReady();
-        var txtCorpus = 'Un corpus "main" sera créé si des textes sont importés';
+        var txtCorpus = 'Corpus "main" will be created if some texts are imported';
         if (corpus != null)
-            txtCorpus = 'Les textes importés seront ajoutés au corpus suivant : "'+corpus.data.name+'"';
+            txtCorpus = 'Imported texts will be added to the following corpus : "'+corpus.data.name+'"';
         var $txtCorpus = $(".txt-corpus", this.node);
         $txtCorpus.text(txtCorpus);
         this.corpus = corpus;

@@ -34,7 +34,10 @@ def importData(request, data, results):
                 createdDatas["Texts"] = createdDatas["Texts"] + 1
         results["createdDatas"] = createdDatas
     except Exception as e:
-        results["serverError"] = str(e)
+        errorTxt = str(e)
+        if e.file:
+            errorTxt = "for file "+e.file+" : "+errorTxt
+        results["serverError"] = errorTxt
     files.deleteFile(folder)
 
 def exportData(request, data, results):

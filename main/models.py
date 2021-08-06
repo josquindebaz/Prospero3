@@ -223,7 +223,7 @@ class Project(AugmentedData) :
     def nbTexts(self):
         nb = 0
         for corpus in self.corpuses.all():
-            nb = nb + corpus.nbTexts()
+            nb = nb + corpus.nbTexts
         return nb
 
     def nbTextChar(self):
@@ -562,7 +562,7 @@ class PText(AugmentedData) :
     filePath = models.CharField(blank=True, max_length=255)
     identCtxP1 = models.CharField(blank=True, max_length=255)
 
-    title = models.CharField(blank=True, max_length=255)
+    title = models.CharField(blank=True, max_length=1000)
     date = models.CharField(blank=True, max_length=255)
     source = models.CharField(blank=True, max_length=255)
     author = models.CharField(blank=True, max_length=255)

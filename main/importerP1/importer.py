@@ -15,36 +15,44 @@ def importData(project, rootFolder, corpus, builder):
     # treat files
     projectDataFolder = cloud.gotProjectDataFolder(project)
     importer = Importer(rootFolder, builder, projectDataFolder)
-    for filePath in files.getAllFiles(rootFolder, True):
-        fileName = ntpath.basename(filePath)
-        extension = fileName.split(".")[-1].lower()
-        if extension in ["dic", "col", "fic", "cat"]:
-            print("walk " + extension, filePath)
-            dico = importer.walk(filePath)
-            importedObjects.append(dico)
-            builder.add(project, "dictionnaries", dico)
-        elif extension == "txt":
-            print("walk txt", filePath)
-            text = importer.walk(filePath)
-            importedObjects.append(text)
-            ctxPath = importer.findCtxFile(filePath)
-            if ctxPath:
-                print("walk ctx", ctxPath)
-                metaDatas, associatedDatas, requiredDatas, identCtxP1 = importer.walk(ctxPath)
-                importedObjects.extend(metaDatas)
-                importedObjects.extend(associatedDatas)
-                for data in metaDatas:
-                    builder.add(text, "metaDatas", data)
-                for data in associatedDatas:
-                    builder.add(text, "associatedDatas", data)
-                for fieldName in requiredDatas:
-                    builder.set(text, fieldName, requiredDatas[fieldName])
-                builder.set(text, "identCtxP1", identCtxP1)
-            if corpus == None:
-                corpus = project.gotDefaultCorpus()
-                importedObjects.append(corpus)
-            corpus.addText(text)
-            #corpus.texts.add(text)
+    currentFile = None
+    try:
+        for filePath in files.getAllFiles(rootFolder, True):
+            fileName = ntpath.basename(filePath)
+            currentFile = fileName
+            extension = fileName.split(".")[-1].lower()
+            if extension in ["dic", "col", "fic", "cat"]:
+                print("walk " + extension, filePath)
+                dico = importer.walk(filePath)
+                importedObjects.append(dico)
+                builder.add(project, "dictionnaries", dico)
+            elif extension == "txt":
+                print("walk txt", filePath)
+                text = importer.walk(filePath)
+                importedObjects.append(text)
+                ctxPath = importer.findCtxFile(filePath)
+                if ctxPath:
+                    currentFile = ntpath.basename(ctxPath)
+                    print("walk ctx", ctxPath)
+                    metaDatas, associatedDatas, requiredDatas, identCtxP1 = importer.walk(ctxPath)
+                    importedObjects.extend(metaDatas)
+                    importedObjects.extend(associatedDatas)
+                    for data in metaDatas:
+                        builder.add(text, "metaDatas", data)
+                    for data in associatedDatas:
+                        builder.add(text, "associatedDatas", data)
+                    for fieldName in requiredDatas:
+                        builder.set(text, fieldName, requiredDatas[fieldName])
+                    builder.set(text, "identCtxP1", identCtxP1)
+                if corpus == None:
+                    corpus = project.gotDefaultCorpus()
+                    importedObjects.append(corpus)
+                corpus.addText(text)
+                # corpus.texts.add(text)
+    except Exception as e:
+        e.file = currentFile
+        raise e
+
     return importedObjects
 
 p1CatTypeTranslation = {

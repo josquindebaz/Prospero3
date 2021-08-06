@@ -172,7 +172,7 @@ def findEncoding(filePath):
 def readFile(filePath, detectEncoding=False):
     if detectEncoding:
         encoding = findEncoding(filePath)
-        with codecs.open(filePath, "r", encoding) as file:
+        with codecs.open(filePath, "r", encoding, errors="replace") as file:
             text = file.read()
     else:
         with codecs.open(filePath, "r") as file:
