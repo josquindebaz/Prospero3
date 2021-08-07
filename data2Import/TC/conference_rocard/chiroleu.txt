@@ -1,0 +1,165 @@
+L'articulation des différents instruments
+Mireille Chiroleu-Assouline
+
+Conférence des experts sur la contribution Climat et Energie 
+MEEDDAT
+2 et 3 juillet 2009 - Paris
+
+
+
+L'articulation des différents instruments
+
+II. La supériorité des instruments économiques sur les normes
+1. Les instruments d'internalisation 2. Efficacité économique 3. Efficacité dynamique : incitation à l'innovation
+n La supériorité de la taxe sur le marché de quotas d'émission
+1. Choix entre instruments en incertitude 2. Articulation entre marché et taxe 3. Les possibilités ouvertes par le recyclage du
+rendement de la taxe
+
+
+
+I.1. Les instruments d'internalisation
+
+Cmd coût marginal
+de dépollution (positif et décroissant ) profit marginal retiré des émissions
+Dm dommage
+marginal dû aux émissions
+Mireille Chiroleu-Assouline
+
+E o pollution optimale
+Conférence des experts sur la contribution Climat et Energie
+
+
+I.1. Les instruments d'internalisation
+ Instruments réglementaires : normes
+ Normes d'émission (absolues ou en taux d'émission)  Normes de procédé  Normes de qualité  Normes de produit
+ Instruments économiques
+ Subvention de dépollution  Taxe pigouvienne  Quotas d'émission négociables
+
+
+
+I.1. Les instruments d'internalisation
+
+Taxe pigouvienne (Pigou 1920)
+
+ Assiette
+ Emissions de CO2  Proviennent de la combustion des énergies fossiles
+(pétrole, charbon, gaz) dont les coefficients d'émission sont connus
+ Assiette effective : consommation d'énergies fossiles
+
+ Taux
+ L'internalisation d'une externalité due à des émissions polluantes est obtenue par taxation des émissions à un taux égal au dommage marginal qu'elles provoquent.
+
+I.2. L'efficacité économique
+Au contraire de la norme, la taxe (ou le marché de quotas) égalise les coûts marginaux d'abattement entre pollueurs. Elle est efficace économiquement (permet d'atteindre un niveau donné d'émissions à coût minimal).
+
+
+
+I.3. L'efficacité dynamique : incitation à l'innovation
+Au contraire de la norme, les instruments économiques stimulent l'innovation pour abaisser les coûts d'abattement, permettant de réduire les émissions davantage que ne le ferait la norme.
+
+
+
+L'articulation des différents instruments
+
+II. La supériorité des instruments économiques sur les normes
+1. Les instruments d'internalisation 2. Efficacité économique 3. Efficacité dynamique : incitation à l'innovation
+n La supériorité de la taxe sur le marché de quotas d'émission
+1. Choix entre instruments en incertitude 2. Articulation entre marché et taxe 3. Les possibilités ouvertes par le recyclage du
+rendement de la taxe
+
+
+
+
+
+II.1. Choix entre instruments en incertitude (Weitzman [1974])
+Les pertes de bien-être dues à une incertitude sur le dommage marginal sont les mêmes quel que soit l'instrument économique utilisé (taxe ou marché de quotas)
+
+
+
+
+II.1. Choix entre instruments en incertitude (Weitzman [1974])
+En cas d'incertitude sur le coût marginal d'abattement, la hiérarchie entre les instruments en termes de perte d'efficacité dépend des pentes relatives des courbes de coût et de dommage marginal.
+
+
+
+
+II.1. Choix entre instruments en incertitude (Weitzman [1974])
+
+Soit
+
+R=
+
+ Dm E
+
+ Cmd E
+
+le ratio des pentes des deux courbes.
+
+ Pour une courbe de coût marginal de dépollution donnée, plus
+le dommage marginal a une pente forte (si R > 1 et R  +  ) et plus le marché de quotas devient préférable à la
+taxe.
+ Pour une courbe de dommage marginal donnée, plus le coût
+marginal a une pente élevée (si R < 1 et R  0 ) et plus la
+taxe est préférable au marché de quotas d'émission.
+ Le coût marginal de dépollution est d'autant plus fort que sont faibles les possibilités de substitution de produits polluants par des produits moins polluants.
+
+
+
+
+II.1. Choix entre instruments en incertitude (compléments d'analyse)
+ Les coûts d'abattement dépendent des flux d'émission de CO2 tandis que les dommages marginaux dépendent des stocks.
+Hoel et Karp [2002], Newell et Pizer [2003], Karp et Zhang [2005] montrent que, dans ce cas, l'efficacité de la taxe est supérieure à celle du marché de quotas d'émission pour des valeurs d'élasticités cohérentes avec la connaissance actuelle du phénomène du changement climatique.
+ L'analyse doit tenir compte des distorsions pré-existantes du système fiscal.
+Quirion [2004] montre que l'existence de distorsions fiscales élargit le domaine de supériorité de la taxe en termes d'efficacité par rapport au marché de quotas d'émission.
+
+
+
+
+II.2. Articulation entre marché de quotas et taxe
+
+ Des inconvénients du marché de quotas d'émission
+ volatilité des prix : contrepartie de l'assurance d'atteindre exactement l'objectif visé en termes de réduction des émissions
+ manipulation possible du schéma d'allocation des quotas, un objectif d'émissions laxiste faisant chuter leur prix
+ Un prix trop faible ou trop volatil, peu prévisible, est peu incitatif aux investissements en R&D et en nouvelles technologies
+ La taxe rend visible, transparent et prévisible le prix des émissions de carbone
+
+ Systèmes hybrides reposant sur le marché de quotas d'émission (établissement de limites à la volatilité des prix)
+ Introduction de possibilités d'épargne et d'emprunt de quotas (banking and borrowing)
+ Prix plancher et prix plafond (soupape de sécurité, Roberts et Spence [1976])
+ plus l'écart entre prix plancher et prix plafond est faible et plus le fonctionnement du marché se rapproche de celui d'une taxe (sans que le rendement n'en revienne à l'Etat)
+
+
+
+
+II.2. Articulation entre marché de quotas et taxe
+ Coexistence entre marché de quotas et taxe (Mandell [2008])
+ En présence d'incertitude, un tel système fait naître deux types d'inefficacités :  Le volume d'émissions agrégé n'est pas forcément le volume optimal : "  erreur sur les volumes  "  Le prix du carbone sur le marché n'est pas forcément égal au taux de taxe, l'égalisation des coûts marginaux de dépollution n'est pas assurée : "  erreur de distribution des coûts  "
+ La taille optimale du secteur taxé augmente avec la pente de la courbe agrégée de coût marginal de dépollution.  La régulation mixte (taxe + marché) réduit toujours l'erreur sur les volumes par rapport à la taxe seule ou au marché de quotas seul  Ce gain l'emporte en général sur la perte d'efficacité due à la non égalisation des coûts marginaux
+
+
+
+II.3. Les possibilités ouvertes par le recyclage du rendement de la taxe - Double dividende (1)
+La taxe est incitative et non destinée à augmenter les recettes fiscales : principe de neutralité budgétaire (recyclage du rendement de la taxe)
+Dans un système fiscal sous-optimal - où il existe des impôts ou taxes distordants - le recyclage du rendement de la taxe par réduction du taux d'une taxe peut permettre de réduire les distorsions existantes et d'améliorer ainsi le bien-être économique (Goulder [1995])
+ Remplacer par une taxe environnementale la taxe distordante procure toujours un gain en bien-être par rapport à une redistribution forfaitaire du rendement
+ Résultats dépendant de 2 effets : effet de recyclage du revenu et effet d'interaction fiscale
+ En France, ce sont les prélèvements sur le travail (plutôt que sur le capital) qui sont les plus distordants : la réduction de leur taux offre la plus grande opportunité de double dividende
+
+
+
+
+II.3. Les possibilités ouvertes par le recyclage du rendement de la taxe - Double dividende (2)
+ La taxe ayant pour vocation d'encourager la substitution de produits émetteurs de CO2 par d'autres, sa base fiscale est vouée à se réduire
+ Nécessité de ne pas prévoir un financement pérenne par le rendement de cette taxe
+ Le rendement pourrait en revanche ne pas diminuer beaucoup si la taxe est, comme évoqué, croissante dans le temps.
+
+
+
+II.3. Les possibilités ouvertes par le recyclage du rendement de la taxe - Equité
+
+Quel que soit l'instrument utilisé, il se traduira par une hausse des prix des produits émetteurs de CO2 (carburants, fuel domestique, gaz) affectant les ménages et proportionnellement davantage les ménages les plus pauvres (dont la part du budget consacrée aux dépenses d'énergie est plus forte) : la taxe carbone non redistribuée est régressive.
+ Nécessité de prévoir une redistribution du rendement de la taxe corrigeant cette régressivité induite  Remboursement forfaitaire par ménage, en fonction de la taille du ménage ? en fonction de critères géographiques ?  Réduction proportionnelle de l'impôt sur le revenu, avec un plafond pour les plus hauts revenus, afin d'augmenter la progressivité du système (Metcalf [2008]) ?  Réduction de l'impôt sur le revenu en augmentant la progressivité de celui-ci (Chiroleu-Assouline et Fodha [2009]) ? Remboursements assortis de transferts entre classes de ménages (Combet et al. [2009]) ?
+ Arbitrage entre efficacité économique (recherche du double dividende) et neutralité en termes de distribution
+Un remboursement forfaitaire ne réduit pas les distorsions...
+
+

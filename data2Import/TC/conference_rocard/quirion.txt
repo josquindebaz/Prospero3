@@ -1,0 +1,98 @@
+Articulation entre marché de quotas européen et contribution climat énergie
+Philippe Quirion CIRED-CNRS
+Réseau Action Climat France
+
+
+Points abordés
+ -  Taxe ou quotas pour réduire les émissions de GES ?
+ -  Description du système de quotas européen
+ -  Quelles évolutions du système de quotas européen souhaiter ?
+ -  Quelle articulation entre CCE et système de quotas européen ?
+
+
+Taxe ou quotas pour réduire les
+émissions de GES ?
+ -  La grand majorité des économistes concluent à la supériorité d'une taxe
+ -  Stabilité et prévisibilité du prix - Plus faibles coûts d'administration et de transaction - Pas de manipulation du prix
+ -  Mais règles de décision dans l'UE (unanimité au Conseil pour la fiscalité, majorité qualifiée et codécision pour le système de quotas)  l'UE a adopté un système de quotas
+ -  Au niveau national, pour les émissions non couvertes par le système de quotas européen, une taxe est préférable
+
+
+Description du système de
+quotas européen
+ -  Couvre environ 40% des émissions de GES en Europe (dont 1/2 = électricité), 25% en France
+ -  Système révisé en décembre 2008 : règles largement fixées jusqu'en 2020
+ -  Mode d'allocation des quotas
+ -  Électricité : enchères - Majorité de l'industrie : allocation gratuite en fonction des capacités de
+production
+ -  Baisse progressive du plafond; -21% entre 2005 et 2020, objectif revu en cas d'accord satisfaisant à Copenhague
+ -  Un prix fluctuant entre 10 et 30 euros / t CO2 ; 13 aujourd'hui - Pénalité 100 euros / t CO2, non libératoire - Large recours possible au MDP et à la MOC (jusqu'à 50% des
+réductions)
+
+
+Quelle évolution du système de
+quotas européen ? (1)
+ -  Problème de l'instabilité du prix
+ -  Pas d'égalisation du coût marginal de réduction des émissions au cours du temps
+ -  Imprévisibilité du prix du CO2  prime de risque sur les investissements réduisant les émissions
+ -  Prix plafond ? Facile :
+ -  Rendre la pénalité libératoire, ou - Instaurer une vente à prix fixe à 100 euros / t CO2 - Mais sans doute inutile si l'accès massif au MDP et à la MOC persiste
+ réforme la plus utile : réduire voire supprimer le recours aux crédits externes
+ -  Prix plancher ?
+ -  Concrètement : prix de réservation sur les enchères - Problème si le prix des quotas MDP et MOC descend en dessous de ce
+prix de réservation  réforme la plus utile : réduire voire supprimer le recours aux crédits externes
+
+
+Quelle évolution du système de
+quotas européen ? (2)
+ -  Question des "fuites de CO2"
+ -  Phénomène limité selon les modélisations et les études ex post - Les spillovers positifs peuvent être supérieurs
+ -  Traité par l'allocation gratuite dans la nouvelle directive - En théorie, un ajustement aux frontières avec enchères
+est préférable :
+ -  L'allocation gratuite réduit l'incitation à économiser les produits intensifs en GES
+ -  Pressions pour des benchmarks différenciés selon les procédés et combustibles  effets pervers  coût supérieur
+ -  Mais BusinessEurope n'en veut pas, la grande majorité des États membres non plus
+ -  Projet de loi Waxman-Markey : ajustement aux frontières à partir de 2020  retour de l'idée par les États-unis ?
+
+
+Quelle articulation entre quotas
+et taxe ?
+ -  Option 1 : les installations couvertes par l'ETS sont soumises à la CCE comme les autres
+ -  Elles payent plus que les autres / t CO2
+ -  Option 2 : ces installations sont exclues de la CCE
+ -  Elles payent moins que les autres / t CO2
+ -  Option 3 : une CCE différentielle pour ces installations.
+ -  Principe : taux de CCE = taux général - prix des quotas en moyenne sur l'année (ou sur une période plus courte)
+ -  Avantages de l'option 3 :
+ -  Égalisation du coût marginal de réduction des émissions entre secteurs  coût agrégé inférieur
+ -  Stabilité du prix du CO2  égalisation du coût marginal de réduction des émissions au cours du temps
+ -  Prévisibilité du prix du CO2  calculs de rentabilité des investissements facilités
+
+
+Quelle utilisation des recettes de la CCE sur les installations ETS ?
+ -  Installations sans allocation gratuite après 2012 (électricité...) : règle générale (réduction du déficit public, baisse d'autres impôts et charges...)
+ -  Installations avec allocation gratuite : 2 options
+ -  Règle générale (réduction du déficit public, baisse d'autres impôts et charges...)
+ -  Distribution selon la règle fixée par la Commission européenne pour les quotas gratuits : capacité de production * benchmark. Compatible avec le régime communautaire des aides d'État puisque utilisé par la Commission
+
+
+Taxer aussi la consommation
+d'électricité
+ -  Pourquoi ?
+ -  Problèmes du nucléaire - Système de quotas européen : émissions de CO2 incluses au
+niveau de la production d'électricité - Tarifs régulés : les consommateurs ne paient pas le coût du CO2 - Économiser l'électricité fait partie des options les plus efficaces
+pour réduire les émissions de CO2 - On va avoir besoin d'électricité pour réduire les émissions des
+transports
+ -  Comment ?
+ -  Inclure les coûts externes de la production d'électricité dans les tarifs régulés
+ -  lB'éalesectrdiceitcéaelcuurloapémeinnnimea(:~c0o,n6tet nCuOm2/aMrWginha) l*etnauCxOd2edlea CCE
+
+
+Conclusions
+ -  Le système de quotas européen est là pour longtemps
+ -  La France peut faire des propositions pour le faire évoluer, mais sans garantie de succès
+ -  Il faut donc adapter la CCE au système de quotas européen, pas l'inverse
+ -  Une CCE différentielle sur les installations couvertes par le système de quotas européen rétablirait l'uniformité et la stabilité du signal prix
+ -  Les tarifs régulés électriques doivent intégrer la valeur du CO2
+
+

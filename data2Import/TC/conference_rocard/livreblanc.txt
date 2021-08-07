@@ -1,0 +1,321 @@
+LIVRE BLANC EN VUE DE LA CONFERENCE D'EXPERTS SUR LA CONTRIBUTION "  CLIMAT-ÉNERGIE  "
+Préambule
+Le projet de loi de programme relatif à la mise en oeuvre du Grenelle de l'environnement, actuellement en deuxième lecture à l'Assemblée nationale, précise les priorités de la France en matière de lutte contre le changement climatique. L'engagement pris par la France de diviser par quatre ses émissions de gaz à effet de serre entre 1990 et 2050 y est notamment confirmé.
+La loi prévoit également que "  dans les six mois suivant [sa] publication [...], l'État étudiera la création d'une contribution dite "  climat - énergie " en vue d'encourager les comportements sobres en carbone et en énergie. Cette contribution aura pour objet d'intégrer les effets des émissions de gaz à effet de serre dans les systèmes de prix par la taxation des consommations d'énergies fossiles. Elle sera strictement compensée par une baisse des prélèvements obligatoires de façon à préserver le pouvoir d'achat des ménages et la compétitivité des entreprises. Au terme de six mois à compter de la promulgation de la présente loi, le résultat de cette étude sera rendu public et transmis au Parlement ".
+Le Président de la République, dans son discours prononcé le 25 octobre 2007 à l'occasion des conclusions du Grenelle de l'Environnement, a exprimé son opposition à toute augmentation du taux de prélèvement obligatoire. La création d'une contribution "  climat - énergie  " (CCE) est une opportunité de mieux prendre en compte les coûts engendrés par les atteintes à l'environnement. Les recettes nouvelles financeront en contrepartie la baisse d'autres prélèvements obligatoires.
+La France utilise déjà des dispositifs permettant de lutter contre les émissions de gaz à effet de serre. Tous les pays de l'Union Européenne ont par exemple mis en place, dès 2005, un marché de quotas d'émission concernant les entreprises du secteur industriel et énergétique les plus fortement émettrices. Un prix unique de la tonne de CO2 au niveau européen est alors apparu. Toutefois, ce dispositif ne concerne que 38% des émissions de CO2 de la France et ne constitue pas un instrument adapté pour réduire les émissions des sources diffuses.
+Le présent Livre Blanc expose les principales questions de fond posées par la création d'une contribution "  climat - énergie  ".
+1. Enjeux et justifications de la mise en place d'une contribution "  climat - énergie  "
+Le ministère des finances britannique a publié le 30 octobre 2006 une étude sur les implications économiques du changement climatique sous le titre de Stern Review on Economics of Climate Change. La principale innovation du "  rapport Stern  " est d'introduire la science économique au coeur du débat climatique et de la mettre au service d'un vigoureux plaidoyer : les dommages causés par le réchauffement de la planète en cas d'inaction pour les éviter seraient 5 à 20 fois supérieurs aux sacrifices que nos économies devraient supporter pour lutter efficacement contre l'effet de serre, c'està-dire par une action rapide, durable et globale. D'après le rapport, la baisse des émissions de gaz à effet de serre ne devrait entraîner que de faibles perturbations pour l'économie mondiale, de l'ordre de 1% du PIB mondial en 2050. Ce résultat suppose que les options les moins coûteuses pour réduire
+3
+
+
+les émissions de carbone sont exploitées en priorité grâce à des politiques donnant un prix au carbone correctement calibré. Les gouvernements ont donc la responsabilité de créer un cadre économique incitatif, aussi universel que possible, pour minimiser le coût global de l'effort de prévention du risque climatique.
+
+Jusqu'à présent, les outils économiques développés au niveau européen pour lutter contre les émissions de gaz à effet de serre se sont concentrés sur le secteur de l'énergie et certains secteurs industriels fortement émetteurs avec la mise en place du système communautaire d'échange de quotas d'émission, l'Emission Trading Scheme (ETS). Dans les autres secteurs (hors ETS), la France a pour objectif d'ici 2020 de réduire de 14% ses émissions1.
+
+Objectifs de réductions des émissions à l'horizon 2020 par rapport à 2005
+
+Secteurs ETS (échelle européenne) Secteurs hors ETS (échelle européenne) Secteurs hors ETS (échelle française)
+
+ - 21% -10% -14%
+
+Présentation de l'ETS
+Pour réduire le coût de ses engagements pris dans le cadre du Protocole de Kyoto, l'Union européenne a mis en place depuis le 1er janvier 2005 un système d'échanges de quotas d'émission de CO2. Il concerne en premier lieu les producteurs d'électricité et de chaleur ainsi que les industries les plus grosses consommatrices d'énergie (sidérurgie, ciment, verre, tuiles briques, papier carton, raffinage, ...), qui représentent 45% des émissions de CO2 de l'Union européenne. Chaque Etat a procédé à une première allocation de quotas (plan national d'allocation ou PNAQ) pour la période 2005-2007 puis à une deuxième pour la période 2008-2012. Les industriels doivent fournir à la fin de chaque année une quantité de quotas correspondant à leurs émissions et peuvent si nécessaire acheter des quotas aux exploitants excédentaires. Le coût global de l'effort de réduction des émissions se trouve ainsi minimisé. La prochaine période d'allocation portera sur 2013-2020 et verra la quantité totale de quotas européens alloués diminuer progressivement pour être, en 2020, inférieure de 21% par rapport au niveau des émissions de 2005.
+
+2
+160140120100
+80 60 40 20
+0
+
+146,9120,6 Transports (2)
+
+Emissions de gaz à effet de serre par secteur en France (1) (Métropole et DOM, hors puits de carbone)
+
+Emissions en 1990
+
+Emissions en 2005
+
+142,0114,5
+Industrie manufacturière
+
+117,9104,8
+Agriculture et sylviculture
+
+88,8102,3
+Résidentiel, tertiaire,
+institutionnel et commercial
+
+78,9 70,8
+Industrie de l'énergie (3)
+
+16,0 14,1
+Traitement des déchets (4)
+
+En millions de tonnes d'équivalent CO2
+
+(1) Format PNLCC (programme national de lutte contre le changement climatique). (1) Format PNLCC (programme national de lutte contre le changement climatique). (2) Trafic domestique uniquement. (3) Y compris l'incinération des déchets avec récupération d'énergie. (4) Hors incinération des déchets avec récupération d'énergie. Source : Citepa, format CCNUCC, décembre 2006 (mise à jour 14/02/2007).
+
+4
+
+
+L'utilisation d'instruments économiques (taxes, subventions, marchés de permis,...) doit permettre la réduction des émissions au moindre coût. En répercutant le montant des dommages environnementaux dans les prix, ces instruments doivent inciter les agents à choisir entre le coût lié à la diminution d'une unité de pollution et le coût lié au paiement de la taxe ou à l'achat d'un permis d'émission pour cette même unité. Chaque agent a intérêt à mettre oeuvre des mesures de réduction de ses émissions dont le coût est inférieur à la taxe (cf. encadré), à la subvention ou au prix des permis. Les agents pour lesquels ces mesures sont trop coûteuses paieront la taxe, renonceront à la subvention ou achèteront des permis. Les efforts sont ainsi dirigés là où ils sont les moins coûteux.
+
+Coût des réductions d'émissions Taxe
+
+Agent 1 Agent 2 Agent 3
+
+Niveau de réduction d'émissions de gaz à effet
+
+5
+
+
+Encadré : Intérêt des instruments économiques comparativement à la réglementation
+
+On considère trois pollueurs qui diffèrent par leurs possibilités de réduction ("  d'abattement  ") de la pollution. Les courbes CmAb1, CmAb2 et CmAb3 représentent les fonctions de coût marginal d'abattement, c'est-à-dire les coûts associés à la réduction d'une unité supplémentaire de pollution.
+
+Approche réglementaire
+
+Approche par la taxation
+
+Cout marginal d'abattement
+
+Cout marginal d'abattement et prix
+
+CmAb3
+
+CmAb3
+
+CmAb1
+
+CmAb2
+
+CmAb1 T*
+
+CmAb2 C2
+
+C3
+
+A1 B1
+
+A2 B 2
+
+A3 B3
+
+Qr1 -50%
+
+Qr2 -50%
+
+Qr3 -50%
+
+Qr1 -50%
+
+Qt2 Qr2 -70% -50%
+
+Qr3 Qt3 -50% -25%
+
+Niveau d'émission
+
+Les premiers graphiques synthétisent une approche réglementaire consistant à imposer à chaque agent de réduire de moitié ses émissions. Les coûts marginaux d'abattement des trois agents diffèrent aux quantités de pollution autorisées : l'agent 3 est manifestement caractérisé par le coût marginal le plus élevé, et l'agent 2 par le plus faible. Une telle intervention n'est pas efficace économiquement, au sens où elle ne minimise pas le coût total d'abattement, à quantité de pollution donnée. Il est en effet possible de réallouer la quantité de pollution autorisée entre les agents de manière à réduire le coût global de la dépollution recherchée. On pourrait ici par exemple autoriser l'agent 3 à polluer d'une unité de plus et en contrepartie imposer à l'agent 2 de polluer d'une unité de moins.
+
+Considérons maintenant l'effet d'une taxe au taux T* (deuxième graphique). Il est de l'intérêt de chaque agent de mettre en oeuvre toutes les actions d'abattement dont le coût marginal est inférieur au taux de la taxe, ce qui conduit à l'égalisation de ces deux variables pour chacun des agents. Les coûts marginaux d'abattement sont donc égalisés, ce qui entraîne une situation économiquement efficace. Dans l'exemple, l'agent 2 est conduit à réduire de 70% sa pollution tandis que l'agent 3, pour qui la réduction et plus coûteuse, ne la réduit que de 25%. Le gain total pour la société est alors égal à l'aire des triangles C2 et C3.
+
+Un marché de permis opère de manière similaire du point de vue de l'allocation de la quantité de pollution autorisée, le prix de marché du quota P* remplaçant le taux de taxe dans le rôle du signalprix. Les trois agents se voient globalement allouer une quantité initiale de quotas équivalant à la moitié de la pollution qu'ils émettraient en l'absence d'intervention publique, comme dans le cas de la réglementation précédente. Mais ils peuvent maintenant s'échanger ces quotas. Le mécanisme de marché conduit à un prix du quota qui équilibre l'offre et la demande de pollution.
+
+La délivrance de quotas d'émission permet de s'assurer du résultat (la quantité d'émissions qu'on autorise). Les acteurs économiques peuvent s'échanger ces droits sur un marché, selon les besoins de chacun. Le prix du permis quant à lui peut varier. La mise en oeuvre de ce type de dispositif est facilitée lorsque les acteurs concernés sont en nombre restreint. Ce dispositif a été retenu au niveau communautaire pour les secteurs les plus émetteurs de gaz à effet de serre (production d'énergie, sidérurgie, ...) dans le cadre de la directive définissant le système européen d'échange de quotas CO2 (que l'on nommera plus simplement ETS - Emission trading scheme - dans la suite du document). Il parait difficile d'étendre le marché de permis à des secteurs où les acteurs sont multiples et les émissions diffuses. Dans un tel cas, par exemple pour les véhicules particuliers ou chaque logement, une allocation de quotas d'émission à tous les pollueurs générerait des coûts de transaction élevés (estimation et vérification des émissions individuelles notamment) pour permettre leur participation aux échanges de quotas. La fiscalité environnementale apparaît donc comme l'outil le plus adapté.
+
+6
+
+
+35% 37%
+
+25% 3%
+
+ETS Trans ports Résidentiel tertiaire Autres
+
+5% 39%
+
+56%
+
+Répartition des émissions de CO2 entre les secteurs couverts par l'ETS et les autres secteurs
+
+Répartition des émissions de CO2 pour les secteurs hors ETS
+
+L'une des questions à résoudre consiste à savoir si la contribution "  climat - énergie  " devrait être appliquée aux secteurs déjà soumis à l'ETS.
+
+A cet égard, il faut souligner qu'un tel choix reviendrait à superposer deux instruments économiques (le marché de permis et la taxe) pour un même objectif. L'objectif environnemental dans le secteur ETS ne serait pas impacté, puisque cet objectif est fixé ex-ante par le plafond d'allocation de quotas. Si la contribution "  climat - énergie  " était par exemple mise en place au niveau communautaire, cela réduirait la demande en énergie des secteurs ETS et donc le prix des quotas. Si la contribution climat énergie n'était mise en place qu'au niveau français, cela emporterait des effets négatifs sur les industries françaises par rapport à leurs concurrentes européennes. Le risque serait alors d'encourager une délocalisation des investissements émetteurs de gaz à effet de serre.
+
+Une autre possibilité consisterait à introduire une taxe sur les émissions de CO2 s'appliquant uniquement aux secteurs hors ETS. Le niveau de la taxe pourrait être ajusté afin d'atteindre les objectifs de réduction recherchés. Il conviendra de veiller à la cohérence entre les "  prix  " du CO2, liés à des quotas ou une taxe.
+
+7
+
+
+La contribution "  climat - énergie  " n'est pas une taxe carbone aux frontières, appelée aussi taxe "  Cambridge  ".
+L'existence d'une contrainte carbone dans une zone géographique restreinte, comme c'est le cas pour l'Union Européenne avec l'ETS, peut conduire à désavantager les productions européennes sur les marchés internationaux, et inciter les industriels à délocaliser leurs activités. Cela induit in fine ce qu'on désigne comme des fuites de carbone : les émissions de CO2 sont seulement déplacées hors d'Europe alors que l'objectif visé est une réduction de ces dernières à l'échelle de la planète.
+Afin de pallier cet inconvénient du système européen de quotas de CO2, une réflexion a émergé sur la mise en place d'une taxe carbone sur les importations de produits industriels en provenance des pays qui refuseraient de contraindre leurs émissions ; elle trouve sa source dans une étude économique diffusée par l'Université de Cambridge et le MIT3.
+L'adoption d'une taxe dite "  Cambridge  " entraînerait très probablement une plainte à l'encontre de l'Union européenne à l'OMC, qui pourrait déboucher sur l'autorisation accordée aux plaignants d'adopter des "  contre-mesures  " commerciales (en effet, aux yeux de l'OMC, la taxe aux frontières fait porter sur les importations une contrainte de nature différente de celle portant sur les industriels européens avec l'ETS).
+Afin de rétablir une concurrence plus juste entre producteurs européens soumis à la directive ETS et exposés à la concurrence extra-européenne d'un côté et producteurs extra-européens n'ayant aucune contrainte en termes de réductions des émissions de gaz à effet de serre de l'autre, une réflexion a été engagée sur un mécanisme d'inclusion des importateurs de carbone (MIC) dans le système européen de quotas de CO2. Un tel mécanisme aurait l'avantage de mieux assurer l'égalité de traitement entre opérateurs européens et extra-européens. A ce stade, ce mécanisme n'est envisagé que pour traiter les émissions des secteurs ETS.
+Au total, la taxe Cambridge (ou le mécanisme d'inclusion carbone) et la contribution "  climat énergie  " n'ont ni le même objectif, ni le même champ :
+ -  la taxe Cambridge (ou le MIC) vise à réduire les risques de fuites de carbone des secteurs ETS les plus exposés ; elle relève de la compétence communautaire ;
+ -  la contribution "  climat - énergie  " vise à inciter à une réduction efficace des émissions diffuses des secteurs hors ETS (transport, habitat...) ; elle relève de la compétence nationale.
+2. Comment mettre en place une contribution "  climat - énergie  " ?
+La création d'une contribution "  climat - énergie  " nécessite de répondre à plusieurs questions relatives à son assiette, à son taux compte tenu des taxes existantes et à son évolution au cours du temps.
+2.1 Quelle doit être l'assiette de la contribution "  climat - énergie  " ?
+La première question que soulève la mise en place d'une contribution "  climat - énergie  " est celle de son assiette. L'objectif étant de limiter les émissions de gaz à effet de serre, l'assiette pourrait refléter le volume de carbone émis lors des processus de production et de transport des produits consommés. Pour cela, le contenu en carbone de chaque produit devrait pouvoir être correctement déterminé, y compris lorsqu'il s'agit de produits importés. Il conviendrait donc de créer un corpus de règles permettant d'allouer précisément la consommation d'énergie à chaque produit - voire à chaque activité - et de mettre en place des procédures de suivi et de traçabilité couvrant l'intégralité du cycle de production et de consommation. Notamment, il conviendrait de prendre en compte l'existence, pour la plupart des produits manufacturés, de modes de production différents, qui conduiraient à appliquer à une même catégorie de produits des taux différents.
+Une autre possibilité pourrait consister à mettre en place un prélèvement représentatif du contenu en CO2 de l'énergie. Seraient alors concernées les volumes d'énergie fossile consommés par les
+3 CMI Working Paper 36, Border tax adjustment : a feasible way to address non participation in emission trading, R. Ismer and K. Neuhoff.
+8
+
+
+secteurs hors ETS. On peut d'ailleurs noter que pour les entreprises concernées par l'ETS, c'est cette seconde approche qui a été retenue.
+La taxation pourrait intervenir plus ou moins haut dans le processus de distribution au client final. Le signal prix peut être atténué par un tel choix, sauf si la chaine de distribution conduit à une bonne répercussion des coûts de production.
+
+Tableau établi à partir du Guide des Facteurs d'Emission Version 5.0
+
+Gazole Essence GPL Fioul domestique Gaz naturel
+
+2,66 kgCO2 / L 2,42 kgCO2 / L 231 kgCO2/MWh 271 kgCO2/MWh 205 kgCO2/MWh
+
+Quel que soit le schéma retenu, la taxe serait supportée à la fois par les entreprises et les ménages. Elle refléterait un prix unique du carbone quelles que soient les sources d'émissions.
+
+2.2 Les taxes existantes en France sur les énergies fossiles vont-elles avoir les effets attendus et comment articuler les taxes existantes avec une éventuelle contribution "  climat - énergie  "?
+
+Il existe d'ores et déjà des taxes spécifiques sur l'énergie en France (TIPP sur le gazole, le super sans plomb et le fioul, TICGN sur le gaz naturel, TICC sur le charbon entre autres). Le GPL à usage domestique (butane, propane) n'est pas taxé. D'un point de vue microéconomique, les taxes sur les combustibles et carburants sont supposées couvrir les coûts externes engendrés par la consommation d'énergie. Outre les émissions de gaz à effet de serre, on peut citer la pollution de l'air et, pour les carburants, les nuisances provoquées par la circulation routière (congestion, bruit, insécurité, etc.).
+
+Selon une étude récente des services du MEEDDAT effectuée à partir de données ExternE, les coûts liés à la pollution de l'air, pour l'ensemble des combustibles fossiles, seraient supérieurs à la fiscalité existante. Les prélèvements étant inférieurs aux coûts externes hors effet de serre, il serait légitime de considérer que la fiscalité existante sur les combustibles fossiles ne prend pas en compte, même partiellement, l'impact sur l'effet de serre. Pour les carburants, en revanche, les conclusions sont plus nuancées : en se limitant aux circulations interurbaines, la fiscalité sur l'essence couvrirait déjà les coûts externes liés à l'effet de serre, alors que ce ne serait pas le cas pour le gazole utilisé par les particuliers et seulement en partie pour le gazole professionnel. Au total, les taxes existantes sur les énergies fossiles ne couvriraient pas l'ensemble des coûts externes liés à leur usage.
+
+Les graphiques suivants comparent les taux d'imposition des différents combustibles fossiles des Etats membres de l'Union Européenne (UE15), rapportés à la tonne de CO2. Ces chiffres ne doivent donc pas être considérés comme illustratifs d'une seule taxation du CO2.
+
+9
+
+
+Royaume uni France Italie
+Danemark Autriche Suède moyenne Portugal
+Luxembourg Pays bas
+Allemagne Belgique Irlande Espagne Grèce 0
+
+Taux effectifs d'imposition des carburants en Europe en 2004 en /tCO2
+(Source Alma Consulting 2007 pour l'ADEME)
+17416515212911911811211297938685835050100150
+
+202200
+
+250
+
+Taux apparents d'imposition du gaz à usage industriel en Europe en 2007 en /tCO2
+(Source Alma Consulting 2007 pour l'ADEME)
+
+Grèce Bulgarie Espagne Pologne
+Irlande Rep. Tchèque
+Belgique minima
+Roumanie Pays bas Finlande
+Italie France Suède Allemagne moyenne Autriche Chypre Portugal Royaume Uni Danemark
+
+0 0 0 0 0 0
+2 3 3 3
+4 5 6
+
+0
+
+20 22 23
+
+28
+
+46 47
+
+20 40 60
+
+129132
+80100120140
+
+10
+
+
+Taux apparents d'imposition du fioul domestique en Europe en 2007 en /tCO2
+(Source Alma Consulting 2007 pour l'ADEME)
+
+Luxembourg Belgique
+minima communautaire Bulgarie Irlande
+Allemagne France
+Pologne Finlande Portugal Espagne Autriche Royaume Uni moyenne
+Chypre Pays bas Roumanie
+Grèce Danemark
+Hongrie Rep. Tchèque
+Suède Italie
+
+4 6 8 9
+
+0
+
+17 20 21 21 25
+
+33 34
+36 41
+
+20 40
+
+56 71 79
+60 80
+
+95101102
+100
+
+115120
+
+127131
+
+147
+
+140160
+
+La structure actuelle de la taxation des produits fossiles en France permet d'identifier les différentes modalités d'application d'une éventuelle contribution "  climat - énergie  ". Plusieurs scénarios peuvent être envisagés, de manière non exhaustive :
+
+ -  un premier scénario dit "  additionnel  " pourrait consister à ajouter simplement aux différentes taxes sur l'énergie existantes, sans tenir compte de la taxation implicite du carbone et sans modifier la structure actuelle de la TIPP, une contribution dont le taux serait fixé au niveau permettant d'imposer de la même manière le contenu en CO2 des produits fossiles ;
+
+ -  un deuxième scénario dit "  différentiel  " pourrait consister à créer une contribution carbone sur l'énergie qui tienne compte de la situation actuelle de taxation implicite du carbone des différents produits fossiles et qui permette d'imposer de la même manière le contenu en CO2 de tous les produits fossiles. Un diagnostic sur les niveaux de taxation actuels permettrait de déterminer s'ils couvrent l'ensemble des coûts externes, y compris ceux liés à l'effet de serre. Il pourrait alors être envisagé de relever les différents niveaux de taxe de sorte qu'ils prennent non seulement en compte l'effet de serre, mais également les autres coûts associés à l'utilisation des énergies fossiles s'il apparaissait que ceux-ci sont sous-évalués (congestion, pollutions locales...).
+
+11
+
+
+Illustration de l'impact comparé des scénarios additionnels et différentiels sur la taxation de deux combustibles hypothétiques
+
+Niveau de taxation
+
+Taxation actuelle du CO2
+Taxe additionnelle
+
+Taxe différentielle
+
+Combustible 1 Combustible 2
+
+Combustible 1 Combustible 2
+
+Ce document s'abstient d'étudier la prise en compte de l'ensemble des coûts dans la tarification de l'électricité, cette question ayant été abordée dans le rapport de la Commission Champsaur.
+2.3 Quel serait le champ de la contribution "  climat - énergie  "?
+Une première question à résoudre consiste à préciser l'articulation entre la contribution "  climat - énergie  " et le dispositif européen d'échange de quotas (directive ETS).
+Pour les autres secteurs, l'efficacité du "  signal-prix  " du CO2 transmis par une taxe carbone serait d'autant plus grande que son champ d'application sera large. A l'inverse, comme précédemment, laisser des périmètres économiques exempts de taxation fait courir le risque d'une plus grande consommation de combustibles dans ces périmètres et donc d'émissions non maîtrisées de gaz à effet de serre.
+Il conviendrait donc, dans le cadre de la conférence, de s'interroger sur le champ que devrait couvrir la contribution "  climat - énergie  ". Est-ce qu'il est pertinent d'exclure certains produits ou certaines consommations d'énergies fossiles, en fonction notamment de leur usage ou de la catégorie des consommateurs ?
+2.4 Quel devrait-être le niveau de la contribution "  climat - énergie  " ? Comment devrait-il évoluer dans le temps ?
+Le niveau de la taxe dépend des objectifs à atteindre. A l'horizon 2020, la France doit réduire ses émissions de 14% par rapport à 2005 sur le secteur non couvert par la directive ETS. A l'horizon 2050, l'objectif pour le pays est une division par quatre des émissions. Pour atteindre ces objectifs, tout ne reposera pas sur la seule contribution "  climat - énergie  ". Quelle part devrait prendre la contribution "  climat-énergie  " à l'atteinte de ces objectifs?
+La question de la trajectoire à long terme d'une éventuelle contribution mériterait également d'être abordée. En effet, une évolution à la fois graduelle et prévisible de la contribution favoriserait une adaptation des comportements des agents économiques au moindre coût. Les entreprises comme les ménages pourraient ainsi évaluer avec plus de précision la rentabilité anticipée de technologies alternatives vis-à-vis des technologies plus intensives en carbone. Les travaux de la commission du Centre d'Analyse Stratégique présidée par M. Alain Quinet, inspecteur général des finances, sur la "  valeur tutélaire  " du CO2 peuvent fournir un éclairage utile pour déterminer la trajectoire à suivre.
+12
+
+
+2.5 Comment accompagner la mise en place d'une éventuelle contribution "  climat énergie  " pour la rendre plus efficace ?
+L'efficacité d'un "  signal prix  " du CO2 dépend également de la faculté des acteurs économiques à effectuer des choix pertinents en matière de renouvellement et d'utilisation des équipements.
+Une réflexion sur les mesures visant à diffuser largement une information claire et précise sur les gisements de maîtrise de la demande (guides d'achat, étiquetage, conseils pratiques, ...) ou à créer un environnement de confiance (norme, label, ...) pourrait accompagner la contribution "  climat énergie  ".
+Dans le bâtiment, les principales barrières à la diffusion de la rénovation thermique ont été bien identifiés lors du Grenelle : manque d'information, manque de formation des professionnels du secteur, mais aussi problème de la relation entre propriétaire et locataire...
+Dans le secteur des transports également, des obstacles empêchent le signal prix de se transmettre. Les modes alternatifs manquent encore de compétitivité. Une hausse de la taxation de la route ne permettrait sans doute pas seule une substitution par le transport ferroviaire.
+3. Quelles sont les conséquences macroéconomiques de la contribution "  climat - énergie  " ?
+L'étude des impacts d'une contribution "  climat - énergie  " sur les acteurs économiques est indispensable pour cerner les conditions de son acceptabilité par la société civile et identifier de possibles mesures d'accompagnement visant à réduire d'éventuelles conséquences négatives sur certains groupes sociaux. L'analyse des expériences étrangères similaires qui ont été couronnées de succès devrait également fournir de précieuses indications sur ce qui pourrait être acceptable.
+Toutes choses égales par ailleurs, c'est-à-dire avant mesures de compensation, l'introduction d'une fiscalité nouvelle sur le CO2 via la contribution "  climat - énergie  " est susceptible d'avoir des conséquences négatives sur le pouvoir d'achat des ménages, la compétitivité des entreprises et donc sur la croissance et l'emploi. L'introduction d'une fiscalité carbone modifierait la structure de coûts des entreprises françaises. En ce sens, les entreprises feraient face à un choc d'offre, équivalent par exemple à celui provoqué par une hausse du prix des énergies fossiles. L'impact de ce choc sur les prix, la production et l'emploi doit être évalué, et cela d'autant plus au regard du contexte conjoncturel actuel.
+Les conséquences macroéconomiques de l'introduction d'une telle taxe dépendent toutefois du niveau du prélèvement, des mesures compensatoires retenues et de l'utilisation des recettes dégagées par la contribution "  climat - énergie  ". A cet égard, il faut rappeler que le Président de la République s'est engagé à ne pas augmenter les prélèvements obligatoires à l'issue de la réforme afin de ne pas alourdir la pression fiscale sur le travail et de ne pas pénaliser la croissance.
+Dans cette hypothèse, c'est-à-dire si la contribution "  climat - énergie  " était compensée par une baisse des prélèvements obligatoires pesant sur les facteurs de production (capital et travail), la balance commerciale s'en trouverait améliorée (réduction de la facture énergétique) et il y aurait des effets positifs sur la croissance et l'emploi. En effet, l'introduction d'une contribution "  climat énergie  " devrait encourager la réalisation d''économies d'énergie et un regain d'investissement dans l'efficacité énergétique, qui réduiront la facture énergétique de la France. Toutes choses égales par ailleurs, l'amélioration de la balance commerciale aura un effet positif sur l'activité économique. La contribution "  climat - énergie  " pourrait également favoriser un transfert d'activité de certains secteurs très intensifs en énergie vers d'autres secteurs plus intensifs en main d'oeuvre.
+13
+
+
+L'exemple suédois La Suède a été un des premiers Etats à compenser la mise en place d'une fiscalité environnementale par une baisse de la fiscalité sur les facteurs de production, appliquant ainsi la théorie du "  double dividende  ". Une taxe sur le CO2 a été instituée progressivement à partir de 1991 en contrepartie d'une baisse (plus importante) de la fiscalité sur le travail. Entre 2001 et 2006, les taxes environnementales (dont taxe CO2) ont encore augmenté en contrepartie d'une réduction proportionnelle de la fiscalité sur les facteurs de production. Le "green tax shift" devait se mettre en place progressivement jusqu'en 2010. A l'arrivée au pouvoir du gouvernement de centre-droit en octobre 2006, le "green tax shift" a été interrompu, après avoir atteint 1,75 Md sur les 3 Md prévus à l'origine. En 2008, les taxes environnementales (dont la taxe CO2) ont cependant été encore augmentées en contrepartie d'une baisse (plus importante) de la fiscalité sur le travail. Dans le cadre d'un projet de recherche européen coordonné par l'Institut national de recherche en environnement du Danemark, des économistes de Cambridge ont estimé l'impact sur l'activité en 2007 (donc hors mesures 2008) à 0,5 point sur la période 1994-2012.
+Il peut également être envisagé de mettre en place des dispositifs d'aides ciblés sur les agents les plus sensibles à la mise en place de la contribution "  climat - énergie  ". Il s'agit en particulier des ménages modestes pour qui le surcoût lié à la création d'une telle taxe pourrait être insurmontable. Il s'agit également de quelques secteurs économiques dont la compétitivité pourrait être compromise. Un tel dispositif devrait sans doute être limité à une période de transition. Par ailleurs, de façon plus générale, la mise en place d'une contribution "  climat - énergie " devrait s'accompagner d'une réflexion sur la place des dispositifs d'incitation économique déjà existants pour déterminer s'ils doivent, dans le nouveau contexte, être réajustés, recentrés sur certaines cibles voire supprimés.
+14
+
+

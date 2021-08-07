@@ -1,6 +1,6 @@
 **/__pycache__/
 **/*.pyc
-data2Import/
+#data2Import/
 venv/
 static/
 .idea/

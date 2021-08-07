@@ -1,0 +1,190 @@
+La Contribution Climat Énergie
+Un " double dividende " écologique et économique
+Stratégie & études N° 19 - 23 juin 2009
+
+
+
+Conformément à ses engagements européens, la France doit réduire ses émissions de gaz à effet de serre (GES) de 14 % hors SEEQ 1 d'ici à 2020. Pour atteindre cet objectif, le projet de loi du Grenelle Environnement prévoit que "  l'État étudiera la création d'une contribution dite "climat-énergie" (CCE) en vue d'encourager les comportements sobres en carbone et en énergie (...) Elle sera strictement compensée par une baisse des prélèvements obligatoires de façon à préserver le pouvoir d'achat des ménages et la compétitivité des entreprises  ".
+Dans cette perspective, le ministère du Développement durable (MEEDDAT) et le ministère de l'Économie, de l'Industrie et de l'Emploi (MINEIE) organisent une conférence d'experts le 02 et 03 juillet 2009 à Paris sur la Contribution Climat Énergie.
+L'ADEME a réalisé une étude à ce sujet et souhaite dans ce dix neuvième Stratégie & Etudes apporter
+
+au débat public une estimation aussi précise que possible des volumes et des valeurs en jeu. Plusieurs scénarios d'assiette et de taux ont été simulés (CCE additionnelle ou CCE différentielle). Leurs effets environnementaux et économiques ont été estimés pour chaque catégorie de contribuables et pour chaque secteur de l'économie. Les travaux de l'ADEME montrent que cette mesure fiscale peut concilier environnement et préservation des revenus des ménages et des entreprises. En effet, les entreprises les plus exposées à la concurrence internationale pourraient être exonérées, les recettes fiscales prélevées sur l'énergie pourraient financer une baisse du coût du travail et une diminution d'autres prélèvements sur les ménages. La Contribution Climat Énergie permettrait d'orienter le choix des consommateurs de manière efficiente en leur donnant un signal prix incitatif. Elle procurerait un " double dividende ", écologique et économique et positionnerait la France parmi les pays les plus créatifs en matière de fiscalité environnementale.
+
+1. Système européen d'échange de quotas de carbone.
+
+
+
+
+Modalités et scénarios envisagés
+
+Une taxe sur les combustibles
+
+plutôt qu'une taxe à la consommation
+
+des produits
+
+Une taxe assise sur les produits serait pratiquement
+
+impossible à mettre en oeuvre à brève échéance. En
+
+effet, pour évaluer le contenu en carbone d'un bien
+
+de consommation, il faut calculer les émissions de
+
+CO2 des combustibles fossiles, à chaque stade de sa fabrication et de sa distribution. Cet exercice serait
+
+complexe, long et contestable à moins de demander
+
+à chaque agent économique de tenir une
+
+comptabilité carbone très rigoureuse. Le coût d'un
+
+tel dispositif excéderait sans doute les recettes
+
+perçues par l'État.
+
+Faute de données, il serait très difficile d'estimer le
+
+contenu en carbone des produits importés. On
+
+pourrait envisager de leur appliquer un taux
+
+forfaitaire en fonction de leurs émissions supposées,
+
+mais cela pourrait être contesté devant l'OMC2. Il ne
+
+P. 2
+
+s'agirait plus à proprement parler d'une taxe carbone sur les produits mais d'un mécanisme de
+
+compensation aux frontières. Son adoption relève de
+
+la compétence de l'Union européenne.
+
+Une contribution assise sur les combustibles fossiles est le moyen le plus efficace de taxer le contenu effectif en carbone des produits
+
+2. Organisation Mondiale du Commerce. 3. Directive UE 2003/96 : la réglementation européenne encadre strictement les exonérations des nouvelles taxes énergétiques. Seuls peuvent être exonérés, les entreprises soumises au SEEQ, les combustibles à double usage, la fabrication des produits minéraux non métalliques. L'ensemble des ménages peut être exonéré mais des exonérations catégorielles ne sont pas tolérées. 4. La Grande-Bretagne, la Suède, la Finlande, le Danemark et la Slovénie ont déjà adopté une taxe carbone.
+
+fabriqués sur le territoire national puisque celui-ci dépend de la quantité d'énergie fossile nécessaire à leur production et leur distribution. De ce point de vue, la taxe carbone équivaut à un réaménagement des taxes intérieures existantes sur le pétrole (TIPP), le gaz (TICGN) ou le charbon (TICC).
+Seuls les combustibles consommés sur le territoire national seraient taxés, ce qui donnerait un avantage concurrentiel aux importateurs de produits manufacturés par des entreprises non soumises au même niveau de taxation.Il convient d'étudier les impacts en termes de concurrence.
+Exonérer les entreprises soumises au SEEQ
+Pour éviter une distorsion de concurrence, l'Union européenne prévoit d'exonérer3 de taxe les entreprises soumises au système européen d'échange de quotas de carbone (SEEQ autrement désigné Emission Trading Scheme, ETS en anglais), comme l'ont fait tous les États qui ont d'ores et déjà instauré une taxe carbone4. Le SEEQ couvre en effet les émissions de la branche énergie (raffinage, distribution de gaz et d'électricité) et les installations de combustion d'une capacité de plus de 20 MW, soit la quasi-totalité des émissions de l'industrie (93 % des émissions). Dans le cadre d'un marché de permis, comme dans celui d'une taxe, les producteurs diminuent leurs
+
+Encadré /Les scénarios analysés par l'ADEME
+
+Dans ses divers scénarios, l'ADEME a supposé que serait taxé l'ensemble des combustibles fossiles (gaz naturel, charbon, fioul domestique, fioul lourd) et les carburants (gazole et super) consommés par les ménages et les entreprises, à l'exception de celles soumises au marché européen de quotas de CO2. La CCE serait prélevée à la source par les distributeurs d'énergie (comme la TIPP ou la TICGN). L'extension de l'assiette à l'électricité a également été étudiée dans une variante. Les combustibles fossiles sont taxés de manière très hétérogène en France. C'est pourquoi l'ADEME a envisagé deux types de contribution :
+ -  Une "  contribution additionnelle  " aux taxes intérieures (TIPP, TICGN, TICC), assise sur l'ensemble des combustibles fossiles, à un taux uniforme (de 21, 27 ou 32 euros/tCO21),
+ -  Une "  contribution différenciée  " selon chaque combustible, en fonction de leur niveau de taxe intérieure respectif, de façon telle que leur contenu en CO2 soit globalement imposé à la même valeur cible (de 21, 27 ou 32 euros/tCO2).
+
+Le scénario différentiel se distingue du premier essentiellement sur deux points :
+ -  le super sans plomb consommé par les ménages, déjà taxé par la TIPP au niveau de l'ensemble de ses externalités, serait exonéré,
+ -  le gazole utilisé par les transporteurs professionnels et le fioul domestique seraient approximativement 3 fois moins taxés que dans le scénario additionnel.
+Dans chaque scénario deux exonérations possibles ont été envisagées, conformément à la directive UE 2003/963. Elles concernent :
+ -  les combustibles dits à double usage qui sont utilisés à la fois pour des besoins énergétiques et comme matière première pour la fabrication d'un bien final2. Ces combustibles sont déjà exonérés des taxes intérieures existantes (TIPP, TICC, TICGN),
+ -  la fabrication de produits minéraux non métalliques, très énergivores, pourrait être exonérée3. Ces combustibles sont également exonérés des taxes intérieures.
+
+1. Montants recommandés successivement par les rapports Boiteux (2001), Landau (2007) et Quinet (2008). D'après le rapport Quinet, la valeur tutélaire du carbone devrait être fixée à 32 /tCO2 et augmenter progressivement ensuite, jusqu'à 100 en 2020, pour espérer atteindre le facteur 4. 2. Cela concerne les produits suivants : l'acier, chaux, le zinc, le plomb, l'aluminium, l'ammoniac, les engrais azotés et les matières plastiques. 3. Cela concerne le ciment, le plâtre, le verre, la céramique.
+
+
+émissions tant que le coût de la réduction d'une tonne de CO2 supplémentaire reste inférieur au prix du quota (ou au taux de la taxe). Au-delà, ils préféreront payer la pénalité (ou l'impôt). Le législateur détermine les quotas (les taux) en fonction des objectifs globaux de réduction qu'il s'est fixés. Dans ce cadre, les entreprises qui jouissent d'un potentiel de diminution à faible coût réduiront leurs émissions, au-delà même de l'objectif moyen que le législateur a assigné à l'ensemble du secteur. En revanche, d'autres firmes réduiront peu ou pas leurs émissions. Ainsi les efforts sont réalisés là où ils sont les moins coûteux. Pour un même objectif de baisse en pourcentage, le coût de la réduction induite par une taxe est moins lourd que celui qui serait généré par une réglementation qui obligerait chaque entreprise à limiter leurs émissions quel qu'en soit le prix. Le système européen d'échange de quotas peut être assimilé à une taxe carbone. De plus, il a P. 3 récemment fait l'objet d'une profonde réforme: les quotas alloués ont été revus à la baisse, les allocations diminueront mécaniquement de 2% chaque année, et la plus grande partie des permis sera à terme mise aux enchères. Dans ce contexte, il paraît légitime d'exonérer de CCE les entreprises qui sont soumises au système de quotas pour éviter les délocalisations d'entreprises. À l'inverse, il paraît difficile d'étendre le marché de permis à des secteurs où les acteurs sont multiples et les émissions diffuses. Cela générerait des coûts de contrôle et de transaction élevés. La fiscalité environnementale apparaît donc comme l'outil le plus adapté à ces cibles.
+Il est essentiel de mettre en place une taxe parallèle au SEEQ qui cible spécifiquement les émissions diffuses car, depuis 1990, tous les secteurs ont réussi à réduire les GES, en particulier l'industrie, sauf les transports et le résidentiel tertiaire. Or la France s'est engagée à réduire de 14 % ses émissions dans les secteurs hors SEEQ d'ici à 2020.
+Un signal prix sans répercussion économique négative
+La CCE pourrait générer jusqu'à 10 milliards d'euros de recettes fiscales brutes
+Toutes choses égales par ailleurs, une CCE additionnelle à un taux uniforme de 32 /tCO2, appliquée à tous les secteurs hors SEEQ et hors électricité, pourrait générer 8 milliards d'euros de recettes fiscales (dont 4 milliards d'euros sur les carburants). Elle coûterait moins de 0,6 % de la valeur ajoutée des industries non exonérées; 0,1 % de la valeur ajoutée des entreprises du tertiaire et 0,27 % du revenu médian des ménages (cf. tableau 1).
+Une CCE différentielle, ciblant une valeur carbone globale de 32 /tCO2, toutes taxes énergétiques comprises, générerait quasiment 5 milliards d'euros de recettes fiscales. Plusieurs taux ont été estimés, en supposant un contenu moyen en carbone de l'électricité de 80 gCO2/kWh, une extension de l'assiette de la CCE à l'électricité rapporterait de 700 à 800 M par an et coûterait aux ménages 15  par an en moyenne.
+Les coûts ont été estimés avant la réalisation d'éventuelles économies d'énergie et avant redistribution des recettes de la taxe. Ces montants pourraient baisser d'au moins 9 % dans l'industrie, de 13 % dans le tertiaire et de 12 % dans le résidentiel à moyen terme sous l'effet des économies d'énergie réalisées par les entreprises et les ménages. De ce point de vue, les estimations réalisées ci-dessous doivent être considérées comme maximales. Le montant global des recettes de la CCE ne peut en aucun cas être assimilé à un coût macroéconomique5 puisque la redistribution des recettes aura une incidence positive sur le revenu et/ou l'activité des agents. Comme la CCE est envisagée à pression fiscale constante, les recettes doivent être utilisées pour financer des mesures d'accompagnement visant à préserver le pouvoir d'achat des ménages, la compétitivité des entreprises et à favoriser la maîtrise de l'énergie.
+Un coût moyen brut de 0,27% du revenu des ménages pour l'énergie dans le logement
+Hors carburant, une CCE additionnelle de 32 /tCO2 représenterait 0,27 % du revenu moyen des ménages. Ces taux relativement modestes masquent des disparités selon le mode de chauffage et le type de logement des particuliers mais aux conséquences limitées : à l'extrême, un ménage qui se chauffe au fioul dans une maison individuelle paierait chaque année 170 euros de taxe additionnelle à 32 euros/tCO2 (le scénario différentiel à 32 euros/tCO2 engendrerait une dépense supplémentaire pour les ménages se chauffant au fioul de 59 euros par an), tandis qu'un ménage qui vit dans un logement collectif chauffé au gaz n'aurait à payer que 60 euros (cf. tableau 2). La Contribution Climat Énergie serait essentiellement assise sur la consommation de gaz et de fioul car seuls 0,5% des logements sont encore chauffés au charbon. Les ménages les plus défavorisés consomment généralement moins d'énergie que les plus aisés (1200 euros en moyenne contre 3000). Cependant les plus pauvres consacrent 15 % de leur revenu à l'énergie. Pour éviter l'accroissement des inégalités sociales, le législateur pourrait redistribuer aux particuliers tout ou partie des recettes prélevées sur la consommation énergétique des logements, soit de manière indirecte, via une augmentation des crédits d'impôts à l'efficacité énergétique ou une baisse des taxes, soit directement via un crédit d'impôt sur le revenu ou une redistribution forfaitaire des recettes ("  allocation universelle climat  "). Cette dernière option donnerait lieu à une redistribution des revenus des ménages qui consomment le plus vers ceux qui consomment moins. L'exonération d'une tranche forfaitaire de consommation énergétique pourrait également être envisagée, mais cela limiterait le caractère incitatif de la mesure.
+
+
+5. Les effets macroéconomiques de la CCE sont analysés dans la note du SEDD n°42009, intitulée "  taxe carbone, recyclage des recettes et double dividende  ".
+
+
+
+
+
+Un coût maximal de 58 euros par véhicule et par an
+Une taxe additionnelle de 32 /tCO2 sur les carburants coûterait 2,2Md (HTVA) supplémentaires aux ménages. Le litre d'essence augmenterait de 6c. Au maximum, cela coûterait aux conducteurs 58  par véhicule et par an, soit l'équivalent d'un plein de super. Dans le scénario de taxe différentielle à 32 /tCO2, la CCE, qui porterait sur le seul carburant diesel consommé par les ménages, s'élèverait seulement à 1,3 Md (HTVA).
+Un coût maximal brut de 0,08 % de la valeur ajoutée du tertiaire
+Hors carburant et électricité, une Contribution Climat Énergie additionnelle de 32 /tCO2 coûterait au tertiaire 0,08 % de sa valeur ajoutée (VA) (cf. graphique 1).
+Une CCE additionnelle sur les carburants coûterait au maximum 5 % de la valeur ajoutée des soussecteurs du transport (cf. graphique 2).
+
+
+
+
+La compétitivité de l'industrie serait préservée
+Une CCE additionnelle (hors carburant et électricité) de 32 /tCO2, représenterait 0,78 % de la valeur ajoutée de l'industrie, hors SEEQ. Ces chiffres cachent d'importantes disparités. À titre d'exemple, à 32 /tCO2, la part de la CCE additionnelle dans la VA atteindrait 35 % dans la branche fabrication d'engrais; 11 % pour la chimie minérale et les matières plastiques ; 10 % pour l'aluminium ; 5 % pour les carreaux en céramique (cf. graphique 3). Un taux appliqué de manière uniforme à l'ensemble de l'industrie, sur tous les combustibles fossiles, provoquerait sans doute de graves difficultés économiques à certains sites industriels, avec le risque que la production soit délocalisée dans des pays bien moins rigoureux sur les normes d'émission de GES que le nôtre. C'est pourquoi l'Union européenne a prévu une exonération pour les combustibles à double usage et la fabrication de produits minéraux non métalliques, qui sont d'ores et déjà exonérés en France de taxes intérieures. Si toutes ces exonérations étaient appliquées (y compris l'exonération des entreprises du SEEQ), 96 % des émissions de l'industrie (hors carburant) échapperaient à la taxe. La part de la CCE (hors carburant et électricité) dans la VA des entreprises taxées s'élèverait à moins de 0,56 % dans le scénario additionnel. Dans ce cas, aucune industrie exposée à la concurrence internationale (ayant un taux de couverture inférieur à 100 %) n'aurait à payer une contribution supérieure à 0,5 % de sa VA. Grosso modo, la CCE n'affecterait que les dépenses en chauffage des bâtiments de l'industrie. Sa compétitivité ne serait pas altérée.
+
+Un coût maximum brut de 2,1 % du revenu courant des agriculteurs et 2,7 % du chiffre d'affaires de la pêche
+Toutes choses égales par ailleurs, en supposant que les agriculteurs gardent le droit d'utiliser du fioul domestique pour faire fonctionner leurs appareils agricoles, une CCE additionnelle de 32 /tCO2 représenterait 1,7 % de la valeur ajoutée brute du secteur agricole (soit 2,1 % du revenu courant avant impôt [RCAI] des exploitants agricoles), soit environ 250 M. Les maraîchers, les grands céréaliers, les éleveurs de bovins et les producteurs de lait seraient les plus gros contributeurs du secteur (la CCE additionnelle représenterait respectivement 4,6 %, 2,9 % et 2,5 % de leur RCAI). À l'extrême inverse, la contribution des viticulteurs n'excéderait pas 1,5 % de leurs revenus.
+En maintenant l'exonération de TIPP sur le gazole dont bénéficient les pêcheurs, une CCE additionnelle pèserait entre 0,9 % et 2,7 % du chiffre d'affaires de la pêche, selon le type de navire considéré. Elle coûterait moins de 25 millions d'euros au secteur. La suppression de l'exonération de TIPP lui coûterait cinq fois plus cher. Compte tenu des difficultés du secteur, on pourrait considérer les navires comme des machines-outils et tolérer que le carburant utilisé par les pêcheurs soit taxé comme le fioul domestique. La pêche bénéficierait ainsi du même régime que l'agriculture.
+Un "  double dividende  " écologique et économique
+Une CCE additionnelle de 32 /tCO2 permettra de réduire d'au moins 19 Mt/CO2 les émissions par rapport à la tendance, en quelques années, ce qui représente 7,5 % des émissions nationales (hors SEEQ). La baisse pourrait atteindre 14 % en 2020.
+Avant redistribution des taxes, la CCE pourrait avoir un effet négatif sur l'offre des entreprises mises à contribution. Si l'État utilise son supplément de recettes, soit pour le redistribuer, soit pour baisser le coût du travail (si les recettes de la CCE hors prélèvements sur les ménages y étaient entièrement affectées, cela représenterait une baisse de 0,45% du coût du travail en France, soit 0,23 % de la valeur ajoutée des entreprises françaises), soit pour augmenter les investissements via un crédit d'impôt entreprises en faveur6 des investissements d'efficacité énergétique par exemple, l'effet global de la CCE sur l'économie pourrait être neutre, voire positif.
+La CCE aura une incidence négative sur la production de la branche de l'énergie et du transport routier. Cependant, elle devrait inciter les agents à réaliser des économies d'énergie. Cela devrait profiter au secteur du bâtiment (grâce à l'augmentation des travaux d'isolation), du transport ferroviaire et fluvial et de la production d'énergie renouvelable.
+
+
+Or la branche énergie (hors énergie nucléaire) D'après une étude de l'ADEME8, la réalisation des
+
+importe la totalité de ses combustibles et emploie objectifs du Grenelle Environnement (à taux de
+
+relativement peu de main-d'oeuvre. Les dépenses prélèvement obligatoire constant) doperait de 35 mil - 
+
+en carburant représentent une part importante du liards en euros constants les investissements dans
+
+chiffre d'affaires du transport routier, en grande l'efficacité énergétique et les énergies renouvelables,
+
+partie assuré par le pavillon étranger. À l'inverse, cequipourraitgénérer260000créationsd'emplois
+
+les branches du bâtiment et du transport directs et 160000 emplois indirects. Le regain de
+
+ferroviaire importent très peu de consommations consommation et d'investissement induit entraî - 
+
+intermédiaires du reste du monde et sont très nerait une augmentation globale de l'activité éco - 
+
+utilisatrices de main-d'oeuvre. Ce transfert des nomique de près de 40 Md soit 1,6 point de PIB
+
+dépenses devrait donc entraîner :
+
+supplémentaire par rapport à la tendance.
+
+ -  une réduction de la facture énergétique et donc Si les entreprises énergivores soumises à la
+
+une amélioration de la balance commerciale (de concurrence internationale sont exonérées, si les
+
+l'ordre de 3 milliards d'euros),
+
+recettes fiscales générées par le supplément de
+
+ -  une augmentation équivalente de la somme des recettes prélevées sur l'énergie financent une
+
+valeurs ajoutées7 réalisées par les diverses baisse des charges sur le travail des entreprises
+
+branches économiques, c'est-à-dire du PIB,
+
+et une baisse de taxe pour les ménages, alors la
+
+ -  des créations d'emplois par dizaine de milliers. Contribution Climat Énergie procurera sans
+
+doute un "  double dividende  ", écologique et
+
+Sachant que la baisse du chômage entraîne une économique, à la France. P. 6 hausse de la demande et que l'amélioration de la
+
+balance commerciale accroît le stock de capital
+
+disponible et favorise une diminution des taux
+
+d'intérêt, alors l'investissement devrait augmenter. Ce phénomène devrait déboucher sur une
+
+croissance du PIB supérieure au montant même
+
+de la réduction de la facture énergétique. Il devrait
+
+procurer à l'État un supplément de recettes fiscales conséquent.
+
+6. Pourraient être éligibles, les équipements qui peuvent bénéficier du crédit d'impôt aux particuliers (art 200 quater du CGI) ; les véhicules électriques et leurs équipements ; les "  matériels destinés à économiser l'énergie  " qui peuvent déjà bénéficier d'un amortissement exceptionnel (CGI, art. 39 AB à AF modifié par l'article 47 de la loi de finances rectificative pour 2007) et qui figurent sur la liste prévue à l'article 02 de l'annexe IV au CGI. 7. Égales aux dépenses réalisées sur le territoire moins les importations. 8. Le Grenelle de l'Environnement et la croissance verte annexe au rapport du CAE intitulé le prix du pétrole (à paraître).
+
+GAËL CALLONNEC - ÉCONOMISTE AU SERVICE OBSERVATION ÉCONOMIE ÉVALUATION
+
+
+

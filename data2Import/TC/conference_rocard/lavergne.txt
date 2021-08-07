@@ -1,0 +1,307 @@
+Vision prospective du contexte énergétique
+Richard Lavergne (MEEDDM / CGDD + DGEC)
+Conférence des experts sur la Contribution Climat et Énergie - Session 2 Jeudi 2 juillet 2009
+
+1
+
+
+o L'énergie est modélisable
+Résultats en général présentés sous forme de scénarios énergétiques :
+ -  Scénarios "  story telling  "
+ -  Scénarios de "  back casting  " (téléologie)
+ -  Scénarios de simulation
+2 approches : technico-économique ("  ingénieur  ") ou économétrique ("  économiste  ") résultat d'un modèle nécessitant une représentation aussi pertinente que possible du système énergétique (hypothèses, élasticités,..)
+ -  Scénarios d'optimisation
+ex.: scénario calculé à partir d'un modèle à "  équilibre partiel  " ou à "  équilibre général  " résultat d'un modèle nécessitant une représentation aussi pertinente que possible du système énergétique (hypothèses, élasticités, macroéconomie,..)
+ -  Combinaisons de ces différents types
+
+2
+
+
+o Consommation mondiale d'énergie primaire en "  tendanciel AIE  "
+Selon l'AIE (WEO 2008), la demande mondiale d'énergie croîtrait en tendanciel de 45% entre aujourd'hui et 2030
+3
+
+
+En tendanciel, le charbon est l'énergie dont la consommation croît le plus vite
+
+Hausse de la demande mondiale d'énergie primaire observée sur 2000 - 2007
+Mtep
+1000 4,8% % = taux de croissance annuel moyen
+900
+800
+
+Structure de la demande future additionnelle Scénario tendanciel 2006 - 2030
+
+100% 80%
+
+Autres Charbon
+
+700
+
+600 60%
+
+500 1,6% 2,6% 400
+
+40%
+
+300 2,2%
+200 20%
+
+100 0,8%
+0 Charbon Pétrole Gaz Renouv. Nucléaire
+
+0% Non-OCDE
+
+OCDE
+
+En tendanciel, selon l'AIE (WEO 2008), le charbon représenterait plus du tiers de la demande globale supplémentaire d'énergie d'ici 2030
+
+4
+
+
+o Émissions mondiales de CO2 dues à l'énergie d'ici 2030 selon l'AIE (WEO 2008)
+
+Gigatonnes
+
+45550450 Policy Policy Scenario Scenario
+40 9% Nuclear 14% CCS
+35 23% Ren./biofuels Energy efficiency
+30 54%
+25
+
+202005
+
+2010
+
+2015
+
+2020
+
+2025
+
+2030
+
+Reference Scenario 550 Policy Scenario 450 Policy Scenario
+
+Selon l'AIE, pour réduire les émissions de CO2, il faut cumuler innovation et (surtout) efficacité énergétique + diffusion des techno. "  bas carbone  " actuelles
+
+5
+
+
+o Autre exercice AIE : ETP 2008 avec des scénarios jusqu'à 2050-2100
+
+Oceanic storage uncertainty
+IPCC "overshoot" scenarios (+ 2 degrees)
+3 scénarios énergétiques qui prolongent WEO 2008 limité à 2030
+
+6
+
+
+o Réduction des émissions de CO2 d'origine énergétique d'ici 2050 selon l'AIE (ETP-2008) (1) Par technologie
+Baseline Emissions 62 Gt
+
+BLUE Map Emissions 14 Gt
+
+7
+
+
+o Réduction des émissions de CO2 d'origine énergétique d'ici 2050 selon l'AIE (ETP-2008) (2) Par secteur
+8
+
+
+o Coût marginal de réduction des émissions
+Technology Pessimism
+Technology Optimism
+Selon l'AIE (ETP 2008), pour ramener les émissions de 2050 à leur niveau actuel (stabilité), il faut faire appel à des options technologiques à des coûts allant jusqu'à 50 $/tCO2 et, pour les diviser par 2, allant jusqu'à 200 voire 500 $/tCO2
+9
+
+
+o Méthode appliquée pour construire les scénarios MEEDDM
+
+Modèle de simulation:
+technico-économique + dire d'experts (Enerdata/MEDEE-PRO)
+
+Demande finale d'énergie
+
+dont: Consommations unitaires x Parcs
+
+Modèle d'optimisation pour l'électricité (RTE)
+Modèle d'optimisation pour les raffineries (IFP)
+Modèle pour la branche énergie et l'approvisionnement (CGDD-DGEC)
+
+HYPOTHÈSES
+Macro-économie, hypothèses sectorielles, technologie, "  politique  " (réglementation européenne, nationale,...), comportements,...
+
+Consommation d'énergie primaire et approvisionnement
+CGDD-DGEC + Comité de liaison
+10
+
+
+o Hypothèses génériques
+Environnement international (PIB, pop., réserves, etc.) : cf. AIE-WEO 2007 Scénario énergétique limité à la France métropolitaine (Corse comprise) Activité économique nationale dans un contexte européen
+ -  PIB France : +2,1% par an sur 2008-2030
+Croissance démographique et emplois : scénario central INSEE
+ -  67,2 millions d'habitants en 2030, soit +0,4%/an sur 2006-2030
+ -  31,6 millions de ménages (résidences principales) en 2030, soit +0,9%/an
+24,3 millions d'emplois dans le tertiaire en 2030 (à partir d'une étude du BIPE) Taux de change de l'euro et du dollar US : 1,25 $/euro sur 2008-2030 Prix des énergies et du CO2 (en dollar et euro constant 2006) :
+ -  pétrole brut Brent : 70 $/bl sur 2008-2030
+ -  gaz indexé sur le prix du Brent : 7 $/MBtu sur 2008-2030
+ -  charbon : 80 $/t sur 2008-2030
+ -  quota CO2 (UE-27) : 22 /t CO2 en 2020 et 24 /t CO2 en 2030, avec attribution gratuite
+Hypothèses "  Grenelle  " en complément pour les scénarios "  Grenellocompatibles  "
+
+11
+
+
+o Rupture du "  Grenelle  " dans la consommation d'énergie primaire
+
+Mtep
+
+Scénario de référence : +0,8% p.a. sur 2006-2020 (+0,7% sur 2006-2030)
+ -  forte hausse des énergies renouvelables (+2,9% p.a.)
+ -  forte hausse du gaz (+2,8% p.a.), surtout pour la production d'électricité
+ -  stagnation du pétrole ( - 0,1% p.a. ) et du nucléaire (+0,5% p.a.)
+ -  baisse du charbon ( - 1,5% p.a.)
+
+Scénario Grenelle central : -0,3% p.a. sur 2006-2020 (0% p.a. pour le scénario "  différé  ")
+ -  très forte hausse des énergies renouvelables (+19 Mtep par rapport à 2006, soit +5,2% par an)
+ -  stagnation du gaz ( - 0,5% p.a.) et du nucléaire ( - 0,2% p.a.)
+ -  sensible baisse du pétrole ( - 1,5% p.a.)
+ -  chute du charbon ( - 6,4% p.a.)
+Mtep
+
+12
+
+
+o Consommation finale d'énergie, par forme d'énergie
+
+Mtep
+
+Scénario de référence : +0,9% p.a. sur 2006-2020 (+0,8% sur 2006-2030)
+ -  hausse sensible des énergies renouvelables thermiques (+2,9% p.a.), du gaz (+1,9% p.a.) et de l'électricité (+1,8% p.a.)
+ -  stagnation du pétrole ( - 0,1% p.a. )
+ -  baisse du charbon ( - 1,1% p.a.)
+
+Scénario Grenelle central : -0,4% p.a. sur 2006-2020 ( - 0,1% p. a. pour le "  différé  ")
+ -  forte hausse des énergies renouvelables thermiques (+9 Mtep par rapport à 2006, soit +4,5% par an)
+ -  légère hausse de l'électricité (+0,3% p.a.)
+ -  baisse du gaz ( - 0,7% p.a.)
+ -  sensible baisse du pétrole ( - 1,3% p.a.) et chute du charbon ( - 3,9% p.a.)
+Mtep
+
+13
+
+
+o Consommation finale d'énergie, par secteur
+
+Scénario de référence : +0,9% p.a. sur 2006-2020 (+0,8% sur 2006-2030)
+ -  hausses sensibles du résidentiel-tertiaire +1,0% p.a.) et des transports (+0,8% p.a.)
+ -  +0,8% p.a. dans l'industrie
+
+Scénario Grenelle central : -0,4% p.a. sur 2006-2020 ( - 0,1% p. a. pour le "  différé  ")
+ -  forte baisse du résidentiel-tertiaire ( - 2,1% p.a.)
+ -  quasi-stabilité des transports (+0,4% p.a.)
+ -  progression inchangée dans l'industrie (+0,8% p.a.)
+
+Mtep
+
+Mtep
+
+14
+
+
+o Écarts entre scénarios sur la production d'électricité
+
+[Résultat de modélisation par RTE pour la branche électricité, sur la base des consommations finales, voir aussi la PPI 2009 plus récente]
+
+Production thermique classique brute (TWh)
+
+Production primaire brute (TWh)
+
+thermique ENR
+
+thermique divers non ENR (cogen et autres)
+140
+fioul et TAC
+CCG GN et GHF
+
+120
+charbon
+
+Tendanciel
+
+100
+
+Grenelle
+80
+Grenelle différé central
+60
+
+photovoltaïque éolien
+700
+hydraulique (hors turbinage des STEP) nucléaire 600
+500
+400
+300
+
+Grenelle Grenelle Tendanciel central différé
+
+40200
+
+20100
+
+02006
+
+2020
+
+2020
+
+2020
+
+02006
+
+2020
+
+2020
+
+2020
+
+15
+
+
+o Émissions de CO2 dues à la combustion d'énergie
+
+Scénario de référence : +24 MtCO2
+(soit +6%) sur 2006-2020
+(+14% sur 2006-2030)
+
+Scénario Grenelle central : -92 MtCO2
+(soit -24%) sur 2006-2020
+( - 19% pour le "  différé  ")
+
+MtCO2
+
+MtCO2
+
+Effet majeur sur les émissions du bâtiment
+16
+
+
+o Quel prix du CO2 dans les scénarios?
+Plusieurs types de "  prix du carbone  " :
+ -  un paramètre pris par hypothèse, par ex. sur l'ETS - une variable "  duale  " de l'effet des politiques et mesures - des coûts d'émissions évitées ou réduites liées à des P&M
+Cohérence globale des scénarios
+ -  au niveau européen et international - préoccupations complémentaires :
+sécurité d'approvisionnement compétitivité
+Fuites de carbone -> taxe extérieure carbone ou MIC ?
+ -  cas des secteurs "  exposés  " : PME, services, agriculture, etc. - ETS vs. taxe extérieure : niveau variable vs. niveau fixe ! - MIC : inclusion des importateurs
+
+17
+
+
+MERCI DE VOTRE ATTENTION !
+richard.lavergne@developpement-durable.gouv.fr
+18
+
+

@@ -1,0 +1,504 @@
+Les dépenses énergétiques des ménages : éléments de cadrage pour une CCE
+Conférence des experts CCE 2 et 3 juillet 2009
+Vincent Marcus (INSEE)
+
+
+Introduction
+
+> Acceptabilité sociale =
+ -  qui paye (relativement) le plus ?
+ -  et donc qui consomme (relativement) le plus ?
+> Les consommations (directes) de combustibles fossiles des ménages désignent :
+ -  les dépenses en carburants des véhicules particuliers
+ -  les dépenses en gaz et fioul (très majoritairement) pour les besoins domestiques en énergie (chauffage principalement)
+> Eléments de cadrage =
+ -  à partir des coefficients budgétaires (= part dans la consommation totale)
+ -  toutes choses égales par ailleurs, pour une même hausse de prix, les pertes en part de consommation autre sont directement fonction du coefficient budgétaire du bien subissant la hausse
+ -  fournit des ordres de grandeurs...maximalistes
+ -  ajustements des comportements (>CREDOC) et effets de bouclage macroéconomiques (>CIRED)
+
+Page 2
+
+INSEE
+
+Conférence des experts CCE
+
+2-3 juillet 2009
+
+
+Les dépenses énergétiques des ménages
+
+Part budgétaire des dépenses énergétiques totales (en % de la consommation totale) par niveau de vie
+% 12.0 10.0 8.0 6.0 6.4 6.6 6.3 5.6 5.3 5.3 5.2
+4.6 4.3 4.0
+4.0 2.0 3.3 3.4 3.7 3.7 4.0 4.1 4.0 3.6 3.5 2.7 0.0
+D1 D2 D3 D4 D5 D6 D7 D8 D9 D10 Déciles de niveau de vie
+Carburants Énergie domestique
+> Sources : Insee, Budget de Famille 2006.
+
+Page 3
+
+INSEE
+
+Conférence des experts CCE
+
+2-3 juillet 2009
+
+
+Pourquoi fait-on ces graphiques?
+> (1) Une définition fiscale implicite de la "  régressivité  "
+ -  "  progressivité  " : taux d'imposition moyen croissant avec le niveau de vie
+ -  "  régressivité  " : part budgétaire décroissante avec le niveau de vie
+> (2) Les niveaux de vie comme instruments fiscaux
+
+Page 4
+
+INSEE
+
+Conférence des experts CCE
+
+2-3 juillet 2009
+
+
+Les ménages exposés aux renchérissements des carburants
+Coefficient budgétaire du carburant selon l'équipement des ménages
+
+En % de la consommation totale
+
+5.0 4.5 4.5
+
+4.2 4.2 4.2
+
+4.0
+
+3.5 3.0
+
+3.3 3.4 3.7 3.7
+
+2.5
+
+4.4 4.4
+
+4.3
+
+4.0 4.1 4.0
+
+3.8 3.6
+
+3.6 3.5
+
+2.9
+
+2.7
+
+2.0
+
+1.5
+
+1.0
+
+0.5
+
+0.0
+
+D1 D2 D3 D4 D5 D6 D7 D8 D9 D10
+
+Déciles de niveau de vie
+
+Ménages avec véhicule à moteur
+
+Ensemble
+
+> Source : Insee, Budget de Famille 2006.
+Page 5
+INSEE
+
+Conférence des experts CCE
+
+2-3 juillet 2009
+
+
+Les ménages exposés aux renchérissements des carburants
+
+En % de la consommation totale
+
+Coefficient budgétaire du carburant selon le mode de transport domicile-travail
+(ménages équipés en VP)
+
+6.0
+
+5.0
+
+5.1 4.5
+
+4.9
+
+4.7
+
+5.0
+
+4.9
+
+4.8
+
+4.6 4.4
+
+4.0 4.0
+
+3.8 3.7 3.9
+
+3.3
+
+3.0
+
+3.5 3.3 3.2
+
+2.9
+
+2.0
+
+2.5 2.2
+
+Ménages sans actif occupé
+Ménages avec actif occupé n'utilisant pas de VP pour le trajet domicile-travail
+Ménages avec actif occupé utilisant une VP pour le trajet domicile-travail
+
+1.0 Ensemble (équipés en VP)
+
+0.0 D1 D2 D3 D4 D5 D6 D7 D8 D9 D10
+Déciles de niveau de vie
+
+> Source : Insee, Budget de Famille 2006.
+Page 6
+INSEE
+
+Conférence des experts CCE
+
+2-3 juillet 2009
+
+
+Les ménages exposés aux renchérissements des carburants
+Part budgétaire des dépenses de carburant selon la zone de résidence (ménages équipés en VP)
+
+6.0% 5.5% 5.0% 4.5% 4.0% 3.5% 3.0% 2.5% 2.0%
+Espace rural Périurbain Banlieue Ville-centre Pôle urbain (de province) (hors Paris) de Paris
+
+Ménages sans actif occupé
+Ménages avec actif occupé n'utilisant pas de VP pour le domicile-travail Ménages avec actif occupé utilisant une VP pour le domiciletravail Ensemble (équipés en VP)
+
+> Source : Insee, Budget de Famille 2006.
+Page 7
+INSEE
+
+Conférence des experts CCE
+
+2-3 juillet 2009
+
+
+Les ménages exposés aux renchérissements des carburants
+
+Répartition des ménages en fonction de la zone de résidence
+
+30.0 25.9
+
+28.4
+
+25.0 20.0 18.9
+
+20.6
+
+15.0
+
+10.0
+
+5.0
+
+0.0
+Espace à dominante
+rurale
+
+Périurbain
+
+18.7 19.1
+Banlieue (de province)
+
+25.7 20.0
+
+16.0 6.5
+
+Ville-centre hors Pôle urbain de Paris Paris
+
+Population totale Ménages à part budgétaire en carburant > 7,5%
+> Source : Insee, Budget de Famille 2006.
+Page 8
+
+INSEE
+
+Conférence des experts CCE
+
+2-3 juillet 2009
+
+
+Les ménages exposés aux renchérissements des énergies domestiques
+
+Part budgétaire des dépenses en énergie domestique selon le type de logement et d'énergie de chauffage
+
+10.0 9.0
+
+0.3 0.7
+
+8.0 7.0 0.5
+
+6.0 0.0 0.0
+
+5.0 4.0
+
+9.0
+
+3.0
+
+2.0
+
+1.0
+
+8.4
+
+6.2
+
+5.2
+
+4.6
+
+0.4 3.6
+
+0.0 3.0
+
+0.5 2.8
+
+0.0
+
+surpart budgétaire CCE additionnelle 32t/CO2
+Part budgétaire énergie domestique 2006
+
+Individuel IIBnIundtnidiadviivnivdeid/uduePulerleolFipGBoaaounziles((((213891%%%%)))) Collectif Gaz (25%) Collectif Fioul (7%)
+
+> Source : Insee, Budget de Famille 2006, ADEME (d'après CEREN).
+Page 9
+
+INSEE
+
+Conférence des experts CCE
+
+2-3 juillet 2009
+
+
+Les ménages doublement exposés aux renchérissements des énergies fossiles
+
+Répartition des ménages par zone de résidence
+
+30.0 25.0 20.0 15.0
+
+24.3 18.9
+
+27.9 20.6
+
+23.0 18.7
+
+25.7 17.4
+
+16.0
+
+10.0 5.0
+
+7.4
+
+0.0 Espace rural
+
+Périurbain
+
+Banlieue (province)
+
+Ville-centre (hors Pôle urbain de
+
+Paris)
+
+Paris
+
+Population totale Ménages en maison individuelle chauffée au gaz, fioul ou GPL
+> Source : Insee, Budget de Famille 2006.
+
+Page 10
+
+INSEE
+
+Conférence des experts CCE
+
+2-3 juillet 2009
+
+
+Les ménages doublement exposés aux renchérissements des énergies fossiles
+
+16.0 0.6 14.0 12.0 4.2 10.0
+8.0 6.0 4.0 9.0 2.0 0.0
+
+Part budgétaire des dépenses en carburants et en énergie domestique selon le type de logement et d'énergie de chauffage
+
+1.1
+4.3 0.8 0.4 0.3
+3.5 5.0 4.0 0.6 0.2 0.8 8.4 2.8 2.6 2.9
+6.2 5.2 4.6 3.6 3.0 2.8
+
+surpart budgétaire totale CCE additionnelle 32t/CO2 Part budgétaire carburants 2006
+Part budgétaire énergie domestique 2006
+
+Individuel IBInuIntdnidaidvniivievdi/duduPeruleloelFpiGaBoanouziles((((123891%%%%))) Collectif Gaz (25%) Collectif Fioul (7%)
+
+> Source : Insee (Budget de Famille 2006), Ademe, Meeddat.
+Page 11
+
+INSEE
+
+Conférence des experts CCE
+
+2-3 juillet 2009
+
+
+Des ordres de grandeur pour des cas "  type  "
+
+2 parents actifs
+
+Couple de
+
+Famille
+
+Famille
+
++ enfants
+
+retraités
+
+monoparentale monoparentale
+
+sans enfants à
+
+charge
+
+Niveau de vie Intermédiaire
+
+Plutôt élevé
+
+Modeste
+
+Modeste
+
+Localisation Rural ou Périurbain Rural ou Périurbain Paris ou ville-centre Banlieue (province)
+
+Logement Propriétaire d'une Propriétaire d'une Appartement ancien Appartement récent
+
+maison récente maison ancienne
+
+(1960-1975)
+
+70 m2
+
+(120m2)
+
+(<1975)
+
+locatif social
+
+locatif social
+
+Chauffage
+
+Électricité
+
+Fioul
+
+Gaz de ville
+
+Gaz de ville
+
+Nombre de
+
+2
+
+2
+
+0
+
+1
+
+véhicules
+
+Km annuel
+
+33000
+
+20000
+
+0
+
+8000
+
+surcoût CCE
+
++303 
+
++344 
+
++78 
+
++133 
+
+additionnelle
+
+À 32/tCO2
+
+En part de
+
++0,8
+
++1,0
+
++0,4
+
++0,6
+
+budget
+
+> Sources : Insee, SOeS, DGEC, calculs Meeddat.
+
+Page 12
+
+INSEE
+
+Conférence des experts CCE
+
+2-3 juillet 2009
+
+
+Conclusions
+
+> Des dimensions d'analyse multiples
+ -  L'approche par niveau de vie est insuffisante pour identifier les ménages les plus exposés
+ -  Tenir compte de la dépendance à la voiture, de la localisation, du type de logement
+ -  Articuler les dispositifs de redistribution et les politiques de l'offre (transports alternatifs, offre de logements, performance énergétique)
+> Une évaluation réaliste des effets distributifs doit intégrer :
+ -  des comportements d'ajustement des ménages (consommations, choix d'équipement et de localisation)
+ -  des effets macroéconomiques (prix/demande-salaires-emploi)
+ -  des mesures de finances publiques
+ -  du temps
+> Pour compléter/approfondir
+ -  Commissariat Général au Développement Durable, Etudes et documents n°8, juin 2009
+ -  Ademe, Stratégie et études n°19, juin 2009
+
+Page 13
+
+INSEE
+
+Conférence des experts CCE
+
+2-3 juillet 2009
+
+

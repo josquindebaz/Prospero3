@@ -1,0 +1,1101 @@
+La taxe carbone : mythe ou réalité ? De la théorie à la pratique
+.
+Institut de l'entreprise
+Juillet 2008
+Les Notes de l'Institut
+
+
+L'Institut de l'entreprise est une association créée en 1975 par une trentaine de grands groupes. Ses promoteurs étaient animés par le désir de disposer d'un organe de réflexion, indépendant de tout mandat syndical ou politique, qui leur permette d'affiner leur approche des questions économiques, sociales et sociétales. A la fois différent des organisations professionnelles et en contact permanent avec elles, l'Institut se distingue par sa capacité à échapper aux pressions de la conjoncture immédiate. Dans sa démarche de mise en perspective des positions de tous les acteurs de la vie économique et sociale, français et étrangers, il est à la fois un lieu d'élaboration d'une p ensée managériale moderne et un centre de réflexion sur les sujets de société. Aujourd'hui, l'Institut de l'entreprise, qui compte plus de 120 adhérents, a une triple vocation :
+ -  Un pôle de réflexion Les commissions d'étude de l'Institut réunissent, dirigeants d'entreprise et experts, favorisant ainsi le partage des expériences et la confrontation des opinions. Leurs réflexions aboutissent à l'élaboration d'analyses et de rapports largement diffusés. Ces travaux présentent quatre caractéristiques principales : ils s'inscrivent dans une vision prospective, ils intègrent la dimension internationale, ils privilégient les expériences concrètes, et ils sont le fruit de débats contradictoires.
+ -  Un lieu de rencontre Les différentes manifestations organisées par l'Institut de l'entreprise permettent de stimuler les échanges et d'enrichir les réflexions de leurs participants. Dirigeants d'entreprise, personnalités politiques, experts issus de l'entreprise ou du monde universitaire sont invités à s'exprimer à l'occasion de déjeuners informels, de colloques et de séminaires internationaux.
+ -  Un pôle de formation Depuis quelques années, l'Institut de l'entreprise s'est engagé dans des actions qui ont pour but de confronter certains publics au monde de l'entreprise, dans l'objectif de leur en donner une représentation plus concrète. Trois publics sont actuellement concernés par ces programmes: les futurs responsables des grands secteurs d'activité de la vie politique, économique et sociale avec l'IHEE, les p rofesseurs de Sciences Économiques et Sociales des lycées et les élèves journalistes.
+L'Institut de l'entreprise accueille par ailleurs le Forum des Amis du Pacte Mondial, relais pour la France du Global Compact, réseau mondial d'entreprises responsables créé à l'initiative des Nations-Unies.
+Pour en savoir plus, rendez-vous sur notre site : www.institut-entreprise.fr
+
+
+
+
+
+Résumé
+Le réchauffement climatique est un problème international, qui doit trouver une solution dans un cadre avant tout international. Toutefois, ce constat n'exclut pas toute action au niveau européen ni au niveau national :
+ -  la France participe à la politique européenne de réduction des émissions de gaz à effet de serre, qui prend la forme essentiellement de systèmes de quotas d'émissions : à cet égard, la mise en place d'une "  taxe extérieure c arbone  " visant à compenser les distorsions entre entreprises européennes et non européennes -- résultant de ce système de quotas -- est un sujet à l'étude;
+ -  le gouvernement envisage de mettre en place une taxe intérieure carbone nationale, baptisée "  contribution climat-énergie  ". Elle est destinée à produire un signal-prix sur les émissions de dioxyde de carbone à l'attention de tous les acteurs nationaux. Un rapport doit être remis au Parlement avant la fin 2008.
+La commission Modernisation de la fiscalité de l'Institut de l'entreprise a voulu  présenter dans ce document les points les plus importants susceptibles d'éclairer le débat public, conformément aux principes de bonne gouvernance fiscale qu'elle avait mis en avant dans une contribution de février 2005*.
+Le périmètre de la taxe intérieure carbone
+Un instrument complémentaire au système européen des quotas d'émissions
+La taxe intérieure carbone ne peut s'appliquer qu'au secteur résiduel des activités non déjà soumises au marché des quotas d'émissions, organisé au niveau européen. Les acteurs ne doivent en effet recevoir qu'une seule fois le signal économique sur la teneur en CO2 des produits qu'ils consomment.
+* Propositions pour une réforme de la gouvernance fiscale, Commission Modernisation de la fiscalité de l'Institut de l'entreprise, février 2005. Téléchargeable sur www.institut-entreprise.fr
+
+
+
+
+Les principaux acteurs concernés en pratique Il en résulte que la taxe intérieure carbone devrait principalement s'appliquer
+aux ménages (concernés au titre du carburant automobile et du chauffage domestique), aux secteurs de l'agriculture et de la pêche (en raison des moyens de transports utilisés, consommateurs en carburant), au transport routier, ainsi qu'à l'ensemble du secteur tertiaire (en tant qu'utilisateur de bâtiments consommateurs d'énergie).
+La question de l'électricité L'électricité entre dans le champ du système des quotas européens. Elle ne
+d evrait donc pas entrer dans le champ d'application de la taxe. En outre, une taxe n'est pas nécessaire pour fixer le signal-prix au niveau souhaité dans un système réglementé, et il est probable que ce signal-prix se fixerait de lui-même à un niveau suffisant dans un système de marché. Taxer l'électricité ne pourrait donc répondre qu'à d'autres motivations : faire accepter l'augmentation tarifaire dans le système réglementé et appréhender une partie de l'avantage économique tiré du nucléaire dans le système de marché.
+Les caractéristiques de la taxe intérieure carbone
+Préférer une taxe "  amont  " à une taxe "  aval  "
+L'option la plus pragmatique consiste non pas à taxer en aval le contenu en c arbone (en CO2) des objets, mais à taxer en amont la consommation d'énergie fossile à l'origine d'émissions de CO2.
+Une taxation en aval est directement assise sur toutes les quantités de CO2 qui ont été nécessaires à la fabrication d'un produit, y compris si ces émissions n'ont laissé aucune trace dans le produit final. Cette démarche est la plus pertinente et la plus pédagogique. Elle demeure cependant très difficile à appliquer à l'ensemble des produits de consommation.
+La taxation en amont est donc la solution la plus réaliste pour une mise en oeuvre dans un horizon proche.
+
+
+
+Résumé
+Quel niveau de taxation ? Dans une logique écologique, qui consiste à faire payer au consommateur
+d'énergie le dommage environnemental produit, le niveau de taxation demeure indépendant de l'évolution du prix hors taxe de cette énergie (du prix du baril de pétrole par exemple).
+Le niveau de la taxe intérieure carbone, future "  contribution climat-énergie  ", pourrait être fixé à l'aune de la valeur carbone recommandée par la commission Quinet (100 euros par tonne de CO2 à l'horizon 2030, à partir d'une valeur de 27 euros la tonne de CO2 retenue actuellement). Le lien entre la taxe et cette valeur carbone n'est toutefois pas mécanique : il convient de tenir compte des autres instruments permettant l'internalisation de cette valeur carbone (permis d'émissions, mesures réglementaires, etc.).
+La solution la plus adaptée consisterait dans tous les cas à adopter un taux progressif dans le temps : faire évoluer le prix du CO2 en fonction de l'évolution du coût des dommages environnementaux. Ce type de mesure nécessite cependant une volonté pérenne et un engagement de long terme des pouvoirs publics.
+Les conditions de mise en oeuvre de la taxe intérieure carbone
+Exclure tout dispositif d'exonération
+La suppression de toute exonération en fonction d'intérêts catégoriels est une condition indispensable à l'efficacité de la taxe intérieure carbone, sous peine de retomber dans les travers de la fiscalité écologique française actuelle.
+Comment garantir ce principe ? La jurisprudence constitutionnelle a ouvert sur ce point de nouvelles perspectives : la finalité écologique de la taxe carbone doit être expressément affirmée par le législateur.
+Garantir un niveau de prélèvements obligatoires constant Les pouvoirs publics se sont engagés à ce que la taxe intérieure carbone
+soit "  strictement compensée par une réduction des autres prélèvements obligatoires  ". Cet engagement constitue une condition indispensable à la mise en place de la réforme.
+Ne pas affecter la taxe à des dépenses pérennes Il sera difficile d'anticiper le rendement de la taxe. L'affectation du produit
+de la taxe à des dépenses pérennes comporte le risque fort de dévoyer, à terme, la finalité écologique de la taxe vers une finalité uniquement financière et budgétaire.
+Ne pas créer une nouvelle taxe, mais réformer en profondeur la TIPP
+On a vu que l'option la plus pragmatique consiste non pas à taxer en aval le contenu en carbone des objets, mais à taxer en amont la consommation d'énergie fossile. Dès lors, ce choix d'une taxation amont conduit assez logiquement non pas à la création d'une nouvelle taxe ex nihilo, mais à la réforme de la TIPP.
+Les conséquences de la mise en oeuvre de la taxe carbone
+Prendre en compte les effets négatifs sur la répartition des revenus et sur la compétitivité de certains secteurs
+La taxe intérieure carbone peut emporter des effets négatifs sur la répartition des revenus des ménages et sur la compétitivité de certains secteurs d'activité (agriculture, pêche, transport routier, mais aussi secteur tertiaire en général).
+Choisir des mesures de compensation ne privant pas la taxe de ses effets
+Les pouvoirs publics doivent envisager des mesures de compensation, sans t outefois priver la taxe de ses effets. En ce sens, des exonérations catégorielles sont à exclure (cf. supra).
+
+
+
+Résumé
+La taxe extérieure carbone
+L'objectif de la taxe extérieure carbone La taxe extérieure carbone viserait à compenser les distorsions nées du
+système européen des quotas d'émissions, entre les entreprises de l'Union européenne qui y sont soumises et celles qui en sont exclues, dans l'hypothèse ou un accord  international satisfaisant succédant au protocole de Kyoto ne serait pas conclu. Il s'agit plus précisément, en l'absence d'un tel accord, de protéger l'industrie  européenne de pertes de compétitivité internationale qui résulteraient du surcoût lié à la politique de réduction des gaz à effet de serre -- via les quotas d'émissions.
+La taxe extérieure carbone prendrait concrètement la forme d'un ajustement de taxe à la frontière (ATF). Schématiquement, ce mécanisme consiste à rembourser aux exportateurs nationaux les taxes à la production qu'ils subissent, en l'occurrence sur le CO2, et à taxer du même montant les importations.
+Des marges de manoeuvre limitées au regard des règles de l'OMC Les règles de l'OMC semblent ouvrir des marges très étroites -- et loin
+d'être certaines -- à l'instauration d'une taxe extérieure carbone. Les obstacles juridiques et techniques sont nombreux. Le calendrier de mise en place d'une telle mesure sera nécessairement plus long que celui concernant la taxe intérieure. 
+
+
+
+
+
+
+L'augmentation des émissions de gaz à effet de serre serait à l'origine d'une hausse globale des températures aux conséquences potentiellement dramatiques. Alors que le dioxyde de carbone (CO2) représente une part importante des gaz à effet de serre d'origine humaine, plusieurs voix, à l'instar de celles de l'écologiste Nicolas Hulot et de l'économiste Sir Nicholas Stern, ont proposé la mise en place d'une taxe carbone visant à réduire ces émissions de CO2.
+Le réchauffement climatique est un problème international, qui doit trouver une solution dans un cadre avant tout international. Toutefois, ce constat n'exclut pas toute action au niveau européen ni au niveau national :
+ -  la France participe à la politique européenne de réduction des émissions de gaz à effet de serre, qui prend la forme essentiellement de systèmes de quotas d'émissions : à cet égard, la mise en place d'une taxe extérieure carbone visant à compenser les distorsions entre entreprises européennes et non européennes -- résultant de ce système de quotas -- est un sujet à l'étude ;
+ -  par ailleurs, le gouvernement envisage de mettre en place une taxe intérieure carbone nationale, destinée à produire un signal-prix sur les émissions de dioxyde de carbone à l'attention de tous les acteurs nationaux. Cette taxe intérieure carbone a été rebaptisée "  contribution climat-énergie  " : ce  changement de terminologie, par le rajout du mot "  énergie  ", ouvre le débat sur la définition de l'assiette de la taxe, et notamment sur l'intégration dans cette dernière de l'énergie nucléaire (cf. infra).
+La question de la taxe extérieure carbone sera abordée ici, dans la mesure où elle représente un enjeu important pour la compétitivité des entreprises françaises et européennes. Toutefois, la commission fiscale de l'Institut de l'entreprise a  souhaité se concentrer essentiellement sur le projet des pouvoirs publics de "  contribution climat-énergie  ".
+D'après l'avant-projet de loi relatif à la mise en oeuvre du Grenelle de l'environnement, le gouvernement présentera au Parlement une "  analyse de l'opportunité et des modalités techniques  " de cette contribution dans le cadre du projet de loi de finances pour 2009. La secrétaire d'État à l'Écologie a annoncé le 4 mai dernier qu'un rapport serait soumis au Parlement "  avant la fin 2008  ".
+Il convient d'ores et déjà de noter que cette taxe carbone intérieure devrait s'appliquer au secteur résiduel des activités non soumises au mécanisme européen des crédits de carbone, c'est-à-dire principalement aux ménages (concernés au titre du carburant automobile et du chauffage domestique), aux secteurs de l'agriculture et de la pêche (en raison des moyens de transport utilisés, consommateurs de carburant), au transport routier, ainsi qu'à l'ensemble du secteur tertiaire (en tant qu'utilisateur de bâtiments consommateurs d'énergie).
+La mise en oeuvre d'une telle taxation suscite des prises de position nombreuses sur son opportunité économique ou écologique. La commission Modernisation de la fiscalité de l'Institut de l'entreprise a souhaité d'abord rappeler les termes de ce débat, sans prétendre se prononcer sur des sujets qui opposent experts, s pécialistes de l'environnement ou économistes (I).
+Elle a surtout voulu appliquer à ce sujet les propositions de principes de bonne  gouvernance fiscale qu'elle avait formulées dans une contribution de février 2005 :  l'objet de ce document est de préciser quels pourraient être le périmètre de la taxe intérieure carbone (II), son niveau, les caractéristiques de son assiette et de son taux (III), ainsi que ses conditions de mise en oeuvre (IV). Le document soulève également la question des mesures visant à compenser ses effets négatifs potentiels sur la distribution des revenus et la compétitivité  sectorielle des entreprises (V). Enfin, les possibilités de mise en oeuvre d'une "  taxe extérieure carbone  " sont abordées en dernière partie (VI).
+. Ce document traite de la composante de la taxe carbone visant la réduction des émissions de CO2 ; il n'évoque pas la question de l'intégration d'une composante portant sur l'efficacité énergétique.  Ce projet fait suite à l'engagement, pris par le président de la République le 25 octobre 2007, à l'occasion de la restitution des conclusions du Grenelle de l'environnement, que "  la révision générale des prélèvements obligatoires se penche sur la création d'une taxe énergie-climat en contrepartie d'un allègement de la taxation du travail  ".
+
+
+
+1 Les termes du débat : le défi écologique, les enjeux économiques et les principales mesures envisagées
+
+1. L a contrainte carbone : un instrument de lutte contre le changement climatique ?
+L'élévation globale et rapide des températures constatée au cours du XXe siècle résulte en très grande partie, selon les scientifiques, des activités humaines depuis la seconde moitié du XIXe siècle. Selon le Groupe d'experts intergouvernemental sur les changements climatiques (GIEC), l'augmentation de la température moyenne mondiale au cours du XXe siècle a été de 0,6°C (près de 1°C en France) et pourrait être de 1,8°C à 4°C supplémentaires au XXIe siècle. Les conséquences prévisibles de ce réchauffement atmosphérique sont aujourd'hui largement décrites, les effets néfastes l'emportant largement, selon les différents travaux, sur les effets bénéfiques ; de même, les coûts estimés de ces effets l'emporteraient sur les coûts estimés de la lutte contre le réchauffement climatique.
+Les gaz à effet de serre, dont l'augmentation des émissions est à l'origine du réchauffement climatique, sont à titre principal la vapeur d'eau, le dioxyde de carbone, le méthane et l'ozone. La vapeur d'eau est responsable à elle seule de 55 % de l'effet de serre.
+Mais le dioxyde de carbone, dont l'augmentation dans l'atmosphère est e ssentiellement d'origine humaine, est la deuxième cause du réchauffement c limatique. On estime qu'il contribue à l'effet de serre à hauteur de 39 %, loin devant le méthane ou l'ozone (1 % chacun). Selon les scientifiques, si aucune limite n'est mise à l'utilisation des combustibles fossiles, l'émission totale de CO2 pourrait passer, d'ici à la fin du XXIe siècle, de 7 à 28 milliards de tonnes par an ; mais même le scénario le plus optimiste, c'est-à-dire le maintien des émissions à leur niveau actuel, aboutit à un doublement de la concentration en CO2 à la fin
+
+
+
+
+du XXIe siècle, du fait que les rejets, même stabilisés, s'accumulent dans l'atmosphère année après année.
+La réduction des émissions de CO2 est donc devenue un élément important du débat sur la politique de lutte contre le changement climatique. On parle g énéralement de "  facteur quatre  ". Pour maintenir la hausse des températures à 2°C, on estime qu'il est nécessaire de diviser les émissions par deux au niveau international, soit une division par quatre pour les pays industrialisés.
+Ce problème environnemental majeur est devenu une préoccupation de la communauté internationale. Le protocole de Kyoto, en 1997, constitue l'un des premiers dispositifs contraignants en matière de réduction des émissions de gaz à effet de serre. Il se caractérise notamment par l'engagement de 38 pays industrialisés, ou en voie de transition vers l'économie de marché, à réduire globalement de 5 % leurs émissions de gaz à effet de serre sur la période 2008-2012 par rapport au niveau atteint en 1990.
+La mise en oeuvre par l'Union européenne du protocole de Kyoto s'est traduite par l'instauration d'un marché européen des permis d'émission au 1er janvier 2005. La directive "  quotas  " de 2003 s'applique aux secteurs industriels les plus émetteurs de CO2 (production d'énergie secondaire, raffinage pétrolier, fabrication de papier, verre, ciment, etc.).
+L'application de ces mesures ainsi que l'adoption de mesures les déclinant au niveau national suscite de vives controverses quant à leur impact sur l'économie et la croissance.
+2. L a contrainte carbone : une mesure pénalisante   pour l'économie ?
+La mise en place d'une taxe intérieure carbone applicable aux secteurs non soumis au système européen des quotas est susceptible de créer des distorsions de concurrence entre les entreprises françaises de ces secteurs et les entreprises des
+. M. Jean Jouzel, cité par le rapport de la mission parlementaire d'information sur l'effet de serre, 2005.
+
+
+
+Les termes du débat : le défi écologique, les enjeux économiques et les principales mesures envisagées
+pays de l'Union européenne qui n'auraient pas mis en place des mesures équivalentes (notamment en matière de fiscalité écologique).
+L'objectif de la taxe carbone (comme celui des quotas) consiste en effet in fine à modifier la répartition de la valeur ajoutée ou de l'emploi entre les différentes activités du pays, au profit des activités et productions les moins intenses en CO2. Ainsi, les secteurs du transport (notamment routier), de l'agriculture, de la pêche pourraient être affectés si l'on taxait les émissions de CO2 issues de l'essence et du diesel. De manière plus marginale, le secteur hôtelier pourrait par exemple être affecté dans le cas d'une taxation des émissions liées aux bâtiments.
+La contrainte carbone la plus forte pour l'économie résulte du système européen de quotas d'émissions, auquel sont soumises les principales activités industrielles françaises.
+L'impact sur la croissance et les distorsions de concurrence avec les pays e xtérieurs à l'Union européenne sont souvent mis en avant pour souligner les effets négatifs des mesures environnementales sur l'économie. Les États-Unis et l'Australie ont d'ailleurs justifié leur retrait du protocole de Kyoto en partie en  raison de l'exposition à la concurrence internationale de certains secteurs intensifs en carbone et des risques de perte de croissance et d'emplois. Les mesures de réduction des émissions seraient susceptibles de coûter plusieurs points de PIB. Le rapport Stern sur l'économie du changement climatique estime que les coûts annuels d'une stabilisation à 500-550 particules par million (ppm) de CO2 se situeront à environ 1 % du PIB d'ici à 2050.
+De nombreux économistes ont souligné que le développement des mesures de lutte contre le changement climatique risquait de conduire à la délocalisation des principales industries polluantes et à la création de "  havres de pollution  " dans les pays à bas revenus. Les surcoûts unilatéraux supportés par les entreprises européennes au titre de la contrainte carbone peuvent en effet engendrer des pertes de marché et des délocalisations progressives.
+En outre, l'impact environnemental de ces délocalisations pourrait être faible voire négatif. Les industries sont déplacées dans des pays où les normes environnementales 
+. Aurélie Vieillefosse, "  Des accords sectoriels dans les engagements post-2012 ?  ", ministère de l'Écologie et du développement durable, 2007.
+
+
+
+
+sont souvent moins strictes. Ces "  fuites  " de carbone ou déplacements d'émissions atténuent ainsi les effets des réductions d'émissions réalisées par les pays ayant délocalisé leur production. Par ailleurs, les délocalisations peuvent entraîner une hausse des émissions dues aux transports si les pays augmentent leurs importations de matériaux intensifs en CO2 . Selon le Groupe d'experts intergouvernemental sur l'évolution du climat (GIEC), "  la délocalisation d'industries intensives en carbone dans des pays non annexe 1 [du protocole de Kyoto] et les impacts plus larges sur les flux commerciaux en réponse aux changements de prix pourraient entraîner entre 5 et 20 % de fuite des émissions des pays annexe 1 vers les pays non annexe 1. Ces fuites peuvent être minimisées par l'échange de permis d'émission et la coordination des actions au niveau sectoriel  ". Il est cependant permis de penser que les délocalisations d'industries européennes engendrent des transferts de technologies "  propres  " dans les pays qui les accueillent.
+Par ailleurs, comme le souligne une étude du ministère de l'Écologie, le climat est un bien public mondial pur : les réductions d'émissions de gaz à effet de serre effectuées par un pays profitent à tous les autres. Il est difficilement admis de se soumettre à des contraintes environnementales et donc économiques fortes, dont les impacts locaux sont peu perceptibles, dès lors que les grands concurrents ne sont pas astreints aux mêmes exigences. Seule la mobilisation internationale et la répartition des efforts entre les différents acteurs seraient donc économiquement acceptables.
+En réalité, ces constats sont largement débattus. Pour ce qui concerne le dernier argument, la contribution des pays en développement à la pollution atmosphérique mondiale n'exonère pas les pays développés de leur responsabilité historique et actuelle sur le niveau des émissions de gaz à effet de serre. Celles-ci sont encore largement supérieures à celles des pays du Sud (24,2 tonnes de CO2 par habitant aux États-Unis, 10,6 tonnes en Europe, contre 3,9 tonnes en Chine en 2000).
+On reproche par ailleurs souvent à la théorie des "  havres de pollution  " de ne pas distinguer les effets spécifiques de la taxation des émissions des effets liés au développement des pays du Sud, et notamment du rôle des ressources naturelles
+. Idem. . Idem.
+
+
+
+Les termes du débat : le défi écologique, les enjeux économiques et les principales mesures envisagées
+et de l'accumulation du capital dans les délocalisations. Selon certains économistes, la spécialisation dans des activités polluantes dépend beaucoup moins des politiques environnementales que des dotations en facteurs de production (capital, travail, etc.). Par ailleurs, les industries les plus polluantes sont souvent les moins mobiles géographiquement.
+Enfin, selon le rapport Stern précité, la transition vers une économie moins c arbonée amènera des défis pour la concurrence, mais aussi des possibilités de c roissance. Les coûts de réduction d'environ 1 % du PIB seraient modestes par rapport aux coûts et aux risques de changement climatique qui seront évités.
+Ainsi, les conclusions de l'analyse économique sur les délocalisations ne sont pas totalement certaines. Il apparaît notamment, selon une étude du ministère de l'Écologie, que "  les coûts liés à la protection de l'environnement ont été trop faibles à ce jour pour influencer les décisions de localisation des entreprises dans la plupart des secteurs  ".
+En tout état de cause, compte tenu de l'ampleur des réductions des émissions de CO2 nécessaires, la lutte contre le réchauffement climatique est susceptible d'engendrer des changements structurels profonds dans les systèmes économiques.
+Les problèmes de distorsions générés par une taxe intérieure carbone seront évoqués dans la partie V du présent document. La question de la compétitivité des industries européennes soumises aux quotas sera abordée dans le cadre de l'analyse de la taxe extérieure carbone (partie VI).
+3. L es principales mesures envisagées   par les pouvoirs publics
+Le projet de taxe intérieure carbone s'inscrit pour partie dans le cadre des engagements pris par la France au niveau européen. La taxe extérieure carbone vise quant à elle à répondre aux problèmes de compétitivité des secteurs d'activité européens soumis aux marchés des permis d'émission.
+. Copeland et Taylor (2003), cités dans l'étude de A. Vieillefosse (ministère de l'Écologie, 2007).
+17
+
+
+
+a) La taxe intérieure carbone
+Le projet de taxe carbone a été remis à l'honneur dans le débat public par l'écologiste Nicolas Hulot, qui a proposé dans son Pacte écologique d'instaurer une taxe aux fins de provoquer volontairement une baisse de nos émissions de "  gaz carbonique  " et de notre consommation d'énergie fossile. Cette taxe s 'appliquerait à tous, administrations, entreprises et ménages. Elle serait  accompagnée de mesures compensatoires pour les secteurs économiques et les ménages les plus fragiles.
+Dans ce cadre, à l'occasion de la restitution des conclusions du Grenelle de l'environnement, le 25 octobre 2007, le président de la République s'était engagé à ce que "  la révision générale des prélèvements obligatoires se penche sur la création d'une taxe énergie-climat en contrepartie d'un allègement de la taxation du travail  ".
+Suite aux conclusions du Grenelle de l'environnement, la création d'une c ontribution énergie-climat est désormais à l'étude.
+En effet, le projet de loi relatif à la mise en oeuvre du Grenelle de l'environnement précise les orientations de la politique nationale dans la lutte contre le changement climatique. Si le texte est adopté, la France confirmerait "  son engagement de diviser par quatre ses émissions de gaz à effet de serre entre 1990 et 2050, afin de ramener à cet horizon ses émissions annuelles de gaz à effet de serre à un niveau inférieur à 140 millions de tonnes équivalent CO2  ". Les objectifs du texte sont  ambitieux : la France se fixerait comme objectif de "  devenir l'économie la plus  efficiente en carbone de l'Union européenne d'ici à 2020. À cette fin, elle [prendrait] toute sa part à la réalisation de l'objectif de réduction d'au moins 20 % des émissions de gaz à effet de serre de l'Union européenne à cette échéance, cet objectif étant porté à 30 % pour autant que d'autres pays industrialisés [s'engageraient] sur des objectifs comparables et que les pays en développement les plus avancés apportent une contribution adaptée  ". 
+Parmi les mesures envisagées, figure la "  contribution climat-énergie  ". D'après l'avant-projet de loi, cette contribution "  aurait pour objet d'intégrer les effets des émissions de gaz à effet de serre dans les systèmes de prix par la taxation des
+. Pacte écologique 2007, proposition n° 2.
+18
+
+
+Les termes du débat : le défi écologique, les enjeux économiques et les principales mesures envisagées
+consommations d'énergies, notamment fossiles  ". Elle serait "  strictement compensée par une réduction des autres prélèvements obligatoires  ", de façon à préserver le pouvoir d'achat des ménages et la compétitivité des entreprises.
+b) La taxe extérieure carbone
+La taxe extérieure carbone a été proposée initialement par le président Jacques Chirac et reprise par les conclusions du Grenelle de l'environnement. Elle est présentée par le gouvernement comme un "  outil de compensation sur les produits et équipements qui viennent de pays qui n'ont pas de politique de lutte contre le changement climatique  ". Ce projet sera défendu par la France lors de sa présidence de l'Union européenne.
+On entend généralement par taxe extérieure carbone un mécanisme d'ajustement fiscal à la frontière, reposant sur une taxation des importations proportionnelle à leur contenu en CO2 et une détaxation à l'exportation des biens "  taxés  ". Dans le cadre européen, ces biens "  taxés  " sont en réalité soumis au système de quotas d'émissions, qui serait, sous certaines conditions, assimilable à une taxation (Cf. infra VI).
+
+. Mme Nathalie Kosciusko-Morizet, secrétaire d'État à l'Écologie, le 4 mai 2008.
+
+19
+
+
+
+2 Taxe, quotas, réglementation : quel périmètre pour la taxe intérieure carbone ?
+1. L'objectif :   l'internalisation des "  externalités négatives  "10
+La politique environnementale repose sur trois principaux types d'instruments, indépendamment même de l'éducation et de l'information : la réglementation, l'impôt et le marché des quotas d'émissions.
+Ces trois instruments poursuivent en principe le même objectif, qui est l'internalisation des externalités négatives. La pollution émise par une entreprise ou un agent représente un coût pour la société, qui n'est pas compris dans le prix de la production : il s'agit d'une "  externalité négative  ". L'objectif est donc d'internaliser le coût de la pollution.
+Il convient d'atteindre pour cela le niveau de pollution "  optimal  " pour tous, qui minimise à la fois le dommage que représente la pollution pour les pollués, et le coût de dépollution que supporte l'entreprise ou tout agent pollueur. Dans le cas qui nous préoccupe, l'optimum social pourrait être par exemple la réduction de moitié des émissions de CO2.
+Or cet optimum social ne peut être atteint spontanément. Une entreprise qui n'est soumise à aucune contrainte va minimiser ses coûts et produire au niveau de pollution maximal. Les instruments de politique environnementale doivent donc être utilisés pour atteindre l'objectif fixé de réduction des émissions.
+10. L'externalité désigne une situation économique dans laquelle la décision de consommation ou de production d'un agent influe positivement ou négativement sur la situation économique d'un autre individu, en dehors du processus d'échange sur le marché.
+21
+
+
+
+En matière d'émissions de CO2, le raisonnement est sensiblement différent, même si la logique reste la même : à partir d'une décision politique de limiter le  réchauffement climatique en dessous d'une certaine amplitude (de 2°C par  exemple), les climatologues déduisent un niveau d'émissions de CO2 bien déterminé, qu'il convient de ne pas dépasser.
+Les avantages respectifs de la taxe, de la réglementation et des quotas ont bien été identifiés par l'analyse économique.
+2. La taxe : un outil généralement plus efficace que   la réglementation
+a) L'avantage de la taxe sur la réglementation
+L'idée d'une taxe a été introduite par l'économiste Pigou, dès 1932 : elle consiste à imposer à l'entreprise une taxe par unité de rejets égale au coût marginal de réduction de la pollution11. Il s'agit de taxer l'entreprise pour l'inciter à réduire ses émissions dans les proportions souhaitées.
+La taxe est ainsi généralement plus efficace qu'une simple norme fixant un seuil maximal d'émissions à ne pas dépasser. La raison en est simple : la taxe permet d'atteindre le même niveau de réduction des émissions que la norme, mais à un moindre coût pour l'économie.
+En effet, la réduction des émissions de CO2 est répartie entre les agents en fonction de la capacité réelle à réduire leurs rejets de CO2. Une entreprise réduira ses émissions de CO2 tant que les mesures de réduction resteront inférieures au coût de la taxe. Ainsi les pollueurs dont les coûts de dépollution sont les plus faibles sont incités à réduire plus fortement leurs émissions de CO2 que les autres. L'effort de réduction des émissions est donc efficacement réparti. Une norme uniforme impose au contraire à toutes les entreprises et agents le même effort de dépollution, indépendamment de leurs capacités de réduction des émissions.
+11. Cf. Économie de l'environnement, page 54.
+22
+
+
+Taxe, quotas, réglementation : quel périmètre pour la taxe intérieure carbone ?
+Par ailleurs, le coût de gestion d'une taxe est souvent inférieur à celui d'une réglementation aux finalités équivalentes (coût d'inspection et de contrôle du respect de la norme, etc.). D'aucuns objecteront que le coût administratif d'une écotaxe est souvent élevé. Il est plus exactement supérieur au coût de gestion d'un impôt à finalité budgétaire ; mais cet écart doit être accepté dans la mesure où l'objectif premier d'une écotaxe n'est pas le rendement financier, mais la réalisation d'un certain niveau de dépollution.
+De manière générale, la France a cependant privilégié la réglementation aux autres outils de politique environnementale12.
+Cette préférence pour la norme réglementaire au détriment d'une régulation par les prix trouve pour partie ses raisons dans une certaine conception nationale de l'égalité entre citoyens : en effet, la norme s'impose à tous de manière identique, alors que la taxe ou le marché des quotas d'émissions permet aux acteurs les plus aisés de "  payer  " leur droit de continuer à polluer. Ces "  inégalités  " par les prix semblent expliquer pour partie le tropisme français pour la réglementation, malgré la bien moindre efficacité -- sauf exception -- de cette dernière dans la lutte contre les émissions de gaz à effet de serre.
+b) L 'articulation de la taxe intérieure carbone avec des mesures réglementaires
+La plupart des études montrent que la seule action fiscale ne suffit pas à atteindre l'objectif de réduction des émissions de CO2. Des mesures réglementaires, destinées à influencer les comportements et modes de vie, notamment dans les secteurs des transports et de l'habitat, sont souvent préconisées. Parallèlement à la taxe intérieure carbone, le projet de loi relatif au Grenelle de l'environnement a ainsi prévu une liste de mesures spécifiques visant en particulier les bâtiments et le transport.
+Or la possibilité de recourir simultanément à l'outil réglementaire et à  l'instrument fiscal est débattue au sein de la communauté des économistes.
+
+12. Cf. rapport du Conseil des impôts "  Fiscalité et environnement  ", 2005.
+
+23
+
+
+
+Certains, à l'instar de Rémy Prud'homme, estiment que les mesures prévues dans le cadre du Grenelle de l'environnement sont inefficaces et ont un coût très important pour l'économie : "  Dans la mesure où elles ont un coût économique supérieur à 25 euros la tonne de C02 évitée, une taxe carbone n'aura aucun impact sur la réduction de CO2 en France (personne n'aura l'occasion de dépenser moins de 25 euros en réduction de CO2 pour économiser la taxe puisque des mesures contraignantes auront déjà obligé à dépenser beaucoup plus). La seule fonction de la taxe sera punitive et budgétaire  ". Le coût de la tonne évitée par les mesures du Grenelle serait bien supérieur à celui de la tonne évitée par la taxe carbone.
+Ce point est cependant loin de susciter un consensus. Le coût des réductions d'émissions de CO2 dans le logement ancien est notamment très discuté. Les p rincipales études voient dans ce secteur un gisement important de réduction d'émissions, qui se caractérise par des coûts négatifs, c'est-à-dire des gains non réalisés pour cause d'inefficacité des acteurs ou du système. Il existe ainsi des cas où la réglementation peut être plus efficace que l'instrument fiscal : dans une situation de très faible élasticité de la demande et de forte myopie des acteurs, seule une dépense fiscale extrêmement importante sera nécessaire pour inciter ces acteurs (en l'occurrence les ménages) à modifier leurs comportements, p ermettant d'atteindre le niveau d'émission de CO2 visé.
+En ce sens, les mesures de nature "  réglementaire  " prévues par le projet de loi relatif à la mise en oeuvre du Grenelle de l'environnement ne seraient pas incompatibles avec la mise en oeuvre de la contribution climat-énergie.
+Certaines mesures sont d'évidence complémentaires à la mise en place d'une taxe carbone, dont elles visent à renforcer les effets : ainsi une politique d'étiquetage, à l'instar de celle déjà appliquée sur certains appareils électroménagers, est un moyen efficace pour sensibiliser le public et inciter les producteurs à proposer des appareils performants. L'engagement pris récemment par les professionnels de l'immobilier de signaler d'ici à 2012 la performance énergétique des logements proposés dans les annonces immobilières participe de cette même démarche d'information susceptible d'agir sur les comportements.
+24
+
+
+Taxe, quotas, réglementation : quel périmètre pour la taxe intérieure carbone ?
+3. La taxe : un instrument complémentaire au système des quotas
+Comme nous l'avons indiqué en introduction, la taxe intérieure carbone ne peut s'appliquer qu'au secteur résiduel des activités non déjà soumises au marché des quotas d'émissions, organisé au niveau européen. Les acteurs ne doivent en effet recevoir qu'une seule fois le signal économique.
+La directive "  quotas  "13 a en effet prescrit la mise en place d'un marché européen de permis d'émissions de CO2 pour les entreprises intensives en énergie (sidérurgie, verre, ciment, production d'électricité et de chaleur ...) afin de réduire les émissions de CO2 et d'atteindre les objectifs de Kyoto. La participation à ce  marché est obligatoire pour les entreprises des secteurs concernés. En 2005, ce m arché couvrait environ 45 % des émissions de CO2 de l'Union européenne14 (soit 2,2 Giga tonnes de CO2). Les émissions du trafic routier ne sont pas concernées par le marché. Celui-ci a été instauré avec la mise en place du Plan national d 'affectation des quotas (PNAQ) le 1er janvier 2005.
+Le marché des quotas présente les mêmes avantages économiques que la fiscalité : il permet d'atteindre l'objectif de réduction des émissions de CO2 au moindre coût (il minimise les coûts au prix d'équilibre du marché). Il présente un avantage supplémentaire : le risque d'erreur dans la fixation du bon niveau de taxe n'existe pas par définition ; pour atteindre le bon niveau d'émissions, il suffit de donner ou de vendre la quantité de quotas recommandée par les climatologues.
+En revanche, un marché de quotas pose la question de la distribution de ces derniers : s'ils sont gratuits, leur répartition (entre pays ou, à l'intérieur d'un pays, entre acteurs économiques) peut s'avérer politiquement compliquée et peut créer des distorsions ; s'ils sont payants, il faut convenir de l'usage des recettes, ce qui est facile au niveau national, mais serait très novateur au niveau international. L'article 10 de la directive européenne de 2003 oblige d'allouer au moins 90 % de tous les quotas à titre gratuit jusqu'en 2012. Le projet de directive pour la période 2013-2020 prévoit en revanche que les quotas doivent être vendus aux enchères,
+
+13. Directive 96/61CE du Conseil du 13 octobre 2003. 14. Rapport du Conseil des impôts "  Fiscalité et environnement  ", 2005.
+
+25
+
+
+
+les secteurs les plus exposés à la concurrence pouvant toutefois bénéficier d'une partie de quotas gratuits à titre transitoire.
+Par ailleurs, si la mise en place de marchés de quotas est concevable pour les entreprises, elle l'est beaucoup moins pour des millions de ménages (l'attribution de quotas aux personnes physiques soulève des difficultés pratiques). Si le système des crédits de carbone est particulièrement adapté aux secteurs industriels fortement émetteurs, la taxe est plus facile à mettre en place pour les émissions diffuses du secteur des transports ou du secteur tertiaire en général.
+Les entreprises soumises au système européen des permis d'émissions doivent être exclues du périmètre de la taxe intérieure carbone.
+26
+
+
+3 Les caractéristiques de la taxe intérieure carbone
+
+1. Les différents types de taxe carbone envisageables
+
+Deux conceptions de la taxe et de son assiette sont envisageables :
+
+ - 
+
+luanfeabtarxiceatdiiorencdte'umnepnrtoadsusiits,eyscuormlepsriqsusai ncteistéésmdisesiCoOn2s
+
+qui ont été n'ont laissé
+
+nécessaires à aucune trace
+
+dans le produit final ;
+
+ -  une taxe sur les consommations d'énergie fossile à l'origine d'émissions de CO2.
+
+La plupart des écotaxes existantes relèvent de la seconde approche : il s'agit plus souvent de taxes sur les combustibles et sur les sources d'énergie que de taxes sur les volumes de CO2 émis.
+
+a. U ne taxe carbone au sens strict : une solution intéressante, mais difficile à mettre en pratique
+Des taxes assises directement sur la teneur en carbone sont très rares. À l'échelle internationale, la taxe qui se rapproche le plus de ce mode de fonctionnement est la taxe américaine sur les substances appauvrissant la couche d'ozone. La taxe d'accise est appliquée à une liste de produits chimiques appauvrissant la couche d'ozone, à des taux proportionnels à leur nocivité potentielle pour l'ozone. Par exemple, on pourrait imaginer une vignette automobile, non plus basée sur la puissance fiscale du véhicule, mais indexée sur les rejets de CO2.
+Pour toute taxe interne assise sur la teneur en CO2, la difficulté consiste à passer d'une évaluation scientifique du volume de CO2 émis pour la production du produit considéré à une assiette fiscale suffisamment fiable et efficace. Pour éviter toute
+27
+
+
+
+évasion fiscale et le développement de contentieux importants, l'assiette doit en effet être précise, bien déterminée, facile à recouvrer et à contrôler, enfin aisément appréciable par le juge des impôts.
+Une solution consiste pour l'administration à établir des barèmes, conjointement avec les fédérations professionnelles concernées, qui seraient homologués et opposables. Ces barèmes préciseraient le "  volume de CO2  " de chaque produit ou catégorie de produit.
+Il faut toutefois souligner que conformément à la Constitution, l'assiette (de même que le taux) doit être déterminée par la loi. Le vecteur législatif est donc nécessaire, mais il n'offre pas la souplesse nécessaire à une révision régulière des barèmes.
+Surtout, cette solution apparaît en pratique difficilement applicable à l'ensemble des produits de consommation. On conçoit difficilement de définir des barèmes précis pour chaque type de produit de consommation. Il convient de noter que la taxe américaine précitée s'applique à une liste limitative de produits chimiques.
+On retrouvera cette limite pour la mise en place de la taxe extérieure carbone (cf. infra VI).
+b. Une autre voie : la taxation des principales sources d'énergie à l'origine d'émissions de CO2
+À court terme, la mise en place d'une taxe carbone entendue au sens strict semble donc difficile.
+Une piste envisageable pourrait consister à créer une taxation sur les sources d'énergie à l'origine d'émissions de CO2 (gaz, carburants automobiles, fuel domestique, charbon essentiellement).
+La question de l'articulation de cette forme de taxe carbone avec la fiscalité existante se pose donc avec acuité. Le maintien de la TIPP sous sa forme actuelle mérite réflexion (cf. infra).
+28
+
+
+Les caractéristiques de la taxe intérieure carbone
+À ce stade, pour des raisons essentiellement techniques, la mise en place d'une taxe intérieure carbone n'est envisageable que si elle est assise sur les p rincipales sources d'énergie à l'origine d'émissions de CO2.
+2. La détermination du bon niveau de taxation
+a. La fixation du niveau de taxation
+Dans le cadre d'une politique d'efficacité énergétique, visant l'économie d'énergie, le prix taxé est le signal-prix directement perçu par les agents : ces d erniers vont en principe adapter leur consommation d'énergie en fonction de  celui-ci. Il est donc légitime de réviser le niveau de taxation en fonction de l'évolution du prix hors taxe (tributaire de l'évolution du marché) pour atteindre toujours le même prix taxé déterminé.
+En revanche, dans une logique écologique, qui consiste à internaliser l'externalité négative, c'est-à-dire à faire payer aux consommateurs d'énergie le dommage environnemental généré par leurs comportements, le niveau de taxation demeure indépendant de l'évolution du prix hors taxe de cette énergie. Une taxe flottante perd donc tout son sens dans cette démarche.
+Le niveau de taxation devrait ainsi être étroitement lié à l'objectif de réduction des émissions de CO2 que se fixera la France. Le projet de loi relatif à la mise en oeuvre des conclusions du Grenelle de l'environnement prévoit un objectif de réduction par quatre des émissions de gaz à effet de serre entre 1990 et 2050, afin de ramener à cet horizon les émissions annuelles des gaz à effet de serre à un niveau inférieur à 140 millions de tonnes équivalent CO2. Toutefois, la contribution climat-énergie ne serait que l'une des mesures permettant d'atteindre cet objectif : des mesures, déjà mentionnées, relatives à la réduction de la consommation d'énergie des bâtiments et des émissions de gaz des secteurs des transports sont avancées dans le projet de loi.
+Les travaux menés, à la demande du Premier ministre, par la commission présidée par Alain Quinet sur la valeur tutélaire du carbone apportent des éléments de réponse importants. Les conclusions de la commission, qui viennent d'être
+29
+
+
+
+rendues publiques15, invitent à reconsidérer la valeur monétaire des émissions de CO2 retenue actuellement, notamment depuis les travaux de la commission Boiteux de 2001, soit 27 euros la tonne de CO2. De même, le prix du CO2 qui émerge sur le marché européen des quotas d'émissions, soit 20 à 25 euros la tonne sur la période récente, ne peut constituer selon la commission la seule référence sur les calculs de long terme (notamment en raison du champ couvert par le marché et de son fonctionnement).
+La commission présidée par Alain Quinet a donc retenu une approche "  tutélaire  ", dans laquelle la valeur monétaire recommandée relève d'une décision de l'État, sur la base des engagements français et européens en matière d'objectifs de réduction des émissions de gaz à effet de serre.
+Compte tenu des objectifs politiques de l'Union européenne de réduire de 20 % ses émissions à l'horizon 2020, et de réduire de 60 % à 80 % ses émissions à l'horizon 2050, la commission recommande la trajectoire de la valeur carbone suivante :
+ -  la valeur est fixée à 100 euros par tonne de CO2 à l'horizon 2030 ; - de 2010 à 2030, deux scénarios ont été envisagés :  - appliquer un taux d'actualisation de 4 % par an, ce qui suppose de
+partir d'une valeur du carbone de 45 euros en 2010 pour atteindre 100 euros en 2030 ;  - partir de la valeur du rapport Boiteux pour rejoindre la valeur pivot de 100 euros en 2030. C'est ce second scenario qui a été retenu (cf. infra).
+Le lien entre cette valeur tutélaire du carbone et le niveau de la taxe intérieure doit être établi avec précision.
+Selon la commission, la valeur carbone recommandée n'a pas vocation à fixer mécaniquement le niveau de la fiscalité environnementale (pour différentes raisons, notamment liées à la structure du marché du pétrole qui fait de la fiscalité sur le pétrole un moyen pour les pays consommateurs de récupérer une partie de la rente pétrolière, par exemple).
+15. "  La valeur tutélaire du carbone  ", Centre d'analyse stratégique, juin 2008.
+30
+
+
+Les caractéristiques de la taxe intérieure carbone
+b. La détermination précise de l'assiette et du taux
+Traditionnellement, deux options prévalent en matière de fiscalité : la mise en place d'une taxe aux finalités budgétaires, avec une assiette large et un taux réduit, ou bien l'instauration d'une taxe incitative, qui suppose au contraire une assiette étroite et un taux élevé. Dans cette logique, si l'on veut réduire réellement les émissions de CO2, la taxe carbone doit être incitative.
+Toutefois, ce raisonnement dual et classique s'applique mieux aux pollutions locales de substances dangereuses -- en quantités ciblées -- qu'aux émissions de CO2, pour lequel on ne peut parler d'assiette étroite.
+Une troisième voie se dessine alors : la mise en place d'une taxe dont le taux, initialement très bas, s'accroîtrait progressivement au fil du temps.
+i.Renoncer à toute taxe "  budgétaire  "
+Un impôt aux finalités principalement budgétaires privilégiera une assiette large et surtout un taux relativement bas, pour toucher le plus de  personnes possible, à un niveau qui reste individuellement acceptable. L'objectif premier n'est pas, dans ce cas, de protéger l'environnement, mais d'assurer des ressources budgétaires importantes et stables.
+Cette logique budgétaire ouvre, de fait, la voie à de multiples cas d'exonérations et de réductions de taux. Puisque l'objectif réel n'est pas de pénaliser les comportements les plus polluants, mais de créer une recette supplémentaire, des exonérations sont très souvent accordées aux populations les plus touchées, c'est-à-dire les plus polluantes.
+Il en résulterait même un paradoxe : la France tirerait des taxes liées à l'environnement des recettes relativement faibles en comparaison avec les autres pays de l'OCDE. D'après un rapport de l'OCDE de 2007, les recettes françaises tirées des taxes environnementales représentent 2,14 % du PIB, et 4,94 % des recettes fiscales par rapport à une moyenne de respectivement, 2,48 % et 7,17 % dans l'OCDE. Ces résultats s'expliquent par les taux d'imposition assez faibles et
+31
+
+
+
+par le petit nombre d'activités préjudiciables à l'environnement auxquelles elles s'appliquent16.
+La fiscalité écologique française se caractérise ainsi par une grande dispersion de taxes, très nombreuses, et dont les taux sont souvent bas ; elles sont par ailleurs très mal ciblées par rapport à leur objectif environnemental.
+La taxe intérieure sur les produits pétroliers (TIPP), qui est la plus importante taxe sur les produits énergétiques en France, constitue un exemple emblématique. Son produit représente quelque 2 % du PIB, ce qui la situe dans la moyenne des pays de l'OCDE. En revanche, comme le constate l'OCDE, cette taxe n'a qu'un lien très ténu avec les externalités environnementales produites par le carburant, notamment les émissions de CO2. La TIPP se caractérise par la multiplication de mesures d'exonérations partielles, de remboursement ou de taux réduit. Le charbon, qui est le plus polluant de tous les hydrocarbures, n'est pas taxé du tout. Dans son rapport annuel de 2005, le Conseil des impôts relevait ainsi qu'elle obéissait à une finalité avant tout budgétaire.
+L'OCDE relève par ailleurs que si la fiscalité de l'essence est lourde en France, l'écart entre la fiscalité du gazole et celle de l'essence est particulièrement important, ce qui a favorisé une forte augmentation de la part des véhicules à moteur diesel dans le parc automobile, alors même qu'un litre de gazole pollue plus qu'un litre d'essence. Il conviendrait de relever, plus précisément, que les véhicules à moteur diesel émettent moins de CO2 (car ils consomment moins de litres de  carburant), mais qu'ils peuvent émettre d'autres polluants, notamment des particules fines que n'émettent pas ou peu les véhicules à essence17.
+Pour prendre un dernier exemple parmi la longue liste, la mission d'information sur l'effet de serre de l'Assemblée nationale estime qu'on "  ne peut pas considérer que la TGAP (taxe générale sur les activités polluantes) s'apparente à une authentique fiscalité environnementale. Ses taux ne sont pas fixés de manière à correspondre au coût des dommages provoqués par les émissions de polluants atmosphériques, ni même en fonction du coût des mesures de lutte contre la pollution. Leur niveau est sans rapport avec les coûts environnementaux. Il s'agit plutôt d'une fiscalité dite "de financement".  "
+16. "  Le pari de la croissance. Contribution du Secrétaire général de l'OCDE aux travaux de la commission Attali  ", OCDE, 2007. 17. Le filtre a particules a précisément pour objet et pour effet de capter ces particules.
+32
+
+
+Les caractéristiques de la taxe intérieure carbone
+
+Il est donc impératif d'éviter ces vicissitudes fiscales coutumières lors de la mise en place de la taxe intérieure carbone. Le taux ne doit pas être fixé à un  niveau faible de manière constante dans le temps ; il doit au contraire répondre à  l'objectif environnemental imparti à la taxe. La question des mesures d'exonérations et d'abattements divers est précisée (infra IV-1). 
+ii. U ne solution possible : un taux initialement bas puis fortement progressif dans le temps
+Classiquement, dans une perspective environnementale et non budgétaire, une écotaxe efficace suppose une assiette étroite et un taux élevé. Elle a pour but de fortement pénaliser les comportements les plus polluants. L'objectif même d'une telle écotaxe est la disparition à terme de sa propre assiette.
+Ce raisonnement s'applique cependant mieux aux substances polluantes dangereuses qu'aux émissions de CO2 : par nature celui-ci est présent partout, qu'il soit d'origine fossile ou non. On ne peut donc rigoureusement parler d'une assiette étroite, ni même d'une assiette vouée à disparaître18. Quant au taux, il ne doit pas être prohibitif, mais doit permettre d'atteindre l'objectif fixé. Le but n'est pas en effet d'arrêter toute émission de CO2, mais de réduire sensiblement le niveau de ces émissions.
+La solution la plus adaptée consisterait à faire évoluer le prix du CO2 dans le temps. Certaines voix, à l'instar de Jean-Marc Jancovici et d'Alain Grandjean19 préconisent déjà l'instauration d'une progressivité de la taxe dans le temps.
+La théorie économique prévoit en effet de faire évoluer le prix du CO2, donc de la taxe, en fonction de son taux d'actualisation.
+Dans la mesure où les crédits d'émission de CO2 s'apparentent à une ressource épuisable, la théorie stricte prévoit que leur cours réel devrait croître au rythme du taux d'intérêt réel (modèle de Hotteling, utilisé notamment pour le marché du pétrole). L'application stricte de la règle de Hotteling, avec un taux d'actuali - 
+
+18. La division par deux des émissions ne conduit pas à l'annulation. 19. Le plein s'il vous plaît ! La solution au problème de l'énergie, "  Points  ", Le Seuil, 2007.
+
+33
+
+
+
+sation de 4 % par an, conduirait, selon la commission présidée par Alain Quinet, à une valeur carbone de 45 euros en 2010.
+Cette solution, très rigoureuse, peut cependant provoquer un choc important pour certains acteurs économiques, en l'absence de réelle transition.
+Le scénario retenu par la commission Quinet consiste, comme on l'a vu, à partir de la valeur de la commission Boiteux (27 euros la tonne de CO2), pour organiser un rattrapage progressif vers la valeur de 100 euros en 2030.
+Cette option offrirait des garanties aux ménages et aux entreprises, qui ont b esoin de visibilité dans leurs prises de décisions économiques. Peut-être est-il permis de citer l'exemple américain de la taxe sur les substances appauvrissant la couche d'ozone : sa mise en oeuvre de manière progressive a, selon l'OCDE, renforcé son caractère incitatif.
+Dans tous les cas, il convient de faire évoluer le prix du CO2 en fonction de l'évolution du coût estimé des dommages environnementaux.
+Il convient toutefois de souligner que la faisabilité et la viabilité de ce type de mesure sont plus importantes dans les pays qui bénéficient d'une culture du consensus bipartisan plus développée qu'en France. La mise en oeuvre d'un taux progressif dans le temps nécessite une volonté pérenne et un engagement de long terme des pouvoirs publics.
+c. L a question particulière de la taxation des émissions dues à l'électricité
+L'électricité entre dans le champ du système des quotas européens. Conformément au principe exposé plus haut, elle ne devrait donc pas entrer dans le champ d'application de la taxe. Toutefois, l'électricité pose un problème spécifique lié au contenu très différent en carbone selon le mode de production.
+Contrairement à une idée généralement admise, le coût marginal en carbone de l'électricité est relativement élevé. Cette situation est liée à la nature même de la production électrique. L'électricité ne pouvant être stockée, les techniques de production utilisées doivent pouvoir faire face instantanément à une demande
+34
+
+
+Les caractéristiques de la taxe intérieure carbone
+fluctuante. La demande de base est satisfaite par la production d'origine nucléaire (à faible teneur en carbone), tandis que les pics de consommation excédant la capacité du parc nucléaire sont assurés par les techniques de production à base d'énergies fossiles (centrales, françaises ou non, fonctionnant au charbon, au gaz ou au fuel), qui présentent des coûts fixes faibles mais un coût marginal élevé, et par ailleurs un fort contenu en carbone. La consommation électrique française étant rarement satisfaite par le seul parc nucléaire, c'est la production à base d'énergies fossiles qui détermine le prix instantané de l'électricité pendant au moins 90 % du temps. Le prix correspond donc au coût marginal élevé de ces techniques de production20, qui comprennent par ailleurs une forte teneur en CO2.
+Si le prix de l'électricité était entièrement fixé par des mécanismes de marché, le signal-prix reçu par les consommateurs serait donc sans doute assez fort, sans qu'une taxe soit nécessaire. Elle aurait en fait une utilité pour une toute autre raison : l'affectation des ressources tirées de l'avantage compétitif national dont dispose la France en matière nucléaire. Cet avantage est issu d'une "  rente  " non pas naturelle mais constituée par des efforts d'investissement pluri-décennaux, permis notamment par une meilleure tolérance de son opinion publique à l'énergie nucléaire.
+Dans le système actuel, encore largement dominé par les tarifs réglementés, le signal-prix est au contraire très faible, que ce soit sur le contenu marginal en c arbone ou plus généralement sur la nécessité de réaliser des économies d'énergie. Ce signal-prix peut bien sûr être modifié par simple relèvement des tarifs, sans qu'une taxe soit nécessaire. Celle-ci aurait donc essentiellement un but pédagogique, pour faire accepter l'augmentation tarifaire.
+Quoi qu'il en soit, cette taxe serait forcément une taxe spécifique, distincte de la taxe carbone générale, puisqu'elle ne serait pas perçue, comme cette dernière, à l'occasion de la consommation d'un produit émettant du carbone.
+20. D'après David Spector (électricité : faut-il désespérer du marché ?, Rue d'Ulm, 2007), le modèle de la concurrence pure et parfaite est susceptible de constituer un référentiel pertinent pour expliquer la formation du prix de l'électricité : le prix correspond au coût marginal de la technique la plus coûteuse à laquelle il est nécessaire de recourir pour satisfaire la totalité de la demande.
+35
+
+
+
+4 Les conditions de mise en oeuvre de la taxe intérieure carbone
+1. Pour garantir l'efficacité de la taxe carbone :   exclure toute exonération
+La taxe carbone ne sera efficace que si son application ne souffre d'aucun dispositif d'exonération ou d'exemption (cf. supra). Comme on l'a vu, la fiscalité  écologique française regorge de dispositifs de cette nature, qui contribuent fortement à l'éloigner de son objectif. Outre le cas de la TIPP précédemment cité, l'exemple des redevances sur l'eau est également emblématique de la multiplication de mesures d'exonération. L'agriculture ne se voit pas ainsi appliquer le même taux de redevance sur l'eau que les autres secteurs.
+L'exclusion de toute exonération en fonction d'intérêts catégoriels est une c ondition, semble-t-il, indispensable à l'efficacité de la taxe intérieure carbone.
+Comment garantir ce principe ? La jurisprudence constitutionnelle a ouvert sur ce point de nouvelles perspectives : la finalité écologique de la taxe carbone doit être expressément affirmée par le législateur21.
+En effet, dans sa décision n° 2000- 441 du 28 décembre 2000, le Conseil constitutionnel a déclaré non conformes à la Constitution les modalités de calcul de la taxe générale sur les activités polluantes (TGAP) que le législateur voulait étendre aux activités énergétiques, au motif que les différences de traitement entre e ntreprises étaient sans rapport avec l'objectif de la mesure. Celui-ci consistait à
+21. Exposé des motifs et débats parlementaires dans la décision du Conseil constitutionnel du 28 décembre 2000.
+37
+
+
+
+renforcer la lutte contre l'effet de serre en incitant les entreprises à maîtriser leur consommation de produits énergétiques.
+Les différences de traitement sans rapport avec l'objectif de protection de l'environnement sont donc contraires au principe d'égalité devant l'impôt. On peut donc en conclure que des exonérations d'impôt contraires à ce même objectif de protection environnementale seraient également anticonstitutionnelles.
+La mention expresse dans la loi de la finalité écologique de la taxe ouvre ainsi une possibilité de censure par le juge constitutionnel de toute mesure dérogatoire. Sans cette mention, l'écotaxe pourrait être considérée comme une simple taxe budgétaire, pour laquelle des exonérations aux fins de préserver les intérêts é conomiques de certains secteurs seraient possibles.
+La volonté politique de faire de la taxe carbone un véritable instrument de politique environnementale doit donc se mesurer aux objectifs qu'affichera le législateur.
+2. A ssurer un niveau de prélèvements obligatoires constant
+Le projet de loi relatif au Grenelle de l'environnement prévoit que la taxe intérieure carbone soit "  strictement compensée par une réduction des autres prélèvements obligatoires  ". Ceci constitue une condition indispensable à la mise en place de la réforme, compte tenu du niveau déjà très élevé des prélèvements obligatoires en France.
+3. Ne pas affecter les recettes à des dépenses pérennes
+L'usage des recettes de la taxe intérieure carbone est une question importante, qui ne doit pas conduire à dévoyer les modalités même de la taxe : le taux, l'assiette et les caractéristiques de la taxe ne doivent pas être déterminés en fonction du niveau de recettes attendu.
+38
+
+
+Les conditions de mise en oeuvre de la taxe carbone
+Les attentes sont en effet grandes en la matière. Le Grenelle de l'environnement a prévu l'affectation des recettes de la taxe à des mesures environnementales. En outre, dans le cadre de l'engagement de maintenir les prélèvements obligatoires à niveau constant, il pourrait être tentant de financer, au moins pour partie, la baisse de prélèvements qui sera venue compenser la taxe carbone.
+Or la possibilité de tirer des recettes pérennes d'une taxe écologique incitative est pour le moins discutée. Ce débat doit conduire à la même prudence s'agissant d'une taxe à rendement progressif dans le temps.
+S'agissant des taxes écologiques incitatives classiques, l'analyse économique est partagée sur la possibilité de leur trouver une finalité budgétaire. Certains é conomistes ont développé le concept de "  double dividende  " en matière de fiscalité environnementale. Le premier dividende est l'amélioration de l'environnement ; le second découle de la réaffectation des recettes de l'écotaxe, qui permet l'abaissement de prélèvements défavorables à la croissance (baisse des prélèvements sociaux par exemple).
+Or l'existence même d'un double dividende fait l'objet d'un débat au sein de la communauté des économistes22. En principe, une écotaxe incitative est efficace si son produit décroît dans le temps ; ce produit ne peut donc être affecté au financement d'une dépense pérenne. Selon le Conseil des impôts (2005), "  l'examen des mesures prises par quelques États européens ne permet pas de confirmer avec certitude la réalité du mécanisme  ".
+Le problème est sensiblement différent en ce qui concerne la taxe intérieure carbone, dont l'assiette n'est pas vouée à disparaître dans le temps (cf. supra). Le niveau potentiel de recettes est donc a priori plus important. Toutefois, l'anticipation de l'évolution du produit de cette taxe n'est pas exercice facile. Il serait en tout état de cause prudent de ne pas déroger au principe de non affectation des recettes aux dépenses, celles-ci pouvant être supérieures ou inférieures aux recettes.
+La prudence recommande ainsi de ne pas affecter les recettes de la taxe intérieure carbone à des dépenses pérennes. 
+22. P. Bontems et G. Rotillon, Économie de l'environnement, "  Repères  ", La Découverte, 1998.
+39
+
+
+
+4. Remettre à plat la fiscalité écologique 
+L'état de la fiscalité écologique en France a été décrit succinctement supra (cf. 2.b). La multitude de taxes éparses, l'éparpillement de leurs assiettes, de leurs taux et la multiplication des dispositifs d'abattements et d'exonérations "  ne permettent pas d'en faire des instruments ni économiques ni pédagogiques pour le consommateur final  ", selon les conclusions mêmes de la mission d'information parlementaire sur l'effet de serre (2006).
+La nécessité de mettre en place une taxe carbone échappant à toute logique de financement et excluant tout dispositif d'exonération en fonction d'intérêts c atégoriels a été mentionnée ci-dessus. Une troisième condition s'impose : la remise en cohérence de l'ensemble de la fiscalité écologique française.
+L'instauration d'une taxe intérieure carbone sans refonte des écotaxes  existantes serait particulièrement inefficace : il est essentiel que les acteurs é conomiques reçoivent un seul signal sur le prix du carbone. En outre, l'analyse économique souligne que le coût moyen de la réduction des émissions est plus important lorsqu'une taxe sur le carbone vient s'ajouter à un dispositif de taxation des combustibles déjà existant.
+Enfin, la taxe carbone doit s'inscrire dans le cadre de l'engagement qui a été pris de maintenir les prélèvements obligatoires à un niveau constant.
+Si on estime à 40 euros la tonne de CO2, le niveau de taxation semble déjà atteint pour les ménages grâce à la fiscalité actuelle (notamment sur le carburant). Il ne l'est pas pour d'autres secteurs ou catégories de contribuables.
+On a vu que l'option la plus pragmatique consiste non pas à taxer en aval le contenu en carbone des objets, mais à taxer en amont la consommation d'énergie fossile. Dès lors, ce choix d'une taxation amont conduit assez logiquement non pas à la création d'une nouvelle taxe ex nihilo, mais à la réforme de la TIPP.
+La réforme de la TIPP en fonction d'une finalité écologique et non budgétaire implique notamment la révision de la structure des tarifs et des multiples dispositifs d'exonération et d'exception qui la caractérisent aujourd'hui.
+40
+
+
+Les conditions de mise en oeuvre de la taxe carbone
+Une analyse d'impact préalable serait nécessaire ; il convient en effet d'éviter que la révision du dispositif fiscal actuel ne conduise aux effets contraires à ceux recherchés, à savoir des niveaux de taxation favorisant les énergies les plus émettrices de CO2.
+Enfin, le fait que la TIPP soit partiellement affectée aux régions est un élément important à prendre en compte, dans la perspective d'une refonte de la TIPP dans une grande taxe climat-énergie.
+La mise en place d'une taxe carbone amont pourrait prendre, concrètement, la forme d'une refonte de la TIPP.
+41
+
+
+
+5 Les conséquences de la mise en oeuvre de la taxe intérieure carbone
+Si la taxe intérieure carbone est globalement efficace pour l'environnement et pour l'économie, elle emporte des effets négatifs sur la distribution des revenus et sur la compétitivité de certains secteurs d'activité. Les pouvoirs publics doivent donc envisager des mesures de compensation, sans toutefois priver la taxe de ses effets - notamment par des exonérations catégorielles.
+1. Les conséquences sur la situation des ménages
+a. L'effet sur la répartition des revenus
+La plupart des taxes environnementales sur l'énergie ont un effet sur la répartition des revenus. Des études de l'OCDE montrent que certaines taxes ont un caractère régressif (qui pénalise les plus modestes) dans la mesure où la part du budget consacrée au produit taxé est plus élevée pour les ménages dont les dépenses totales sont relativement faibles. À titre d'exemple, les ménages modestes consacrent une plus forte proportion de leurs revenus au chauffage que leurs voisins plus aisés, de sorte qu'une taxe qui fait monter le prix de l'énergie (même à type de chauffage identique) a plus de répercussion sur les ménages les moins aisés.
+D'après l'OCDE, les effets distributifs des taxes sur l'énergie ou le carbone recouvrent plusieurs catégories :
+ -  les effets distributifs directs sur les ménages résultant du paiement de la taxe ;
+43
+
+
+
+ -  les effets distributifs indirects, notamment dus à la hausse des prix exigés par les entreprises pour les produits taxés ;
+ -  les effets imputables à l'utilisation du produit des taxes liées à l'environnement ; - les effets résultant des avantages liés à l'amélioration de l'environnement.
+D'après les travaux disponibles menés par les économistes, l'effet direct des taxes énergétiques serait plutôt régressif23.
+b. Quels principes de compensation ?
+Pour prendre en compte ces disparités, le Pacte écologique mentionne des "  mesures compensatoires pour les secteurs économiques et les ménages les plus fragiles  ". Le projet de loi relatif à la mise en oeuvre des mesures du Grenelle de l'environnement prévoit une réduction des autres prélèvements obligatoires, de façon à préserver le pouvoir d'achat des ménages.
+Dans ces conditions, quelles formes pourraient prendre ces mesures de compensation ?
+Les travaux de l'OCDE en la matière précisent qu'il existe deux types de mesures permettant de remédier aux problèmes de répartition des revenus :
+ -  les mesures d'atténuation, d'une part, qui interviennent ex ante, et visent à alléger le plus souvent la pression fiscale par des dispositifs dérogatoires (exonérations par exemple) accordés à certains groupes d'acteurs ;
+ -  les mesures compensatoires, d'autre part, applicables ex post, et qui ne m odifient ni le taux ni la structure de la taxe considérée.
+L'Institut de l'entreprise estime que c'est cette deuxième catégorie de mesures qui doit être privilégiée, pour les raisons évoquées plus haut sur la nécessité de préserver l'efficacité écologique de la taxe. Il convient en effet de maintenir le signal-prix transmis par la taxe.
+Les mesures de compensation doivent répondre à un principe simple : ne pas priver la taxe de ses effets.
+23. "  L'économie politique des taxes liées à l'environnement  ", OCDE 2006.
+44
+
+
+Les conséquences de la mise en oeuvre de la taxe intérieure carbone
+2. Les conséquences sur la compétitivité sectorielle
+a. Les distorsions entre les différents secteurs économiques
+La mise en place de la taxe dans les conditions évoquées dans cette note ne sera pas neutre sur les comportements économiques : son impact est différent selon le secteur économique concerné (en dehors du périmètre des quotas d 'émissions), indépendamment même du problème d'écart de compétitivité avec les autres pays européens. La taxe carbone pénalise volontairement les secteurs (hors quotas) qui produisent le plus de CO2, dans le but qu'ils réduisent leur consommation.
+Par ailleurs, ces secteurs sont pénalisés par rapport à leurs concurrents de l'Union européenne (vis-à-vis desquels la mise en place d'une taxe extérieure carbone est naturellement impossible).
+b. Les principes de compensation
+Certains suggèrent d'établir une taxe différente selon les secteurs sans que les raisons avancées soient toujours claires : choix politique en faveur de telle ou telle catégorie d'acteurs, ou justification économique par la myopie ou l'inélasticité plus ou moins prononcée de tel groupe d'acteurs.
+Or on ne peut, comme on l'a vu, proposer de mesures compensatoires (exonérations, compensations financières ciblées) qui aient pour effet d'annuler les effets incitatifs sur la réduction de l'activité polluante. Autrement dit, s'il n'existe pas de produit de substitution, ni de marge de manoeuvre réelle, accepte-t-on de pénaliser un type de secteur et d'entreprise particulier, et d'avoir pour objectif de réduire son activité sur le territoire ?
+La réponse à cette question dépend de la capacité du système à répercuter la taxe amont (portant sur les consommations d'énergies fossiles) sur l'ensemble du secteur d'activité concerné, en aval : l'impact du prix du pétrole sur les pêcheurs, qui dépendent d'une structure de marché bien particulière, est un exemple récent caractéristique.
+45
+
+
+
+De manière générale, les mesures à envisager sont naturellement celles qui ne diminuent pas l'incitation à réduire les émissions de CO2.
+À ce stade, au niveau européen, l'une des solutions réside sans doute dans l'harmonisation européenne sur la fiscalité de l'énergie.
+Les mesures de compensation à envisager sont celles qui ne diminuent pas l'incitation à réduire les émissions de CO2. L'une des solutions réside sans doute dans l'harmonisation européenne sur la fiscalité de l'énergie.
+46
+
+
+6 La taxe extérieure carbone
+La taxe extérieure carbone viserait à compenser les distorsions nées du système européen des quotas d'émissions, entre les entreprises de l'Union européenne qui y sont soumises et celles qui en sont exclues, dans l'hypothèse où un accord international satisfaisant succédant au protocole de Kyoto ne serait pas conclu. Il s'agit plus précisément, en l'absence d'un tel accord, de protéger l'industrie européenne de pertes de compétitivité internationale qui résulteraient du surcoût lié à la politique de réduction des gaz à effet de serre -- via les quotas d'émissions (cf. supra).
+Les possibilités laissées par l'Organisation mondiale du commerce (OMC) pour compenser ce surcoût ont été étudiées par la mission d'information sur l'effet de serre de l'Assemblée nationale ainsi que par le ministère de l'Écologie, du développement durable et de l'aménagement du territoire24.
+Une solution consisterait à mettre en place un mécanisme d'ajustement de taxe à la frontière (ATF). Il s'agit de rembourser aux exportateurs nationaux les taxes qu'ils subissent, en l'occurrence sur le CO2, et de taxer de la même façon les importations. Ce système correspond au régime courant de la TVA.
+Le groupe de travail sur les ajustements fiscaux à la frontière du GATT de 1970 a retenu une définition de l'ATF adoptée par l'OCDE. Il s'agit de "  toutes mesures fiscales qui donnent effet, complètement ou partiellement, au principe du pays de destination, c'est-à-dire qui permettent d'exonérer, en totalité ou en partie, les produits exportés de la taxe grevant dans le pays exportateur les produits n ationaux similaires vendus aux consommateurs sur le marché intérieur et de
+24. "  Compatibilité de mesures de protection de la compétitivité d'une industrie soumise à réduction des émissions de carbone avec les règles de l'Organisation mondiale du commerce  ".
+47
+
+
+
+prélever, en totalité ou en partie, sur des produits importés vendus aux consommateurs la taxe grevant dans le pays importateur les produits nationaux similaires  ".
+1. L es possibilités d'ajustements de taxe à la frontière (ATF) offertes par le régime général de l'OMC
+Plusieurs conditions sont néanmoins nécessaires à la mise en place d'un ATF.
+En premier lieu, le système actuel de quotas de gaz à effet de serre de l'Union européenne ne pourrait vraisemblablement être assimilé à une taxe. L'allocation de quotas s'effectue en effet essentiellement à titre gratuit, dans le cadre de l'article 10 de la directive de 2003, qui oblige d'allouer au moins 90 % des quotas à titre gratuit jusqu'en 2012. Seule une allocation par mise aux enchères, avec  livraison à prix unique, pourrait être assimilée à une taxe : selon le Medad, il faudrait alors organiser un système d'enchères une fois par an et en déduire le montant de la taxe.
+Ce calcul du montant de la taxe ne serait cependant pas chose aisée. Le montant de la taxe n'est pas strictement équivalent au prix des enchères : la taxe doit porter sur les produits. Or le marché de quotas assure que le coût marginal de réduction des émissions est le même pour toutes les installations soumises au marché, mais n'assure pas que le coût marginal de réduction sur le produit soit le même. Il n'existe pas deux installations émettant les mêmes émissions par unité de production. Face à cette difficulté de fixer un niveau de taxe sur les produits qui serait le niveau à retenir pour les ajustements aux frontières (c'est-à-dire pour le montant de l'exonération et pour celui de la taxe sur les produits importés), le Medad suggère qu'il serait plus facile de taxer les quantités de gaz à effet de serre nécessaires à la fabrication des produits ("  émissions spécifiques  ") ou d'organiser des marchés de quotas d'émissions spécifiques. Ces deux instruments seraient nécessairement sectoriels.
+Une troisième difficulté s'ajoute aux deux premières. L'information sur les émissions générées pour la production d'une unité n'est pas disponible au niveau international. Une solution, proposée par Ismer et Neuhoff (2004), consiste à retenir un niveau équivalent à la meilleure technologie disponible : cette dernière notion est cependant susceptible d'être contestée au niveau international par
+48
+
+
+La taxe extérieure carbone
+tout pays faisant valoir une discrimination entre pays. Il existe de nombreuses technologies pour un même secteur et les industriels seraient obligés de fournir des informations confidentielles sur leurs méthodes de production.
+Par ailleurs, au regard de la jurisprudence de l'organe de règlement des différends (ORD), il semble impossible de taxer différemment deux produits ayant les mêmes caractéristiques physiques, comme l'acier par exemple, mais dont la production de l'un engendre des émissions de CO2 bien supérieures à celles de l'autre. C'est le problème des "  procédés et moyens de production non incorporés  ", c'est-à-dire qui ne laissent pas de trace dans le produit final, question sur laquelle les pays de l'OMC sont en désaccord. Dit plus simplement, afin qu'une tonne d'acier en provenance d'autres pays supporte la même taxe qu'une tonne d'acier européenne, la taxation doit être forfaitaire, indépendamment du contenu carbone de la tonne d'acier de ces pays. La possibilité de taxer des produits d'après leurs méthodes de production si elles ne laissent pas de trace dans le produit est donc controversée. La jurisprudence de l'ORD dans l'affaire "  Taxes sur le pétrole  "  offrirait cependant une incertitude favorable à la taxation de substances ne devant pas nécessairement être incorporées dans le produit final.
+Il serait ainsi possible d'imaginer une solution consistant à taxer les importations de manière uniforme, à condition d'établir un niveau standardisé d'émissions spécifiques par secteur (les émissions de la meilleure technologie disponible par exemple), à charge pour l'importateur de démontrer que son produit a généré moins d'émissions de CO2 que le standard pour être exonéré partiellement ou  totalement de la taxe. Ces conditions seraient nécessaires, mais pas forcément suffisantes, pour garantir l'acceptation de la mesure par l'OMC.
+2. Les régimes d'exception de l'OMC concernant l'environnement
+L'article XX du GATT, qui constitue le régime d'exception de l'OMC, ouvre une autre possibilité. Il permet aux États membres d'adopter des mesures de sauvegarde de l'environnement (paragraphes b et g). Dans ce cadre, les critères d'acceptation d'un ajustement fiscal aux frontières sont différents.
+49
+
+
+
+Les deux régimes d'exception prévus respectivement par les paragraphes b) et c) de l'article XX ont une portée différente.
+Le paragraphe b) mentionne des "  mesures nécessaires à la protection de la santé et de la vie des personnes et des animaux ou à la préservation des végétaux  ". Toutefois, la jurisprudence interprète de manière étroite le critère de nécessité. Ainsi, un État peut difficilement justifier d'une mesure incompatible avec le GATT en la déclarant nécessaire au sens de l'article XX b) : dans le cas où une mesure compatible avec le GATT "  n'est pas raisonnablement disponible, l'État a obligation d'utiliser, parmi les mesures dont il dispose raisonnablement  ", celle qui est la moins incompatible avec le GATT25. L'ORD pourrait ainsi considérer que d'autres mesures moins incompatibles avec le GATT que l'ajustement de taxe aux frontières pourraient être envisagées par les États. En effet, le protocole de Kyoto ne prévoit pas de mesures commerciales particulières, mais un large panel de mesures aux fins de lutte contre le changement climatique.
+En revanche, d'après la même analyse effectuée par le ministère de l'Écologie, le régime du paragraphe c) serait plus favorable à l'instauration d'un ajustement fiscal aux frontières. Il mentionne des "  mesures se rapportant à la conservation des ressources naturelles épuisables, si de telles mesures sont appliquées conjointement avec des restrictions à la production ou à la consommation nationales  ". D'une part, au regard de la jurisprudence assimilant notamment l'air à une ressource naturelle épuisable, il est permis d'affirmer, selon le Medad, que l'atmosphère pourrait également être qualifiée de ressource naturelle épuisable. D'autre part, le lien entre la mesure commerciale restrictive et son objectif semble être moins contraignant au sens du régime du paragraphe g) qu'aux termes du paragraphe b). La jurisprudence exige une relation "  étroite et réelle  " entre la mesure et l'objectif visé. Comme l'objectif premier de la taxe est de rééquilibrer la concurrence, et non pas de réduire les émissions de gaz à effet de serre, il est difficile de savoir si l'ORD considérera la taxe comme "  se rapportant à la conservation des ressources naturelles épuisables  ". L'article XX ne permet pas d'utiliser des mesures commerciales pour corriger directement des problèmes de compétitivité. D'après l'analyse de certains experts, l'ATF pourrait être admis à condition que la taxe soit calculée sur la base des émissions réelles de CO2 de chaque producteur (relation "  étroite et réelle  " entre l'ATF et l'objectif). Une autre étude du Medad précise
+25. États-Unis, article 337, rapport du groupe spécial du 7 novembre 1989. Cité par le Medad dans son étude de 2006.
+50
+
+
+La taxe extérieure carbone
+cependant qu'il faudrait "  que les pays soient capables d'identifier et de surveiller les produits utilisés pour fabriquer les produits importés. Le plus souvent cette identification ne peut être réalisée que par une inspection sur le site, un suivi et une homologation du procédé de production dans le pays exportateur  ". Une autre solution serait d'exiger des industriels la communication d'informations sur leurs émissions et procédés de production, qui revêtent un caractère confidentiel. 
+Par ailleurs, dans le cadre des régimes d'exception de l'article XX, si la jurisprudence de l'organe d'appel dans l' "  affaire de la crevette  " était maintenue, il serait envisageable, selon l'étude du ministère de l'Écologie, de taxer différemment des produits en fonction de leurs procédés et méthodes de production (PMP) "  non incorporés  " dans le produit final, c'est-à-dire en fonction de leur teneur en carbone.
+Il convient en outre de relever que dans le cadre d'allocation gratuite de quotas d'émissions, tout ajustement de taxe à la frontière est incompatible avec l'article XX du GATT, paragraphe g). Celui-ci précise en effet que les mesures d oivent "  être appliquées conjointement avec des restrictions à la production ou à la consommation nationales  ". La restriction imposée à la production "  nationale  " (c'est-à-dire des pays de l'Union européenne) serait, du fait de l'allocation gratuite, bien inférieure à celle qui serait imposée aux producteurs extérieurs à l'Union européenne.
+Enfin, l'ATF envisagé devra respecter les prescriptions du texte introductif de l'article XX , tel qu'éclairé par la jurisprudence. À titre d'exemple, les États d ésireux d'instaurer un ATF seront soumis à l'obligation de mener des négociations sérieuses avec leurs partenaires de l'OMC, malgré les négociations multilatérales sur le climat.
+In fine, les règles de l'OMC semblent ouvrir des marges très étroites -- et loin d'être certaines -- à l'instauration d'une taxe extérieure carbone. Les obstacles juridiques et techniques sont nombreux. Le calendrier de mise en place d'une telle mesure sera nécessairement plus long que celui concernant la taxe intérieure. 
+**
+*
+51
+
+
+
+Conclusion 
+La France est l'un des pays les plus vertueux d'Europe en matière d'émissions de gaz à effet de serre. La mise en place d'une taxe intérieure carbone destinée à produire un signal-prix de nature à réduire encore plus les émissions de dioxyde de carbone est une mesure évidemment légitime.
+Elle doit cependant s'appliquer au secteur résiduel des activités non soumises au mécanisme européen des crédits de carbone, c'est-à-dire principalement aux m énages (concernés au titre du carburant automobile et du chauffage domestique), aux secteurs de l'agriculture et de la pêche (en raison des moyens de transports utilisés, consommateurs en carburant), au transport routier, ainsi qu'à l'ensemble du secteur tertiaire (en tant qu'utilisateur de bâtiments consommateurs d'énergie).
+La question de la taxation de l'électricité reste ouverte. Si l'on veut rétablir un véritable signal, deux solutions sont envisageables. La première consisterait à remettre en cause les tarifs réglementés et poursuivre la libéralisation du marché de l'électricité, déjà soumis au système des quotas d'émissions européen : la création d'une taxe serait alors inutile. La seconde consisterait à réintégrer dans les tarifs le contenu en C02 de la production électrique, via la taxe carbone.
+S'agissant des modalités de mise en oeuvre, l'option la plus pragmatique consiste non pas à taxer en aval le contenu en carbone (en CO2) des objets, mais à taxer en amont la consommation d'énergie fossile à l'origine d'émissions de CO2.
+Le choix d'une taxation amont conduit assez logiquement non pas à la création d'une nouvelle taxe ex nihilo, mais à la réforme de la TIPP.
+Par ailleurs, le niveau de la future "  contribution climat-énergie  ", pourrait être fixé à l'aune de la valeur carbone recommandée par la commission Quinet (100 euros par tonne de CO2 à l'horizon 2030, à partir d'une valeur de 27 euros la tonne de CO2 retenue actuellement). Le lien entre la taxe et cette valeur car - 
+53
+
+
+
+bone n'est toutefois pas mécanique : il convient de tenir compte des autres instruments permettant l'internalisation de cette valeur carbone (permis d'émissions, mesures réglementaires, etc.). La solution la plus adaptée consisterait dans tous les cas à adopter un taux progressif dans le temps. 
+La suppression de toute exonération en fonction d'intérêts catégoriels est une condition indispensable à l'efficacité de la taxe : sa finalité écologique doit être affirmée dans la loi.
+Il apparaît en outre illusoire de vouloir affecter les ressources issues de la taxe intérieure carbone à des dépenses pérennes. Enfin, il est impératif que la taxation supplémentaire issue de la "  nouvelle TIPP  " soit strictement compensée par une réduction des autres prélèvements obligatoires.
+54
+
+
+Personnalités auditionnées
+ -  Mme Corinne Lepage, présidente de CAP21. - M. Jean-Marc Jancovici, consultant. - M. Rémy Prud'homme, professeur émérite, Université de Paris XII. - M. Guillaume Sainteny, directeur des Études économiques et de l'évaluation. environnementale, ministère de l'Écologie, de l'énergie, du développement durable et de l'aménagement du territoire.
+55
+
+
+Bibliographie
+ -  Rapport de la mission d'information sur l'effet de serre de l'Assemblée nationale. Président M. Jean-Yves Le Déaut, rapporteur Mme Nathalie Kosciusko-Morizet, avril 2006.
+ -  A . Berthier, C. Cros, "  Compatibilité de mesures de protection de la compétitivité d'une industrie soumise à réduction des émissions de carbone avec les règles de l'organisation mondiale du commerce  ". D4E, ministère de l'Écologie et du développement durable, 2006.
+ -  A. Vieillefosse, "  Des accords sectoriels dans les engagements post-2012 ?  " ministère de l'Écologie et du développement durable, 2007.
+ -  P hilippe Bontems et Gilles Rotillon, Économie de l'environnement, "  Repères  ", La Découverte, 1998.
+ -  Rapport du Conseil des prélèvements obligatoires "  Fiscalité et environnement  ", 2005.
+ -  C oncurrences n° 2, 2007. Chronique- Bibliographie.
+ -  D avid Spector, Électricité : faut-il désespérer du marché ? Collection du Cepremap, Éditions rue d'Ulm/ Presses de l'École normale supérieure, 2007.
+ -  Dominique Bureau et Michel Mougeot, "  Politiques environnementales et c ompétitivité  ", Rapport du CAE n° 54.
+ -  ReportontheEuropeanEconomy2008,EEAG(EuropeanEconomicsAdvisory Group), CESifo.
+ -  "   Le pari de la croissance. Contribution du Secrétaire général de l'OCDE aux travaux de la commission Attali  ", OCDE, 2007.
+56
+
+
+Bibliographie
+ -  "   Les approches volontaires dans les politiques de l'environnement  ", OCDE, 2003.
+ -  R apport Stern sur l'économie du changement climatique. - Rémy Prud'homme, article "  Au-delà du Grenelle : d'une taxe carbone nationale
+à une taxe carbone mondiale  ". - J ean-Marc Jancovici et Alain Grandjean, Le plein s'il vous plaît !, "  Points  ",
+Le Seuil, 2007. - "  La valeur tutélaire du carbone  ", Centre d'analyse stratégique, juin 2008.
+57
+
+
+
+Annexe II du rapport du Conseil des impôts sur la fiscalité de l'environnement : liste des impôts et taxes liés à l'environnement classés par domaine (2005)
+
+Intitulé de la Bénéficiaire mesure fiscale
+
+Domaine
+
+Référence
+
+Produit 2004 (en M)
+
+Taxe sur les
+
+Organismes
+
+nuisances sonores gérant les
+
+aériennes
+
+aérodromes
+
+TGAP Déchets ménagers et assimilés
+
+État
+
+TGAP  - 
+
+Contribution visant
+
+à l'élimination des
+
+déchets résultant de
+
+la distribution
+
+gratuite d'imprimés
+
+non sollicités
+
+État
+
+TGAP Déchets industriels et spéciaux
+
+État
+
+Bruit Déchets
+Déchets Déchets
+
+(1) Données 2003, dernière année disponible (2) Données 2002, dernière année disponible (3) Données 2001, dernière année disponible
+
+Code des douanes article 266 Code des douanes article 266
+
+30213
+
+Code des douanes article 266
+
+Non encore applicable
+
+Code des douanes article 266
+
+14
+
+58
+
+
+Annexe II du rapport du Conseil des impôts sur la fiscalité de l'environnement
+
+Intitulé de la Bénéficiaire mesure fiscale
+
+Domaine
+
+Référence
+
+Produit 2004 (en M)
+
+Taxe d'enlèvements des ordures ménagères
+
+Collectivités locales (Communes ou EPCI)
+
+Déchets
+
+Redevance d'enlèvement des ordures ménagères
+Redevances d'enlèvement des déchets ménagers des terrains de camping
+
+Collectivités locales (Communes )
+locales (Communes ou EPCI)
+
+Déchets Déchets
+
+Redevance spéciale
+
+pour l'enlèvement Collectivités
+
+des déchets
+
+locales
+
+industriels et
+
+(Communes ou
+
+commerciaux
+
+EPCI)
+
+Déchets
+
+TGAP Huiles et préparations lubrifiantes
+
+Déchets
+
+Redevances d'eau potable et d'assainissement des collectivités
+
+Collectivités locales
+
+Eau
+
+Redevance pour occupation ou prélèvement dans le domaine fluvial
+
+État
+
+Eau
+
+CGI articles 1520 à 1526 (communes), articles 1609 bis, quater, quinquies C et 1609 nonies A ter et D (groupements)
+
+4035
+
+CGCT article L 233376408 (1)
+
+CGCT article L 233377
+
+3 (1)
+
+CGCT article L 233378
+
+29 (1)
+
+Code des douanes article 266
+
+20
+
+CGCT articles L. 2224-6 à 12
+
+9036 (3)
+
+Loi n°96-314 du 12 avril 1996, article 55
+
+79 (3)
+
+Redevance pour prélèvement
+
+Agences de l'eau
+
+/ ODAC
+
+Eau
+
+Redevance pour la détérioration de la qualité de l'eau (dite redevance pollution)
+
+Agences de l'eau
+
+/ ODAC
+
+Eau
+
+(1) Données 2003, dernière année disponible (2) Données 2002, dernière année disponible (3) Données 2001, dernière année disponible
+
+Loi n°64-1245 du 16 décembre 1964 (modifiée), article 14
+
+285 (1)
+
+Loi n°64-1245 du 16 décembre 1964 (modifiée), article 14
+
+1355 (1)
+
+59
+
+
+
+
+Intitulé de la Bénéficiaire mesure fiscale
+
+Domaine
+
+Référence
+
+Produit 2004 (en M)
+
+Redevances sur la
+
+consommation
+
+d'eau distribuée
+
+dans toutes les
+
+communes
+
+État (fonds
+
+bénéficiant d'eau spécial du trésor)
+
+potable publique / ODAC
+
+Eau
+
+TGAP  - 
+
+Préparation pour
+
+lessives
+
+État
+
+Eau
+
+CGCT articles L. 2335-9 à 14 Code des douanes article 266
+
+91 (1) 62
+
+TGAP - Produits antiparasitaires État
+
+Eau
+
+Redevances piscicoles
+
+État (fonds spécial du trésor) Eau
+
+Code des douanes article 266
+Loi du 16 octobre 1919 / Décret 951205 et décret 99-872 / "taxes piscicoles" article L.436-1 du code de l'environnement
+
+29 34
+
+TIPP État
+
+Taxe sur les carburants dans les départements d'outre-mer
+
+Collectivités locales
+
+Taxe intérieure
+
+de consommation
+
+sur le gaz naturel
+
+(TICGN)
+
+État
+
+Énergie Énergie Énergie
+
+Taxe sur les
+
+fournitures
+
+d'électricité sous
+
+faible et moyenne Collectivités
+
+puissance
+
+locales
+
+Énergie
+
+(1) Données 2003, dernière année disponible (2) Données 2002, dernière année disponible (3) Données 2001, dernière année disponible
+
+Code des douanes article 265
+
+24962
+
+Code des douanes article 266 quater
+
+469
+
+Code des douanes article 266 quinquies
+
+168
+
+CGCT articles L. 2333-2 à 5 (communes), articles L. 3333-2 à 3 (départements), article L. 5212-24 (syndicats de communes)
+
+1235
+
+60
+
+
+Annexe II du rapport du Conseil des impôts sur la fiscalité de l'environnement
+
+Intitulé de la Bénéficiaire mesure fiscale
+
+Domaine
+
+Référence
+
+Produit 2004 (en M)
+
+TGAP Biocarburants
+Contribution au fonds d'amortissement des charges d'électrification
+
+État Énergie État (ODAC) Énergie
+
+Contribution au service public de l'électricité
+Taxe sur les ouvrages hydroélectriques concédés
+
+État (ODAC) Énergie État Énergie
+
+Taxe annuelle des installations nucléaires de base
+
+État
+
+Taxes et
+
+redevances dues
+
+pour occupation du
+
+domaine public par
+
+les ouvrages de
+
+transport et de
+
+distribution
+
+d'énergie (Taxe
+
+forfaitaire sur les Collectivités
+
+pylônes)
+
+locales
+
+Énergie
+Pollution paysagère
+
+Taxe sur les remontées mécaniques
+
+Collectivités locales (Communes et département)
+
+Taxe communale sur les emplacements publicitaires ou les affiches
+
+Collectivités locales (Communes)
+
+Pollution paysagère Pollution paysagère
+
+(1) Données 2003, dernière année disponible (2) Données 2002, dernière année disponible (3) Données 2001, dernière année disponible
+
+Codes des douanes - A compter de article 266 quindecies 2005
+
+CGCT article L. 2224-31
+
+468 (2)
+
+Loi n°2000-108 du 10 février 2000 modifiée par la loi n°2003-8 du 3 janvier 2003
+
+1219 (1)
+
+CGI article 302 bis ZA
+Loi de finances pour 2000 n°99-1172 article 43
+
+91 (1) 345
+
+CGI article 1519 A
+CGCT articles L. 2333-49 à 53 (communes), articles L 3333-4 à 7 (départements)
+
+159 36
+
+CGCT articles L. 2333-21 à 25
+
+27
+
+61
+
+
+
+
+Intitulé de la mesure fiscale
+Taxe départementale d'espaces naturels sensibles
+
+Bénéficiaire Domaine
+
+Collectivités locales (Département)
+
+Pollution paysagère
+
+Référence
+
+Produit 2004 (en M)
+
+Code de l'urbanisme article L142-2
+
+120
+
+TGAP Air - Oxyde de soufre - Acide chlorhydrique, protoxyde d'azote, azote...
+
+État
+
+TGAP Grains minéraux naturels
+
+État
+
+Pollution de Code des douanes l'air article 266
+
+Pression sur
+
+les ressources Code des douanes
+
+naturelles
+
+article 266
+
+Versement pour dépassement du plafond légal de densité
+
+Collectivités locales (Communes et département)
+
+Pression sur les ressources naturelles
+
+Redevance communale et départementale sur les mines
+
+Collectivités locales (Communes et département)
+
+Pression sur les ressources naturelles
+
+CGI, articles 1463, 1519 à 1589, articles 311 à 311D et 317 octies de l'annexe II
+
+Redevance départementale sur les mines
+
+Collectivités locales (département)
+
+Pression sur les ressources naturelles
+
+Surtaxe sur les eaux minérales
+
+Collectivités locales (Communes)
+
+Pression sur
+
+les ressources CGI articles 520A et
+
+naturelles
+
+1582
+
+58 29 24 (1)
+15 15 32 (1)
+
+TGAP Installations
+
+classées
+
+État (DRIRE)
+
+Prévention des risques
+
+Taxe à l'essieu
+Taxe spéciale sur les véhicules empruntant un pont entre le continent et une île
+Taxe spéciale sur les véhicules de tourisme des sociétés
+
+État Transports
+
+Collectivités
+
+locales (Conseil
+
+général)
+
+Transports
+
+Administration de sécurité sociale
+
+Transports
+
+(1) Données 2003, dernière année disponible (2) Données 2002, dernière année disponible (3) Données 2001, dernière année disponible
+
+Code des douanes article 266 Code des douanes, articles 284 bis à 284 sexies bis
+Loi du 2 février 1995
+CGI article 302bis ZB
+
+12223 (1) 1 (1) 855
+
+62
+
+
+Annexe II du rapport du Conseil des impôts sur la fiscalité de l'environnement
+
+Intitulé de la Bénéficiaire mesure fiscale
+
+Domaine
+
+Référence
+
+Taxe sur les certificats d'immatriculation des véhicules (carte grise)
+
+Collectivités locales (Région)
+
+Transports
+
+CGI articles 1599 quindecies à novodecies A
+
+Produit 2004 (en M) 1458
+
+Taxe différentielle Collectivités
+
+sur les véhicules à locales
+
+moteur
+
+(Département) Transports
+
+CGI articles 1599 C à J, articles 1599 nonies à duodecies
+
+133
+
+Droits de voiries, Collectivités
+
+place de
+
+locales
+
+stationnement (Communes)
+
+Transports
+
+Taxe due par les
+
+concessionnaires État / EP
+
+d'autoroutes
+
+(ODAC)
+
+Transports
+
+CGCT article L 22136375 (1) CGI article 302bis ZB 492
+
+(1) Données 2003, dernière année disponible (2) Données 2002, dernière année disponible (3) Données 2001, dernière année disponible
+
+63
+
+
+Composition de la commission Modernisation de la fiscalité
+Présidents: G érard Mestrallet *, président-directeur général de Suez, et Michel Taly, avocat-associé au sein du Cabinet Arsene Taxand
+Membres : R obert Baconnier (ANSA), Michel Bouvier (Université Paris I Panthéon Sorbonne - GERFIP), Jean-Louis Dardanne (Suez), Christophe Heckly (OCDE), Dominique Hoorens (Dexia), Jean-Dominique Lafay (Université Paris I Panthéon Sorbonne), Hervé Lehérissel (Ernst & Young), Frédéric Lucet (Family Business Group), Patrice Pouliguen (BNP Paribas), Martine M illiet-Einbinder (OCDE), François Perrin-Pelletier (Gaipare), JeanD amien Pô (Institut de l'entreprise), Philippe Thiria (Unilever), Philippe T rainar (SCOR), Gérard Thoris (IEP de Paris)
+Rapporteur : Marie-Anne Toupin
+* Par souci de transparence, Gérard Mestrallet a souhaité pour cette étude se placer en retrait des travaux de la commission Modernisation de la fiscalité de l'Institut de l'entreprise.
+Impression d'après documents fournis: bialec, (Nancy France) - Dépôt légal n° 69634.
+
+
+
+
+8 La volonté de lutter contre le réchauffement climatique a conduit ces derniers mois plusieurs personnalités, au nombre desquelles l'écologiste Nicolas Hulot et l'économiste Sir Nicholas Stern, à proposer la mise en place d'une taxe carbone visant à réduire les émissions de CO2.
+L'opportunité économique ou écologique de cette taxe a suscité de nombreuses prises de position ; la commission Modernisation de la fiscalité de l'Institut de l'entreprise a souhaité d'abord rappeler les termes de ces débats, sans prétendre se prononcer sur des sujets qui opposent experts, spécialistes de l'environnement ou économistes. Elle a surtout voulu appliquer à ce sujet les propositions de principes de bonne gouvernance fiscale qu'elle avait formulées dans une contribution de février 2005.
+L'objet de cette étude est donc de préciser quels pourraient être le périmètre de la taxe carbone, son niveau, les caractéristiques de son assiette et de son taux, ainsi que ses conditions de mise en oeuvre. L'étude de l'Institut de l'entreprise soulève également la question des mesures visant à compenser les potentiels effets négatifs de cette taxe sur la distribution des revenus et la compétitivité sectorielle des entreprises. Elle aborde enfin les conditions de mise en oeuvre d'une "  taxe extérieure carbone  ", qui viendrait compléter le dispositif.
+
+Institut de l'entreprise 29, rue de Lisbonne - 75008 Paris Tél.: +33 (0)1 53 23 05 40 Fax: +33 (0)1 47 23 79 01 www.institut-entreprise.fr www.debateco.fr
+
+ISSN 1764-9706 15 e
+
+

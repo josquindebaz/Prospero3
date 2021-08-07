@@ -1,0 +1,372 @@
+PRIX DU QUOTA DE CO2 ET TAXE CARBONE : LES CHOIX ECONOMIQUES APRES LA CENSURE DU CONSEIL CONSTITUTIONNEL 
+
+
+Christian de Perthuis, 
+Université Paris-Dauphine, PREC 
+Christian de Perthuis est professeur d'économie à l'université Paris-Dauphine et directeur du PREC, 
+Programme de Recherche en Economie du Carbone rattaché à la chaire Finances et de Développement Durable 
+de l'université Paris-Dauphine et de l'école Polytechnique. christian.deperthuis@prec-climat.org 
+
+
+La censure de la taxe carbone par le Conseil constitutionnel le 28 décembre dernier a été 
+motivée par le non respect du principe d'égalité de traitement devant les charges publiques 
+dans le secteur des entreprises. La raison principale évoquée par le Conseil est l'exonération 
+accordée à l'ensemble des entreprises assujetties au système européen des quotas de CO2. 
+
+L'articulation entre une taxe carbone nationale et le système européen d'échange de quotas 
+pose de fait une double difficulté : il faut faire coexister un mécanisme de tarification du 
+carbone par le marché avec un mécanisme de tarification par l'impôt ; il faut simultanément 
+faire converger des règles européennes régissant le marché avec des règles nationales. 
+
+Pour améliorer le dispositif censuré par le Conseil constitutionnel, il faut revoir les modalités 
+d'introduction de la taxe carbone dans le secteur des entreprises. Pour y parvenir, il est utile 
+de rappeler comment fonctionnent les mécanismes existants et les choix retenus par les pays 
+ayant réussi à faire coexister une taxe nationale avec le système européen des quotas de CO2. 
+C'est ce que fait cet article avant d'examiner les différentes pistes permettant de sortir de la 
+situation actuelle. 
+
+Les objectifs suivis 
+
+L'introduction de la taxe carbone en France participe d'un mouvement général de passage à 
+une économie où les agents devront payer leurs émissions de gaz à effet de serre. Depuis le 
+début de la révolution industrielle, nos sociétés utilisent l'atmosphère comme s'il s'agissait 
+d'un réservoir infini pouvant accumuler tous nos rejets de gaz à effet de serre. A la suite des 
+alertes répétées des climatologues, un large consensus existe aujourd'hui sur la nécessité de 
+faire refluer rapidement ces rejets pour éviter le risque de dérèglements climatiques majeurs. 
+Pour le faire de façon rapide et efficace, la recommandation de la majorité des économistes 
+est de mettre un terme à cette gratuité de l'usage de l'atmosphère en appliquant un prix à nos 
+émissions de gaz à effet de serre qui reflète le coût des dégradations futures provoquées par 
+ces émissions. 
+
+L'existence d'un tel prix, unique et s'appliquant à tous les émetteurs, est de nature à conduire 
+à une réorganisation rapide et à moindre coût du système économique pour faire chuter les 
+
+
+
+
+émissions durant les prochaines décennies. Jusqu'ici, préconisations des économistes (unicité 
+du prix) et des constitutionnalistes (égalité de traitement face aux charges publiques) sont 
+donc bien en phase. 
+
+Le premier coup de canif à la gratuité de l'usage de l'atmosphère pour nos rejets de gaz à effet 
+de serre a été apporté en janvier 2005 avec l'entrée en vigueur du système européen des 
+quotas de CO2 qui couvre dans notre pays un peu plus de 1000 installations industrielles à 
+l'origine d'un tiers des émissions de gaz carbonique et d'un quart des émissions totales de gaz 
+à effet de serre. Ce système fonctionne suivant un mécanisme de plafonnement et échange des 
+émissions (cap and trade), dans lequel les entreprises peuvent échanger les permis d'émission 
+dont la somme est égale au plafond. Dans notre pays, la totalité des droits d'émission 
+correspondant aux plafonds à respecter est jusqu'à présent attribuée gratuitement aux 
+entreprises. Cela signifie concrètement que les industriels sous quotas ne règlent 
+financièrement que les émissions qui dépassent les quotas qui leurs sont attribués. 
+Réciproquement, ils peuvent vendre les quotas qu'ils conservent en excédent de leurs 
+émissions. 
+
+Le dispositif de la taxe carbone a dans un premier temps été discuté en juillet 2009 par la 
+conférence des experts présidée par Michel Rocard. Il en est résulté un rapport dont le 
+gouvernement s'est partiellement inspiré dans son projet de Loi de Finances. Pour assurer la 
+cohérence entre le système européen des quotas et le dispositif national de taxe carbone, deux 
+arbitrages importants ont été retenus dans le projet censuré par le Conseil : 
+
+ - le prix d'introduction de la taxe carbone en 2010 a été fixé à 17 euros la tonne de CO2 
+à la suite d'un arbitrage du Président de la République proposant que le niveau de la 
+taxe carbone la première année ne s'éloigne pas trop du prix du quota de CO2 observé 
+sur le marché européen ; 
+
+ - les entreprises sous quotas de CO2 ont été exclues du dispositif de la taxe au motif 
+qu'elles sont déjà depuis 2005 dans le dispositif européen de tarification du carbone 
+par le marché. 
+
+Parallèlement, des dispositions spécifiques ont été négociées avec certaines professions qui 
+aboutissent à un jeu différencié d'exonérations ou d'abattements sur le prix de la taxe à payer. 
+Ces dispositions n'ont pas retenu l'une des recommandations les plus récurrentes du rapport 
+Rocard préconisant le paiement de la taxe par l'ensemble des agents émettant des gaz à effet 
+de serre, avec un jeu de compensations forfaitaires quand nécessaire. L'universalité du 
+paiement de la taxe est requise par l'objectif suivi qui est de modifier les comportements des 
+acteurs par la généralisation d'un signal-prix du carbone. 
+
+De ce point de vue, le système des compensations retenu par le projet gouvernemental est 
+simple et transparents pour les ménages qui reçoivent tous une compensation forfaitaire, 
+modulée suivant la composition des ménages et leur lieu d'habitation. Il est en revanche 
+particulièrement confus et opaque pour les entreprises, notamment du fait du lien établi plus 
+ou moins clairement avec l'allègement fiscal simultanément consenti aux entreprises via la 
+réforme de la taxe professionnelle [Comme le note fort justement Olivier Godard, cet allègement bénéficie très majoritairement aux entreprises 
+opérant dans les secteurs couverts par le système des quotas et ne peut en aucune façon contribuer à rapprocher 
+le projet gouvernemental du principe d'égalité devant les charges publiques. ]. C'est la raison pour laquelle le Conseil constitutionnel n'a 
+pas retenu les arguments de la saisine concernant les ménages mais uniquement ceux 
+concernant les entreprises. Pour chercher des voies permettant de maintenant le principe d'une 
+extension de la tarification du carbone, il faut donc réfléchir aux conditions d'une bonne 
+
+
+
+articulation entre taxe et permis dans le secteur des entreprises. Pour ce faire, il est utile 
+d'observer les arbitrages retenus dans les pays qui sont parvenus à faire cohabiter des taxes 
+carbone nationales avec le système européen des quotas. 
+
+Les modes d'articulation entre taxe et permis rencontrés en Europe 
+.
+Deux cas de figures un peu distincts se présentent en pratique. La Suède et la Norvège avaient 
+institué une taxe carbone antérieurement au lancement du système européen des quotas de 
+CO2. Les deux pays ont été amenés à adapter leur système de taxes domestiques au moment 
+de leur entrée dans le système européen des quotas. L'Irlande et la France ont au contraire 
+décidé d'instituer une taxe cinq ans après le démarrage du système européen des quotas. 
+
+La Suède a étendu sa taxe carbone domestique et augmenté son niveau en cherchant à 
+appliquer le principe de l'unicité du prix dans deux ensembles disjoints : le prix de détail réglé 
+au stade final par les ménages (un peu plus de 100 euros la tonne en 2009) et un prix de gros 
+réglé par les entreprises qui est d'une façon générale nettement plus faible (23 euros la tonne). 
+Les entreprises soumises au système européen des quotas sont totalement exonérées dans le 
+cas de la production électrique et soumises à un taux "  de faveur  " de 15 euros la tonne pour 
+les autres. Ce système fonctionne bien, mais pose des difficultés de traitement pour les petites 
+entreprises, par nature à la frontière entre les différents régimes de taxation. 
+
+La Norvège a rénové son système de taxation domestique des émissions de CO2 lorsqu'elle a 
+rejoint le système européen des quotas en 2008. Elle a par ailleurs obtenu un régime 
+dérogatoire auprès de la Commission lui permettant d'allouer jusqu'à 100 % des quotas par 
+enchères dès 2008 dans certains secteurs. Ses choix ont été différents suivant les secteurs : 
+dans l'industrie pétrolière et gazière, les installations sont à la fois soumises aux quotas (avec 
+enchères à 100 %) et à la taxe (dont le taux a été divisé par deux au moment de l'entrée en 
+vigueur du système de quotas). Dans les autres secteurs, les industriels assujettis aux quotas 
+sont soumis à un système de taxes différentielles variables suivant les secteurs et comprenant 
+parfois des exonérations substantielles comme dans le cas de l'industrie du bois. 
+
+L'Irlande applique depuis le 1er janvier 2010 un système de taxe domestique sur les émissions 
+de CO2 dans les secteurs et installations non couverts par le système européen avec un taux de 
+15 euros la tonne. Ce système est vu comme un complément du système d'échanges de quotas 
+qui exonère donc totalement les entreprises soumises à ce régime. 
+
+Ces exemples révèlent un grand pragmatisme dans la mise en oeuvre et une certaine diversité 
+dans les options retenues. La Suède tend à exonérer les entreprises sous quota de la taxe 
+carbone alors que la Norvège a choisi de mettre plus rapidement aux enchères les quotas pour 
+leur faire jouer un rôle voisin de celui d'une taxe carbone non compensée. L'Irlande a retenu 
+le principe d'une exonération totale de la taxe pour les entreprises sous quota. On notera enfin 
+que l'ensemble des pays mentionnés ont contourné un des risques dans lequel a sombré la 
+taxe aux émissions de CO2 d'origine industrielle que les britanniques ont cherché à mettre en 
+place au début des années 2000 et ont depuis abandonné : celui de la complexité. Une telle 
+complexité apparaît immédiatement dès qu'on oublie les mécanismes économiques de base. 
+
+Les mécanismes économiques de base 
+
+L'introduction d'un prix du carbone par une taxe ou un système de permis diffère sous deux 
+angles principaux : le mode de fixation du prix ; le mode de répartition de la nouvelle valeur 
+introduite par le prix du carbone. 
+
+Sous l'angle économique, le système du quota diffère en premier lieu de la taxe par le fait que 
+le prix du carbone n'est pas directement fixé ex ante par une autorité publique : il résulte de la 
+
+
+
+
+
+
+rareté qui a été imposée lors de la fixation du plafond par cette autorité. Si on veut faire 
+coexister les deux mécanismes sans s'éloigner du principe d'unicité du prix, il convient par 
+conséquent de fixer ex ante le niveau de la taxe à des niveaux jugés compatibles avec la 
+contrainte de plafonnement sur le marché. 
+
+Dans le cas, assez probable, où la convergence ne serait pas atteinte directement, il serait 
+ensuite souhaitable de procéder à des ajustements ex post sur le prix de la taxe ou les quantités 
+de quotas alloués. Les premiers sont possibles et pratiqués par exemple en Norvège. Les 
+seconds sont contraires aux règles actuelles de fonctionnement du marché européen et plus 
+généralement aux enseignements de l'économie des marchés de permis. 
+
+La deuxième différence entre système de permis et taxe réside dans le mode de répartition de 
+la rente créée par l'instauration d'un prix des émissions [Ce concept de "  rente carbone  " souvent mal appréhendé, est introduit et développé dans le chapitre V de Et 
+pour quelques degrés de plus, nos choix économiques face au risque climatique, Pearson, 2009. ]. Elle dépend du mode d'attribution 
+des quotas et du type de compensation envisagée pour la taxe. 
+
+ - Dans le cas d'un système d'allocations gratuites tel qu'appliqué à l'heure actuelle en 
+France, les industriels reçoivent en réalité une rente qu'ils peuvent conserver en totalité 
+tant qu'ils n'ont pas restitué les quotas pour leur conformité. Dans ce cas de figure, le 
+prix du quota détermine une charge qui sera proportionnelle aux émissions de CO2 mais 
+qui est compensée à hauteur de l'allocation. Cette compensation est donc distribuée aux 
+industriels au prorata de leurs émissions historiques ou des benchmarks utilisés pour 
+l'allocation. 
+
+ - Dans le cas d'un système d'allocation aux enchères, le prix du quota est en tout point 
+comparable à une taxe dont le montant est déterminé non pas de façon discrétionnaire 
+par l'autorité publique mais par la rareté résultant de la contrainte imposée par cette 
+autorité sur le plafond d'émission. 
+
+Les règles du marché européen sont des règles hybrides qui autorisent les autorités nationales 
+à pratiquer des enchères jusqu'à 10 % des allocations d'ici 2012 (avec la dérogation 
+susmentionnée pour la Norvège). La période 2013-2020 devrait voir la généralisation des 
+enchères dans le secteur électrique dès 2013 et une montée en régime des enchères dans les 
+autres secteurs selon l'appréciation portée sur leurs vulnérabilités respectives face à la 
+concurrence non européenne. 
+
+Si on veut, comme le recommande le Conseil constitutionnel, assurer l'égalité de traitement 
+des uns et des autres face aux charges publiques, il faut en conséquence soit combiner un 
+système d'allocations gratuites avec une taxe compensée, soit combiner un système 
+d'allocation payant avec une taxe non compensée. Voyons maintenant les implications de ces 
+deux types de schémas. 
+
+Les combinaisons taxe/permis satisfaisant à l'égalité de traitement au plan 
+économique 
+
+Le premier schéma possible consiste à maintenir l'exemption des entreprises sous quotas mais 
+à coupler ce dispositif à un régime de taxe sur les émissions des industriels hors régime des 
+quotas qui serait sans exemption, mais intégralement compensée. La réintroduction du 
+principe de compensation intégrale pour toutes les entreprises rétablirait alors l'égalité de 
+traitement au sein des entreprises françaises et serait l'occasion de renégocier les fâcheux 
+
+
+
+systèmes d'exemption consentis aux entreprises de secteurs particuliers (le transport, les 
+agriculteurs et l'ensemble des professions ayant obtenu des exemptions). Si la clef de 
+répartition de la compensation forfaitaire entre entreprises ne diverge pas trop de la règle 
+d'allocation gratuite des quotas, le mécanisme assure bien une égalité de traitement entre les 
+différents acteurs [Si ce mode de répartition de la compensation s'avère trop compliqué à introduire, la meilleure voie est alors de 
+réduire le coût du travail comme l'ont fait tous les pays européens étant parvenus à déployer une taxe carbone.]. Le dispositif met de plus les entreprises françaises à égalité de traitement 
+avec leurs homologues européennes. 
+
+Au plan environnemental, ce dispositif ajouterait une incitation à réduire les émissions pour 
+les entreprises non soumises au système des quotas plus large que celle du dispositif censuré 
+puisque les exemptions disparaîtraient au profit de compensations forfaitaires. Il ne 
+modifierait pas les incitations existantes pour les entreprises sous quotas. Ce dispositif devrait 
+évidemment évoluer dans le futur à mesure du basculement du système des quotas vers les 
+enchères. A mesure de ce basculement des entreprises sous quotas vers un système d'enchères 
+non compensées, le respect du principe d'égalité de traitement devant les charges publiques 
+exigera un réexamen des compensations des entreprises soumises à la taxe nationale. Ce 
+système ne serait efficace dans le temps que si le prix des quotas et celui de la taxe 
+augmentent parallèlement dans le temps. 
+
+Le second système consisterait à faire payer la taxe aux entreprises déjà sous quotas en 
+couplant ce dispositif avec une taxe carbone domestique non compensée pour les entreprises. 
+Pour les entreprises hors système des quotas, c'est un peu le dispositif prévu par la loi de 
+Finances mais sans l'empilement des exemptions qui ont été concédées et sans la référence 
+ambiguë à la réforme de la taxe professionnelle. Pour les entreprises sous quotas, ce système 
+consiste à ajouter au prix du carbone sur le marché européen une composante fixe 
+supplémentaire de 17 euros. Un tel système semble très difficile à mettre en place au plan 
+politique. 
+
+Pour les entreprises hors quotas, il exigerait de revenir sur les exonérations déjà concédées 
+sans compensations nouvelles. 
+
+Pour les entreprises sous quotas, il consisterait à faire payer aux installations sous quotas un 
+prix du carbone ayant deux composantes : le prix du quota plus le prix de la taxe. Ce 
+renchérissement entraînerait des réductions d'émission supplémentaires des installations 
+françaises sous quotas qui auraient trois incidences (voir encadré) : la libération de quotas par 
+les entreprises concernées qui récupéreraient financièrement par la vente de quotas une partie 
+de la nouvelle charge résultant de la taxe carbone ; un transfert des droits à émettre libérés à 
+d'autres installations en Europe puisque le plafond d'émission est européen ; une tendance à 
+la baisse du prix d'équilibre sur le marché des quotas. Il n'y aurait donc pas de réel bénéfice 
+environnemental additionnel. 
+
+Face à la difficulté de mettre en place le deuxième système il peut être tentant d'introduire 
+non plus une taxe fixe, mais une taxe variable de telle sorte que la somme du prix du quota et 
+de la taxe différentielle atteigne le niveau de la taxe domestique réglée par les entreprises non 
+soumises au système des quotas. Un tel système limiterait le renchérissement du prix du 
+carbone pour les installations sous quotas consécutif à l'introduction de la taxe. Il serait 
+propice à des négociations en tous genres avec les représentants des différentes professions 
+risquant d'aboutir à des taux à la carte. C'est pourquoi sa mise en oeuvre, particulièrement 
+complexe, serait peu compatible avec les règles de simplicité et de transparence qui 
+conditionnent l'instauration effective d'un régime de taxation du carbone dans notre pays. 
+
+
+
+
+Conclusion 
+
+Sous l'angle économique, le rétablissement du principe d'égalité de traitement face aux 
+charges publiques peut s'effectuer suivant trois schémas possibles. Seul, celui combinant une 
+exonération de la taxe carbone pour les entreprises sous quotas avec une taxe intégralement 
+compensée mais sans aucune exonération pour les émissions des entreprises hors quota, nous 
+semble réunir les conditions d'acceptabilité et de simplicité permettant de remettre sur les 
+rails le projet de la taxe carbone. Un tel dispositif devrait rapidement évoluer dans le temps à 
+mesure que s'élargira la mise aux enchères des quotas par ailleurs susceptible d'améliorer le 
+fonctionnement du système européen des quotas. 
+
+Les alternatives seraient de mettre en place un système complexe combinant taxe carbone non 
+compensée et multiplications des cas d'exonérations pour les entreprises hors système des 
+quotas, et taxes carbones à géométrie variable pour les entreprises sous quotas. Cette 
+complexité n'apporterait aucun bénéfice environnemental supplémentaire. Elle rendrait très 
+improbable l'évolution et l'extension, voire le maintien, du dispositif national de tarification 
+du carbone dans le temps. 
+
+Il reste une inconnue sur laquelle l'économiste est bien en peine de se prononcer : la notion 
+économique d'égalité face aux charges publiques utilisée dans cet article est-elle cohérente 
+avec les catégories juridiques utilisées par les membres du Conseil constitutionnel ? 
+
+Références : 
+
+Christian Gollier et Jean Tirol, La taxe carbone : de Charybde en Scylla ? Les Echos, 6 
+janvier 2010 
+
+Conseil constitutionnel, Commentaire de la décision n° 2009-599 DC, Les cahiers du Conseil 
+constitutionnel, 29 décembre 2009 
+
+Olivier Godard, La contribution carbone après la censure du Conseil constitutionnel,8 
+janvier 2010. 
+
+Christian de Perthuis, Le débat sur la taxe carbone, Futuribles, octobre 2009, N°356 (Repris 
+dans Problèmes Economiques, N°2983 de novembre 2009, La Documentation Française). 
+
+Christian de Perthuis et Christian Gollier, Taxe carbone : de la doctrine aux travaux 
+pratiques, Les Echos, 3 décembre 2009 
+
+Christian de Perthuis et Christian Gollier, Que va-t-il rester de la taxe carbone ? Ecolosphère, 
+13 décembre 2009 
+
+Ministère de l'économie de l'industrie et de l'emploi, Dossier sur la taxe carbone, Projet de 
+Loi de Finances pour 2010, Rapport sur les prélèvements obligatoires et leur évolution, 
+Septembre 2009 
+
+Rémy Prud'homme, Les trois péchés de la taxe carbone, Les Echos, 5 janvier 2010 
+
+Michel Rocard, (Président), Rapport de la conférence des experts et de la table ronde sur la 
+contribution climat énergie, juillet 2009 
+
+Richard Tol, Carbon Taxes Revisited, Point Carbon, 8 January 2010 
+
+6 
+
+
+
+
+Encadré : effets économiques de l'introduction d'une taxe sur un marché de permis 
+
+On part d'une situation initiale dans laquelle les entreprises sous quotas ont ajusté leurs 
+émissions au point A où la courbe de coût marginal (fonction linéairement croissante des 
+réductions d'émission sur le graphique) atteint le prix P0 du quota d'équilibre sur le marché. 
+
+Une taxe est introduite dont le montant est égal à P1-P0. Cette taxe carbone est fixe et porte le 
+prix du carbone pour les entreprises sous quotas à P1. Au nouveau point d'équilibre B, les 
+entreprises ont donc opéré une réduction supplémentaire de leurs émissions de Q0-Q1. Si on 
+néglige l'impact de l'introduction de la fiscalité sur le prix d'équilibre sur le marché, la 
+variation du coût pour les entreprises résulte de trois paramètres (X1+X2-X3) : 
+
+ - le paiement de la nouvelle taxe carbone (aire X1 sur le graphique), 
+
+ - plus le financement des réductions additionnelles (aire X2), 
+
+ - moins les quotas libérés qui peuvent être vendus ou épargnés (aire X3). 
+
+Dans la réalité, les quotas libérés représentent une disponibilité nouvelle de droits à émettre 
+qui pourront être utilisées par les entreprises ce qui va avoir pour effet de faire baisse le prix 
+d'équilibre initial P0. Comme à chaque mouvement du prix d'équilibre des quotas, le prix P1 
+du carbone va donc varier pour les entreprises payant à la fois la taxe et l'augmentation de 
+leurs émissions sous quotas. Le législateur peut tenter de neutraliser cette variabilité en 
+introduisant une taxe P1-P2 différentielle dont le montant s'ajustera pour maintenir fixe le prix 
+P1 réglé par les entreprises quand P0 varie sur le marché. 
+
+Prix du quota et taxe 
+(Euros / tonne) 
+
+
+P1 
+
+P0 
+
+Emissions (tonnes) 
+
+Q1 Q0 
+A 
+B 
+X1 
+X3 
+X2 
+7 
+
+
+
+

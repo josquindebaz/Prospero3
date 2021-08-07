@@ -1,0 +1,901 @@
+DOCUMENT D'ORIENTATION SUR LES ÉVOLUTIONS DE LA POLITIQUE FISCALE
+
+
+Par lettre du 28 septembre 2007, le Président de la République et le Premier ministre ont confié à Madame Christine Lagarde, ministre de l'Économie, de l'Industrie et de l'Emploi, la responsabilité de conduire une revue générale des prélèvements obligatoires.
+Cette démarche, inédite en France, vise à redéfinir la logique de notre système de prélèvements obligatoires. Plutôt qu'une contrainte ou un handicap pour nos concitoyens et nos entreprises, il doit être un instrument au service d'une politique de croissance cohérente et concertée s'inscrivant dans un horizon de moyen terme.
+Le présent document, établi sous la responsabilité de Madame le ministre de l'Économie, de l'Industrie et de l'Emploi, est le résultat de la phase de diagnostic du processus. Il est destiné à étayer les échanges à venir avec l'ensemble des acteurs concernés, au cours du second semestre 2008.
+Ce document n'a pas pour ambition d'établir une vision unique et conclusive sur l'architecture du système de prélèvements obligatoires en France. Il n'a pas davantage pour vocation de tracer unilatéralement ses perspectives d'évolution. Il vise à favoriser la construction, sur la législature, d'une stratégie fiscale lisible et cohérente, en prenant naturellement en compte l'important effort de restructuration de nos prélèvements déjà entrepris, en particulier dans le cadre de la loi en faveur du travail, de l'emploi et du pouvoir d'achat. Il met l'accent sur l'incidence de la fiscalité sur l'attractivité du territoire et la compétitivité des entreprises françaises.
+À cet effet, après avoir brièvement rappelé en introduction les enjeux qui caractérisent de façon générique l'architecture d'un système de prélèvements obligatoires, ce document :
+ -  rassemble des éléments factuels sur la situation du système fiscal français, notamment au regard des grandes tendances internationales ;
+ -  analyse, à partir de ce diagnostic et de l'étude comparative des évolutions suivies par les partenaires de la France, les choix stratégiques envisageables ;
+ -  propose à la réflexion des pistes de réformes de nature à accroître notre potentiel de croissance tout en étant compatibles avec le rétablissement de nos finances publiques.
+1
+
+
+2
+
+
+INTRODUCTION : QU'ATTEND-ON DE LA FISCALITÉ ?
+
+
+INTRODUCTION
+
+Un système fiscal est traditionnellement bâti
+sur trois piliers
+
+ Les impôts directs portent sur la création et la détention de richesses, donc in fine sur les facteurs de production : le travail et le capital. L'assiette "  travail  " est plus large que l'assiette "  capital  ". L'assiette "  capital  " est pour sa part plus mobile : les flux de capitaux peuvent s'orienter rapidement et facilement d'un pays à un autre. Les entrepreneurs, cadres et chercheurs très qualifiés, de même que les artistes et sportifs, peuvent, il est vrai, s'expatrier plus facilement que les autres salariés.
+ Les impôts indirects portent sur les transactions, en particulier la consommation, par exemple avec la taxe sur la valeur ajoutée.
+ Les cotisations sociales, assises sur la masse salariale, sont traditionnellement destinées à assurer le financement de la protection sociale.
+Graphique 1 : Poids des impôts directs, des impôts indirects et des cotisations sociales en % du PIB (2005)
+
+45 % 30 % 15 % 0%
+
+12,0 %
+12,1 %
+14,4 % Moyenne UE-15 Cotisations sociales
+
+16,4 %
+
+12,4 %
+
+15,5 %
+
+Impôts indirects
+
+France Impôts directs
+
+4
+
+
+INTRODUCTION
+Quatre fonctions essentielles peuvent être assignées aux prélèvements obligatoires
+ Les prélèvements obligatoires ont pour objet premier de financer les services publics.
+ Les prélèvements obligatoires permettent également de prélever une partie des rentes des agents économiques qui disposent d'un pouvoir de marché, pour en faire profiter l'ensemble de la collectivité.
+ Le système de prélèvements obligatoires a également permis la mise en place de l'État providence, avec des objectifs sociaux de redistribution et d'assurance face à certains risques.
+ Enfin, la fiscalité est dorénavant de plus en plus utilisée comme un instrument incitatif visant à orienter les comportements individuels dans un sens favorable à la collectivité. Certaines mesures fiscales ont ainsi directement pour objet de dissuader les comportements créant des dommages pour la société, par exemple la pollution. La fiscalité peut aussi avoir pour vocation de faire supporter à ceux qui en sont responsables une partie du coût pour la collectivité des comportements à risque, comme le tabagisme.
+5
+
+
+INTRODUCTION
+Le niveau et la structure des prélèvements obligatoires doivent
+être évalués à l'aune de trois enjeux principaux
+ Le premier critère est celui de l'efficacité. En effet, un impôt modifie les prix relatifs, par exemple le prix respectif du capital et du travail, ou le prix d'un bien par rapport à un autre, et affecte donc, en règle générale, les décisions des agents économiques. Les prélèvements obligatoires peuvent ainsi créer des désincitations à travailler, embaucher ou investir, qu'il convient de réduire le plus possible. Trois enseignements peuvent être tirés de l'analyse économique : - premier principe : en règle générale, les impôts à assiette large et taux faible sont jugés plus efficaces économiquement que des impôts à assiette étroite et taux élevé ; - deuxième principe : en cas d'externalité - atteinte à l'environnement par exemple - la fiscalité doit au contraire présenter un caractère incitatif et pratiquer un taux qui peut être élevé sur une assiette aussi ciblée que possible - la pollution elle-même ; - troisième principe : le taux d'imposition doit tenir compte de la sensibilité des comportements au prix. Plus la demande est sensible au prix, plus l'impôt pénalisera l'activité et l'emploi et, à l'inverse, plus l'allègement les favorisera. Ce principe est à la base des politiques de baisses des charges ciblées sur les bas salaires, dont l'efficacité tient à la forte sensibilité de la demande de travail faiblement qualifié à son coût.
+6
+
+
+INTRODUCTION
+ L'équité est la deuxième propriété essentielle d'un système fiscal. Deux principes méritent à cet égard d'être rappelés : - premier principe : l'équité ne se résume pas à la seule progressivité de l'impôt pour assurer une redistribution verticale. La progressivité de certains impôts, notamment l'impôt sur le revenu, constitue effectivement un moyen ciblé et immédiat de redistribution en faveur des foyers les plus modestes. Mais l'équité a aussi une dimension horizontale (par exemple au moyen de dispositifs zonés en faveur de certains territoires), familiale (par la prise en compte de parts supplémentaires dans certaines situations), voire intergénérationnelle (lorsque sont abordés les sujets de taux d'effort sur la vie active pour acquérir une retraite à taux plein par exemple) ; - deuxième principe : la redistribution ne passe pas seulement par la progressivité de l'impôt. C'est en analysant de façon combinée les recettes et les dépenses que peut être apprécié l'impact d'un système fiscal en termes d'équité : un impôt proportionnel finançant une prestation réservée aux plus défavorisés peut ainsi avoir les mêmes effets redistributifs qu'un impôt progressif finançant un service qui bénéficie à tous. Il convient enfin de souligner que les exigences d'efficacité et
+d'équité ne sont pas en elles-mêmes contradictoires. Il y a effectivement dans certains cas un arbitrage à réaliser entre équité et efficacité : c'est le cas par exemple s'agissant de l'imposition des assiettes les plus mobiles que sont le capital et le travail très qualifié dans les pays développés (mais aussi le travail peu qualifié dans les pays en développement). Dans d'autres cas de figure, à l'inverse, efficacité et équité vont de pair :
+ -  la baisse des prélèvements sur le travail peu qualifié, via les allègements de charges et la prime pour l'emploi, peut ainsi stimuler l'emploi et améliorer le niveau de vie des ménages salariés à bas revenus, ce qui est favorable à la croissance et à la cohésion sociale ;
+ -  le bouclier fiscal permet à la fois de renforcer l'attractivité du territoire et de faire en sorte que les prélèvements ne puissent prendre un caractère excessif, quel que soit le niveau de revenu.
+
+7
+
+
+INTRODUCTION
+
+ La simplicité est également un enjeu fondamental pour la fiscalité. La complexité du système fiscal a un coût à la fois pour les contribuables et pour l'État : - pour les contribuables, le coût de la mise en conformité avec la législation fiscale croît avec la complexité et l'instabilité de celle-ci. Le temps, voire l'argent, consacré à l'accomplissement des obligations fiscales et à la recherche des différentes possibilités d'optimisation abouti à l'affectation de ressources considérables aux formalités fiscales, au détriment d'activités plus productives. L'administration fiscale américaine a estimé par exemple que les ménages américains passaient plus de 3 milliards d'heures à remplir leurs déclarations. À ce coût en temps s'ajoute le coût financier consacré à rémunérer l'assistance fiscale, à laquelle font appel plus de la moitié des contribuables américains ; - pour les administrations, le coût de recouvrement d'un impôt diminue avec la largeur de son assiette. L'augmentation dans le temps du nombre des prélèvements et la multiplication des exonérations diverses ont aussi pour effet de renchérir le coût global de gestion de l'impôt.
+
+Graphique 2 : Coût de recouvrement de l'impôt en 2002 (calculé en proportion des recettes)
+
+1,50 % 1,25 % 1,00 % 0,75 % 0,50 % 0,25 % 0,00 %
+
+0,42 % Suède
+
+0,52 %
+
+0,73 %
+
+1,15 %
+
+1,44 %
+
+États-Unis Danemark Royaume-Uni France
+
+Source : Institut de l'entreprise, d'après l'OCDE
+
+8
+
+
+INTRODUCTION
+Il faut enfin, avant de développer l'analyse, rappeler que l'incidence de la fiscalité n'est pas toujours simple à évaluer. Celui qui paie in fine l'accroissement d'un prélèvement n'est pas forcément celui sur lequel pèse le paiement de ce prélèvement. Sans doute convient-il de souligner que l'opposition entre fiscalité des ménages et fiscalité des entreprises est largement factice, notamment parce que les impôts sur les sociétés sont payés soit par les actionnaires, soit par les salariés, soit par les clients, c'est-à-dire en toute état de causse par des ménages.
+9
+
+
+INTRODUCTION 10
+
+
+1. POURQUOI RÉFORMER LE SYSTÈME FISCAL FRANÇAIS ?
+
+
+POURQUOI RÉFORMER LE SYSTÈME FISCAL FRANÇAIS ?
+1.1. Les grandes tendances
+1.1.1. La mondialisation et la concurrence fiscale
+Le niveau de prélèvements obligatoires d'un pays est déterminé avant tout par le montant des dépenses qui sont prises en charge par
+les administrations publiques (État, sécurité sociale, collectivités territoriales...) et doivent être financées.
+L'impact des prélèvements obligatoires sur le potentiel de croissance d'une économie dépend directement :
+ -  du rapport coût-efficacité des dépenses publiques qui sont la contrepartie des prélèvements obligatoires. Plus ces derniers sont élevés, plus ils doivent être justifiés par la fourniture de biens et services publics qui améliorent le bien-être et augmentent le potentiel d'offre ;
+ -  de la structure du système fiscal, qui peut engendrer des distorsions (le risque de distorsions est d'autant plus fort que la pression fiscale est élevée).
+La mondialisation ne conduit pas nécessairement à une convergence des taux de prélèvements obligatoires. La réussite économique d'un pays est compatible avec plusieurs niveaux de prélèvements. Ainsi, le modèle scandinave se caractérise par un niveau élevé d'emploi (au même titre que le modèle anglo-saxon) malgré un taux de prélèvements obligatoires élevé, car ce niveau important de pression fiscale s'accompagne en contrepartie :
+ -  d'une forte productivité de la dépense publique ; - d'un consensus social pour assurer la flexibilité du marché
+du travail et des politiques actives de l'emploi fondées sur une logique droits-devoirs.
+La mondialisation accroît la mobilité du capital et des salariés
+très qualifiés. La concurrence fiscale prend la forme de baisses des taux de prélèvements sur ces deux assiettes, ce qui oblige à repenser
+12
+
+
+POURQUOI RÉFORMER LE SYSTÈME FISCAL FRANÇAIS ?
+les modalités de la redistribution. La concurrence fiscale prend aussi la forme de baisses de taux faciaux d'imposition (généralement considérés comme la "  vitrine  " de l'attractivité fiscale d'un pays, car ils sont des indicateurs lisibles, aisément disponibles et comparables) qui s'accompagnent d'élargissements d'assiettes. Il est donc possible, à rendement constant pour les finances publiques, de mener des réformes de nature à améliorer le positionnement relatif d'un pays dans les comparaisons de taux nominaux d'imposition. De telles évolutions, en outre, sont en phase avec les enseignements de l'analyse économique, qui met en évidence le caractère moins pénalisant pour l'activité des impôts à assiette large et taux modéré.
+La concurrence fiscale est d'abord le fait de nos voisins au sein de l'Union européenne et des autres pays développés, plutôt que de
+pays émergents plus lointains. En effet, le niveau d'imposition peut faire la différence, quand les autres facteurs de localisation des entreprises (productivité-coût de la main-d'oeuvre, accessibilité des marchés de débouché, sécurité juridique...) sont très proches.
+1.1.2. L'impact du vieillissement de la population sur la répartition des prélèvements entre actifs et inactifs et le rythme de progression des dépenses sociales
+La part des cotisations sociales assises sur la masse salariale dans le financement de la protection sociale s'élève à :
+ -  deux tiers en France ; - trois cinquièmes en moyenne dans l'Union européenne ; - la moitié au Royaume-Uni ; - moins d'un tiers au Danemark. Cette comparaison trouve cependant ses limites dans l'ampleur très différente d'un pays à l'autre de la protection sociale mutualisée et donc financée par prélèvements obligatoires. Or la baisse de la natalité et l'allongement de l'espérance de vie modifient la structure par âges de la population. En France, le taux de dépendance mesurant le rapport entre le nombre de personnes de plus de 60 ans et le nombre de personnes ayant entre 20 et 59 ans, qui constitue donc une approximation de la population à la retraite par rapport à la population d'âge actif, était de 40 % en 2007 ; il devrait atteindre 57 % dès 2025 et 69 % en 2050.
+
+13
+
+
+POURQUOI RÉFORMER LE SYSTÈME FISCAL FRANÇAIS ?
+Ainsi, le vieillissement de la population fragilise les modèles
+sociaux dont le financement repose principalement sur des prélèvements assis sur le facteur travail :
+ -  en termes d'efficacité, puisque les actifs employés sur qui pèse le prélèvement sont de moins en moins nombreux par rapport aux personnes sans emploi et aux inactifs ;
+ -  en termes d'équité, dans la mesure où l'universalisation de la protection sociale peut justifier un mode de financement plus neutre. Il reste logique, il est vrai, que l'assurance-chômage et l'assurance-vieillesse, qui sont destinées à verser des revenus différés aux salariés (allocations chômage et prestations de retraite), soient financées par des cotisations assises sur la masse salariale.
+Ces tendances signifient que le financement de la protection sociale ne peut plus reposer exclusivement sur la masse salariale et qu'une diversification des assiettes (entamée avec la mise en place de la CSG) est une option possible.
+1.1.3. La structure productive et sectorielle de l'économie
+La croissance économique se traduit par une diversification croissante de l'offre de biens et de services. Dans ces conditions, le
+système de prélèvements obligatoires doit être aussi neutre que pos - 
+sible pour ne pas déformer les structures de production. Par exemple, une imposition en aval garantit une neutralité par rapport aux circuits économiques de production et/ou de distribution. C'est le mécanisme retenu par la TVA (imposition en cascade dont les effets potentiellement "  redondants  " sont neutralisés).
+Par ailleurs, l'essor des nouvelles technologies et le développement de l'économie de l'immatériel posent une série de défis aux systèmes fiscaux des pays de l'OCDE. En effet, les actifs immatériels, créateurs de valeur, sont par nature mobiles donc aisément localisables dans les pays où la fiscalité sur les bénéfices est faible. En outre, ils se prêtent particulièrement bien à des stratégies d'optimisation fiscale1, notamment par le biais de transactions intragroupes et la fixation
+1 - L'optimisation fiscale s'appuie sur la coexistence de systèmes d'imposition nationaux et vise à localiser l'activité dans les territoires compétitifs (en raison notamment de la qualité de la main-d'oeuvre, de la recherche-développement et des infrastructures, de la concentration de savoir-faire et de marchés), les bénéfices dans les pays offrant l'imposition la plus faible et les charges dans les pays où l'imposition est la plus élevée. 14
+
+
+POURQUOI RÉFORMER LE SYSTÈME FISCAL FRANÇAIS ?
+de prix de transfert. De nombreuses entreprises multinationales ont ainsi procédé à des réorganisations consistant à concentrer les activités à forte valeur ajoutée (recherche, développement, conception, marketing, quartiers généraux) dans un pays où le taux de l'impôt sur les sociétés est faible.
+Par exemple, dans le secteur des biens de consommation, une technique de plus en plus utilisée concerne la rémunération des actifs incorporels. Elle consiste à localiser les marques dans un pays à fiscalité favorable. Les différentes filiales situées dans d'autres pays, dont la fiscalité est plus lourde, doivent ensuite verser des redevances pour l'utilisation de la marque. Ainsi, le bénéfice de l'entreprise se concentre dans l'État à fiscalité favorable où a été localisée la marque (il est alimenté par le produit des redevances versées par les filiales) et il est amputé dans les États où la fiscalité est plus lourde, qui perçoivent donc moins de recettes fiscales (puisque les filiales qui y sont implantées doivent s'acquitter d'une redevance qui vient grever leur résultat imposable). L'enjeu de la localisation des brevets donne lieu à des stratégies d'optimisation fiscale similaires.
+Les pratiques d'optimisation de localisation des actifs immatériels présentent donc un double enjeu :
+ -  d'une part, elles sont partie intégrante de la concurrence fiscale entre pays développés, particulièrement sensible dans le contexte du marché unique européen ;
+ -  d'autre part, elles relèvent des efforts concertés de ces mêmes pays développés pour lutter contre les paradis fiscaux.
+Les possibilités d'utiliser la consommation comme assiette taxa - 
+ble peuvent également être fragilisées par le développement du com - 
+merce en ligne et des prestations de service dématérialisées. En effet, ce type de transactions (essentiellement électroniques) rend difficiles à la fois l'application des règles de TVA et la mise en oeuvre d'un suivi et d'un contrôle par les administrations fiscales. L'économie de l'immatériel remet ainsi en cause des notions juridiquement bien établies comme celles de lieu d'établissement ou de lieu de consommation, qui fondent en partie l'obligation de paiement de l'impôt.
+
+15
+
+
+POURQUOI RÉFORMER LE SYSTÈME FISCAL FRANÇAIS ?
+Au sein de l'Union européenne2 : - pour les prestations dématérialisées entre États membres, un principe de taxation dans le pays d'origine du prestataire est en vigueur, ce qui pousse à la délocalisation des activités dans les États où les taux de TVA sont les plus faibles, au détriment des recettes des États où la prestation est effectivement consommée ; - s'agissant des échanges impliquant des pays tiers, la taxation est fondée sur le lieu de domiciliation du consommateur : les entreprises extérieures à l'Union européenne doivent verser, à un guichet unique de leur choix, la TVA correspondant au lieu de consommation de leurs services. Ces dispositions sont particulièrement difficiles à contrôler : au total, entre le 1er juin 2003 et le 31 mars 2006, la France n'a récupéré que 16,5 millions d'euros au titre des achats de services dématérialisés réalisés par des consommateurs français auprès d'entreprises de pays tiers, ce qui représente, sur la base d'un taux de TVA à 19,6 %, un volume d'achats de 84,5 millions d'euros, soit un montant vraisemblablement sous-évalué.
+Le temps de la fiscalité doit également s'adapter au temps de l'éco - 
+nomie de l'immatériel. Tout décalage entre le moment où le revenu est perçu et le moment où l'impôt est versé peut conduire un système fiscal à être dépassé par la vitesse de l'innovation, des échanges et des flux, et pénaliser les entreprises aujourd'hui jugées sur des standards de qualité et de rapidité ("  temps réel  ").
+2 - Directive du Conseil 2002/38/CE du 7 mai 2002 sur le régime TVA applicable aux services de radiodiffusion et de télévision et à certains services fournis par voie électronique : services culturels, artistiques, éducatifs, récréatifs et d'information, 16 services informatiques en général, logiciels et jeux vidéo.
+
+
+POURQUOI RÉFORMER LE SYSTÈME FISCAL FRANÇAIS ?
+Extrait du rapport de la Commission sur l'économie de l'immatériel L'économie de l'immatériel - La croissance de demain Maurice Lévy, Jean-Pierre Jouyet (2006) La conclusion est donc que si l'immatériel constitue une opportunité fondamentale de création de richesses, il n'est pas évident que cela se traduise concrètement dans les caisses des États, compte tenu de la mobilité des facteurs immatériels, qui incite à la concurrence fiscale entre pays. La recherche de nouvelles assiettes constitue probablement une piste pour l'avenir, même si, compte tenu de la diversité et de l'étendue actuelles des impôts et taxes, il n'est pas aisé de trouver un élément de la création de richesse qui ne soit pas déjà taxé. En tout état de cause, aucune solution durable à ce problème ne peut être apportée par un pays seul, car ce pays risquerait d'être pénalisé par rapport à ses partenaires. Au contraire, la recherche d'une solution, qui garantisse aux États un niveau de ressources suffisant pour fournir les biens collectifs indispensables et opérer une redistribution des revenus, ne peut se faire que dans un cadre européen et même peut-être, à terme, dans un cadre encore plus large.
+17
+
+
+POURQUOI RÉFORMER LE SYSTÈME FISCAL FRANÇAIS ?
+
+1.2. Les défis plus spécifiquement propres à la France
+1.2.1. Le diagnostic d'ensemble
+La France se singularise par le niveau de son taux de prélèvements obligatoires (PO), qui s'élève à 43,9 % en 2006 contre 38,6 %
+en moyenne dans l'Union européenne (UE) à 15. Les taux de prélèvements obligatoires du Royaume-Uni et de l'Allemagne s'établissaient au même niveau que le taux de prélèvements obligatoires de la France il y a 40 ans. Ils lui sont aujourd'hui inférieurs de 5 à 10 points.
+Graphique 3 : Date à partir de laquelle la création de richesses n'est pas consacrée au versement des prélèvements obligatoires
+(sur la base des chiffres 2006)
+
+19 mai (UE - 15)
+
+9 juin (France)
+
+Janv. Févr. Mars Avr. Mai Juin Juil. Août Sept. Oct. Nov. Déc.
+
+Le niveau des prélèvements obligatoires est largement déterminé par celui des dépenses publiques. En France, les dépenses publiques représentaient 40,3 % du produit intérieur brut (PIB) en 1970. Elles ont atteint 52,7 % du PIB en 2006.
+
+18
+
+
+POURQUOI RÉFORMER LE SYSTÈME FISCAL FRANÇAIS ?
+
+Les deux tiers de l'accroissement des dépenses publiques enregistré en France sur la période 1970-2006 s'expliquent par le dynamisme des dépenses sociales. Entre 1970 et 2005 :
+ -  les dépenses de retraites sont passées de 7,3 % à 13,0 % du PIB ;
+ -  les dépenses de santé sont passées de 5,3 % à 10,5 % du PIB.
+Graphique 5 : La dépense publique dans le PIB depuis 1959
+60,0%
+50,0%
+40,0%
+30,0%
+20,0%
+10,0%
+0,0%
+
+119956911963196519671199761919731975197711998719198319851987111999998319199519972109091920032005
+
+Autres
+
+Investissement
+
+Fonctionnement
+
+Prestations sociales Charges d'intérêt
+
+Source : Insee
+L'évolution de la répartition des prélèvements obligatoires entre administrations publiques concorde avec celle des dépenses publiques. Sur la période 1966-2006 :
+ -  les prélèvements obligatoires à destination des organismes de sécurité sociale ont doublé, passant de 11 % à 22 % du PIB ;
+ -  les prélèvements obligatoires perçus par l'État ont été ramenés de 19,4 % à 16 % du PIB ;
+ -  les prélèvements obligatoires revenant aux collectivités territoriales ont progressé de 3,3 % à 5,6 % du PIB, principalement sous l'effet des transferts successifs de compétences.
+
+19
+
+
+POURQUOI RÉFORMER LE SYSTÈME FISCAL FRANÇAIS ?
+
+Graphique 6 : La répartition des prélèvements obligatoires entre administrations publiques depuis 1966 (en % du PIB)
+
+23 21 19 17 15 13 11
+9 7
+1966
+
+1970
+
+19741978
+
+1982
+
+19861990
+
+1994
+
+Administrations publiques centrales (échelle de gauche) Administrations de sécurité sociale (échelle de gauche) Administrations publiques locales (échelle de droite)
+
+Source : Insee
+
+19982002
+
+6543212006
+
+De fait, par rapport à ses partenaires, la France se singularise avant tout par le poids des cotisations sociales, qui atteint 16,1 % du PIB en 2005, contre en moyenne 14,3 % du PIB dans la zone euro et 12,0 % dans l'Union européenne à 15.
+
+Cette situation peut refléter les choix français concernant le système de protection sociale :
+ -  un niveau élevé de prise en charge par la collectivité ; - un financement principalement assis sur le facteur travail. Le niveau élevé des cotisations sociales ne s'accompagne pas pour autant d'un moindre niveau d'imposition directe ou indirecte :
+ -  le poids de l'imposition directe3 des ménages et de l'imposi - 
+tion indirecte en France est du même ordre de grandeur que
+chez ses principaux partenaires de l'Union européenne ;
+ -  le poids de l'imposition directe4 des entreprises en France
+est supérieur d'1,7 point à la moyenne de l'Union européen - 
+ne à 15 (6,0 % contre 4,3 % du PIB).
+
+3 - Les impôts directs sur les ménages sont l'impôt sur le revenu, les impôts sur les produis d'épargne financière, les impôts fonciers, la taxe d'habitation, la contribution sociale généralisée, la contribution au remboursement de la dette sociale et le prélèvement social de 2 % sur les revenus du capital.
+
+20
+
+4 - Les impôts directs sur les entreprises sont l'impôt sur les bénéfices, les taxes sur les salaires et les impôts fonciers. Pour la France, ils incluent la taxe professionnelle ;
+
+pour l'Italie, ils intègrent l'IRAP (taxe régionale sur les activités productives).
+
+
+POURQUOI RÉFORMER LE SYSTÈME FISCAL FRANÇAIS ?
+Ainsi, l'imposition directe et indirecte des ménages a notamment été rendue plus avantageuse par la loi du 21 août 2007 en faveur du travail, de l'emploi et du pouvoir d'achat (dite loi "  TEPA  "). Les mesures adoptées à cette occasion, destinées à améliorer le pouvoir d'achat des ménages, portent à la fois sur la fiscalité des revenus du travail et sur l'imposition du patrimoine :
+ -  pour faciliter l'acquisition d'un logement par les ménages, un crédit d'impôt sur les intérêts d'emprunt liés à l'acquisition ou à la construction de la résidence principale a été créé. Actuellement, seulement 56 % des ménages français sont propriétaires de leur résidence, contre 75 % en moyenne dans l'Union européenne. Dans ce contexte, l'avantage fiscal créé, qui prend la forme d'un crédit d'impôt (pour que les ménages non imposables sur le revenu puissent également en bénéficier), vise à aider les ménages à devenir propriétaires et complète le dispositif du prêt à taux zéro ;
+ -  pour favoriser la transmission des patrimoines au sein des familles et ne pas pénaliser les conjoints survivants, la loi TEPA a procédé à un allègement des droits de succession destiné à permettre aux Français de transmettre à leur famille les économies d'une vie de travail, et à un allègement des droits de donation, en vue d'injecter de l'argent dans l'économie, en facilitant les transferts de liquidités envers les jeunes ménages dont le patrimoine personnel est faible.
+En revanche, en termes d'imposition directe des entreprises, la France se situe dans le haut de la fourchette de l'Union Européenne (alors même que les prélèvements directs n'incluent pas le poids des cotisations sociales).
+21
+
+
+POURQUOI RÉFORMER LE SYSTÈME FISCAL FRANÇAIS ?
+
+Graphique 7 : Imposition directe des entreprises (en % du PIB) 8,0 %
+
+6,0 %
+
+4,0 %
+
+2,0 %
+
+0,0 % 1965197019751980198519901995200020042005
+
+Royaume-Uni
+
+Espagne
+
+Italie
+
+Allemagne
+
+France
+
+UE à 15
+
+Source : OCDE
+
+Le poids de l'imposition directe des entreprises en France est essentiellement dû à deux prélèvements :
+ -  la taxe professionnelle (25 milliards d'euros en 2007, soit 1,3 % du PIB) ;
+ -  l'impôt sur les sociétés (49 milliards d'euros en 2007, soit 2,6 % du PIB).
+Près de 80% du produit de la taxe professionnelle provient de la taxation des équipements et biens mobiliers, c'est-à-dire en substance des investissements des entreprises. A ce titre, la taxe professionnelle constitue une exception française, sans véritable équivalent au sein de l'Union européenne. Elle porte atteinte à la fois :
+ -  à la compétitivité des entreprises établies en France, qui doivent supporter une charge que ne subissent pas leurs concurrentes implantées à l'étranger ;
+ -  à l'attractivité de la France, c'est-à-dire à sa capacité à attirer des capitaux étrangers, puisque la taxe professionnelle dissuade l'investissement en France (malgré l'application pendant trois ans, de manière dégressive, du dégrèvement pour investissement nouveau).
+De surcroît, la taxe professionnelle se caractérise en pratique par une grande complexité de gestion.
+
+22
+
+
+POURQUOI RÉFORMER LE SYSTÈME FISCAL FRANÇAIS ?
+
+L'impôt sur les sociétés représente également un enjeu de compétitivité et d'attractivité. Toutefois, ces deux notions doivent être bien distinguées :
+ -  en termes de compétitivité, c'est essentiellement le poids de l'impôt sur les sociétés qui est déterminant. Or le poids de l'impôt sur les sociétés rapporté au PIB en France est dans la moyenne de l'Union européenne ;
+ -  en revanche, en termes d'attractivité, c'est le taux facial de l'impôt sur les sociétés qui est également sensible, car il s'agit d'un paramètre lisible, qui crée un effet d'affichage et joue un rôle de signal dans les décisions de localisation d'investissements. La concurrence fiscale conduit ainsi à une convergence à la baisse des taux nominaux d'impôt sur les sociétés, car ils constituent l'indicateur le plus communément retenu dans les comparaisons internationales. Dans ce contexte, la France se singularise par un taux nominal d'impôt sur les sociétés dans les conditions de droit commun de 33,33% en 2007, contre 23,6% en moyenne dans l'UE-27 (19,3% pour les Etats-membres ayant rejoint l'Union depuis 2004).
+
+Tableau 1 : Taux d'IS en 2008 des principaux partenaires de la France au sein de l'Union européenne
+
+Pays
+
+Variation du taux d'IS prévue en 2008
+
+Allemagne
+
+Passage de 38,7 % en 2007 à 29,8 % en 2008, en contrepartie d'un élargissement de l'assiette
+
+Espagne
+
+Passage de 35 % en 2006 à 30 % en 2008
+
+Italie
+
+Passage de 33 % à 27,5 %* dès janvier 2008, en contrepartie d'un élargissement de l'assiette**
+
+Royaume-Uni
+
+Passage de 30 % à 28 % (taux marginal)
+
+* Hors IRAP (impôt régional sur les activités productives) ** Notamment pour les amortissements
+
+23
+
+
+France Belgique
+Italie Espagne Royaume-Uni Allemagne
+Suède Portugal Finlande Pays-Bas Autriche Danemark
+Grèce Luxembourg Rép. tchèque
+Hongrie Pologne Slovaquie Irlande
+
+POURQUOI RÉFORMER LE SYSTÈME FISCAL FRANÇAIS ?
+À la suite des réformes adoptées par ses partenaires, la Fran - 
+ce présente en 2008 le taux nominal d'imposition des bénéfices des
+sociétés le plus élevé de l'Union européenne à 15.
+Graphique 8 : Taux marginal supérieur d'IS en 2008 dans les principaux pays de l'Union européenne
+40 %
+30 %
+20 %
+10 %
+0%
+Source : DLF. Pour l'Allemagne, le taux indiqué inclut la fraction d'impôt sur les bénéfices des sociétés perçue par les collectivités territoriales ; le taux facial au niveau fédéral (à compter du 1er janvier 2008) n'est que de 15 % (une majoration de 5,5 % le porte en pratique à 15,82 %).
+Au final, le niveau total des prélèvements sur les entreprises dans les comparaisons internationales est déterminé à la fois par l'imposition indirecte et par l'imposition directe, c'est-à-dire qu'il cumule notamment, dans le cas de la France, les cotisations sociales employeurs, la taxe professionnelle et l'impôt sur les sociétés.
+24
+
+
+POURQUOI RÉFORMER LE SYSTÈME FISCAL FRANÇAIS ?
+
+Graphique 9 : Prélèvements sur les entreprises (en % du PIB)
+
+19 % 17 % 15 % 13 % 11 % 9% 7% 5% 3%
+1965
+
+1970
+
+Royaume-Uni
+
+197519801985
+
+Espagne
+
+Italie
+
+19901995
+Allemagne
+
+20002004
+France
+
+2005
+UE à 15
+
+Source : OCDE
+NB : Dans les données de l'OCDE, certains prélèvements sont comptabilisés comme pesant sur les ménages alors que leur charge est répartie entre ménages et entreprises. Le taux de 17% apparaissant sur ce graphique ne prend donc pas en compte la totalité des prélèvements sur les entreprises. Sur données françaises, ce taux est en fait égal à 17,9% en 2005.
+
+Quant à l'enjeu de la fiscalité locale, il peut être abordé de différentes manières :
+ -  le poids des prélèvements affectés aux collectivités territoriales dépend de l'architecture institutionnelle de chaque pays. Mécaniquement, ce niveau est plus élevé dans des États fédéraux comme l'Allemagne ou les États-Unis qu'en France ;
+ -  la simplicité et la lisibilité de la fiscalité locale dépendent de son architecture. Schématiquement, les options suivantes peuvent être distinguées :
+Schéma 1 : Solutions types de structuration de la fiscalité locale
+
+Recherche de simplicité
+Affecter chaque recette à un niveau
+de collectivité bien identifié
+
+Schéma de spécialisation
+
+Répartir les recettes
+entre collectivités
+
+Schéma existant en France
+
+Prévoir ou laisser subsister des assiettes différentes suivant les prélèvements
+
+Schéma de partage d'impôts
+
+Asseoir l'ensemble des prélèvements concernés sur une même assiette
+
+Recherche de simplicité
+
+25
+
+
+POURQUOI RÉFORMER LE SYSTÈME FISCAL FRANÇAIS ?
+Cette architecture du système de prélèvements obligatoires (cotisations sociales et taux d'impôt sur les sociétés plus élevés que chez la plupart de nos partenaires, sans que cela soit compensé par un niveau plus faible de l'imposition indirecte ou de l'imposition directe des ménages) découle de l'histoire fiscale française, qui a conduit à une diversification utile des assiettes, mais aussi à une sédimentation progressive5 d'impôts. Le système de prélèvements est aujourd'hui à "  réinventer  " pour le rendre plus rationnel et plus cohérent.
+S'agissant de l'impôt sur le revenu, la question de sa création date des années 1870, dès l'avènement de la IIIe République, et le principe en a été voté en 1917 mais les fortes résistances à sa mise en oeuvre ont ralenti l'évolution du système fiscal français durant tout l'entre-deux-guerres. Ainsi, ce n'est qu'en 1948 que l'impôt sur les bénéfices des sociétés a été disjoint de l'impôt sur le revenu des personnes physiques, qui est resté cédulaire jusqu'en 1959. Ce n'est en effet qu'à cette date que l'impôt sur le revenu global est effectivement devenu unique et progressif, parachevant en quelque sorte la loi Caillaux de 1917.
+S'agissant des impôts indirects, la taxe sur la valeur ajoutée (TVA), conçue par Maurice Lauré, a remplacé en 1954 les taxes sur le chiffre d'affaires. Elle a été étendue en 1966 au commerce de détail. Son succès a conduit à sa généralisation dans l'ensemble des États membres du Marché commun en 1970 (sur le fondement de la 1re directive TVA, adoptée par le Conseil des ministres en 1967). Toujours en fiscalité indirecte, la taxe générale sur les activités polluantes (TGAP), qui a remplacé en 1999 plusieurs taxes parafiscales, a constitué la première tentative de mise en oeuvre d'une fiscalité environnementale.
+Pour ce qui concerne la sphère sociale, les premières assurances sociales obligatoires sont apparues en 1930 en France pour les salariés les plus modestes. Il faudra attendre les ordonnances de 1945, inspirées du rapport Beveridge de 1941 et du programme du Conseil national de la Résistance, qui instituent le régime de la sécurité sociale, pour couvrir "  l'ensemble de la population contre les facteurs d'insécurité  ". La réorganisation du régime général de la sécurité sociale en trois branches distinctes et la création de l'Acoss seront opérées en 1967 tandis que le déplafonnement total des cotisations d'assurance maladie ne sera achevé qu'en 1984. Enfin, la création en 1991 de la contribution sociale généralisée (CSG), assise sur l'ensemble des revenus (du travail, du capital et des jeux), constituera le premier élargissement notable du mode de financement du régime général de la sécurité sociale, jusqu'alors quasi exclusivement assis sur des cotisations sociales. Elle a été suivie par des basculements partiels de cotisations d'assurance-maladie sur la CSG, en plusieurs étapes. Elle a été complétée en 1996 par celle de la contribution au remboursement de la dette sociale (CRDS).
+5 - La persistance d'impôts anciens est symbolisée par l'expression des "  quatre vieilles  " pour désigner la taxe d'habitation, la taxe foncière sur les propriétés bâties, la taxe foncière sur les propriétés non bâties et la taxe professionnelle. 26
+
+
+Belgique Allemagne
+Hongrie France Suède Italie
+Finlande Rép. tchèque
+Pologne Danemark
+Espagne Grèce
+Pays-Bas Portugal Royaume-Uni
+Irlande
+
+POURQUOI RÉFORMER LE SYSTÈME FISCAL FRANÇAIS ?
+La superposition des prélèvements peut conduire à une érosion de leurs assiettes : ainsi, plus le niveau de la taxe professionnelle et des charges sociales est élevé, plus l'assiette de l'impôt sur les sociétés se rétrécit mécaniquement, puisque ces prélèvements sont déductibles de la base imposable.
+1.2.2. Trois exigences pour la France aujourd'hui : efficacité au service de l'emploi et de la croissance ; équité ; simplicité
+1.2.2.1. Efficacité au service de l'emploi et de la croissance
+Le "  coin fiscalo-social  ", qui mesure l'écart entre le coût du travail pour l'employeur et la rémunération nette perçue par l'employé, est, en France, supérieur à la moyenne européenne. Le graphique 10 ci-dessous ne tient cependant pas compte des allègements de charges, qui ont pour effet de réduire l'ampleur du coin fiscalo-social au voisinage du SMIC.
+Graphique 10 : Coin fiscalo-social dans les principaux pays de l'Union européenne en 2006
+60 %
+50 %
+40 %
+30 %
+20 %
+10 %
+0%
+Contributions sociales employeur Contributions sociales employé Impôt sur le revenu
+Source : OCDE Note de lecture : la décomposition du coin fiscalo-social, en % du coût du travail, est effectuée pour une personne célibataire sans enfant rémunérée au salaire moyen. En toute rigueur, il faudrait inclure la TVA (tout au moins la fraction acquittée par les salariés) dans le coin fiscalosocial.
+
+27
+
+
+POURQUOI RÉFORMER LE SYSTÈME FISCAL FRANÇAIS ?
+
+Les prélèvements pesant sur le travail engendrent donc des distorsions qui sont sources d'inefficacité et réduisent la production de richesses. Puisqu'ils introduisent un écart entre le coût du travail supporté par l'entreprise et la rémunération nette perçue par le salarié, deux cas de figure peuvent se présenter :
+ -  lorsque les salaires sont flexibles, les prélèvements sur le travail diminuent les salaires nets, et réduisent donc l'incitation à travailler. Ainsi, la concurrence se traduit in fine, lorsque les prélèvements sur le travail augmentent, par une modération des salaires et une perte de pouvoir d'achat ;
+ -  lorsque les salaires sont rigides ou réglementés (par exemple dans le cas du salaire minimum en France), les prélèvements tels que les cotisations employeurs sur le travail renchérissent le coût du travail pour les entreprises, et réduisent donc la demande de travail de leur part.
+Graphique 11 : Évolution des coûts salariaux unitaires depuis 1995
+
+135
+
+130
+
+125
+
+120
+
+115
+
+110
+
+105
+
+100
+
+95199519961997199819992000200120022003200420052006
+
+France
+
+Allemagne
+
+Italie
+
+Royaume-Uni
+
+Zone euro
+
+Source : OCDE
+
+Note de lecture : les coûts salariaux unitaires sont formés par le rapport de la rémunération
+
+totale du travail à la valeur ajoutée produite. Ils permettent donc de prendre en compte la produc - 
+
+tivité du travail dans l'analyse, contrairement à une comparaison portant sur le niveau du coût du
+
+travail en valeur absolue (mesuré par exemple par le coût horaire moyen ou le coût annuel moyen).
+
+Ainsi, l'évolution des coûts salariaux unitaires de 1995 à 2006 a été la suivante :
+
+Allemagne
+
+ -  3,3 %
+
+Zone euro
+
++ 10,4 %
+
+France
+
++ 14,3 %
+
+28
+
+Royaume-Uni + 26,4 %
+
+Italie
+
++ 29,7 %
+
+
+POURQUOI RÉFORMER LE SYSTÈME FISCAL FRANÇAIS ?
+Graphique 12 : Niveau des coûts salariaux unitaires en 2005120100 80 60 40 20
+0
+
+Pologne Norvège Nouvelle-Zélande Finlande Slovaquie Rép. tchèque Luxembourg Autriche Canada Portugal
+Suède Australie Moyenne zone euro Allemagne Pays-Bas
+France États-Unis
+Belgique Corée du Sud
+Danemark Espagne Italie
+Royaume-Uni
+
+Source : OCDE Note de lecture : les coûts salariaux unitaires sont mesurés pour l'ensemble de l'économie (secteur marchand non agricole) en rapportant le coût du travail à sa productivité en valeur, à partir des chiffres 2005 corrigés des parités de pouvoir d'achat (base 100 pour la France).
+S'agissant des prélèvements sur le capital, la structure de la fiscalité de l'épargne des ménages se caractérise actuellement en France par sa complexité. Les mesures dérogatoires qui conduisent à une hétérogénéité du traitement fiscal des différents revenus de l'épargne représentent plus de 13 milliards d'euros en 2006.
+Enfin, s'agissant de l'efficacité au service du développement durable, la fiscalité environnementale aujourd'hui en vigueur en France n'a pas été conçue pour atteindre l'objectif de dépollution au moindre coût pour l'économie (en égalisant des coûts marginaux de dépollution), mais plutôt en cherchant à faire cohabiter, de façon relativement disparate :
+ -  une logique de rendement budgétaire (par exemple avec les taxes sur l'énergie, notamment la taxe intérieure sur les produits pétroliers ou les taxes sur l'électricité, et les taxes sur les transports, comme la taxe sur les cartes grises ou la taxe sur les concessionnaires d'autoroutes) ;
+ -  de nombreuses exonérations fiscales dans le domaine des transports aériens et maritimes, de l'agriculture, de l'urbanisme et de l'aménagement du territoire qui n'ont pas de fondement environnemental mais relèvent de logiques sectorielles.
+
+29
+
+
+POURQUOI RÉFORMER LE SYSTÈME FISCAL FRANÇAIS ?
+1.2.2.2. Équité
+La définition de l'équité fait débat car ce concept a plusieurs dimensions :
+ -  l'équité verticale correspond à une redistribution en fonction du revenu. Dans le système fiscal français, l'équité est notamment assurée par la progressivité de l'impôt sur le revenu, de l'impôt sur les successions et de l'impôt sur le patrimoine (l'ISF). La progressivité des cotisations patronales de sécurité sociale créée par les allègements de charges ciblés au voisinage du SMIC contribue également à la redistribution ;
+ -  l'équité horizontale traduit une forme de solidarité envers ceux qui supportent certaines charges (par exemple avec l'application du quotient familial) ou ont été frappés par la réalisation d'un risque (par exemple une maladie grave, avec la prise en charge collective des dépenses de santé correspondantes) ;
+ -  l'équité intergénérationnelle se rapporte au legs (positif : investissements dans les infrastructures et l'éducation ; mais aussi négatif : pollution, endettement lié au financement de dépenses courantes) transmis aux générations futures. Le développement durable est une composante importante de l'équité intergénérationnelle. À cet égard, la France, lorsque l'on compare son positionnement à celui des autres pays européens, dispose d'un potentiel significatif de mise en cohérence de sa fiscalité autour du principe pollueur-payeur et du principe de précaution.
+Ces différentes approches peuvent être divergentes : ainsi, il est parfois estimé que le cumul des trois impôts cités supra au titre de leur progressivité (impôt sur le revenu, impôt sur les successions et impôt sur le patrimoine) est inéquitable car il revient à taxer trois fois le même euro sur un cycle de vie (lorsqu'il est gagné, lorsqu'il est épargné et lorsqu'il est transmis). À l'inverse, on peut considérer qu'il est légitime, en termes d'équité, de taxer le revenu épargné, car il conduit à un enrichissement, donc à une consommation future plus élevée.
+Équité et efficacité peuvent apparaître à certains égards contra - 
+dictoires. La mobilité du capital et du travail qualifié complique le jeu
+30
+
+
+POURQUOI RÉFORMER LE SYSTÈME FISCAL FRANÇAIS ?
+de la redistribution. La familialisation de l'impôt peut réduire l'incitation au "  deuxième salaire  ".
+Equité et efficacité peuvent aussi être convergentes. Par exemple, l'instauration de crédits d'impôt sur les bas salaires tels que la prime pour l'emploi en France, l'Earned Income Tax Credit aux ÉtatsUnis et le Working Tax Credit au Royaume-Uni permettent d'améliorer à la fois l'emploi et le niveau de vie des ménages salariés à bas revenus.
+1.2.2.3. Simplicité
+La simplicité d'un système fiscal peut se mesurer à l'aune de différents critères :
+ -  le nombre d'impôts pour une activité donnée ; - le nombre de dérogations au droit commun (sous forme de
+mesures d'assiette, de taux réduits, de plafonnements ou de réductions ou crédits d'impôt) ; - l'instabilité dans le temps de la législation fiscale.
+La superposition de plusieurs impôts pour une même activité
+engendre des situations d'imposition multiple. Ainsi, outre l'impôt sur les sociétés (IS, 49 milliards d'euros) et la taxe professionnelle (TP, 25 milliards d'euros), les entreprises doivent s'acquitter de nombreux autres impôts moins connus du grand public, notamment l'imposition forfaitaire annuelle (IFA, 1,7 milliard d'euros), la contribution sociale de solidarité des sociétés (C3S, 4,9 milliards d'euros) ou encore la taxe sur les véhicules de société (1,1 milliard d'euros).
+La multiplicité des dérogations au droit commun, sous la forme essentiellement des "  niches  " fiscales, conduit à "  amputer  " les assiettes. Cette érosion des bases fiscales potentielles rend nécessaires, pour un même rendement en termes de recettes publiques, des taux
+nominaux d'imposition plus élevés. Elle met en évidence un double enjeu d'efficacité et d'équité :
+ -  la plupart des analyses, à l'image de celles de l'OCDE, soulignent que les politiques fiscales qui permettent de promouvoir la croissance sont généralement celles qui réduisent autant que possible la complexité des abattements et exemptions spécifiques, et conduisent donc les agents économiques à mettre l'accent sur l'amélioration de leur
+
+31
+
+
+POURQUOI RÉFORMER LE SYSTÈME FISCAL FRANÇAIS ?
+productivité plutôt que sur l'optimisation du montant d'impôt qu'ils ont à verser. En France, la justification des niches par l'évaluation de leur rapport coût-efficacité n'apparaît pas suffisamment assurée ; - la multiplicité des niches fiscales crée une rupture d'équité au profit des entreprises les plus importantes et des contribuables les mieux conseillés, qui sont les plus aptes à en faire un usage optimisé. Elle contribue en outre au manque de lisibilité du système fiscal français, et peut à ce titre porter atteinte à la conscience civique en accréditant la conviction que des contribuables aux capacités contributives identiques obtiennent un traitement fiscal différent.
+L'instabilité de la norme fiscale peut créer une forme de volatilité de l'impôt (au-delà de la seule volatilité des assiettes auxquelles il s'applique) et rendre les règles illisibles. Le nombre d'amendements votés en lois de finances et ayant un caractère fiscal a ainsi augmenté de 67 % entre 2002 et 2006. C'est par ailleurs la matière fiscale qui a donné au Conseil constitutionnel l'occasion d'une première jurisprudence sur l'intelligibilité de la norme. Dans sa décision 2005-530 du 29 décembre 2005, il a en effet considéré que "  la complexité de l'article 78 de la loi de finances pour 2006  ", se traduisant "  notamment par la longueur de l'article 78, par le caractère imbriqué, incompréhensible pour le contribuable, et parfois ambigu pour le professionnel, de ses dispositions, ainsi que par les très nombreux renvois qu'il comporte à d'autres dispositions elles-mêmes imbriquées  " était "  à la fois excessive et non justifiée par un motif d'intérêt général suffisant  "6.
+6 - Extrait du considérant 77. de la décision : "  Considérant que l'égalité devant la loi énoncée par l'article 6 de la Déclaration de 1789 et "la garantie des droits" requise par son article 16 ne seraient pas effectives si les citoyens ne disposaient pas d'une connaissance suffisante des règles qui leur sont applicables et si ces règles présentaient une complexité excessive au regard de l'aptitude de leurs destinataires à en mesurer utilement la portée  " ; Considérant 78. de la décision : "  Considérant qu'en matière fiscale, la loi, lorsqu'elle atteint un niveau de complexité tel qu'elle devient inintelligible pour le citoyen, méconnaît en outre l'article 14 de la Déclaration de 1789, aux termes duquel : "Tous les citoyens ont le droit de constater, par eux-mêmes ou par leurs représentants, la nécessité de la contribution publique, de la consentir librement, d'en suivre l'emploi, et d'en déterminer la quotité, l'assiette, le recouvrement et la durée"  ". 32
+
+
+2. LES STRATÉGIES DE RÉFORME POSSIBLES
+
+
+LES STRATÉGIES DE RÉFORME POSSIBLES
+
+2.1. À l'étranger
+
+2.1.1. Quatre grandes tendances dans les réformes fiscales menées dans les économies industrialisées depuis une quinzaine d'années
+2.1.1.1. Première tendance : la baisse de l'imposition sur les assiettes dites "  mobiles  ", à savoir le capital et les ménages très qualifiés
+On observe depuis une vingtaine d'années une tendance géné - 
+rale à réduire les taux d'imposition marginaux supérieurs d'impôt sur
+les sociétés et d'impôt sur le revenu. La France s'est inscrite dans cette tendance s'agissant de l'impôt sur le revenu, en allégeant fortement les taux d'imposition aux deux extrémités de l'échelle des revenus depuis la fin des années 1990 ; en revanche, elle reste en marge du processus en matière d'impôt sur les sociétés puisqu'elle présente le taux d'IS le plus élevé de l'UE-15 en 2008 (cf. supra).
+
+Tableau 2 : Évolution depuis 1986 du taux d'imposition marginal supérieur pour l'impôt sur les sociétés et l'impôt sur le revenu (en %)
+
+Impôt sur les sociétés Impôt sur le revenu
+
+1986
+
+2008
+
+1986
+
+2008
+
+États-Unis
+
+50 39 50 35
+
+Royaume-Uni
+
+35 28 60 40
+
+Allemagne
+
+63 30* 56 45
+
+Italie France
+
+46 31** 50 45 34*** 57
+
+43 40
+
+Pays-Bas
+
+42 26 72 52
+
+* Le taux indiqué inclut la fraction d'impôt sur les bénéfices des sociétés perçue par les collectivités territoriales ; le taux facial au niveau fédéral (à compter du 1er janvier 2008) n'est que de 15 % (une majoration de 5,5 % le porte en pratique à 15,82 %). ** Le taux indiqué inclut l'impôt régional sur les activités productives (IRAP). *** Le taux indiqué inclut la contribution sociale sur les bénéfices (CSB), qui n'est acquittée que par les entreprises dont le chiffre d'affaires est supérieur à 7,63 millions d'euros. Hors CSB, le taux normal d'impôt sur les sociétés dans les conditions de droit commun s'élève à 33,33 %. Par ailleurs, les sociétés indépendantes réalisant un chiffre d'affaires inférieur à 7,63 millions d'euros sont éligibles à un taux d'impôt sur les sociétés réduit à 15 % sur une fraction de leur bénéfice fiscal 34 plafonnée à 38120 euros.
+
+
+LES STRATÉGIES DE RÉFORME POSSIBLES
+La tendance générale consiste ainsi à réduire les taux nominaux d'imposition en contrepartie d'un élargissement de l'assiette.
+S'agissant par exemple de l'impôt sur les sociétés, les exemptions ou déductions (amortissement accéléré, déduction des intérêts, exonération des plus-values et dividendes reçus, report des déficits...) amputent la base imposable et peuvent rendre le système fiscal inéquitable si, en pratique, seuls les grands groupes exploitent les possibilités d'optimisation.
+C'est pourquoi, afin d'accroître la contribution des sociétés considérées comme acquittant un impôt trop faible dans les conditions de droit commun au regard du bénéfice tiré de leur activité, les ÉtatsUnis ont même instauré en 1986 l'alternative minimum tax (AMT), toujours en vigueur. L'objectif déclaré prioritaire était de s'assurer que les grandes entreprises qui annoncent d'importants bénéfices comptables à leurs actionnaires n'échappent plus à une partie de leurs responsabilités fiscales en utilisant les divers avantages offerts par le régime normal. Le dispositif présente ainsi deux caractéristiques fondamentales :
+ -  c'est une imposition alternative, qui dispose donc de ses propres règles d'assiette et de taux vis-à-vis du régime normal ;
+ -  c'est également une imposition minimale, en application de laquelle une société doit acquitter au titre de l'impôt sur les sociétés le montant le plus élevé entre celui calculé sous le régime normal d'une part et celui calculé sous le régime de l'AMT d'autre part.
+De fait, l'introduction de l'AMT a fait croître le taux effectif d'imposition des grandes sociétés américaines, qui est passé de 14,3 % sur la période 1981-1985 à 26,5 % en 19887. L'efficacité du dispositif s'est ensuite érodée, puisque ce taux s'établissait à 22,9 % en 1996, 22,3 % en 1997 et 20,1 % en 1998. Ces résultats laissent à penser que les grandes sociétés ont, après un temps d'adaptation, trouvé des moyens d'atténuer les effets de l'AMT. Il est courant, en matière fiscale, qu'un dispositif donne sa pleine efficacité en régime de croisière pendant une dizaine d'années puis soit, à son tour,
+7 - Le taux effectif d'imposition est ici entendu comme le rapport entre l'impôt dû et le bénéfice domestique avant impôt.
+
+35
+
+
+LES STRATÉGIES DE RÉFORME POSSIBLES
+maîtrisé ou contourné par certains acteurs de la place, ce qui requiert alors un ajustement.
+L'alternative minimum tax est également applicable aux ménages qui sont résidents fiscaux aux États-Unis. Il vise à éviter que les contribuables bénéficiant d'un niveau de revenu élevé ne puissent, en utilisant les différents allègements autorisés par la loi, payer que peu ou pas d'impôt. De même, au Canada, les ménages sont soumis à un impôt minimal de remplacement. Dans les deux pays, les contribuables qui bénéficient au moins d'un avantage fiscal considéré comme préférentiel (certains crédits d'impôt ou abattements) doivent calculer un impôt minimal, déterminé selon un ou des taux proportionnels appliqués à une base élargie, après réintégration de ces avantages fiscaux.
+Par ailleurs, la déductibilité des intérêts versés par les entre - 
+prises de leur résultat imposable crée un biais dans les modes de
+financement, en favorisant l'endettement au détriment du finance - 
+ment par fonds propres. En outre, dans un contexte de concurrence fiscale accrue, elle incite les multinationales à sous-capitaliser leurs filiales dans les pays où le taux d'IS est élevé, dans la mesure où les charges d'intérêt qu'elles auront à supporter viendront en déduction de leur résultat imposable.
+Pour rétablir la neutralité du traitement fiscal du financement par endettement et par fonds propres, deux séries de solutions ont été mises en oeuvre selon les pays :
+ -  limiter, voire interdire, la déductibilité des intérêts. Cela permet en outre d'élargir la base taxable, donc de réduire le taux nominal de l'impôt, à recettes inchangées. L'Allemagne a par exemple mis en place en 2008, simultanément à la baisse du taux de l'impôt sur les sociétés, un plafonnement à hauteur de 30 % de la déductibilité des charges d'intérêt (nettes des produits) au-delà d'un montant de 1 million d'euros ;
+ -  symétriquement, étendre aux capitaux propres les conditions de déductibilité applicables aux intérêts. En Belgique, depuis le 1er janvier 2006, toutes les entreprises assujetties à l'impôt sur les sociétés peuvent déduire des "  intérêts notionnels  " qui sont calculés en appliquant sur leurs fonds
+36
+
+
+LES STRATÉGIES DE RÉFORME POSSIBLES
+propres corrigés le taux d'intérêt moyen des obligations à dix ans de l'État belge pour l'année précédente (3,44 % en 2006). Cette mesure revient à n'imposer que les bénéfices supérieurs au taux d'intérêt sans risque, quel que soit le mode de financement ayant permis de les obtenir : le coût de l'immobilisation de fonds propres, évalué forfaitairement, est déductible au même titre que les charges d'intérêts. Ce régime renforce donc l'attractivité de la Belgique pour l'implantation des activités fortement capitalistiques, qui bénéficient le plus de l'allègement d'imposition (quartiers généraux, ex-"  centres de coordination  " ; centres de gestion de trésorerie...). Une réforme similaire a été proposée aux États-Unis par des universitaires dans le cadre du Hamilton Project, consistant à créer un abattement pour le coût du capital (cost of capital allowance, COCA).
+2.1.1.2. Deuxième tendance : le développement de la fiscalité environnementale et comportementale
+La fiscalité "  verte  " peut permettre de minimiser le coût total supporté par la société pour atteindre un objectif environnemental donné. En effet, une taxe répercutant le coût de la réparation des dommages environnementaux dans les prix oblige les entreprises et les ménages à faire un arbitrage entre deux choix :
+ -  prendre en charge le coût marginal permettant la diminution d'une unité de pollution ;
+ -  payer la taxe attachée à cette même unité.
+De nombreux pays ont ainsi mis en place une taxation environnementale, notamment en instaurant un signal prix sur le dioxyde de carbone (CO2) dans l'ensemble de l'économie. L'introduction d'une
+taxe carbone peut sous certaines conditions engendrer un "  double
+dividende  " :
+ -  en procurant des gains de bien-être collectif par une meilleure prise en compte des coûts sociaux induits par la dégradation du climat et les atteintes à l'environnement ;
+ -  en dégageant des ressources qui permettent de restructurer le système fiscal, notamment en allégeant des prélèvements pénalisants pour la croissance et l'emploi qui portent sur les facteurs de production.
+
+37
+
+
+LES STRATÉGIES DE RÉFORME POSSIBLES
+La Finlande a été le premier pays à introduire une taxe sur le CO2 en 1990, couplée à des taxes environnementales liées à l'énergie. Ces taxes ont un impact :
+ -  en termes d'efficacité : elles ont plus que doublé au cours des dix dernières années et on estime que sans cette augmentation, les émissions de CO2 seraient supérieures de 7 % à celles enregistrées aujourd'hui ;
+ -  en termes de rendement : elles représentent près de 10 % des recettes budgétaires de l'État (soit 4,5 milliards d'euros).
+Le Danemark a également mis en place en 1993 une taxe sur le CO2, qui coexiste avec une taxe sur l'énergie.
+Le principe du "  double dividende  " a notamment été mis en application :
+ -  par la Suède qui a, depuis 1991, instauré une taxation environnementale (taxe sur le CO2 et sur le soufre des carburants pour les moteurs) en contrepartie d'une baisse de l'imposition du travail ;
+ -  par les Pays-Bas, qui ont augmenté la fiscalité indirecte environnementale (taxation de l'énergie, de l'eau) dans la deuxième moitié des années 1990, en abaissant concomitamment les impôts directs ;
+ -  par le Royaume-Uni, qui a introduit en 2001 le climate change levy (taxe sur l'usage de l'énergie dans l'industrie, le commerce et le secteur public), correspondant à un prélèvement annuel d'environ 800 millions d'euros, accompagné d'une baisse de la contribution des employeurs au système national d'assurance sociale.
+La logique des taxes carbone et des permis d'émission est complémentaire, lorsque ces derniers n'ont vocation à concerner que les installations concentrant des volumes importants d'émission. Les différentes taxes carbone nationales s'articulent donc avec le système d'échange de quotas de CO2 mis en place par l'Union européenne en 2005 (ETS) :
+ -  en Suède et au Royaume-Uni, les installations couvertes par l'ETS bénéficient de réductions de taxation spécifiques ;
+ -  au Danemark, un groupe de travail a fait des propositions en 2007 visant à aligner la taxe sur le CO2 sur le prix attendu du
+38
+
+
+jjjjjjjjjjjaaaaaaaaaaaooooouuuuunnnnnncivvcvivciviciclttlltltltrrrrrvvvvvv..................... jaoucvitlr...
+
+00 00 00 00 01 01 01 01 02 02 02 02 03 03 03 03 04 04 04 04 05 05 05 05
+
+LES STRATÉGIES DE RÉFORME POSSIBLES
+quota européen pour la période 2008-2012 et à exempter de taxe les installations couvertes par le système ETS.
+Outre l'écofiscalité, la fiscalité incitative peut également pren - 
+dre la forme de taxes comportementales visant à prévenir des prati - 
+ques à risque, par exemple dans un objectif de santé publique. C'est ainsi le cas des taxes sur le tabac et les alcools.
+Le Canada et 18 États américains ont mis en place des taxes nutritionnelles. Une taxe nutritionnelle peut :
+ -  soit être ciblée sur les aliments associés à la surconsommation qui provoque l'obésité (boissons sucrées gazéifiées, snacks salés et sucrés...), ce qui permet de financer des campagnes d'éducation nutritionnelle et de susciter une prise de conscience dans l'opinion publique en stigmatisant volontairement certains produits ;
+ -  soit, de façon plus ambitieuse, couvrir la gamme des aliments riches en acides gras saturés ou à forte densité énergétique et faible densité nutritionnelle (fat tax).
+Pour que l'outil fiscal soit efficace, l'effet prix doit être suffisamment fort pour infléchir sensiblement les comportements de consommation. À titre d'exemple, les fortes hausses de la fiscalité sur le tabac menées en 2002 et 2003 ont été répercutées dans les prix et ont eu un impact immédiat et significatif sur la consommation.
+Graphique 13 : Indice mensuel Insee des prix du tabac (base 100 en 1998)
+190180170160150140130120110100
+Source : Insee
+
+39
+
+
+LES STRATÉGIES DE RÉFORME POSSIBLES
+
+Graphique 14 : Impact des hausses de prix du tabac sur la consommation
+
+10 % 5% 0% -5 %
+ - 10 % -15 % -20 % -25 % -30 % -35 %
+
+200180160140120100 80 60 40 20 0
+
+010101020202020303030304040404050505050606060067 07 07 07
+
+jjjjjjjjjjjjjaaaaaaaaaaaaaooooooouuuuuuunnnnnnvvcviiicvcivciivcivcctlllttltlltlttrrrrrrrvvvvvv...........................
+
+Ventes de cigarettes en volume - Glissement annuel 3 mois (échelle de gauche) Indice des prix à la consommation - Tabac (échelle de droite)
+Source : Insee
+La mise en place d'une taxe nutritionnelle peut toutefois se heurter à la réaction des producteurs, qui peuvent chercher à limiter l'augmentation du prix induite par la taxe en réduisant le coût des composants et matières premières qu'ils utilisent, avec à la clé un effet potentiellement négatif sur la qualité nutritionnelle des produits.
+2.1.1.3. Troisième tendance : le basculement de prélèvements sur la production vers des prélèvements sur la consommation
+Deux pays de l'Union européenne ont procédé à un basculement
+de prélèvements assis sur le facteur travail vers des prélèvements as - 
+sis sur la consommation :
+ -  entre 1987 et 1989, le Danemark a supprimé la quasi-totalité des cotisations sociales, qui ne représentaient il est vrai qu'une part minoritaire du financement de la protection sociale. Pour compenser cette perte de recettes fiscales, le taux de TVA est passé de 22 % à 25 % ;
+ -  le 1er janvier 2007, l'Allemagne a porté de 16 % à 19 % son taux normal de TVA : - deux points de hausse sont affectés à la réduction du déficit public ; - un point de hausse est destiné à réduire les cotisations d'assurance chômage, ramenées de 6,5 % à 4,2 %.
+40
+
+
+LES STRATÉGIES DE RÉFORME POSSIBLES
+Cependant, un tel enchaînement est de nature à avoir un effet négatif sur le pouvoir d'achat des ménages. Pour cette raison notamment un tel basculement n'a pas été retenu en France.
+2.1.1.4. Quatrième tendance : réduction des doubles impositions par des réformes de la fiscalité du capital
+Des taux marginaux élevés peuvent provenir du cumul de plu - 
+sieurs impôts sur la même base, par exemple en France : - sur les revenus du travail, superposition des cotisations sociales, de la CSG et de l'impôt sur le revenu ; - sur les revenus du capital, superposition de l'impôt sur les sociétés et de l'impôt sur les revenus du capital (intérêts, dividendes ou plus-values) des investisseurs individuels.
+Allègement de l'imposition du patrimoine, qui revient à imposer plusieurs fois le même euro
+Au cours des deux dernières décennies, de nombreux États européens ont procédé à une diminution de l'imposition des donations et successions, en instaurant des régimes d'exonération partielle, voire à une suppression de ces droits :
+ -  le Royaume-Uni (1986), la France (2007) et la Pologne (2007) ont mis en place des exonérations et des allègements concernant les donations ;
+ -  en Autriche (1999), en Belgique (2006), aux Pays-Bas (2007) et en Allemagne, les droits de mutation sont supprimés ou réduits d'au moins 75 % pour les transmissions d'entreprises, sous conditions ;
+ -  en Estonie et en Slovaquie, depuis 2004, ainsi qu'en Suède, depuis 2005, il n'y a plus de droits de donation et de succession ;
+ -  la France (2007) a supprimé les droits de succession entre époux et entre partenaires liés par un Pacs ;
+ -  les réformes intervenues en France, en Italie et en Allemagne en 2007 ont étendu les abattements applicables aux successions entre parents et enfants.
+La suppression de l'impôt sur la fortune a été mise en oeuvre dans sept des neuf pays de l'Union européenne où il était en vigueur
+
+41
+
+
+LES STRATÉGIES DE RÉFORME POSSIBLES
+en 1994 : Allemagne, Autriche, Danemark, Finlande, Luxembourg, Pays-Bas et Suède. Elle est projetée en Espagne.
+Allègement de l'imposition des revenus du capital mobilier
+L'imposition des dividendes et des plus-values pour les person - 
+nes physiques a été aménagée : - au cours des années 1990, les réformes conduites dans les pays scandinaves (Danemark, Finlande, Norvège et Suède) se sont achevées par une refonte complète de l'architecture des prélèvements et la mise en place d'une imposition séparée des revenus du capital (dividendes, intérêts, plus-values et loyers) et des revenus du travail, avec une assiette plus large et des taux plus faibles ; - la plupart des pays de l'Union européenne, dont la France, ont allégé la fiscalité des plus-values de cessions et ont aménagé le régime fiscal des dividendes à l'occasion de la suppression de l'avoir fiscal.
+L'imposition applicable aux entreprises lorsqu'elles reçoivent
+des dividendes ou dégagent des plus-values de cession a été allégée dans la plupart des pays européens, dont la France, mais aussi le Luxembourg (2001), l'Allemagne (2002), le Royaume-Uni (2003), l'Italie (2004), l'Irlande (2004), la Finlande (2005), Malte (2007), la Lituanie (2007), la Hongrie (2008) et la République tchèque (2008).
+Élimination de la double imposition par l'harmonisation communautaire
+La directive mère-fille (1990) vise à éliminer la double imposition des dividendes entre une société mère et ses filiales. L'Etat dans lequel la société mère est implantée s'abstient d'imposer les bénéfices distribués ou les impose tout en autorisant la société mère à déduire de son impôt la fraction de l'impôt sur les sociétés afférente à ces bénéfices et déjà acquittée par la filiale.
+La directive épargne (2003) pose le principe de l'imposition des intérêts dans l'État de résidence du bénéficiaire. Toutefois, le secret bancaire en vigueur dans certains États a conduit à admettre des dérogations.
+42
+
+
+LES STRATÉGIES DE RÉFORME POSSIBLES
+La directive intérêts-redevances (2003) permet d'éviter les doubles impositions en supprimant les retenues à la source sur les intérêts et redevances versés entre sociétés d'un même groupe établies dans des États membres différents.
+2.1.2. Quelques exemples d'innovations fiscales
+2.1.2.1. Le tax reform act américain
+Le tax reform act adopté en 1986 aux États-Unis a considérablement diminué les taux marginaux de l'impôt sur le revenu et de
+l'impôt sur les sociétés, afin de stimuler la croissance économique en accroissant la rentabilité du travail et du capital :
+ -  le taux d'imposition marginal maximal sur le revenu a été ramené de 50 % à 28 % ;
+ -  le taux maximal d'imposition sur les sociétés (pour les bénéfices supérieurs à 75000 $) a été réduit de 46 % à 34 %. Le nombre de tranches est passé de 5 à 3. La structure progressive de l'impôt sur les sociétés a été conservée afin d'encourager la croissance des PME.
+Toutefois, l'avantage ainsi accordé aux contribuables a été com - 
+pensé par un élargissement de l'assiette de ces impôts (suppression de certains abattements et déductions pour l'acquisition de logements ou de mesures d'incitation à l'investissement des sociétés, intégration des gains en capital dans le revenu imposable). Cette réforme s'est ainsi effectuée à taux de prélèvements obligatoires inchangé.
+2.1.2.2. La flat tax mise en place dans plusieurs pays d'Europe centrale et orientale
+Plusieurs des États membres ayant rejoint l'Union européenne depuis 2004 ont mis en place un impôt à taux proportionnel, également appelé flat tax :
+ -  seule la Slovaquie a instauré un impôt proportionnel au taux unique de 19 % concernant à la fois l'impôt sur le revenu, l'impôt sur les sociétés et la taxe sur la valeur ajoutée. Cette mesure a été mise en oeuvre le 1er janvier 2004 ;
+ -  la Roumanie a mis en place le 1er janvier 2005 un taux d'imposition unique de 16 % à la fois pour l'impôt sur les bénéfices des sociétés (qui était soumis auparavant à un taux de 25 %) et pour l'impôt sur le revenu (qui était régi antérieurement par un barème de 18 % à 40 %). La Bulgarie a adopté
+
+43
+
+
+LES STRATÉGIES DE RÉFORME POSSIBLES
+à compter de 2008 un taux proportionnel pour l'impôt sur le revenu, aligné sur taux de l'impôt sur les sociétés, à 10 % ; - la Lettonie, l'Estonie et la République tchèque (à compter de 2008) appliquent un impôt proportionnel en matière d'impôt sur le revenu, dont le taux s'élève respectivement à 25 %, à 23 % et à 15 % ;
+Ainsi, l'impôt proportionnel à taux unique peut s'appliquer : - à l'impôt sur le revenu, en général au-delà d'un seuil d'imposition ; - à l'impôt sur les sociétés, avec l'alignement des taux nominaux d'imposition sur un niveau unique, en baisse grâce à un élargissement simultané de l'assiette (par la réduction ou la suppression des possibilités de déduction) ; - à la TVA, avec la suppression des taux réduits.
+Il peut être décidé, comme en Slovaquie, de retenir un même taux proportionnel unique pour l'ensemble de ces impôts (impôt sur le revenu, impôt sur les sociétés, TVA).
+2.1.2.3. La réforme de la fiscalité de l'épargne adoptée aux PaysBas
+L'impôt sur le revenu a été profondément réformé en 2001 aux Pays-Bas, avec la mise en place d'une imposition séparée des revenus du travail et des revenus du capital.
+L'imposition des revenus du capital et la taxation du patrimoine ont été fusionnées à cette occasion pour former un impôt sur le rendement théorique du capital. Le rendement théorique du capital est fixé à 4 % et le taux d'imposition à 30 %. En conséquence, le stock de
+capital (patrimoine) est taxé au taux de 1,2 % (après abattement), de façon indifférente aux choix d'investissements et de placements du contribuable.
+44
+
+
+LES STRATÉGIES DE RÉFORME POSSIBLES
+
+2.2. Les stratégies possibles
+Schématiquement, trois types de modèles fiscaux théoriques peuvent être envisagés :
+ -  les modèles d' "  économie fermée  ", qui définissent leur fiscalité sans tenir compte de la mobilité des assiettes et recherchent une neutralité fiscale entre les facteurs de production (capital et travail) ;
+ -  les modèles de "  concurrence fiscale  ", qui diminuent les taux d'imposition marginaux sur les facteurs mobiles en reportant la charge sur la fiscalité indirecte, qu'il s'agisse de la TVA ou de la fiscalité incitative ;
+ -  les modèles de "  développement de l'emploi  ", qui recherchent une baisse des prélèvements sur le travail, notamment peu qualifié (allègements de charges ciblés pour stimuler l'emploi d'un côté, crédits d'impôt pour inciter au travail de l'autre) et cherchent à taxer des assiettes alternatives, par exemple dans le domaine environnemental.
+La France a combiné certaines des caractéristiques de ces trois modèles :
+ -  historiquement, modèle d' "  économie fermée  ", avec une taxe professionnelle assise à la fois sur le capital et sur le travail et un niveau élevé d'imposition sur les assiettes mobiles ;
+ -  depuis une quinzaine d'années, modèle de "  développement de l'emploi  ", avec une diminution des charges sociales sur le travail peu qualifié ;
+ -  plus récemment, modèle de "  concurrence fiscale  ", avec une baisse du niveau de l'impôt sur le revenu des ménages au cours des dernières années et un dispositif jetant les bases d'un régime d'imposition aménagé pour les impatriés.
+La France peut donc élaborer une stratégie fiscale et définir l'équilibre de l'architecture du système de prélèvements obligatoires en choisissant comment pondérer ces différents paramètres.
+
+45
+
+
+LES STRATÉGIES DE RÉFORME POSSIBLES
+
+Schéma 2 :Typologie indicative des modèles fiscaux des pays développés 40 %
+
+Imposition marginale sur les revenus et les bénéfices
+
+38 %
+36 %
+34 %
+32 % 25 %
+
+38 % Charges sociales sur les bas salaires
+
+France Allemagne Italie Pays-Bas Royaume-Uni États-Unis
+50 %
+
+Note de lecture : le niveau des charges sociales sur les bas salaires est mesuré par le coin fiscalo-social pour un célibataire rémunéré à hauteur de 67 % du salaire moyen, ce qui constitue un indicateur du niveau de prélèvements sur le travail peu qualifié ; le taux d'imposition marginal supérieur sur le revenu des personnes physiques et le taux normal de l'impôt sur les bénéfices des sociétés sont pondérés à parité pour constituer un indicateur du niveau de prélèvements sur les assiettes mobiles (travail très qualifié et capital).
+
+Le schéma 2 peut être interprété de la façon suivante : - la convergence du niveau d'imposition des assiettes mobiles concernant les États-Unis, l'Allemagne, la France et l'Italie met en évidence l'intensification de la concurrence fiscale dans ce domaine. Parmi ces pays, les États-Unis se distinguent par une fiscalité plus favorable au travail non qualifié, alors qu'elle est beaucoup plus pénalisante en Italie, en France et en Allemagne ; - la position du Royaume-Uni apparaît particulièrement attractive à la fois pour les assiettes mobiles et pour le travail peu qualifié ; - la position des Pays-Bas peut s'expliquer par le niveau élevé du taux marginal de l'impôt sur le revenu (52 %), qui doit être relativisée par le fait que les revenus du capital font l'objet d'une imposition séparée (cf. supra).
+
+46
+
+
+3. OPTIONS POUR LA POLITIQUE FISCALE FRANÇAISE
+
+
+OPTIONS POUR LA POLITIQUE FISCALE FRANÇAISE
+3.1. Options d'évolutions envisageables
+La revue générale des prélèvements obligatoires peut être envisagée à niveau de prélèvements obligatoires constant.
+La trajectoire du taux de prélèvements obligatoires est déterminée notamment par le cadrage macroéconomique des finances publiques à horizon de 2 à 4 ans. Le programme pluriannuel de finances publiques transmis par la France à la Commission européenne retient deux scénarios de taux de croissance, à 2,5 % et 3 %, permettant, respectivement d'ici à 2012 ou d'ici à 2010, de ramener le solde public à l'équilibre et la dette publique à 60 % du PIB. Les travaux de la revue générale des prélèvements obligatoires s'inscrivent en cohérence avec ce programme pluriannuel de finances publiques. L'évolution du taux de prélèvements obligatoires d'une année sur l'autre dépend de facteurs variés (fluctuations conjoncturelles du PIB, délai d'ajustement des prélèvements à ces fluctuations, décisions discrétionnaires...) et ne peut donc tenir lieu d'outil de pilotage des finances publiques ou d'indicateur de suivi annuel des réformes fiscales.
+48
+
+
+OPTIONS POUR LA POLITIQUE FISCALE FRANÇAISE
+
+3.2. Pistes de réflexion possibles
+Si notre pays veut renouer durablement avec une croissance forte, s'il veut une économie compétitive et attractive, s'il veut offrir à ses citoyens une protection et des services publics de qualité, il doit faire de son système de prélèvements obligatoires un atout et non plus un handicap, même si cela implique des réformes difficiles.
+Dans ce contexte, la fiscalité ne doit pas être vue comme une donnée intangible mais comme un outil évolutif, au service des politiques mises en oeuvre par le Gouvernement et des engagements pris par le Président de la République, qui a fixé le cap des réformes, exclu toute augmentation des prélèvements obligatoires et défini une trajectoire de redressement des finances publiques à horizon 2012.
+En conséquence, la réforme fiscale doit elle aussi être conçue non pas comme une réforme unique, à mettre en oeuvre une fois pour toutes, mais comme un processus ordonné, qui implique de définir une stratégie à l'échelle de la mandature. Cette stratégie doit comporter plusieurs étapes, fixées en cohérence avec les priorités du Gouvernement, le rythme du travail parlementaire et l'avancement de la concertation engagée avec les élus et les représentants des contribuables.
+C'est dans cet esprit qu'une première série de réformes structurantes a été mise en oeuvre au cours de la première année de la mandature :
+ -  Avec l'exonération des heures supplémentaires, le crédit d'impôt sur l'acquisition de la résidence principale, le rachat des RTT, le déblocage anticipé de la participation ou encore la prochaine réforme de l'intéressement, le Gouvernement a mis notre système fiscal au service du travail et du pouvoir d'achat ;
+ -  Avec le triplement du crédit d'impôt recherche, la réduction d'ISF en faveur de l'investissement dans les PME et les mesures fiscales et sociales du projet de loi de modernisation de l'économie, il a commencé à mettre notre système fiscal au service de la croissance, de la compétitivité et du développement de l'économie, en donnant la priorité aux PME, qui sont les principaux créateurs d'emplois.
+
+49
+
+
+OPTIONS POUR LA POLITIQUE FISCALE FRANÇAISE
+Ces mesures ont déjà produit des effets très significatifs, qui contribuent à la bonne tenue de l'emploi et de la croissance observée depuis un an, dans une conjoncture internationale pourtant difficile.
+Dans le prolongement des mesures déjà mises en oeuvre, le diagnostic précédent conduit à privilégier dans un premier temps trois axes :
+ -  la justice et l'équité fiscale, pour qu'enfin chaque contribuable soit imposé en fonction de ses facultés contributives ;
+ -  l'efficacité environnementale, pour que la fiscalité devienne un outil au service d'une croissance durable et respectueuse de l'environnement ;
+ -  l'efficacité économique, pour que la fiscalité soit au service de la compétitivité, de l'investissement, de la croissance et de l'emploi.
+Sur cette base, il est envisagé que soit engagée dans les prochains mois une nouvelle phase de la réforme fiscale, qui comportera trois séries de mesures concrètes.
+1. La justice fiscale apparaît d'une importance déterminante
+A cet égard, il faut citer l'importance de l'enjeu associé à la question des " niches fiscales ". La multiplication, dans notre système fiscal, d'avantages fiscaux dérogatoires pose un problème budgétaire mais aussi un problème d'équité, parce qu'elle signifie qu'à revenu ou à patrimoine égal, deux contribuables peuvent être soumis à une charge fiscale sensiblement différente. Cette différence de traitement est la plus nette dans le cas des avantages non plafonnés, qui peuvent permettre à des contribuables très aisés d'échapper totalement à l'impôt.
+C'est pourquoi le Gouvernement souhaite traiter en priorité la question des dispositifs fiscaux dérogatoires non plafonnés, pour lesquels il a proposé des mesures concrètes dans un rapport remis au Parlement le 7 mai dernier. A cet égard, on peut noter la vitalité et de la richesse du débat qui s'est engagé au cours des derniers mois. Il faut accueillir avec intérêt les propositions formulées par les parlementaires.
+Dans le cadre du projet de loi de finances pour 2009, un ensemble de mesures destinées à mettre en oeuvre un plafonnement effectif des "  niches fiscales  " sera présenté afin de mettre un terme aux situations
+50
+
+
+OPTIONS POUR LA POLITIQUE FISCALE FRANÇAISE
+les plus inéquitables. Dans un second temps, le Gouvernement engagera également une remise à plat de l'ensemble des dépenses fiscales dérogatoires, afin de s'assurer de leur pertinence et de leur utilité.
+Dans la même perspective d'équité, le Gouvernement proposera également, avant la fin de l'année, une modernisation des valeurs locatives qui servent de base à la fiscalité locale (taxe d'habitation, taxes foncières et part foncière de la taxe professionnelle). En effet, ces valeurs locatives n'ont pas été révisées depuis près de quarante ans, et sont aujourd'hui en décalage profond par rapport à la valeur réelle des biens concernés. Les mesures proposées, qui ont déjà été soumises pour concertation aux principales associations d'élus locaux, auront pour objet d'aller vers plus d'équité entre les contribuables en mettant en adéquation la charge fiscale avec la valeur réelle de leur bien. Elles permettront également aux collectivités territoriales de disposer d'impôts fonciers plus justes, plus modernes et plus efficaces, en évitant les transferts inappropriés entre collectivités.
+2. Notre système de prélèvements obligatoires doit tirer les conséquences des orientations dégagées à l'occasion du Grenelle de l'environnement, pour que la fiscalité accompagne l'évolution des comportements vers une attitude plus respectueuse de l'environnement.
+Le projet de loi de finances pour 2009 est appelé à comporter un ensemble de mesures significatives destinées à mettre en application cette orientation. Ces mesures concerneront notamment le secteur du transport de marchandises et le secteur du bâtiment, avec la réforme du crédit d'impôt "  développement durable  " et le "  verdissement  " du crédit d'impôt en faveur de l'acquisition de la résidence principale et du prêt à taux zéro.
+Par ailleurs, la France et la Grande-Bretagne ont proposé à leurs partenaires européens que les biens et services les plus vertueux du point de vue environnemental puissent bénéficier d'un taux réduit de TVA. La présidence française de l'Union européenne sera l'occasion de faire progresser cette initiative.
+Enfin, le projet de loi en faveur de la responsabilité environnementale prévoit la remise au Parlement, avant la fin de l'année, d'un rapport sur l'instauration d'une contribution climat-énergie. La création d'une telle contribution ne pourra être décidée, le moment
+
+51
+
+
+OPTIONS POUR LA POLITIQUE FISCALE FRANÇAISE
+venu, que s'il apparaît qu'elle ne pèsera pas sur le pouvoir d'achat des ménages et que le prix de marché des énergies fossiles ne reflète pas les coûts environnementaux associés à leur consommation.
+3. La fiscalité applicable aux investissements, enfin, sera pour le Gouvernement une priorité essentielle.
+Sans équivalent en Europe, la taxe professionnelle est l'impôt le plus néfaste pour la croissance et la compétitivité de notre économie, car elle pénalise directement ceux qui investissent en France et touche prioritairement les secteurs les plus exposés à la concurrence internationale et aux délocalisations, comme l'industrie. En outre, cet impôt, dont le produit est réparti entre cinq catégories de bénéficiaires, est en réalité acquitté à 40 % par l'Etat, ce qui contribue à déresponsabiliser les collectivités et à brouiller leur relation avec les contribuables locaux.
+Néanmoins, la taxe professionnelle n'est pas seulement l'une des principales sources de financement des collectivités territoriales, elle est aussi un élément structurant pour nos intercommunalités et un outil au service de la décentralisation.
+La conférence nationale des exécutifs du 10 juillet a retenu qu'une concertation à ce sujet sera engagée à l'automne. Ce dialogue devra avoir une dimension économique. Nous devrons également nous interroger sur les enjeux de la réforme au regard du financement des collectivités territoriales et sur son articulation avec la problématique du partage des compétences entre les différents niveaux de collectivités publiques. Ce dialogue devra rechercher un juste équilibre permettant de concilier ces objectifs et de définir un système fiscal plus moderne, plus adapté aux besoins locaux, plus juste pour les contribuables et moins pénalisant pour notre économie.
+La réforme de la taxe professionnelle doit donc être examinée dans le cadre d'un examen d'ensemble de notre fiscalité locale. Le rapport d'évaluation de la dernière réforme de la taxe professionnelle, prévu par l'article 81 de la loi de finances pour 2007, sera déposé par le Gouvernement dès le début de la session parlementaire et formera une première base pour cette concertation. Ce processus justifie de disposer du temps nécessaire, ce qui exclut qu'une réforme puisse être présentée dans le cadre du projet de loi de finances pour 2009.
+52
+
+
+OPTIONS POUR LA POLITIQUE FISCALE FRANÇAISE
+Outre les sujets énumérés ci-dessus, les réflexions sur notre système fiscal pourront également porter sur d'autres thèmes cohérents avec ces axes de la politique fiscale du Gouvernement. Elles devront intégrer les évolutions en cours de la prime pour l'emploi et du revenu de solidarité active. Elles pourront également s'articuler avec les travaux du haut comité de Place. Elles intégreront les évolutions déjà décidées, par exemple la suppression de l'impôt forfaitaire annuel (IFA).
+Enfin, elles comprendront une dimension relative à la sécurité juridique, à la simplification de notre système fiscal et à l'amélioration de la gouvernance en matière de prélèvements obligatoires.
+Un bilan d'étape sera dressé à la fin du mois de septembre, au moment de la présentation du projet de loi de finances pour 2009.
+53
+
+
+

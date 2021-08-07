@@ -1,0 +1,316 @@
+Contribution Climat Énergie et internalisation des coûts externes des transports routiers
+Jean-Jacques Becker CGDD / SEEIDD
+Ministère de l'Écologie, de l'Énergie, 1
+du Développement durable et de l'Aménagement du territoire
+www.statistiques.developpement-durable.gouv.fr
+
+
+Problématique
+* Les circulations routières sont à l'origine d'un ensemble d'effets externes (dont l'effet de serre) * Pour optimiser l'usage du réseau routier, il convient de faire supporter ces effets externes à l'utilisateur de ce réseau par le biais d'une tarification appropriée.
+2
+2
+
+
+Externalités routières habituellement retenues
+1. * effet de serre : proportionnel à la consommation de carburants (en TEP)
+2. * pollution locale : proportionnelle aux parcours (normes par véhicule.km) ; dépend du lieu (densité de population)
+3. * bruit : proportionnel aux parcours ; dépend du lieu (densité de population) et du moment (jour/nuit)
+4. * insécurité : proportionnelle aux parcours ; dépend du lieu
+5. * capacité : proportionnelle aux parcours ; dépend du lieu et du moment, congestion ou coût de développement * usure de la voirie : proportionnelle aux parcours 
+3
+3
+
+
+Coûts externes / année 2005
+
+(coût de capacité mesuré par le coût de développement pour l'interurbain)
+
+Tous réseaux
+PL VUL VL Essence VL Diesel Ensemble
+Interurbain
+PL VUL VL Essence VL Diesel Ensemble
+Urbain
+PL VUL VL Essence VL Diesel Ensemble
+
+CmU 1,6 0,8 0,9 1,3 4,6
+CmU 1,3 0,6 0,7 1,0 3,7
+CmU 0,3 0,2 0,2 0,3 0,9
+
+Congestion 8,7 7,3 11,6 16,5 44,2
+Congestion 4,3 2,3 3,7 5,3 15,6
+Congestion 4,5 5,0 7,9 11,3 28,7
+
+COUTS EXTERNES, Md
+
+Pollution
+
+GES
+
+Bruit
+
+5,0 1,1 0,5
+
+3,0 0,7 0,2
+
+2,4 0,9 0,4
+
+5,7 1,2 0,5
+
+16,1 3,9
+
+1,5
+
+COUTS EXTERNES, Md
+
+Pollution
+
+GES
+
+Bruit
+
+1,6 0,9 0,1
+
+1,0 0,5 0,0
+
+0,8 0,7 0,1
+
+1,9 0,9 0,1
+
+5,4 3,1 0,3
+
+COUTS EXTERNES, Md
+
+Pollution
+
+GES
+
+Bruit
+
+3,4 0,2 0,4
+
+2,0 0,1 0,2
+
+1,6 0,2 0,3
+
+3,8 0,3 0,4
+
+10,8 0,8
+
+1,2
+
+Insécurité 2,7 2,2 4,3 6,1 15,2
+
+TOTAL 19,6 14,2 20,5 31,3 85,6
+
+Insécurité 1,4 1,2 2,2 3,1 7,9
+
+TOTAL 9,6 5,7 8,2 12,4 35,9
+
+Insécurité 1,3 1,1 2,1 2,9 7,4
+
+TOTAL 10,0 8,5 12,2 19,0 49,7
+
+4
+4
+
+
+Prélèvements sur les circulations routières
+* TIPP sur les carburants * péages sur les autoroutes concédées * taxe sur les contrats d'assurance * taxe à l'essieu (pour les poids lourds) * vignette (pour certains VL)
+> lien entre prélèvement et niveau de circulation > exclusion de la TVA portant sur la TIPP
+5
+
+5
+
+
+Recettes année 2005
+
+Tous réseaux
+PL VUL VL Essence VL Diesel Ensemble
+Interurbain
+PL VUL VL Essence VL Diesel Ensemble
+Urbain
+PL VUL VL Essence VL Diesel Ensemble
+
+Péages 2,0 0,8 1,4 2,0 6,2
+Péages 1,8 0,7 1,3 1,8 5,6
+Péages 0,2 0,1 0,1 0,2 0,6
+
+TIPP 5,3 3,8 7,9 6,7 23,7
+TIPP 4,5 2,9 6,2 5,3 18,9
+TIPP 0,8 0,8 1,7 1,5 4,8
+
+RECETTES, Md
+Assurance Essieu 0,2 0,2 0,1 0,0 0,3 0,0 0,4 0,0 1,0 0,2 RECETTES, Md
+Assurance Essieu 0,2 0,2 0,1 0,0 0,2 0,0 0,3 0,0 0,8 0,2 RECETTES, Md
+Assurance Essieu 0,0 0,0 0,0 0,0 0,1 0,0 0,1 0,0 0,2 0,0
+
+Vignette 0,0 0,0 0,1 0,1 0,1
+Vignette 0,0 0,0 0,0 0,1 0,1
+Vignette 0,0 0,0 0,0 0,0 0,0
+
+TOTAL 7,7 4,7 9,7 9,2 31,3
+TOTAL 6,6 3,7 7,7 7,4 25,5
+TOTAL 1,1 0,9 1,9 1,8 5,7
+
+6
+6
+
+
+comparaison entre les coûts externes et les recettes (1)
+en interurbain : -         déficit de couverture pour les VULs, les VL diesel, quasi-équilibre ou sous-tarification pour PLs, surtarification ou bilan équilibré pour les VL essence selon l'approche retenue pour le coût de capacité -         dépend des axes considérés : surtarification "  systématique  " sur les autoroutes à péage -         impact du projet de taxe PL sur le RRN non concédé : limitera sensiblement la sous-tarification sur ce réseau -         absence de justification d'un niveau réduit de TIPP sur le carburant diesel à usage des VL sur la base des effets externes des circulations
+[1]
+7
+
+7
+
+
+comparaison entre les coûts externes et les recettes (2)
+  >       en urbain :   -         sous-tarification massive de l'ensemble des types de circulations routières  
+>       au niveau global :   - sous-tarification sensible de l'ensemble des circulations, du fait du poids de la soustarification urbaine
+8
+
+8
+
+
+Bilan circulations interurbaines 2005
+
+2,0 0,0 -2,0 -4,0 -6,0 -8,0 -10,0 -12,0
+9
+
+Md2005
+
+PL
+
+VL
+
+VUL essence
+
+VL diesel Ensemble
+
+Congestion Développement
+9
+
+
+Bilan circulations urbaines 2005
+
+Md 2005
+
+0 -5 PL -10 -15 -20 -25 -30 -35 -40 -45 -50
+
+VUL VP Essence VP Diesel Total
+
+10
+
+1100
+
+
+Bilan toutes circulations 2005
+
+0,0 -10,0 -20,0 -30,0 -40,0 -50,0 -60,0
+11
+
+Md2005
+
+PL
+
+VL
+
+VUL essence
+
+VL diesel Ensemble
+
+Congestion Développement
+1111
+
+
+VL essence année 2005 (circulations interurbaines)
+
+7,00 6,00 5,00 4,00 3,00 2,00 1,00 0,00 -1,00 -2,00
+
+Coûts externes Recettes Bilan
+
+Md 2005 Ensemble
+
+12
+1122
+
+
+VL diesel année 2005
+(circulations interurbaines)
+
+Md2005 Ensemble
+
+10,00 8,00 6,00 4,00 2,00 0,00 -2,00 -4,00
+
+Coûts externes Recettes Bilan
+
+13
+
+1133
+
+
+PL 2005 (avant taxe RRN)
+(circulations interurbaines)
+
+Md 2005
+Ensemble
+
+10,00 8,00 6,00 4,00 2,00 0,00 -2,00 -4,00
+
+Coûts externes Recettes Bilan
+
+14
+
+1144
+
+
+PL 2005 (après taxe RRN)
+(circulations interurbaines)
+
+9,00 8,00 7,00 6,00 5,00 4,00 3,00 2,00 1,00 0,00 -1,00 -2,00
+
+Coûts externes Recettes Bilan
+
+Md 2005 Ensemble
+
+15
+1155
+
+
+Discussion sur la tarification optimale (1)
+* La politique optimale de 1er rang s'appuie sur: > une taxation du carburant pour traiter l'effet de serre > un péage kilométrique modulé dans le temps, l'espace et selon le type de véhicule, pour traiter les externalités liées aux niveaux de circulation * Sous-optimalité de la politique actuelle s'appuyant pour l'essentiel sur la TIPP, et ceci plus particulièrement en zone urbaine * Néanmoins, nécessaire prise en compte des coûts de mise en oeuvre d'un péage assis sur les circulations de nature à tempérer le constat précédent
+16
+
+1166
+
+
+Discussion sur la tarification optimale (2)
+* La taxe sur le carburant étant un instrument de second rang pour tarifer les "  externalités kilométriques  ", son niveau optimal est inférieur au montant des externalités kilométriques (ramenées au litre de carburant), d'un facteur de l'ordre de 0.5 * Prise en compte des distorsions liées à la fiscalité existante : impact "  non trivial  " sur la taxation optimale des carburants, compte tenu d'effets en sens contraire (cf. littérature américaine sur le sujet : Parry & Small, West & Williams).
+17
+
+1177
+
+
+Déficit TIPP par rapport à une tarification optimale de second rang hors effet de serre / année 2005, tous réseaux
+(coût de capacité mesuré par le coût de congestion pour l'interurbain)
+
+Md 2005
+
+10,0 9,0 8,0 7,0 6,0 5,0 4,0 3,0 2,0 1,0 0,0 PL
+
+V UL
+
+VL VL die s e l Ens e m ble
+
+es sence
+
+18
+1188
+
+
+Conclusion
+* même en prenant en compte le caractère de second rang de la taxation des carburants, on conclut à une sous-tarification globale des circulations routières * sur la base de ces éléments, la fiscalité existante sur les circulations routières ne couvrirait donc pas l'externalité "  changement climatique  ".
+19
+1199
+
+

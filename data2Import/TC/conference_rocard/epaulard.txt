@@ -1,0 +1,143 @@
+Quels sont les impacts macroéconomiques de la mise en oeuvre de la contribution climat-énergie?
+
+Conférence d'experts sur la contribution climat-énergie
+
+Atelier Mise en oeuvre et impacts - 2 juillet 2009
+
+Mission d'Analyse Macroéconomique des Politiques Economiques
+
+1 Direction Générale du Trésor et de la Politique Economique
+
+Anne Epaulard
+
+
+La contribution climat-énergie (compensée) est potentiellement favorable à l'activité et à l'emploi
+
+Outre les effets "  climat  " ou "  CO2  " qui ne sont pas étudiés ici
+
+ Taxe à la consommation (y.c. intermédiaire) sur des volumes
+
+ A court terme, hausse des prix, baisse du pouvoir d'achat et de la consommation
+
+Taxe sur un produit importé
+ Effet de substitution vers d'autres produits
+
+ Balance commerciale, moindre dépendance
+ Recyclage dans l'économie domestique
+
+ Compensée par la diminution d'autres impôts
+
+Plus d'efficacité
+
+ Long terme
+
+Enrichissement du contenu en emploi de l'activité économique
+
+Le but de cette présentation : quantifier ces effets
+
+2 Direction Générale du Trésor et de la Politique Economique
+
+
+Compensée = effets favorables à long terme sur l'activité
+ CCE de 9 milliards d'euros = 0,5 point du PIB français
+
+50% ménages ; 50% entreprises
+
+Compensée par une baisse de 9 milliards d'euros répartie sur tous les impôts (TVA, IS, TP, IR, CSG, taxe sur les produits),
+
+Impact de long terme Mésange
+(modèle macro-économétrique)
+
+PIB (%)
++0,4%
+
+EGEE
+(DSGE : modèle d'équilibre général dynamique)
+
++0,2%
+
+3 Direction Générale du Trésor et de la Politique Economique
+
+
+Compensation des ménages et des entreprises au pro rata de leur contribution à la CCE
+
+ Baisse de 4,5 milliards d'euros répartie sur tous les impôts qui pèsent sur les ménages (TVA, IR, CSG,
+impôt sur les produits)
+
+ et Baisse de 4,5 milliards d'euros répartie sur tous les impôts qui pèsent sur les entreprises (TP, IS,
+rémanences de TVA)
+
+Impact de long terme Mésange
+(modèle macro-économétrique)
+
+PIB (%)
++0,5%
+
+EGEE
+(DSGE : modèle d'équilibre général dynamique)
+
++0,2%
+
+4 Direction Générale du Trésor et de la Politique Economique
+
+
+Compensation par baisses des cotisations sociales (employeurs et salariés)
+ Baisse de 4,5 milliards d'euros de cotisations sociales salariés
+ et Baisse de 4,5 milliards d'euros de cotisations sociales employeurs
+
+Impact de long terme Mésange
+(modèle macro-économétrique)
+EGEE
+(DSGE : modèle d'équilibre général dynamique)
+
+PIB (%)
++0,5%
++0,3%
+
+5 Direction Générale du Trésor et de la Politique Economique
+
+
+Compensation mixte Impôts et Cotisations sociales
+ Baisse de 4,5 milliards d'euros de cotisations sociales employeurs
+
+ Baisse de 4,5 milliards d'euros répartie sur tous les impôts qui pèsent sur les entreprises (TP, IS, rémanences de TVA)
+
+Impact de long terme Mésange
+(modèle macro-économétrique)
+
+PIB (%)
++0,6%
+
+EGEE
+(DSGE : modèle d'équilibre général dynamique)
+
++0,3%
+
+6 Direction Générale du Trésor et de la Politique Economique
+
+
+Conclusion (1/2)
+ Impact positif à long terme sur l'activité
+ Effets plus ou moins positifs selon le mode de compensation retenu
+ Compris entre +0,2% et +0,6% pour 0,5 point de PIB de basculement
+ Neutre (ou légèrement positif) sur les finances
+publiques ex-post
+ les simulations ont été faites à coût nul ex ante pour les finances publiques  ex post :
+ Baisse de l'assiette de la CCE (on émet moins de carbone) = la CCE rapporte un peu moins  Mais effets favorables sur l'activité : surcroît de recettes
+7 Direction Générale du Trésor et de la Politique Economique
+
+
+Conclusion (2/2)
+Le rôle de l'élasticité de la consommation d'énergie au prix :
+ dans nos simulations +10% prix de l'énergie => - 4% de consommation d'énergie à long terme
+ si effets sur consommation d'énergie deux fois plus faible : les effets sont inférieurs de 15% à ceux présentés
+Ce que l'on ne prend pas en compte :
+ Impact sur l'innovation  Compensation ciblée (travail peu qualifié, PME, ...)
+=> Effets potentiellement plus favorables
+8 Direction Générale du Trésor et de la Politique Economique
+
+
+Merci
+9 Direction Générale du Trésor et de la Politique Economique
+
+

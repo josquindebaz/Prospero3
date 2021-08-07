@@ -1,0 +1,144 @@
+Ecotaxes et quotas d'émissions échangeables CO2
+RÉFÉRENCES ÉCONOMIQUES POUR LE DÉVELOPPEMENT DURABLE
+
+CONSEIL ÉCONOMIQUE POUR LE DÉVELOPPEMENT DURABLE
+n° 6
+2009
+
+
+
+Dès le début des années soixante-dix la panoplie des instruments utilisables pour la mise en oeuvre des politiques environnementales est à peu prés complète. La théorie pigouvienne de l'internalisation des coûts environnementaux existe depuis 1920, alors que les contributions de Coase (1960) puis de Dales (1968) ont permis de concevoir les systèmes de droits d'accès à l'environnement négociables sur un marché. Côté pratique, les normes et standards techniques on été appliqués massivement dans les années soixante, en particulier aux Etats-Unis dans la lutte contre les pluies acides. C'est avec le renforcement et la diversification des régulations que s'engagent, dès les années soixante-dix, les débats sur les choix des instruments, dans le triptyque : normes, taxes ou quotas ?
+Les deux derniers instruments ont en commun de se situer dans une logique d'incitations économiques, recourant à un signal-prix pour orienter efficacement les choix de réduction des émissions. Ce type d'instrument a en particulier comme intérêt de tirer avantage de l'ensemble des potentiels de réduction pour un coût donné, ce que ne permet pas un système de normes.
+Les éléments de choix entre taxes et quotas sont complexes. Le choix demeure d'ailleurs un sujet de débat non définitivement tranché pour les politiques climatiques, aussi bien au niveau des négociations multilatérales qu'au plan national. A cet égard, les engagements pris récemment dans le cadre du paquet climat/énergie nous imposent de préciser les instruments qui seront retenus pour mobiliser les réductions d'émissions de gaz à effet de serre dans les secteurs domestiques.
+Patrick Criqui Dominique Bureau
+
+Histoire d'un choix controversé
+En 1992, peu avant le sommet de la terre à Rio, Cropper et Oates, rendant compte des acquis de l'économie de l'environnement, concluent en indiquant que l'expérience et les savoirs accumulés dans ce domaine vont alors pouvoir être utilement mobilisés pour traiter les questions d'environnement global, qui émergent alors sur l'agenda international. Leur analyse est tout à fait prémonitoire car les apports de l'économie de l'environnement constitueront bien le socle sur lequel vont se construire les politiques climatiques. Dans le même temps cependant, il faut reconnaître que malgré les apports de la théorie, le problème n'est toujours pas tranché dix-sept ans plus tard : pour lutter efficacement contre le changement climatique, vaut-il mieux instaurer un système de taxes ou un système de quotas CO2 ?
+Pour éclairer les enjeux de ce débat très actuel, il convient de considérer que le choix des instruments ne peut pas être considéré de manière abstraite, et qu'en particulier, l'échelle de mise en oeuvre - internationale, régionale-européenne, nationale, locale - est un élément essentiel du choix. Comme les niveaux d'action sont interdépendants, il faut de plus veiller à la cohérence d'ensemble des dispositifs. Cependant, une brève histoire de la négociation internationale constitue un bon moyen d'appréhender les arguments économiques mobilisés dans la
+
+controverse sur "  taxes et quotas  ".
+Rio. En 1992 est signée à Rio la Convention Cadre des Nations Unies sur le Changement Climatique. Bien que survenant deux ans seulement après la création du GIEC, la Convention témoigne déjà d'une claire vision des enjeux puisque son Article 2 stipule que les pays signataires s'engagent "  à limiter les concentrations de gaz à effet de serre dans l'atmosphère à un niveau qui empêche toute perturbation anthropique dangereuse du système climatique  ". Cependant la Convention ne fournit aucune indication chiffrée sur ce que serait un tel niveau de concentration. De même, la discussion sur les instruments tournera vite court. Seuls quelques pays européens, au premier rang desquels figure la France, proposent l'instauration d'une taxe internationale sur le CO2. Ils se heurtent cependant au veto des Etats-Unis. Les conditions ne sont pas réunies et les européens eux-mêmes ne parviendront pas à se mettre d'accord sur la taxe carbone dans les années qui suivent.
+Kyoto. Après la ratification de la Convention commence la longue série des "  COPs  " (conférences des parties à la convention). A partir de 1995, l'administration Clinton assume un véritable "  leadership structurel  " en imposant les objetsmêmes de la négociation internationale. Les termes de la négociation vont se construire d'abord autour de la notion de QELROs - Quantitative Emission Limitation
+
+Conseil économique pour le développement durable
+www.developpement-durable.gouv.fr
+
+
+| |Références économiques n°62009
+
+or Reduction Objectives. Peu après, l'administration américaine propose, à la surprise assez générale, que ces objectifs soient considérés comme "  légalement contraignants  " (legally binding targets). La scène est dressée pour la négociation de Kyoto en 1997. Celle-ci peut-être résumée en quelques mots de la manière suivante : les européens partent avec un objectif de réduction des émissions identique pour tous les pays industrialisés, de 10 à 15% en 2010 par rapport à 1990 ; les américains souhaitent seulement avoir à stabiliser leurs émissions pour cet horizon et veulent imposer un dispositif de marché des émissions, comparable à celui qu'ils ont mis en oeuvre au début des années quatre-vingt-dix pour le SO2. Toute la négociation conduira à une augmentation de la réduction imposée aux Etats-Unis, jusqu'au niveau de 7% pour 2010 (8% pour l'Europe et 6% pour le Japon), en contrepartie de laquelle les européens devront accepter le principe d'une double flexibilité : "  what flexibility  " sur le fait de ne pas considérer le seul CO2, mais un panier de six gaz à effet de serre et "  where flexibility  " sur la possibilité pour un pays de réaliser dans un autre pays les réductions qui lui sont imposées. Cette dernière dimension est essentielle car elle crée un système Cap and Trade, de limitation des quantités d'émission autorisées, avec possibilité d'échange de quotas d'émission. Chaque partie a fait dans la négociation d'importantes concessions : sur le volume des réductions pour les américains, sur le principe des marchés de quotas pour les européens.
+La Haye. Trois ans après, la donne va être bouleversée. Avant la COP6 de La Haye en 2000, les européens sont devenus convaincus des mérites de l'approche par la fixation des quantités, plutôt que par la taxe qu'ils ont discutée sans succès au long des années quatre vingt-dix. L'argument de "  l'intégrité environnementale  " en particulier est décisif aux yeux de la Direction Générale Environnement de la Commission Européenne : avec un système Cap and Trade, on est sûr en principe d'atteindre l'objectif environnemental ; l'échange de quotas permet ensuite d'introduire l'efficacité économique et de minimiser le coût d'une politique environnementale ambitieuse. On peut, à ce moment de la négociation, penser que les violons sont accordés et que la même partition va pouvoir être jouée des deux côtés de l'Atlantique. Mais quelques jours avant COP6 Al Gore, l'artisan de Kyoto, est défait face à Georges Bush aux présidentielles américaines. A La Haye, la négociation achoppe sur des difficultés techniques. Peu après sa prise de pouvoir, le nouveau président américain décide en février 2001 du retrait complet des EtatsUnis du dispositif de Kyoto.
+2001-2008. Dès lors, le processus se déroule à fronts inversés : les européens deviennent les champions des quotas d'émission et, devant l'impossibilité de mettre en oeuvre un dispositif "  Kyoto sans les USA  ", s'attellent à la construction de leur propre système de quotas d'émission négociables (l'European Union Emissions Trading Scheme). Celui-ci concerne les industries grosses consommatrices d'énergie et le secteur électrique, soit 40 à 50% des émissions européennes, selon les gaz pris en compte. Aux Etats-Unis, l'Etat se contente essentiellement d'un effort de R&D pour les technologies bas carbone, alors que les économistes revisitent la théorie et
+
+redécouvrent les vertus de la taxe carbone. Jusque là, la négociation-climat s'apparente donc à un grand rendez-vous manqué, en 2000, autour des systèmes de quotas d'émission négociables : la proposition américaine initiale est devenue, au fil des ans, celle des européens alors même que toute ambition climatique est abandonnée outre-Atlantique. Mais le changement d'administration en 2009 marque sans doute un nouveau départ pour la négociation.
+Dans un contexte doublement bouleversé par la crise économique et par l'élection de Barak Obama, la balle semble aujourd'hui du côté de l'administration américaine. Car du côté européen - de la Commission et de la plupart des grands Etats-membres l'engagement en faveur d'objectifs quantitatifs ambitieux se maintient (20 à 30% de réduction en 2020, 60 à 80% en 2050), tout comme le soutien à la création du marché du carbone. Côté américain deux positions se font face aujourd'hui. D'une part la quasitotalité des nominations dans la nouvelle administration sur les sujets énergie-climat mobilisent d'anciens protagonistes de la politique environnementale de l'administration Clinton, donc des tenants de l'approche Cap and Trade. Mais d'autre part, le courant en faveur de la taxe carbone se renforce parmi les économistes les plus connus (dont W. Nordhaus, J. Stiglitz, J. Sachs, G. Mankiw, L. Summers... dans une liste non exhaustive), certains étant proches du nouveau président. Il faut donc à ce stade réexaminer les arguments.
+Les arguments théoriques
+En première approximation, c'est-à-dire notamment en l'absence d'incertitude, l'approche fiscale et celle des marchés de permis sont équivalentes. A niveau de protection donnée, elles conduisent en effet au même signal-prix, et orientent à l'identique les comportements, conduisant de ce fait aux mêmes actions de réduction.
+Effets redistributifs. Equivalentes en termes incitatifs, les approches peuvent différer en revanche par leurs effets redistributifs, qui peuvent aller en effet du principe pollueur/payeur à la compensation des efforts de dépollution. Toutefois ces effets résultent plus des modalités de mise en oeuvre de chaque instrument : choix entre taxe et subvention, et existence ou non d'abattements à la base, pour l'approche fiscale ; attribution initiale gratuite des autorisations - selon les droits historiques (grandfathering) ou toute autre clé de répartition - ou bien encore mise aux enchères, pour les marchés de permis.
+Cette équivalence entre taxes et quotas échangeables permet de comprendre pourquoi le débat est intrinsèquement difficile à trancher. De plus, il ne peut l'être qu'au cas par cas, en fonction d'éléments complémentaires sur le problème environnemental à résoudre. A ce titre, les prises de position définitives et générales, en faveur de l'un ou l'autre type de dispositif, apparaissent suspectes.
+De même, il faut bien apprécier les contraintes qui peuvent fonder telle ou telle préférence. Si l'on considère les effets redistributifs, par exemple, il est exact que la fiscalité, lorsqu'elle s'applique à des comportements dont les élasticités-prix demeurent
+
+2 | Conseil économique pour le développement durable
+
+
+| |Références économiques n°62009
+
+modérées, générera des transferts importants. La question des modalités de redistribution des recettes est alors essentielle. Les effets redistributifs des marchés de quotas sont en apparence plus immédiats, car liés aux critères de leur allocation initiale. Mais ils nécessitent aussi une analyse approfondie, qui doit tenir compte de l'ensemble des mécanismes de transmission des coûts supplémentaires dans les prix aux consommateurs.
+Ainsi, des allocations gratuites sur base historique seront mieux justifiées si l'agent concerné est confronté à une situation de marché où les modifications de prix des facteurs de production ne se répercuteront pas dans les prix des produits : soit, par exemple, le cas des agriculteurs dont les prix sont fixés par les marchés mondiaux, et qui font ainsi face à une demande parfaitement élastique relativement à leur offre ; mais non celui des transporteurs routiers qui évoluent, eux, sur un marché où les coûts se transmettent rapidement dans les prix, l'offre étant relativement élastique par rapport à la demande.
+Par ailleurs, la consolidation du niveau de pollution passée dans l'allocation initiale des droits d'un marché d'émissions sera d'autant plus légitime que l'on pourra estimer qu'un "  contrat implicite  " liait auparavant la puissance publique aux acteurs concernés pour l'accès à la ressource considérée. Bien évidemment, cette appréciation peut évoluer dans la durée, en tenant compte des délais nécessaires aux reconversions, ou à toute réallocation des facteurs de production : si le producteur de maïs irrigué peut arguer que la puissance publique l'y a encouragé, cet argument ne peut cependant justifier indéfiniment un droit sur la ressource en eau... Il est ainsi naturel que les permis soient distribués sur une base historique lors de la mise en place d'un marché de permis, puis mis aux enchères ultérieurement. L'évolution des règles pour le marché européen de quotas CO² illustre un tel processus.
+Impacts du progrès technique. Un autre élément de différenciation parfois mis en avant concerne l'impact sur l'innovation, à partir du constat qu'en cas de progrès technologique favorable, le prix des permis va baisser. Dans ce cas, le niveau de pollution final restera celui qui était visé initialement. En revanche avec les taxes, comme l'innovation augmente les possibilités de réduction pour un coût donné, un niveau de pollution inférieur sera finalement atteint. Ceci suggèrerait que les taxes fournissent de meilleures incitations de long terme à l'innovation que les marchés, si le régulateur est "  myope  ". Cependant, si celui-ci anticipe et réagit bien aux innovations technologiques, les deux types d'instruments redeviennent équivalents.
+Interactions avec les marchés. S'agissant des politiques climatiques, il faut prendre en compte aussi les interactions entre les politiques environnementales et le fonctionnement des marchés des combustibles fossiles. Ceci conduit à observer qu'une taxe uniforme a en partie pour effet de déplacer la rente entre les producteurs concernés et les autorités fiscales. L'introduction de la taxe peut donc se traduire par une baisse du prix au producteur susceptible d'entrainer un "  effet-rebond  " de la demande. Pour autant, ceci ne discrédite pas
+
+l'approche fiscale par rapport aux marchés de permis. Celle ci doit en revanche établir des prix du carbone croissant et tenant compte des effets-rebond, pour jouer son rôle d'orientation des comportements, comme le ferait le marché de permis équivalent.
+Prise en compte de l'incertitude. Finalement, beaucoup des arguments avancés en faveur de l'une ou l'autre des approches nécessitent d'analyser les restrictions complémentaires implicitement supposées pour fonder le choix préconisé. La théorie économique a cependant identifié différents éléments de différenciation plus fondamentaux entre taxes et permis. Outre les questions de la liquidité, de la transparence et du caractère concurrentiel des marchés de quotas, l'élément-clé à prendre en compte est l'incertitude sur les dommages et sur les coûts de réduction.
+En 1974, Weitzman, examinant les avantages respectifs des approches par les quantités et par les prix des politiques environnementales, a démontré en effet, qu'en situation d'incertitude, l'approche par les quantités (les quotas) est préférable lorsque la pente des coûts marginaux des dommages est supérieure à celle de la courbe des coûts marginaux de réduction et inversement pour l'approche par les prix (la taxe).
+En présence de risques de dommages pour l'environnement catastrophiques au-delà d'un certain niveau de concentration, l'approche des marchés de permis d'émissions est préférable car elle garantit que la contrainte quantitative globale sur les émissions sera respectée. A contrario, si les dommages par tonne d'émission sont estimés assez constants, et que les coûts de protection à engager sont incertains, l'approche fiscale est préférable car elle permet qu'aucun effort de coût exorbitant ne sera réalisé, ceux-ci étant bornés par la valeur libératoire que constitue le taux de la taxe. Ainsi, la mise en place de crédits d'émissions NOx dans le secteur électrique californien avait contribué alors à la volatilité et l'imprévisibilité des prix. Les prix de marché de ces crédits ont en effet explosé à partir de juillet 2000. Certaines centrales ont même été obligées de s'arrêter pour cause d'épuisement de leurs crédits d'émission. Ceci rappelle donc que le choix entre prix et quantités comme instruments des politiques environnementales est une question réellement complexe.
+C'est aussi pour cette raison, que beaucoup d'économistes, par souci de maîtriser les coûts globaux de protection, estiment qu'une taxe harmonisée aurait constitué idéalement l'instrument le plus approprié pour lutter contre le changement climatique. Pizer avait appliqué cette problématique en 1998. Il montrait que, dans les cas d'une "  pollution-stock  ", l'augmentation du dommage lié à la dernière unité émise est en général faible par rapport au dommage environnemental "  accumulé  " : on se trouve donc dans le deuxième cas, celui qui devrait voir s'imposer l'approche par les taxes. Nordhaus, l'un des économistes qui a depuis le plus longtemps travaillé sur la question, a repris cet argumentaire lors du dernier colloque international sur le climat à Copenhague.
+Dans un contexte où il est difficile de trancher
+
+Conseil économique pour le développement durable | 3
+
+
+| |Références économiques n°62009
+
+l'importance à accorder à ces deux risques et afin de lever l'obstacle à la participation que constitue l'incertitude sur les coûts, on peut aussi recourir à des mécanismes plus complexes combinant permis et fiscalité, par le biais d'un prix libératoire, par exemple un prix-plafond des quotas ou Safety Valve.
+La pratique des instruments économiques de l'environnement
+Souvent, le choix entre taxes et marchés de permis a résulté de données autres, culturelles ou d'acceptabilité vis-à-vis de ce qui pouvait être perçu comme des "  nouvelles taxes  ", ou encore de la situation de départ. Partant d'une réglementation des émissions fixant à la fois des objectifs individuels et des objectifs de zone (un cap régional ou global), il est aisé, par exemple, de basculer sur des marchés de permis d'émissions, ce qui conduira à privilégier cette solution par rapport aux taxes. L'instrument fiscal est, lui, plus facile à mobiliser, si des taxes préexistent et qu'il suffit que de mieux les différencier pour les rendre incitatives.
+Les contraintes institutionnelles sont aussi importantes. En effet, les Etats ne se départissent pas facilement de leurs prérogatives fiscales. Il en résulte que les taxes seront plus aisées à mettre en place au niveau national, où leur mise en oeuvre pourra alors bénéficier d'administrations établies pour en assurer le contrôle au moindre coût.
+En fait, la comparaison entre taxes et permis est à mener non seulement au niveau théorique, mais aussi en pratique, entre des systèmes de taxes et des mécanismes de marchés imparfaits, les uns comme les autres. Le talon d'Achille des premiers se situe d'abord dans la difficulté à identifier le bon niveau de taxe, puis dans les risques de la multiplication des exemptions et exonérations, qui non seulement font perdre des recettes, mais surtout affaiblissent le signal-prix recherché ; en particulier lorsqu'elles touchent des secteurs et comportements qu'il faudrait justement soumettre aux incitations. Celui des seconds peut résider, par exemple, dans les distributions de quotas gratuits aux nouveaux entrants, la gestion des quotas en cas de sortie du marché ou encore les conditionnalités mises à leur cession, qui vont stimuler ou maintenir en place des structures improductives.
+De plus, la réflexion sur les instruments ne peut, en général, être déconnectée de celle sur la fixation des objectifs : la taxe peut être intrinsèquement préférable, mais encore faut-il qu'il y ait consensus pour que celle-ci puisse être fixée au niveau approprié ; de même l'argument d'effectivité environnementale des marchés de permis peut se retourner si l'on n'est pas capable d'en prévenir la distribution d'un nombre global excessif.
+Compte tenu de l'ensemble de ces éléments, le choix entre taxes et permis d'émissions doit privilégier le dispositif dont les conditions effectives de fonctionnement seront le plus proche de ce que serait le "  premier rang  ". Ceci suggère la démarche suivante :
+ -  Etape 1 : bien distinguer les niveaux ou échelles auxquels les instruments économiques doivent être
+
+mis en oeuvre, et examiner leur articulation. De fait un système international de quotas peut tout à fait coexister - ou plutôt encadrer - des dispositifs de régulation nationaux ou sectoriels par les taxes.
+ -  Etape 2 : comparer, intrinsèquement, les dispositifs dans le contexte considéré, notamment eu égard au besoin d'effectivité environnementale et de maîtrise des coûts de protection, compte-tenu des incertitudes. Les deux types de risque - de dépassement des seuils de fonctionnement des écosystèmes, ou de défection à terme de dispositifs générant des coûts insupportables - sont à pondérer soigneusement. Cette comparaison est aussi importante pour concevoir la mise en oeuvre, comme le montre l'expérience de la régulation des oxydes d'azote émis par les centrales électriques en Californie, qui constitua un des facteurs de crise du marché électrique californien en 2000. Les phases de transition sont toujours délicates à gérer, et l'écofiscalité peut apparaître souvent comme préférable à cet égard.
+ -  Etape 3 : objectiver les contraintes institutionnelles. L'analyse doit ici considérer : les contraintes portant directement sur les deux types d'instruments et leurs conséquences ; mais aussi celles pesant sur les mécanismes redistributifs associés, comme sur leur gouvernance.
+ -  Etape 4 : le choix polaire entre taxes et permis ayant été réalisé pour un niveau d'action donné, il convient enfin d'identifier et mettre en place les règles ou instruments complémentaires permettant de tirer tout le parti du mécanisme choisi.
+
+Créé à l'initiative de Jean-Louis Borloo,
+
+ministre d'État, ministre de l'Écologie, de
+
+d'Énergie, du Développement durable et
+
+de l'Aménagement du territoire, le
+
+Conseil économique pour le
+
+développement durable a pour mission
+
+de mobiliser des références économiques
+
+pour éclairer les politiques de
+
+développement durable.
+
+Outre la déléguée interministérielle au
+
+développement durable et le président
+
+délégué du Conseil d'analyse
+
+économique, membres de droit, ce
+
+Conseil est composé de vingt cinq
+
+membres reflétant la diversité de la
+
+recherche académique et de l'expertise
+
+des parties prenantes sur les thématiques
+
+économiques liées au développement
+
+durable.
+
+Les services du ministère de l'Écologie,
+
+de d'Énergie, du Développement durable
+
+et de l'Aménagement du territoire,
+
+notamment le Commissariat général au
+
+développement
+
+durable,
+
+sont
+
+étroitement associés aux travaux du
+
+Conseil.
+
+Ces "  références  " établies dans le cadre
+
+de ses travaux, et diffusées pour stimuler
+
+le débat, n'engagent que leurs auteurs.
+
+Conseil économique pour le développement durable 20, avenue de Ségur 75007 Paris Tel. : 01.40.81.21.22 Directeur de la publication Dominique Bureau
+
+www.developpement-durable.gouv.fr
+
+

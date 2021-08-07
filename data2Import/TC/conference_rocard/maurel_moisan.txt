@@ -1,0 +1,408 @@
+Présentation des études de l'ADEME et du MEDDM
+Françoise Maurel (MEDDM) et François Moisan (ADEME)
+MINISTÈRE DE L'ÉCOLOGIE, DE L'ÉNERGIE, DU DÉVELOPPEMENT DURABLE ET DE LA MER en charge des Technologies vertes et des Négociations sur le climat
+
+
+Les émissions de GES en France
+
+en MtCO2 en MtCO2
+
+Évolution des émissions des principaux gaz à effet de serre
+
+450100
+
+440 90
+
+43080420 70
+
+410 60
+
+400 50
+
+390 40
+
+380
+
+CO2 (75%, éch. gauche)
+
+30
+
+370
+
+CH4 (10%)
+
+20
+
+360
+
+N2O (12%)
+
+10
+
+350 0
+
+211111111222212212000000999999999900090990099099990900102980761545347326
+
+Source : CITEPA 2
+
+2
+
+
+Les émissions de CO2 en France
+
+Contenu carbone des combustibles fossiles, en MtCO2 (émissions de CO2 hors décarbonatation)
+raffinage
+
+Gaz naturel
+0
+
+Carburants 0
+
+Production d'électricité
+
+9
+
+0
+
+Produits pétroliers Charbon hors carburants
+16 0 4 29
+
+Total
+16 42
+
+sidérurgie
+
+20
+
+0
+
+industrie
+
+28 8
+
+18
+
+tertiaire
+
+15 37
+
+11
+
+résidentiel
+
+34 69
+
+29
+
+autres
+
+17
+
+7
+
+Reste du monde
+
+0 12
+
+0
+
+total
+
+88134
+
+86
+
+Source : ADEME, d'après le bilan 3 énergétique du MEDDM
+
+2325660568113301501264371
+
+3
+
+
+Les émissions de CO2 en France
+
+40%
+
+Part des différents secteurs dans les émissions de CO2 de la France
+
+35%
+
+1990
+
+30% 25%
+
+2007
+
+20%
+
+15%
+
+10%
+
+Transports Résidentiel Tertiaire
+
+Industrie
+
+Énergie
+
+Source : CITEPA
+Note : - le champ industrie inclut la production décentralisée d'électricité
+ -  Résidentiel-tertiaire et industrie hors carburant
+4
+
+Secteurs couverts à plus de 80% par l'ETS
+
+4
+
+
+La fiscalité sur l'énergie en France
+
+/L /Kwh
+
+Fiscalité sur les carburants
+1,2
+
+1,0 Prix HT
+0,8 TIPP
+0,6
+
+0,4
+
+0,2 Taux
+
+0,0
+
+minimums CE
+
+Essence
+
+Gazole
+
+Source : DGEC
+
+Fiscalité sur le chauffage
+1,2 0,07
+
+1 0,06
+0,8 0,05 0,04
+0,6 0,03
+0,4 0,02
+0,2 0,01
+
+Prix HT Taxes
+
+0 0,00
+Fioul domestique Gaz naturel
+
+Source : DGEC
+
+5
+5
+
+
+Les scénarios possibles de mise en oeuvre
+ -  Scénario additionnel : la contribution climaténergie viendrait s'ajouter à la fiscalité existante
+ -  Scénario différentiel : la fiscalité existante (TIPP, TICGN, TICC) serait ajustée pour couvrir les coûts externes liés aux émissions de CO2 (qui ne sont pas déjà couverts par les taxes intérieures)
+6
+6
+
+
+Impact sur le prix des énergies
+Illustration dans le cas additionnel pour une taxe à 32/tCO2
++8 cts/litre en moyenne sur l'essence et le gazole, soit +8,0% de hausse
++9% pour le gaz naturel +15% pour le fioul domestique
+Cas 1 : "  contenu CO2 moyen  " (80gCO2/Kwh) +1,7%
+Cas 2 : "  contenu CO2 chauffage  "(200gCO2/Kwh) +4,5%
+7
+7
+
+
+Impact sur les recettes fiscales
+Illustration pour une taxe à 32/tCO2
+Scénario additionnel : le produit de la taxe atteindrait 8,3 milliards d' Scénario différentiel : le produit de la taxe atteindrait 4,9 milliards d' Ces chiffres constituent un maximum :
+ -  L'ajustement des comportements n'est pas pris en compte (économies d'énergie)
+ -  Ces chiffres ne tiennent pas compte des exonérations envisageables (hormis celle des installations soumises au SEEQE)
+8
+8
+
+
+Impact agrégés sur les ménages
+Illustration dans le cas additionnel pour une taxe à 32/tCO2
+9
+9
+
+
+Impact agrégés sur les ménages
+Illustration dans le cas additionnel pour une taxe à 32/tCO2
+
+Consommation unitaire Contribution
+
+Voitures particulières en litres ESSENCE
+
+annuelle en  723 56
+
+GAZOLE
+
+1049 81
+
+Source MEEDDAT, CCTN, année 2007
+
+10
+10
+
+
+Impact agrégés sur le secteur tertiaire
+
+0,30%
+
+0,25%
+
+0,24%
+
+Illustration du scénario CCE additionnelle (32/tCO2) en % de la VA des secteurs du tertiaire Source ADEME
+0,24%
+
+0,20%
+
+0,15%
+
+0,14%
+
+0,10%
+
+0,10%
+
+0,10%
+
+0,05%
+
+0,06%
+
+0,02%
+
+0,00%
+Sport, culture Cafés hotels Enseignement et loisirs et restaurants et recherche
+
+Commerce
+
+Santé et action sociale
+
+Transport (hors
+carburant)
+
+Bureaux et administration
+
+0,07%
+Total
+
+11
+
+11
+
+
+Impact agrégés sur le secteur des transports
+
+Illustration du scénario CCE additionnel (32/tCO2) en % de la VA des secteurs du transport Source MEEDDAT
+
+4,0% 3,5%
+
+3,7%
+
+3,0% 2,5% 2,0% 1,5%
+
+2,5%
+
+2,4%
+
+1,9%
+
+1,6%
+
+1,3%
+
+1,0% 0,5% 0,0%
+
+0,7%
+
+0,5%
+
+0,2%
+
+0,0%
+
+Trans.
+
+routiers
+
+dLeomcaatirocnh.dientcearumrbioaTnirnsasanvse. crocuotinedrsucdteeTumrrasanrsc.hr.oduetieprrsoxriémgiutélAieurstredse
+
+voyageurs trans. routiers
+
+de
+
+voyageuTrrsansports
+
+par
+
+taxis
+
+DéméTnraangse.muerbnat ins
+
+de
+
+voyageurs Remontées
+
+mécaniques Transports
+
+par
+
+conduites
+
+1,71% total
+
+12
+
+12
+
+
+Impact agrégés sur le secteur industriel
+
+40,0% 35,0%
+
+30,0%
+
+25,0%
+
+20,0%
+
+15,0% 10,0%
+5,0% 0,0%
+
+35%
+
+Illustration du scénario CCE additionnelle (32/tCO2) en % de la VA des secteurs source ADEME
+
+11% 11% 5% 5% 3% 3% 2% 1% 1% 1% 0% 0% 0% 1%
+
+13
+13
+
+auPFtroreonpsddrmuoecdtrarAtiuaeitAouéintnestrusrimtatefIdarontueaezrcrdfxatmoiAhcbiuPmvètdihgrsaémarreieiotretsnmiroaislidoiséeceMedauiunaorepsteltoaiiérontmlddstrmusadtmisgae'fxseiemtiialvclrnoatnnlldueniui'éébiqeagtticriratviriquslcrgealtlaeieaeiueeiriorueleersisseesssnxsr Total
+
+
+Articulation avec la directive européenne
+Qui prévoit d'exonérer
+ -  les combustibles à double usage - la fabrication de produits minéraux non métalliques.
+Ces usages sont déjà exonérés de taxe intérieure (art.265 code des douanes, conformément à la directive UE 2003/96) Ainsi 29% des émissions de l'industrie (hors ETS et hors carburant) échapperaient à la contribution. La part de la CCE (hors carburant et électricité) dans la VA des entreprises taxées s'élèverait à moins 0, 6% dans le scénario additionnel. Seules les consommations en chauffage et les process faiblement énergivores de l'industrie seraient taxés.
+14
+14
+
+
+Les gains environnementaux
+Illustration dans le cas additionnel pour une taxe à 32/tCO2
+ Baisse maximale de 19MtCO2 les émissions par rapport à la tendance, en quelques années ( - 7,5% des émissions hors ETS).
+ La diminution pourrait atteindre au moins 14 % en 2020 si le taux de la CCE augmente progressivement de 5% chaque année.
+15
+15
+
+

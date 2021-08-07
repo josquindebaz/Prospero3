@@ -1,0 +1,921 @@
+Contribution carbone pour les secteurs industriels
+DOCUMENT DE CONCERTATION Février 2010
+ - 1 - 
+
+
+Introduction
+La loi de programmation relative à la mise en oeuvre du Grenelle de l'environnement, dans son article 2 voté à l'unanimité par le Parlement, prévoit que l'Etat étudiera la création d'une contribution carbone qui "  aura pour objet d'intégrer les effets des émissions de gaz à effet de serre dans les systèmes de prix [et] sera strictement compensée par une baisse des prélèvements obligatoires de façon à préserver le pouvoir d'achat des ménages et la compétitivité des entreprises  ".
+Le Gouvernement a proposé dans le projet de loi de finances 2010 l'instauration d'une contribution carbone. Ce projet de loi a été voté par le Parlement le 18 décembre 2009.
+Dans sa décision du 29 décembre 2009, le Conseil constitutionnel a considéré que la disposition portant création de la contribution carbone était contraire à la Constitution, au motif que les "  régimes d'exemption totale [qu'elle prévoit] créent une rupture caractérisée de l'égalité devant les charges publiques  ".
+Le principe d'une telle contribution carbone n'est pas remis en cause par la décision du Conseil Constitutionnel. Le Conseil constitutionnel a néanmoins considéré que le système des quotas d'émission de CO2, alloués gratuitement jusqu'en 2013 - date prévue pour la mise aux enchères et la réduction progressive des volumes de quotas alloués aux entreprises - ne permettait pas de justifier l'exonération totale de contribution carbone des installations concernées.
+Le Gouvernement a pris en compte cette décision, tout en étant soucieux de préserver la compétitivité des entreprises, objectif d'intérêt général d'ailleurs reconnu par le Conseil constitutionnel.
+Un nouveau dispositif de contribution carbone tenant compte des orientations données par le Conseil constitutionnel sera soumis au Parlement, pour une entrée en vigueur le 1er juillet 2010.
+Il reprendra les principaux aspects du dispositif voté par le Parlement :
+ -  le tarif de la contribution carbone est maintenu à 17 euros par tonne de CO2 ;
+ -  pour les ménages, le dispositif reste inchangé, reposant sur le principe du bonus-malus ;
+ -  pour les entreprises, petites, moyennes ou grandes, la mise en oeuvre de la contribution carbone, conjuguée à la réforme de la taxe professionnelle, aboutit à déplacer la fiscalité des investissements et du travail vers la pollution. Pour certains secteurs sensibles et intensifs en énergie, les mesures spécifiques transitoires sont maintenues. Il en sera ainsi pour l'agriculture et la pêche ou le transport routier, maritime et fluvial de marchandises.
+Une contribution carbone sera appliquée jusqu'au 1er janvier 2013 aux installations soumises au système des quotas d'émission. Des dispositifs spécifiques pour certains secteurs sensibles seront mis en place pour préserver la compétitivité des entreprises.
+Une conférence de consensus d'experts réunissant élus, syndicalistes, économistes, représentants du patronat et ONG sur la contribution carbone a été organisée sous la présidence de Michel Rocard en juillet 2009. A l'issue de celle-ci, s'est dégagée la volonté de mettre en place une contribution carbone sur les consommations d'énergie non soumises au système des quotas.
+Suite à la décision du Conseil constitutionnel, le Gouvernement engage une concertation large, ouverte à toutes les parties prenantes, sur le dispositif de contribution carbone pour les secteurs industriels.
+ - 2 - 
+
+
+La concertation porte notamment sur : - l'impact d'une contribution carbone sur les secteurs concernés ; - les critères d'appréciation pour l'application à certains secteurs d'un dispositif spécifique (degré d'exposition à la concurrence internationale, caractère intensif en énergie, etc.) ; - les modalités d'assujettissement à la contribution carbone (application de tarifs réduits pour les secteurs les plus exposés, mécanismes de bonus-malus, etc.) ; - les modalités de compensation de la contribution carbone (soutien aux investissements environnementaux, etc.).
+Il n'est pas souhaitable, ni sur le plan écologique, ni sur le plan économique que la mise en place de la contribution carbone en France donne un avantage aux entreprises fabriquant des produits intensifs en CO2 dans les pays qui n'imposent pas le même type de contraintes de réduction des émissions de gaz à effet de serre. Les entreprises seraient incitées à délocaliser leur activité dans les pays qui ne taxent pas les émissions de CO2. Les émissions globales dans ce cas pourraient augmenter en raison de la délocalisation des émissions de carbone. C'est pourquoi le Gouvernement défendra en parallèle, auprès des autorités communautaires, la mise en place d'une contribution carbone européenne. Pour la France comme pour l'Union européenne, le meilleur moyen de limiter les émissions mondiales de CO2 est d'obtenir un accord satisfaisant au niveau international. Néanmoins, pour prévenir les fuites de carbone vers les pays qui ne partageraient pas ces efforts, le Gouvernement défendra également la mise en place d'un mécanisme d'inclusion carbone, dont le principe est d'ailleurs envisagé dans la directive 2009/29 du 23 avril 2009, établissant ainsi un cadre concurrentiel juste pour les entreprises implantées en Europe.
+Avertissement : ce document expose les principales questions de fond posées par l'application d'une contribution carbone aux secteurs soumis au système des quotas d'émission. Les pistes de travail qu'il soumet à la concertation en toute transparence ne lient pas le Gouvernement quant à leur mise en oeuvre effective.
+ - 3 - 
+
+
+SOMMAIRE
+1. Les objectifs de la contribution carbone.................................................................................... 5 2. Un nouveau dispositif largement calqué sur le précédent pour les ménages et les secteurs non industriels ....................................................................................................................................... 7
+2.1. Un taux de base identique : 17 euros par tonne de CO2 ................................................. 7 2.2. La même logique de bonus/malus pour les ménages..................................................... 7 2.3. Un dispositif inchangé pour les entreprises des secteurs non industriels .................. 9
+2.3.1. Des secteurs professionnels sensibles bénéficieront de taux réduits transitoires : agriculture, pêche, transport de marchandises .............................................................................. 9 2.3.2. L'exonération du transport public routier en commun de voyageurs sera maintenue .. 9 3. Une extension de la contribution carbone pour les secteurs soumis au système des quotas ................................................................................................................................................... 10 3.1. Assiette de la taxe pour les secteurs industriels........................................................... 10 3.2. La durée du dispositif pour les installations soumises au système de quotas ......... 11 3.3. Taux de la taxe pour les secteurs industriels ................................................................ 11 3.3.1. Option 1 : des taux réduits pour les entreprises les plus exposées ............................ 12 3.3.2. Option 2 : Le principe du bonus-malus avec une restitution forfaitaire, sur le modèle retenu pour les ménages .............................................................................................................. 15 4. Trois secteurs à traiter de manière spécifique ........................................................................ 18 4.1. Le transport aérien ............................................................................................................ 18 4.2. La production d'électricité ............................................................................................... 18 4.2.1. La contribution carbone s'appliquerait à l'électricité produite par les centrales thermiques. ................................................................................................................................... 18 4.2.2. La production d'électricité devrait bénéficier d'un taux réduit pour limiter l'impact sur la compétitivité des centrales françaises .......................................................................................... 18 4.3. Les réseaux de chauffage urbain .................................................................................... 19 5. Annexes ....................................................................................................................................... 20 5.1. Annexe 1 : La contribution carbone (17/tCO2), basée sur le contenu carbone des combustibles (hors contenu carbone incorporé dans le produit final) des secteurs énergivores (taxe > 0.5% de la VA)................................................................................................ 20 5.2. Annexe 2 : Présentation détaillée du principe de l'option 1.b...................................... 22 5.3. Annexe 3 : Le dispositif Carbon Reduction Commitment Energy Efficiency Scheme au Royaume-Uni .............................................................................................................................. 27
+ - 4 - 
+
+
+1. Les objectifs de la contribution carbone
+
+Le Grenelle de l'Environnement a conduit à un constat partagé par tous : Il nous faut agir non seulement pour protéger l'environnement mais aussi pour garantir une compétitivité durable de notre économie.
+
+La première priorité est de réduire les émissions de gaz à effet de serre, pour contenir à 2°C l'évolution moyenne de température de notre planète, d'ici à 2050. Dans le cadre du Grenelle de l'Environnement, la France s'est fixée un objectif de division par quatre des émissions de gaz à effet de serre d'ici à 2050.
+
+Retarder l'atteinte de cet objectif pourrait être coûteux. Lord Nicholas Stern a démontré que les dommages causés par le réchauffement de la planète, en cas d'inaction pour les éviter, seraient 5 à 20 fois supérieurs aux sacrifices que nos économies devraient supporter pour lutter contre l'effet de serre. Il nous faut donc agir, et dès aujourd'hui.
+
+Conformément aux conclusions de la table-ronde du Grenelle de l'environnement, la loi n° 2009-967 du 3 août 2009 de programmation relative à la mise en oeuvre du Grenelle de l'environnement, stipule en son article 2 que l'Etat étudiera la création d'une contribution carbone qui "  aura pour objet d'intégrer les effets des émissions de gaz à effet de serre dans les systèmes de prix par la taxation des consommations d'énergies fossiles. "
+
+Les émissions de CO2 du pays relèvent de deux catégories distinctes :
+ -  les émissions intensives, provenant de secteurs industriels fortement émetteurs de CO2 sur des sites localisés ; ces émissions représentent 38% des émissions nationales, et tous les pays de l'Union européenne ont mis en place, dès 2005, un plafond d'émission associé à un marché de quotas d'émission ; c'est le système européen ETS (Emission Trading Scheme), traduit en France par le Plan National d'Allocation des Quotas (PNAQ) ;
+
+ -  les émissions diffuses, réparties entre tous les autres acteurs - entreprises et ménages - et difficilement localisables. Il existe pour ces secteurs des règlementations, des incitations ainsi que des taxes sur l'énergie mais dont la finalité première n'est pas la réduction des émissions de CO2.
+Si globalement la France a réduit ses émissions depuis 1990 de 6,4% pour se situer en 2008 à 527 millions de tonnes de CO2, la décomposition par secteur fait apparaître une augmentation des émissions du secteur résidentiel-tertiaire et du secteur des transports entre 1990 et 2008 (tableau 1).
+
+Le tableau 2 précise l'évolution des émissions des secteurs soumis au système de quotas depuis l'entrée en vigueur de ce dernier. Entre 2005 et 2008, les émissions des secteurs sous quotas ont baissé de 8%, ce qui correspond à une réduction annuelle de 2,7% par an. Ce rythme est supérieur à la tendance des émissions de l'industrie sur la période 1990-2008 ( - 1,4% par an), ce qui suggère que l'entrée en vigueur du système de quotas a permis d'accélérer la décroissance des émissions des secteurs concernés.
+
+Tableau 1 : Evolution des émissions des différents secteurs d'activité et contribution de chacun à l'évolution des émissions entre
+
+2007 et 2008 (source : inventaire PNLCC/CITEPA, édition décembre 2009) (1)
+
+1990 (Mt éq. CO2)
+
+2005 (Mt éq. CO2)
+
+2008 (Mt éq. CO2)
+
+variation du secteur
+
+Evolution entre 1990 et entre 2005 et 2008 (en variation du secteur entre
+
+2008 (en %)
+
+Mt éq. CO2)
+
+2005 et 2008 (en %)
+
+Total hors UTCF
+
+563
+
+557
+
+527
+
+ - 6,4 -29,5
+
+ - 5,3
+
+dont Transports
+
+119
+
+143
+
+135 13,5 -8,1
+
+ - 5,7
+
+dont Résidentiel Tertiaire
+
+89
+
+105
+
+99
+
+11,4
+
+ - 5,6
+
+ - 5,3
+
+dont Industrie manufacturière
+
+146
+
+113
+
+103 -29,1 -9,8
+
+ - 8,7
+
+dont Industries de l'énergie
+
+78
+
+75
+
+70
+
+ - 10,9
+
+ - 5,5
+
+ - 7,3
+
+dont Agriculture/ sylviculture
+
+119
+
+109
+
+110
+
+ - 7,8
+
+0,6
+
+0,6
+
+(1) La catégorie transport comprend le transport routier de personnes et de marchandises, le transport fluvial, ferroviaire,
+
+l'aviation civile - vols domestiques.
+
+ - 5 - 
+
+
+Tableau 2 : Evolution des émissions des secteurs sous quotas entre 2005 et 2008 (source : Community Independent Transaction Log)
+
+Secteur
+
+Emissions 2005 Emissions 2006 Emissions 2007 Emissions 20081
+
+(MtCO2)
+
+(MtCO2)
+
+(MtCO2)
+
+(MtCO2)
+
+Variation entre 2005 et 2008 (%)
+
+Acier Céramique Chauffage urbain Chaux Ciment Cokerie Combustion agro alimentaire Combustion autres Combustion chimie Combustion énergie Combustion externalisée Combustion industrie Electricité Papier Raffinage Transport de gaz Tuiles et briques Verre Total
+
+26,76 0,02 5,80 2,96
+14,09 0,26 5,04 2,66 9,53 0,34 2,49 1,08
+33,63 3,66
+17,33 0,93 0,99 3,71
+131,27
+
+27,61 0,02 5,77 3,09
+14,46 0,19 4,92 2,39 9,33 0,32 2,48 1,01
+29,01 3,41
+17,66 0,75 1,03 3,66
+127,09
+
+26,86 0,01 5,27 3,03
+14,73 0,14 5,10 2,17 9,15 0,33 2,52 0,97
+30,31 3,06
+17,73 0,61 1,03 3,60
+126,64
+
+24,33 0,01 5,29 2,97
+13,87 0,14 4,95 2,03 9,13 0,31 2,67 0,90
+29,00 2,75
+17,88 0,61 0,90 3,30
+121,03
+
+ - 9% -20%
+ - 9% 0% -2% -44% -2% -24% -4% -10% 7% -16% -14% -25% 3% -35% -9% -11% -8%
+
+Ainsi que l'a rappelé la conférence des experts réunis en juillet 2009 sous la présidence de M. Rocard, l'intégration des effets des émissions de gaz à effet de serre dans le système de prix (taxation, quotas d'émission échangeables) permettra à la France de réduire ses émissions de CO2 au moindre coût pour l'économie. En effet, révéler un prix du carbone via une taxe (ou un marché des quotas) incite les agents à choisir entre le coût lié à la diminution d'une unité de pollution et le coût lié au paiement de la taxe. Chaque agent a intérêt à mettre en oeuvre des mesures de réduction de ses émissions dont le coût est inférieur à la taxe ou au prix du quota. Les efforts sont ainsi dirigés vers là où ils sont le moins coûteux.
+
+En donnant un prix aux émissions de CO2, la contribution carbone amène chacun à adopter un comportement responsable et respectueux de l'environnement. Cette mesure, mise en oeuvre à niveau de prélèvements obligatoires constant, est bénéfique pour l'environnement et pour l'économie. En outre, la contribution carbone permet d'anticiper la hausse du prix des combustibles et de renforcer notre indépendance énergétique. Elle facilite donc la préparation de "  l'ère de l'après-pétrole  ".
+
+1 Les émissions 2008 ont été ajustées au périmètre de la phase I (2005-2007) pour permettre la comparaison avec les années précédentes.
+ - 6 - 
+
+
+2. Un nouveau dispositif largement calqué sur le précédent pour les ménages et les secteurs non industriels
+2.1. Un taux de base identique : 17 euros par tonne de CO2
+Dans le projet de loi initial, le tarif de la contribution carbone a été fixé à 17 euros par tonne de CO2, en référence au marché des permis d'émission dans le système de quotas.
+Afin de permettre aux acteurs économiques de s'adapter et de s'orienter vers des modes de production et de consommation plus sobres en carbone, et cela à moindre coût pour la collectivité, le tarif de la contribution carbone aura vocation à augmenter progressivement chaque année, après avis de la commission "  contribution carbone  " qui sera mise en place. L'objectif sera d'atteindre, à terme, un signal prix suffisant, évalué à 100 euros par tonne de CO2 en 2030 lors de la conférence des experts de juillet 2009, pour refléter intégralement les externalités liées aux émissions de ce gaz à effet de serre et permettre de respecter les engagements de la France dans la lutte contre le changement climatique.
+2.2. La même logique de bonus/malus pour les ménages
+Il est proposé de conserver le dispositif qui était prévu pour les ménages, reposant sur le principe du bonus-malus :
+ -  Un crédit d'impôt forfaitaire est distribué à chaque ménage. Il prendra la forme soit d'une réduction de l'impôt sur le revenu, soit d'un chèque du Trésor public. Le montant du crédit d'impôt pour une année pleine est forfaitaire et fixé à 46 euros par adulte. Il sera toutefois modulé :
+1) en fonction de la composition du foyer fiscal. Ainsi, le crédit d'impôt sera doublé pour les couples soumis à imposition commune et sera majoré de 10 euros par personne à charge ;
+2) en fonction de l'éloignement des centres urbains du domicile du contribuable. Chaque adulte recevra 46 euros s'il vit dans une zone desservie par des transports en commun, 61 euros s'il vit ailleurs. Cette distinction sera opérée sur le fondement de l'intégration ou non du domicile du contribuable dans un périmètre de transports urbains (PTU), tel que défini à l'article 27 de la loi n°82-1153 du 30 décembre 19 82 d'orientation des transports intérieurs2.
+
+Exemples de montants du crédit d'impôt (base annuelle)
+
+Cas Célibataire sans enfant
+Couple sans enfant Couple avec trois enfants
+
+Milieu urbain (PTU) 46  92  122
+
+Milieu rural (hors PTU) 61  122  152 
+
+ -  Sur la base d'une taxe de 17 la tonne de CO2, la contribution carbone (malus) renchérira le litre d'essence d'environ 4 centimes d'euros et le litre de diesel d'environ 4,5 centimes d'euros supplémentaires, hors TVA. Ceci conduit à un renchérissement d'environ 2 euros pour un plein de 40 litres d'essence ou de diesel.
+
+2 Cet article désigne le PTU comme la zone qui comprend "  le territoire d'une commune ou le ressort territorial d'un établissement public ayant reçu mission d'organiser les transports publics de personnes  " ou qui comprend "  le territoire de plusieurs communes adjacentes ayant décidé d'organiser en commun un service de transports publics de personnes  ".
+ - 7 - 
+
+
+ -  La combinaison des deux - crédit d'impôt et contribution carbone - incite les ménages à faire des choix écologiques dont ils tireront un bénéfice. Changer ses habitudes pour un comportement plus sobre apportera ainsi un gain financier.
+Ce système de compensation assure en moyenne pour les ménages les plus modestes une compensation supérieure à la contribution carbone qu'ils devront verser. Coût net (contribution carbone - crédit d'impôt) annuel moyen d'une contribution carbone à 17/tCO2 par
+zone de résidence et niveau de vie
+Source : Enquête "  budget de famille  " 2006 de l'INSEE, calculs DGTPE
+La contribution carbone devant entrer en vigueur le 1er juillet 2010, le crédit d'impôt pour l'année 2010 devra être réduit de 50%.
+ - 8 - 
+
+
+2.3. Un dispositif inchangé pour les entreprises des secteurs non industriels Le Conseil constitutionnel a rappelé dans sa décision du 29 décembre 2009 que le principe d'égalité n'impose pas un traitement uniforme de toutes les entreprises, ménages et administrations. Des réductions de taux de contribution carbone ou des tarifications spécifiques peuvent être justifiées par la poursuite d'un intérêt général, telle que la sauvegarde de la compétitivité de secteurs économiques exposés à la concurrence internationale. Il s'agit de laisser le temps à ces secteurs de s'adapter à des modes de production et de transport plus économes en CO2 et de ne pas pénaliser leur compétitivité vis-à-vis de leurs concurrents étrangers. Certains des dispositifs spécifiques prévus dans le PLF 2010 seront maintenus. 2.3.1. Des secteurs professionnels sensibles bénéficieront de taux réduits transitoires :
+agriculture, pêche, transport de marchandises Ainsi, pour certains secteurs sensibles et intensifs en énergie, les mesures spécifiques transitoires seront maintenues. Il en sera ainsi pour l'agriculture et la pêche (taxés à 25% du tarif de base) ou le transport routier, maritime et fluvial de marchandises (taxés à 65% du tarif de base). 2.3.2. L'exonération du transport public routier en commun de voyageurs sera maintenue Le développement du transport public routier en commun de voyageurs limite le recours à d'autres modes de transport qui émettent beaucoup de dioxyde de carbone. Le transport en commun maximise l'efficacité de l'utilisation des carburants et génère des rejets de dioxyde de carbone par kilomètre passagers très faibles, ce qui justifie l'exonération de contribution carbone pour ces consommations.
+ - 9 - 
+
+
+3. Une extension de la contribution carbone pour les secteurs soumis au système des quotas
+3.1. Assiette de la taxe pour les secteurs industriels
+Les secteurs industriels (autres que le transport aérien, la production d'électricité et le chauffage urbain) représentent en France la majorité des activités assujetties au système de quotas à la fois en nombre et en volume d'émissions (100 Mt CO2 en 2008, soit 76% du total des émissions sous quotas).
+L'objectif de la contribution carbone est de donner un prix aux émissions de CO2. En pratique, la taxe sera assise sur les consommations de combustibles qui génèrent des émissions de CO2. La contribution carbone s'appliquera donc aux émissions liées à la combustion d'intrants énergétiques (gaz, charbon, fioul, etc.). La question du traitement des émissions associées à l'utilisation de ces combustibles dans des procédés industriels est posée. Dans ces derniers, une fraction du CO2 est piégée dans les produits et n'est donc pas émise dans l'atmosphère. Pour tenir compte de cette situation, un abattement forfaitaire proportionnel au carbone incorporé dans le produit final pourrait être appliqué, de façon à n'inclure dans le champ de la taxe que le CO2 réellement diffusé dans l'atmosphère.
+Les secteurs concernés sont invités à fournir la décomposition de leurs émissions de CO2 (combustion d'intrants énergétiques, émissions de procédé industriel, etc.).
+L'application de la contribution carbone aux consommations des installations soumises au système de quotas implique de réfléchir à l'articulation des deux dispositifs.
+En effet, les installations industrielles sous quotas auraient à la fois l'obligation d'acquitter une taxe assise sur les consommations de combustibles qui génèrent des émissions de CO2 (contribution carbone) et l'obligation d'égaliser leurs quotas avec leurs émissions totales de CO2 (y compris CO2 énergétique), dans le cadre du système de quotas. Un tel système pourrait conduire à ce qu'un secteur ou une installation "  courte  ", c'est-à-dire dont les émissions de CO2 excèdent les quotas gratuits alloués par l'Etat, paye "  deux fois  " pour le CO2 émis : d'une part, le règlement de la contribution carbone, sur les consommations de combustible ; d'autre part et en plus, l'achat de quotas sur le marché (ou aux enchères), pour la part qui dépasse la dotation initiale.
+Zone de superposition de la contribution carbone et des quotas d'émission
+
+Quotas payants (10)
+
+Contribution carbone
+
+Quotas gratuits (90)
+
+La superposition de la taxe et du système de quotas aboutirait dans ce cas à une double charge, sans justification économique ni environnementale avérée : la même tonne de CO2 pourrait coûter jusqu'à deux fois plus aux installations industrielles qu'aux entreprises du même secteur hors système de quotas.
+Pour prévenir ces distorsions, des solutions doivent être imaginées comme par exemple la déductibilité des sommes engagées pour acquérir des quotas du montant de la contribution carbone.
+
+ -  10  - 
+
+
+Compte tenu de leur articulation avec le système de quotas, la faisabilité juridique des solutions imaginées devra faire l'objet de vérifications préalables avec la Commission européenne.
+Les secteurs concernés sont invités à fournir la part de leurs émissions de CO2 correspondant à des achats de quotas de 2005 à 2012.
+3.2. La durée du dispositif pour les installations soumises au système de quotas
+La nouvelle directive "  quotas  " (2009/29), adoptée dans le cadre du paquet énergie-climat sous présidence française de l'Union européenne, modifie sur de nombreux points la directive en vigueur : en particulier, la délivrance des quotas d'émissions aux entreprises par la voie de la mise aux enchères deviendra la règle de droit commun. Ainsi :
+ -  Les producteurs d'électricité devront acheter 100 % de leurs quotas dès 2013.
+ -  Les secteurs industriels non exposés à la concurrence internationale devront acheter aux enchères 20 % des quotas calculés sur la base des émissions des 10% d'installations les plus performantes du secteur en 2013, puis 70% en 2020 pour tendre vers 100% en 2027. En fonction de la sévérité des référentiels sectoriels en cours d'adoption au niveau européen, ces secteurs pourraient payer près de la moitié de leurs quotas dès 2013.
+ -  Les industriels exposés à la concurrence internationale se verront allouer gratuitement des quotas sur la base de benchmarks correspondant au 10% d'installations les plus efficaces de chaque secteur. Ainsi s'ils bénéficieront de quotas "  gratuits  " à hauteur de ces référentiels sectoriels, une installation de ce secteur devra en réalité acquérir (aux enchères ou sur le marché) une part non négligeable de ses besoins de quotas dès 2013 (entre 30% et 60% en moyenne au niveau européen selon les estimations disponibles à ce jour).
+ -  Le transport aérien devrait acheter 40% de ses quotas à partir de 2012, date de l'entrée du secteur dans le système de quotas3.
+Le système de quotas en phase III justifie une exonération des entreprises sous quotas dès son entrée en vigueur, soit 2013 dans le cas général et 2012 dans le cas particulier du secteur aérien.
+Les secteurs concernés sont invités à fournir l'estimation de la part de leurs émissions de CO2 correspondant à des achats de quotas à partir de 2013.
+Les parties prenantes sont invitées à émettre un avis sur la fin du dispositif pour les installations soumises au système de quotas au 1er janvier 2013.
+3.3. Taux de la taxe pour les secteurs industriels
+Une contribution carbone de 17/tCO2 basée sur le contenu carbone des combustibles (hors contenu carbone incorporé dans le produit final) représenterait en moyenne 0,7% de la valeur ajoutée (VA) des industries (hors branche énergie) comme l'indique le graphique ci-après. Cette charge supplémentaire pourrait représenter 2.6% de l'excédent brut d'exploitation du secteur industriel.
+Ce chiffre cache des disparités catégorielles importantes : la contribution carbone pourrait représenter 15,4 % de la valeur ajoutée pour la fabrication de produits azotés et d'engrais, 10,4% pour la sidérurgie, 6,3% pour la chimie minérale, 5,9% pour la fabrication de plâtre, chaux et ciment.
+3 Le plafond d'émissions pour le secteur aérien est fixé pour 2012 à 97% des émissions historiques du secteur sur la période 2004-2006. 85% du volume de quotas alloués au secteur aérien sera alloué gratuitement aux opérateurs, qui devront acquérir le reste de leurs besoins en quotas aux enchères ou sur le marché. Du fait de la forte croissance du secteur aérien depuis 2004-2006, la part des quotas que les opérateurs aériens devront acquérir est estimée à environ 40% en 2012.
+ -  11  - 
+
+
+Produits laitiers Sucre
+Industrie agro alimentaire Extraction de minerais de fer et de
+métaux non ferreux Sidérurgie
+Première transformation de l'acier Métallurgie et métaux non ferreux
+Production de minéraux divers plâtre, chaux et ciment
+construction et céramique Industrie du verre
+Produits azotés et d'engrais Chimie minérale
+Matières plastiques Chimie organique de base Fibres artificielles ou synthétiques
+Parachimie et industrie pharmaceutique
+Fonderie et travail des métaux Construction mécanique
+Construction électrique et électronique
+Automobiles et matériels de transport terrestre
+Construction navale, aéronautique textile, cuir et habillement Papier et carton Caoutchouc
+Transformation des matières plastiques Industries diverses Total industrie
+
+Contribution sur le contenu carbone des combustibles fossiles hors matière première en % de la Valeur Ajoutée
+16,0% 14,0% 12,0% 10,0%
+8,0% 6,0% 4,0% 2,0% 0,0%
+Les disparités sont plus importantes lorsque l'on analyse les résultats par secteur. On dénombre plus de 40 sous secteurs qui paieraient un montant supérieur à 1% de leur VA. Ces secteurs sont listés dans l'annexe 1. Parmi eux, certains auraient à payer une contribution carbone correspondant à une part très importante de leur valeur ajoutée.
+Les secteurs concernés sont invités à estimer l'impact, en valeur absolue et en part de leur valeur ajoutée, d'une contribution carbone à 17/tCO2. On peut, sans préjudice d'autres solutions éventuelles, dès lors envisager deux dispositifs distincts, décrits dans les options 1 et 2. 3.3.1. Option 1 : des taux réduits pour les entreprises les plus exposées La première option consisterait à assujettir l'ensemble des industries à la contribution carbone. Néanmoins, des taux réduits pourraient être instaurés pour les secteurs les plus exposés, notamment les industries à forte intensité énergétique et exposées à la concurrence internationale. Des solutions juridiquement robustes visant à plafonner le montant de la contribution carbone pour ces entreprises pourront être recherchées. En effet, il ne serait pas pertinent qu'une contribution carbone excessive entraîne des délocalisations vers des pays voisins qui n'imposent pas les mêmes contraintes sur leurs entreprises. Non seulement l'emploi serait délocalisé mais également les émissions de CO2, ce qui irait à l'encontre de l'objectif de la taxe. 3.3.1.1. L'exposition à la concurrence internationale Pour apprécier l'exposition des secteurs économiques à la concurrence internationale, il est proposé de s'inspirer de l'approche utilisée par la Commission européenne dans sa décision du 24 décembre 2009 établissant la liste des secteurs considérés comme particulièrement exposés aux risques de fuites de carbone.
+ -  12  - 
+
+
+Cette liste a été établie sur la base d'une analyse de deux critères quantitatifs :
+ -  le taux d'exposition à la concurrence internationale, défini pour chaque secteur, comme le rapport entre la valeur totale des exportations vers des pays tiers plus la valeur des importations en provenance de pays tiers divisée par la taille totale du marché pour l'Union européenne (chiffre d'affaires du secteur plus total des importations en provenance de pays tiers).
+ -  l'impact économique de la mise en oeuvre de la directive ETS. Ce critère correspond au coût d'application de la directive (sur la base d'un coût de la tonne de C02 de 30) divisé par la valeur ajoutée.
+Un secteur est considéré comme exposé à un risque important de fuite de carbone:
+ -  si son taux d'exposition à la concurrence internationale est supérieur à 30% ;
+ -  ou si l'impact économique de la mise en oeuvre de la directive ETS, rapporté à la valeur ajoutée, est supérieur à 30% ;
+ -  ou si son taux d'exposition à la concurrence internationale est supérieur à 10% et si l'impact économique de la mise en oeuvre de la directive ETS, rapporté à la valeur ajoutée est également supérieur à 5%.
+Pour la contribution carbone à 17/tCO2, le taux d'exposition à la concurrence internationale et l'impact économique devraient être appréciés, dans le cadre d'une analyse ad hoc, sur l'ensemble des secteurs économiques français (identifiés par code d'activité NAF).
+Les parties prenantes sont invitées à indiquer si ces critères leur paraissent pertinents pour apprécier l'exposition à la concurrence internationale des secteurs industriels.
+Les secteurs concernés sont invités à évaluer leur taux d'exposition à la concurrence internationale et l'impact économique direct de la contribution carbone sur les dépenses de combustibles.
+3.3.1.2. Les taux réduits
+Principe :
+Lorsqu'un secteur industriel est considéré comme particulièrement exposé à la concurrence internationale, le taux de la contribution carbone serait différencié du taux de droit commun. Les entreprises des secteurs non particulièrement exposés paieraient la taxe sur l'ensemble de l'assiette au tarif de droit commun (17/tCO2).
+Plusieurs options sont ouvertes :
+Option 1.a. Pour chaque entreprise d'un secteur exposé, on applique un taux réduit sur l'ensemble de l'assiette de la taxe.
+Option 1.b. Pour chaque entreprise d'un secteur exposé, le taux est différencié selon l'impact du coût de la taxe par rapport à la valeur ajoutée de l'entreprise. Quand le coût de la taxe, au taux de droit commun dépasse un seuil (voir annexe 2), le taux de la taxe est modulé sur la part correspondante de l'assiette. Plusieurs seuils d'impact sur la valeur ajoutée peuvent être introduits, avec des taux dégressifs par tranche d'assiette.
+Les secteurs concernés sont invités à estimer l'impact de la contribution carbone pour chacune des options.
+ -  13  - 
+
+
+3.3.1.3. Les mesures d'accompagnement pour les options 1a et 1b
+La mise en place d'une contribution carbone s'accompagnerait de mesures complémentaires qui pourraient prendre la forme d'un crédit d'impôt, par exemple pour :
+ -  les investissements environnementaux permettant d'aller au-delà des normes européennes ;
+ -  les équipements éligibles aux dispositions de l'amortissement accéléré s'il s'agit d'investissements de renouvellement.
+a) Trois types d'investissements environnementaux pourraient être envisagés :
+1/ Les investissements pour économiser l'énergie :
+Le crédit d'impôt pourrait porter à la fois sur des études, diagnostics, audits initiaux, systèmes de management ou sur des investissements de nature diverse (matériel permettant la récupération d'énergie, échangeurs thermiques, matériels permettant l'amélioration du rendement énergétique, matériels d'isolation...).
+2/ Les investissements pour réduire les émissions de polluants dans l'air :
+Il existe des réglementations européennes et nationales précises sur les émissions de polluants dans l'air. Outre le fait qu'elles visent à préserver la qualité de l'air ambiant, ces réglementations ont également pour objectif de réduire les émissions à la source (Directive plafonds 2001/81/CE). Ainsi des plafonds d'émission nationaux sont définis pour les polluants comme le dioxyde de soufre, les oxydes d'azote, les composés organiques volatils, l'ammoniac (ne concerne pas l'industrie) et prochainement les particules PM2,5. Des objectifs plus contraignants doivent être définis pour 2020. Un effort national supplémentaire est nécessaire au respect de la réglementation que le projet de Directive plafond révisée devrait imposer pour 2020.
+Le crédit d'impôt pourrait donc s'appliquer aux investissements nécessaires pour répondre au surcoût entre la réglementation actuelle et ce qu'elle pourrait être en 2020.
+3/ Les investissements pour la prévention des risques industriels :
+L'objectif est d'appuyer les investissements identifiés pour sécuriser les sites industriels aux risques accidentels, conformément aux démarches engagées par l'Etat pour les sites Seveso. Des plans de prévention des risques technologiques sont élaborés en ce sens. Deux types de dépenses sont identifiés :
+ -  les dépenses de sécurité intrinsèque de sites, dites "  réduction du risque à la source  ", à la charge des exploitants. Les investissements consentis à ce titre en 2007 se sont élevés à 200 M pour les 630 industriels concernés, et à 300 M en 2008, et devraient augmenter dans les prochaines années,
+ -  les dépenses de nature foncière, dont les exploitants financent une partie (environ 40%).
+b) les équipements éligibles aux dispositions de l'amortissement accéléré (articles 39AB à 39 AF du code général des impôts) s'il s'agit d'investissements de renouvellement. L'objectif est d'accélérer le renouvellement du matériel afin de permettre aux entreprises d'être économes en énergie et moins émettrices de polluants.
+Ces éléments ne sont que des pistes de réflexion dans l'attente de propositions adaptées à une compensation de dépenses à court terme, tout en respectant le principe d'additionnalité par rapport à la réglementation, comme exigé par les règles communautaires.
+Ce crédit d'impôt limiterait l'impact économique de la contribution carbone sur les secteurs les plus sensibles tout en maintenant son caractère incitatif. Les règles communautaires encadrant la
+ -  14  - 
+
+
+possibilité de pratiquer des taux différenciés et de mettre en place certains types de mesures de compensation sectorielles, cette option devra faire l'objet d'échanges avec la Commission européenne.
+Ces pistes ne sont pas limitatives et les parties prenantes peuvent formuler d'autres propositions.
+Les secteurs concernés sont invités à estimer la part de contribution carbone qui pourrait être compensée par les mesures proposées.
+
+3.3.2. Option 2 : Le principe du bonus-malus avec une restitution forfaitaire, sur le modèle retenu pour les ménages
+
+Principe :
+
+Dans cette option, l'ensemble des installations industrielles, quelle que soit leur taille, serait assujetti à la contribution carbone au tarif de droit commun (17/tCO2). En compensation, chaque entreprise recevrait un crédit d'impôt forfaitaire dont le montant pourrait être fonction :
+
+ -  option a : de ses émissions historiques (année de référence fixe à déterminer) ;
+
+ -  option b : de sa valeur ajoutée et de l'intensité carbone du secteur ou des installations les plus performantes du secteur, selon des règles à définir, exprimée en tonne de CO2 par euro de valeur ajoutée.
+
+Ce principe incite chaque entreprise à investir dans des technologies plus sobres en carbone. Celles qui adoptent un comportement plus écologique que la moyenne de leur secteur seront globalement gagnantes. Celles qui ne changent pas seront perdantes.
+
+Cette option (avec ses différentes sous-options) devra faire l'objet d'échanges avec la Commission européenne pour s'assurer de modalités respectant le cadre des règles communautaires existantes.
+
+Illustration option a : On suppose trois entreprises d'un même secteur ayant les profils d'émissions suivants entre 2009, année de référence, et 2010.
+
+Emissions 2009 Emissions 2010 Taux de la taxe
+
+Taxe
+
+Reversement
+
+A 25000 t
+
+35000 t
+
+17 /tCO2
+
+595000  382500 
+
+B 25000 t
+
+25000 t
+
+17 /tCO2
+
+425000  382500 
+
+C 50000 t
+
+30000 t
+
+17 /tCO2
+
+510000  765000 
+
+TOTAL 100000 t
+
+90000 t
+
+1530000  1530000 
+
+Le montant du reversement se calcule à partir du montant du versement et de l'évolution des émissions entre les deux années.
+
+Ainsi l'entreprise A a émis plus en 2010 par rapport à 2009. Le montant de son reversement est égal aux émissions de 2009 (25000 t), corrigées du coefficient d'évolution des émissions du secteur entre 2009 et 2010 ( - 10%) puis multipliées par le montant de la taxe (17 /tCO2), ce qui donne un montant de reversement de 382500. Le coût net est donc de 212500. Pour l'entreprise C, au contraire le reversement est supérieur de 255000  au montant versé puisque l'entreprise a diminué de 40% (20000 t) ses émissions. Pour l'entreprise B, le versement est supérieur au reversement, car elle n'a fait que maintenir le niveau de ses émissions.
+
+Cette option s'inspire notamment de dispositifs non fiscaux conçus à l'étranger, comme le carbon reduction commitment energy efficiency scheme au Royaume-Uni. Celui-ci est présenté en annexe 3.
+
+La seule prise en compte des émissions historiques dans le critère de répartition pourrait néanmoins permettre à une entreprise qui délocalise de bénéficier du dispositif en percevant des reversements
+
+ -  15  - 
+
+
+sur des activités dont les émissions sont contenues dans la référence, mais délocalisées par la suite. Pour pallier cet inconvénient, dans le cas où la réduction de capacité de production de l'entreprise dépasse un seuil (30% par exemple), il peut être envisagé de mettre à jour la référence historique avec les émissions récentes incluant la modification d'activité. Par ailleurs, certaines entreprises s'estimeront lésées si elles ont accompli des efforts de réduction d'émissions avant la mise en oeuvre du dispositif. La prise en compte des actions précoces et de l'évolution de l'intensité carbone (émissions par unité de chiffre d'affaire ou de résultat par exemple) au sein de la clé de répartition seraient à même de renforcer le signal d'incitation à la réduction des émissions.
+
+Illustration option b :
+
+On suppose qu'un secteur ne compte que deux entreprises A et B, qui ont la même valeur ajoutée (100 M/an), mais des profils d'émissions très différents : l'entreprise A est beaucoup plus polluante (15000 tCO2/an) que l'entreprise B (5000 tCO2/an). L'intensité carbone de référence du secteur est alors calculée comme le ratio des émissions totales du secteur (20000 tCO2/an) et de la valeur ajoutée (200 M) : 100 tCO2/M. Si le principe retenu est de définir comme intensité de référence l'intensité carbone des entreprises les plus performantes, elle devient 50 tCO2/M.
+* Utilisation de l'intensité carbone moyenne :
+
+Le montant de la contribution carbone pour chaque entreprise est le produit du taux de la taxe et des émissions de CO2. Le crédit d'impôt est égal au produit de la valeur ajoutée de chaque entreprise, de l'intensité de référence du secteur, et du taux de la taxe. Au niveau du secteur, le montant du versement est égal au montant du crédit d'impôt. Le coût net de la taxe (égal à la différence entre le versement et le crédit d'impôt) est donc positif (perte nette) pour l'entreprise A, qui est plus polluante que la moyenne du secteur, et négatif pour l'entreprise B, qui est moins polluante que la moyenne du secteur (et qui réalise donc grâce au crédit d'impôt un gain net). Le coût net de la taxe est nul à l'échelle du secteur.
+
+Taux de la Valeur Emissions taxe ajoutée (M) (tCO2) (/tCO2)
+
+A 10015000 B 1005000 17
+
+Total secteur 200
+
+20000
+
+Taxe ()
+25500085000340000
+
+Intensité carbone moyenne du secteur (tCO2/M)
+100
+
+Coût net de Crédit d'impôt la taxe
+() ()
+
+170000
+
++85000
+
+170000
+
+ -  85000
+
+340000
+
+0
+
+Ce dispositif présente l'avantage de neutraliser l'incidence fiscale à l'échelle de chaque secteur d'activité, respectant ainsi la logique générale de la contribution carbone. Il permet ainsi de ne pas désavantager un secteur par rapport à un autre, sans avoir à déterminer un taux de taxe approprié aux circonstances particulières de chaque secteur.
+
+Ce dispositif est incitatif : les entreprises qui adoptent un comportement plus écologique que la moyenne de leur secteur seront gagnantes.
+
+ -  16  - 
+
+
+* Utilisation de l'intensité carbone des entreprises les plus performantes :
+
+Dans ce cas, le crédit d'impôt est égal au produit de la valeur ajoutée de chaque entreprise, de l'intensité carbone des entreprises les plus performantes (définies par exemple comme faisant partie du premier décile des entreprises les moins émettrices, comme dans les modalités de calcul des référentiels utilisés pour les allocations de quotas gratuits dans la directive ETS) et du taux de la taxe. Le coût net de la taxe est donc positif (perte nette supérieure à ce qu'elle est en cas de référence aux émissions moyennes) pour l'entreprise A et nul (et non plus négatif) pour l'entreprise B, dont les émissions sont d'une intensité égale à celles des entreprises les plus performantes du secteur.
+
+Taux de la Valeur Emissions taxe ajoutée (M) (tCO2) (/tCO2)
+
+A 10015000 B 1005000 17
+
+Total secteur 200
+
+20000
+
+Taxe ()
+25500085000340000
+
+Intensité carbone des meilleures entreprises du
+secteur (tCO2/M)
+
+Coût net de Crédit d'impôt la taxe
+() ()
+
+85000
+
++170000
+
+50
+
+85000
+
+0
+
+170000
+
+170000
+
+Ce dispositif présente l'avantage d'être plus incitatif que le précédent : les entreprises sont invitées à rejoindre les entreprises du même secteur les plus performantes des plus pour réduire leurs coûts associés à la taxe, qui sont nuls pour les entreprises les plus performantes.
+
+La possibilité de mettre en place un tel crédit d'impôt forfaitaire devra faire l'objet d'échanges préalables avec la Commission européenne
+
+Les parties prenantes sont invitées à émettre un avis sur la faisabilité pratique et juridique du bonus-malus ainsi que sur le choix des critères de redistribution et sur l'impact de ces deux options.
+
+ -  17  - 
+
+
+4. Trois secteurs à traiter de manière spécifique
+Dans les secteurs soumis à quotas, plusieurs cas particuliers sont à traiter séparément. Pour tous ces secteurs il faudra s'assurer au préalable qu'il n'y a pas de risque de fuite de carbone.
+4.1. Le transport aérien
+La Convention de Chicago sur l'Aviation civile internationale, ratifiée par la France, prévoit l'exonération du carburant utilisé pour les vols internationaux à destination ou au départ du territoire des Etats contractants ou transitant par ce territoire.
+La contribution carbone ne devrait donc s'appliquer qu'au trafic intérieur au sein de l'espace aérien national. Pour un taux intégral de 17 /tCO2, l'impact annuel sur le secteur serait de 33 M.
+L'application de la contribution carbone au secteur aérien domestique pourra être compensée par une baisse à due concurrence des charges pesant sur le secteur.
+Les parties prenantes sont invitées à estimer l'impact de la contribution carbone et à proposer les modes de compensation éventuels les plus pertinents pour le secteur du transport aérien.
+4.2. La production d'électricité
+4.2.1. La contribution carbone s'appliquerait à l'électricité produite par les centrales thermiques.
+L'objectif de la contribution carbone étant de lutter contre les émissions de CO2, l'électricité qui ne produit pas de CO2 doit être exclue de son champ d'application. Il en va ainsi de l'électricité produite à partir de centrales nucléaires (77%) ou d'énergies renouvelables (13%). En revanche, la décision du Conseil constitutionnel appelle à assujettir, au moins partiellement, les centrales thermiques de production d'électricité (charbon, fioul, gaz naturel) dès lors qu'elles émettent du CO2.
+4.2.2. La production d'électricité devrait bénéficier d'un taux réduit pour limiter l'impact sur la compétitivité des centrales françaises
+a) Du fait des interconnexions, les centrales françaises sont en compétition avec d'autres centrales européennes
+Le réseau français est largement interconnecté avec ceux des pays limitrophes : l'utilisation des interconnexions n'a cessé d'être optimisée, sous l'impulsion notamment de la Commission européenne. Sur la zone France-Belgique-Pays-Bas, les gestionnaires de réseau et les bourses de l'électricité (par exemple Powernext) ont créé une plate-forme unique avec un prix unique. Ce système, dit de "  couplage des marchés  ", permet d'optimiser au mieux l'utilisation des interconnexions. Il devrait s'étendre à l'Allemagne dans le courant de l'année 2010. On observe ainsi que les prix sur les marchés français, belge, hollandais sont le plus souvent alignés (86% du temps avec la Belgique en 2008)4. Les prix français et allemands sont d'ores et déjà très fortement corrélés. Le couplage de ces marchés achèvera la constitution d'un véritable marché régional qui mettra en concurrence tous les moyens de productions situés sur la zone correspondante.
+b) L'application de la contribution carbone aux centrales thermiques françaises peut avoir un effet distorsif sur le marché de l'électricité, pouvant se traduire par un transfert de la production et des émissions de CO2 vers les pays limitrophes
+Sur le marché de l'électricité, le prix s'aligne, chaque heure, sur le coût marginal de production du parc électrique. Les différents moyens de production sont mobilisés par ordre de coût marginal croissant jusqu'à ce que l'offre satisfasse la demande. Le prix de marché correspond exactement au coût marginal de la dernière centrale "  appelée  " pour satisfaire la demande. En pratique, les centrales
+4 Source : CRE
+ -  18  - 
+
+
+nucléaires et hydraulique ayant un faible coût marginal de production sont appelées quasiment en permanence (elles fonctionnent en "  base  "). Les centrales charbon, fioul ou gaz sont quant à elles utilisées lorsque la demande est élevée. Elles servent d'offre d'ajustement (elles fonctionnent en "  semi base  "). De ce fait, leur durée de fonctionnement annuelle dépend de leur coût marginal de production. La contribution carbone pourrait pénaliser les centrales thermiques françaises par rapport à celles des pays limitrophes. Cet effet pourrait paradoxalement se traduire par une augmentation des émissions de CO2 du secteur de la production d'électricité au niveau européen, du fait de l'utilisation de centrales moins performantes situées à l'étranger. Des calculs préliminaires suggèrent que l'application d'une taxe de 17 /tCO2 pourrait entraîner une hausse des émissions du secteur à l'échelle européennes de l'ordre de 1 Mt, ce qui serait contraire à l'objectif environnemental de la taxe. En conséquence, il pourrait être nécessaire de réduire le taux de la taxe (de 80% en 2010 par exemple) afin de limiter l'effet distorsif sur le marché de l'électricité. Ce taux devrait être réévalué en 2011 et 2012 en fonction de l'impact observé sur la compétitivité des centrales thermiques françaises. Les parties prenantes sont invitées à estimer l'impact de la contribution carbone pour la production d'électricité et à se prononcer sur le mécanisme de taux réduit.
+4.3. Les réseaux de chauffage urbain S'agissant des réseaux de chauffage urbain, ils pourraient être assujettis dans le cas général à la contribution carbone intégrale (17/tCO2). Les réseaux de chauffage urbain ont des clients très divers : - des ménages qui bénéficieront tous du chèque vert ; - des activités agricoles qui bénéficient d'un taux réduit (abattement de 75%) ; - des industries, dont certaines pourront bénéficier de taux réduits dans le futur dispositif. Un système spécifique fonction du panel de clients du réseau de chauffage urbain pourrait être mis en place. Ce système pourrait cependant être complexe opérationnellement et juridiquement.
+Les parties prenantes sont invitées à proposer les modes de compensation éventuels les plus pertinents pour les réseaux de chauffage urbain.
+ -  19  - 
+
+
+5. Annexes
+5.1. Annexe 1 : La contribution carbone (17/tCO2), basée sur le contenu carbone des combustibles (hors contenu carbone incorporé dans le produit final) des secteurs énergivores (taxe > 0.5% de la VA).
+
+Code activité (NAF 700)
+
+Libellé de l'activité
+
+Contribution (à 17/t CO2) sur le contenu carbone des combustibles
+(M)
+
+Impact économique direct de la contribution sur les dépenses de combustibles sur la VA (%)
+
+Taux de marge avant contribution carbone (%)
+
+Taux de marge après contribution carbone (%)
+
+241G 241J 264C
+241E 271Y 265C 211A 265A 274C 241L 274F 264A 158H 155D 261A 156D 159D 154A 157A 263Z 211C 241N 261E 272C 273C 142C 247Z
+266C 264B 159Q 275A 241C 155B
+
+Fabrication d'autres produits chimiques organiques de base Fabrication de produits azotés et d'engrais Fabrication de produits divers en terre cuite Fabrication d'autres produits chimiques inorganiques de base Sidérurgie Fabrication de chaux Fabrication de pâte à papier Fabrication de ciment Production d'aluminium Fabrication de matières plastiques de base Production de plomb, de zinc ou d'étain Fabrication de briques Fabrication de sucre Fabrication d'autres produits laitiers Fabrication de verre plat Fabrication de produits amylacés Production d'alcool éthylique de fermentation Fabrication d'huiles et graisses brutes Fabrication d'aliments pour animaux de ferme Fabrication de carreaux en céramique Fabrication de papier et de carton Fabrication de caoutchouc synthétique Fabrication de verre creux Fabrication de tubes en acier Laminage à froid de feuillards Extraction d'argiles et de kaolin Fabrication de fibres artificielles ou synthétiques Fabrication d'éléments en plâtre pour la construction Fabrication de tuiles Malterie Fonderie de fonte Fabrication de colorants et de pigments Fabrication de beurre
+
+728 45 1
+56328 10
+5 84 16 46 2 4 43 9 12 22 3 3 25 3 40 5 36 13 1 1 2
+7 8 1 6 4 2
+
+23,2% 15,1% 13,4%
+10,6% 10,5% 9,7% 8,7% 6,7% 6,2% 5,9% 5,9% 5,1% 5,0% 5,0% 4,6% 4,5% 4,0% 3,9% 3,3% 2,8% 2,7% 2,6% 2,5% 2,4% 2,3% 2,0% 1,9%
+1,9% 1,9% 1,9% 1,8% 1,8% 1,8%
+
+47% 5% 38%
+15% 43% 65% -45% 72% 14% 32% 59% 40% 52% 28% 40% 51% 38% 44% 29% 9% 23% 14% 21% 22% 25% 37% -8%
+48% 66% 53% 5% -5% 17%
+
+24,0% -9,7% 24,1%
+3,9% 32,6% 55,3% -53,9% 64,9% 7,8% 25,8% 52,7% 34,4% 47,0% 23,4% 35,7% 46,3% 33,5% 40,0% 25,8% 6,3% 20,3% 11,7% 18,1% 19,8% 22,7% 35,3% -9,4%
+46,5% 64,2% 50,8% 3,1% -6,7% 15,1%
+
+ -  20  - 
+
+
+241A
+153A 173Z
+244A 273G
+141C 262C 273E 154C
+261J
+297C 275C 274D 295A 274K 246C 153E 175E 284A 158V 155C 262J 315A 175A 159J 262L 275E 155A 156B 153C
+262A
+
+Fabrication de gaz industriels Transformation et conservation de pommes de terre
+Ennoblissement textile Fabrication de produits pharmaceutiques de base
+Tréfilage à froid Extraction de calcaire industriel, de gypse et de craie
+Fabrication d'appareils sanitaires en céramique
+Profilage à froid par formage ou pliage
+Fabrication d'huiles et graisses raffinées Fabrication et façonnage d'articles techniques en verre Fabrication d'appareils ménagers non électriques
+Fonderie d'acier
+Première transformation de l'aluminium
+Fabrication de machines pour la métallurgie
+Première transformation du cuivre
+Fabrication de colles et gélatines
+Transformation et conservation de légumes
+Fabrication de non-tissés
+Forge, estampage, matriçage
+Industries alimentaires n.c.a.
+Fabrication de fromages
+Fabrication d'autres produits céramiques
+Fabrication de lampes
+Fabrication de tapis et moquettes
+Cidrerie
+Fabrication de produits céramiques réfractaires
+Fonderie de métaux légers
+Fabrication de lait liquide et de produits frais
+Autres activités de travail des grains
+Préparation de jus de fruits et légumes Fabrication d'articles céramiques à usage domestique ou ornemental
+
+(Source : MEEDDM, d'après CEREN, 2007)
+
+8
+3 5
+2 1
+1 1 2 1
+2
+2 2 5 1 2 1 4 1 4 5 10 0 0 1 0 1 3 6 1 1
+1
+
+1,7%
+1,5% 1,4%
+1,2% 1,1%
+1,1% 1,0% 1,0% 0,9%
+0,8%
+0,8% 0,8% 0,8% 0,7% 0,7% 0,7% 0,7% 0,7% 0,7% 0,6% 0,6% 0,6% 0,6% 0,6% 0,6% 0,6% 0,5% 0,5% 0,5% 0,5%
+0,5%
+
+15%
+40% 7%
+ - 295% 27%
+48% -1% 43% 47%
+17%
+27% 9% 31% 7% 22% 32% 32% 32% 18% 43% 29% 4% 27% 13% 30% 22% 19% 40% 38% 40%
+11%
+
+13,3%
+38,4% 6,1%
+ - 296,1% 26,2%
+47,3% -1,7% 41,7% 46,5%
+16,1%
+26,1% 7,8% 30,5% 6,5% 21,5% 31,3% 31,0% 31,7% 16,9% 42,4% 28,3% 3,8% 26,8% 12,1% 29,7% 21,8% 18,8% 39,1% 37,8% 39,4%
+11,0%
+
+ -  21  - 
+
+
+5.2. Annexe 2 : Présentation détaillée du principe de l'option 1.b.
+Principe :
+Si un secteur n'est pas considéré comme particulièrement exposé à la concurrence internationale, toutes les entreprises de ce secteur paient la taxe au taux de droit commun (appelé T), sur l'assiette retenue par entreprise, appelée E.
+Si un secteur est considéré comme particulièrement exposé à la concurrence internationale, le taux de la contribution carbone est différencié selon l'impact du coût de la taxe par rapport à la valeur ajoutée du secteur :
+On considère deux seuils, en pourcentage de la valeur ajoutée, S1 et S2. On appelle par ailleurs, les montants d'émissions de dioxyde carbone E1 = VA x S1/T et E2 = VA x S2/T, où VA est la valeur ajoutée de l'entreprise.
+ -  Si le montant de contribution carbone de l'entreprise, calculé au taux de droit commun sur la totalité de l'assiette de la contribution carbone, est inférieur ou égal à un seuil S1, toutes l'entreprise paie la taxe à un taux T1, sur l'ensemble de l'assiette.
+ -  Si le montant de contribution carbone de l'entreprise, calculé au taux de droit commun sur la totalité de l'assiette de la contribution carbone, est supérieur au seuil S1 et inférieur ou égal à S2, l'entreprise paie la contribution carbone au taux T1 pour l'assiette E1, et à un taux réduit T2, pour l'assiette E-E1.
+ -  Si le montant de contribution carbone de l'entreprise, calculé au taux de droit commun sur la totalité de l'assiette de la contribution carbone, est supérieur au seuil S2, l'entreprise paie la contribution carbone au taux T1 pour la part de l'assiette E1, à un taux réduit T2 pour la part de l'assiette E2-E1, et à un taux très réduit T3, pour la part de l'assiette E-E2
+
+Le schéma ci dessous représente le principe général du dispositif en cas de secteur considéré comme particulièrement exposé à la concurrence internationale :
+
+Taux effectif de contribution carbone
+
+Taux T1
+Taux réduit T2 Taux très réduit T3
+
+S1 S2
+
+Valeur ajoutée de l'entreprise
+
+E1 E2
+
+Assiette de la contribution carbone par entreprise
+E
+
+ -  22  - 
+
+
+Scénario 1 S1 = 0.2% , T1=100% S2= 0.6% , T2=20% T3=10%
+
+Taux effectif de taxe carbone pour le secteur
+
+100% 20%
+
+10%
+
+0.2% 0.6%
+
+VA secteur
+
+E1 E2
+
+Assiette de la taxe carbone par entreprise E
+
+code APE (NAF rev 1.1)
+
+Désignation APE (NAF rev 1.1)
+
+211C 241E 241G 241J 261A 264A 264B 265A 265C 271Y
+
+Fabrication de papier et de carton Fabrication d'autres produits chimiques inorganiques de base Fabrication d'autres produits chimiques organiques de base Fabrication de produits azotés et d'engrais Fabrication de verre plat Fabrication de briques Fabrication de tuiles Fabrication de ciment Fabrication de chaux Sidérurgie
+
+Coût de
+
+l'application
+
+Assiette totale d'une taxe de la taxe carbone au taux (tCO2) de droit commun
+
+secteur exposé?
+
+pour tous les
+
+secteurs (%VA)
+
+23283253306063152096782634773
+712103244143499423492607457321519014714
+
+2,7% 10,6%
+8,2% 15,1%
+4,6% 5,1% 1,9% 6,7% 9,7% 10,4%
+
+1 1 1 1 1 1 0 1 1 1
+
+Coût de l'application d'une taxe réduite pour les secteurs
+exposés (option 1.b)
+(%VA)
+0,5% 1,3% 1,0% 1,7% 0,7% 0,7% 1,9% 0,9% 1,2% 1,3%
+
+(source : MEEDDM d'après BDREP, 2008)
+
+ -  23  - 
+
+
+Scénario 2 S1 = 0.2% , T1=20% S2= 0.6% , T2=20% T3=10%
+
+Taux effectif de taxe carbone pour le secteur
+
+20%
+
+20%
+
+10%
+
+0.2% 0.6%
+
+VA secteur
+
+E1 E2
+
+Assiette de la taxe carbone par entreprise E
+
+code APE (NAF rev 1.1)
+
+Désignation APE (NAF rev 1.1)
+
+211C Fabrication de papier et de carton 241E Fabrication d'autres produits chimiques inorganiques de base 241G Fabrication d'autres produits chimiques organiques de base 241J Fabrication de produits azotés et d'engrais 261A Fabrication de verre plat 264A Fabrication de briques 264B Fabrication de tuiles 265A Fabrication de ciment 265C Fabrication de chaux 271Y Sidérurgie
+(source : MEEDDM d'après BDREP, 2008)
+
+Coût de
+
+l'application
+
+Assiette totale d'une taxe de la taxe carbone au taux (tCO2) de droit commun
+
+secteur exposé?
+
+pour tous les
+
+secteurs (%VA)
+
+23283253306063152096782634773
+712103244143499423492607457321519014714
+
+2,7% 10,6%
+8,2% 15,1%
+4,6% 5,1% 1,9% 6,7% 9,7% 10,4%
+
+1 1 1 1 1 1 0 1 1 1
+
+Coût de l'application d'une taxe réduite pour les secteurs
+exposés (option 1.b)
+(%VA)
+0,3% 1,1% 0,9% 1,5% 0,5% 0,5% 1,9% 0,7% 1,0% 1,1%
+
+ -  24  - 
+
+
+Scénario 3 S1 = 0.6% , T1=100% S2= 1% , T2=20% T3= 10%
+
+Taux effectif de taxe carbone pour le secteur
+
+100% 20%
+
+10%
+
+0.6 1%
+%
+E1 E2
+
+E
+
+VA secteur Assiette de la taxe carbone par entreprise
+
+code APE (NAF rev 1.1)
+
+Désignation APE (NAF rev 1.1)
+
+211C Fabrication de papier et de carton 241E Fabrication d'autres produits chimiques inorganiques de base 241G Fabrication d'autres produits chimiques organiques de base 241J Fabrication de produits azotés et d'engrais 261A Fabrication de verre plat 264A Fabrication de briques 264B Fabrication de tuiles 265A Fabrication de ciment 265C Fabrication de chaux 271Y Sidérurgie
+(source : MEEDDM d'après BDREP, 2008)
+
+Coût de
+
+l'application
+
+Assiette totale d'une taxe de la taxe carbone au taux (tCO2) de droit commun
+
+secteur exposé?
+
+pour tous les
+
+secteurs (%VA)
+
+23283253306063152096782634773
+712103244143499423492607457321519014714
+
+2,7% 10,6%
+8,2% 15,1%
+4,6% 5,1% 1,9% 6,7% 9,7% 10,4%
+
+1 1 1 1 1 1 0 1 1 1
+
+Coût de l'application d'une taxe réduite pour les secteurs
+exposés (option 1.b)
+(%VA)
+0,9% 1,6% 1,4% 2,1% 1,0% 1,1% 1,9% 1,2% 1,6% 1,6%
+
+ -  25  - 
+
+
+Scénario 4 S1 = 0.6% , T1=20% S2= 1% , T2=20% T3= 10%
+
+Taux effectif de taxe carbone pour le secteur
+
+20%
+
+20%
+
+10%
+
+0.6 1%
+%
+E1 E2
+
+E
+
+VA secteur Assiette de la taxe carbone par entreprise
+
+code APE (NAF rev 1.1)
+
+Désignation APE (NAF rev 1.1)
+
+211C Fabrication de papier et de carton 241E Fabrication d'autres produits chimiques inorganiques de base 241G Fabrication d'autres produits chimiques organiques de base 241J Fabrication de produits azotés et d'engrais 261A Fabrication de verre plat 264A Fabrication de briques 264B Fabrication de tuiles 265A Fabrication de ciment 265C Fabrication de chaux 271Y Sidérurgie
+(source : MEEDDM d'après BDREP, 2008)
+
+Coût de
+
+l'application
+
+Assiette totale d'une taxe de la taxe carbone au taux (tCO2) de droit commun
+
+secteur exposé?
+
+pour tous les
+
+secteurs (%VA)
+
+23283253306063152096782634773
+712103244143499423492607457321519014714
+
+2,7% 10,6%
+8,2% 15,1%
+4,6% 5,1% 1,9% 6,7% 9,7% 10,4%
+
+1 1 1 1 1 1 0 1 1 1
+
+Coût de l'application d'une taxe réduite pour les secteurs
+exposés (option 1.b)
+(%VA)
+0,3% 1,1% 0,8% 1,5% 0,5% 0,5% 1,9% 0,7% 1,0% 1,0%
+
+ -  26  - 
+
+
+5.3. Annexe 3 : Le dispositif Carbon Reduction Commitment Energy Efficiency Scheme au Royaume-Uni
+La loi du 26 novembre 2008 sur le changement climatique donne le pouvoir au Ministre de l'Energie et du Changement Climatique de prendre des dispositions législatives concernant les systèmes d'échange de quotas d'émission de gaz à effet de serre. Parmi ces systèmes, il y a la proposition d'un système d'échange intitulé le CRC (Carbon Reduction Commitment) Energy Efficiency Scheme Il s'agit d'un marché de négociation et d'échange de crédit d'émission de gaz à effet de serre. Les quotas d'émissions sont accordés par le gouvernement britannique aux différentes organisations dans le cadre d'un mécanisme réglementaire. Le dispositif concernerait 10% du total des émissions. Il devrait permettre une réduction des émissions d'au moins 4 Mt CO2 par an et produirait un bénéfice total d'un milliard de livres d'ici 2020.
+Champ d'application.
+Le CRC s'applique aux entreprises non-concernées par les accords sur le changement climatique (Climate Change Agreement - Le gouvernement britannique offre jusqu'à 80% de réduction sur la taxe sur le changement climatique - Climate Change Levy - aux entreprises dont l'activité nécessite de fortes consommations énergétiques. En contrepartie les entreprises devront démontrer au gouvernement qu'elles sont à l'origine de plans ambitieux d'amélioration de l'efficacité énergétique de leur installations ou de réduction des émissions de gaz à effet de serre.) ou par le marché européen de permis d'émissions (European Union Emissions Trading Scheme). Ces entreprises doivent avoir une consommation d'électricité supérieure à 6000 MWh par an, l'équivalent d'une facture annuelle d'électricité de 500000 livres. Le système est fondé sur l'entreprise et non sur un site comme dans le secteur ETS. La phase d'introduction du CRC d'une durée de 3 ans débutera le 1er avril 2010 et sera administrée par l'Environment Agency. Le CRC ne fera aucune distinction entre les émissions de gaz à effet de serre liées à l'utilisation directe de l'énergie (gaz, pétrole...) et celles liées à l'utilisation indirecte de l'énergie (électricité, chauffage...).
+La comptabilité des émissions des participants au système tient compte du fait que certaines émissions sont déjà couvertes par les autres instruments économiques de régulation comme l'ETS.
+Tous les secteurs du tertiaire seront concernés par le CRC. Le gouvernement britannique estime à environ 5000 le nombre d'organisations du secteur tertiaire qui seront touchées par le CRC. Le système inclura par exemple les banques, les supermarchés, les opérateurs de transport, les opérateurs de téléphonie mobile, les sociétés de vente au détail. L'administration britannique ne sera pas épargnée : les collectivités locales, les écoles, les universités et les ministères, tous devront participer au CRC.
+Dans le cadre du CRC, la responsabilité des émissions incombe au souscripteur du contrat d'énergie et non au fournisseur d'énergie. En effet, partant du principe que l'organisation trouve un intérêt financier à l'utilisation d'énergie, on considère que celle-ci est en mesure d'agir sur sa consommation énergétique. Néanmoins cette notion contractuelle peut dans certains cas, soulever quelques difficultés.
+Ainsi, concernant un grand groupe, le CRC s'appliquera à l'ensemble du groupe et la responsabilité incombera à la maison-mère qui devra prendre en considération les émissions de toutes ses filiales. Le but d'une telle stratégie étant d'inciter les cadres dirigeants à définir une politique efficace de réduction des émissions applicable à l'ensemble du groupe.
+Dans le cas d'une joint venture, la responsabilité des émissions revient à la partie prenante détenant une participation majoritaire (51% ou plus). Dans le cas d'une participation égalitaire (50%) les deux parties prenantes pourront être considérées responsables des émissions de la joint venture.
+Calendrier
+2008-2010
+ -  27  - 
+
+
+Durant cette période, chaque organisation doit évaluer sa consommation électrique et voir si celle-ci dépasse les 6000MWh. En juillet 2009 l'Agence de l'environnement (Environment Agency) fera parvenir à toutes les organisations concernées les dossiers d'inscription au CRC. Ces organisations doivent alors s'inscrire en tant que participants et ont jusqu'à septembre 2010 pour faire parvenir à l'agence les informations concernant leurs factures d'électricité.
+2010-2012 En avril 2010, la phase d'introduction commence. En avril 2011, le gouvernement vend un nombre de quotas au prix fixe de 12 livres par tonne de dioxyde de carbone émis aux entreprises soumises au CRC. Cette vente portera tant sur les allocations de 2010/2011 que sur celles de 2011/2012.
+2013 Pour l'année 2013 pas de vente du gouvernement, démarrage du plafonnement et des échanges sur le marché. Pour les années suivantes, le gouvernement vend une quantité limitée de quotas aux enchères. La quantité sera fixée au vu de la phase d'expérimentation et de l'avis du comité du changement climatique créé par la loi.
+Fonctionnement et recyclage du revenu des enchères
+Les participants au CRC seront tenus d'acheter suffisamment de quotas pour couvrir leurs émissions de dioxyde de carbone par le biais d'un registre électronique, ou à partir de :
+ -  la vente aux enchères annuelle ; - le marché secondaire, ou - le mécanisme de soupape de sécurité.
+Un processus d'enchères a été décidé afin d'éviter de longues et complexes négociations avec le gouvernement. La vente aux enchères a lieu en avril de chaque année, bien que le format de celle-ci n'ait pas encore été fixé.
+La soupape de sécurité est un mécanisme permettant, grâce à la Directive ETS, aux entreprises dépassant leurs plafonds d'émissions de gaz à effet de serre d'acheter des quotas d'émissions auprès d'entreprises européennes plus performantes sur le plan environnemental au prix minimum de 12 livres.
+Les revenus des enchères obtenus par le gouvernement seront reversés aux participants en fonction de leurs performances dans le système. Les paiements seront proportionnés aux émissions 2010/2011 avec un bonus ou un malus qui dépend de leurs améliorations en matière d'efficacité énergétique. Le bonus/malus maximum évolue dans le temps (de +/- 10% la première année à +/50% la cinquième année). La performance est évaluée à partir de trois indicateurs : l'évolution des émissions en valeur absolue5, l'évolution de l'intensité carbone6 (émissions rapportées au chiffre d'affaires), actions précoces (mesures prises pour améliorer l'efficacité énergétique avant la mise en oeuvre du dispositif)7. Le poids des différents indicateurs dans le calcul de la performance de chaque organisation évolue dans le temps : l'indicateur d'actions précoces n'est ainsi pris en compte que dans la phase d'introduction. A partir de 2013, le poids de l'indicateur "  évolution des émissions en valeur absolue  " dans le calcul de la performance de chaque installation sera 75%, et celui de l'indicateur "  évolution de l'intensité carbone  ", 25%.
+5 Cet indicateur mesure la variation des émissions par rapport à la moyenne des cinq années précédentes 6 Cet indicateur mesure la variation de l'intensité carbone (calculée comme le ratio des émissions et du chiffre d'affaires) par rapport à la moyenne des cinq années précédentes. 7 Cet indicateur est calculé à partir de deux facteurs : le pourcentage de compteurs automatiques d'électricité et de gaz installés volontairement et le pourcentage des émissions de l'organisation qui sont couvertes par le standard du Carbon Trust ou un certificat du système d'accréditation de l'efficacité énergétique.
+ -  28  - 
+
+
+La part des revenus des enchères qui est redistribué à chaque organisation est calculée en fonction de sa part dans les émissions 2010/2011, ajustée par un bonus ou un malus qui dépend de sa position dans la table de performance. Le bonus/malus maximum évolue dans le temps (de +/- 10% la première année à +/-50% la cinquième année).
+Les participants reçoivent leur paiement en octobre de chaque année.
+Le non-respect du CRC
+La non-participation au CRC pour une organisation sera considérée comme une infraction pénale. Les sanctions prévues pour non-respect des obligations varient en fonction de la gravité de l'infraction. Les infractions pour non-respect des obligations seront passibles d'une amende de 40 livres par tonne de dioxyde de carbone émis. Chaque année, environ 20% des participants au CRC seront évalués.
+La redistribution des revenus des enchères est-elle une aide d'Etat ?
+Position de la Commission européenne 14 juillet 2009 vis-à-vis du système : La Commission européenne a autorisé, en vertu des règles du traité CE relatives aux aides d'État, un régime instaurant un système d'échange de droits d'émission de CO2 lié à la consommation énergétique proposé par le Royaume-Uni. Ce régime national, baptisé " Carbon Reduction Commitment " (engagement en faveur de la réduction des émissions de carbone), s'applique aux secteurs peu gourmands en énergie qui ne sont pas couverts par le système communautaire d'échange de droits d'émission. La totalité des droits d'émission autorisés par ce régime sera vendue aux enchères. Les participants seront classés en fonction de leur performance environnementale et les recettes des enchères leur seront reversées sous la forme de subventions. Les participants les mieux classés seront ceux qui profiteront le plus du mécanisme de recyclage. Ces mesures sont conformes aux dispositions de l'article 87, paragraphe 3, point c), du traité CE puisqu'elles visent un objectif d'intérêt commun d'une manière nécessaire et proportionnée. Le régime que propose le Royaume-Uni est une nouvelle manière d'inciter les entreprises à modifier leur comportement, fondée sur un éventail de mesures d'encouragement comprenant notamment un système d'échange de certificats CO2 couvrant les émissions liées à la consommation d'énergie, la publication d'un palmarès des performances environnementales des participants et des incitations financières sous forme d'aides supplémentaires financées par les recettes tirées de la vente aux enchères des permis d'émission.
+L'enquête de la Commission a révélé que la participation au mécanisme d'échange, qui prévoit une redistribution des recettes tirées de la vente aux enchères, contenait un élément d'aide d'État, puisque les bénéficiaires reçoivent de l'État un avantage économique. Toutefois, cette aide a été jugée compatible avec le traité CE directement en vertu de l'article 87, paragraphe 3, point c), du traité CE étant donné qu'elle poursuit un objectif d'intérêt commun d'une manière nécessaire et proportionnée. En particulier, elle vise clairement à réduire les émissions de CO2 liées à la consommation d'énergie au-delà de ce qu'impose la législation communautaire en vigueur, et elle est parfaitement conçue pour atteindre cet objectif d'intérêt commun pour l'UE. La mesure est proportionnée et induira un changement de comportement dans les entreprises participantes (effet incitatif). De surcroît, les distorsions de concurrence résultant de l'introduction de ce régime seront limitées en raison des montants financiers relativement faibles que représente l'aide d'État et de la part limitée des dépenses énergétiques dans les coûts de fonctionnement des entreprises bénéficiaires.
+ -  29  - 
+
+

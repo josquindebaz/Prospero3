@@ -1,0 +1,7 @@
+REGLE "test"
+TYPE "CONF_DISCURSIVE"
+ ( ?t TEXTE CDEMERGENTE_QUA = "Equité"  ) 
+ ( ?t TEXTE CDEMERGENTE_QUA = "Fragilité"  ) 
+ ( ?t TEXTE CDEMERGENTE_ENT = "Compétitivité"  ) 
+A
+F

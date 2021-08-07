@@ -1,0 +1,86 @@
+La Contribution Climat énergie Le point de vue d'un praticien de la fiscalité.
+Conférence d'experts 2 juillet 2009
+Michel Taly, avocat associé.
+1
+
+
+Observations préliminaires
+ La présentation s'appuie sur les travaux de la commission fiscale de l'Institut de l'Entreprise qui a publié il y a un an une note sur la Taxe Carbone ( http://www.institut-entreprise.fr/fileadmin/Docs_PDF/travaux_reflexions/Fiscalit_/taxe_ca ) . La commission va relancer ses travaux sur ce thème pour participer aux réflexions actuelles.
+ Les membres de cette commission sont des fiscalistes: ils n'ont donc pas de légitimité à porter un jugement sur la pertinence de l'outil. En revanche, si un tel outil est décidé, ils ont une idée assez précise sur la forme qu'il pourrait prendre.
+2
+
+
+Quel type d'impôt?
+1. La taxe que l'on aimerait savoir faire: une taxe au stade de la consommation finale, fonction de l'empreinte carbone réelle de chaque produit ou service.
+2. La taxe que l'on sait faire: une taxe sur les produits potentiellement émetteurs de carbone (carburants, combustibles, produits à double usage) au moment de leur mise à la consommation.
+3. La taxe extérieure
+3
+
+
+La taxe que l'on aimerait savoir faire
+ On nous a parfois reproché d'avoir trop vite écarté, sans suffisamment argumenter, la taxe perçue au stade de la consommation finale en fonction du contenu en carbone.
+ Pour des praticiens de la fiscalité, les raisons paraissaient suffisamment évidentes, mais il n'est pas inutile de les rappeler:
+3.L'assiette d'un impôt doit pouvoir être déterminée de façon sûre. 4.Une entreprise ne connaît pas le processus de fabrication de ses
+fournisseurs. 5.Une base forfaitaire aurait des effets contre-productifs
+4
+
+
+L'assiette d'un impôt doit pouvoir être déterminée de façon sûre.
+ Le contribuable doit pouvoir déterminer sa base d'imposition de façon certaine et sans coût excessif: c'est une chose de faire estimer son empreinte carbone par un cabinet spécialisé, c'en est une autre de déterminer une base d'imposition.
+ L'administration fiscale doit pouvoir contrôler l'assiette déclarée.  Le juge doit pouvoir traiter les litiges sans devoir réclamer à chaque fois
+expertises et contre-expertises.
+5
+
+
+Une entreprise ne connaît pas le processus de fabrication de ses fournisseurs.
+1. Pour déterminer le contenu réel en carbone d'un bien, il faut connaître le processus de fabrication des consommations intermédiaires.
+2. Il n'y a aucune raison de ne pas rechercher un effet incitatif aussi pour les entreprises.
+=> Il faudrait non pas taxer au stade de la consommation finale, mais taxer chaque entreprise sur son "  carbone ajouté  "!
+6
+
+
+Une base forfaitaire aurait des effets contre-productifs
+ La seule façon réaliste de faire une taxation au stade de la consommation finale serait de déterminer un barème de produits avec des taux d'imposition.
+ Pour les produits, on a déjà l'expérience des difficultés de fonctionnement de ce type de barème avec le tarif douanier.
+ Pour les services, il faudrait être tellement forfaitaire que ce serait une taxe sur le chiffre d'affaires de plus.
+ Une taxation forfaitaire risquerait de favoriser les produits dont l'empreinte carbone est la plus mauvaise, qui peuvent être moins coûteux à produire.
+7
+
+
+Taxe "  aval  ": des applications assez limitées
+ Compte tenu de ses difficultés de mise en oeuvre, la taxe "  aval  " a un champ d'application limité: sur l'exemple des automobiles, on peut imaginer de taxer à l'achat un nombre limité de biens ou d'équipements (par exemple, l'électroménager) .
+ Il ne s'agit toutefois que d'une taxation en fonction de la performance énergétique et non de l'empreinte carbone totale de la production au recyclage.
+8
+
+
+La taxe que l'on sait faire:
+ Une taxe sur les produits fossiles, au moment de leur mise à la consommation (même fait générateur que les taxes intérieures existantes).
+ Si les taux sont déterminés en fonction de la tonne de CO2 , il faudra fixer dans la loi des taux forfaitaires de conversion dans l'unité de facturation (selon le cas: poids, volume ou KWh).
+ Cela ne signifie pas que l'instauration d'une CCE se réduit à une simple augmentation des taxes existantes: les finalités différentes peuvent justifier un champ d'application, des exemptions et une structure de taux différents.
+9
+
+
+La taxe que l'on sait faire (suite)
+ Créer une CCE, c'est donc juxtaposer deux accises, chacune "  vivant sa vie  " en fonction de ses finalités.
+ Afficher clairement une finalité "  carbone  " ou "  diminution de la consommation d'énergie  " ne sera pas sans conséquences constitutionnelles: les différences de traitement doivent non seulement se fonder sur des différences objectives de situation, mais celles-ci doivent être cohérentes avec la finalité de la taxe et la différence de traitement être proportionnée à l'objectif poursuivi.
+ La juxtaposition de deux taxes permet également une affectation structurellement différente des recettes (et non un simple partage de la recette entre plusieurs usages).
+ La juxtaposition de deux accises différentes semble être la solution envisagée par les services de la Commission Européenne.
+10
+
+
+La taxe extérieure
+ Elle ne pourrait pas avoir la même structure que la taxe intérieure, ce qui est un inconvénient pour son acceptabilité.
+ Il faudrait assurer une traçabilité des produits pour s'assurer que les pays de production ne pratiquent pas de taxe équivalente; or, l'exemple douanier nous montre que déterminer l'origine d'un produit est un exercice plus complexe qu'on ne le croit.
+ Elle ne pourrait donc probablement porter que sur quelques produits de base et non sur des produits finis.
+ La taxe extérieure n'est donc pas l'instrument miracle qui enlèverait tout inconvénient, en termes de compétitivité, à une démarche unilatérale de la France.
+11
+
+
+Articulation avec le marché de quotas
+
+1. Faut-il élargir le marché de quotas à d'autres secteurs? Au-delà de l'avis des économistes sur cette question, une observation pragmatique: si l'on veut une solution européenne, il ne faut pas oublier que pour des raisons institutionnelles, il est plus facile d'obtenir une décision sur un marché de quotas que sur une taxe!
+2. Au sein d'un même secteur: Ne pas sous-estimer la rapidité de réaction des entreprises à leur environnement règlementaire: les fiscalistes connaissent bien les effets pervers auxquels peuvent conduire les différences de traitement en fonction d'un seuil. Faire cohabiter dans un même secteur des entreprises soumises à des régimes différents en fonction de leur taille est une difficulté sérieuse.
+
+12
+
+

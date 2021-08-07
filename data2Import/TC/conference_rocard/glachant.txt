@@ -1,0 +1,75 @@
+Ajustement aux frontières et mécanisme d'inclusion carbone
+Matthieu Glachant Mines ParisTech, CERNA
+
+
+Compétitivité et lutte contre le changement climatique
+ Si les engagements post-2012 de l'Union Européenne sont beaucoup plus ambitieux que ceux de ses concurrents économiques,...
+ En particulier, les économies émergentes (Chine, Inde, etc.)
+ ... la production de certains secteurs pourrait se relocaliser dans les pays à faible contrainte carbone
+ Un coût économique pour l'Europe
+ Un coût environnemental pour tous : les fuites carbone
+
+
+Qu'est ce qu'un mécanisme d'ajustement aux frontières ?
+Deux approches possibles :  Une taxe sur le contenu en carbone des produits
+importés
+ Et symétriquement une "détaxation" des exportations européenne vers ces pays
+ Un système d'achat de quotas d'émission par les importateurs
+ Et la vente de quotas par les exportateurs
+
+
+Les secteurs concernés
+ Des entreprises qui :
+ consomment beaucoup d'énergie par unité produite  dont les capacités de production sont en Europe  dont les produits sont en concurrence avec des producteurs
+localisés dans les pays + laxistes
+ En pratique :
+ Sidérurgie, aluminium, ciment, papier, verre, céramique.  1,5 à 2% de la valeur ajoutée européenne
+ Des secteurs couverts par l'ETS
+ Un sujet européen, distinct de la taxe carbone "intérieure"
+
+
+Que prévoit le paquet climat-énergie de l'UE adopté en décembre 2008 ?
+ Une analyse avant mi 2010 de l'accord de Copenhague et des risques de fuites carbone
+ Puis des propositions de la Commission sur
+ L'augmentation de la part des quotas gratuits pour les secteurs exposés
+ Un mécanisme d'inclusion carbone des importateurs dans l'ETS
+
+
+Un instrument complexe à mettre en oeuvre
+ Quel taux de taxe ? Quel prix de permis ?
+ En théorie, égal à la différence entre le prix des quotas en Europe et le prix du carbone auquel est soumis le producteur dans son pays d'origine  Taux variable selon les pays exportateurs
+ Quelle assiette ?
+ En théorie, le contenu en carbone de chaque producteur  En pratique, des valeurs moyennes
+ Forcément arbitraires  Supprimant toute incitation individuelle à réduire les émissions
+ Un instrument nécessairement sous optimal pour être applicable
+
+
+A priori compatible avec les règles de l'OMC
+ Le rapport OMC/PNUE 26 juin 2009 sur climat et commerce international :
+ "La jurisprudence de l'OMC a confirmé que les règles de l'OMC ne l'emportent pas sur les prescriptions environnementales (...) Une mesure à la frontière liée au changement climatique pourrait être justifiée (...) au titre des exceptions générales prévues à l'article XX du GATT."
+ Mais deux difficultés pratiques:
+ "comment justifier clairement les dites mesures (c'est-à-dire comment évaluer précisément la fuite de carbone et la perte de compétitivité);
+ comment déterminer un prix " équitable " pour les produits importés afin de tenir compte du coût, au niveau national, du respect du système d'échange de droits d'émission."
+ Le diable est dans les détails
+
+
+Des quotas gratuits pour les secteurs exposés ?
+ Au lieu de "punir" les importateurs, on récompense les producteurs locaux
+ Augmente le profit des producteurs locaux par rapport à la mise aux enchères
+ En théorie, pas d'effet sur le risque de délocalisation et les fuites carbone, car pas d'effet sur le coût marginal
+ Délocaliser et vendre les quotas ainsi libérés génère le même profit que les quotas aient été obtenus gratuitement ou achetés aux enchères
+ un effet purement distributif
+
+
+Un instrument inscrit dans le processus de négociation internationale
+ Ne serait pas mise en oeuvre si un accord international satisfaisant après 2012
+ La loi US Waxman-Markey annonce même 2020
+ Peut créer une menace crédible incitant les grands émergents à prendre des engagements significatifs
+ Ou les crisper ?
+ Un bon instrument si l'on ne s'en sert pas
+ Aujourd'hui, la question clé pour la compétitivité porte sur les engagement que prendront les gds émergents
+
+
+Merci de votre attention
+
+

@@ -1,0 +1,843 @@
+POUR LA TAXE CARBONE
+La politique économique face à la menace climatique
+KATHELINE SCHUBERT
+
+
+
+
+
+Le CEPREMAP est, depuis le 1er janvier 2005, le CEntre Pour la Recherche EconoMique et ses APplications. Il est placé sous la tutelle du ministère de la Recherche. La mission prévue dans ses statuts est d'assurer une interface entre le monde académique et les décideurs publics et privés.
+Ses priorités sont définies en collaboration avec ses partenaires institutionnels : la Banque de France, le CNRS, le Centre d'analyse stratégique, la direction générale du Trésor et de la Politique économique, l'École normale supérieure, l'INSEE, l'Agence française de développement, le Conseil d'analyse économique, le ministère chargé du Travail (DARES), le ministère chargé de l'Équipement (DRAST), le ministère chargé de la Santé (DREES) et la direction de la recherche du ministère de la Recherche.
+Les activités du CEPREMAP sont réparties en cinq programmes scientifiques coordonnés par sa direction : Politique macroéconomique en économie ouverte ; Travail et emploi ; Économie publique et redistribution ; Marchés, firmes et politique de la concurrence ; Commerce international et développement.
+Chaque programme est animé par un comité de pilotage constitué de trois chercheurs reconnus. Participent à ces programmes une centaine de chercheurs, cooptés par les animateurs des recherches, notamment au sein de l'École d'économie de Paris.
+La coordination de l'ensemble des programmes est assurée par Philippe Askenazy. Les priorités des programmes sont définies pour deux ans.
+L'affichage sur Internet des documents de travail réalisés par les chercheurs dans le cadre de leur collaboration au sein du CEPREMAP tout comme cette série d'opuscules visent à rendre accessible à tous une question de politique économique.
+Daniel COHEN Directeur du CEPREMAP
+
+
+
+
+
+
+EN BREF
+Devant l'urgence de la menace climatique, le moment est venu d'agir. Pour susciter l'innovation en matière de technologies moins émettrices de carbone et le développement des énergies renouvelables, et pour, en attendant la fin du règne des énergies fossiles, inciter les consommateurs et les entreprises à en diminuer l'utilisation, la méthode la plus efficace est de donner un prix à l'émission de carbone. Nous nous attachons à montrer qu'une taxe carbone bien pensée et bien calibrée permet de réduire les émissions de carbone dans les meilleures conditions d'efficacité économique et de justice sociale.
+Dans l'idéal, cette taxe devrait être unique et universelle, pour donner au carbone un prix unique qui s'appliquerait à tous. Un faisceau d'arguments permet d'estimer que son niveau initial devrait être élevé, son profil temporel croissant, et qu'elle devrait être révisable périodiquement en fonction de l'évolution de nos connaissances sur le changement climatique et les dommages qu'il engendre.
+Dans la réalité, la politique climatique devra surmonter au moins trois obstacles. Le premier et le plus sérieux provient du fait que tous les pays ne sont pas prêts à s'engager dans une action commune. Les pays développés, portant la responsabilité historique de l'augmentation de la concentration de carbone dans l'atmosphère, doivent accepter d'offrir aux autres pays des compensations les incitant à rejoindre la politique climatique. Le deuxième est que la taxe va coexister avec d'autres formes de régulation, normes et marchés de permis d'émissions négociables, et qu'il faut donc penser l'articulation des différents instruments pour assurer la cohérence d'ensemble de la politique climatique. Le troisième enfin tient à l'intense marchandage politique que suscite la mise en place de la politique climatique, et à la très forte tentation des gouvernements de consentir de multiples exemptions et régimes particuliers qui menacent de la vider de son contenu.
+
+
+La taxe carbone rapportera des recettes fiscales aux États. Au-delà des discours politiques, ces recettes ne peuvent pas servir à tout : combler les déficits publics, financer la recherche en énergies renouvelables et technologies moins émettrices de carbone, limiter les pertes de compétitivité des gros émetteurs, baisser l'impôt sur le travail dans l'espoir d'obtenir un double dividende, limiter la régressivité de la politique climatique...
+Notre option préférée comporte deux volets. Tout d'abord, pour préserver la compétitivité sectorielle des entreprises des pays adoptant une politique climatique commune face à celles des pays qui ne l'adoptent pas, il est légitime de mettre en place une taxe d'ajustement aux frontières. Les entreprises pourront alors répercuter dans leurs prix le coût de la politique climatique, qui sera in fine payée par les consommateurs, auxquels il devient possible de redistribuer l'intégralité des recettes de la taxe. Une redistribution forfaitaire présente des avantages considérables : elle est parfaitement transparente, simple et peu coûteuse à mettre en oeuvre, non manipulable, et surtout elle renverse les effets régressifs de la taxe carbone. Elle n'empêche évidemment pas de mettre en place des programmes d'aide ciblés sur les catégories de ménages les plus vulnérables.
+Katheline Schubert est professeur à l'université Paris 1 PanthéonSorbonne, professeur associé à l'École d'économie de Paris et chercheur au Centre d'économie de la Sorbonne. Elle est directrice du magistère d'économie de l'université Paris 1. Ses travaux portent sur l'économie de l'environnement et des ressources naturelles.
+
+
+Introduction
+La Révolution industrielle a été caractérisée - et rendue possible - par le passage des énergies "  froides  " aux énergies "  chaudes  ". Elle a permis un formidable développement économique, non durable au sens où nous l'entendons aujourd'hui car il a ignoré, au moins dans un premier temps, les conséquences environnementales et sociales des bouleversements induits. Nous pouvons en retenir une première leçon : il faut maintenant penser ensemble développement économique, progrès social et préservation de notre environnement naturel. La combustion massive des énergies fossiles a créé un effet de serre additionnel1. Celui-ci est-il responsable du réchauffement global ? Les incertitudes ont longtemps dominé le débat, ce qui a permis la négation de la réalité du changement climatique. Nous sommes maintenant raisonnablement certains que celui-ci est bel et bien en train de se produire. La fin des énergies "  chaudes  " est inéluctable, et nous n'avons pas d'autre choix que d'effectuer une nouvelle révolution fondée sur des sources d'énergie différentes. Cette révolution ne peut provenir que du progrès technique, mais celui-ci ne tombe pas du ciel et les innovations permettant de passer à un mode de croissance fondé sur de nouvelles sources d'énergie n'apparaîtront pas spontanément. L'urgence de la menace climatique impose de créer dès maintenant les incitations adéquates, afin que la recherche soit orientée dans la bonne direction et qu'en attendant les économies réduisent leur utilisation des énergies fossiles. Ces incitations ne peuvent être fournies que par la politique économique, qui doit rendre plus chère l'émission de carbone.
+1. L'effet de serre additionnel n'est pas dû au seul CO2, qui est cependant le gaz à effet de serre le plus important sur le plan quantitatif. Les autres gaz à effet de serre sont le méthane, l'oxyde nitreux et certains clorofluorocarbones. Il faut évidemment les inclure dans la politique climatique et adapter pour cela la taxe carbone.
+
+
+12
+La solution la plus simple et la plus transparente pour y parvenir est une taxe carbone unique et universelle qui s'appliquerait de la même façon à toutes les utilisations d'énergies fossiles proportionnellement à leurs contenus en carbone. Elle se heurte à certaines difficultés surmontables : quel taux ? quel profil temporel ? Elle se heurte également à des difficultés qui semblent aujourd'hui insurmontables : comment la faire accepter par tous les pays, y compris ceux qui estiment - à juste titre - ne pas avoir de responsabilité historique dans le réchauffement climatique ? À l'intérieur de chaque pays, comment obtenir l'adhésion de la majorité ?
+La taxe carbone n'est pas l'instrument qu'il a été choisi de mettre en place dans le protocole de Kyoto1. Et nous n'évoquerons pas davantage ce dernier, qui a été abondamment commenté et analysé2. Ce qui compte maintenant, c'est la suite, le post-Kyoto dont l'architecture va être discutée à la conférence de Copenhague en décembre 2009. L'accord inclura très vraisemblablement les États-Unis, ce qui lui donnera une bien meilleure chance d'aboutir. Le grand changement de la période récente est en effet la position de l'administration Obama en matière climatique, beaucoup plus ouverte que celle de l'administration Bush. Subsistera cependant du protocole de Kyoto le fait que le marché de permis d'émission négociables a été préféré à la taxe carbone comme instrument de régulation des émissions de gaz à effet de serre, et a été mis en place en Europe, ce qui contraint l'architecture future. Cependant, alors que les États-Unis ont imposé le marché de permis contre la taxe initialement défendue par les Européens, au motif qu'une solution de marché est toujours préférable, de
+1. Le protocole de Kyoto concerne l'ensemble des gaz à effet de serre. 2. On pourra par exemple consulter R. Guesnerie, Kyoto et l'économie de l'effet de serre, Rapport du Conseil d'analyse économique, n° 39, 14 janvier 2003.
+
+
+13
+nombreuses voix s'élèvent aujourd'hui parmi les économistes américains en faveur de la taxe carbone1.
+Compte tenu des difficultés de mise en place d'une taxe carbone universelle et de cet héritage du protocole de Kyoto, il serait absurde de démanteler le seul dispositif existant qui va dans le bon sens, le système européen d'échange de quotas d'émissions (l'European Union Emission Trading Scheme, EU ETS). Depuis sa création le 1er janvier 2005, l'ETS a cependant montré de nombreuses limites, dont il faut espérer que ce sont des limites de jeunesse : le laxisme des allocations de quotas au cours de la première phase (2005-2007) a été tel que, quand il est devenu apparent, le prix des quotas est tombé presque à zéro, la volatilité du prix a été très importante, et surtout les allocations de quotas ont été gratuites, ce qui, certes, a grandement augmenté l'acceptabilité de la régulation mais a également privé les États de recettes qu'ils auraient pu utiliser plus efficacement, tout en donnant une rente peu justifiée aux bénéficiaires des allocations.
+En admettant qu'il ne soit pas opportun de démanteler l'EU ETS, la taxe carbone doit être pensée comme un complément interne à la politique européenne, si possible adopté par l'ensemble des pays européens, permettant de donner un prix au carbone émis par les secteurs non assujettis à l'EU ETS et par les ménages, de sorte que ce prix du carbone soit unique pour tous les acteurs en Europe. Il faut parallèlement oeuvrer pour
+1. Par exemple, J. Stiglitz, "  A new agenda for global warming  ", The Economists' Voice, 3(7), 2006 ; G. Mankiw, The New York Times, 16 septembre 2007 ; W. Nordhaus, "  To tax or not to tax : alternative approaches to slowing global warming  ", Review of Environmental Economics and Policy, 1(1), 2007, p. 26-44 ; L. Summers, "  Practical steps to climate control  ", Financial Times, 28 mai 2007 ; J. Hansen, "  Tell Barack Obama the truth, the whole truth  ", www.columbia.edu/~jeh1/mailings/ 20081121-Obama.pdf ; S. Stoft, Carbonomics, How to Fix the Climate and Charge It to OPEC, Diamond Press, 2008.
+
+
+14
+une politique climatique incluant le plus grand nombre de pays possibles, chacun pouvant choisir de réguler ses propres émissions par la taxe carbone, par un système de permis d'émissions négociables ou par un système hybride.
+La réflexion sur la taxe carbone en Europe date du début des années 90. Après avoir constaté à quel point il est difficile de mettre en place une taxe harmonisée au niveau européen, les pays scandinaves ont très vite opté pour une taxe nationale. En France, le Grenelle de l'Environnement a clairement affirmé en 2007 l'opportunité d'une taxe carbone, et la conférence d'experts sur la contribution climat-énergie réunie par le gouvernement en juillet 2009 l'a remise sur le devant de la scène1. Le président de la République française a annoncé le 10 septembre 2009 la création, par la loi de Finances, d'une taxe carbone nationale pour 2010. Son taux sera faible (17 euros/t CO2) et des exemptions sont d'ores et déjà annoncées. Mais, au-delà de ses caractéristiques précises, cette taxe place la France dans une configuration complexe puisqu'elle la dote d'une politique nationale, alors que la politique de lutte contre le réchauffement climatique, problème global, doit être pensée à une échelle plus large.
+Nous allons développer ici l'argumentation suivante.
+ -  Une taxe carbone universelle au niveau initial élevé, au profil temporel relativement plat, et révisable périodiquement pour prendre en compte l'amélioration de nos connaissances sur le changement climatique et les dommages qu'il engender, serait la meilleure façon de réguler les émissions de gaz à effet de serre.
+ -  Dans la mesure où l'EU ETS existe, l'option la plus réaliste qu'il serait possible de mettre en place à court terme est une taxe carbone européenne portant sur les activités non assujetties à l'EU ETS.
+1. www.contributionclimatenergie.fr
+
+
+15
+ -  Le prix du carbone doit être unique. L'architecture de la régulation retenue par les pays qui adoptent une politique climatique commune doit garantir cette unicité. En particulier, dans le cas où taxe et marché de permis d'émissions négociables coexistent, il faut mettre au point un mécanisme permettant d'assurer l'équivalence des signaux-prix.
+ -  Même si une réforme fiscale générale serait plus satisfaisante, le réalisme commande de mettre en place la taxe au-dessus des taxes de financement sur l'énergie préexistantes, après que les anomalies les plus criantes et les subventions auront été éliminées.
+ -  Pour les activités régulées par un marché de permis d'émissions négociables, les allocations de permis ne doivent pas être gratuites mais doivent être mises aux enchères.
+ -  Une taxe carbone ou un marché de permis mis aux enchères rapporteront des recettes fiscales aux États. Ces recettes ne peuvent pas servir à tout, c'est-à-dire à la fois à combler les déficits publics, à financer la recherche en énergies renouvelables et en technologies moins émettrices de carbone, à limiter les pertes de compétitivité des gros émetteurs, à baisser l'impôt sur le travail dans l'espoir d'obtenir un double dividende, et encore à limiter la régressivité de la politique climatique... - ce que les discours politiques veulent leur faire faire.
+ -  Notre option préférée est de laisser les entreprises répercuter intégralement dans leurs prix le coût de la politique climatique et de redistribuer forfaitairement les recettes aux ménages, qui paieront in fine cette politique.
+ -  Parallèlement, pour préserver la compétitivité sectorielle des entreprises soumises à la régulation face à celles des pays qui n'adoptent pas de politique climatique, il est légitime de mettre en place une politique d'ajustement aux frontières. Ce qui ne veut pas dire que cela soit simple.
+
+
+16
+Nous allons tout d'abord expliquer les raisons qui nous font préférer la taxe au marché de permis d'émissions négociables. Nous donnons ensuite des éléments permettant de juger du niveau initial et du profil temporel appropriés de la taxe carbone. Puis nous considérons que la taxe carbone va être mise en place dans le cadre d'un système fiscal préexistant, comportant notamment des taxes sur l'énergie élevées, et discutons de son interaction avec ces taxes ; nous abordons également la question du double dividende. Nous poursuivons avec l'examen des impacts distributifs de la taxe carbone, puis celui de ses impacts en matière de compétitivité sectorielle. Nous examinons enfin les caractéristiques et l'impact environnemental des taxes carbone qui ont été mises en place en Europe depuis le début des années 90 ainsi que quelques propositions récentes - avant de conclure.
+1. Taxe ou marché de permis d'émissions négociables ?
+Le réchauffement climatique est causé par l'activité économique, qui rejette dans l'atmosphère des gaz provoquant un effet de serre additionnel. Ce rejet est non intentionnel, il est un produit fatal de la combustion des énergies fossiles et d'autres activités, comme l'élevage, l'utilisation d'engrais azotés, la déforestation. Ce rejet est coûteux pour la société, mais il n'a donné lieu jusqu'à très récemment à aucun paiement compensatoire de la part des émetteurs : nous ne sommes conscients de sa nocivité que depuis peu, et, de toutes façons, l'atmosphère n'appartenant à personne, qui aurait pu réclamer une compensation ?
+Si l'atmosphère n'appartient à personne, elle est le patrimoine de tous. Elle est ce que les économistes appellent un bien public global. Quand un tel bien public est menacé, sa sauvegarde est rendue extrêmement difficile car il n'existe pas d'institution capable d'imposer aux émetteurs une réduction de l'activité dommageable. Une telle institution serait forcément supranationale, et sa création et sa légitimité ne pourraient provenir que
+
+
+17
+d'un accord de l'ensemble des pays. Nous en sommes bien loin, car à la fois les responsabilités historiques dans le phénomène du réchauffement climatique, les capacités actuelles à faire des efforts pour sa réduction, et les dommages anticipés pour l'avenir sont extrêmement différents entre les pays. Faute d'institution émanant de la communauté internationale, une Organisation mondiale du climat, dotée d'une capacité de contrainte, les pays ont recours, depuis la conférence de Kyoto de 1997, à des négociations pour tenter de trouver un accord satisfaisant. À un rythme annuel, elles font avancer, quoique très lentement, l'idée qu'il faut agir pour lutter contre le réchauffement, et proposent des moyens d'action.
+Ces moyens d'action entrent fondamentalement dans deux catégories, la catégorie réglementaire et la catégorie incitative. Imposer des restrictions réglementaires à l'activité économique, à travers des normes par exemple, assure bien que celle-ci émettra moins de gaz à effet de serre. Donner un prix aux émissions de gaz à effet de serre, à travers une taxe ou la mise en place d'un marché de permis d'émissions négociables, incite bien les émetteurs à réduire leurs émissions, tant que le prix des émissions, c'est-à-dire la taxe ou le prix des permis, est plus élevé que l'avantage économique qu'elles leur procurent.
+LES AVANTAGES DE LA TAXE
+Nous rappelons en annexe 1 (p. 76) les propriétés théoriques des trois instruments : normes légales, permis d'émission négociables et taxes. L'instrument réglementaire, qui a souvent la faveur des régulateurs, probablement parce que les coûts de la réglementation et de la norme sont cachés alors que ceux de la taxe ne le sont pas, est toujours moins efficace que cette dernière et que le marché de permis. La taxe a plutôt un avantage sur le marché de permis quand le régulateur connaît mal le coût marginal de limitation des émissions, et un avantage clair quand il s'agit de contrôler une pollution diffuse.
+
+
+18
+Notons ici un point d'une importance pratique essentielle. Une conséquence indésirable de la régulation par un marché de permis plutôt que par la taxe est la volatilité potentielle du prix. La taxe fixe le prix du carbone, tandis que sur un marché de permis ce prix est endogène et peut donc être très volatil, en fonction de la conjoncture générale, de la météo, de l'architecture du système (report dans le temps des permis autorisé ou non par exemple), de la spéculation, mais aussi des anticipations des acteurs sur la pérennité du système. Un prix volatil envoie à l'économie un signal confus, alors que celle-ci a besoin de signaux clairs pour orienter le calcul économique et les choix d'investissement. La volatilité a un coût propre, important, que le recours à la taxe permet d'éviter.
+Un autre argument très fort en faveur de la taxe est qu'elle est plus transparente et se prête moins au marchandage politique qu'un marché de permis, dès lors qu'il est clairement annoncé que le taux sera unique et qu'il n'y aura pas d'exemptions. Avec la taxe, il n'est pas besoin de déterminer les allocations initiales de permis, processus particulièrement conflictuel dans un cadre international où les différents pays estiment ne pas avoir la même dose de responsabilité dans le changement climatique, et entièrement soumis aux lobbies dans le cadre national. Ainsi, la taxe évite la majeure partie du débat sur la distribution. Ce point nous semble très important.
+L'INCITATION À INNOVER
+Outre l'incitation à diminuer les émissions, taxe et marché de permis procurent, dans une perspective dynamique, une incitation à innover dans des énergies de substitution et des technologies moins polluantes. Cela est évidemment tout à fait crucial, puisqu'il n'y aura pas de solution au changement climatique sans nouvelle révolution énergétique qui permettra de substituer des énergies renouvelables aux énergies fossiles, et sans changements technologiques majeurs. Un instrument qui serait nettement supérieur en matière d'incitation à innover marquerait beaucoup de points.
+
+
+19
+Ce n'est pas le cas : la littérature théorique montre que taxe et marché de permis sont sous cet aspect supérieurs à la norme, mais ne permet pas de les classer entre eux sans ambiguïté1.
+L'ARTICULATION DES DEUX INSTRUMENTS
+En Europe, il est probable que les deux modes de régulation devront coexister puisque le marché EU ETS existe déjà et qu'il ne couvre pas l'ensemble des émissions de carbone. L'Europe a choisi de mettre en place un marché de permis et pas une taxe carbone pour quatre raisons, fort éloignées des arguments théoriques que nous venons d'évoquer.
+ -  Dès l'origine, les discussions d'experts et les négociations internationales sur le changement climatique se sont organisées autour de cibles quantitatives, de plafonds de concentration de carbone dans l'atmosphère à ne pas dépasser, et non pas autour du prix du carbone. Les régulateurs voient bien comment traduire en contraintes sur les émissions les engagements quantitatifs pris par leur pays dans le cadre du protocole de Kyoto par exemple, mais beaucoup moins bien quel niveau de taxe permet de respecter ces engagements.
+ -  Introduire une nouvelle taxe est quasiment inenvisageable aux ÉtatsUnis. Les Européens, d'abord favorables à la taxe, se sont ralliés au marché de permis afin d'augmenter les chances de voir les États-Unis ratifier le protocole de Kyoto. En vain d'ailleurs.
+ -  Sur le plan domestique, l'acceptabilité d'un marché assorti d'une allocation gratuite des permis, avec lequel les émetteurs ne paient que les émissions au-delà de l'allocation, est bien meilleure que celle d'une taxe, que les émetteurs paient sur toutes les unités émises.
+1. On pourra, sur ce point, consulter par exemple T. Requate, "  Dynamic incentives by environmental policy instruments-a survey  ", Ecological Economics, 54(2-3), 2005, p. 175-195.
+
+
+20
+ -  Mettre en place une taxe au niveau communautaire nécessite l'unanimité, tandis qu'un marché de permis, nouveauté pour laquelle les traités européens n'avaient rien prévu, n'a nécessité que la majorité qualifiée.
+L'efficacité économique commande que tous les acteurs reçoivent le même signal-prix, pour égaliser tous les coûts marginaux de réduction des émissions et obtenir une réduction donnée à moindre coût1. Mais le signalprix fourni par l'EU ETS est endogène, fonction de la sévérité de la contrainte globale sur les émissions de carbone. Dès lors, il est nécessaire de s'assurer que le signal fourni par la taxe sera équivalent. Nous pensons que la taxe doit être la référence, car il n'est pas possible dans la pratique de modifier le taux de taxe au gré de la fluctuation du prix des permis. Puisque le marché de permis est européen, une bonne articulation ne sera possible que si la taxe est harmonisée au niveau européen. Il ne faut pas sous-estimer les difficultés institutionnelles d'une telle harmonisation, qui, comme nous l'avons vu, nécessite l'unanimité au niveau européen et un vote des parlements nationaux de chacun des pays.
+Avec une taxe européenne, une option possible consiste à réajuster l'allocation de permis si le prix de ceux-ci diffère de la taxe pendant une trop longue période, dans un sens plus sévère si le prix des permis est plus faible que la taxe, moins sévère dans le cas contraire. Une autre option serait de faire payer aux entreprises assujetties au marché une taxe égale à la différence entre la taxe de droit commun et le prix des permis si la première est plus élevée que le second, disons en moyenne annuelle, et à leur verser une subvention dans le cas contraire. Cela aurait l'avantage d'assurer l'unicité du prix du carbone. Mais un inconvénient dirimant est
+1. Il est ainsi exclu de faire payer deux fois (à travers le marché et par la taxe) les émissions de carbone aux entreprises assujetties à l'EU ETS, même si les permis leur ont été alloués gratuitement, méthode d'allocation et signal-prix étant indépendants.
+
+
+21
+l'extrême complexité d'un système dans lequel on perdrait totalement de vue l'intérêt d'avoir mis en place un marché d'émissions négociables.
+Aucune de ces deux options ne peut fonctionner si la taxe n'est pas européenne mais nationale. Dans ce cas, il ne semble pas possible d'assurer une articulation correcte des deux instruments1. Face à ce constat, si une taxe purement française voit le jour il sera inévitable de fixer son taux initial au niveau du prix observé sur le marché européen des permis. Mais cette option n'est pas satisfaisante à long terme : comme nous allons le monter à la section suivante, l'analyse économique conduirait à d'autres choix.
+2. Niveau initial et profil temporel de la taxe carbone
+Il est habituel, lors de l'introduction d'une nouvelle taxe dans l'économie, de réfléchir à son assiette et à son taux. Nous nous intéresserons à l'assiette de la taxe à la section 3, et supposons simplement pour l'instant que cette taxe est une accise, c'est-à-dire une taxe unitaire sur le volume de carbone émis. Le taux de la taxe, quant à lui, fixe à chaque instant le niveau des dépenses que les agents vont consentir pour limiter les émissions polluantes. Il ne suffit cependant pas à caractériser complètement la taxe : dans un problème dont la nature dynamique est essentielle, non seulement le taux de la taxe au moment de son introduction mais aussi son profil temporel, son évolution, sont importants.
+1. Notons cependant que cette articulation n'a pas encore été suffisamment étudiée dans la littérature théorique. Une exception est constituée par l'article de S. Mandell, "  Optimal mix of emissions taxes and cap-and-trade  ", Journal of Environmental Economics and Management, 56(2), 2008, p. 131-140, qui étudie la question des tailles optimales respectives des secteurs de l'économie régulés par la taxe et par le marché de permis, dans une perspective d'incertitude sur le coût marginal de réduction des émissions à la Weitzman (voir l'annexe 1, p. 76).
+
+
+22
+UNE TAXE DESTINÉE À MODIFIER LE SENTIER D'EXTRACTION
+DES ÉNERGIES FOSSILES
+Une dimension temporelle essentielle
+Le réchauffement climatique est la conséquence de l'augmentation de la concentration de gaz à effet de serre dans l'atmosphère. Or cette concentration a la dimension d'un stock, qui augmente avec les émissions causées par l'activité économique. La concentration du seul CO2 était d'environ 280 ppm1 avant la Révolution industrielle, et elle dépasse actuellement 380 ppm. Pour l'ensemble des gaz à effet de serre, le Groupe d'experts intergouvernemental sur l'évolution du climat (GIEC)2 estime qu'une concentration comprise entre 535 et 590 ppme3 (soit 440 à 485 ppm) correspondrait à une augmentation de température comprise entre 2,8 et 3,2 °C par rapport à la moyenne de la température préindustrielle, tandis qu'une concentration de 590 à 710 ppme (soit 485 à 510 ppm) correspondrait à une hausse de 3,2 à 4 °C. Le GIEC recommande de ne pas dépasser 550 ppme (soit environ 450 ppm) car au-delà pourraient apparaître des perturbations catastrophiques du système climatique engendrant des pertes de bien-être considérables.
+Mais la concentration de carbone n'est pas condamnée à augmenter sans fin, jusqu'à ce que toutes les énergies fossiles aient été extraites et brûlées. Elle peut diminuer dans une certaine mesure grâce à l'absorption naturelle. La nature a en effet une certaine capacité d'absorption des émissions dans les puits que constituent principalement les océans et la biomasse terrestre. Face aux émissions, l'absorption naturelle est extrêmement lente. Les travaux scientifiques estiment qu'une molécule de CO2
+1. ppm : parties par million CO2. Il s'agit d'une mesure de concentration. 2. Voir par exemple le dernier rapport du GIEC, consultable sur www.ipcc.ch. 3. ppme : parties par million équivalent CO2
+
+
+23
+émise dans l'atmosphère y reste entre 200 et 250 ans, ce qui donne un taux d'absorption compris entre 0,5 et 0,4 % par an. En outre, plusieurs travaux récents font état d'une diminution de la capacité d'absorption des océans au fur et à mesure que la concentration de carbone dans l'atmosphère augmente.
+Le fait que le changement climatique dépende d'un stock à la régénération très lente rend la dimension temporelle du problème essentielle.Toute molécule de CO2 rejetée aujourd'hui dans l'atmosphère y sera encore bien après que notre génération aura disparu, et continuera à causer des dommages. Le coût social de l'émission d'une unité de carbone supplémentaire est ainsi la somme pondérée des dommages que cette unité de carbone va provoquer tant qu'elle restera dans l'atmosphère. Cela rend plus difficile encore la lutte contre le réchauffement car si nous sommes bien responsables des émissions actuelles et supporterions les coûts de leur réduction, nous sommes loin d'en subir l'intégralité des dommages, qui sont reportés sur les générations futures. Or celles-ci ne sont par définition pas là pour défendre leurs intérêts.
+La façon dont nous pondérons les dommages futurs pour évaluer le coût social d'une émission de carbone supplémentaire aujourd'hui est intimement liée à la façon dont nous valorisons le bien-être des générations futures. Cette valorisation est le résultat d'un choix éthique de la part de la société1. On peut grossièrement assimiler ce choix à celui du taux
+1. Dans le cas d'un bien public global, le choix est encore compliqué par le fait que, nous l'avons vu, il n'existe pas d'institution supranationale représentant "  la société  " et qui pourrait légitimement effectuer ce choix. Les différents pays n'ont probablement pas tous le même avis sur le poids qu'il faut accorder au bien-être des générations futures.
+
+
+24
+d'actualisation1. Si celui-ci est élevé, les dommages futurs comptent très peu et le coût social d'une émission supplémentaire est faible. Nous mettrons alors en place une taxe carbone, qui est le reflet de ce coût social, de faible niveau initial.
+Retarder l'extraction
+Taxer les émissions de carbone conduit à modifier le sentier d'extraction des ressources fossiles par rapport au cas sans taxe, et plus précisément à retarder l'extraction dans le temps. Le profil de la taxe est alors crucial, en raison du caractère non renouvelable de ces ressources. Supposons un instant que les stocks économiquement exploitables de ces ressources seront intégralement extraits et brûlés, ce qui aura lieu si nous ne sommes pas capables de produire des énergies de substitution non polluantes remplaçant les énergies fossiles dans tous leurs usages. Alors, le choix des producteurs de ressources fossiles n'est pas combien offrir (au total, ils offriront tout leur stock), mais quand offrir. L'instrument pertinent pour induire un certain comportement de la part des offreurs n'est donc pas le niveau absolu de la taxe, mais la différence entre les niveaux de taxe à différentes dates, c'est-à-dire le profil de la taxe.
+1. Nous n'entrerons pas ici dans le débat sur l'actualisation, qui a fait couler énormément d'encre depuis une vingtaine d'années et continue à être au centre des débats économiques autour du changement climatique, comme en témoignent les critiques adressées au rapport Stern qui a retenu un taux d'actualisation très faible. Le lecteur trouvera dans le rapport Lebègue et dans le rapport Stern des présentations détaillées de l'ensemble des arguments : D. Lebègue, Révision du taux d'actualisation des investissements publics, Rapport du groupe d'experts présidé par D. Lebègue, Commissariat général du plan, 2005 ; Sir N. Stern, Stern Review : The Economics of Climate Change, Londres, HM Treasury, 2006.
+
+
+25
+Pourquoi l'extraction doit-elle être retardée ?Tout d'abord en raison de l'actualisation, qui nous fait préférer des dommages lointains à des dommages proches. Ensuite, parce que des émissions de carbone mieux réparties au cours du temps sont plus facilement assimilées par les processus naturels. Si les émissions à chaque date sont exactement égales aux capacités d'absorption naturelle, la concentration de carbone dans l'atmosphère n'augmente pas et le climat ne se réchauffe pas, même si ces émissions se poursuivent pendant des siècles.
+Nous exposons en annexe 2 (p. 78) un modèle stylisé permettant de mettre en évidence le profil optimal de la valeur sociale du carbone. Nous montrons que ce profil est un profil en cloche. Dans une première phase, la ressource fossile est abondante et les émissions potentielles élevées. C'est alors la croissance de la taxe carbone qui permet de contenir les émissions et la concentration. Dans une deuxième phase, cette croissance n'est plus nécessaire. En effet, au fur et à mesure que la ressource fossile s'épuise, sa valeur devient élevée du fait de la rareté, ce qui entraîne un ralentissement de l'extraction et de l'accumulation du carbone. Sous diverses hypothèses, dont celles d'un taux d'actualisation de 4 % et d'un abandon de l'utilisation des énergies fossiles à partir d'un prix de 200 euros le baril d'équivalent pétrole, la taxe initiale nécessaire pour ne pas dépasser une concentration de carbone dans l'atmosphère de 450 ppm est de 43 euros/t CO2. La valeur initiale de 32 euros/t CO2 préconisée par le rapport Quinet puis dans le rapport Rocard dans le même cas d'un plafond de concentration de 450 ppm est ainsi plutôt faible. Elle est issue d'un compromis autour des simulations réalisées par trois modèles d'évaluation intégrée de grande taille, certes bien plus complexes que notre modèle théorique, et intégrant des effets que celui-ci ne prend pas en compte. Cependant, la plupart des enrichissements pertinents du modèle que nous envisageons maintenant conduisent à préconiser une valeur initiale de la taxe carbone encore plus élevée.
+
+
+26
+Inciter à laisser des ressources fossiles en terre
+Nous avons considéré jusqu'ici que la rareté des ressources fossiles était une rareté physique, c'est-à-dire qu'il était économiquement profitable d'extraire l'intégralité du stock. Cette hypothèse est forte et peut être discutée. Le terme "  stock de ressource  " n'admet pas une définition unique et simple. Au sens le plus extensif, le stock d'une ressource non renouvelable est la masse de cette ressource qu'on estime exister dans la croûte terrestre, la plus grande partie étant constituée de ressources présentes sous des formes très dispersées ou à de très grandes profondeurs sous la surface terrestre ou sous le fond des océans. Cette mesure du stock est purement physique, et n'a que peu de relations avec des mesures économiques. À un niveau moins large, on définit conventionnellement les "  ressources  " comme la fraction du stock précédent dont l'extraction est potentiellement possible. Cette mesure fournit une estimation des limites supérieures aux possibilités d'extraction étant données les technologies courantes et anticipées. Elle n'est plus purement physique puisqu'elle incorpore des informations à la fois physiques et technologiques. Elle illustre la difficulté qu'il y a à mesurer les ressources : dans le futur, les technologies changeront certainement, d'une façon qui n'est pas forcément anticipée aujourd'hui, et l'estimation des ressources en sera modifiée. Mais ce qui intéresse un économiste n'est pas seulement ce qui est techniquement faisable, mais ce qui peut être fait compte tenu des conditions économiques présentes et futures. On définit alors la "  base de réserves  ", estimation d'une borne supérieure du stock de ressources (incluant les réserves qui n'ont pas encore été découvertes) économiquement exploitable sous des anticipations raisonnables de prix, de coûts et de technologies futures. Enfin, les "  réserves  " sont les quantités économiquement exploitables étant données la technologie actuelle et la configuration actuelle des prix et des coûts. Le concept courant de stock de ressource est donc endogène.
+
+
+27
+Si on considère alors que ce qui est réellement limitatif est la rareté économique et non pas la rareté physique, la taxe carbone ne permet plus seulement de modifier le profil du sentier d'extraction mais aussi de faire en sorte que certaines ressources fossiles ne soient jamais extraites, c'està-dire que l'on extraie moins au total. Son profil reste similaire.
+Accélérer le passage aux énergies renouvelables et stimuler le progrès technique
+Une vision optimiste du progrès technique peut permettre de soutenir que le niveau optimal de la taxe est faible voire nul. La politique économique serait inutile, au motif que l'innovation technologique permettra de toutes façons de résoudre le problème du réchauffement climatique. Cependant, le progrès technique ne tombe pas du ciel, il est endogène car il est le fruit d'efforts de recherche délibérés, et il n'est pas du tout certain que ces efforts soient spontanément orientés vers la mise au point d'innovations favorables au climat.Taxe carbone et progrès technique ne sont pas opposables, ils sont complémentaires. Le rôle de la première est aussi d'orienter la recherche dans la bonne direction en fournissant les incitations adéquates, d'accélérer le passage aux énergies renouvelables, d'inciter à développer la capture et la séquestration du carbone, d'accompagner la diffusion dans l'économie des énergies/processus/produits moins intensifs en carbone.
+LE DANGER D'UN "  GREEN POLICY PARADOX  "
+Nous avons vu que le profil temporel optimal de la taxe carbone est très complexe - il a une forme en cloche - et que sa détermination nécessite la connaissance des dommages marginaux et de l'absorption naturelle du carbone. Or ceux-ci sont mal connus et font l'objet de controverses. En raison de ces incertitudes et par souci de simplicité, le régulateur peut
+
+
+28
+décider d'adopter une règle : taxe (accise) constante ou taxe évoluant au cours du temps à taux constant. On a alors les résultats suivants.
+ -  Une taxe constante est exactement équivalente à une hausse du coût marginal d'extraction de la ressource. Elle a pour effet de retarder l'extraction, et va donc bien dans le sens souhaité par le régulateur, même si elle n'est pas optimale.
+ -  Une taxe croissant au taux d'actualisation ne modifie en rien le sentier d'extraction de la ressource.
+ -  Une taxe croissant à un taux plus élevé que le taux d'actualisation entraîne, quel que soit le niveau initial de la taxe, une accélération de l'extraction et va donc à l'encontre de l'objectif du régulateur. À l'inverse, une taxe croissant à un taux plus faible que le taux d'actualisation va dans le bon sens.
+ -  Plus généralement, Ngo Van Long et Hans-Werner Sinn1 montrent que la taxation est neutre par rapport au sentier d'extraction quand le coin fiscal absolu croît au taux d'actualisation, de sorte que la perte de revenu actualisée par unité de ressource extraite due à la taxe soit constante au cours du temps. On conçoit en effet que si la perte actualisée due à la taxe est croissante les producteurs ont intérêt à accélérer l'extraction, tandis qu'ils ont intérêt à la retarder si cette perte est décroissante.
+Dans ce cadre, Hans-Werner Sinn2 souligne les dangers de ce qu'il appelle le Green Policy Paradox : si le régulateur se trompe sur le profil de
+1. N. V. Long et H.-W. Sinn, "  Surprise price shifts, tax changes and the supply behaviour of resource extracting firms  ", Australian Economic Papers, 24, 1985, p. 278-289. 2. H.-W. Sinn, "  Public policies against global warming  ", CESifo, Working Paper 2087, et National Bureau of Economic Research Working Paper, 13454, 2007. Noter que le Green Policy Paradox ne peut apparaître si les émissions sont régulées avec un marché de permis plutôt qu'avec une taxe.
+
+
+29
+la taxe, la politique environnementale peut avoir exactement l'effet contraire de l'effet escompté. Ce sera le cas si le régulateur annonce une taxe faible aujourd'hui mais fortement croissante au cours du temps, ce qu'il peut être tenté de faire pour des raisons d'acceptabilité politique.
+Introduire une taxe au niveau initial élevé et constante dans le temps (modulo bien sûr correction de l'inflation) permet d'éliminer le danger d'un Green Policy Paradox, ainsi que les difficultés liées à l'incapacité concrète des gouvernements ou des parlements à s'engager sur un profil de taxe sur très longue période.
+LE COMPORTEMENT NON CONCURRENTIEL DES OFFREURS
+Nous avons jusqu'à présent raisonné implicitement comme si les marchés des ressources fossiles étaient concurrentiels, ce qu'ils ne sont pas. Une grande partie des producteurs de pétrole sont regroupés au sein du cartel de l'OPEP1. Ils peuvent dans une large mesure fixer le prix hors taxe en jouant sur leur offre. Leur liberté de fixation des prix est cependant limitée par l'existence des autres producteurs, qui constituent une frange concurrentielle. Mais les réserves les plus abondantes appartiennent à des pays de l'OPEP, et la frange concurrentielle s'amenuise rapidement. Le marché du gaz est organisé de façon très similaire à celui du pétrole, même s'il est davantage régionalisé. Le marché du charbon, en revanche, est bien plus concurrentiel, dans la mesure où les réserves sont réparties de façon plus égalitaire dans le monde, y compris dans les pays développés.
+1. OPEP : Algérie, Arabie saoudite, Émirats arabes unis, Indonésie, Irak, Iran, Koweït, Lybie, Nigéria, Qatar et Venezuela. En 2005, L'OPEP effectue 38 % de la production mondiale de pétrole mais possède 79 % des réserves mondiales et effectue 70 % des expor tations.
+
+
+30
+Sur un marché non concurrentiel, les producteurs appliquent une marge sur le prix qui prévaudrait en concurrence parfaite. Celle-ci dépend de l'élasticité-prix de la demande de ressource fossile, et est d'autant plus élevée que cette dernière est faible. Ce qui est le cas pour les énergies fossiles. Les producteurs possèdent donc un pouvoir de marché important. On sait1 que dans la très grande majorité des configurations (dépendant de la forme des coûts d'extraction et de l'élasticité-prix de la demande) la distorsion de monopole joue dans le bon sens sur le plan environnemental : elle repousse l'extraction. Le monopole serait ainsi le meilleur ami de l'environnement. La structure de marché des offreurs faisant une partie du travail de la taxe carbone, celle-ci doit avoir un niveau initial plus faible et un profil plus croissant (ou moins décroissant) qu'en concurrence parfaite, et ce d'autant plus que la concentration des offreurs est grande2.
+L'OPEP PEUT-ELLE S'APPROPRIER LA RENTE CARBONE ? LES PAYS CONSOMMATEURS PEUVENT-ILS ACCAPARER LES RENTES DE L'OPEP ?
+Dans la réalité, producteurs et consommateurs de ressources fossiles appartiennent à des pays différents aux priorités en matière climatique différentes, et non pas à une entité supranationale qui aurait fixé un objectif climatique commun.
+Considérons par souci de simplification que les pays producteurs sont regroupés au sein d'un cartel que l'on nomme OPEP, et qu'ils n'envisagent pas de mettre en place de politique climatique. Ils savent évidemment que
+1. Le lecteur pourra consulter l'ouvrage de référence de P. Dasgupta et G. Heal, Economic Theory and Exhaustible Resources, Cambridge, Cambridge University Press, 1979. 2. Sur ce dernier point voir par exemple J. Daubanes, "  Fossil fuels supplied by oligopolies : on optimal taxation and rent capture  ", Economics Bulletin, 17(13), 2008, p. 1-11.
+
+
+31
+les pays consommateurs, eux, l'envisagent. Le cartel peut adopter un comportement stratégique consistant à augmenter le prix hors taxe de la ressource grâce à une politique de restriction de l'offre, de sorte que l'extraction soit retardée, fournissant ainsi lui-même aux consommateurs les incitations que la taxe carbone devait fournir. La taxe carbone devient alors inutile ; l'annonce de son introduction est suffisante pour déclencher une augmentation du prix. Augmentation du prix hors taxe et taxe carbone vont dans le même sens vis-à-vis de l'objectif environnemental, mais ont évidemment des implications distributives bien différentes.
+Face au cartel des pays producteurs, les pays consommateurs peuvent également se constituer en cartel : on peut interpréter ainsi un accord sur le climat regroupant un nombre suffisant de pays qui adoptent une taxe carbone harmonisée. De même que le cartel des pays producteurs peut manipuler le prix hors taxe, le cartel des pays consommateurs peut adopter un comportement stratégique pour essayer de capter une partie de la rente des producteurs, en manipulant la taxe. Si la taxe est fixée à un niveau suffisamment élevé pour entraîner une baisse significative de la demande adressée aux producteurs, ces derniers peuvent être tentés de diminuer leur prix hors taxe de façon à limiter la baisse de la demande. La taxe carbone, payée in fine par les producteurs, est alors inefficace vis-à-vis de son objectif environnemental.
+Que résulte-t-il de ce double comportement stratégique ? Le cartel des producteurs s'approprie-t-il la rente carbone, ou celui des consommateurs s'approprie-t-il les rentes de rareté et de monopole ? La taxe carbone est-elle inutile ou inefficace ? Matti Liski et Olli Tahvonen1 étudient ce problème et montrent qu'en présence de ces interactions stratégiques
+1. M. Liski et O. Tahvonen, "  Can carbon tax eat OPEC's rents ?  ", Journal of Environmental Economics and Management, 47, 2004, p. 1-12.
+
+
+32
+la taxe carbone optimale mise en place par le cartel des consommateurs est la somme de la taxe habituelle et d'un terme additionnel. Si les dommages dus aux émissions ne sont pas trop sévères, ce terme s'apparente à un droit de douane sur les importations de ressource fossile, destiné à capter une partie de la rente du cartel de producteurs. Il est initialement élevé, puis décroît vers zéro. Il induit une réduction du prix de production. Au total, le sentier de la taxe peut être croissant ou décroissant.
+Un débat récurrent dans les pays industrialisés est celui des liens entre taxe carbone et prix du pétrole. La taxe carbone doit-elle baisser quand le prix du pétrole augmente et augmenter quand il diminue, de sorte que le prix à la consommation reste constant (ou croissant à un rythme prédéfini) ? L'argument principal est que les consommations d'énergie réagissent au prix à la consommation, somme du prix de production et de la taxe. C'est lui qui doit être contrôlé, ce qui justifierait de baisser la taxe quand le prix de production augmente. Notons que même si les pays consommateurs fixent le taux de la taxe et son évolution indépendamment de ceux du prix du pétrole, ils peuvent être (fortement) incités par leurs opinions publiques à réduire la taxe quand celui-ci est très élevé1.
+Outre le fait que la taxe carbone ne concerne pas uniquement le pétrole, les arguments à l'encontre d'une taxe variable sont de nature stratégique. Tout d'abord, nous avons vu que la taxe carbone est très probablement payée en partie par le cartel des producteurs. La diminuer
+1. Par exemple, la France a rendu laTIPP flottante entre le 1er janvier 2000 et le 21 juillet 2002. Le gouvernement britannique a abandonné fin 2000, suite à d'importantes protestations, le Fuel Duty Escalator introduit en 1993, qui provoquait une augmentation automatique perpétuelle du prix réel du pétrole. En 2008, au moment où le prix du pétrole était très élevé, la France a exempté de la TIPP certaines activités, tandis que le gouvernement britannique a eu bien du mal à résister à la proposition du Parti conservateur de rendre le Climate Change Levy (voir la section 6) variable.
+
+
+33
+quand le prix des énergies est élevé n'a donc pas de justification. Ensuite, si le cartel des consommateurs met en place une taxe variable, le cartel des producteurs saura qu'il peut sans risque de faire diminuer la demande augmenter son prix, puisque l'ajustement sera supporté par le cartel des pays consommateurs qui baissera la taxe carbone du même montant. L'effet environnemental sera le même, tandis que les recettes iront chez les producteurs et non plus chez les consommateurs, ce qui n'est pas du tout l'effet recherché !
+DE MULTIPLES INCERTITUDES
+Nous voudrions insister pour finir sur le fait que l'incertitude est extrêmement prégnante à tous les niveaux de la question du changement climatique. Les seuls faits avérés sont l'augmentation de la concentration de carbone dans l'atmosphère par rapport à la période préindustrielle (la concentration est aujourd'hui de 37 % supérieure à celle de 1750) et l'augmentation de la température terrestre moyenne (environ +1 °C sur un siècle, avec une accentuation ces vingt-cinq dernières années).
+La nature précise des liens entre augmentation de concentration et augmentation de température est cependant mal connue, en dépit des très grands efforts fournis par la communauté scientifique ces dernières décennies. Les plus grandes incertitudes proviennent de la possibilité de réactions non linéaires de certains éléments du système climatique, extrêmement complexe, consécutives aux rétroactions climatiques (libération du méthane piégé dans le permafrost, affaiblissement de la capacité d'absorption naturelle des océans et des forêts, modification de la circulation thermohaline...).
+Une autre incertitude forte réside dans l'évaluation des dommages consécutifs à une augmentation de température donnée, nous l'avons vu. Elle est renforcée par la possibilité d'apparition d'événements climatiques catastrophiques et d'effets d'emballement du climat. Les dommages catastrophiques pourraient remettre en cause le fonctionnement de nos sociétés
+
+
+34
+de façon beaucoup plus profonde que ce que décrivent les modèles, et peut-être même menacer leur survie.
+Enfin, une dernière source d'incertitude cruciale réside dans les capacités d'adaptation et d'innovation technologique de nos sociétés.
+Certaines incertitudes sont susceptibles de se résorber au cours du temps, au fur et à mesure que notre connaissance du phénomène du changement climatique et de ses conséquences s'améliore. Cette possibilité d'apprentissage est un élément important du processus de décision. En outre, sur le plan théorique, l'incertitude est particulièrement intéressante quand elle s'accompagne d'irréversibilités, car alors les erreurs ne peuvent pas être corrigées. C'est pourquoi les modèles qui introduisent l'incertitude modélisent le plus souvent également les possibilités d'apprentissage et les irréversibilités.
+La prise en compte des incertitudes conduit-elle à modifier la taxe carbone ? Faut-il taxer plus lourdement dès à présent pour éviter les dommages catastrophiques, ou faut-il au contraire reporter les efforts dans le temps, pour attendre que l'incertitude se réduise et atteindre les objectifs à moindre coût ? La littérature théorique1 donne des arguments allant dans les deux sens, fondés sur le fait qu'il existe deux types d'irréversibilités : l'irréversibilité des dommages (ou de certains d'entre eux), qui conduit à préconiser un effort initial important, c'est-à-dire une valeur du carbone initiale plus élevée qu'en l'absence d'incertitude, et l'irréversibilité du capital investi pour lutter contre le changement climatique, qui conduit
+1. Voir par exemple, pour les travaux fondateurs de cette littérature, A. Fisher et U. Narain, "  Global warming, endogenous risk and irreversibility  ", Environmental and Resource Economics, 25, 2003, p. 395-416 ; C. D. Kolstad, "  Fundamental irreversibilities in stock externalities  ", Journal of Public Economics, 60, 1996, p. 221-233 ; R. Pindyck, "  Irreversibilities and the timing of environmental policy  ", Resource and Energy Economics, 22, 2000, p. 233-259 ; A. Ulph et D. Ulph, "  Global warming, irreversibilities and learning  ",The Economic Journal, 107, 1997, p. 639-650.
+
+
+35
+au contraire à retarder l'effort dans l'attente d'informations nouvelles. Les deux types d'irréversibilités jouent en sens opposé, et il n'existe pas de consensus dans la littérature sur l'effet qui domine.
+Luc Baumstark et Christian Gollier1 présentent une synthèse de la littérature prenant en compte l'incertitude et soulignent qu'à côté des irréversibilités deux paramètres caractérisant les comportements des agents sont centraux pour évaluer les conséquences de l'incertitude :
+ -  l'aversion au risque, qui conduit à faire un effort initial élevé pour limiter l'exposition au risque des générations futures ;
+ -  la prudence, qui conduit également à augmenter l'effort initial pour réduire l'impact d'une éventuelle mauvaise nouvelle future (comme dans la littérature sur l'épargne de précaution).
+Ils concluent au total à la nécessité d'augmenter la valeur initiale du carbone en présence d'incertitude, et de réduire son taux de croissance espéré. Ils soulignent enfin que l'arrivée attendue de nouvelles informations dans le futur, qui permettra une meilleure connaissance des caractéristiques du phénomène du changement climatique, grâce à l'observation ou aux progrès de la science, conduit à préconiser un processus de décision séquentiel.
+3. Taxe carbone et réforme fiscale
+La taxe carbone théorique est une taxe sur les émissions de carbone consécutives à la combustion des énergies fossiles. Cependant, il n'est pas possible de mesurer toutes les émissions et de taxer individuellement les émetteurs sur cette base, ce serait à la fois techniquement difficile et
+1. L. Baumstark et C. Gollier, "  La dynamique de la valeur du carbone dans un cadre incertain  ", in La Valeur tutélaire du carbone, t. 2, chap. 9, Exercices de modélisation et contributions, Centre d'analyse stratégique, 2008.
+
+
+36
+administrativement très coûteux. Il faut donc rechercher une autre assiette, qui en soit la plus proche possible. Nous examinons tout d'abord les diverses possibilités en la matière.
+Ensuite, dans les économies réelles préexiste évidemment à la mise en place de la taxe carbone un système fiscal complexe, probablement bien loin d'être optimal. De lourdes taxes pèsent sur l'énergie dans de nombreux pays, tandis que d'autres la taxent moins lourdement et subventionnent même certains produits énergétiques qu'ils produisent. Ces taxes, anciennes, ont pour objectif principal la collecte de recettes fiscales pour le budget public, et n'ont donc pas été pensées comme des taxes environnementales. La taxe carbone, en revanche, n'est pas conçue pour être une taxe de financement mais une taxe incitative. Pour qu'elle soit bien perçue comme telle, il faut que les recettes qu'elle engendre soient intégralement redistribuées. Il est fréquemment proposé qu'elles soient utilisées pour financer la recherche en énergies de substitution ou processus de production moins émetteurs de carbone. Il nous semble que cette option, bien qu'ayant un sens très clair, a le défaut de noyer ces recettes dans un ensemble plus large de crédits destinés au financement de la recherche, de faire ainsi perdre sa lisibilité à la redistribution, et ne devrait donc pas être privilégiée. La redistribution peut prendre plusieurs formes : elle peut concerner les ménages ou les entreprises, être forfaitaire ou avoir une base plus complexe. Elle peut notamment s'effectuer sous forme de baisse d'un autre impôt, option qui a été très largement étudiée dans la littérature théorique aussi bien qu'empirique et a donné lieu à un grand espoir, celui qu'il existe un "  double dividende  ".
+LE POINT D'APPLICATION DE LA TAXE
+L'assiette la plus proche possible des émissions de carbone est clairement constituée par les produits énergétiques, dès lors que la capture et le stockage du carbone ne sont pas encore opérationnels. Quel doit alors être le point d'application de la taxe carbone ?
+
+
+37
+Il est évidemment possible de taxer l'énergie primaire à la sortie du puits ou de la mine. C'est dans ce cas le pays producteur qui prélève la taxe, qui est une taxe à l'exportation dans la mesure où elle ne s'appliquerait sûrement pas à la consommation intérieure. Une telle solution est très peu susceptible de voir le jour.
+Quand la taxe est mise en place par le pays consommateur, deux possibilités a priori équivalentes s'offrent à lui.
+ -  Le pays consommateur peut appliquer une taxe "  primaire  " sur le contenu en carbone des produits énergétiques bruts extraits sur son territoire ou importés (pétrole brut, gaz naturel, charbon). Il s'agirait pour la France principalement d'une taxe à l'importation, dans la mesure où elle n'extrait que très peu d'énergies fossiles. Concrètement, seuls paieraient la taxe les raffineries (et quelques autres activités dans lesquelles le pétrole brut est utilisé directement) et les importateurs de pétrole raffiné, de gaz naturel et de charbon. Les assujettis transféreraient alors intégralement dans leur prix le montant de la taxe. Cette solution est simple et transparente, mais ce n'est pas celle qui a été retenue par les politiques environnementales existantes.
+ -  Le pays consommateur peut taxer la consommation de produits énergétiques finaux vendus aux utilisateurs industriels et aux ménages (essence, GPL, coke...). Cette solution est celle qui a été adoptée dans les pays qui ont mis en place une taxe carbone, et, implicitement, en Europe, à travers l'EU ETS. Calibrée de façon appropriée, elle est théoriquement équivalente à la précédente, aux émissions de carbone des processus de transformation des produits primaires en produits finaux près. Davantage d'agents sont assujettis à la taxe qu'avec la solution précédente, ce qui augmente les coûts administratifs.
+Pourquoi a-t-on retenu la seconde solution ? Une des raisons est sans doute qu'avec une taxe à la source ceux qui paient la taxe ne sont pas ceux
+
+
+38
+qui émettent le carbone, puisque ces derniers sont les utilisateurs qui provoquent la combustion des énergies fossiles. Une raison est que la taxe portant sur les utilisateurs permet de discriminer entre ceux-ci, et se prête mieux à la négociation et aux exemptions que la taxe à la source.
+L'INTERACTION AVEC LES TAXES EXISTANTES SUR L'ÉNERGIE
+Les taxes sur l'énergie sont déjà très élevées dans de nombreux pays développés. Il s'agit de taxes de droit commun (taxe à la consommation ou taxe à la valeur ajoutée, comme la TVA en France), mais également de taxes spécifiques (accises, comme la TIPP1 en France). Ce sont à ces dernières que nous nous intéressons. Les différentes énergies (pétrole, gaz, charbon
+1. La Taxe intérieure sur les produits pétroliers (TIPP) s'applique aux produits utilisés comme carburant pour moteur, comme additif, ou en vue d'accroître le volume final des carburants pour moteurs, ainsi qu'aux hydrocarbures utilisés pour le chauffage, à l'exception du gaz naturel et des combustibles solides comme le charbon, la tourbe ou le lignite. Elle est perçue sur les volumes (montant fixe en euros perçu sur chaque unité vendue), et n'augmente donc pas avec le prix hors taxes. Elle rapporte environ 24 milliards d'euros par an. Sont totalement exonérés les produits pétroliers destinés à l'avitaillement des bateaux effectuant de la navigation maritime et des aéronefs à usage autre que de tourisme privé, à l'exclusion des bateaux de plaisance. Sont partiellement exonérés les unités de production de biocarburant, le transport routier de marchandises (véhicules de plus de 7,5 tonnes), les transports publics, les taxis (depuis le 1er janvier 2008). Source : Fiscalité sur les produits énergétiques, www.douane.gouv.fr/page.asp?id=177. Le tableau 2 donne les montants de la TIPP par produit. Le gaz naturel est soumis à une taxe similaire à la TIPP, la Taxe intérieure de consommation sur le gaz naturel (TICGN), fixée à 1,19 euros/mWh. Les houilles, lignites et cokes (charbon) sont soumis depuis 2006 à une taxe intérieure de consommation (TICC) quand ils sont utilisés comme combustible, mais pas quand ils sont utilisés pour d'autres usages, en particulier pour la production d'électricité (www.douane.gouv.fr/page.asp?id=171).
+
+
+39
+
+et électricité) sont taxées différemment. Une première raison est historique : dans un pays donné, certaines énergies ont toujours été importées, ce sont celles qui sont lourdement taxées, d'autres ont été ou sont encore en partie produites nationalement, ce sont celles qui sont faiblement taxées ou même subventionnées. Une deuxième raison tient à la valeur des élasticités-prix de la demande des différentes énergies : sont taxées le plus lourdement les énergies pour lesquelles cette élasticité-prix est la plus faible, c'est-à-dire en pratique le carburant pour le transport. Une troisième raison motive la taxation des carburants : le désir d'internaliser les externalités négatives créées par les transports, pollution (locale) de l'air, et surtout détérioration des infrastructures routières. Aucune de ces raisons ne prend en compte les externalités climatiques différentes engendrées par l'utilisation des sources d'énergie variées (tableau 1), ce qui est naturel puisque ces taxes préexistaient à la prise de conscience du changement climatique.
+
+Tableau 1 - Contenu en CO2 des combustibles fossiles (g CO2eq/kWh).
+
+Gaz naturel GPL Essence (ARS, SP95, SP98) Fioul domestique / gazole Fioul lourd Charbon
+Source : CITEPA.
+
+205230264270281342
+
+En France, l'énergie la plus taxée est le supercarburant utilisé dans les transports, puis le gazole, tous deux soumis à la TIPP (tableau 2), puis
+
+
+40
+
+Tableau 2 - Fiscalité des hydrocarbures (TIPP) applicable au 1er janvier 2009 en France (en euros/1000 l).
+
+Supercarburant sans plomb Gazole EEG (émulsion d'eau dans le gazole) Fioul domestique Essences d'aviation Carburéacteur (usage avion) GPL (gaz de pétrole liquéfié)
+Source : www.industrie.gouv.fr/energie/petrole/textes/taxes-applicables-2009.htm
+
+606,9428,4262,7 56,6359,0 0,0 59,9
+
+l'électricité, puis le gaz et, enfin, le charbon qui est très peu taxé, bien qu'il soit le plus polluant. Les deux anomalies principales (et bien connues !), visibles quand on compare le contenu en CO2 des combustibles et la fiscalité qui leur est appliquée, concernent la taxation du gazole et celle du charbon. La TIPP appliquée au gazole est nettement inférieure à celle appliquée au supercarburant sans plomb, pour des raisons qui ont paru bonnes à une certaine époque mais qui, avec les progrès des connaissances, se sont révélées mauvaises1. Cette différence de taxation a entraîné un gonflement du parc automobile diesel par rapport au parc à essence, et a incité à développer le transport routier de marchandises. Quant au charbon, il est de loin le combustible le plus polluant mais les subventions n'ont
+
+1. On pensait alors que le diesel était moins polluant que l'essence. Dominique StraussKahn a initié en 1998 un programme de rattrapage de laTIPP sur le gazole de 7 c par an, abandonné deux ans plus tard au moment de l'augmentation du prix du pétrole.
+
+
+41
+
+été supprimées qu'en 1996 en France et subsistent dans plusieurs pays européens, dont l'Allemagne (6,7 milliards d'euros en 1996, 2,7 en 2005), la Pologne et la Hongrie, en principe pour accompagner la restructuration de l'industrie charbonnière.
+L'Ademe1 s'est livrée au calcul de la taxe carbone apparente correspondant aux taxes précédentes et au contenu en carbone des divers combustibles, pour la France, en 2009. Le tableau 3 reprend les résultats. Ceux-ci sont éloquents. Ils montrent à quel point une remise à plat complète de la fiscalité portant sur les combustibles fossiles serait difficile à réaliser. L'Ademe souligne que ces taux apparents peuvent être très différents dans les autres pays européens, la France taxant en moyenne plus fortement l'essence et le diesel que les autres pays, et beaucoup moins fortement le fioul domestique (en moyenne, deux fois moins) et le gaz naturel.
+
+Tableau 3. Taxe apparente sur les combustibles fossiles en France, 2009 (en euros/t CO2).
+
+Supercarburant sans plomb (TIPP) Gazole (TIPP) GPL (TIPP) Fioul domestique (TIPP) Gaz naturel (TICGN) Charbon (TICC 2008)
+Source : Ademe.
+
+265,0158,0 43,0 21,0 5,8 3,5
+
+1. Ademe, "  Fiscalité comparée de l'énergie et du CO2 en Europe et en France  ", Stratégie & études, n° 20, 8 juillet 2009.
+
+
+42
+
+Compte tenu des caractéristiques actuelles des taxes sur l'énergie et des grandes différences de taxation entre pays (tableau 4), il serait tentant de lier l'introduction d'une taxe carbone en Europe à une remise à plat de ces taxes, et à la reconstruction d'un système fiscal harmonisé permettant d'internaliser l'ensemble des externalités engendrées par la consommation d'énergie.
+Tableau 4 - Accises sur l'énergie en 2008 en pourcentage du prix TTC dans quelques pays de l'OCDE.
+
+Pays
+
+Essence sans plomb
+
+Allemagne
+
+46,7
+
+Danemark États-Unis*
+
+38,7 14,5
+
+Finlande France
+
+42,9 43,6
+
+Italie Japon
+
+40,9 34,2
+
+Norvège Royaume-Uni
+
+40,2 44,5
+
+Suède
+
+40,6
+
+* taxes totales
+
+Source : IEA Statistics, Energy prices and taxes, 2009.
+
+Diesel
+42,0 36,0 14,1 35,1 40,3 37,7 27,4 39,7 50,4 38,9
+
+Fioul léger industrie
+9,6 4,2 4,9 12,6 8,7 37,2 2,4 19,5 18,9 10,3
+
+Mais ce serait probablement la meilleure façon d'enterrer à tout jamais la mise en place de la taxe carbone, tant la tâche serait complexe et conflictuelle. Nous pensons donc qu'il faut partir du postulat que la fiscalité sur
+
+
+43
+l'énergie préexistante a été mise en place pour d'autres motifs que la lutte contre le changement climatique et qu'à ce titre il ne faut pas y toucher, sauf pour éliminer les anomalies les plus criantes comme les différences de taxation entre le supercarburant et le gazole et les subventions au charbon, et sauf bien sûr dans les pays qui ont déjà introduit une politique climatique. Le défaut de cette position est que le caractère incitatif d'une taxe n'est pas lié à l'intention qui a présidé à son instauration, et que la TIPP a donc bien un impact sur les comportements de consommation d'énergie !
+LE DOUBLE DIVIDENDE, RÉALITÉ OU CHIMÈRE ?
+L'acceptabilité de la taxe carbone passe très probablement, nous l'avons souligné, par le fait qu'elle ne soit pas perçue comme un impôt supplémentaire, source de financement public, mais comme un élément d'une réforme fiscale à prélèvements constants. Il faut pour cela redistribuer les recettes, et ce qui peut être fait par le biais de la diminution d'un autre impôt. Une littérature théorique abondante a étudié les conséquences en termes de bien-être d'une réforme fiscale fondée sur cette idée et discuté de l'existence d'un double dividende1.
+Le premier dividende attendu de la taxe carbone est évidemment le dividende environnemental : elle doit permettre de diminuer les émissions de carbone et de maintenir le réchauffement global dans des limites jugées acceptables par la société. Il est indépendant de la redistribution des
+1. On trouvera des présentations approfondies de cette littérature dans L. H. Goulder, "  Environmental taxation and the double dividend : a reader's guide  ", International Tax and Public Finance, 2(2), 1995, p. 157-183 ; L. A. Bovenberg et L.H. Goulder, "  Environmental taxation and regulation  ", in Handbook of Public Economics, New York, Elsevier, 2002, vol. 3, chap. 23,, p. 1471-1545 ; M. Chiroleu-Assouline, "  Le double dividende : les approches théoriques  ", Revue française d'économie, 16(2), 2001, p. 119-147.
+
+
+44
+recettes de la taxe. Le deuxième - éventuel - dividende, un dividende économique, proviendrait du recyclage des recettes en diminution d'un autre impôt. En théorie, à partir d'une situation initiale qui n'est pas optimale, si cet autre impôt est plus distordant que la taxe carbone, le bienêtre doit augmenter suite à la réforme fiscale, car l'opération réduit globalement le coût des distorsions induites par le système fiscal. La distorsion fiscale est mesurée par la comparaison du rendement d'un impôt et d'une mesure monétaire (variation équivalente ou variation compensatoire de revenu) de la perte de bien-être engendrée par cet impôt. Seul l'impôt forfaitaire n'est pas distordant, car il n'engendre qu'un effet de revenu et pas d'effet de substitution.
+Les modèles théoriques permettant d'analyser la possibilité d'occurrence du deuxième dividende sont la plupart du temps des modèles d'équilibre général d'une petite économie ouverte, où tous les facteurs sont parfaitement mobiles sauf le travail. Les plus simples font l'hypothèse que tous les marchés sont en concurrence parfaite. La taxe carbone porte sur la consommation d'énergie des ménages et sur l'input énergétique des entreprises. Les recettes sont recyclées en diminution d'un impôt portant sur le travail, les cotisations sociales employeurs par exemple. Le seul facteur immobile étant le travail, la taxe carbone est en fait dans ces modèles une taxe implicite sur le travail. La réforme fiscale consiste donc à remplacer une taxe explicite par une taxe implicite sur ce facteur. Deux paramètres sont centraux pour expliquer les effets de cette réforme sur le bien-être : l'élasticité de l'offre de travail au salaire réel et l'élasticité de substitution entre biens non polluants et énergie. D'une part, la première élasticité joue un rôle important car c'est elle qui détermine la réponse de l'offre de travail à la variation du salaire réel induite par la réforme, qui détermine à son tour l'effet de la réforme sur l'emploi. Ces effets sont a priori ambigus, mais les modèles concluent que quand la taxe carbone est élevée, le salaire réel et l'emploi diminuent, ainsi que le bien-être. D'autre part, quand la seconde élasticité est élevée, la taxe carbone induit une
+
+
+45
+forte baisse de la demande d'énergie, ce qui va dans le sens de l'obtention du premier dividende mais diminue la probabilité d'apparition du deuxième, car alors la base fiscale de la taxe carbone s'érode et il faut que son taux soit élevé pour obtenir le résultat environnemental souhaité ; on remplace alors une taxe à large assiette, le travail, par une taxe à assiette faible, et on augmente ce faisant les distorsions.
+Les modèles plus complexes montrent que la possibilité d'occurrence du deuxième dividende augmente si le système fiscal existant avant la réforme est très inefficace, si la taxe carbone est en partie supportée in fine par les pays producteurs d'énergies fossiles, ou encore s'il existe dans l'économie considérée un chômage involontaire important. Dans ce dernier cas, la réforme fiscale peut augmenter le bien-être en induisant une augmentation de la demande de travail qui permet une réduction de ce chômage.
+En dépit de la séduction exercée par l'idée de remplacer la taxation d'un "  bien  ", le travail par exemple, par celle d'un "  mal  ", les émissions de carbone, il n'y a pas de preuve empirique de la réalité du double dividende et il existe en revanche de trop nombreux doutes théoriques.Tout dépend des enchaînements macroéconomiques résultants des caractéristiques de l'économie considérée : comportement d'offre de travail, substituabilité entre biens polluants et biens non polluants, fonctionnement du marché du travail, structure et niveau de la fiscalité préexistante... Cela nous conduit à ne pas proposer une redistribution des recettes de la taxe carbone qui cherche à obtenir le second dividende.
+4. Les impacts distributifs de la taxe carbone
+La taxe carbone est susceptible d'avoir des impacts distributifs dans plusieurs dimensions.
+Tout d'abord, et c'est l'aspect le plus connu et le plus étudié, la taxe carbone est régressive. La consommation d'énergie est relativement plus
+
+
+46
+importante dans le panier de consommation des ménages à faibles revenus que dans celui des ménages à revenus élevés. La figure 1 reporte la part des dépenses d'énergie dans le budget des ménages français en 2006 en fonction de leur revenu. Elle ne permet pas de visualiser tout à fait correctement la régressivité de la taxe carbone, puisqu'il s'agit de dépenses d'énergie qui ne sont pas corrigées par leur contenu en carbone, mais elle en fournit cependant un premier ordre de grandeur. On peut noter que la régressivité proviendrait principalement de la taxe portant sur le carbone incorporé dans les dépenses d'énergie pour le logement, et que la taxe portant sur les dépenses d'énergie pour le transport serait d'abord faiblement progressive puis faiblement régressive. Comme le notent Zhong Xiang Zhang et Andrea Baranzini1, ce résultat est général et pas seulement caractéristique du cas français.
+Ensuite, la taxe carbone affecte très différemment les ménages urbains et les ménages ruraux. En effet, la part de la consommation d'énergie dans les dépenses des ménages est très différente selon leur type d'habitat et leur lieu de résidence (figure 2). Elle atteint 10 % pour les ménages ruraux qui vivent dans des maisons et ont besoin de beaucoup utiliser leurs véhicules, en particulier pour leurs déplacements professionnels, tandis qu'elle est à peine supérieure à 3 % pour les ménages parisiens qui vivent en appartements et se déplacent massivement en transports en commun. Il serait intéressant d'examiner si, au niveau européen, les deux caractéristiques de faible revenu et d'habitat en zone faiblement urbanisée se cumulent ou sont indépendantes. En France, elles sont très probablement corrélées, et lutter contre la régressivité de la taxe carbone permet également
+1. Z. X. Zhang et A. Baranzini, "  What do we know about carbon taxes ? An inquiry into their impact on competitiveness and distribution of income  ", Energy Policy, 32, 2004, p. 507-518.
+
+
+47
+
+d'atténuer les disparités géographiques. Reste que poursuivre une politique d'aménagement du territoire poussant à l'étalement urbain, comme c'est le cas en France, va clairement dans le mauvais sens.
+Enfin, on peut se demander si la taxe carbone est susceptible d'affecter de façon différenciée les ménages en fonction de leurs caractéristiques démographiques et sociales. Il existe peu d'évidences sur ce point, à part le débat, très vif au Royaume-Uni, sur les fuel poors, qui sont les ménages obligés de dépenser plus de 10 % de leur revenu pour maintenir une température satisfaisante dans leur logement. Il s'agirait principalement de ménages âgés à faibles revenus. Le Fuel Poverty Action Plan1, adopté en novembre 2001, est ciblé sur cette catégorie de population.
+
+%
+
+12,0
+
+10,0
+
+8,0
+
+6,0
+
+4,0
+
+2,0
+
+0,0 1 2 3 4 5 6 7 8 9 10
+
+logement
+
+dé ci le s
+
+transport
+
+Figure 1 - Part des dépenses d'énergie dans le budget des ménages en 2006.
+Source : Insee, enquête budget de famille, 2006.
+
+1. http://www.defra.gov.uk/environment/climatechange/uk/household/fuelpoverty/pdf/ fuelpov_actionplan.pdf
+
+
+12,00 10,00 8,00 6,00 4,00 2,00 0,00
+
+48
+
+% Communes
+rurales Villes de moins
+de 20000 habitants Villes de 20000 à moins de 100000 habitants Villes de 100000 habitants et plus (sauf unité urbaine de Paris) Agglomération parisienne (hors Paris) Ville de Paris Ensemble
+
+logement transport
+Figure 2 - Coefficients budgétaires de l'énergie selon la taille de la commune de résidence.
+Source : Insee, 2007.
+Les coefficients budgétaires présentés dans les figures 1 et 2 donnent une idée de la façon dont les différentes catégories de ménages seraient affectées par la taxe carbone, à consommations inchangées. Mais l'objectif même de la taxe carbone est de faire changer les consommations, de modifier leur structure au détriment des biens intensifs en carbone. Encore faut-il que cela soit possible, et il est fréquemment reproché à la taxe carbone qu'elle pénalisera inutilement les consommateurs, faute d'alternative en matière de transport et de chauffage vers lesquelles ils pourraient
+
+
+49
+
+se tourner. Marie Clerc et Vincent Marcus1 estiment les élasticités-prix des consommations énergétiques des ménages pour la France. Les résultats de leurs estimations sur données macroéconomiques sont reportés dans le tableau 5. Ils sont cohérents avec les autres résultats de la littérature. L'élasticité de la consommation d'énergie domestique à son prix est ainsi très faible à court terme, et elle reste faible à long terme. L'élasticité-prix de la consommation de carburants est sensiblement plus conséquente : une hausse du prix de l'essence de 1 % fait baisser la consommation de 0,2 % à court terme et 0,4 % à long terme. Les auteurs obtiennent des valeurs encore plus élevées sur données microéconomiques. Les comportements en matière de transport s'adapteront donc à terme (achats de véhicules plus économes en carburant, développement des transports en commun...), alors que les comportements en matière de chauffage sont beaucoup plus contraints.
+Tableau 5 - Élasticités-prix des consommations énergétiques des ménages.
+
+Énergie domestique Carburants
+Source : M. Clerc et V. Marcus..
+
+Court terme
+ -  0,06 - 0,19
+
+Long terme
+ -  0,17 - 0,40
+
+Nous nous concentrons maintenant sur la question de la régressivité de la taxe carbone, qui obère fortement son acceptabilité. Il est possible d'atténuer cette régressivité, voire de rendre le système progressif, par une
+
+1. M. Clerc et V. Marcus, "  Élasticités-prix des consommations énergétiques des ménages  ", document de travail, Insee, à paraître, 2009.
+
+
+50
+politique de redistribution des recettes fiscales, de sorte que l'opération soit globalement neutre. Comment dès lors recycler au mieux les recettes ?
+Il faut noter tout d'abord que la question de la redistribution des recettes destinée à corriger la régressivité de la taxe carbone est théoriquement distincte de la question du double dividende. Recycler les recettes de la taxe carbone en baisse d'un autre impôt, jugé plus distordant, dans l'espoir d'augmenter le bien-être global et ainsi d'obtenir un double dividende est une question d'efficacité économique. Les recycler de façon à atténuer la régressivité de la taxe carbone est une question d'équité. Comme souvent, il n'est guère plausible que les deux objectifs puissent être atteints simultanément.
+Une proposition que l'on commence à rencontrer fréquemment est celle d'une redistribution forfaitaire des recettes de la taxe. Il en existe deux variantes. Selon la première, il s'agit de diviser le montant total de la taxe carbone payée par l'ensemble des ménages par le nombre de ménages, et de restituer à chaque ménage ce montant moyen. Selon la seconde, il faut restituer aux ménages les recettes de la taxe carbone qu'eux-mêmes ont payée et également les recettes de la taxe carbone payée par les entreprises1. L'argument, qui nous semble convaincant et nous fait préférer cette seconde variante, est que les entreprises vont dans une certaine mesure répercuter dans leurs prix l'augmentation de leurs coûts due à la taxe, qui sera donc in fine également payée par les ménages. Une entreprise est d'autant plus capable d'effectuer cette répercussion dans les prix que la demande pour son produit est faiblement élastique au prix, qu'elle est faiblement exposée à la concurrence internationale et bien sûr qu'elle peut fixer son prix librement. Agir à travers la politique économique sur l'élasticité-prix de la demande n'est pas possible. Mais on peut protéger les entreprises exposées à la concurrence internationale des pertes de
+1. Voir à la section 6 (p. 62 ) la proposition de la Fondation Nicolas Hulot pour la première variante, celle de James Hansen pour la seconde, par exemple.
+
+
+51
+compétitivité (voir la section 5), et laisser les entreprises aux prix administrés1 répercuter la hausse de leurs coûts. Alors, les ménages paient la taxe, et les recettes fiscales doivent leur être redistribuées.
+Les avantages de cette redistribution forfaitaire sont considérables : progressivité assurée, très grande simplicité de mise en oeuvre, schéma non manipulable et non soumis aux pressions des lobbies divers. Les partisans de ce schéma pensent également qu'il serait mieux accepté par la population que tout autre schéma de redistribution, plus complexe et moins transparent, aux effets moins assurés et moins tangibles.
+Enfin, pour augmenter l'acceptabilité de la taxe par les ménages et réduire encore son caractère régressif, il est possible de ne taxer qu'audelà d'un certain montant de consommation d'énergie à usage domestique représentant la consommation d'énergie incompressible, et de mettre en place des programmes d'aide ciblés sur les fuel poors.
+5. Taxe carbone et compétitivité
+Un autre élément qui revient dans tous les débats sur la taxe carbone comme argument à charge est son impact sur la compétitivité, macroéconomique et sectorielle, dès lors que la taxe n'est pas harmonisée au niveau international et que certains pays n'adoptent pas de politique climatique. Le problème se pose exactement de la même façon avec un marché de permis d'émissions négociables. Il se pose aussi de la même façon avec une régulation environnementale fondée sur des normes, dont l'existence augmente bien sûr également les coûts de production, mais dans ce cas les effets sont moins directs et surtout plus cachés.
+1. En France, EDF est souvent cité comme exemple. Cet exemple n'est pas tout à fait pertinent ici puisque les électriciens sont assujettis à l'EU ETS et ne devraient donc pas être soumis à la taxe carbone.
+
+
+52
+Soulignons tout d'abord, s'il en est besoin, qu'il n'y a aucun risque de perte de compétitivité macroéconomique, dès lors que le taux de change du pays ou de la zone qui adopte la politique climatique avec ses partenaires commerciaux est flexible. À moyen terme en effet, les salaires, le niveau général des prix et le taux de change s'ajustent. Le risque de perte de compétitivité sectorielle est en revanche réel.
+La figure 3 présente la répartition par branche des consommations intermédiaires d'énergie en 1990 et 2006 pour la France. Les branches grosses consommatrices d'énergie sont dans l'ordre les branches énergie, services, industries des biens intermédiaires, transports et commerce. Ce sont des branches abritées, mise à part la branche industrie des biens intermédiaires, où se poseront donc les éventuels problèmes de compétitivité. Mais cette branche est assujettie à l'EU ETS. Une taxe carbone n'entraînerait donc que très peu de problèmes de compétitivité supplémentaires.
+45 40 35 30 25 20 15 10 5 0
+
+%
+Agriculture, sylviculture,
+pêche Industries agricoles et alimentaires Industries des biens de consommation Industrie automobile Industries des biens d'équipement Industries des biens intermédiaires
+Énergie Construction
+Commerce Transports
+Services
+
+Figure 3 - Répartition par branche des consommations intermédiaires d'énergie.
+Source : Insee, 2007.
+
+19902006
+
+
+53
+La figure 4 indique la part des consommations intermédiaires d'énergie dans la production pour l'ensemble des branches hors la branche énergie. Plus cette part est élevée plus la taxe carbone pèsera lourd dans la branche considérée. On constate, sans surprise, que c'est de très loin dans les transports que cette part est la plus élevée. Elle est également importante dans les branches agriculture, sylviculture et pêche, construction, industrie des biens intermédiaires, commerce. Mais il faut noter qu'elle a diminué partout entre 1990 et 2006, sauf dans les branches construction et commerces. C'est cette différence de poids qui fait dire à certains économistes que les activités les plus touchées doivent bénéficier d'exemptions ou que les taux de la taxe doivent être différenciés..
+14 12 10 8 6 4 2 0
+19902006
+Figure 4 - Part des consommations intermédiaires d'énergie dans la production (hors branche énergie)*.
+Source : Insee, comptes nationaux.
+La crainte est celle d'une éventuelle délocalisation des activités intensives en énergie vers les pays qui n'adoptent pas de politique climatique (les fameuses fuites de carbone). Cette délocalisation n'a pas d'intérêt environnemental,
+
+%
+Agriculture, sylviculture,
+pêche Industries agricoles et alimentaires Industries des biens de consommation Industrie automobile Industries des biens d'équipement Industries des biens intermédiaires Construction Commerce Transports
+Services
+
+
+54
+puisque seules comptent pour le réchauffement climatique les émissions totales. Elle peut en revanche permettre à un pays de satisfaire plus facilement sa contrainte de réduction d'émissions dans le cadre d'un accord international de type Kyoto, mais cela n'est qu'un objectif secondaire et n'a pas d'intérêt en soi.
+Les travaux empiriques existants ne permettent pas de conclure de façon définitive sur la réalité empirique des fuites de carbone. Sébastien Raspiller et Nicolas Riedinger1 estiment un modèle de choix de localisation des groupes français et montrent qu'au contraire les pays les plus sévères sur le plan environnemental attirent relativement davantage les activités les plus polluantes. Les effets de la sévérité environnementale sont marginaux, et sont très nettement dominés par les effets des différences de coût du travail par exemple. Les travaux disponibles sur d'autres pays donnent également des résultats peu conclusifs. Une des raisons est peut-être que les politiques environnementales actuellement en vigueur ne sont nulle part d'ampleur suffisante pour entraîner des fuites de carbone, ce qui ne garantit nullement que ces fuites n'apparaîtront pas pour des politiques plus ambitieuses. Une autre raison est évidemment que la compétitivité d'une industrie dépend de bien d'autres éléments que les seuls prix.
+Cependant, même si la réalité du phénomène n'est pas avérée, les risques de fuites de carbone sont systématiquement mis en avant par les industriels pour s'opposer à la politique environnementale, avec un argument très fort qui est celui des pertes d'emplois qu'elles entraîneraient. Il est donc important d'examiner les solutions possibles pour réduire ce problème. Elles sont au nombre de quatre :
+ -  mettre en place un système d'exemptions, totales ou partielles, des activités qui seraient les plus affectées par la taxe ;
+1. S. Raspiller et N. Riedinger, "  Les différences de sévérité environnementale entre pays influencent-elles les comportements de localisation des groupes français ?  ", Économie et Prévision, 169-170-171, 2005.
+
+
+55
+ -  différencier les taux de la taxe ;
+ -  utiliser les recettes de la taxe pour alléger d'autres impôts, en ciblant les allégements sur les branches les plus affectées ou redistribuer directement les recettes aux branches les plus affectées ;
+ -  mettre en place une taxe d'ajustement aux frontières.
+UN TAUX UNIQUE ET DES EXEMPTIONS MULTIPLES, DES TAUX DIFFÉRENCIÉS SELON LES SECTEURS OU UNE REDISTRIBUTION DES RECETTES ?
+Les branches énergie et industries des biens intermédiaires sont assujetties au système européen des quotas d'émissions négociables1 et ne seront donc pas soumises à la taxe carbone. La figure 3 montre cependant que les consommations d'énergie des branches non assujetties sont très loin d'être négligeables. Qui plus est, la part des consommations d'énergie des branches commerce, transport et services dans le total a augmenté entre 1990 et 2006, alors que celle des branches énergie et industries des biens intermédiaires a légèrement diminué. La taxe carbone concerne évidemment les installations non assujetties au système européen pour lesquelles le marché n'est pas une bonne option de régulation, principalement parce que la pollution qu'elles émettent est diffuse.
+1. Plus précisément, celui-ci concerne, dans la branche énergie, les installations de combustion supérieure à 20 MW, sauf celles destinées à l'incinération des déchets (centrales thermiques, raffineries, réseaux de transport de gaz, réseaux de chauffage urbain, chaudières, turbines et moteurs à combustion de l'industrie - chimie, agroalimentaire, métaux non ferreux, textile, automobile - ou des services - hôpitaux, écoles, universités), dans la branche industries des biens intermédiaires les installations produisant ou transformant des métaux ferreux, et produisant des produits minéraux (ciment, chaux, verre, produits céramiques), du papier et du carton ou de la pâte à papier. Le transport aérien sera intégré en 2012.
+
+
+56
+Un taux unique et des exemptions multiples La combinaison d'un taux unique et d'exemptions multiples est l'option qui est retenue le plus fréquemment dans la pratique. C'est le cas par exemple pour les secteurs intensifs en énergie au Danemark, en Suède et en Norvège. Les exemptions vont à l'encontre de l'objet même de la taxe, qui est d'inciter les entreprises à réduire les consommations de ressources intermédiaires polluantes, à travers des substitutions énergétiques et/ou des modifications des processus de production, et en diminuent donc considérablement l'efficacité. Avec elles, seuls les secteurs les moins intensifs en carbone sont incités à faire des efforts, ce qui est paradoxal. En outre, le prix du carbone n'est plus unique dans l'économie, alors qu'une tonne de carbone émise dans l'atmosphère engendre évidemment le même dommage quelle que soit l'activité émettrice, ce qui pose des problèmes de distorsions considérables. Enfin, les exemptions sont habituellement proportionnelles à la puissance des divers lobbies sectoriels.
+Des taux différenciés Cette solution a les mêmes défauts que la précédente : le prix du carbone n'est plus unique, et les taux de taxe différenciés retenus in fine sont inversement proportionnels au pouvoir de négociation des lobbies sectoriels. Ses avocats la justifient par quatre types d'arguments, outre celui portant sur les différences d'exposition à la concurrence internationale1. - Le prix TTC initial de l'énergie n'est pas le même dans tous les
+secteurs. L'exemple donné dans le rapport Landau est le suivant : "  [...] une taxe de 100 euros/tCO2 ne représenterait qu'une
+1. On pourra consulter par exemple, pour un plus ample développement de ces arguments, le rapport Landau, "  Les instruments économiques du développement durable  ", juillet 2007, http://www.dgccrf.bercy.gouv.fr/directions_services/ dgtpe/outilseco_devdurable/rapport070726.pdf
+
+
+57
+augmentation de 0,25 euro par litre d'essence, mais une augmentation du prix du fioul domestique de 50 % pour les ménages et un doublement du prix du fuel lourd pour l'industrie légère.  " Cela provient du fait qu'avec une taxe unitaire (une accise) identique dans tous les secteurs, le taux de croissance des prix entre la situation sans taxe et la situation avec taxe est inversement proportionnel au niveau initial du prix. Ainsi, le prix des produits énergétiques déjà lourdement taxés augmente moins que celui des produits sur lesquels la TIPP initiale est plus faible.
+ -  Dans certains domaines, les comportements sont très faiblement élastiques au prix et un signal-prix fort est inutile puisqu'il ne modifiera que très peu les émissions de carbone.
+ -  Il peut être opportun de fournir un signal-prix plus fort dans les domaines où les progrès technologiques potentiels en matière de réductions d'émissions sont les plus importants.
+ -  Différencier les taux peut être une condition d'acceptabilité de la taxe.
+Le premier argument ne nous semble pas de nature à justifier des taux différenciés. Le deuxième méconnaît le fait que même quand les élasticités-prix sont très faibles à court terme, elles peuvent être significatives à moyen-long terme quand le signal-prix a permis la mise au point de substituts aux énergies fossiles. Le troisième argument est difficile à appliquer concrètement sans arbitraire. Finalement, le seul argument qui nous semble digne de considération est le dernier sur l'amélioration de l'acceptabilité de la politique.
+L'introduction de taux différenciés est souvent présentée comme un dispositif transitoire destiné à permettre une adaptation progressive des différents secteurs. Mais on sait à quel point les dispositifs transitoires ont tendance à devenir permanents.
+
+
+58
+Une redistribution des recettes
+Une autre option consiste à redistribuer les recettes de la taxe carbone payée par les entreprises aux entreprises concernées ou aux secteurs, sur une base forfaitaire ou en diminution d'un autre impôt. Dans le système européen des quotas d'émissions négociables la très grande majorité des allocations de quotas sont actuellement gratuites, effectuées sur la base du grandfathering : l'obligation faite aux États était d'allouer gratuitement au moins 95 % des quotas en première phase (2005-2007) et 90 % en deuxième phase (2008-2012), et au cours de la première phase les mises aux enchères n'ont finalement concerné que 0,67 % des allocations totales. Allouer gratuitement les quotas revient exactement à redistribuer aux entreprises concernées de façon forfaitaire les recettes qu'une mise aux enchères aurait engendrées1.
+La redistribution des recettes aux secteurs les plus affectés, directement ou à travers une allocation de quotas gratuite, est préférable aux exemptions car elle ne détruit pas le caractère incitatif de la politique climatique, et aux taux différenciés car le prix du carbone reste unique. Cependant, elle ne garantit pas que les pertes de compétitivité n'auront pas lieu et, de plus, rien ne permet d'affirmer qu'elle constitue la meilleure façon d'utiliser les recettes.
+LA TAXE D'AJUSTEMENT AUX FRONTIÈRES
+Principe
+La taxe d'ajustement aux frontières permet de taxer les importations au taux domestique afin de maintenir la compétitivité sur le marché domestique des secteurs assujettis à la taxe carbone ou au marché de permis.
+1. Sauf si, les entreprises ayant trop bien compris le principe du grandfathering, elles augmentent artificiellement les émissions qui serviront de base de calcul pour les allocations gratuites futures.
+
+
+59
+Pour que le dispositif soit complet, il faut également détaxer les exportations afin que la compétitivité soit préservée sur les marchés internationaux. Cette solution est théoriquement bien plus séduisante que les précédentes. Elle se heurte cependant à deux obstacles : d'une part, sa mise en oeuvre pratique apparaît difficile et, d'autre part, la crainte existe qu'elle soit contraire aux principes de l'OMC.
+D'abord, les différents partenaires commerciaux n'ont pas forcément tous une politique climatique plus laxiste que celle du pays considéré. Il faudrait alors théoriquement distinguer, parmi les échanges, ceux en provenance ou à destination de pays ayant une politique climatique "  comparable  " à la politique nationale et ceux en provenance ou à destination de pays ayant une politique plus laxiste ou pas de politique du tout, et leur appliquer un ajustement aux frontières différent, avec les complications et arguties sans fin qu'une telle distinction ne peut pas manquer de susciter, surtout quand les partenaires commerciaux utilisent des instruments ou des combinaisons d'instruments différents.
+Se pose ensuite un redoutable problème concret d'assiette de la taxe. Les partenaires commerciaux ne taxant pas le contenu en carbone des consommations intermédiaires d'énergie utilisées dans la production des biens qu'ils exportent, la solution correcte consiste à déterminer ce contenu et à la taxer quand le bien entre dans le pays. Mais cette solution est inapplicable, car on ne dispose d'aucune information permettant de repérer l'intensité en carbone des processus de production des produits importés, sauf à exiger des pays exportateurs qu'ils fournissent cette information, pour tous les produits ou au moins pour un certain nombre de produits dont le processus de production est très intensif en carbone, ce qui est irréaliste. Une solution plus réaliste, mais assez imprécise, est d'imposer aux produits importés une taxe équivalente à celle qu'acquittent les producteurs domestiques de produits "  similaires  " utilisant la technologie domestique dominante, ou la meilleure des technologies domestiques (au sens de la moins intensive en carbone). Non seulement cette solution n'est qu'approchée, mais elle a
+
+
+60
+des coûts administratifs importants, puisqu'elle nécessite de repérer chaque produit importé, physiquement et non pas en valeur comme pour la TVA. La solution qui consisterait à exiger des produits importés qu'ils restituent la même quantité de quotas que les producteurs de produits domestiques "  similaires  " pose exactement les mêmes difficultés.
+Taxe d'ajustement aux frontières et OMC
+L'incertitude sur l'attitude de l'OMC provient de ce qu'elle ne s'est jamais prononcée directement sur la question. L'OMC ne s'autosaisit pas mais se prononce sur une question après avoir été saisie par un pays membre à l'occasion d'un différend, ce qui n'a encore jamais été le cas en ce qui concerne les taxes d'ajustement aux frontières. Elle met alors en place une procédure pour trancher le différend. Il faut donc, pour juger de la recevabilité par l'OMC de ces taxes, se fonder sur les principes généraux et sur le règlement de différends proches dans leur nature.
+De nouveau, la difficulté surgit quand les produits domestiques soumis à la taxe carbone ou le marché de permis et les produits étrangers non soumis ne se différencient pas par leur contenu direct en carbone mais par leurs processus de production, plus ou moins intensif en carbone. Selon les critères de l'OMC, le processus de production n'est pas recevable comme critère de différenciation entre produits. Les commentateurs invoquent essentiellement l'article XX du GATT et deux cas.
+Cet article autorise les restrictions au commerce pour motif environnemental sous certaines conditions, dont celle que la restriction au commerce doit être nécessaire pour atteindre l'objectif environnemental. Or ce ne semble pas être le cas des taxes d'ajustement aux frontières car elles n'ont pas d'effet direct sur les émissions globales de carbone. On peut cependant soutenir qu'elles ont un effet indirect : elles empêchent la relocalisation des activités concernées dans des pays à politique environnementale laxiste et, ce faisant, incitent ces activités à diminuer leurs émissions, conformément à la politique environnementale de leur pays.
+
+
+61
+Le premier cas invoqué est le cas Thon/Dauphin de 1991, suivi par le cas Thon/Dauphin de 1994, le second est le cas Crevette/Tortue de 1998. Dans le cas Thon/Dauphin, les panels de règlement des différends ont statué que les pays ne peuvent discriminer entre les produits sur la base de leurs processus de production. On observe cependant une évolution de cette position dans le cas Crevette/Tortue, où une discrimination fondée sur le processus de production est permise. L'OMC autorise en effet les États-Unis à interdire les importations de crevettes thaïlandaises pêchées à l'aide de filets causant la mort de nombreuses tortues, espèce protégée.
+Une ambiguïté subsiste sur l'attitude qu'aurait l'OMC face à la taxe d'ajustement aux frontières. La crainte de l'OMC est clairement celle de la mise en place de politiques protectionnistes déguisées en politiques environnementales. C'est à elle de faire la part des choses ! L'ambiguïté a cependant été très récemment réduite : un rapport1 conjoint de l'OMC et du PNUE (Programme des Nations unies pour l'environnement) publié en juin 2009 reconnaît pour la première fois explicitement que l'OMC pourrait accepter les taxes d'ajustement aux frontières, au titre de l'article XX.
+6. Expériences et propositions européennes
+LA PROPOSITION DE TAXE MIXTE CO2-ÉNERGIE
+L'introduction dans l'Union européenne d'une taxe mixte CO2-énergie a été proposée en 1991 par la Commission européenne. L'argumentation de la Commission2 pour proposer une taxe mixte est d'une part qu'une
+1. WTO-UNEP,Trade and Climate Change, 26 juin 2009. 2. Commission of the European Communities, A community strategy to limit carbon dioxide emissions and to improve energy efficiency, 1991.
+
+
+62
+taxe sur l'énergie est plus incitative à l'amélioration de l'efficacité énergétique, et d'autre part qu'une taxe carbone pure pèse lourdement sur le charbon et ne pèse pas sur l'électricité nucléaire. Ce second point est crucial, car il est sous-jacent dans de nombreux débats actuels. En effet, plusieurs pays membres extraient encore du charbon et seraient défavorisés par une taxe carbone pure, tandis que la France serait très favorisée par ce type de taxe carbone en raison du poids du nucléaire dans sa production d'électricité. Quand on veut éviter de traiter trop différemment les différents pays membres au niveau européen, ou de trop favoriser l'énergie nucléaire au niveau national, on est naturellement conduit à proposer une taxe mixte. La proposition de la Commission était une taxe portant pour moitié sur la consommation d'énergie et pour moitié sur son contenu en carbone, introduite en 1993 à un niveau de 3 dollars par baril et augmentant ensuite de 1 dollar par baril par an jusqu'en 2000. La proposition de la Commission contenait déjà nombre de sujets de discussion actuels : l'introduction de la taxe à prélèvements fiscaux totaux inchangés, la nécessité d'exempter totalement ou partiellement les secteurs très intensifs en énergie pour préserver leur compétitivité. Cette taxe n'a finalement pas été adoptée car elle est apparue contraire à la souveraineté fiscale des pays membres.
+LES TAXES CARBONE EUROPÉENNES
+Des taxes carbone existent actuellement dans huit pays européens1. Introduites à partir de 1990, dans les pays scandinaves tout d'abord, elles sont très diverses et souvent très complexes en raison de nombreuses
+1. La Suisse a introduit une taxe carbone le 1er janvier 2008 et deux provinces canadiennes ont fait de même - le Québec le 1er octobre 2007 et la Colombie britannique le 1er juillet 2008. Ces taxes sont trop récentes pour qu'il soit possible d'en évaluer les conséquences.
+
+
+63
+modulations et exemptions en général destinées à préserver la compétitivité de certains secteurs ou de certaines industries. L'introduction de ces taxes a été réalisée le plus souvent dans le cadre d'une "  réforme fiscale verte  " plus large, à l'occasion de laquelle les pays ont recherché, implicitement ou explicitement, à obtenir un double dividende. L'expérience des pays scandinaves, la plus ancienne, est la mieux documentée. On peut en retenir que la taxe carbone n'a pas eu d'effet massif, ce qui peut s'expliquer par la faiblesse de son taux (sauf en Suède) et par les exemptions conséquentes et nombreuses qui ont abouti à ce que l'industrie ne paie quasiment pas de taxe.
+Finlande
+La Finlande est le premier pays à avoir introduit une taxe carbone en 1990, transformée ultérieurement en taxe carbone/énergie (avec une pondération dans la taxe totale de 60 % pour le CO2 et de 40 % pour le contenu énergétique). La composante carbone de la taxe, une accise sur le contenu en carbone des combustibles utilisés pour le chauffage et le transport, est depuis janvier 2008 de 20 euros/t CO2 (75 euros/tC)1. Les exemptions sont nombreuses. Les combustibles utilisés pour la production d'énergie ne sont pas taxés.
+Aucun mécanisme particulier de recyclage des recettes de la taxe n'a été prévu au moment de son introduction ; les recettes sont reversées au budget général. Cependant, le gouvernement finlandais a annoncé une augmentation de la fiscalité sur l'énergie à partir de 2011 pour compenser la suppression des cotisations sociales employeurs décidée en janvier 2009.
+1. Ministère de l'Environnement, Environmentally related energy taxation in Finland, www.environment.fi
+
+
+64
+Suède
+Suite à l'échec de la proposition européenne, la Suède a introduit une taxe carbone à l'occasion de sa réforme fiscale de 1991, destinée en premier lieu à diminuer la fiscalité sur les hauts revenus. Cette taxe est prélevée sur l'utilisation des énergies fossiles. Au moment de son introduction, les autres taxes sur l'énergie ont été diminuées, afin d'annuler l'augmentation de la pression fiscale. Les caractéristiques de la taxe ont été modifiées plusieurs fois depuis 1991. Le taux initial de la taxe était d'environ 23 euros/t CO2. Il est intéressant de noter qu'en 1991 et 1992 aucune exemption n'existait, mais que dès 1993 l'industrie, l'agriculture et les secteurs de la forêt et de la pêche ont obtenu des exemptions généreuses. En 2007, la taxe carbone appliquée à ces secteurs, qui sont par ailleurs totalement exonérés de la taxe sur l'énergie, est 21 % de celle appliquée aux ménages, qui est de 97 euros/t CO2. En outre, le montant de taxe total payé par une entreprise est plafonné : si la taxe carbone due est supérieure à 0,8 % du chiffre d'affaires de l'entreprise, celle-ci ne paie que 24 % de la partie de la taxe au-dessus du plafond. Enfin, les installations assujetties à l'EU ETS depuis 2005 reçoivent le remboursement de 85 % de la taxe qu'elles ont acquittée, et seront dans le futur totalement exonérées. Les recettes de la taxe carbone sont en 2007 de 2,3 milliards d'euros.
+À partir de 2001, la Suède a mis en place une politique de green tax shift, consistant à compenser chaque année l'augmentation des taxes environnementales par une diminution des taxes sur le travail.
+Danemark
+La taxe carbone a été introduite au Danemark en 1993 à un taux de 13,30 euros/t CO2. Le taux général de la taxe est en 2009 d'environ 20,60 euros/t CO2. Les secteurs industriels intensifs en énergie ne paient que 3,50 euros/t CO2, les autres 12,50 euros/t CO2. Le cas danois présente
+
+
+65
+une particularité intéressante : la taxe est utilisée conjointement avec un système d'accords volontaires sur l'amélioration de l'efficacité énergétique dans l'industrie. Les entreprises qui signent l'accord reçoivent un remboursement de 11/45e de la taxe. L'accord peut être collectif, sectoriel par exemple, ou individuel. Ce dernier était initialement fondé sur l'audit énergétique de l'entreprise par un consultant agréé, mais l'audit a été remplacé en 2000 par une procédure déclarative afin de diminuer les coûts administratifs. L'accord collectif est fondé sur une étude permettant d'identifier les possibilités d'amélioration de l'efficacité énergétique des entreprises concernées, qui permet à l'Agence danoise de l'énergie de décider d'un programme d'action dans lequel les entreprises s'engagent sur des projets1. En cas de non-respect des engagements, les entreprises doivent payer la taxe.
+Dans le cadre du Green Tax Package adopté par le Parlement en 1995, les recettes de la taxe sont reversées à l'industrie à travers une baisse des cotisations sociales employeurs et des subventions aux améliorations de l'efficacité énergétique.
+Norvège La Norvège a mis en place une taxe carbone en 1991. Elle concerne environ 68 % des émissions de CO2. En 2005, le taux de la taxe était d'environ 40 euros/t CO2 pour l'essence et le CO2 émis par les entreprises exploitant le pétrole et le gaz de la mer du Nord. Le charbon n'était pas taxé. Les secteurs du papier et du transport maritime paient environ un tiers de ce taux. La pêche est exemptée.
+1. Voir OECD,The Political Economy of Environmentally Related Taxes, 2006.
+
+
+66
+Allemagne L'Allemagne a mis en place une réforme fiscale écologique le 1er avril 19991. Elle n'a pas introduit de taxe carbone à proprement parler, mais depuis 1999 on assiste à une augmentation des taxes sur l'énergie à visée explicitement écologique. L'industrie manufacturière, l'agriculture, la forêt et la pêche ne paient que 60 % du taux de taxe de base sur l'électricité, le fuel et le gaz naturel, dès que la facture énergétique dépasse un certain seuil. Le charbon n'est taxé que depuis 2007.
+Les recettes sont utilisées pour réduire les cotisations de retraite des employeurs et des salariés. Notons un dispositif original : une entreprise qui paie un montant de taxes sur l'énergie supérieur à la réduction de cotisations sociales employeurs à laquelle elle a droit reçoit de la part de l'État le remboursement de la différence.
+Grande-Bretagne
+La Grande-Bretagne a introduit en avril 2001 le Climate Change Levy, assis sur les consommations intermédiaires d'énergie des entreprises et des administrations publiques. Les ménages et le secteur des transports ne sont pas concernés. La taxe appliquée à chaque produit énergétique dépend de son contenu énergétique et non de son contenu en carbone. Ce n'est donc pas une taxe carbone. Les recettes fiscales sont redistribuées aux entreprises en baisse de cotisations sociales employeurs et en aides à l'efficacité énergétique et aux énergies renouvelables. Les industries grosses consommatrices d'énergie voient leur taxe diminuée de 80 % si elles acceptent des objectifs contraignants d'amélioration de l'efficacité énergétique (Climate Change Agreements).
+1. Green Budget Germany, http://www.eco-tax.info/en/GermanEcotax.php
+
+
+67
+L'efficacité environnementale
+Les évaluations des effets environnementaux de la taxe carbone sont rares. On dispose cependant d'un certain nombre d'études pour la Suède, le Danemark et la Norvège.
+Katrin Millock1 recense les évaluations suédoises. Les effets les plus notables de la taxe sont apparus dans le secteur du chauffage : les émissions de ce secteur ont été divisées par deux en 2007 par rapport à 1990, en raison d'une substitution massive de la biomasse (le bois) aux énergies fossiles. Dans l'industrie, en revanche, les effets sont très faibles, en raison de la baisse de la fiscalité sur l'énergie qui a compensé l'introduction de la taxe carbone et des exemptions nombreuses et massives.
+En ce qui concerne la taxe danoise, plusieurs études qualitatives indiquent d'une part que la baisse des émissions de CO2 par tête est largement due à l'exploitation des possibilités de substitution du gaz naturel et des énergies renouvelables au charbon et, d'autre part, qu'une partie importante (jusqu'à la moitié) des économies d'énergie observées dans les entreprises ayant signé un accord volontaire est due à l'accord.
+Enfin, Annegrete Bruvoll et Bodil Merethe Larsen2 ont évalué en 2004 l'impact environnemental de la taxe carbone norvégienne en utilisant un modèle d'équilibre général appliqué pour déterminer le rôle de cette taxe dans les modifications observées des émissions. Ils concluent à un effet modeste, en raison, de nouveau, de l'ampleur des exemptions, mais également de la faible élasticité de la demande dans les secteurs qui sont le plus touchés par la taxe (les transports principalement). D'autres analyses concluent également que les Norvégiens ont payé la taxe sans réduire leur consommation d'essence, un grand nombre d'entre eux vivant en habitat
+1. K. Millock, "  La taxation énergie-climat en Suède  ", Droit de l'environnement, à paraître. 2. A. Bruvoll et B. M. Larsen, "  Greenhouse gas emissions in Norway : do carbon taxes work ?  ", Energy Policy, 32, 2004, p. 493-505.
+
+
+68
+
+dispersé avec peu de possibilités de substitution. Elles soulignent cependant que la taxe a eu un effet très important dans le secteur de la production de pétrole et de gaz où elle a incité à d'importantes innovations technologiques, en matière de séquestration du carbone surtout.
+
+Tableau 6 - Croissance des émissions de CO2 par tête, de l'intensité en CO2 du PIB et du PIB par tête.
+
+Pays
+
+Croissance des émissions
+de CO2 par tête 1990-2006
+(%)
+
+Croissance de l'intensité en
+CO2 du PIB (PPA) 1990-2006 (%)
+
+Croissance du PIB par tête
+1990-2006 (%)
+
+Part des émissions de CO2 provenant de la combustion de charbon (%) 19902006
+
+Finlande Suède Danemark Norvège France Allemagne (1991-2006) Royaume-Uni États-Unis
+
+4,0 - 4,3 - 2,9 19,3 4,2 -10,5
+ -  8,2 -1,6
+
+ - 24,5 -30,0 -27,1 -17,9 -17,2 -25,5
+ - 35,4 -26,8
+
+28,5 29,9 30,1 25,7 16,8 14,8 24,2 42,2 33,6 37,2 10,0 6,4 21,4 19,4 12,4 15,0 44,4 37,1
+27,2 42,0 27,0 25,2 36,8 36,2
+
+Source : Energy Information Administration, International Energy Annual 2006..
+
+Les deux premières colonnes du tableau 6 donnent la croissance des émissions de CO2 par tête et la croissance de l'intensité en CO2 du PIB
+
+
+69
+entre 1990 et 2006, pour les pays que nous venons d'évoquer plus la France et les États-Unis. La troisième colonne, différence des deux premières, donne la croissance du PIB par tête sur la même période. On note que les performances de croissance du PIB par tête ont été grossièrement comparables sur la période pour ces pays, à l'exception de la Norvège qui a connu une croissance exceptionnellement élevée grâce au pétrole et au gaz de la mer du Nord (la croissance plus faible de l'Allemagne est due à la période plus courte). L'intensité en CO2 du PIB a diminué de 25 à 35 % dans les pays ayant mis en place une taxe carbone, à l'exception de la Norvège. La performance des États-Unis est à peu près comparable ( -  27 %), alors que celle de la France est nettement moins bonne ( -  17 %).
+La dernière colonne du tableau donne la part des émissions de CO2 provenant de la combustion du charbon. Au Danemark, en Allemagne et surtout au Royaume-Uni la baisse des émissions de CO2 par tête est largement due à l'exploitation des possibilités de substitution du gaz naturel et des énergies renouvelables au charbon. L'Allemagne a en outre bénéficié de la fermeture d'unités de production particulièrement polluantes en Allemagne de l'Est. En Suède, la part du charbon est faible et stable. Nous avons vu que la baisse des émissions par tête y est surtout due à la diminution des émissions du chauffage. Les situations sont donc variées, la taxe permettant d'effectuer les réductions d'émissions là où elles sont les plus efficaces et les moins coûteuses. Une caractéristique commune à tous ces pays est que l'industrie n'a nulle part réalisé de réductions d'émissions conséquentes, en raison des exemptions. Cela plaide une nouvelle fois en faveur d'une taxe carbone européenne assortie d'un dispositif d'ajustement aux frontières.
+
+
+70
+LES PROPOSITIONS EN FRANCE
+L'extension de la TGAP aux consommations intermédiaires d'énergie
+L'extension de la Taxe générale sur les activités polluantes avait initialement été prévue par Dominique Voynet pour le 1er janvier 2001. Son objectif était de permettre de renforcer la lutte contre l'effet de serre et de mieux maîtriser la consommation d'énergie1. La taxe portait sur les consommations intermédiaires des entreprises représentant plus de 100 tep par an. Les activités agricoles, sylvicoles, piscicoles et halieutiques étaient exonérées. La taxe devait être mise en place à prélèvements obligatoires constants, les recettes contribuant à la réduction des prélèvements obligatoires sur le travail. Le projet a été rejeté par le Conseil constitutionnel,par décision du 28 décembre 2000 invoquant le principe de l'égalité devant l'impôt, et au motif que la taxe ne correspondait pas aux objectifs de lutte contre l'effet de serre.
+Les propositions de la Fondation Nicolas Hulot
+La Fondation Nicolas Hulot2 a proposé lors du Grenelle de l'Environnement une contribution climat énergie (CCE) basée sur une double assiette : les émissions de CO2 associées à la consommation d'énergie, et la quantité d'énergie consommée. On retourne à une proposition de taxe mixte CO2-énergie comme celle de la Commission européenne en 1991. L'assiette du volet "  climat  " de la CCE serait fixée à 20 euros/t CO2 la première année, et une croissance jusqu'à 100 euros par tonne en 2020. Le produit de la CCE serait d'environ 6,2 Md d'euros la première année, 55 % des recettes provenant des ménages, et 45 % des entreprises.
+1. Voir par exemple le communiqué de presse du Minefi du 3 octobre 2000, http:// www.budget.gouv.fr/fonds_documentaire/archives/communiques/c0010031.htm 2. On la trouve par exemple sur www.pacte-ecologie.org, "  Contribution climat énergie. Proposition de mise en oeuvre et d'affectation  ", 9 juin 2008.
+
+
+71
+Pour les ménages, la Fondation propose une redistribution forfaitaire appelée "  allocation universelle climat  ". Elle devrait s'élever, compte tenu des montants précédents, à environ 130 euros par ménage, et serait versée en une fois, par un paiement de l'administration fiscale. Pour les entreprises concernées, c'est-à-dire celles qui ne sont pas soumises au système européen des quotas, la FNH propose de baisser les cotisations sociales employeurs à concurrence du montant collecté (20 euros/t CO2 la première année permet la baisse de 0,3 point de cotisations).
+Les propositions de la conférence des experts sur la contribution climat énergie de juillet 2009
+Suite aux engagements pris lors du Grenelle de l'Environnement, le gouvernement a réuni en juillet 2009 une conférence d'experts présidée par Michel Rocard sur la taxe carbone, appelée, en reprenant les termes de la Fondation Nicolas Hulot, contribution climat énergie. Les principales propositions qui en émanent sont les suivantes1.Tout d'abord, un consensus semble s'être créé sur l'idée d'une taxe carbone purement française. Les chiffres proposés dans le rapport Quinet pour la valeur initiale de la taxe (32 euros/t CO2 en 2010) et son évolution temporelle (100 euros/t CO2 en 2030) ont été repris sans discussion. Les prélèvements obligatoires doivent rester constants et, pour ce faire, les recettes fiscales seront redistribuées aux ménages et aux entreprises, au prorata de ce qu'ils auront globalement payé. En ce qui concerne les ménages, la redistribution proposée est forfaitaire ("  chèque vert  "), modulo l'exclusion des ménages aisés et une modulation en fonction de la situation géographique (ménages ruraux traités plus favorablement). En ce qui concerne les entreprises, la redistribution serait opérée à travers un mélange d'aides à la transition énergétique, d'allégement des cotisations sociales employeurs et de financement de la suppression de la taxe professionnelle.
+1. http://www.contributionclimatenergie.fr/
+
+
+72
+Conclusion
+En France, le président de la République a annoncé le 10 septembre 2009 la création en 2010 d'une taxe carbone nationale de 17 euros/t CO2, portant sur le contenu en carbone des consommations d'énergies des ménages et des entreprises non assujetties à l'EU ETS. Les recettes de la taxe payée par les ménages leur seront redistribuées en principe de façon forfaitaire, sous forme de baisse d'impôt sur le revenu ou de chèque vert pour les ménages non imposables. On comprend cependant que la redistribution sera modulée en fonction des caractéristiques des ménages - taille de la famille et lieu de résidence. Les recettes de la taxe payée par les entreprises compenseront (partiellement) la suppression de la taxe professionnelle. Des exonérations sont d'ores et déjà envisagées pour certains secteurs (pêche, agriculture, transports). Si le débat précédant cette annonce a été intense au sujet de la redistribution, le niveau approprié de la taxe n'a quasiment pas été discuté, l'ensemble des acteurs semblant admettre la validité de la référence au rapport Quinet, conduisant à une taxe d'un niveau initial de 32 euros/t CO2 croissant au cours du temps pour atteindre 52 euros en 2020 et 100 euros en 2030. L'arbitrage politique a cependant débouché sur une valeur initiale beaucoup plus faible, justifiée par un argument de comparabilité avec le prix du carbone sur le marché EU ETS qui est, en septembre 2009, aux alentours de 15 euros/t CO2, et sans perspective de progression dans le temps. Ce choix peu ambitieux illustre plusieurs des difficultés d'une politique climatique nationale.
+ -  L'indispensable unicité du prix du carbone conduit à rechercher une articulation entre les différents instruments économiques. Quand ceuxci appartiennent à des niveaux différents, l'instrument national doit forcément se caler sur l'instrument à l'échelle plus large. Ici, le premier instrument est une taxe nationale, le second est le marché de permis d'émissions négociables européen. Il faut alors caler une taxe sur un
+
+
+73
+prix volatil, ce qui n'est administrativement pas simple et ne favorise pas la coordination des anticipations des agents et le calcul économique à long terme. En outre, dans le cas qui nous intéresse, vouloir caler la taxe sur le prix européen des permis conduit à aligner la politique nationale sur une politique peu ambitieuse.
+ -  Une taxe nationale dans l'espace européen conduit presque inéluctablement à consentir des exemptions aux industries les plus exposées. Et ouvrir la brèche des exemptions pour de bonnes raisons conduit tout aussi inéluctablement à en consentir pour de moins bonnes, voire de mauvaises, en première place desquelles la capacité d'influence des lobbies et des groupes de pression.
+ -  La mauvaise compréhension de la nature dynamique du problème du changement climatique, qui nécessite de s'engager sur un profil de taxe à long terme, est patente.
+En Europe devrait s'ouvrir très prochainement, sous l'impulsion de la présidence suédoise, une discussion des ministres des Finances sur une taxe carbone européenne harmonisée. La Suède est pionnière pour la taxation du carbone et l'Europe reste la région du monde la plus fortement engagée dans la lutte contre le changement climatique. Ne surestimons cependant pas les chances de voir aboutir rapidement une telle politique, affaiblies par l'unanimité requise au niveau européen en matière fiscale.
+Aux États-Unis, le projet de loi Waxman-Markey (The American Clean Energy and Security Act of 2009), approuvé à une courte majorité (219 à 212) par la Chambre des représentants en juin 2009, est actuellement en discussion au Sénat. Il propose, parmi d'autres dispositions concernant l'énergie, la mise en place d'un marché de permis d'émissions négociables interne aux États-Unis. Ses ambitions en matière de réduction d'émissions sont, il faut le noter, modestes, et c'est un projet au périmètre purement national.
+
+
+74
+Au niveau mondial, enfin, le point central, que nous n'avons pas réellement abordé car il dépasse largement l'objet de cet opuscule, est de trouver un système de compensations approprié pour permettre aux pays émergents gros contributeurs à la croissance des émissions et aux pays les plus pauvres d'entrer dans le jeu, et à une politique climatique internationale ambitieuse de voir le jour.
+À la veille de la conférence de Copenhague de décembre 2009, plusieurs scénarios sont envisageables :
+ -  les lobbies empêchent l'adoption du projet de loi Waxman-Markey, ce qui tue en même temps la taxe carbone et toute politique climatique aux États-Unis, pour une durée indéterminée ; ce serait une catastrophe, car il est illusoire de penser que les grands pays émergents s'engageront dans l'action si les États-Unis refusent de le faire ; l'Europe se retrouverait isolée ;
+ -  la proposition Waxman-Markey aboutit et les États-Unis se dotent d'un marché de permis d'émissions négociables qui les met dans une position similaire à celle de l'Europe ; une taxe carbone harmonisée portant sur les secteurs non assujettis et les ménages devient alors envisageable ;
+ -  le débat marché de permis contre taxe carbone s'ouvre de nouveau et le Congrès américain s'engage dans la voie d'une taxe carbone généralisée.
+Même si, pour les arguments que nous avons exposés, nous pensons que la taxe carbone est préférable au marché de permis d'émissions négociables, il serait mal avisé de ne pas accueillir le scénario 2 comme une avancée importante, car les scénarios 2 et 3 ouvrent la voie à une politique climatique mondiale ambitieuse. Il est bien connu que le diable est dans les détails : restera à concevoir très minutieusement comment les différents niveaux de régulation doivent s'articuler, pour que le prix du carbone soit unique, que le système soit transparent et le moins possible soumis au marchandage politique, et pour que les efforts soient justement répartis.
+
+
+75
+Annexe 1. Normes, taxes et permis d'émissions négociables
+Les propriétés de la taxe sont bien connues depuis les travaux d'Arthur Cecil Pigou1 en 1920. La taxe est d'ailleurs dite pigouvienne. On peut les résumer ainsi :
+ -  Quand une taxe par unité de pollution donnée est mise en place, les activités polluantes émettent tant que cela leur rapporte un avantage monétaire supérieur à la taxe. L'avantage procuré par la dernière unité de pollution émise ou, de façon équivalente, le coût marginal de réduction de l'émission, est donc exactement égal à ce qu'elle coûte, c'est-àdire à la taxe, et cela pour toutes les activités polluantes. Cette propriété assure la minimisation du coût total d'une réduction d'émissions donnée.
+ -  Mais quel est le bon niveau de la taxe ? Sa détermination nécessite de connaître tout d'abord le bon niveau de pollution. Celui-ci est tel que le dommage agrégé provoqué par la dernière unité de pollution émise est exactement égal à l'avantage qu'elle rapporte. Alors, la taxe pigouvienne est égale au dommage agrégé provoqué par la dernière unité émise (le dommage marginal agrégé), au niveau optimal de pollution.
+Les mérites respectifs des différents instruments dans un monde d'information parfaite où il s'agit de réguler la pollution de diverses activités économiques sont également bien connus. Un instrument économique, taxe ou marché de permis, est toujours préférable à une norme uniforme2. En effet, une réduction d'émissions donnée est obtenue plus efficacement avec le premier, dans le sens où le coût total (y compris le paiement de la taxe) encouru pour obtenir cette réduction est plus faible.Taxe et marché
+1. A.-C. Pigou,The Economics of Welfare, Londres, McMillan, 1920. 2. C'est-à-dire identique pour toutes les activités économiques.
+
+
+76
+de permis d'émissions négociables sont quant à eux équivalents. La taxe donne directement un prix aux émissions. Le marché de permis leur donne un prix de façon indirecte, puisqu'il consiste à créer préalablement un marché pour les émissions sur lequel se fixe leur prix. Ce prix est le reflet de la quantité totale d'émissions mises sur le marché. Dans un cas le régulateur fixe directement le prix, dans l'autre il fixe la quantité mise sur le marché.
+L'équivalence théorique entre taxe et marché de permis ne tient plus quand l'information n'est pas parfaite. Si le régulateur a une mauvaise connaissance du coût marginal de limitation des émissions, il ne sait pas fixer le bon niveau de pollution. L'un ou l'autre des instruments peut alors être supérieur, en fonction des circonstances, comme l'a montré Martin Weitzman en 1974 dans un article célèbre1. Le marché de permis permet de contrôler avec certitude le niveau total d'émissions, alors que la taxe permet de contrôler le coût d'une limitation des émissions. Quand il est important de contrôler avec précision les émissions, l'avantage est au marché de permis. C'est le cas quand le dommage marginal augmente très rapidement avec le niveau d'émission. Quand il semble plus important de ne pas encourir des coûts de réduction des émissions trop élevés par rapport aux dommages évités, l'avantage est à la taxe. C'est le cas quand le coût marginal de la réduction des émissions augmente très rapidement avec le niveau de réduction des émissions.
+Déterminer dans quel cas on se trouve est une affaire empirique. En ce qui concerne le changement climatique, les études disponibles2 suggèrent que le dommage marginal augmente relativement lentement avec le niveau
+1. M. Weitzman, "  Prices versus quantities  ", Review of Economic Studies, 41(4), 1974, p. 477-491. 2. Voir par exemple sur ce point M. Hoel et L. Karp, "  Taxes versus quotas for a stock pollutant  ", Resource and Energy Economics, 24, 2002, p. 367-384.
+
+
+77
+d'émission, du moins tant que l'on reste dans une zone où ne se produisent pas d'événements catastrophiques. Cela milite en faveur de la taxe.
+La taxe est a priori l'instrument le mieux adapté en cas de pollution diffuse, quand les émetteurs et donc les éventuels participants à un marché de permis sont très nombreux et qu'un marché est à la fois difficile et très coûteux à organiser et superviser. C'est le cas des émissions dues au transport et à l'agriculture. Cependant, l'avantage de la taxe pour réguler ce type d'émissions ne sera peut-être pas éternel : il n'est pas irréaliste de penser que les progrès de la technologie permettront dans un avenir proche d'inclure les émetteurs diffus dans un marché de permis d'émissions négociables1.
+Annexe 2. Une évaluation de la valeur sociale optimale du carbone
+Taxer le carbone au niveau optimal, c'est-à-dire au niveau qui entraîne le bien-être social le plus élevé possible, est complexe. Nous examinons ici la façon dont la théorie économique propose de déterminer la taxe carbone optimale. Elle s'appuie sur des modèles très stylisés, qui incorporent cependant les ingrédients essentiels présents dans les grands modèles d'évaluation intégrée bien plus détaillés2. Par rapport à ces derniers, elle a le mérite de la transparence puisqu'elle explicite toutes les hypothèses et permet de retracer précisément l'origine de tous les résultats.
+1. En 2006, l'administration britannique a proposé de doter chaque ménage d'une carte carbone électronique, comportant un certain nombre de points (une allocation initiale de permis), débitée à chaque achat d'énergie fossile, que ce soit pour le transport ou pour le logement, avec possibilité d'achat et de vente de points sur un marché. Le dispositif a été jugé trop coûteux et n'a finalement pas été mis en place. 2. On pourra consulter, par exemple, pour un panorama très complet, C. D. Kolstad et M. Toman, "  The economics of climate policy  ", in Handbook of Environmental Economics, New York, Elsevier, 2005, vol. 3, chap. 30, p. 1561-1618.
+
+
+78
+Le raisonnement s'appuie dans une première étape sur des modèles de croissance optimale. Dans ces modèles, un planificateur bienveillant cherche à maximiser le bien-être social intertemporel1 en tenant compte des contraintes économiques et environnementales. L'utilité de ce cadre abstrait est de fournir à titre de référence les comportements optimaux. Les caractéristiques de l'économie et les interactions fondamentales entre économie et climat sont décrites de la façon à la fois la plus fidèle et la plus parcimonieuse possible. C'est cette étape du raisonnement que nous présentons ici. Dans une seconde étape, la fiction du planificateur est abandonnée au profit du cadre plus réaliste d'une économie décentralisée dans laquelle les différents acteurs décident de leurs propres comportements, l'ensemble de ces décisions étant rendues compatibles par le marché2. Le régulateur en charge de la politique environnementale cherche alors à implémenter à l'aide d'une taxe carbone la solution optimale obtenue dans l'étape précédente. Sous l'hypothèse forte que le marché des ressources fossiles est concurrentiel, la taxe est égale à la valeur optimale du carbone déterminée à la première étape.
+Pour mettre en évidence les principaux mécanismes en jeu, nous considérons un cadre extrêmement stylisé dans lequel le seul bien est la
+1. Nous n'entrerons pas ici dans le débat sur le choix du critère de bien-être social intertemporel. La très grande majorité de la littérature adopte comme critère la somme des utilités des différentes périodes (générations) actualisées. Ce critère est particulièrement critiqué dans le contexte du changement climatique car l'actualisation affaiblit mécaniquement le poids dans le critère des utilités éloignées dans le temps, réduisant ainsi à peu de chose l'importance accordée par le planificateur aux générations futures. 2. Cette économie est une économie-monde ou, autrement dit, on suppose que les producteurs de ressource et les consommateurs sont tous deux soumis à la politique environnementale décidée par un unique régulateur.
+
+
+79
+ressource fossile1. Celle-ci est extraite par les producteurs d'un stock connu avec certitude dès l'origine, et directement consommée par les ménages. Sa combustion est polluante : elle entraîne une émission de carbone dans l'atmosphère. L'atmosphère possède cependant une certaine capacité d'absorption naturelle des émissions de carbone, et on suppose que l'absorption totale a un instant donné est proportionnelle au stock de carbone dans l'atmosphère, le coefficient de proportionnalité ou taux d'absorption naturelle étant constant2. Nous supposons que la ressource fossile est soumise à une contrainte de rareté physique et non pas de rareté économique. Il existe un substitut à la ressource fossile, renouvelable, non polluant, disponible en quantité abondante, mais très cher. Quand le prix de la ressource fossile net du coût marginal d'extraction atteint une certaine valeur, appelée le choke price3, l'économie arrête de l'utiliser (le stock est épuisé exactement à cette date) et se tourne vers le substitut non polluant. Il n'y a pas de progrès technologique.
+Notre objectif est de donner une valeur au carbone. Nous étudions deux cas. Dans le premier, la société impose une contrainte de concentration
+1. Voir K. Schubert, "  La valeur du carbone : niveau initial et profil temporel optimaux  ", in La Valeur tutélaire du carbone, t. 2, chap. 7, "  Exercices de modélisation et contributions  ", Centre d'analyse stratégique, 2008. Cet ouvrage est le deuxième volume du rapport d'un groupe de travail mis en place au CAS à la demande du Premier ministre et présidé par Alain Quinet. 2. Les controverses autour de la capacité d'absorption naturelle du carbone sont nombreuses. L'hypothèse d'une absorption totale proportionnelle à la concentration de carbone est contestée. Même si on l'accepte, l'hypothèse de constance du coefficient de proportionnalité reste très forte. Cependant, puisque l'on s'intéresse précisément à stabiliser la concentration de façon à éviter les conséquences les plus catastrophiques du changement climatique, on reste dans une zone de réchauffement dans laquelle l'absorption naturelle ne devrait pas être trop perturbée. 3. Que l'on pourrait traduire par prix d'étouffement.
+
+
+80
+de carbone dans l'atmosphère à ne pas dépasser, un plafond de concentration. Cela correspond aux influentes recommandations du GIEC, qui raisonne directement en termes de plafonds de concentration admissibles. La pratique des diverses entités internationales engagées dans une politique climatique est également liée à un objectif de plafond implicite, qu'elles traduisent en termes d'objectifs de réduction des émissions de gaz à effet de serre dans l'atmosphère à un horizon donné (Protocole de Kyoto, engagements européens, engagements français dans le cadre de la loi POPE1, paquet Énergie Climat2 de l'Union européenne...).
+Dans le second cas, les dommages dus à l'accumulation de carbone dans l'atmosphère sont directement pris en compte. Une dimension supplémentaire est donc introduite, celle des dommages associés aux émissions de carbone, et ce cas est en ce sens plus riche et plus pertinent. Mais les incertitudes entourant le chiffrage des dommages sont très importantes, comme en témoignent les controverses suscitées par le rapport Stern3, qui se place dans ce cadre, et cette approche est donc difficile à appliquer dans la pratique. Soulignons que les travaux du GIEC s'appuient
+1. La loi POPE du 13 juillet 2005 est la loi de programme fixant les orientations de la politique énergétique française. Elle fixe un objectif de division par deux des émissions mondiales de gaz à effet de serre à l'horizon 2050, ce qui, précise-t-elle, nécessite une division par quatre ou cinq des émissions des pays développés. Le Grenelle de l'Environnement a confirmé cet objectif. 2. Le Conseil européen du 12 décembre 2008 est parvenu à un accord nommé "  paquet énergie climat  ", approuvant les textes de mise en oeuvre des objectifs d'amélioration de l'efficacité énergétique de 20 %, d'augmentation de la part de renouvelable dans la consommation finale d'énergie jusqu'à 20 % et d'une réduction de 20 % des émissions de CO2 par rapport à leur niveau de 1990, à l'horizon 2020. 3. Le lecteur trouvera dans le rapport Stern les principales évaluations des dommages dus au changement climatique, et pourra constater la grande dispersion de ces évaluations.
+
+
+81
+évidemment sur une analyse très précise des dommages pour formuler leurs recommandations en termes de plafond. En ce sens, le premier cas est une version grossière du second. Néanmoins, comprendre les implications du choix de l'un ou l'autre des objectifs est important, d'autant plus qu'en ce qui concerne la valeur du carbone ce choix est loin d'être neutre.
+Supposons tout d'abord que la société impose un plafond de concentration à ne pas dépasser. Le carbone, "  mal  " résultant de l'activité économique, acquiert de ce fait une valeur sociale, de même que la ressource fossile dans le sol a une valeur sociale provenant de sa rareté. Cette dernière est la rente de rareté, bien connue depuis les travaux d'Harold Hotelling en 19311. Au total, la valeur de la ressource à chaque instant est la somme de son coût marginal d'extraction, de la rente de rareté et de la valeur du carbone (multipliée par le coefficient d'émission qui permet de passer des tonnes [ou autre unité] de ressource extraite aux tonnes [ou autre unité] de carbone émis).
+On peut montrer2 que dans une première phase, avant que la concentration maximale de carbone soit atteinte, la valeur du carbone croît à un taux égal à la somme du taux d'escompte social3 et du taux d'absorption naturelle, donc plus vite que la rente de rareté qui croît, elle, au taux d'escompte social. L'absorption naturelle augmente le taux de croissance de la valeur du carbone, car, grâce à elle, une unité de carbone émise aujourd'hui augmente l'absorption totale et procure donc la possibilité
+1. H. Hotelling, "  The economics of exhaustible resources  ", Journal of Political Economy, 39(2), 1931, p. 137-175. 2. U. Chakravorty, B. Magné et M. Moreaux, "  A Hotelling model with a ceiling on the stock of pollution  ", Journal of Economic Dynamics and Control, 30, 2006, p. 2875-2904 ou K. Schubert, "  La valeur du carbone...  ", art. cité. 3. Le taux d'escompte social est le taux auquel le planificateur actualise les utilités dans la fonction de bien-être social intertemporel. Nous revenons plus bas sur les difficultés posées par le choix de sa valeur.
+
+
+82
+d'émettre plus demain sans se rapprocher du plafond. Sous l'hypothèse réaliste que le stock de ressource fossile est grand, la concentration de carbone augmente tout au long de cette phase, qui dure jusqu'à la date à laquelle le plafond de concentration est atteint. Ensuite a lieu une deuxième phase au cours de laquelle la concentration de carbone reste au plafond. Les émissions de carbone sont exactement compensées par l'absorption naturelle. La valeur du carbone diminue au cours de cette phase, jusqu'à s'annuler quand il ne reste plus assez de ressource dans le sol et que l'absorption naturelle excède les émissions. Les niveaux initiaux de la rente de rareté et de la valeur du carbone dépendent essentiellement, pour la première, de la taille du stock de ressource fossile disponible et, pour la seconde, du niveau du plafond de concentration par rapport au niveau actuel de concentration.
+Dans le deuxième type d'approche, la valeur optimale du carbone est à chaque instant la somme actualisée des dommages marginaux futurs causés par l'accumulation du carbone dans l'atmosphère, le taux d'actualisation approprié étant égal à la somme du taux d'escompte social et du taux d'absorption naturelle du carbone. Alistair Ulph et David Ulph1 montrent par simulation, sous certaines hypothèses peu restrictives concernant les fonctions d'utilité et de dommage, que la valeur du carbone suit une courbe en cloche. Olli Tahvonen2 se place dans un cadre plus général (formes fonctionnelles non spécifiées, résolution analytique). Il montre que si la concentration de carbone initiale est suffisamment faible, la valeur du carbone suit une courbe en cloche, et que si cette concentration est élevée la valeur du carbone converge de façon monotone vers zéro.
+1. A. Ulph et D. Ulph, "  The optimal time path of a carbon tax  ", Oxford Economic Papers, 46, 1994, p. 857-868. 2. O. Tahvonen, "  Fossil fuels, stock externalities and backstop technology  ", Canadian Journal of Economics, 30, 1997, p. 855-874.
+
+
+83
+Dans les deux cas, le profil est d'abord croissant puis décroissant. La phase de croissance est associée à une ressource fossile abondante et par conséquent une rente de rareté très faible ; c'est la croissance de la valeur du carbone qui permet alors de contenir la concentration atmosphérique de carbone. La phase de décroissance apparaît quand la ressource fossile devient suffisamment rare pour que la rente de rareté soit très élevée et l'extraction faible, ce qui entraîne mécaniquement un ralentissement de l'accumulation du carbone.
+Si ces effets sont qualitativement identiques dans les deux cas, les résultats quantitatifs sont en revanche fort différents, comme nous le montrons ci-dessous à l'aide de simulations. Dans le cas d'une contrainte de concentration, le profil de la valeur du carbone est croissant à un taux égal à la somme du taux d'escompte social et du taux d'absorption naturelle. Dans le cas d'une fonction de dommage, le profil est quasiment plat. En contrepartie, le niveau initial est beaucoup plus élevé dans le second cas que dans le premier. L'allure du sentier optimal de concentration du carbone dans l'atmosphère reflète ces différences. On atteint relativement rapidement le plafond de concentration dans le premier cas, puis on y reste pendant une très longue période, jusqu'à ce que le stock d'énergie fossile restant et donc les extractions soient suffisamment faibles pour que l'absorption naturelle devienne supérieure aux émissions et que la concentration de carbone décroisse. Dans le second cas, l'augmentation de la concentration est beaucoup plus étalée dans le temps.
+Les différences entre les deux cas proviennent du fait que dans le premier on impose un plafond à la concentration de carbone sans rien contraindre a priori quant à la trajectoire permettant d'atteindre ce plafond ni la date à laquelle il est atteint, tandis que dans le second cas la trajectoire est contrainte par le fait que l'on tient compte du dommage marginal dû à chaque instant à une unité d'émission supplémentaire et que la répartition temporelle des dommages n'est pas indifférente.
+
+
+84
+Il est instructif de se livrer à une évaluation numérique de la valeur sociale du carbone dans les deux cas d'un plafond de concentration et d'une fonction de dommages. La tentative exposée ici est bien évidemment grossière, mais permet de fixer les idées sur les ordres de grandeur.
+Il faut, pour calibrer le modèle, disposer de la valeur des stocks initiaux d'énergie fossile et de carbone atmosphérique, ainsi que de la concentration maximale admissible. Il faut également choisir les valeurs du taux d'escompte social, du taux d'absorption naturelle et du coefficient d'émission, ainsi que les valeurs des paramètres des fonctions d'utilité et de dommage. Les hypothèses retenues sont les suivantes : - Le plafond de concentration est fixé à 450 ppm. - On a actuellement en terre environ 300 gigatonnes de carbone (GtC)
+sous forme de pétrole, dont 50 % sont récupérables, 300 GtC sous forme de gaz, dont 80 % sont récupérables, et 3000 Gt de charbon. On fait l'hypothèse que le total récupérable est de 3000 GtC. - Il y a actuellement dans l'atmosphère environ 800 GtC et la concentration est de 380 ppm. On en déduit qu'émettre 1 GtC augmente la concentration de 380/800=0,475 ppm, d'où un coefficient d'émission de 0,475. - Les océans et les réservoirs terrestres (forêts) absorbent chaque année entre 3 et 4 GtC. Donc le coefficient d'absorption naturelle est de 3/800 à 4/800, c'est-à-dire de 0,375 à 0,5 %. On le choisit égal à 0,4 % par an. Pour fixer les idées, notons que cela correspond à un temps moyen de résidence du carbone dans l'atmosphère de 1/0,4 % = 250 ans. On prend un taux d'escompte social de 4 %, conformément à la recommandation du rapport Lebègue pour la France1.
+1. Le rapport Lebègue recommande plus précisément d'adopter un taux d'actualisation tutélaire de 4 % par an pendant 30 ans, puis de faire décroître ce taux jusqu'à un plancher de 2 %. Nous n'avons pas fait décroître le taux d'actualisation après 30 ans pour simplifier la mise en oeuvre des simulations.
+
+
+85
+
+ -  On rejette actuellement dans l'atmosphère environ 7 GtC chaque année. Les paramètres de la fonction d'utilité, croissante et concave (plus précisément quadratique), sont calibrés de sorte que l'extraction initiale soit de 7 GtC.
+ -  Enfin, dans le modèle avec fonction de dommage, le paramètre caractérisant la convexité du dommage (quadratique) est calibré de sorte que dans la simulation la valeur maximale atteinte par la concentration de carbone atmosphérique soit égale au plafond de concentration. Ce choix signifie que l'on suppose que le plafond de concentration est optimal. Il permet d'assurer la comparabilité des résultats des deux modèles.
+Les résultats sont alors les suivants, dans le cas d'un plafond de concentration tout d'abord (tableau 7).
+Tableau 7 - Plafond de concentration.
+
+Date à laquelle le plafond
+est atteint (années)
+58
+
+Rente de rareté initiale
+(% du choke price)
+0
+
+Valeur du carbone initiale
+(% du choke price)
+8
+
+Le plafond de concentration est atteint en 58 ans. Rappelons qu'à chaque instant la valeur de la ressource, c'est-à-dire son utilité marginale, est égale à la somme du coût marginal d'extraction (nul ici), de la rente de rareté et de la valeur du carbone multipliée par le coefficient d'émission. Nous n'obtenons pas ici la décomposition de cette valeur en termes absolus, mais en termes relatifs, c'est-à-dire en pourcentage du choke price. La rente de rareté relative initiale est extrêmement faible en raison de l'abondance des ressources fossiles. La valeur du carbone relative initiale est égale à 8 %. La valeur relative du carbone croît ensuite pendant 58 ans avant de se stabiliser autour de 110 % puis de décroître vers 0.
+
+
+86
+On peut, pour fixer les idées, se livrer à un calcul simple. Supposons que l'énergie fossile considérée ici soit entièrement du pétrole, et supposons à titre illustratif que le choke price, c'est-à-dire le prix (net du coût marginal d'extraction) auquel la demande de pétrole devient nulle est de 200 euros/baril. Ceci correspond à 200 - 7,33/0,75 euros/tC (1 t de pétrole = 0,75 tC et il y a 7,33 barils dans 1 t de pétrole) c'est-à-dire à 1955 euros/tC. La valeur du carbone initiale est alors de 156 euros/tC, soit1156 - (12/44) = 43 euros/tCO2. Si le choke price est deux fois plus élevé (400 euros/baril), cette valeur double.
+Il est évidemment indispensable de se livrer à une analyse de la sensibilité de ces résultats aux hypothèses adoptées pour calibrer le modèle :
+ -  conformément à l'intuition, le niveau initial de la valeur du carbone est d'autant plus faible que le taux d'escompte (et donc le taux de croissance de la valeur du carbone) est élevé ; l'effet est très significatif2 : pour un taux d'escompte de 3 % la valeur relative initiale est de 13,2 % du choke price, alors qu'elle vaut 5 % pour un taux d'escompte de 5 % ; en contrepartie, plus le taux d'escompte est élevé plus le taux de croissance de la valeur du carbone au cours de la première phase l'est ;
+ -  plus le stock de ressources fossiles exploitables est faible plus la rente de rareté initiale est élevée et la valeur du carbone initiale faible, à extraction initiale donnée ;
+ -  plus le taux d'absorption naturelle est faible plus la valeur initiale du carbone est élevée. Elle est multipliée par trois quand le taux d'absorption naturelle est divisé par deux ; quand ce taux est très faible en effet, émettre plus aujourd'hui augmente très peu l'absorption et donc contribue très peu à réduire le stock de carbone atmosphérique.
+1. Nombres de masse : O=16, C=12 ; donc la masse d'une molécule de CO2 est 44. Une masse de 1 de C correspond ainsi à une masse de 12/44 de CO2. 2. Cette forte sensibilité de la valeur du carbone au taux d'escompte utilisé renvoie au débat plus général sur le rôle de l'actualisation.
+
+
+87
+
+Dans le cas où les dommages sont explicitement pris en compte, les résultats sont reportés dans le tableau 8.
+Tableau 8 - Fonction de dommage.
+
+Rente de rareté initiale (% du choke price)
+0
+
+Valeur du carbone initiale (% du choke price)
+88,7
+
+Avec les hypothèses adoptées pour le calibrage, c'est-à-dire un coefficient de la fonction de dommage choisi de sorte que la concentration de carbone dans l'atmosphère atteigne juste le plafond à son maximum, la valeur relative initiale du carbone est très élevée, 89 % du choke price, et son taux de croissance très faible, puisqu'au bout de 100 ans elle est seulement de 98 % du choke price. La valeur du carbone suit bien une courbe en cloche, mais celle-ci est très plate dans sa phase initiale croissante. La concentration de carbone atteint le plafond beaucoup plus tard que dans le cas précédent.
+Avec les mêmes valeurs numériques que précédemment, c'est-à-dire un choke price de 200 euros/baril, nous obtenons une valeur du carbone initiale de 1734 euros/tC, soit 473 euros/tCO2, environ dix fois plus que dans le cas d'un plafond de concentration.
+La figure 5 synthétise ces résultats. Le premier graphique présente l'évolution au cours du temps de la concentration de carbone dans l'atmosphère, dans le cas où aucune valeur n'est accordée au carbone (courbe en pointillés), dans celui d'un plafond de concentration (traits pleins fins) et dans celui où les dommages sont pris en compte (traits pleins épais), à deux horizons, très long et long terme. Le deuxième représente l'évolution de la valeur relative du carbone à ces deux horizons.
+Fixer un plafond de concentration ou prendre en compte explicitement les dommages conduit donc à des résultats très différents en matière de niveau initial et de profil optimaux de la valeur sociale du carbone.
+
+
+ok Page 88 Mercredi, 14. octobre 2009 9:06 09
+
+520
+
+500
+
+Concentration de carbone
+
+480
+
+460
+
+440
+
+420
+
+400
+
+3800200400600800020406080100120140
+
+Temps (années)
+
+Temps (années)
+
+1
+
+Concentration de carbone
+
+0,8
+
+0,6
+
+0,4
+
+0,20200400600800020406080100120140
+
+Temps (années)
+
+Temps (années)
+
+Figure 5 - Concentration et valeur du carbone.
+
+
+89
+ORGANIGRAMME DU CEPREMAP
+Direction
+Président : Jean-Pierre Jouyet Directeur : Daniel Cohen
+Directeur adjoint : Philippe Askenazy
+Directeurs de programme
+Programme 1 - La politique macroéconomique en économie ouverte Yann Algan
+Philippe Martin Xavier Ragot Programme 2 - Travail et emploi
+Ève Caroli Andrew Clark Gilles Saint-Paul Programme 3 - Économie publique et redistribution Brigitte Dormont Claudia Senik Karine Van Der Straeten Programme 4 - Marchés, firmes et politique de la concurrence Gabrielle Demange Anne Perrot Jérôme Pouyet Programme 5 - Commerce international et développement Marc Gurgand Sylvie Lambert Thierry Mayer
+
+
+Mise en pages TyPAO sarl 75011 Paris
+
+Imprimerie Jouve N° d'impression : **** Dépôt légal : novembre 2009
+
+
