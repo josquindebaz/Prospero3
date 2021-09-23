@@ -41,7 +41,7 @@ header.main_header h2 {
 .edition-widget.editable:hover {
     background-color: #F5F5F8;
 }
-.project-infos-container .edition-widget.editable:hover {
+[page=projects-mosaic] .project-infos-container .edition-widget.editable:hover {
     background-color: white;
 }
 textarea.edition-widget {
