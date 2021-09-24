@@ -11,10 +11,13 @@ class PProjectView extends PObject {
 	    this.dicoTable.addObserver(function(event) {
 	        self.manageEvent(self.dicoTable, event)
 	    });
-	    this.textTable = new TextTable($(".text-table"), this);
+	    this.middlePanel = new MiddlePanel($(".middle-panel"), this);
+	    this.textTable = this.middlePanel.getPanel("textTable");
 	    this.textTable.addObserver(function(event) {
 	        self.manageEvent(self.textTable, event)
 	    });
+	    this.dicoEditor = this.middlePanel.getPanel("dicoEditor");
+
 	    this.editorPanel = new EditorPanel($(".editor-panel"), this);
 	    var importExportButton = new StateButton($("[action-name=multi-actions]"));
 	    importExportButton.addObserver(function(event) {
@@ -70,6 +73,7 @@ class PProjectView extends PObject {
                 }
                 self.dicoTable.deselectAll();
                 self.textTable.deselectAll();
+                self.middlePanel.switchTo("textTable");
 	        }
 	    } else if (origin == self.textTable) {
 	        if (event.name == "selectionChanged") {
@@ -90,9 +94,12 @@ class PProjectView extends PObject {
                 self.corporaTable.deselectAll();
 	        }
 	    } else if (origin == self.dicoTable) {
+            var item = prospero.get(self.dicoTable.getSelection());
             self.corporaTable.deselectAll();
             self.textTable.deselectAll();
             self.editorPanel.switchTo();
+            self.dicoEditor.setData(item.identity).reload();
+            self.middlePanel.switchTo("dicoEditor");
 	    }
     }
     reload() {

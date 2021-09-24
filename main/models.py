@@ -407,6 +407,18 @@ class DictPackage(DictObject) :
             return self.fiction.getRealInstance()
         else:
             return self
+
+    def serialize(self):
+        elements = []
+        for item in self.elements.all():
+            item = item.getRealInstance()
+            elements.append(item.serialize())
+        return {
+            "identity" : self.serializeIdentity(),
+            "name": self.name,
+            "elements" : elements
+        }
+
     def getElements(self):
         res = []
         for elt in self.elements.all():
@@ -487,6 +499,12 @@ class DictElement(DictObject) :
 
     def __str__(self):
         return "[" + str(self.id) + ":DictElement] " + self.value
+
+    def serialize(self):
+        return {
+            "identity" : self.serializeIdentity(),
+            "value": self.value,
+        }
 
     def getRealInstance(self):
         return self
@@ -690,6 +708,11 @@ class Category(DictPackage) :
 
     def __str__(self):
         return "[" + str(self.id) + ":Category] " + self.name
+
+    def serialize(self):
+        result = super().serialize()
+        result["type"] = self.type
+        return result
 
     def getRealInstance(self):
         return self

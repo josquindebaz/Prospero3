@@ -311,3 +311,18 @@ td.col-thumbnail .img_container img {
     flex-direction: column;
     height: 100%;
 }
+
+/* dico1-panel */
+
+.dico1-panel .dico-elements {
+    margin-top: 10px;
+}
+.dico1-panel .dico-elements .accordion-button.leaf::after {
+    display: none;
+}
+.dico1-panel .dico-elements .accordion-button {
+    padding: 5px 5px;
+}
+.dico1-panel .dico-elements .accordion-item .accordion-item .accordion-button {
+    padding-left: 10px;
+}

@@ -3,10 +3,11 @@ from django.db.models import Q
 from main.helpers import rights
 
 def getObjects(querySet, filters):
-    sorting = filters["sort"]
-    sortingProp = sorting["property"]
-    sortingAsc = sorting["ascendant"]
-    querySet = querySet.order_by(sortingProp if sortingAsc else "-"+sortingProp)
+    if "sort" in filters:
+        sorting = filters["sort"]
+        sortingProp = sorting["property"]
+        sortingAsc = sorting["ascendant"]
+        querySet = querySet.order_by(sortingProp if sortingAsc else "-"+sortingProp)
 
     pagination = filters["pagination"]
     frameSize = pagination["frameSize"]

@@ -27,6 +27,19 @@ def serializeTable(request, data, results):
             table.append(item.serializeAsTableItem())
     results["filters"] = filters
 
+def serializeDico(request, data, results):
+    elements = []
+    results["elements"] = elements
+    identity = data["identity"]
+    filters = data["filters"]
+    object = frontend.getBDObject(identity)
+    querySet = getattr(object, "elements")
+    items = queries.getObjects(querySet, filters)
+    for item in items:
+        item = item.getRealInstance()
+        elements.append(item.serialize())
+    results["filters"] = filters
+
 def serializeUserData(request, data, results):
     users = []
     for user in PUser.objects.all():
