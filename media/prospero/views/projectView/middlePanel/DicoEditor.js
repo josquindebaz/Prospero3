@@ -79,6 +79,7 @@ class DicoEditor extends PObject {
         return lock;
 	}
 	createItem(element, $root) {
+        var self = this;
         var $accItem = $('<div class="accordion-item"></div>');
         $root.append($accItem);
         //var item = this.createTableItem($accItem, element.identity);
@@ -88,18 +89,56 @@ class DicoEditor extends PObject {
         else
             item = new PDictPackage($accItem, element.identity, this);
         item.load(element);
-        /*item.addObserver(function(event) {
+        item.addObserver(function(event) {
             self.receiveEvent(event);
-        });*/
+        });
 	}
-	/*
-	createTableItem($node, identity) {
-        if (identity.model == "DictElement")
-            return new PDictElement($node, identity, this);
-        else
-            return new PDictPackage($node, identity, this);
+	receiveEvent(event) {
+        var self = this;
+        if (event.name == "click") {
+            var item = event.target;
+            var selectionChanged = false;
+            if (event.original && event.original.ctrlKey) {
+                //event.original.preventDefault();
+                //document.getSelection().removeAllRanges();
+                selectionChanged = true;
+                item.toggleSelected()
+            } else if (self.lastSelectedItem && event.original && event.original.shiftKey) {
+                //event.original.preventDefault();
+                //document.getSelection().removeAllRanges();
+                var p1 = item.node.parent()
+                var p2 = self.lastSelectedItem.node.parent()
+                if (p1.is(p2)) {
+                    var indexes = [];
+                    var $children = p1.children();
+                    indexes.push($children.index(item.node));
+                    indexes.push($children.index(self.lastSelectedItem.node));
+                    indexes = _.sortBy(indexes);
+                    var $selected = $children.slice(indexes[0], indexes[1]+1);
+                    selectionChanged = true;
+                    self.deselectAll();
+                    $selected.each(function(index, value) {
+                        prospero.get($(value)).setSelected();
+                    });
+                }
+            } else {
+                if (!item.isSelected() || self.getSelection().length > 1) {
+                    selectionChanged = true;
+                    self.deselectAll();
+                    item.setSelected();
+                }
+            }
+            if (selectionChanged) {
+                self.notifyObservers({name: "selectionChanged"});
+                /*if (self.getSelection().length > 0)
+                    self.menu.setEnabled("delete", true);
+                else
+                    self.menu.setEnabled("delete", false);
+                */
+            }
+            self.lastSelectedItem = item;
+        }
 	}
-	*/
 	getItems() {
 	    return this.root.children();
 	}
@@ -116,14 +155,12 @@ class DicoEditor extends PObject {
         });
 	}
 	getSelection() {
-	    var $selected = this.root.children(".active");
+	    var $selected = this.root.find(".accordion-item.selected");
 	    return $selected;
 	}
 	deselectAll() {
-	    $("tbody", this.node).children().removeClass("active");
+	    this.root.find(".accordion-item").removeClass("selected");
 	}
-	// override if necessary
-	receiveEvent(event) {}
 }
 class PDictObject extends PDBObject {
 
@@ -132,6 +169,7 @@ class PDictObject extends PDBObject {
 	    this.editor = editor;
 	    var self = this;
 	    $node.bind("click", function(event) {
+            event.stopPropagation();
             self.notifyObservers({
                 name: "click",
                 target: self,
@@ -144,16 +182,16 @@ class PDictObject extends PDBObject {
         this.data = data;
 	}
 	isSelected() {
-	    return this.node.hasClass("active");
+	    return this.node.hasClass("selected");
 	}
 	setSelected() {
-	    this.node.addClass("active");
+	    this.node.addClass("selected");
 	}
 	setUnselected() {
-	    this.node.removeClass("active");
+	    this.node.removeClass("selected");
 	}
 	toggleSelected() {
-	    this.node.toggleClass("active");
+	    this.node.toggleClass("selected");
 	}
 }
 class PDictElement extends PDictObject {
@@ -164,7 +202,7 @@ class PDictElement extends PDictObject {
 	load(data) {
         super.load(data);
         var self = this;
-        this.node.append($('<h2 class="accordion-header"><button class="accordion-button collapsed leaf" type="button" data-bs-toggle="collapse" aria-expanded="false"><input class="edition-widget editable" value="'+data.value+'"></button></h2>'));
+        this.node.append($('<h2 class="accordion-header"><button class="accordion-button collapsed leaf" type="button" data-bs-toggle="collapse" aria-expanded="false"><input class="edition-widget" value="'+data.value+'"></button></h2>'));
 	}
 }
 class PDictPackage extends PDictObject {
@@ -183,15 +221,19 @@ class PDictPackage extends PDictObject {
             prefixCode = '<span>@</span>';
         else if (this.identity.model == "Category")
             suffixCode = '<span>['+data.type+']</span>';
-        var childContainerId = "opener"+"-"+this.identity.model+"-"+this.identity.id;
-        var flushId = "flush"+"-"+this.identity.model+"-"+this.identity.id;
-        var $pck = $('<h2 class="accordion-header" id="'+flushId+'"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#'+childContainerId+'" aria-expanded="false" aria-controls="'+childContainerId+'">'+prefixCode+'<input class="edition-widget editable" value="'+data.name+'">'+suffixCode+'</button></h2>');
-        this.node.append($pck);
-        var $childContainer = $('<div id="'+childContainerId+'" class="accordion-collapse collapse" aria-labelledby="'+flushId+'"><div class="accordion"></div></div>');
-        this.node.append($childContainer);
-        var $root = $childContainer.find(".accordion");
-        $.each(data.elements, function(index, element) {
-            self.editor.createItem(element, $root);
-        });
+        if ("elements" in data) {
+            var childContainerId = "opener"+"-"+this.identity.model+"-"+this.identity.id;
+            var flushId = "flush"+"-"+this.identity.model+"-"+this.identity.id;
+            var $pck = $('<h2 class="accordion-header" id="'+flushId+'"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#'+childContainerId+'" aria-expanded="false" aria-controls="'+childContainerId+'">'+prefixCode+'<input class="edition-widget" value="'+data.name+'">'+suffixCode+'</button></h2>');
+            this.node.append($pck);
+            var $childContainer = $('<div id="'+childContainerId+'" class="accordion-collapse collapse" aria-labelledby="'+flushId+'"><div class="accordion"></div></div>');
+            this.node.append($childContainer);
+            var $root = $childContainer.find(".accordion");
+            $.each(data.elements, function(index, element) {
+                self.editor.createItem(element, $root);
+            });
+        } else {
+            this.node.append($('<h2 class="accordion-header"><button class="accordion-button collapsed leaf" type="button" data-bs-toggle="collapse" aria-expanded="false">'+prefixCode+'<input class="edition-widget" value="'+data.name+'">'+suffixCode+'</button></h2>'));
+        }
 	}
 }

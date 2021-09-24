@@ -408,16 +408,23 @@ class DictPackage(DictObject) :
         else:
             return self
 
-    def serialize(self):
-        elements = []
-        for item in self.elements.all():
-            item = item.getRealInstance()
-            elements.append(item.serialize())
-        return {
+    def serialize(self, **kwargs):
+        if "depth" in kwargs:
+            depth = kwargs["depth"]
+        else:
+            depth = -1
+        result = {
             "identity" : self.serializeIdentity(),
-            "name": self.name,
-            "elements" : elements
+            "name": self.name
         }
+        if depth != 0:
+            depth = depth - 1
+            elements = []
+            for item in self.elements.all():
+                item = item.getRealInstance()
+                elements.append(item.serialize(depth=depth))
+            result["elements"] = elements
+        return result
 
     def getElements(self):
         res = []
@@ -500,7 +507,7 @@ class DictElement(DictObject) :
     def __str__(self):
         return "[" + str(self.id) + ":DictElement] " + self.value
 
-    def serialize(self):
+    def serialize(self, **kwargs):
         return {
             "identity" : self.serializeIdentity(),
             "value": self.value,
@@ -709,8 +716,11 @@ class Category(DictPackage) :
     def __str__(self):
         return "[" + str(self.id) + ":Category] " + self.name
 
-    def serialize(self):
-        result = super().serialize()
+    def serialize(self, **kwargs):
+        depth = -1
+        if "depth" in kwargs:
+            depth = kwargs["depth"]
+        result = super().serialize(depth=depth)
         result["type"] = self.type
         return result
 

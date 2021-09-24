@@ -326,3 +326,15 @@ td.col-thumbnail .img_container img {
 .dico1-panel .dico-elements .accordion-item .accordion-item .accordion-button {
     padding-left: 10px;
 }
+.dico1-panel .dico-elements .accordion-item.selected > .accordion-header > button {
+    background-color: var(--color_2);
+}
+.dico1-panel .dico-elements .accordion-item.selected > .accordion-header > button * {
+    color: white;
+}
+.dico1-panel .dico-elements .accordion-button:focus {
+    box-shadow: none;
+}
+.dico1-panel .dico-elements .accordion-item input {
+    cursor: pointer;
+}

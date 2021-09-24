@@ -33,11 +33,16 @@ def serializeDico(request, data, results):
     identity = data["identity"]
     filters = data["filters"]
     object = frontend.getBDObject(identity)
+    depth = -1
+    if (type(object) == FictionDictionnary or type(object) == CollectionDictionnary):
+        depth = 1
+    elif (type(object) == CategoryDictionnary):
+        depth = 0
     querySet = getattr(object, "elements")
     items = queries.getObjects(querySet, filters)
     for item in items:
         item = item.getRealInstance()
-        elements.append(item.serialize())
+        elements.append(item.serialize(depth=depth))
     results["filters"] = filters
 
 def serializeUserData(request, data, results):
