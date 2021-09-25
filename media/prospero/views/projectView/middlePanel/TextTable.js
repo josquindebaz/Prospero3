@@ -17,6 +17,7 @@ class TextTable extends PTable {
                         prospero.wait(lock, function() {
                             var $textItem = self.getItem(data.text.identity)
                             self.setSelection($textItem);
+                            self.updateMenu();
                         });
                     }
                 }
@@ -37,15 +38,16 @@ class TextTable extends PTable {
                             item.node.remove();
                         });
                         self.notifyObservers({name: "selectionChanged"});
+                        self.updateMenu();
                     });
                 }
             });
         });
-        self.menu.setEnabled("delete", false);
+        this.updateMenu();
 	}
 	load() {
 	    var lock = super.load();
-	    this.menu.setEnabled("delete", false);
+	    this.updateMenu();
 	    return lock;
 	}
 	receiveEvent(event) {
@@ -82,12 +84,15 @@ class TextTable extends PTable {
             }
             if (selectionChanged) {
                 self.notifyObservers({name: "selectionChanged"});
-                if (self.getSelection().length > 0)
-                    self.menu.setEnabled("delete", true);
-                else
-                    self.menu.setEnabled("delete", false);
+                self.updateMenu();
             }
             self.lastSelectedItem = item;
         }
+	}
+	updateMenu() {
+        if (this.getSelection().length > 0)
+            this.menu.setEnabled("delete", true);
+        else
+            this.menu.setEnabled("delete", false);
 	}
 }

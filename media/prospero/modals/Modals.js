@@ -67,6 +67,15 @@ class Modals {
         self.newTextModal.show(corpus);
         return doneLock;
 	}
+	openNewDicoElt(infos) {
+        var self = this;
+        if (self.newDicoEltModal == null)
+            self.newDicoEltModal = new NewDicoEltModal($(".new-dico-elt-modal"));
+        var doneLock = $.Deferred();
+        self.newDicoEltModal.setDoneLock(doneLock);
+        self.newDicoEltModal.show(infos);
+        return doneLock;
+	}
 	openNewCorpus(project) {
         var self = this;
         if (self.newCorpusModal == null)

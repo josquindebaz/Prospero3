@@ -2,13 +2,91 @@ class DicoEditor extends PObject {
 
 	constructor($node, view) {
 	    super($node);
+	    var self = this;
 	    this.view = view;
 	    this.root = this.node.find(".accordion-root");
-	    this.actionTriggers = {};
+	    this.menu = new PGenericMenu($(".generic-menu", self.node));
 	    this.clearFilters();
         var $scrollable = $(".card-body", $node);
         if ($scrollable.length > 0)
             this.bindScroll($scrollable);
+
+        self.menu.addAction("create", "Create element", function() {
+            var infos = self.getCreateInfos();
+            var modalLock = modals.openNewDicoElt(infos);
+            prospero.wait(modalLock, function() {
+                if (modalLock.data.action == "create") {
+                    var item = prospero.get(view.corporaTable.getSelection());
+                    if (item) {
+                        var lock = self.reload(item.identity);
+                        prospero.wait(lock, function() {
+                            var $textItem = self.getItem(data.text.identity)
+                            self.setSelection($textItem);
+                        });
+                    }
+                }
+            });
+        });
+        self.menu.addAction("delete", "Delete element", function() {
+	        var items = prospero.get(self.getSelection(), true);
+	        var itemDatas = [];
+	        $.each(items, function(index, item) {
+	            itemDatas.push(item.identity);
+	        });
+	        var approvalText = items.length > 1 ? "Do you really want to delete these elements ?" : "Do you really want to delete this element ?";
+            var modalLock = modals.openApproval("Confirmation", approvalText);
+            prospero.wait(modalLock, function() {
+                if (modalLock.data.action == "yes") {
+                    prospero.ajax("deleteObject", itemDatas, function(data) {
+                        $.each(items, function(index, item) {
+                            item.node.remove();
+                        });
+                        self.notifyObservers({name: "selectionChanged"});
+                        self.updateMenu();
+                    });
+                }
+            });
+        });
+	}
+	getCreateInfos() {
+        //var dico = prospero.get(this.view.dicoTable.getSelection());
+        if (this.data != null) {
+            var infos = null;
+            if (this.data.model == "LexicalDictionnary") {
+                infos = {
+                    "model" : "DictElement",
+                    "parent" : this.data
+                };
+            } else if (this.data.model == "CategoryDictionnary") {
+                infos = {
+                    "model" : "Category",
+                    "parent" : this.data
+                };
+            } else if (this.data.model == "CollectionDictionnary") {
+                var parent = prospero.get(this.getSelection());
+                if (parent != null && !Array.isArray(parent) && parent.identity.model == "Collection") {
+                    infos = {
+                        "model" : "PDictPackage",
+                        "parent" : parent.identity
+                    };
+                }
+            } else if (this.data.model == "FictionDictionnary") {
+                var parent = prospero.get(this.getSelection())
+                if (parent != null && !Array.isArray(parent) && parent.identity.model == "Fiction") {
+                    infos = {
+                        "model" : "PDictPackage",
+                        "parent" : parent.identity
+                    };
+                }
+            } else if (this.data.model == "DictPackage") {
+                infos = {
+                    "model" : "PDictElement",
+                    "parent" : this.data
+                };
+            }
+        }
+        console.log(infos);
+        return infos;
 	}
 	setData(data) {
 	    this.data = data;
@@ -37,22 +115,6 @@ class DicoEditor extends PObject {
             }
         });
 	}
-	addActionTrigger(actionName, $trigger, callback) {
-	    var self = this;
-	    this.actionTriggers[actionName] = {
-	        trigger: $trigger,
-	        callback: callback
-	    };
-	    $trigger.bind("click", function() {
-	        callback(self);
-	    });
-	}
-	showActionTrigger(actionName) {
-	    this.actionTriggers[actionName].trigger.removeClass("hidden");
-	}
-	hideActionTrigger(actionName) {
-	    this.actionTriggers[actionName].trigger.addClass("hidden");
-	}
 	reload() {
 	    this.root.empty();
 	    this.clearPagination();
@@ -76,6 +138,7 @@ class DicoEditor extends PObject {
         } else {
             lock.resolve();
         }
+        this.updateMenu();
         return lock;
 	}
 	createItem(element, $root) {
@@ -130,11 +193,7 @@ class DicoEditor extends PObject {
             }
             if (selectionChanged) {
                 self.notifyObservers({name: "selectionChanged"});
-                /*if (self.getSelection().length > 0)
-                    self.menu.setEnabled("delete", true);
-                else
-                    self.menu.setEnabled("delete", false);
-                */
+                self.updateMenu();
             }
             self.lastSelectedItem = item;
         }
@@ -161,6 +220,26 @@ class DicoEditor extends PObject {
 	deselectAll() {
 	    this.root.find(".accordion-item").removeClass("selected");
 	}
+	updateMenu() {
+        this.menu.setEnabled("delete", this.isSelectionDeletable());
+        this.menu.setEnabled("create", this.getCreateInfos() != null);
+	}
+	isSelectionDeletable() {
+	    var selection = this.getSelection();
+	    if (selection.length == 0)
+	        return false;
+	    else {
+	        selection = prospero.get(selection);
+	        if (!Array.isArray(selection))
+	            selection = [selection];
+	        var result = true;
+	        $.each(selection, function(index, element) {
+	            result = element.isDeletable();
+	            return result;
+	        });
+	        return result;
+	    }
+	}
 }
 class PDictObject extends PDBObject {
 
@@ -169,6 +248,8 @@ class PDictObject extends PDBObject {
 	    this.editor = editor;
 	    var self = this;
 	    $node.bind("click", function(event) {
+            console.log($node);
+            event.preventDefault();
             event.stopPropagation();
             self.notifyObservers({
                 name: "click",
@@ -193,6 +274,12 @@ class PDictObject extends PDBObject {
 	toggleSelected() {
 	    this.node.toggleClass("selected");
 	}
+	isLeaf() {
+	    return this.node.hasClass("leaf");
+	}
+	isDeletable() {
+	    return this.identity.model != "Collection" && this.identity.model != "Fiction";
+	}
 }
 class PDictElement extends PDictObject {
 
@@ -202,6 +289,7 @@ class PDictElement extends PDictObject {
 	load(data) {
         super.load(data);
         var self = this;
+        this.node.addClass("leaf");
         this.node.append($('<h2 class="accordion-header"><button class="accordion-button collapsed leaf" type="button" data-bs-toggle="collapse" aria-expanded="false"><input class="edition-widget" value="'+data.value+'"></button></h2>'));
 	}
 }
@@ -222,6 +310,7 @@ class PDictPackage extends PDictObject {
         else if (this.identity.model == "Category")
             suffixCode = '<span>['+data.type+']</span>';
         if ("elements" in data) {
+            this.node.addClass("leaf");
             var childContainerId = "opener"+"-"+this.identity.model+"-"+this.identity.id;
             var flushId = "flush"+"-"+this.identity.model+"-"+this.identity.id;
             var $pck = $('<h2 class="accordion-header" id="'+flushId+'"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#'+childContainerId+'" aria-expanded="false" aria-controls="'+childContainerId+'">'+prefixCode+'<input class="edition-widget" value="'+data.name+'">'+suffixCode+'</button></h2>');

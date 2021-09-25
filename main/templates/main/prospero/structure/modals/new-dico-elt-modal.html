@@ -1,0 +1,52 @@
+<div class="modal fade new-dico-elt-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create <span class="element-model">element</span></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body txt_m">
+                <div class="row">
+                    <div class="col-12">
+                        <p>
+                            Choose the text creation way :
+                        </p>
+                    </div>
+                    <div class="col-12 text-creation-choice">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" value="textarea" id="text-creation-choice-1" checked>
+                            <label class="form-check-label" for="text-creation-choice-1">
+                                From text value
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" value="file" id="text-creation-choice-2">
+                            <label class="form-check-label" for="text-creation-choice-2">
+                                From file (txt or pdf)
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 text-creation-input">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Put your text here" id="text-creation-input-1"></textarea>
+                            <label for="text-creation-input-1">Put your text here</label>
+                        </div>
+                    </div>
+                    <div class="col-12 text-creation-dropezone hidden">
+                        <div class="dropzone-panel" style="width:100%; height: 200px; border: 1px solid black;"></div>
+                        <div class="spinner-panel hidden" style="display: flex;">
+                            <div style="margin: auto;" class="spinner-border" role="status"></div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <p class="txt-corpus"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" action-name="create">Create</button>
+                <button type="button" class="btn btn-secondary close-button" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

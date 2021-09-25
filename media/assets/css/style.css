@@ -312,29 +312,29 @@ td.col-thumbnail .img_container img {
     height: 100%;
 }
 
-/* dico1-panel */
+/* dico-panel */
 
-.dico1-panel .dico-elements {
+.dico-panel .dico-elements {
     margin-top: 10px;
 }
-.dico1-panel .dico-elements .accordion-button.leaf::after {
+.dico-panel .dico-elements .accordion-button.leaf::after {
     display: none;
 }
-.dico1-panel .dico-elements .accordion-button {
+.dico-panel .dico-elements .accordion-button {
     padding: 5px 5px;
 }
-.dico1-panel .dico-elements .accordion-item .accordion-item .accordion-button {
+.dico-panel .dico-elements .accordion-item .accordion-item .accordion-button {
     padding-left: 10px;
 }
-.dico1-panel .dico-elements .accordion-item.selected > .accordion-header > button {
+.dico-panel .dico-elements .accordion-item.selected > .accordion-header > button {
     background-color: var(--color_2);
 }
-.dico1-panel .dico-elements .accordion-item.selected > .accordion-header > button * {
+.dico-panel .dico-elements .accordion-item.selected > .accordion-header > button * {
     color: white;
 }
-.dico1-panel .dico-elements .accordion-button:focus {
+.dico-panel .dico-elements .accordion-button:focus {
     box-shadow: none;
 }
-.dico1-panel .dico-elements .accordion-item input {
+.dico-panel .dico-elements .accordion-item input {
     cursor: pointer;
 }

@@ -16,12 +16,14 @@ class PProjectView extends PObject {
 	    this.textTable.addObserver(function(event) {
 	        self.manageEvent(self.textTable, event)
 	    });
-	    this.dicoEditor = this.middlePanel.getPanel("dicoEditor");
-	    this.dicoEditor.addObserver(function(event) {
-	        self.manageEvent(self.dicoEditor, event)
+	    this.middleDicoEditor = this.middlePanel.getPanel("dicoEditor");
+	    this.middleDicoEditor.addObserver(function(event) {
+	        self.manageEvent(self.middleDicoEditor, event)
 	    });
 
-	    this.editorPanel = new EditorPanel($(".editor-panel"), this);
+	    this.rightPanel = new RightPanel($(".right-panel"), this);
+	    this.rightDicoEditor = this.rightPanel.getPanel("dicoEditor");
+
 	    var importExportButton = new StateButton($("[action-name=multi-actions]"));
 	    importExportButton.addObserver(function(event) {
 	        if (event.action == "Import") {
@@ -68,11 +70,11 @@ class PProjectView extends PObject {
                 if (item) {
                     self.textTable.setData(item.identity).reload();
                     console.log("open corpus infos pane");
-                    self.editorPanel.switchTo("corpusEditor");
-                    self.editorPanel.getPanel("corpusEditor").setData(item.identity).reload();
+                    self.rightPanel.switchTo("corpusEditor");
+                    self.rightPanel.getPanel("corpusEditor").setData(item.identity).reload();
                 } else {
                     self.textTable.setData(null).reload();
-                    self.editorPanel.switchTo();
+                    self.rightPanel.switchTo();
                 }
                 self.dicoTable.deselectAll();
                 self.textTable.deselectAll();
@@ -83,15 +85,15 @@ class PProjectView extends PObject {
                 var $items = this.textTable.getSelection();
                 if ($items.length == 1) {
                     var item = prospero.get($items.eq(0));
-                    self.editorPanel.getPanel("textEditor").setData(item.identity).reload();
+                    self.rightPanel.getPanel("textEditor").setData(item.identity).reload();
                     console.log("open text edition pane");
-                    self.editorPanel.switchTo("textEditor");
+                    self.rightPanel.switchTo("textEditor");
                 } else if ($items.length > 1) {
                     // open multitexts pane
                     console.log("open multitexts pane");
-                    self.editorPanel.switchTo("textSelectionsEditor");
+                    self.rightPanel.switchTo("textSelectionsEditor");
                 } else {
-                    self.editorPanel.switchTo();
+                    self.rightPanel.switchTo();
                 }
                 self.dicoTable.deselectAll();
                 self.corporaTable.deselectAll();
@@ -100,16 +102,16 @@ class PProjectView extends PObject {
             var item = prospero.get(self.dicoTable.getSelection());
             self.corporaTable.deselectAll();
             self.textTable.deselectAll();
-            self.editorPanel.switchTo();
-            self.dicoEditor.setData(item.identity).reload();
+            self.rightPanel.switchTo();
+            self.middleDicoEditor.setData(item.identity).reload();
             self.middlePanel.switchTo("dicoEditor");
-	    } else if (origin == self.dicoEditor) {
-            var items = prospero.get(self.dicoEditor.getSelection());
-            if (!Array.isArray(items)) {
-                console.log(items);
+	    } else if (origin == self.middleDicoEditor) {
+            var item = prospero.get(self.middleDicoEditor.getSelection());
+            if (item != null && !Array.isArray(item) && !item.isLeaf()) {
+                console.log(item);
+                self.rightDicoEditor.setData(item.identity).reload();
+                self.rightPanel.switchTo("dicoEditor");
             }
-            //self.dicoEditorRight.setData(item.identity).reload();
-            //self.editorPanel.switchTo("dicoEditor");
 	    }
     }
     reload() {

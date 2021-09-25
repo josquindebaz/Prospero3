@@ -3,7 +3,6 @@ class PTable extends PObject {
 	constructor($node, view) {
 	    super($node);
 	    this.view = view;
-	    this.actionTriggers = {};
 	    this.columns = $node.find("thead th").map(function(value){
 	        return $(this).attr("property-name")
 	    }).get();
@@ -69,22 +68,6 @@ class PTable extends PObject {
                     self.load();
             }
         });
-	}
-	addActionTrigger(actionName, $trigger, callback) {
-	    var self = this;
-	    this.actionTriggers[actionName] = {
-	        trigger: $trigger,
-	        callback: callback
-	    };
-	    $trigger.bind("click", function() {
-	        callback(self);
-	    });
-	}
-	showActionTrigger(actionName) {
-	    this.actionTriggers[actionName].trigger.removeClass("hidden");
-	}
-	hideActionTrigger(actionName) {
-	    this.actionTriggers[actionName].trigger.addClass("hidden");
 	}
 	reload() {
 	    $("tbody", this.node).empty();
