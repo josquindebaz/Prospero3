@@ -16,14 +16,13 @@ class DicoEditor extends PObject {
             var modalLock = modals.openNewDicoElt(infos);
             prospero.wait(modalLock, function() {
                 if (modalLock.data.action == "create") {
-                    var item = prospero.get(view.corporaTable.getSelection());
-                    if (item) {
-                        var lock = self.reload(item.identity);
-                        prospero.wait(lock, function() {
-                            var $textItem = self.getItem(data.text.identity)
-                            self.setSelection($textItem);
-                        });
-                    }
+                    var root = prospero.getPDBObject(infos.parent, self.root);
+                    var $root = null;
+                    if (root != null)
+                        $root = root.node.find(".accordion").eq(0);
+                    else
+                        $root = self.root;
+                    self.createItem(modalLock.data.metadata, $root, true);
                 }
             });
         });
@@ -54,12 +53,14 @@ class DicoEditor extends PObject {
             var infos = null;
             if (this.data.model == "LexicalDictionnary") {
                 infos = {
-                    "model" : "DictElement",
+                    "model" : "PDictElement",
+                    "elementTypeName" : "element",
                     "parent" : this.data
                 };
             } else if (this.data.model == "CategoryDictionnary") {
                 infos = {
                     "model" : "Category",
+                    "elementTypeName" : "category",
                     "parent" : this.data
                 };
             } else if (this.data.model == "CollectionDictionnary") {
@@ -67,6 +68,7 @@ class DicoEditor extends PObject {
                 if (parent != null && !Array.isArray(parent) && parent.identity.model == "Collection") {
                     infos = {
                         "model" : "PDictPackage",
+                        "elementTypeName" : "package",
                         "parent" : parent.identity
                     };
                 }
@@ -75,12 +77,14 @@ class DicoEditor extends PObject {
                 if (parent != null && !Array.isArray(parent) && parent.identity.model == "Fiction") {
                     infos = {
                         "model" : "PDictPackage",
+                        "elementTypeName" : "package",
                         "parent" : parent.identity
                     };
                 }
-            } else if (this.data.model == "DictPackage") {
+            } else if (this.data.model == "DictPackage" || this.data.model == "Category") {
                 infos = {
                     "model" : "PDictElement",
+                    "elementTypeName" : "element",
                     "parent" : this.data
                 };
             }
@@ -130,7 +134,7 @@ class DicoEditor extends PObject {
             }
             prospero.ajax("serializeDico", renderData, function(data) {
                 $.each(data.elements, function(index, element) {
-                    self.createItem(element, self.root);
+                    self.createItem(element, self.root, false);
                 });
                 self.filters = data.filters;
                 lock.resolve();
@@ -141,10 +145,13 @@ class DicoEditor extends PObject {
         this.updateMenu();
         return lock;
 	}
-	createItem(element, $root) {
+	createItem(element, $root, appendFirst) {
         var self = this;
         var $accItem = $('<div class="accordion-item"></div>');
-        $root.append($accItem);
+        if (appendFirst)
+            $root.prepend($accItem);
+        else
+            $root.append($accItem);
         //var item = this.createTableItem($accItem, element.identity);
         var item = null;
         if (element.identity.model == "DictElement")
@@ -222,7 +229,13 @@ class DicoEditor extends PObject {
 	}
 	updateMenu() {
         this.menu.setEnabled("delete", this.isSelectionDeletable());
-        this.menu.setEnabled("create", this.getCreateInfos() != null);
+        var createInfos = this.getCreateInfos();
+        this.menu.setEnabled("create", createInfos != null);
+        if (createInfos != null) {
+            this.menu.setActionTitle("create", "Create "+createInfos.elementTypeName);
+        } else {
+            this.menu.setActionTitle("create", "Create element");
+        }
 	}
 	isSelectionDeletable() {
 	    var selection = this.getSelection();
@@ -319,7 +332,7 @@ class PDictPackage extends PDictObject {
             this.node.append($childContainer);
             var $root = $childContainer.find(".accordion");
             $.each(data.elements, function(index, element) {
-                self.editor.createItem(element, $root);
+                self.editor.createItem(element, $root, false);
             });
         } else {
             this.node.append($('<h2 class="accordion-header"><button class="accordion-button collapsed leaf" type="button" data-bs-toggle="collapse" aria-expanded="false">'+prefixCode+'<input class="edition-widget" value="'+data.name+'">'+suffixCode+'</button></h2>'));

@@ -326,6 +326,9 @@ class PGenericMenu extends PObject {
 	    this.actions[actionName].enabled = enabled;
 	    this.refresh();
 	}
+	setActionTitle(actionName, title) {
+	    $(".dropdown-menu", this.node).find('[action-name='+actionName+']').text(title);
+	}
 	setVisible(actionName, visible) {
 	    if (visible)
 	        $(".dropdown-menu", this.node).find('[action-name='+actionName+']').removeClass("hidden");

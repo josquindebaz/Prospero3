@@ -333,3 +333,43 @@ def selectDico(request, data, results):
         conf.selectedDicos.add(dico)
     else:
         conf.selectedDicos.remove(dico)
+
+def createDicoElement(request, data, results):
+    infos = data["infos"]
+    fields = data["fields"]
+    nameField = fields["name"]
+    typeField = fields["type"]
+    parent = frontend.getBDObject(infos["parent"])
+    if (infos["model"] == "PDictElement"):
+        obj = builder.createDictElement(nameField["value"])
+    elif (infos["model"] == "Category"):
+        obj = builder.createCategory(nameField["value"])
+        obj.type = typeField["value"]
+        obj.save()
+    else: # PDictPackage
+        obj = builder.createDictPackage(nameField["value"])
+    parent.elements.add(obj)
+    project = projects.finder.find(parent)
+    project.declareAsModified()
+    results["metadata"] = obj.serialize(depth=0)
+
+
+
+    """
+    fields = data["fields"]
+    nameField = fields["name"]
+    name = nameField["value"]
+    dataType = fields["type"]["value"]
+    errors = {}
+    if corpus.hasData(name):
+        nameField["error"] = "Data already exists with this name"
+        errors["name"] = nameField
+    if errors:
+        results["serverError"] = {
+            "fields" : errors
+        }
+    else:
+        data = builder.createMetaData(name, dataType, "")
+        corpus.metaDatas.add(data)
+        results["metadata"] = data.serialize()
+    """
