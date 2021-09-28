@@ -753,7 +753,10 @@ class ProsperoUser(User) :
 
     def delete(self):
         if self.thumbnail:
-            files.deleteFile(str(self.thumbnail))
+            try:
+                files.deleteFile(str(self.thumbnail))
+            except:
+                print("impossible to delete thumbnail of deleted user", self)
         super(ProsperoUser, self).delete()
 
     def interfaceName(self):
