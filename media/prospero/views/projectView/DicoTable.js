@@ -25,11 +25,10 @@ class DicoTable extends PTable {
                 }
             });
         });
-        self.menu.setEnabled("delete", false);
 	}
 	load() {
 	    var lock = super.load();
-	    this.menu.setEnabled("delete", false);
+	    this.updateMenu();
 	    return lock;
 	}
 	createTableItem($node, data, columns) {
@@ -65,13 +64,15 @@ class DicoTable extends PTable {
             }
             if (selectionChanged) {
                 self.notifyObservers({name: "selectionChanged"});
-                if (self.getSelection().length > 0)
-                    self.menu.setEnabled("delete", true);
-                else
-                    self.menu.setEnabled("delete", false);
+                self.updateMenu();
             }
             self.lastSelectedItem = item;
         }
+	}
+	updateMenu() {
+	    var selection = this.getSelection();
+	    console.log("selection dico", selection);
+	    this.menu.setEnabled("delete", selection.length > 0);
 	}
 }
 class DicoTableItem extends PTableItem {

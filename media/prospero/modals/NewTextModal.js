@@ -3,17 +3,11 @@ class NewTextModal extends PModal {
 	constructor($node) {
 	    super($node);
 	    var self = this;
-		self.node.find(".text-creation-choice input").bind("click", function() {
-            var $chosenRadio = self.node.find(".text-creation-choice input:checked");
-            var choice = $chosenRadio.attr("value");
-            if (choice == "textarea") {
-                self.node.find(".text-creation-input").removeClass("hidden");
-                self.node.find(".text-creation-dropezone").addClass("hidden");
-            } else {
-                self.node.find(".text-creation-input").addClass("hidden");
-                self.node.find(".text-creation-dropezone").removeClass("hidden");
-            }
-		});
+	    this.creationChoice = new PRadioInput($(".text-creation-choice", self.node));
+		this.creationChoice.addObserver(function() {
+            var choice = self.creationChoice.getValue();
+            self.switchToCreationChoice(choice);
+		})
 		self.textarea = new PTextarea(self.node.find(".text-creation-input"));
 		self.validateButton = new PButton(self.node.find("[action-name=create]"));
 		self.validateButton.addObserver(function(event) {
@@ -71,10 +65,22 @@ class NewTextModal extends PModal {
 			}
 		);
 	}
+	switchToCreationChoice(choice) {
+        if (choice == "textarea") {
+            this.textarea.setValue("");
+            this.node.find(".text-creation-input").removeClass("hidden");
+            this.node.find(".text-creation-dropezone").addClass("hidden");
+        } else {
+            this.node.find(".text-creation-input").addClass("hidden");
+            this.node.find(".text-creation-dropezone").removeClass("hidden");
+        }
+	}
 	setStateReady() {
-        this.textarea.setValue("");
         this.node.find(".close-button").removeClass("hidden");
         this.node.find(".spinner-panel").addClass("hidden");
+        var $option = this.creationChoice.getEnabledOptions().eq(0)
+        this.creationChoice.setValue($option.attr("value"));
+        this.switchToCreationChoice("textarea");
         //this.node.find(".error-feedback-pane").addClass("hidden");
 	}
 	show(corpus) {

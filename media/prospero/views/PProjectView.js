@@ -77,11 +77,13 @@ class PProjectView extends PObject {
                     self.rightPanel.switchTo();
                 }
                 self.dicoTable.deselectAll();
+                self.dicoTable.updateMenu();
                 self.textTable.deselectAll();
                 self.middlePanel.switchTo("textTable");
 	        }
 	    } else if (origin == self.textTable) {
 	        if (event.name == "selectionChanged") {
+                self.corporaTable.updateMenu();
                 var $items = this.textTable.getSelection();
                 if ($items.length == 1) {
                     var item = prospero.get($items.eq(0));
@@ -96,21 +98,28 @@ class PProjectView extends PObject {
                     self.rightPanel.switchTo();
                 }
                 self.dicoTable.deselectAll();
+                self.dicoTable.updateMenu();
                 self.corporaTable.deselectAll();
+                self.corporaTable.updateMenu();
 	        }
 	    } else if (origin == self.dicoTable) {
-            var item = prospero.get(self.dicoTable.getSelection());
-            self.corporaTable.deselectAll();
-            self.textTable.deselectAll();
-            self.rightPanel.switchTo();
-            self.middleDicoEditor.setData(item.identity).reload();
-            self.middlePanel.switchTo("dicoEditor");
+            if (event.name == "selectionChanged") {
+                var item = prospero.get(self.dicoTable.getSelection());
+                self.corporaTable.deselectAll();
+                self.corporaTable.updateMenu();
+                //self.textTable.deselectAll();
+                self.rightPanel.switchTo();
+                self.middleDicoEditor.setData(item.identity).reload();
+                self.middlePanel.switchTo("dicoEditor");
+            }
 	    } else if (origin == self.middleDicoEditor) {
-            var item = prospero.get(self.middleDicoEditor.getSelection());
-            if (item != null && !Array.isArray(item) && !item.isLeaf()) {
-                console.log(item);
-                self.rightDicoEditor.setData(item.identity).reload();
-                self.rightPanel.switchTo("dicoEditor");
+            if (event.name == "selectionChanged") {
+                var item = prospero.get(self.middleDicoEditor.getSelection());
+                if (item != null && !Array.isArray(item) && !item.isLeaf()) {
+                    console.log(item);
+                    self.rightDicoEditor.setData(item.identity).reload();
+                    self.rightPanel.switchTo("dicoEditor");
+                }
             }
 	    }
     }

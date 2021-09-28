@@ -26,6 +26,7 @@ class DicoEditor extends PObject {
                 }
             });
         });
+        self.menu.setVisible("create", prospero.interface.userCanWrite())
         self.menu.addAction("delete", "Delete element", function() {
 	        var items = prospero.get(self.getSelection(), true);
 	        var itemDatas = [];
@@ -46,6 +47,7 @@ class DicoEditor extends PObject {
                 }
             });
         });
+        self.menu.setVisible("delete", prospero.interface.userCanWrite())
 	}
 	getCreateInfos() {
         //var dico = prospero.get(this.view.dicoTable.getSelection());
@@ -303,7 +305,15 @@ class PDictElement extends PDictObject {
         super.load(data);
         var self = this;
         this.node.addClass("leaf");
-        this.node.append($('<h2 class="accordion-header"><button class="accordion-button collapsed leaf" type="button" data-bs-toggle="collapse" aria-expanded="false"><input class="edition-widget" value="'+data.value+'"></button></h2>'));
+        var textWidget = '<div>'+data.value+'</div>';
+        var canWrite = prospero.interface.userCanWrite();
+        if (canWrite)
+            textWidget = '<input class="edition-widget" value="'+data.value+'">';
+        this.node.append($('<h2 class="accordion-header"><button class="accordion-button collapsed leaf" type="button" data-bs-toggle="collapse" aria-expanded="false">'+textWidget+'</button></h2>'));
+        if (canWrite) {
+            data.name = "value";
+            new PASTextInput(this.node.find("input"), data, true);
+        }
 	}
 }
 class PDictPackage extends PDictObject {
@@ -322,12 +332,20 @@ class PDictPackage extends PDictObject {
             prefixCode = '<span>@</span>';
         else if (this.identity.model == "Category")
             suffixCode = '<span>['+data.type+']</span>';
+        var textWidget = '<div>'+data.name+'</div>';
+        var canWrite = prospero.interface.userCanWrite();
+        if (canWrite)
+            textWidget = '<input class="edition-widget" value="'+data.name+'">';
         if ("elements" in data) {
             this.node.addClass("leaf");
             var childContainerId = "opener"+"-"+this.identity.model+"-"+this.identity.id;
             var flushId = "flush"+"-"+this.identity.model+"-"+this.identity.id;
-            var $pck = $('<h2 class="accordion-header" id="'+flushId+'"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#'+childContainerId+'" aria-expanded="false" aria-controls="'+childContainerId+'">'+prefixCode+'<input class="edition-widget" value="'+data.name+'">'+suffixCode+'</button></h2>');
+            var $pck = $('<h2 class="accordion-header" id="'+flushId+'"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#'+childContainerId+'" aria-expanded="false" aria-controls="'+childContainerId+'">'+prefixCode+textWidget+suffixCode+'</button></h2>');
             this.node.append($pck);
+            if (canWrite) {
+                data.name = "name";
+                new PASTextInput(this.node.find("input"), data, true);
+            }
             var $childContainer = $('<div id="'+childContainerId+'" class="accordion-collapse collapse" aria-labelledby="'+flushId+'"><div class="accordion"></div></div>');
             this.node.append($childContainer);
             var $root = $childContainer.find(".accordion");
@@ -335,7 +353,11 @@ class PDictPackage extends PDictObject {
                 self.editor.createItem(element, $root, false);
             });
         } else {
-            this.node.append($('<h2 class="accordion-header"><button class="accordion-button collapsed leaf" type="button" data-bs-toggle="collapse" aria-expanded="false">'+prefixCode+'<input class="edition-widget" value="'+data.name+'">'+suffixCode+'</button></h2>'));
+            this.node.append($('<h2 class="accordion-header"><button class="accordion-button collapsed leaf" type="button" data-bs-toggle="collapse" aria-expanded="false">'+prefixCode+textWidget+suffixCode+'</button></h2>'));
+            if (canWrite) {
+                data.name = "name";
+                new PASTextInput(this.node.find("input"), data, true);
+            }
         }
 	}
 }

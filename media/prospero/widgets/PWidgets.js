@@ -122,6 +122,7 @@ class PASTextInput extends PTextInput {
 	    super($node);
 	    var self = this;
 	    self.data = data;
+	    this.oldValue = this.getValue();
 	    if (editable) {
             self.timer = new CallbackTimer(this, 500, function() {
                 self.save();
@@ -132,35 +133,53 @@ class PASTextInput extends PTextInput {
 	    }
 	}
 	save() {
-        this.data.value = this.getValue();
-        prospero.ajax("changeData", this.data, function(data) {
-            console.log("done");
-        });
+        var newValue = this.getValue();
+        if (newValue != this.oldValue) {
+            this.oldValue = newValue;
+            this.data.value = newValue;
+            prospero.ajax("changeData", this.data, function(data) {
+                console.log("done");
+            });
+        }
 	}
 }
 
 class PASInputTags extends PInputField {
 
-	constructor($node, data) {
+	constructor($node, data, editable) {
 	    super($node);
 	    var self = this;
 	    self.data = data;
 	    self.node.addClass("tags-input");
-	    self.node.html('<div class="tags-input-container"><select class="form-select" id="validationTagsNew" name="tags_new[]" multiple data-allow-new="true"><option class="option-placeholer" selected disabled hidden value="">Choose a tag...</option></select></div>');
-        prospero.getTagsManager(function(tagsManager) {
-            var existingData = self.data.value;
-            var identity = self.data.identity;
-            var tagsInput = new TagsInput(
-                self.node.find(".tags-input-container"),
-                existingData,
-                tagsManager,
-                identity,
-                true
-            );
-            //tagsInput.addItemProg("Orange");
-            //tagsInput.adjustWidth();
-        });
-
+	    if (editable) {
+            self.node.html('<div class="tags-input-container hidden"><select class="form-select" id="validationTagsNew" name="tags_new[]" multiple data-allow-new="true"><option class="option-placeholer" selected disabled hidden value="">Choose a tag...</option></select></div>');
+            prospero.getTagsManager(function(tagsManager) {
+                var existingData = self.data.value;
+                var identity = self.data.identity;
+                var tagsInput = new TagsInput(
+                    self.node.find(".tags-input-container"),
+                    existingData,
+                    tagsManager,
+                    identity,
+                    true
+                );
+                //tagsInput.addItemProg("Orange");
+                //tagsInput.adjustWidth();
+            });
+            self.node.children("tags-input-container").removeClass("hidden");
+	    } else {
+	        var $container = $('<div class="form-control dropdown"></div>');
+	        self.node.empty();
+	        self.node.append($container);
+	        prospero.getTagsManager(function(tagsManager) {
+	            $.each(self.data.value, function(index, value) {
+	                var tagText = tagsManager.tags[value];
+	                var $tag = $('<span class="badge bg-primary me-2">'+tagText+'</span>');
+	                $container.append($tag);
+	            });
+	        });
+	        //self.node.html('<div class="form-control dropdown"><div><span class="badge bg-primary me-2" data-value="427">dolor</span></div></div>');
+	    }
 	}
 	initFieldNode() {
 	}
@@ -303,7 +322,7 @@ class PGenericMenu extends PObject {
 	            return false;
 	        }
 	    });
-	    if (this.node.hasClass("hidden") && !hide)
+	    if (this.node.hasClass("hidden") && !hide || !this.node.hasClass("hidden") && hide)
 	        this.node.toggleClass("hidden");
 	}
 	addAction(actionName, actionText, callback) {

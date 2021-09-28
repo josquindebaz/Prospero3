@@ -7,6 +7,16 @@
 .modal-body-form {
     text-align: left;
 }
+.modal-dialog .form-check {
+    display: flex;
+}
+.modal-dialog .form-check {
+    display: flex;
+}
+.modal-dialog .form-check label {
+    margin: auto;
+    padding-left: 10px;
+}
 
 /* headers */
 header.main_header h1 {
@@ -85,7 +95,7 @@ textarea.edition-widget {
     position: absolute;
     padding-left: 20px;
     left: auto;
-    right: -22px;
+    right: -10px;
     /*width: 30px;*/
     transition: opacity 0.3s ease-in-out;
     opacity: 0;
@@ -188,6 +198,22 @@ textarea.edition-widget {
 .user-rights-panel .left-col {
     border-right: 1px solid var(--color_1);
     opacity: 0.8;
+}
+
+.user-rights-panel .left-col .icon-person,
+.user-rights-panel .left-col .icon-group {
+    width: 28px;
+    display: flex;
+}
+
+.user-rights-panel .left-col .icon-person img {
+    height: 12px;
+    margin: auto;
+}
+
+.user-rights-panel .left-col .icon-group img {
+    height: 10px;
+    margin: auto;
 }
 
 /* page settings */

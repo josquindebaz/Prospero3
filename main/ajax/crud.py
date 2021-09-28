@@ -70,6 +70,8 @@ def createText(request, data, results):
         results["text"] = text.serializeAsTableItem()
 
 def createCorpus(request, data, results):
+    context = views.createContext(request)
+    user = context["user"]
     project = frontend.getBDObject(data["project"])
     project.declareAsModified()
     fields = data["fields"]
@@ -84,7 +86,7 @@ def createCorpus(request, data, results):
             "fields" : errors
         }
     else:
-        corpus = builder.createPCorpus(name)
+        corpus = builder.createPCorpus(name, user)
         project.corpuses.add(corpus)
         results["corpus"] = corpus.serializeAsTableItem()
 
@@ -348,7 +350,11 @@ def createDicoElement(request, data, results):
         obj.save()
     else: # PDictPackage
         obj = builder.createDictPackage(nameField["value"])
-    parent.elements.add(obj)
+    # add as first element due to lazy loading choice for client side
+    l = list(parent.elements.all())
+    l.insert(0, obj)
+    parent.elements.clear()
+    parent.elements.add(*l)
     project = projects.finder.find(parent)
     project.declareAsModified()
     results["metadata"] = obj.serialize(depth=0)

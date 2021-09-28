@@ -208,12 +208,12 @@ class Project(AugmentedData) :
     def getRealInstance(self):
         return self
 
-    def gotDefaultCorpus(self):
+    def gotDefaultCorpus(self, user):
         try:
             return self.corpuses.get(name="main")
         except:
             from main.importerP1 import builder2BD as builder
-            corpus = builder.createPCorpus("main")
+            corpus = builder.createPCorpus("main", user)
             self.corpuses.add(corpus)
             return corpus
 
@@ -391,7 +391,8 @@ class DictPackage(DictObject) :
 
     name = models.CharField(blank=True, max_length=255)
 
-    elements = models.ManyToManyField('DictObject', blank=True, related_name='package')
+    elements = SortedManyToManyField('DictObject', blank=True, related_name='package')
+    #elements = models.ManyToManyField('DictObject', blank=True, related_name='package')
 
     def __str__(self):
         return "[" + str(self.id) + ":DictPackage] " + self.name

@@ -56,11 +56,21 @@
     <div class="separation"></div>
     <div class="row user-rights-panel">
         <div class="col left-col">
-            Members
+            <div style="margin-bottom: 5px;">
+                Members
+            </div>
             <div>
                 {% for userRight in projectRights %}
-                    <div>
-                        <span class="{% if userRight.user.isUser %}icon-person{% else %}icon-group{% endif%}"></span>
+                    <div style="display: flex;">
+                        {% if userRight.user.isUser %}
+                            <div class="icon-person">
+                                <img src="{{ MEDIA_URL }}assets/images/user.png" alt="">
+                            </div>
+                        {% else %}
+                            <div class="icon-group">
+                                <img src="{{ MEDIA_URL }}assets/images/group.png" alt="">
+                            </div>
+                        {% endif %}
                         {% if user.id == userRight.user.id %}
                             <span>Me</span>
                         {% else %}
@@ -71,7 +81,9 @@
             </div>
         </div>
         <div class="col">
-            Privilege
+            <div style="margin-bottom: 5px;">
+                Privilege
+            </div>
             <div>
                 {% for userRight in projectRights %}
                     <div>{{ userRight.right }}</div>

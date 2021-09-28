@@ -11,7 +11,7 @@ p1CatTypeTranslation = {
 
 class Importer:
 
-    def __init__(self, project, corpus, rootFolder, builder, *args, **kwargs):
+    def __init__(self, project, corpus, rootFolder, builder, user, *args, **kwargs):
         self.project = project
         self.corpus = corpus
         self.projectDataFolder = cloud.gotProjectDataFolder(project)
@@ -19,6 +19,7 @@ class Importer:
         self.builder = builder
         self.processedFile = {}
         self.createdPResources = []
+        self.user = user
 
     # import all P1 files in folder (unzip on the fly root zips)
     def process(self):
@@ -62,7 +63,7 @@ class Importer:
                             self.builder.set(text, fieldName, requiredDatas[fieldName])
                         self.builder.set(text, "identCtxP1", identCtxP1)
                     if self.corpus == None:
-                        self.corpus = self.project.gotDefaultCorpus()
+                        self.corpus = self.project.gotDefaultCorpus(self.user)
                         importedObjects.append(self.corpus)
                     self.corpus.addText(text)
                     # corpus.texts.add(text)
@@ -200,6 +201,8 @@ class Importer:
         return dico
 
     def walkMetaData(self, filePath):
+        #if "CHO09701A.CTX" in filePath:
+        #    print("ICI")
         text = files.readFile(filePath, detectEncoding=True)
         lines = reader.splitLines(text, keepVoidLines=True)
         identCtxP1 = lines.pop(0)

@@ -31,11 +31,11 @@ class CorporaTable extends PTable {
                 }
             });
         });
-        self.menu.setEnabled("delete", false);
+        self.updateMenu();
 	}
 	load() {
 	    var lock = super.load();
-	    this.menu.setEnabled("delete", false);
+	    this.updateMenu();
 	    return lock;
 	}
 	receiveEvent(event) {
@@ -43,14 +43,16 @@ class CorporaTable extends PTable {
         if (event.name == "click") {
             var item = event.target;
             var selectionChanged = false;
-            //if (!item.isSelected()) {
-                selectionChanged = true;
-                self.deselectAll();
-                item.setSelected();
-                self.menu.setEnabled("delete", true);
-            //}
-            //if (selectionChanged)
-                self.notifyObservers({name: "selectionChanged"});
+            selectionChanged = true;
+            self.deselectAll();
+            item.setSelected();
+            self.updateMenu();
+            self.notifyObservers({name: "selectionChanged"});
         }
+	}
+	updateMenu() {
+	    var selection = this.getSelection();
+	    console.log("selection corpus", selection);
+	    this.menu.setEnabled("delete", selection.length > 0);
 	}
 }

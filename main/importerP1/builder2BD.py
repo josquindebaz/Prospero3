@@ -32,9 +32,10 @@ def createLexicalDictionnary(name, language):
 def createProject(name, owner=None):
     obj = Project(name=name, owner=owner)
     obj.save()
-    defaultCorpus = createPCorpus("main")
+    defaultCorpus = createPCorpus("main", owner)
     obj.corpuses.add(defaultCorpus)
     createProjectConf(obj, owner)
+    createUserRight(owner, "Owner", obj)
     return obj
 
 def createProjectConf(project, user):
@@ -130,8 +131,9 @@ def createPText(text):
     obj.save()
     return obj
 
-def createPCorpus(name):
+def createPCorpus(name, user):
     obj = PCorpus(name=name)
+    obj.author = user.username
     obj.save()
     return obj
 

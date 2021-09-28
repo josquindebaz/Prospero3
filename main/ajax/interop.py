@@ -2,17 +2,20 @@ from prospero import settings
 from main.models import *
 from main.importerP1 import builder2BD as builder
 from main.importerP1.importer import Importer
-from main.helpers import frontend, files, cloud
+from main.helpers import frontend, files, cloud, sessions
 from datetime import datetime
 from django.db import transaction
+from main import views
 
 def importData(request, data, results):
+    context = views.createContext(request)
+    user = context["user"]
     folder = files.gotFolder(settings.MEDIA_ROOT + data["files"][0]["filePath"])
     try:
         with transaction.atomic():
             project = frontend.getBDObject(data["project"])
             corpus = frontend.getBDObject(data["corpus"]) if data["corpus"] != None else None
-            importer = Importer(project, corpus, folder, builder)
+            importer = Importer(project, corpus, folder, builder, user)
             #createdObjects = importer.importData(project, folder, corpus, builder)
             createdObjects = importer.process()
             createdDatas = {

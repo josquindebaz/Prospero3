@@ -53,7 +53,9 @@ def serializeUserData(request, data, results):
 
 def serializeAllUserData(request, data, results):
     users = []
-    for user in ProsperoUser.objects.all():
+    from main.helpers import rights
+    for user in ProsperoUser.objects.exclude(id=rights.anonymousUser.id):
+    #for user in ProsperoUser.objects.all():
         users.append(user.getRealInstance().serialize())
     results["users"] = users
 

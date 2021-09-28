@@ -20,6 +20,7 @@ class CorpusEditor extends PObject {
             });
         }
         self.metadataContainer = $(".cartouche-metaDatas .cartouche-content", self.node);
+        self.canWrite = prospero.interface.userCanWrite();
 	}
 	clear() {
 	    this.node.find(".cartouche-fixed .tags-input .dropdown").remove();
@@ -40,12 +41,12 @@ class CorpusEditor extends PObject {
 	load() {
         var self = this;
         prospero.ajax("serializeObject", this.data, function(data) {
-            prospero.initEditionWidgets($("h3.title", self.node), data.object.datas);
-            prospero.initEditionWidgets($(".cartouche-fixed", self.node), data.object.datas);
+            prospero.initEditionWidgets($("h3.title", self.node), data.object.datas, self.data, self.canWrite);
+            prospero.initEditionWidgets($(".cartouche-fixed", self.node), data.object.datas, self.data, self.canWrite);
             var $cartouche = $(".cartouche-metaDatas", self.node);
             self.metadataContainer.empty();
             $.each(data.object.metaDatas, function(index, metaData) {
-                prospero.addMetadata(metaData, self.metadataContainer);
+                prospero.addMetadata(metaData, self.metadataContainer, self.data, self.canWrite);
             });
             prospero.sortable(self.metadataContainer, {
                 placeholder: "metadata-sort-placeholder",

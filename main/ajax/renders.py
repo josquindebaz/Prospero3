@@ -9,6 +9,7 @@ def renderUserTable(request, data, results):
     filters = data["filters"]
     pagination = data["filters"]["pagination"]
     querySet = ProsperoUser.objects.all()
+    # querySet = ProsperoUser.objects.exclude(id=rights.anonymousUser.id)
     items = queries.getUsers(querySet, filters, pagination)
     for item in items:
         table.append(item.getRealInstance().serializeAsTableItem())

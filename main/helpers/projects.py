@@ -22,7 +22,9 @@ class PProjectFinder:
         return self.find(obj.augmentedData.all()[0])
 
     def visitDictElement(self, obj):
-        return None # TODO
+        from main.models import DictPackage
+        parent = DictPackage.objects.get(elements__in=[obj.id])
+        return self.find(parent)
 
     def visitDictPackage(self, obj):
         from main.models import DictPackage
