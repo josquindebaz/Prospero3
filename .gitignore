@@ -8,3 +8,4 @@ backups/
 main/migrations/
 media/export/
 media/projectData/
+media/users/
