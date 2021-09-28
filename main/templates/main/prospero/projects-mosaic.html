@@ -6,12 +6,14 @@
 	<div class="main_content template_mosaique">
 		<section class="row ">
 			<div class="col col-sm-9 mosaique_wrapper">
-				<div class="card project-card add-project-card">
-					<div class="card-header  card-header-icon">
-						{% include "main/prospero/svg-icons/plus-blue.html" %}
-						<h3 class="txt_20 title"> New project</h3>
+				{% if not user.isAnonymous %}
+					<div class="card project-card add-project-card">
+						<div class="card-header  card-header-icon">
+							{% include "main/prospero/svg-icons/plus-blue.html" %}
+							<h3 class="txt_20 title"> New project</h3>
+						</div>
 					</div>
-				</div>
+				{% endif %}
 				{% include "main/prospero/projects-mosaic/projects.html" %}
 			</div>
 			<div class="col col-sm-3 grid_side_wrapper project-infos-container">

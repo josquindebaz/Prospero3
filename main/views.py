@@ -131,6 +131,8 @@ def settingsView(request):
     #if project:
     #    context["projectData"] = project.serializeDataDef()
     user = context["user"]
+    if not user.isAdministrator:
+        raise Http404("access denied")
     sessions.computeUserData(user, project, context)
     #context["session"] = pageData
     template = loader.get_template('main/prospero/settings.html')

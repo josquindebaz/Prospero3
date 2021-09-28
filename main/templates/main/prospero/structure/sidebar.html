@@ -11,7 +11,9 @@
     <a href="#" class="side_nav_link ">
         {% include "main/prospero/svg-icons/sidebar/rocket.html" %}
     </a>
-    <a href="{% url 'settings' %}" class="side_nav_link {% if page == 'settings' %}active{% endif %}">
-        {% include "main/prospero/svg-icons/sidebar/gear.html" %}
-    </a>
+    {% if user.isAdministrator %}
+        <a href="{% url 'settings' %}" class="side_nav_link {% if page == 'settings' %}active{% endif %}">
+            {% include "main/prospero/svg-icons/sidebar/gear.html" %}
+        </a>
+    {% endif %}
 </div>

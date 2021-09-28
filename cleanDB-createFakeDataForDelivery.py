@@ -132,17 +132,7 @@ def createProject(name, owner=None, randomCreationDate=True, tags=None, descript
     for tag in tagList:
         tag = gotPTag(tag.strip())
         p.tags.add(tag)
-    #corpus = PCorpus(name="main", author="John")
-    #corpus.save()
-    #p.corpuses.add(corpus)
-    createUserRight(owner, "Owner", p)
-    usersInRights = random.sample(possibleUsersWithRights, random.randint(0, 3))
-    for user in usersInRights:
-        if user != owner:
-            createUserRight(user, random.sample(possibleRights, 1)[0], p)
-    if not publicGroup in usersInRights and random.randint(0, 1) == 1:
-        createUserRight(publicGroup, random.sample(possibleRights, 1)[0], p)
-    return p, usersInRights
+    return p
 
 def createUserRight(user, right, project):
     print("createUserRight", user, right, project)
@@ -189,6 +179,12 @@ def createFakeObjects():
     josquin = createPUser("josquin.debaz@ehess.fr", "Josquin", "Debaz", "/media_site/testData/images/josquin.jpg", isAdministrator=True)
     francis = createPUser("chateau@msh-paris.fr", "Francis", "Chateauraynaud", "/media_site/testData/images/francis.jpg", isAdministrator=True)
     orelie = createPUser("orelie.desfriches-doria@univ-paris8.fr", "Orélie", "Desfriches-Doria", "/media_site/testData/images/orelie.jpg", isAdministrator=True)
+    waldir = createPUser("waldir@lisboarocha.com", "Waldir", "Lisboa Rocha", isAdministrator=True)
+    aymeric = createPUser("aymeric.luneau@gmail.com", "Aymeric", "Luneau", isAdministrator=True)
+    robin = createPUser("robin.dianoux@gmail.com", "Robin", "Dianoux", isAdministrator=True)
+    salcedo = createPUser("hernando.salcedo@ehess.fr", "Salcedo", "Hernando", isAdministrator=True)
+    jerome = createPUser("jerome.gaillaguet@hotmail.fr", "Jerome", "Gaillaguet", isAdministrator=True)
+    erwan = createPUser("erwan.brottier@gmail.com", "Erwan", "Brottier", isAdministrator=True)
 
     anonymous = createPUser("anonymous", "", "", "/media_site/testData/images/anonymous_user.jpg", inPossibleCreators=False, inPossibleUsersWithRights=False, setPassword=False)
     groupGSPR = createPGroup("GSPR", "/media_site/testData/images/gspr.png")
@@ -198,25 +194,21 @@ def createFakeObjects():
     groupProspero.users.add(josquin)
     groupProspero.users.add(francis)
     groupProspero.users.add(orelie)
+    groupProspero.users.add(waldir)
+    groupProspero.users.add(aymeric)
+    groupProspero.users.add(robin)
+    groupProspero.users.add(salcedo)
+    groupProspero.users.add(jerome)
+    groupProspero.users.add(erwan)
+
     global publicGroup
     publicGroup = createPGroup("Public", "/media_site/testData/images/groupPublic.png", inPossibleUsersWithRights=False)
 
-    description = loremIpsum+loremIpsum+loremIpsum+loremIpsum+loremIpsum+loremIpsum
-    project, usersInRights = createProject("Project test", josquin, randomCreationDate=False, description=description)
-    if not publicGroup in usersInRights:
-        createUserRight(publicGroup, "Owner", project)
-    if not francis in usersInRights:
-        createUserRight(francis, "Write", project)
+    #description = loremIpsum+loremIpsum+loremIpsum+loremIpsum+loremIpsum+loremIpsum
+    description = "Ce projet est un exemple accessible à tous pour illustration (le groupe public en est propriétaire, autrement dit tous les utilisateurs ont tous les droits de modifications).\n Vous pouvez bien sûr créer vos propres projets. Pour cela, connectez-vous !\n Votre mot de passe par défaut est 00000000. Puisque vous êtes tous administrateur, vous pouvez accéder aux préférences et modifier votre mot de passe (et celui des autres ... ;-)."
+    project = createProject("Project test", erwan, randomCreationDate=False, description=description)
+    createUserRight(publicGroup, "Owner", project)
     createAugmentedDatas(project.corpuses.first())
-
-    for i in range(0, 5):
-        createPUser("test"+str(i)+"@gmail.com", "John", "Doe")
-
-    for i in range(0, 5):
-        createPGroup("group"+str(i))
-
-    for name in projectNames:
-        createProject(name)
 
 deleteAll()
 createFakeObjects()

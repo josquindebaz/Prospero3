@@ -199,6 +199,7 @@ def modifyUser(request, data, results):
     lastName = form.getValue("last_name")
     password = form.getValue("password")
     password2 = form.getValue("password2")
+    isAdministrator = form.getValue("isAdministrator")
     if username != user.username:
         try:
             ProsperoUser.objects.get(username=username)
@@ -228,6 +229,7 @@ def modifyUser(request, data, results):
     user.username = username
     user.first_name = firstName
     user.last_name = lastName
+    user.isAdministrator = isAdministrator
     user.save()
 
 def createGroup(request, data, results):

@@ -777,7 +777,7 @@ class ProsperoUser(User) :
         }
 
     def serializeAsTableItem(self):
-        return {
+        result = {
             "identity" : self.serializeIdentity(),
             "values" : {
                 "thumbnail" : self.getThumbnailUrl(),
@@ -786,6 +786,9 @@ class ProsperoUser(User) :
                 "last_name" : self.last_name
             }
         }
+        if self.isUser():
+            result["values"]["isAdministrator"] = self.getRealInstance().isAdministrator
+        return result
 
     def accept(self, visitor):
         obj = self.getRealInstance()
@@ -846,6 +849,8 @@ class PGroup(ProsperoUser) :
 
 class PUser(ProsperoUser) :
 
+    isAdministrator = models.BooleanField(default=False)
+
     def __str__(self):
         return "["+str(self.id)+":PUser] "+self.username
 
@@ -858,8 +863,13 @@ class PUser(ProsperoUser) :
             "username": self.username,
             "first_name": self.first_name,
             "last_name": self.last_name,
-            "thumbnail": self.getThumbnailUrl()
+            "thumbnail": self.getThumbnailUrl(),
+            "isAdministrator" : self.isAdministrator
         }
+
+    def isAnonymous(self):
+        from main.helpers import rights
+        return self.id == rights.anonymousUser.id
 
     """
     def canReadProject(self, project):
