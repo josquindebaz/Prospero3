@@ -4,7 +4,7 @@ from django.http import HttpResponse, Http404
 from django.template import loader
 from main import ajax
 from django.views.decorators.csrf import csrf_exempt
-from main.helpers import cloud, files, sessions, queries
+from main.helpers import cloud, files, sessions, queries, rights
 import json, ntpath, time
 from django.shortcuts import redirect
 
@@ -78,10 +78,13 @@ def project(request, id):
     #context["projectData"] = project.serializeDataDef()
     context["projectData"] = project.serializeIdentity()
     user = context["user"]
-    sessions.computeUserData(user, project, context)
-    project.declareAsOpened()
-    template = loader.get_template('main/prospero/project.html')
-    return HttpResponse(template.render(context, request))
+    if rights.canRead(user, project):
+        sessions.computeUserData(user, project, context)
+        project.declareAsOpened()
+        template = loader.get_template('main/prospero/project.html')
+        return HttpResponse(template.render(context, request))
+    else:
+        raise Http404("access denied")
 
 def projects_list(request):
     context = createContext(request)

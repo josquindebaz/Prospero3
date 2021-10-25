@@ -10,7 +10,7 @@ class TextEditor extends PObject {
                 var modalLock = modals.openNewMetadata(self.data);
                 prospero.wait(modalLock, function() {
                     if (modalLock.data.action == "create") {
-                        prospero.addMetadata(modalLock.data.metadata, self.metadataContainer, self.data, self.canWrite);
+                        prospero.addMetadata(modalLock.data.metadata, self.metadataContainer, null, self.canWrite);
                     }
                 });
             });
@@ -53,7 +53,7 @@ class TextEditor extends PObject {
             prospero.initEditionWidgets($(".cartouche-fixed", self.node), data.object.requiredDatas, self.data, self.canWrite);
             self.metadataContainer.empty();
             $.each(data.object.metaDatas, function(index, metaData) {
-                prospero.addMetadata(metaData, self.metadataContainer, self.data, self.canWrite);
+                prospero.addMetadata(metaData, self.metadataContainer, null, self.canWrite);
             });
             self.associatedDataContainer.empty();
             $.each(data.object.associatedDatas, function(index, associatedData) {

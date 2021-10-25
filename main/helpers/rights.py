@@ -39,6 +39,9 @@ def canWrite(user, project):
     return "Write" in rights or "Owner" in rights
     #return project in Project.objects.filter(Q(userRights__user__in=users) & (Q(userRights__right="Write") | Q(userRights__right="Owner"))).distinct()
 
+def canRead(user, project):
+    rights = getRights(user, project)
+    return "Read" in rights or "Write" in rights or "Owner" in rights
 
 def getRights(user, project):
     from main.models import UserRight

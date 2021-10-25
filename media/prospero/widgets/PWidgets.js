@@ -367,12 +367,11 @@ class PDropzone extends PInputField {
 		this.dropzone = new McDropzone(
 			$dropzone,
 			{
+			    multiple: false,
 				fileExtensions : $dropzone.data("extensions"),
-				fileChange : function(dropzone, files, loadEvent) {
+				fileChange : function(dropzone, file, loadEvent) {
 					var formData = new FormData();
-					$.each(files, function(index, file) {
-                        formData.append('file'+index, file, file.name);
-					});
+					formData.append('file', file, file.name);
 					prospero.uploadFile(formData, function(uploadDone, data) {
 						if (uploadDone) {
                             self.setValue(data.files[0].fileUrl);

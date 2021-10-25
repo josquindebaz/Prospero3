@@ -91,7 +91,6 @@ class DicoEditor extends PObject {
                 };
             }
         }
-        console.log(infos);
         return infos;
 	}
 	setData(data) {
@@ -230,13 +229,25 @@ class DicoEditor extends PObject {
 	    this.root.find(".accordion-item").removeClass("selected");
 	}
 	updateMenu() {
-        this.menu.setEnabled("delete", this.isSelectionDeletable());
+
         var createInfos = this.getCreateInfos();
-        this.menu.setEnabled("create", createInfos != null);
+        console.log(this.node);
+        console.log(this.data.model);
+        console.log(createInfos);
+
+        this.menu.setVisible("delete", prospero.interface.userCanWrite() && this.isSelectionDeletable());
+        //this.menu.setEnabled("delete", this.isSelectionDeletable());
+        this.menu.setVisible("create", prospero.interface.userCanWrite() && createInfos != null);
+        //this.menu.setEnabled("create", createInfos != null);
         if (createInfos != null) {
             this.menu.setActionTitle("create", "Create "+createInfos.elementTypeName);
+            this.menu.setActionTitle("delete", "Delete "+createInfos.elementTypeName);
         } else {
             this.menu.setActionTitle("create", "Create element");
+            if (this.data.model == "CollectionDictionnary" || "FictionDictionnary")
+                this.menu.setActionTitle("delete", "Delete package");
+            else
+                this.menu.setActionTitle("delete", "Delete element");
         }
 	}
 	isSelectionDeletable() {
@@ -263,7 +274,6 @@ class PDictObject extends PDBObject {
 	    this.editor = editor;
 	    var self = this;
 	    $node.bind("click", function(event) {
-            console.log($node);
             event.preventDefault();
             event.stopPropagation();
             self.notifyObservers({

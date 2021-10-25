@@ -71,7 +71,6 @@ class DicoTable extends PTable {
 	}
 	updateMenu() {
 	    var selection = this.getSelection();
-	    console.log("selection dico", selection);
 	    this.menu.setEnabled("delete", selection.length > 0);
 	}
 }

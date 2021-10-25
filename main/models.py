@@ -37,7 +37,7 @@ class PTag(models.Model) :
     name = models.CharField(blank=True, max_length=255)
 
     def __str__(self):
-        return "[" + str(self.id) + ":PTag]"
+        return "[" + str(self.id) + ":PTag] "+self.name
 
     def serializeIdentity(self):
         return {
@@ -328,6 +328,11 @@ class PCorpus(AugmentedData) :
         for metaData in self.metaDatas.all():
             metaDatas.append(metaData.serialize())
         data["metaDatas"] = metaDatas
+        associatedDatas = []
+        for d in self.associatedDatas.all():
+            d = d.getRealInstance()
+            associatedDatas.append(d.serialize())
+        data["associatedDatas"] = associatedDatas
         return data
 
     def serializeAsTableItem(self):

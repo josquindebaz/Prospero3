@@ -27,6 +27,7 @@ class NewTextModal extends PModal {
 		new McDropzone(
 			this.node.find(".dropzone-panel"),
 			{
+			    multiple: false,
 				fileExtensions : "txt, pdf",
 				fileChange : function(dropzone, files, loadEvent) {
 					self.node.find(".dropzone-panel").addClass("hidden");

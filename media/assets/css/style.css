@@ -4,6 +4,10 @@
     display : none !important;
 }
 
+.card-header .little-generic-menu {
+	width: 2rem !important;
+}
+
 .modal-body-form {
     text-align: left;
 }

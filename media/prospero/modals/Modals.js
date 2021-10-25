@@ -49,13 +49,13 @@ class Modals {
         self.importModal.show(corpus);
         return doneLock;
 	}
-	openExport(selectedCorpus, selectedTexts, selectedDictionaries) {
+	openExport(projectView, selectedCorpus, selectedTexts, selectedDictionaries) {
         var self = this;
         if (self.exportModal == null)
             self.exportModal = new ExportModal($(".export-modal"));
         var doneLock = $.Deferred();
         self.exportModal.setDoneLock(doneLock);
-        self.exportModal.show(selectedCorpus, selectedTexts, selectedDictionaries);
+        self.exportModal.show(projectView, selectedCorpus, selectedTexts, selectedDictionaries);
         return doneLock;
 	}
 	openNewText(corpus) {

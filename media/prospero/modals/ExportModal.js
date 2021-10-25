@@ -11,7 +11,7 @@ class ExportModal extends PModal {
             prospero.ajax(
                 "exportData",
                 {
-                    project : projectView.data,
+                    project : self.projectView.data,
                     context : self.contextData,
                     type : self.exportType.getValue(),
                     choice : self.exportChoice.getValue()
@@ -50,7 +50,8 @@ class ExportModal extends PModal {
         this.node.find(".close-button").removeClass("hidden");
         this.node.find(".spinner-panel").addClass("hidden");
 	}
-	show(selectedCorpus, selectedTexts, selectedDictionaries) {
+	show(projectView, selectedCorpus, selectedTexts, selectedDictionaries) {
+        this.projectView = projectView;
         selectedCorpus = $.map(selectedCorpus, function(elt) {return elt.identity});
         selectedTexts = $.map(selectedTexts, function(elt) {return elt.identity});
         selectedDictionaries = $.map(selectedDictionaries, function(elt) {return elt.identity});

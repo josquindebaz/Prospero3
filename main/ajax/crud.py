@@ -23,7 +23,8 @@ def changeData(request, data, results):
     object = frontend.getBDObject(data["identity"])
     project = projects.finder.find(object)
     project.declareAsModified()
-    if "metadata" in data and data["kind"] == "metadata":
+    #if "metadata" in data and data["kind"] == "metadata":
+    if "kind" in data and data["kind"] == "metadata":
         setattr(object, "value", data["value"])
     else:
         setattr(object, data["name"], data["value"])

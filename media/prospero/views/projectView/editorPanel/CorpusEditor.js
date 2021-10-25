@@ -11,15 +11,22 @@ class CorpusEditor extends PObject {
                 var modalLock = modals.openNewMetadata(self.data);
                 prospero.wait(modalLock, function() {
                     if (modalLock.data.action == "create") {
-                        prospero.addMetadata(modalLock.data.metadata, self.metadataContainer);
+                        prospero.addMetadata(modalLock.data.metadata, self.metadataContainer, null, self.canWrite);
                     }
                 });
             });
             self.menu.addAction("createAssociatedData", "Create associated data", function() {
                 console.log("createAssociativeData");
+                var modalLock = modals.openNewAssociatedData(self.data);
+                prospero.wait(modalLock, function() {
+                    if (modalLock.data.action == "create") {
+                        self.addAssociatedData(modalLock.data.associatedData, self.canWrite);
+                    }
+                });
             });
         }
         self.metadataContainer = $(".cartouche-metaDatas .cartouche-content", self.node);
+        self.associatedDataContainer = $(".cartouche-associatedDatas", self.node);
         self.canWrite = prospero.interface.userCanWrite();
 	}
 	clear() {
@@ -46,7 +53,11 @@ class CorpusEditor extends PObject {
             var $cartouche = $(".cartouche-metaDatas", self.node);
             self.metadataContainer.empty();
             $.each(data.object.metaDatas, function(index, metaData) {
-                prospero.addMetadata(metaData, self.metadataContainer, self.data, self.canWrite);
+                prospero.addMetadata(metaData, self.metadataContainer, null, self.canWrite);
+            });
+            self.associatedDataContainer.empty();
+            $.each(data.object.associatedDatas, function(index, associatedData) {
+                self.addAssociatedData(associatedData, self.canWrite);
             });
             prospero.sortable(self.metadataContainer, {
                 placeholder: "metadata-sort-placeholder",
@@ -74,5 +85,25 @@ class CorpusEditor extends PObject {
                 }
             });
         });
+	}
+	addAssociatedData(data, editable) {
+        var self = this;
+        var iconCode = '<div class="icon-doc-inv"></div>';
+        if (data.type == "PUri")
+            iconCode = '<div class="icon-link-ext-alt"></div>';
+        var $item = $('<div class="cartouche_item metadata-widget"><div class="icon-delete-metadata"><div class="icon-cancel-circled"></div></div><a target="_blank" style="display: flex;" href="'+data.href+'">'+iconCode+data.value+'</a></div>');
+        self.associatedDataContainer.append($item);
+        if (editable) {
+            $item.find(".icon-cancel-circled").bind("click", function() {
+                var modalLock = modals.openApproval("Confirmation", "Do you really want to delete this associated data ?");
+                prospero.wait(modalLock, function() {
+                    if (modalLock.data.action == "yes") {
+                        prospero.ajax("deleteObject", data.identity, function(data) {
+                            $item.remove();
+                        });
+                    }
+                });
+            });
+        }
 	}
 }

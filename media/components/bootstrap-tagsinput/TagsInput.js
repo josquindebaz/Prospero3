@@ -3,13 +3,13 @@ class TagsInput extends Tags {
     constructor($node, existingTags, tagsManager, objectIdentity, allowNew) {
         super($node[0], tagsManager, allowNew==true);
         var self = this;
+        self.node = $node;
         self.objectIdentity = objectIdentity;
         $.each(existingTags, function(index, id) {
             self.addItemProg(self.tagsManager.tags[id], id, true);
         });
     }
     addItem(text, value, phantom) {
-        console.log("add item", text, value);
         var self = this;
         var $item = super.addItem(text, value);
         $item.find(".remove").bind("click", function() {
@@ -23,7 +23,7 @@ class TagsInput extends Tags {
             };
             prospero.ajax("addTag", data, function(data) {
                 if (data.newTag) {
-                    console.log("TODO> new tag in tagsManager");
+                    self.tagsManager.addTag(data.newTag.id, data.newTag.value);
                 }
             });
         }
@@ -39,7 +39,8 @@ class TagsInput extends Tags {
             };
             prospero.ajax("removeTag", data, function(data) {
                 if (data.deletedTag) {
-                    console.log("TODO> delete tag in tagsManager");
+                    self.tagsManager.removeTag(value);
+                    self.node.parent().find("ul.dropdown-menu li a[data-value="+value+"]").parent().remove();
                 }
             });
         }

@@ -47,7 +47,7 @@ class PProjectView extends PObject {
                 var selectedCorpus = prospero.get(self.corporaTable.getSelection(), true);
                 var selectedTexts = prospero.get(self.textTable.getSelection(), true);
                 var selectedDictionaries = prospero.get(self.dicoTable.getSelection(), true);
-                var modalLock = modals.openExport(selectedCorpus, selectedTexts, selectedDictionaries);
+                var modalLock = modals.openExport(self, selectedCorpus, selectedTexts, selectedDictionaries);
                 /*prospero.wait(modalLock, function() {
                     if (modalLock.data.action == "export") {
                     }
@@ -99,8 +99,8 @@ class PProjectView extends PObject {
                 }
                 self.dicoTable.deselectAll();
                 self.dicoTable.updateMenu();
-                self.corporaTable.deselectAll();
-                self.corporaTable.updateMenu();
+                //self.corporaTable.deselectAll();
+                //self.corporaTable.updateMenu();
 	        }
 	    } else if (origin == self.dicoTable) {
             if (event.name == "selectionChanged") {

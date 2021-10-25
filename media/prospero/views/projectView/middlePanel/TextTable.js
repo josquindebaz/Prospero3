@@ -60,7 +60,8 @@ class TextTable extends PTable {
                 //document.getSelection().removeAllRanges();
                 selectionChanged = true;
                 item.toggleSelected()
-            } else if (self.lastSelectedItem && event.original && event.original.shiftKey) {
+                self.lastSelectedItem = item;
+            } else if (self.lastSelectedItem && event.original && (event.original.shiftKey || event.original.metaKey)) {
                 //event.original.preventDefault();
                 //document.getSelection().removeAllRanges();
                 var indexes = [];
@@ -81,12 +82,12 @@ class TextTable extends PTable {
                     self.deselectAll();
                     item.setSelected();
                 }
+                self.lastSelectedItem = item;
             }
             if (selectionChanged) {
                 self.notifyObservers({name: "selectionChanged"});
                 self.updateMenu();
             }
-            self.lastSelectedItem = item;
         }
 	}
 	updateMenu() {
