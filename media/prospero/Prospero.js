@@ -202,11 +202,15 @@ class Prospero {
     }
     initEditionWidgets($container, widgetDatas, identity, editable) {
         var self  = this;
+        var result = [];
         $.each(widgetDatas, function(index, widgetData) {
             var $widget = $('[property-name='+widgetData.name+']', $container);
-            if ($widget.length > 0)
-                self.initEditionWidget($widget, widgetData, identity, editable);
+            if ($widget.length > 0) {
+                var widget = self.initEditionWidget($widget, widgetData, identity, editable);
+                result.push(widget);
+            }
         });
+        return result;
     }
     initEditionWidget($widget, widgetData, identity, editable) {
         if (identity)

@@ -1,5 +1,5 @@
 {% for project in projects %}
-    <div class="card project-card" object-model="Project" object-id="{{ project.id }}" href="{% url 'project' project.id %}">
+    <div class="card project-card disableTextSelection" object-model="Project" object-id="{{ project.id }}" href="{% url 'project' project.id %}">
         <div class="card-header">
             <h3 class="txt_20 title">{{ project.name }}</h3>
         </div>

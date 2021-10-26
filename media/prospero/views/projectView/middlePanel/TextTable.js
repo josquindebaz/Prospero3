@@ -11,15 +11,13 @@ class TextTable extends PTable {
             var modalLock = modals.openNewText(corpus);
             prospero.wait(modalLock, function() {
                 if (modalLock.data.action == "create") {
-                    var item = prospero.get(view.corporaTable.getSelection());
-                    if (item) {
-                        var lock = self.reload(item.identity);
-                        prospero.wait(lock, function() {
-                            var $textItem = self.getItem(data.text.identity)
-                            self.setSelection($textItem);
-                            self.updateMenu();
-                        });
-                    }
+                    var lock = self.reload();
+                    prospero.wait(lock, function() {
+                        var $textItem = self.getItem(modalLock.data.text.identity)
+                        self.setSelection($textItem);
+                        self.updateMenu();
+                        corpus.reload();
+                    });
                 }
             });
         });
@@ -37,11 +35,16 @@ class TextTable extends PTable {
                         $.each(items, function(index, item) {
                             item.node.remove();
                         });
+                        var corpus = prospero.get(view.corporaTable.getSelection());
+                        corpus.reload();
                         self.notifyObservers({name: "selectionChanged"});
                         self.updateMenu();
                     });
                 }
             });
+        });
+        this.node.find("table").bind("keydown", function(event) {
+            console.log(event.key);
         });
         this.updateMenu();
 	}

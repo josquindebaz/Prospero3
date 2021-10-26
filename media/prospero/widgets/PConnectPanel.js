@@ -13,19 +13,27 @@ class PConnectPanel extends PObject {
 		self.validateButton.addObserver(function(event) {
             event.original.preventDefault();
             event.original.stopPropagation();
-            prospero.ajax(
-                "connect",
-                {
-                    fields : self.form.serialize()
-                },
-                function(data) {
-                    if (!data.serverError) {
-                        urls.reload();
-                    } else {
-                        self.form.setErrors(data.serverError);
-                    }
-                }
-            );
+            self.connectAction();
 		});
+        $(self.node).keypress(function(event) {
+            if (event.key == "Enter")
+                self.connectAction();
+        });
+	}
+	connectAction() {
+        var self = this;
+        prospero.ajax(
+            "connect",
+            {
+                fields : self.form.serialize()
+            },
+            function(data) {
+                if (!data.serverError) {
+                    urls.reload();
+                } else {
+                    self.form.setErrors(data.serverError);
+                }
+            }
+        );
 	}
 }

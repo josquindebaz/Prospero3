@@ -22,7 +22,7 @@ class PInputField extends PObject {
     bindChange() {
         var self = this;
 	    if (self.fieldNode) {
-            self.fieldNode.bind("keyup blur change input", function(event) {
+            self.fieldNode.bind("keyup", function(event) {
                 self.setAsValid();
                 self.notifyObservers({
                     name: "valueChanged",
@@ -93,15 +93,19 @@ class PASTextarea extends PTextarea {
             self.timer = new CallbackTimer(this, 500, function() {
                 self.save();
             });
-            self.addObserver(function() {
-                self.timer.trigger();
+            self.addObserver(function(event) {
+                if (event.name == "valueChanged")
+                    self.timer.trigger();
             });
 	    }
 	}
 	save() {
+	    var self = this;
         this.data.value = this.getValue();
         prospero.ajax("changeData", this.data, function(data) {
-            console.log("done");
+            self.notifyObservers({
+                name: "valueSaved"
+            });
         });
 	}
 }
@@ -127,18 +131,22 @@ class PASTextInput extends PTextInput {
             self.timer = new CallbackTimer(this, 500, function() {
                 self.save();
             });
-            self.addObserver(function() {
-                self.timer.trigger();
+            self.addObserver(function(event) {
+                if (event.name == "valueChanged")
+                    self.timer.trigger();
             });
 	    }
 	}
 	save() {
+        var self = this;
         var newValue = this.getValue();
         if (newValue != this.oldValue) {
             this.oldValue = newValue;
             this.data.value = newValue;
             prospero.ajax("changeData", this.data, function(data) {
-                console.log("done");
+                self.notifyObservers({
+                    name: "valueSaved"
+                });
             });
         }
 	}
@@ -161,7 +169,12 @@ class PASInputTags extends PInputField {
                     existingData,
                     tagsManager,
                     identity,
-                    true
+                    true,
+                    function(eventName) { // change call back
+                        self.notifyObservers({
+                            name: eventName
+                        });
+                    }
                 );
                 //tagsInput.addItemProg("Orange");
                 //tagsInput.adjustWidth();

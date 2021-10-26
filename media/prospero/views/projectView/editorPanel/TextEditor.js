@@ -44,13 +44,23 @@ class TextEditor extends PObject {
             // load text
             var $text = $(".text-container", self.node);
             //$text.empty();
-            prospero.initEditionWidgets($text, data.object.requiredDatas, self.data, self.canWrite);
+            var observedWidgets = prospero.initEditionWidgets($text, data.object.requiredDatas, self.data, self.canWrite);
             //var text = data.object.text;
             //text = prospero.escapeHtml(text);
             //text = text.replace(/\n/g, "<br>");
             //$text.html(text);
             // load datas
-            prospero.initEditionWidgets($(".cartouche-fixed", self.node), data.object.requiredDatas, self.data, self.canWrite);
+            var observedWidgets2 = prospero.initEditionWidgets($(".cartouche-fixed", self.node), data.object.requiredDatas, self.data, self.canWrite);
+            observedWidgets.push.apply(observedWidgets, observedWidgets2);
+            $.each(observedWidgets, function(index, widget) {
+                widget.addObserver(function(event) {
+                    if (event.name == "valueSaved") {
+                        console.log("REFRESH");
+                        var text = prospero.get(self.view.textTable.getSelection());
+                        text.reload();
+                    }
+                });
+            });
             self.metadataContainer.empty();
             $.each(data.object.metaDatas, function(index, metaData) {
                 prospero.addMetadata(metaData, self.metadataContainer, null, self.canWrite);

@@ -48,8 +48,18 @@ class CorpusEditor extends PObject {
 	load() {
         var self = this;
         prospero.ajax("serializeObject", this.data, function(data) {
-            prospero.initEditionWidgets($("h3.title", self.node), data.object.datas, self.data, self.canWrite);
-            prospero.initEditionWidgets($(".cartouche-fixed", self.node), data.object.datas, self.data, self.canWrite);
+            var observedWidgets = prospero.initEditionWidgets($("h3.title", self.node), data.object.datas, self.data, self.canWrite);
+            var observedWidgets2 = prospero.initEditionWidgets($(".cartouche-fixed", self.node), data.object.datas, self.data, self.canWrite);
+            observedWidgets.push.apply(observedWidgets, observedWidgets2);
+            $.each(observedWidgets, function(index, widget) {
+                widget.addObserver(function(event) {
+                    if (event.name == "valueSaved") {
+                        console.log("REFRESH");
+                        var corpus = prospero.get(self.view.corporaTable.getSelection());
+                        corpus.reload();
+                    }
+                });
+            });
             var $cartouche = $(".cartouche-metaDatas", self.node);
             self.metadataContainer.empty();
             $.each(data.object.metaDatas, function(index, metaData) {

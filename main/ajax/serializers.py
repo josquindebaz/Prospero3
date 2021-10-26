@@ -6,6 +6,10 @@ def serializeObject(request, data, results):
     object = frontend.getBDObject(data)
     results["object"] = object.serialize()
 
+def serializeAsTableItem(request, data, results):
+    object = frontend.getBDObject(data)
+    results["object"] = object.serializeAsTableItem()
+
 def serializeTable(request, data, results):
     table = []
     results["table"] = table

@@ -19,7 +19,7 @@ class NewTextModal extends PModal {
                 },
                 function(data) {
                     if (!data.serverError) {
-                        self.hide({action: "create"});
+                        self.hide({action: "create", text: data.text});
                     }
                 }
             );

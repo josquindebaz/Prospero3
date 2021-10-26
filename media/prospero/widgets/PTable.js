@@ -144,6 +144,12 @@ class PTableItem extends PDBObject {
             });
 	    });
 	}
+	reload() {
+        var self = this;
+        prospero.ajax("serializeAsTableItem", this.identity, function(data) {
+            self.load(data.object.values);
+        });
+	}
 	load(data) {
         var self = this;
         this.data = data;
@@ -151,8 +157,12 @@ class PTableItem extends PDBObject {
             var value = data[column];
             if (value == null)
                 value = "";
-            var $td = $("<td>"+value+"</td>");
-            self.node.append($td);
+            var $td = self.node.children("td[column-name="+column+"]");
+            if ($td.length == 0) {
+                $td = $("<td column-name="+column+"></td>");
+                self.node.append($td);
+            }
+            $td.text(value);
         });
 	}
 	isSelected() {

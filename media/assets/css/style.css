@@ -43,6 +43,13 @@ header.main_header h2 {
     -webkit-user-select: none; /* Webkit (Safari, Chrome) */
 }
 
+.disableTextSelection {
+            user-select: none; /* CSS3 (little to no support) */
+        -ms-user-select: none; /* IE 10+ */
+       -moz-user-select: none; /* Gecko (Firefox) */
+    -webkit-user-select: none; /* Webkit (Safari, Chrome) */
+}
+
 /* edition-widget */
 
 .edition-widget {
@@ -63,6 +70,14 @@ textarea.edition-widget {
 }
 
 /* metadata widgets */
+
+.cartouche label {
+    margin-top: 1px;
+}
+
+.cartouche_item.metadata-widget textarea {
+    padding-top: 1px;
+}
 
 .cartouche-metaDatas {
     position: relative;

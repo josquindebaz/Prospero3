@@ -1,8 +1,9 @@
 class TagsInput extends Tags {
 
-    constructor($node, existingTags, tagsManager, objectIdentity, allowNew) {
+    constructor($node, existingTags, tagsManager, objectIdentity, allowNew, changeCallback) {
         super($node[0], tagsManager, allowNew==true);
         var self = this;
+        self.changeCallback = changeCallback;
         self.node = $node;
         self.objectIdentity = objectIdentity;
         $.each(existingTags, function(index, id) {
@@ -25,6 +26,7 @@ class TagsInput extends Tags {
                 if (data.newTag) {
                     self.tagsManager.addTag(data.newTag.id, data.newTag.value);
                 }
+                self.changeCallback("valueSaved");
             });
         }
     }
@@ -42,6 +44,7 @@ class TagsInput extends Tags {
                     self.tagsManager.removeTag(value);
                     self.node.parent().find("ul.dropdown-menu li a[data-value="+value+"]").parent().remove();
                 }
+                self.changeCallback("valueSaved");
             });
         }
     }
